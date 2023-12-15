@@ -4,7 +4,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin]
   sprites:
-    - sprite: Siberia/Customization/tail.rsi
+    - sprite: Siberia/Mobs/Customization/tail.rsi
       state: raccoon
-    - sprite: Siberia/Customization/tail.rsi
+    - sprite: Siberia/Mobs/Customization/tail.rsi
       state: raccoon-tip
