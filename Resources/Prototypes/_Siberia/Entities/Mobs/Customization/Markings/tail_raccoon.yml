@@ -1,0 +1,10 @@
+- type: marking
+  id: RaccoonTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/tail.rsi
+      state: raccoon
+    - sprite: Siberia/Mobs/Customization/tail.rsi
+      state: raccoon-tip
