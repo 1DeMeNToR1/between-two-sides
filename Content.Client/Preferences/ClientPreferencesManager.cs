@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Content.Client.Siberia.Sponsors;
 using Content.Corvax.Interfaces.Client;
 using Content.Shared.Preferences;
 using Robust.Client;
@@ -19,7 +20,7 @@ namespace Content.Client.Preferences
     {
         [Dependency] private readonly IClientNetManager _netManager = default!;
         [Dependency] private readonly IBaseClient _baseClient = default!;
-        private IClientSponsorsManager? _sponsorsManager; // Corvax-Sponsors
+        [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 
         public event Action? OnServerDataLoaded;
 
@@ -28,7 +29,6 @@ namespace Content.Client.Preferences
 
         public void Initialize()
         {
-            IoCManager.Instance!.TryResolveType(out _sponsorsManager); // Corvax-Sponsors
             _netManager.RegisterNetMessage<MsgPreferencesAndSettings>(HandlePreferencesAndSettings);
             _netManager.RegisterNetMessage<MsgUpdateCharacter>();
             _netManager.RegisterNetMessage<MsgSelectCharacter>();
@@ -64,7 +64,9 @@ namespace Content.Client.Preferences
         public void UpdateCharacter(ICharacterProfile profile, int slot)
         {
             // Corvax-Sponsors-Start
-            var sponsorPrototypes = _sponsorsManager?.Prototypes.ToArray() ?? new string[]{};
+            var sponsorPrototypes = _sponsorsManager.TryGetInfo(out var sponsor)
+                ? sponsor.AllowedMarkings
+                : new string[]{};
             profile.EnsureValid(sponsorPrototypes);
             // Corvax-Sponsors-End
             var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters) {[slot] = profile};

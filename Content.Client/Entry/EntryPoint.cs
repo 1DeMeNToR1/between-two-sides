@@ -19,6 +19,8 @@ using Content.Client.Preferences;
 using Content.Client.Radiation.Overlays;
 using Content.Client.Replay;
 using Content.Client.Screenshot;
+using Content.Client.Siberia.DiscordAuth;
+using Content.Client.Siberia.Sponsors;
 using Content.Client.Singularity;
 using Content.Client.Stylesheets;
 using Content.Client.Viewport;
@@ -72,6 +74,8 @@ namespace Content.Client.Entry
         [Dependency] private readonly IResourceManager _resourceManager = default!;
         [Dependency] private readonly IReplayLoadManager _replayLoad = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
+        [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
+        [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
 
         public override void Init()
         {
@@ -167,6 +171,8 @@ namespace Content.Client.Entry
             _userInterfaceManager.SetDefaultTheme("SS14DefaultTheme");
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _documentParsingManager.Initialize();
+            _sponsorsManager.Initialize();
+            _discordAuthManager.Initialize();
 
             _baseClient.RunLevelChanged += (_, args) =>
             {

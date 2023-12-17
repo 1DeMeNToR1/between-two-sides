@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Corvax.Interfaces.Client;
+using Content.Client.Siberia.Sponsors;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
@@ -19,7 +19,7 @@ public sealed partial class MarkingPicker : Control
 {
     [Dependency] private readonly MarkingManager _markingManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    private IClientSponsorsManager? _sponsorsManager; // Corvax-Sponsors
+    [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 
     public Action<MarkingSet>? OnMarkingAdded;
     public Action<MarkingSet>? OnMarkingRemoved;
@@ -125,7 +125,6 @@ public sealed partial class MarkingPicker : Control
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
-        IoCManager.Instance!.TryResolveType(out _sponsorsManager); // Corvax-Sponsors
 
         SetupCategoryButtons();
         CMarkingCategoryButton.OnItemSelected +=  OnCategoryChange;
@@ -206,8 +205,8 @@ public sealed partial class MarkingPicker : Control
             var item = CMarkingsUnused.AddItem($"{GetMarkingName(marking)}", marking.Sprites[0].Frame0());
             item.Metadata = marking;
             // Corvax-Sponsors-Start
-            if (marking.SponsorOnly && _sponsorsManager != null)
-                item.Disabled = !_sponsorsManager.Prototypes.Contains(marking.ID);
+            if (marking.SponsorOnly && _sponsorsManager.TryGetInfo(out var sponsor))
+                item.Disabled = !sponsor.AllowedMarkings.Contains(marking.ID);
             // Corvax-Sponsors-End
         }
 
