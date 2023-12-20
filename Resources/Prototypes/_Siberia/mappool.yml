@@ -1,0 +1,10 @@
+- type: gameMapPool
+  id: SiberiaDefaultMapPool
+  maps:
+  # - CorvaxSilly - гавно карта запускать только если онлайн 5 человек
+  - CorvaxOutpost
+  - Cluster
+  - Core
+  - SpirinOmega
+  - Saltern
+  - Packed
