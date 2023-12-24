@@ -1,0 +1,7 @@
+- type: entity
+  save: false
+  name: Urist Mcresi
+  parent: [BaseMobResomi, BaseMob]
+  id: MobResomi
+
+#Weh
