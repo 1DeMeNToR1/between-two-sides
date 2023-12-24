@@ -14,7 +14,7 @@
   naming: FirstLast # FirstDashFirst
   minAge: 15
   maxAge: 45
-  youndAge: 25
+  youngAge: 25
   oldAge: 40
   
   
