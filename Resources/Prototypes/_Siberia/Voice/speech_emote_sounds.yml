@@ -1,0 +1,9 @@
+- type: emoteSounds
+  id: UnisexResomi
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg
+    Laugh:
+      path: /Audio/Siberia/Voice/Resomi/resomi_laugh.ogg
