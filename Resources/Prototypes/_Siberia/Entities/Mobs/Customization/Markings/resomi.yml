@@ -1,0 +1,80 @@
+#- type: marking
+#  id: ResomiTail
+#  bodyPart: Tail
+#  markingCategory: Tail
+#  speciesRestriction: [ Resomi ]
+#  sprites:
+#  - sprite: Siberia/Mobs/Customization/resomi_parts.rsi
+#    state: tail_old
+
+- type: marking
+  id: ResomiTailClassic
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Resomi ]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/resomi_parts.rsi
+    state: classic
+    
+- type: marking
+  id: ResomiTailFluffClassic
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Resomi ]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/resomi_parts.rsi
+    state: fluff-classic
+
+- type: marking
+  id: ResomiTailFluffSharp
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Resomi ]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/resomi_parts.rsi
+    state: fluff-sharp
+
+- type: marking
+  id: ResomiTailSharp
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Resomi ]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/resomi_parts.rsi
+    state: sharp    
+
+- type: marking
+  id: ResomiHeadTopEars1
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [ Resomi ]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/resomi_parts.rsi
+    state: pattern-ears1
+
+- type: marking
+  id: ResomiHeadTopEars2
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [ Resomi ]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/resomi_parts.rsi
+    state: pattern-ears2
+
+- type: marking
+  id: ResomiHeadTopEars3
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [ Resomi ]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/resomi_parts.rsi
+    state: pattern-ears3
+
+- type: marking
+  id: ResomiHeadTopEars6
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [ Resomi ]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/resomi_parts.rsi
+    state: pattern-ears6    
