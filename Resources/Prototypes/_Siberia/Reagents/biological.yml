@@ -1,0 +1,19 @@
+﻿- type: reagent
+  id: ResomiBlood
+  name: reagent-name-resomi-blood
+  group: Biological
+  desc: reagent-desc-resomi-blood
+  flavor: copper
+  color: "#d514f7"
+  recognizable: true
+  physicalDesc: reagent-physical-desc-cuprum
+  slippery: false
+  metabolisms:
+    Drink:
+      # Quenching!
+      effects:
+      - !type:SatiateThirst
+        factor: 1.5
+  plantMetabolism:
+  - !type:PlantAdjustWater
+    amount: 0.5
