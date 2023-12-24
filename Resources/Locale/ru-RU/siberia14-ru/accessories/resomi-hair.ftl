@@ -1,0 +1,11 @@
+marking-ResomiHairBackstrafeT = Тыльные
+marking-ResomiHairLongwayT = Вытянутые
+marking-ResomiHairThinT = Утончённые
+marking-ResomiHairThinmohawkT = Ирокезы
+marking-ResomiHairEars1 = Классические 
+marking-ResomiHairEars2 = Короткие
+marking-ResomiHairEars3 = Пушистые
+marking-ResomiHairEars4 = Заостренные
+marking-ResomiHairEars5 = Маленькие
+marking-ResomiHairEars6 = Опущенные
+marking-ResomiHairEars7 = Смешные
