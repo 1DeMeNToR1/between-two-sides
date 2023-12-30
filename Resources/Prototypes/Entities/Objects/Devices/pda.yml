@@ -32,7 +32,7 @@
     idSlot:
       name: ID Card
       ejectSound: /Audio/Machines/id_swipe.ogg
-      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
       whitelist:
         components:
         - IdCard
@@ -73,7 +73,7 @@
       priority: -1
       name: Cartridge
       ejectSound: /Audio/Machines/id_swipe.ogg
-      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
       whitelist:
         components:
           - Cartridge
@@ -100,7 +100,7 @@
     - DoorBumpOpener
   - type: Input
     context: "human"
-    
+
 - type: entity
   parent: BasePDA
   id: BaseMedicalPDA
@@ -378,6 +378,10 @@
     state: pda-library
     penSlot:
       startingItem: LuxuryPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#858585"
   - type: Icon
@@ -394,6 +398,10 @@
     state: pda-lawyer
     penSlot:
       startingItem: LuxuryPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#6f6192"
   - type: Icon
@@ -532,7 +540,7 @@
     accentVColor: "#2a4b5b"
   - type: Icon
     state: pda-paramedic
-    
+
 - type: entity
   parent: BaseMedicalPDA
   id: ChemistryPDA
@@ -727,7 +735,7 @@
       priority: -1
       name: Cartridge
       ejectSound: /Audio/Machines/id_swipe.ogg
-      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
       whitelist:
         components:
           - Cartridge
@@ -829,6 +837,10 @@
     state: pda-reporter
     penSlot:
       startingItem: LuxuryPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
   - type: PdaBorderColor
     borderColor: "#3f3f74"
   - type: Icon
@@ -1011,7 +1023,7 @@
       priority: -1
       name: Cartridge
       ejectSound: /Audio/Machines/id_swipe.ogg
-      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
       whitelist:
         components:
           - Cartridge
