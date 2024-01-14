@@ -12,16 +12,13 @@
       types:
         Cold: 1.1
   - type: Thirst
-
   - type: Hands
     showInHands: false
-
   - type: Icon
     sprite: Siberia/Mobs/Species/Resomi/parts.rsi
     state: full
   - type: Puller
     needsHands: false
-
   - type: Sprite
     layers:
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
@@ -33,7 +30,7 @@
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - shader: StencilClear
-      sprite: Mobs/Species/Human/parts.rsi #PJB on stencil clear being on the left leg: "...this is 'fine'" -https://github.com/space-wizards/space-station-14/pull/12217#issuecomment-1291677115
+      sprite: Siberia/Mobs/Species/Resomi/parts.rsi #PJB on stencil clear being on the left leg: "...this is 'fine'" -https://github.com/space-wizards/space-station-14/pull/12217#issuecomment-1291677115
       # its fine, but its still very stupid that it has to be done like this instead of allowing sprites to just directly insert a stencil clear.
       # sprite refactor when
       state: l_leg
@@ -74,8 +71,6 @@
       sprite: "Effects/creampie.rsi"
       state: "creampie_human"
       visible: false
-
-
   - type: Body
     prototype: Resomi
     requiredLegs: 2
@@ -86,18 +81,15 @@
     spawned:
     - id: FoodMeatChicken
       amount: 3
-  # - type: ResomiAccent
-
+    - type: ResomiAccent
   - type: Speech
     speechSounds: Lizard # change it!
     speechVerb: Resomi
-
   - type: Vocal
     sounds:
       Male: UnisexResomi
       Female: UnisexResomi
       Unsexed: UnisexResomi
-
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Scale
@@ -148,8 +140,6 @@
         color: "#D514F7" #"#5F7BB0"
       Burn:
         sprite: Siberia/Mobs/Effects/burn_damage_resomi.rsi
-
-
   - type: FireVisuals
     sprite: Siberia/Mobs/Effects/onfire.rsi
     normalState: Resomi_burning
@@ -179,9 +169,9 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-    # - shader: StencilClear
-    #   sprite: Mobs/Species/Human/parts.rsi
-    #   state: l_leg
+    - shader: StencilClear
+      sprite: Siberia/Mobs/Species/Resomi/parts.rsi
+      state: l_leg
     - shader: StencilClear
       sprite: Siberia/Mobs/Species/Resomi/parts.rsi
       state: l_leg
