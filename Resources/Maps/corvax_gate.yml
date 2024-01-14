@@ -86844,7 +86844,7 @@ entities:
       type: ContainerContainer
     - canCollide: False
       type: Physics
-    - type: ItemCooldown
+    - type: UseDelay
     - type: InsideEntityStorage
 - proto: ClothingBackpackDuffelCargo
   entities:
@@ -86874,7 +86874,7 @@ entities:
     - pos: 80.684105,46.424698
       parent: 2
       type: Transform
-    - type: ItemCooldown
+    - type: UseDelay
 - proto: ClothingBackpackSalvage
   entities:
   - uid: 8940
@@ -180067,7 +180067,7 @@ entities:
         920:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
+    - type: UseDelay
   - uid: 4111
     components:
     - rot: 3.141592653589793 rad
@@ -193821,7 +193821,7 @@ entities:
         - Right: Reverse
         - Middle: Off
       type: DeviceLinkSource
-    - type: ItemCooldown
+    - type: UseDelay
   - uid: 8947
     components:
     - pos: 51.5,16.5
@@ -193917,7 +193917,7 @@ entities:
         - Right: Reverse
         - Middle: Off
       type: DeviceLinkSource
-    - type: ItemCooldown
+    - type: UseDelay
   - uid: 11206
     components:
     - pos: -48.5,76.5
