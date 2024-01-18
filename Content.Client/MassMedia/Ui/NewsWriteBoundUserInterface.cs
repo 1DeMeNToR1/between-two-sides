@@ -1,6 +1,11 @@
+using Robust.Shared.Timing;
 using JetBrains.Annotations;
-using Content.Shared.MassMedia.Components;
+using Robust.Client.GameObjects;
 using Content.Shared.MassMedia.Systems;
+using Content.Shared.MassMedia.Components;
+using Content.Client.GameTicking.Managers;
+using Content.Shared.CCVar;
+using Robust.Shared.Configuration;
 using Robust.Shared.Utility;
 
 namespace Content.Client.MassMedia.Ui
@@ -11,11 +16,16 @@ namespace Content.Client.MassMedia.Ui
         [ViewVariables]
         private NewsWriteMenu? _menu;
 
+        [Dependency] private readonly IEntitySystemManager _entitySystem = default!;
+        [Dependency] private readonly IConfigurationManager _cfg = default!;
+        private ClientGameTicker? _gameTicker;
+
         [ViewVariables]
         private string _windowName = Loc.GetString("news-read-ui-default-title");
 
         public NewsWriteBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey)
         {
+
         }
 
         protected override void Open()
@@ -27,6 +37,8 @@ namespace Content.Client.MassMedia.Ui
 
             _menu.ShareButtonPressed += OnShareButtonPressed;
             _menu.DeleteButtonPressed += OnDeleteButtonPressed;
+
+            _gameTicker = _entitySystem.GetEntitySystem<ClientGameTicker>();
 
             SendMessage(new NewsWriteArticlesRequestMessage());
         }
@@ -57,12 +69,17 @@ namespace Content.Client.MassMedia.Ui
 
             var stringContent = Rope.Collapse(_menu.ContentInput.TextRope);
 
-            if (stringContent.Length == 0)
+            if (stringContent == null || stringContent.Length == 0)
                 return;
 
-            var stringName = _menu.NameInput.Text.Trim();
-            var name = stringName[..Math.Min(stringName.Length, (SharedNewsSystem.MaxNameLength))];
-            var content = stringContent[..Math.Min(stringContent.Length, (SharedNewsSystem.MaxArticleLength))];
+            var stringName = _menu.NameInput.Text;
+
+            var maxNameLength = _cfg.GetCVar(CCVars.NewsNameLimit);
+            var maxContentLength = _cfg.GetCVar(CCVars.NewsContentLimit);
+
+            var name = (stringName.Length <= maxNameLength ? stringName.Trim() : $"{stringName.Trim().Substring(0, maxNameLength)}...");
+            var content = (stringContent.Length <= maxContentLength ? stringContent.Trim() : $"{stringContent.Trim().Substring(0, maxContentLength)}...");
+
             _menu.ContentInput.TextRope = new Rope.Leaf(string.Empty);
             _menu.NameInput.Text = string.Empty;
             SendMessage(new NewsWriteShareMessage(name, content));
@@ -70,8 +87,7 @@ namespace Content.Client.MassMedia.Ui
 
         private void OnDeleteButtonPressed(int articleNum)
         {
-            if (_menu == null)
-                return;
+            if (_menu == null) return;
 
             SendMessage(new NewsWriteDeleteMessage(articleNum));
         }

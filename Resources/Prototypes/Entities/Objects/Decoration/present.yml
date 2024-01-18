@@ -1,6 +1,6 @@
 - type: entity
   id: PresentBase
-  name: present
+  name: Present
   description: A little box with incredible surprises inside.
   abstract: true
   components:

@@ -42,7 +42,7 @@
 
 - type: entity
   id: SpyCrewMonitor
-  name: spy monitor
+  name: Spy Monitor
   description: A spy device capable of connecting to crew monitoring servers.
   parent: HandheldCrewMonitor
   components:
@@ -68,7 +68,7 @@
 
 - type: entity
   id: SyndiCrewMonitor
-  name: syndicate crew monitor
+  name: Syndicate crew monitor
   description: The syndicated version of crew monitor, intercepts information from the server.
   parent: HandheldCrewMonitor
   components:

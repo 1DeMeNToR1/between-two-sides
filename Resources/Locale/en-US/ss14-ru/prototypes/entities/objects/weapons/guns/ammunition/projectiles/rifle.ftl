@@ -7,4 +7,4 @@ ent-BulletRifleRubber = bullet (0.20 rifle rubber)
 ent-BulletRifleIncendiary = bullet (0.20 rifle incendiary)
     .desc = { ent-BaseBulletIncendiary.desc }
 ent-BulletRifleUranium = bullet (0.20 rifle uranium)
-    .desc = { ent-BaseBulletUranium.desc }
+    .desc = { ent-BaseBullet.desc }

@@ -10,5 +10,3 @@ ent-MagazineBoxMagnumIncendiary = ammunition box (.45 magnum incendiary)
     .desc = { ent-BaseMagazineBoxMagnum.desc }
 ent-MagazineBoxMagnumUranium = ammunition box (.45 magnum uranium)
     .desc = { ent-BaseMagazineBoxMagnum.desc }
-ent-MagazineBoxMagnumAP = ammunition box (.45 magnum armor-piercing)
-    .desc = { ent-BaseMagazineBoxMagnum.desc }

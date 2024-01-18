@@ -12,7 +12,6 @@ using Content.Client.UserInterface.Systems.Inventory.Windows;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Hands.Components;
 using Content.Shared.Input;
-using Content.Shared.Inventory.VirtualItem;
 using Content.Shared.Storage;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
@@ -58,8 +57,8 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         if (UIManager.ActiveScreen == null)
             return;
 
-        if (UIManager.GetActiveUIWidgetOrNull<InventoryGui>() is { } inventoryGui)
-            RegisterInventoryButton(inventoryGui.InventoryButton);
+        var inventoryGui = UIManager.GetActiveUIWidget<InventoryGui>();
+        RegisterInventoryButton(inventoryGui.InventoryButton);
     }
 
     public void OnStateEntered(GameplayState state)
@@ -424,17 +423,8 @@ public sealed class InventoryUIController : UIController, IOnStateEntered<Gamepl
         if (_slotGroups.GetValueOrDefault(group)?.GetButton(name) is not { } button)
             return;
 
-        if (_entities.TryGetComponent(entity, out VirtualItemComponent? virtb))
-        {
-            button.SpriteView.SetEntity(virtb.BlockingEntity);
-            button.Blocked = true;
-        }
-        else
-        {
-            button.SpriteView.SetEntity(entity);
-            button.Blocked = false;
-            button.StorageButton.Visible = showStorage;
-        }
+        button.SpriteView.SetEntity(entity);
+        button.StorageButton.Visible = showStorage;
     }
 
     public bool RegisterSlotGroupContainer(ItemSlotButtonContainer slotContainer)

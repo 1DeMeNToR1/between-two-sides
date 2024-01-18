@@ -41,7 +41,7 @@ def main():
 
     most_recent = get_most_recent_workflow(session)
     last_sha = most_recent['head_commit']['id']
-    print(f"Last successful publish job was {most_recent['id']}: {last_sha}")
+    print(f"Last successsful publish job was {most_recent['id']}: {last_sha}")
 
     # Corvax-MultiChangelog-Start
     for changelog_file in CHANGELOG_FILES:
@@ -110,12 +110,9 @@ def diff_changelog(old: dict[str, Any], cur: dict[str, Any]) -> Iterable[Changel
 
 def send_to_discord(entries: Iterable[ChangelogEntry]) -> None:
     if not DISCORD_WEBHOOK_URL:
-        print(f"No discord webhook URL found, skipping discord send")
         return
 
     content = io.StringIO()
-    count: int = 0
-
     for name, group in itertools.groupby(entries, lambda x: x["author"]):
         content.write(f"**{name}** обновил(а):\n")
         for entry in group:
@@ -123,7 +120,6 @@ def send_to_discord(entries: Iterable[ChangelogEntry]) -> None:
                 emoji = TYPES_TO_EMOJI.get(change['type'], "❓")
                 message = change['message']
                 url = entry.get("url")
-                count += 1
                 # Corvax-Localization-Start
                 TRANSLATION_API_URL = os.environ.get("TRANSLATION_API_URL")
                 if TRANSLATION_API_URL:
@@ -140,12 +136,6 @@ def send_to_discord(entries: Iterable[ChangelogEntry]) -> None:
                     content.write(f"{emoji} - {message}\n")
         content.write(f"\n") # Corvax: Better formatting
 
-    if count == 0:
-        print("Skipping discord push as no changelog entries found")
-        return
-
-    print(f"Posting {count} changelog entries to discord webhook")
-
     content.seek(0) # Corvax
     for chunk in iter(lambda: content.read(2000), ''): # Corvax: Split big changelogs messages
         body = {
@@ -158,8 +148,7 @@ def send_to_discord(entries: Iterable[ChangelogEntry]) -> None:
             "flags": 1 << 2
         }
 
-        response = requests.post(DISCORD_WEBHOOK_URL, json=body)
-        response.raise_for_status()
+        requests.post(DISCORD_WEBHOOK_URL, json=body)
 
 
 main()

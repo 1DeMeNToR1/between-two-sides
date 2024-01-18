@@ -46,7 +46,6 @@ flavor-base-spaceshroom = mysterious
 flavor-base-clean = clean
 flavor-base-alkaline = alkaline
 flavor-base-holy = holy
-flavor-base-horrible = horrible
 
 # lmao
 flavor-base-terrible = terrible
@@ -157,7 +156,6 @@ flavor-complex-plastic = like plastic
 flavor-complex-glue = like glue
 flavor-complex-spaceshroom-cooked = like space umami
 flavor-complex-lost-friendship = like lost friendship
-flavor-complex-light = like a light gone out
 
 # Drink-specific flavors.
 

@@ -1,7 +1,5 @@
 ent-FunPlushies = { ent-CrateFunPlushie }
     .desc = { ent-CrateFunPlushie.desc }
-ent-FunLizardPlushies = { ent-CrateFunLizardPlushieBulk }
-    .desc = { ent-CrateFunLizardPlushieBulk.desc }
 ent-FunInstruments = { ent-CrateFunInstruments }
     .desc = { ent-CrateFunInstruments.desc }
 ent-FunBrass = { ent-CrateFunBrass }

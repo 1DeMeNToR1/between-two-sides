@@ -94,4 +94,3 @@ reagent-physical-desc-fluffy = fluffy
 reagent-physical-desc-alkaline = alkaline
 reagent-physical-desc-reflective = reflective
 reagent-physical-desc-holy = holy
-reagent-physical-desc-slimy = slimy

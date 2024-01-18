@@ -1,4 +1,3 @@
-using Content.Shared.DoAfter;
 using Content.Shared.Humanoid;
 using Robust.Shared.Audio;
 
@@ -10,9 +9,6 @@ namespace Content.Server.MagicMirror;
 [RegisterComponent]
 public sealed partial class MagicMirrorComponent : Component
 {
-    [DataField]
-    public DoAfterId? DoAfter;
-
     /// <summary>
     /// Magic mirror target, used for validating UI messages.
     /// </summary>

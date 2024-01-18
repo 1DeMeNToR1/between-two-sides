@@ -133,7 +133,6 @@ DrinkGoldschlagerBottleFull: DrinkGildlagerBottleFull
 DrinkGoldschlagerGlass: DrinkGildlagerGlass
 
 # 2024-01-07
-ClosetBase: ClosetSteelBase
 MonkeyCubeBox: VariantCubeBox
 
 # 2024-01-08
@@ -158,8 +157,3 @@ AnalyzerSubspaceStockPart: null
 CrystalSubspaceStockPart: null
 TransmitterSubspaceStockPart: null
 
-# 2024-01-10
-ClothingHeadHatHoodRad: null
-
-# 2024-01-12
-SpaceMedipen: null
