@@ -1,0 +1,83 @@
+- type: vendingMachineInventory
+  id: AutoDrobeInventory
+  startingInventory:
+    ClothingHeadHatJester: 1
+    ClothingUniformJumpsuitJester: 1
+    ClothingHeadHatJesterAlt: 1
+    ClothingUniformJumpsuitJesterAlt: 1
+    ClothingShoesJester: 2
+    ClothingOuterWinterClown: 1
+    ClothingOuterWinterMime: 1
+    ClothingOuterWinterMusician: 1
+    ClothingMaskJoy: 2
+    ClothingHeadHatCardborg: 2
+    ClothingOuterCardborg: 2
+    ClothingHeadHatSombrero: 2
+    ClothingOuterPonchoClassic: 2
+    ClothingHeadHatPwig: 2
+    ClothingOuterRobesJudge: 2
+    ClothingOuterPoncho: 2
+    ClothingHeadHatSantahat: 2
+    ClothingOuterSanta: 2
+    ClothingHeadHatSkub: 2
+    ClothingOuterSkub: 2
+    ClothingOuterSuitChicken: 2
+    ClothingHeadHatChickenhead: 2
+    ClothingOuterSuitMonkey: 2
+    ClothingHeadHatPumpkin: 2
+    ClothingHeadHatShrineMaidenWig: 2
+    ClothingOuterSuitShrineMaiden: 2
+    Gohei: 2
+<<<<<<< HEAD:Resources/Prototypes/_Siberia/VendingMachines/Inventories/theater.yml
+=======
+    ClothingHeadHatRedRacoon: 2
+    ClothingOuterRedRacoon: 2
+>>>>>>> 0e0c3fdaa290760f966e360627768cf7c655c2b7:Resources/Prototypes/Catalog/VendingMachines/Inventories/theater.yml
+    ClothingHeadPaperSack: 2
+    ClothingHeadPaperSackSmile: 2
+    ClothingEyesBlindfold: 1
+    ClothingHeadRastaHat: 2
+    ClothingUniformJumpsuitDameDane: 2
+    ClothingShoesDameDane: 2
+    ClothingOuterDameDane: 2
+    ClothingOuterClownPriest: 1
+    ClothingMaskSadMime: 1
+    ClothingMaskScaredMime: 1
+    ClothingUniformJumpsuitKimono: 1
+    ClothingHeadHatCasa: 1
+    ClothingHeadHatGladiator: 1
+    ClothingUniformJumpsuitGladiator: 1
+    ClothingHeadHatHairflower: 1 # Добавил в ТеатроШкаф эти 3 вещи в единственном экземпляре
+    ClothingNeckCloakFreedomCloak: 1
+    ClothingNeckCloakGoliathCloak: 1
+    ClothingNeckCloakMoth: 1
+    ClothingNeckMantleCowboy: 1
+    ClothingNeckNuker: 1
+    ClothingNeckRvanNuker: 1
+    ClothingNeckRanger: 1
+    ClothingNeckWhiteGhost: 1
+    ClothingNeckWolf: 1
+    Clothingmimesocks: 2
+    ClothingEyesBlindfoldFake: 1
+    ClothingHeadHatHorns: 2
+    ClothingHeadHatTacticalMaidHeadbandWhite: 2
+    ClothingHeadHatTacticalMaidHeadbandBlack: 2
+    ClothingHeadHatTacticalMaidHeadbandGreen: 2 
+    ClothingHeadHatTacticalMaidHeadbandBlue: 2
+    ClothingHandsGlovesYsatyu: 1 # Одежда усатого и моряка
+    ClothingHeadYsatyu: 1
+    ClothingMaskYsatyu: 1
+    ClothingNeckScarfYsatyu: 1
+    ClothingShoesYsatyu: 1
+    ClothingUniformJumpsuitYsatyu: 1
+    ClothingHeadHatMoryak: 1
+    ClothingMaskMoryak: 1
+    ClothingShoesMoryak: 1
+    ClothingUniformJumpsuitMoryak: 1 # Конец
+    
+    
+  emaggedInventory:
+    ClothingShoesBling: 1
+    ClothingOuterDogi: 1
+    ClothingMaskSexyClown: 1
+    ClothingMaskSexyMime: 1

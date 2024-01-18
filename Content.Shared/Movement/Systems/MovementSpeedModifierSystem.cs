@@ -33,8 +33,8 @@ namespace Content.Shared.Movement.Systems
             if (!Resolve(uid, ref move, false))
                 return;
 
-            move.BaseWalkSpeed = baseWalkSpeed;
-            move.BaseSprintSpeed = baseSprintSpeed;
+            move.BaseWalkSpeed = baseSprintSpeed;
+            move.BaseSprintSpeed = baseWalkSpeed;
             move.Acceleration = acceleration;
             Dirty(uid, move);
         }
@@ -66,8 +66,8 @@ namespace Content.Shared.Movement.Systems
 
         public void ModifySpeed(float walk, float sprint)
         {
-            WalkSpeedModifier *= walk;
-            SprintSpeedModifier *= sprint;
+            WalkSpeedModifier *= sprint;
+            SprintSpeedModifier *= walk;
         }
     }
 }
