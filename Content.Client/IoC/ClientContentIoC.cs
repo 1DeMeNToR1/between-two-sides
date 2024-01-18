@@ -21,6 +21,8 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Module;
 using Content.Client.Guidebook;
 using Content.Client.Replay;
+using Content.Client.Siberia.DiscordAuth;
+using Content.Client.Siberia.Sponsors;
 using Content.Shared.Administration.Managers;
 
 
@@ -50,6 +52,8 @@ namespace Content.Client.IoC
             IoCManager.Register<JobRequirementsManager>();
             IoCManager.Register<DocumentParsingManager>();
             IoCManager.Register<ContentReplayPlaybackManager, ContentReplayPlaybackManager>();
+            IoCManager.Register<SponsorsManager>();
+            IoCManager.Register<DiscordAuthManager>();
         }
     }
 }
