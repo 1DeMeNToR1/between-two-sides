@@ -1,0 +1,115 @@
+- type: entity
+  parent: ClothingHandsGlovesSyntheticBase
+  id: ClothingHandsGlovesYsatyu
+  name: перчатки Мужика
+  description: Ни один стакан самогона не выскользнет из ваших рук.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Hands/ysatyu.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Hands/ysatyu.rsi
+  - type: Fiber
+    fiberColor: fibers-red
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatMoryak
+  name: берет Моряка
+  description: Берет матроса с рыжим помпончиком.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Head/Hats/moryak.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Head/Hats/moryak.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadYsatyu
+  name: фуражка Мужика
+  description: Фуражка самогонных дел мастера.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Head/Hats/ysatyu.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Head/Hats/ysatyu.rsi
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskMoryak
+  name: маска Моряка
+  description: Есть легенда, что при виде самогона маска улыбается.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Mask/moryak.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Mask/moryak.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskYsatyu
+  name: маска Мужика
+  description: Нет лучше времяпрепровождения, чем распивать самогон с товарищами.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Mask/ysatyu.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Mask/ysatyu.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckScarfYsatyu
+  name: шарф Мужика
+  description: Длинный и узкий для удобного распития самогона.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Clown/Neck/Scarfs/ysatyu.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Clown/Neck/Scarfs/ysatyu.rsi
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesMoryak
+  name: бошмаки Моряка
+  description: Тесные матроские башмаки, но хотя бы водонепроницаемые.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Shoes/Specific/moryak.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Shoes/Specific/moryak.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesYsatyu
+  name: ботинки Мужика
+  description: Проложит путь к ближайшим самогонным месторождениям.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Shoes/Specific/ysatyu.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Shoes/Specific/ysatyu.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMoryak
+  name: комбинезон Моряка
+  description: Мимская матроска для покорения необъятного океана (самогона).
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Uniforms/moryak.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Uniforms/moryak.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitYsatyu
+  name: комбинезон Мужика
+  description: Пахнет самогоном.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Uniforms/ysatyu.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Uniforms/ysatyu.rsi
