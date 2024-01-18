@@ -15664,18 +15664,6 @@ entities:
     - type: Transform
       pos: 86.510315,-15.505127
       parent: 13329
-- proto: AdvancedCapacitorStockPart
-  entities:
-  - uid: 27916
-    components:
-    - type: Transform
-      pos: 62.472347,-1.3642278
-      parent: 13329
-  - uid: 27917
-    components:
-    - type: Transform
-      pos: 62.628597,-1.4267278
-      parent: 13329
 - proto: AirAlarm
   entities:
   - uid: 609
@@ -21953,24 +21941,12 @@ entities:
     - type: Transform
       pos: 86.5,5.5
       parent: 13329
-- proto: AmplifierSubspaceStockPart
+- proto: AmeJar
   entities:
-  - uid: 27924
+  - uid: 27877
     components:
     - type: Transform
-      pos: 62.61035,-2.8384318
-      parent: 13329
-  - uid: 27930
-    components:
-    - type: Transform
-      pos: 62.7666,-2.8228068
-      parent: 13329
-- proto: AnalyzerSubspaceStockPart
-  entities:
-  - uid: 27879
-    components:
-    - type: Transform
-      pos: 99.01827,36.599747
+      pos: 84.584206,5.5199265
       parent: 13329
 - proto: AnomalyScanner
   entities:
@@ -21983,18 +21959,6 @@ entities:
     components:
     - type: Transform
       pos: 41.59153,-33.7406
-      parent: 13329
-- proto: AnsibleSubspaceStockPart
-  entities:
-  - uid: 27876
-    components:
-    - type: Transform
-      pos: 96.39682,36.584015
-      parent: 13329
-  - uid: 27929
-    components:
-    - type: Transform
-      pos: 62.5166,-3.1821818
       parent: 13329
 - proto: AntiPoisonMedipen
   entities:
@@ -31735,26 +31699,6 @@ entities:
     - type: Transform
       pos: 86.5,-16.5
       parent: 13329
-  - uid: 29181
-    components:
-    - type: Transform
-      pos: 96.5,21.5
-      parent: 13329
-  - uid: 29182
-    components:
-    - type: Transform
-      pos: 97.5,21.5
-      parent: 13329
-  - uid: 29183
-    components:
-    - type: Transform
-      pos: 99.5,21.5
-      parent: 13329
-  - uid: 29184
-    components:
-    - type: Transform
-      pos: 100.5,21.5
-      parent: 13329
   - uid: 29233
     components:
     - type: Transform
@@ -32138,26 +32082,6 @@ entities:
     components:
     - type: Transform
       pos: -30.5,17.5
-      parent: 13329
-  - uid: 32702
-    components:
-    - type: Transform
-      pos: 96.5,21.5
-      parent: 13329
-  - uid: 32703
-    components:
-    - type: Transform
-      pos: 97.5,21.5
-      parent: 13329
-  - uid: 34645
-    components:
-    - type: Transform
-      pos: 100.5,21.5
-      parent: 13329
-  - uid: 34646
-    components:
-    - type: Transform
-      pos: 99.5,21.5
       parent: 13329
 - proto: BigBox
   entities:
@@ -80919,6 +80843,16 @@ entities:
     - type: Transform
       pos: 56.49442,-20.471375
       parent: 13329
+  - uid: 27916
+    components:
+    - type: Transform
+      pos: 62.472347,-1.3642278
+      parent: 13329
+  - uid: 27917
+    components:
+    - type: Transform
+      pos: 62.628597,-1.4267278
+      parent: 13329
   - uid: 27923
     components:
     - type: Transform
@@ -100966,13 +100900,6 @@ entities:
         - 0
         - 0
         - 0
-- proto: CrateMindShieldImplants
-  entities:
-  - uid: 18351
-    components:
-    - type: Transform
-      pos: 14.5,13.5
-      parent: 13329
 - proto: CrateMousetrapBoxes
   entities:
   - uid: 32681
@@ -101165,6 +101092,13 @@ entities:
         - 0
         - 0
         - 0
+- proto: CrateSecurityTrackingMindshieldImplants
+  entities:
+  - uid: 10597
+    components:
+    - type: Transform
+      pos: 14.5,13.5
+      parent: 13329
 - proto: CrateServiceJanitorialSupplies
   entities:
   - uid: 1445
@@ -101314,6 +101248,34 @@ entities:
     - type: Transform
       pos: 93.53844,56.395863
       parent: 13329
+- proto: CryogenicSleepUnit
+  entities:
+  - uid: 27924
+    components:
+    - type: Transform
+      pos: 96.5,21.5
+      parent: 13329
+  - uid: 27928
+    components:
+    - type: Transform
+      pos: 99.5,21.5
+      parent: 13329
+- proto: CryogenicSleepUnitSpawner
+  entities:
+  - uid: 27927
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 97.5,21.5
+      parent: 13329
+- proto: CryogenicSleepUnitSpawnerLateJoin
+  entities:
+  - uid: 27929
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 100.5,21.5
+      parent: 13329
 - proto: CryoPod
   entities:
   - uid: 17618
@@ -101341,13 +101303,6 @@ entities:
     components:
     - type: Transform
       pos: 27.667912,48.69122
-      parent: 13329
-- proto: CrystalSubspaceStockPart
-  entities:
-  - uid: 27878
-    components:
-    - type: Transform
-      pos: 99.47983,36.58412
       parent: 13329
 - proto: d20Dice
   entities:
@@ -112228,6 +112183,13 @@ entities:
     - type: Transform
       pos: 77.411644,49.493114
       parent: 13329
+- proto: DrinkGildlagerBottleFull
+  entities:
+  - uid: 30764
+    components:
+    - type: Transform
+      pos: 91.60021,47.211857
+      parent: 13329
 - proto: DrinkGinBottleFull
   entities:
   - uid: 32415
@@ -112278,13 +112240,6 @@ entities:
     components:
     - type: Transform
       pos: 90.63146,46.774357
-      parent: 13329
-- proto: DrinkGoldschlagerBottleFull
-  entities:
-  - uid: 30764
-    components:
-    - type: Transform
-      pos: 91.60021,47.211857
       parent: 13329
 - proto: DrinkLithiumFlask
   entities:
@@ -113652,13 +113607,6 @@ entities:
     components:
     - type: Transform
       pos: 11.5,-14.5
-      parent: 13329
-- proto: FilterSubspaceStockPart
-  entities:
-  - uid: 27877
-    components:
-    - type: Transform
-      pos: 98.55795,36.505997
       parent: 13329
 - proto: FireAlarm
   entities:
@@ -164779,9 +164727,9 @@ entities:
     - type: Transform
       pos: 42.5,61.5
       parent: 13329
-- proto: GunSafePistolMk58
+- proto: GunSafeDisabler
   entities:
-  - uid: 10597
+  - uid: 27875
     components:
     - type: Transform
       pos: 20.5,15.5
@@ -168666,6 +168614,13 @@ entities:
     - type: Transform
       pos: -29.39141,-0.38130236
       parent: 13329
+- proto: MechEquipmentGrabberSmall
+  entities:
+  - uid: 27880
+    components:
+    - type: Transform
+      pos: 1.4764897,-9.408998
+      parent: 13329
 - proto: MedicalBed
   entities:
   - uid: 18795
@@ -168889,6 +168844,16 @@ entities:
     components:
     - type: Transform
       pos: 54.55692,-20.471375
+      parent: 13329
+  - uid: 27918
+    components:
+    - type: Transform
+      pos: 62.644222,-3.6298528
+      parent: 13329
+  - uid: 27919
+    components:
+    - type: Transform
+      pos: 62.503597,-3.5673528
       parent: 13329
   - uid: 31900
     components:
@@ -169503,18 +169468,6 @@ entities:
     components:
     - type: Transform
       pos: 67.48685,60.561733
-      parent: 13329
-- proto: NanoManipulatorStockPart
-  entities:
-  - uid: 27918
-    components:
-    - type: Transform
-      pos: 62.644222,-3.6298528
-      parent: 13329
-  - uid: 27919
-    components:
-    - type: Transform
-      pos: 62.503597,-3.5673528
       parent: 13329
 - proto: NitrogenCanister
   entities:
@@ -176758,14 +176711,6 @@ entities:
       parent: 13329
     - type: ApcPowerReceiver
       powerLoad: 0
-  - uid: 11699
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -3.5,-13.5
-      parent: 13329
-    - type: ApcPowerReceiver
-      powerLoad: 0
   - uid: 11867
     components:
     - type: Transform
@@ -177476,6 +177421,12 @@ entities:
       parent: 13329
     - type: ApcPowerReceiver
       powerLoad: 0
+  - uid: 27879
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,-12.5
+      parent: 13329
   - uid: 28148
     components:
     - type: Transform
@@ -178838,6 +178789,11 @@ entities:
     components:
     - type: Transform
       pos: 78.5,3.5
+      parent: 13329
+  - uid: 27878
+    components:
+    - type: Transform
+      pos: 84.5,5.5
       parent: 13329
   - uid: 28147
     components:
@@ -186243,19 +186199,19 @@ entities:
     - type: Transform
       pos: 21.482563,-11.35629
       parent: 13329
+- proto: SalvageLootSpawner
+  entities:
+  - uid: 29379
+    components:
+    - type: Transform
+      pos: 79.5,10.5
+      parent: 13329
 - proto: SalvageMagnet
   entities:
   - uid: 11642
     components:
     - type: Transform
       pos: 17.5,-32.5
-      parent: 13329
-- proto: SalvagePartsT2Spawner
-  entities:
-  - uid: 29379
-    components:
-    - type: Transform
-      pos: 79.5,10.5
       parent: 13329
 - proto: Scalpel
   entities:
@@ -186558,6 +186514,11 @@ entities:
     - type: Transform
       pos: 55.58817,-14.4869995
       parent: 13329
+  - uid: 18351
+    components:
+    - type: Transform
+      pos: 14.455807,14.614824
+      parent: 13329
 - proto: SheetRGlass
   entities:
   - uid: 26661
@@ -186676,6 +186637,11 @@ entities:
     components:
     - type: Transform
       pos: 81.52931,-23.52415
+      parent: 13329
+  - uid: 27876
+    components:
+    - type: Transform
+      pos: 14.455807,14.599199
       parent: 13329
 - proto: SheetUranium
   entities:
@@ -192517,23 +192483,6 @@ entities:
     - type: Transform
       pos: 29.221989,-29.186216
       parent: 13329
-- proto: SpaceMedipen
-  entities:
-  - uid: 29294
-    components:
-    - type: Transform
-      pos: 74.614944,6.1718864
-      parent: 13329
-  - uid: 35279
-    components:
-    - type: Transform
-      pos: 2.509602,47.560272
-      parent: 13329
-  - uid: 35280
-    components:
-    - type: Transform
-      pos: 2.587727,47.435272
-      parent: 13329
 - proto: SpaceVillainArcadeFilled
   entities:
   - uid: 1074
@@ -196914,6 +196863,12 @@ entities:
     components:
     - type: Transform
       pos: 21.5,-25.5
+      parent: 13329
+  - uid: 11699
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 1.5,-9.5
       parent: 13329
   - uid: 11715
     components:
@@ -201804,18 +201759,6 @@ entities:
     - type: Transform
       pos: 33.5,30.5
       parent: 13329
-- proto: TransmitterSubspaceStockPart
-  entities:
-  - uid: 27875
-    components:
-    - type: Transform
-      pos: 95.506195,36.615265
-      parent: 13329
-  - uid: 27927
-    components:
-    - type: Transform
-      pos: 62.54785,-3.9478068
-      parent: 13329
 - proto: TrashBag
   entities:
   - uid: 26153
@@ -201849,18 +201792,6 @@ entities:
     components:
     - type: Transform
       pos: 132.28911,-3.4132915
-      parent: 13329
-- proto: TreatmentSubspaceStockPart
-  entities:
-  - uid: 27880
-    components:
-    - type: Transform
-      pos: 95.53914,36.67787
-      parent: 13329
-  - uid: 27928
-    components:
-    - type: Transform
-      pos: 62.563477,-3.8853068
       parent: 13329
 - proto: TwoWayLever
   entities:
