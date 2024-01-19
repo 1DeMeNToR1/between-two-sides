@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "by Jaraten",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "beam2_left"
+        },
+        {
+            "name": "beam2_right"
+        },
+        {
+            "name": "beam"
+        },
+        {
+            "name": "beam2"
+        },
+        {
+            "name": "beam1_right"
+        },
+        {
+            "name": "beam1_left"
+        }
+    ]
+}

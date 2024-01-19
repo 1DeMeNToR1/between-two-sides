@@ -1,0 +1,14 @@
+- type: entity
+  name: мячи для жонглирования
+  parent: BaseItem
+  id: ClownBalls #))0)
+  description: разноцветные мячики, которыми удобно жонглировать.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/balls.rsi
+    state: icon
+  - type: Wieldable
+  - type: Item
+    size: Normal
+  - type: UseDelay
+    delay: 2
