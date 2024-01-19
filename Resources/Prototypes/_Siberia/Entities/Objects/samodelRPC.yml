@@ -1,0 +1,57 @@
+- type: entity
+  parent: ClothingBeltBase
+  name: Самодельное РПС
+  id: ClothingSamodelRpc
+  description: Самодельное хранилище, которое поможет вам переносить вещи!
+  components:
+  - type: Storage
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,3,1
+  - type: Item
+    size: Ginormous
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: Construction
+    graph: samodelrpc
+    node: samodelrpc
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+  - type: Sprite
+    sprite: Siberia/Clothing/samodelrpc.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/samodelrpc.rsi
+
+- type: construction
+  name: Самодельное РПС
+  id: ClothingSamodelRpc
+  graph: samodelrpc
+  startNode: start
+  targetNode: samodelrpc
+  category: construction-category-clothing
+  description: Самодельное хранилище.
+  icon:
+    sprite: Siberia/Clothing/samodelrpc.rsi
+    state: icon
+  objectType: Item
+
+- type: constructionGraph
+  id: samodelrpc
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: samodelrpc
+          steps:
+            - material: Cloth
+              amount: 20
+            - material: Durathread
+              amount: 5
+              doAfter: 10
+    - node: samodelrpc
+      entity: ClothingSamodelRpc
