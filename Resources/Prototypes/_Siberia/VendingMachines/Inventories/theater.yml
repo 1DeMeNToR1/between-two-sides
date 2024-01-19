@@ -59,7 +59,7 @@
     ClothingHeadHatHorns: 2
     ClothingHeadHatTacticalMaidHeadbandWhite: 2
     ClothingHeadHatTacticalMaidHeadbandBlack: 2
-    ClothingHeadHatTacticalMaidHeadbandGreen: 2
+    ClothingHeadHatTacticalMaidHeadbandGreen: 2 
     ClothingHeadHatTacticalMaidHeadbandBlue: 2
     ClothingHandsGlovesYsatyu: 1 # Одежда усатого и моряка
     ClothingHeadYsatyu: 1
@@ -71,7 +71,6 @@
     ClothingMaskMoryak: 1
     ClothingShoesMoryak: 1
     ClothingUniformJumpsuitMoryak: 1 # Конец
-
 
   emaggedInventory:
     ClothingShoesBling: 1
