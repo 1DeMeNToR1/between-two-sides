@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Hyenh and EmoGarbage404",
+  "states": [
+    {
+      "name": "banana"
+    },
+    {
+        "name": "honkpr",
+        "delays": [
+          [
+            0.3,
+            0.3,
+            0.3,
+            0.3,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ]
+        ]
+      },
+    {
+      "name": "banana-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "banana-inhand-right",
+      "directions": 4
+    }
+  ]
+}
