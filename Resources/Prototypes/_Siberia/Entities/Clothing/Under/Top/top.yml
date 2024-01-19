@@ -1,0 +1,55 @@
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopWhiteM
+  name: white male tank
+  description: Mr White!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/whitemale.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/whitemale.rsi
+    
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopWhiteF
+  name: white female top
+  description: Mr White!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/whitefemale.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/whitefemale.rsi
+    
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopShirtIan
+  name: Ian Shirt
+  description: Love me, wooof!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/ian.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/ian.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopUk
+  name: uk female top
+  description: DON'T GET STROPPY!!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/uk.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/uk.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopNeko
+  name: neko top
+  description: NYA~~~!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/nekoblack.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/nekoblack.rsi
+    

@@ -32,6 +32,9 @@
     - map: ["enum.HumanoidVisualLayers.RFoot"]
     - map: ["enum.HumanoidVisualLayers.LHand"]
     - map: ["enum.HumanoidVisualLayers.RHand"]
+    - map: [ "socks" ]
+    - map: [ "bottom" ]
+    - map: [ "top" ]
     - map: [ "gloves" ]
     - map: [ "shoes" ]
     - map: [ "ears" ]
@@ -340,6 +343,9 @@
     - map: ["enum.HumanoidVisualLayers.RFoot"]
     - map: ["enum.HumanoidVisualLayers.LHand"]
     - map: ["enum.HumanoidVisualLayers.RHand"]
+    - map: [ "socks" ]
+    - map: [ "bottom" ]
+    - map: [ "top" ]
     - map: ["enum.HumanoidVisualLayers.Handcuffs"]
       color: "#ffffff"
       sprite: Objects/Misc/handcuffs.rsi

@@ -1,0 +1,23 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: ClothingTopBase
+  components:
+  - type: Clothing
+    slots: [ top ]
+  - type: Sprite
+    state: icon
+  - type: Tag
+    tags:
+    - Top
+
+- type: entity
+  abstract: true
+  parent: ClothingTopBase
+  id: ClothingTopBaseButcherable
+  components:
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: MaterialCloth1
+      amount: 1
