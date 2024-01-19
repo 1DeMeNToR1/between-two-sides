@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: Book_XenArTermins
+  name: Ксеноархеология в терминах
+  suffix: library salvage
+  description: 
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book4
+  - type: Paper
+    content: book-xeno-in-terms

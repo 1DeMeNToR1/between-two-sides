@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: BookXras
+  name: Я - Храс Ваасбу. Палата без пациента. 
+  suffix: library salvage
+  description: Псевдодокументальная биография детектива Храса Ваасбу. Автор - Роза Умиротворения
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_detective
+  - type: Paper
+    content: book-detective-xras

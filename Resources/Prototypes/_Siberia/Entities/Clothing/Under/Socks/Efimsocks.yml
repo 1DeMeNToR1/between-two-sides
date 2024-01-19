@@ -1,0 +1,9 @@
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksNeko
+  name: neko socks
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/neko.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/neko.rsi

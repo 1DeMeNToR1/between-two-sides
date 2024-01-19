@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: Clothingrobocoat
+  name: робохалат
+  description: Стильный халат робототехника. Идеален для работы с машинами
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/robocoat.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/robocoat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.75

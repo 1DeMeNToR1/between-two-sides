@@ -562,10 +562,10 @@
 
 - type: Tag
   id: Goat
-  
+
 - type: Tag
   id: GPS
-  
+
 - type: Tag
   id: Grenade
 
@@ -791,7 +791,7 @@
   id: Matchstick
 
 - type: Tag
-  id: Mayo  
+  id: Mayo
 
 - type: Tag
   id: Meat
@@ -1209,3 +1209,11 @@
   id: WriteIgnoreStamps
 
 # PUT YOUR TAGS IN ALPHABETICAL ORDER
+- type: Tag
+  id: Socks
+
+- type: Tag
+  id: Top
+
+- type: Tag
+  id: Bottom

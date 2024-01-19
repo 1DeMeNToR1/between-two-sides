@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: FunBrig
+  name: Гаупвахта. Как быть ровным зэком. Гайд.
+  suffix: library salvage
+  description: Руководство о том, как быть ровным зэком. Обложка этой книги достаточно потерта.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book1
+  - type: Paper
+    content: book-fun-brig

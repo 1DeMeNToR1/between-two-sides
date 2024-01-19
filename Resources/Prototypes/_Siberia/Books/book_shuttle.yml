@@ -1,0 +1,82 @@
+# ---- Library Salvage Fills ----
+
+- type: entity 
+  parent: BookBase
+  id: ShuttleControl-1
+  name: |
+   Продвинутые полеты и обслуживание шаттлов.
+   Том 1
+  suffix: library salvage
+  description: Книга любителей шаттлов и глубокого космоса. Содержит главы по начальному управлению шаттлом и стыковке. Авторство Авроры Хелсинг.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book1
+  - type: Paper
+    content: book-shuttle-1
+      
+- type: entity 
+  parent: BookBase
+  id: ShuttleControl-2
+  name: |
+   Продвинутые полеты и обслуживание шаттлов.
+   Том 2
+  suffix: library salvage
+  description: Книга любителей шаттлов и глубокого космоса. Содержит главы по продвинутому управлению шаттлом и тонкостям управления. Авторство Авроры Хелсинг.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book1
+  - type: Paper
+    content: book-shuttle-2
+      
+- type: entity 
+  parent: BookBase
+  id: ShuttleControl-3
+  name: |
+   Продвинутые полеты и обслуживание шаттлов.
+   Том 3
+  suffix: library salvage
+  description: Книга любителей шаттлов и глубокого космоса. Содержит главу по работе с радаром и системой опознавания. Авторство Авроры Хелсинг.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book1
+  - type: Paper
+    content: book-shuttle-3
+      
+- type: entity 
+  parent: BookBase
+  id: ShuttleControl-4
+  name: |
+   Продвинутые полеты и обслуживание шаттлов.
+   Том 4
+  suffix: library salvage
+  description: Книга любителей шаттлов и глубокого космоса. Содержит главу по обслуживанию шаттла. Авторство Авроры Хелсинг.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book1
+  - type: Paper
+    content: book-shuttle-4
+
+- type: entity 
+  parent: BookBase
+  id: ShuttleControl-5
+  name: |
+   Продвинутые полеты и обслуживание шаттлов.
+   Том 5
+  suffix: library salvage
+  description: Книга любителей шаттлов и глубокого космоса. Содержит главу по этике космоса и шаттлов. Авторство Авроры Хелсинг.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book1
+  - type: Paper
+    content: book-shuttle-5
+# ---- End Library Salvage Fills ----

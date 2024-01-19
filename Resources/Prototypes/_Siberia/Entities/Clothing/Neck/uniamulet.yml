@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckUniAmulet
+  name: ожерелье из клыков
+  description: от него веет ужасом
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Neck/uniamulet.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Neck/uniamulet.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1.4

@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: BookXen4
+  name: Лекции по ксеноархеологии. Часть 4.
+  suffix: library salvage
+  description: О стимуляции артефактов.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_names
+  - type: Paper
+    content: book-xen-4

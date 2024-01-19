@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: BookXen2
+  name: Лекции по ксеноархеологии. Часть 2. 
+  suffix: library salvage
+  description: Реакции малой глубины и их удержание.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_names
+  - type: Paper
+    content: book-xen-2

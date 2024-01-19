@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: BookCloneGuide
+  name: Клонирование. Том 1.
+  suffix: library salvage
+  description: Руководство по клонированию.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_medical
+  - type: Paper
+    content: book-clone-guide

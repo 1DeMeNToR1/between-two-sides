@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: BookCapacity
+  name: Объем
+  suffix: library salvage
+  description: На заднем плане обложки книги виден большой ангар, на переднем же плане виден человек в капитанском костюме.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_aurora
+  - type: Paper
+    content: book-capacity

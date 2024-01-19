@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: Clothingstratuzzzdress
+  name: выходное платье
+  description: Вечернее платье 2XL.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/stratuzzzdress.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/stratuzzzdress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformblackcorset
+  name: чёрный корсет
+  description: "Ты думаешь, что у тебя выйдет лучше без меня..."
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/blackcorset.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/blackcorset.rsi

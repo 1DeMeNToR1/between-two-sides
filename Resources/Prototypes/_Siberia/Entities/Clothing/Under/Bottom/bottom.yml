@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingBottomBaseButcherable
+  id: ClothingUnderBottomWhiteU
+  name: white unisex pants
+  description: Mr White!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Bottom/whiteunisex.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Bottom/whiteunisex.rsi

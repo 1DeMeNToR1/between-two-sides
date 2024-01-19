@@ -1,0 +1,41 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: Clothingxenopriestcloak
+  name: хитиновая роба Ксено-жреца
+  description: Вас точно не примут за ксено?
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/xeno-priest-cloak.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/xeno-priest-cloak.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: Clothingxenopriesthelmet
+  name: головной паразит Ксено-жреца
+  description: посадивший себе на голову этого паразита приближает ужасные события
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/xeno-priest-helmet.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/xeno-priest-helmet.rsi
+  - type: IngestionBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.9
+        Heat: 0.8
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: Clothingxenopriestboots
+  name: передвижной паразит Ксено-жреца
+  description: вставьте ноги и ползите.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/xeno-priest-boots.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/xeno-priest-boots.rsi
+  - type: NoSlip

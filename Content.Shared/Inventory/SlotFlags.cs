@@ -26,5 +26,8 @@ public enum SlotFlags
     LEGS = 1 << 13,
     FEET = 1 << 14,
     SUITSTORAGE = 1 << 15,
+    SOCKS = 1 << 7,
+    TOP = 1 << 7,
+    BOTTOM = 1 << 7,
     All = ~NONE,
 }

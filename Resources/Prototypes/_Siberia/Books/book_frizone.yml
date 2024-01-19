@@ -1,0 +1,68 @@
+# ---- Library Salvage Fills ----
+
+- type: entity 
+  parent: BookBase
+  id: BookFrizone1
+  name: Том 1 - Дышим мы фрезоном, а мечтаем, о плазме
+  suffix: library salvage
+  description: Базовое описание атмоса
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_world
+  - type: Paper
+    content: book-frizone-1
+
+# ---- End Library Salvage Fills ----
+# ---- Library Salvage Fills ----
+
+- type: entity 
+  parent: BookBase
+  id: BookFrizone2
+  name: Том 2 – Дышим мы фрезоном, а мечтаем о плазме - практика 
+  suffix: library salvage
+  description: Описание возможных практических случаев и способов их решения
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_world
+  - type: Paper
+    content: book-frizone-2
+
+# ---- End Library Salvage Fills ----
+# ---- Library Salvage Fills ----
+
+- type: entity 
+  parent: BookBase
+  id: BookFrizone3
+  name: Том 3 - Дышим мы фрезоном, а мечтаем о плазме – Скучная часть
+  suffix: library salvage
+  description: Поймет далеко не каждый
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_world
+  - type: Paper
+    content: book-frizone-3
+# ---- End Library Salvage Fills ----
+
+# ---- Library Salvage Fills ----
+
+- type: entity 
+  parent: BookBase
+  id: BookFrizone4
+  name: Том 4 - Дышим мы фрезоном, а мечтаем о плазме – запретный плод
+  suffix: library salvage
+  description: это точно не безопасно!
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_world
+  - type: Paper
+    content: book-frizone-4  
+
+# ---- End Library Salvage Fills ----

@@ -1,0 +1,32 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: Clothinggetsockredstripe
+  name: геты с носком
+  description: простые и удобные.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Shoes/getsockredstripe.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Shoes/getsockredstripe.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: Clothinggetwoodblackstripe
+  name: геты
+  description: простые и удобные.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Shoes/getwoodblackstripe.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Shoes/getwoodblackstripe.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: Clothinggetwoodredstripe
+  name: геты с темного дерева
+  description: простые и удобные.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Shoes/getwoodredstripe.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Shoes/getwoodredstripe.rsi

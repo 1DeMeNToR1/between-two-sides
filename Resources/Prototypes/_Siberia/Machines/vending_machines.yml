@@ -1,0 +1,94 @@
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineUnder
+  name: НижнеМат
+  description: Долой трусы, свободу п*ске
+  components:
+  - type: VendingMachine
+    pack: UnderMateInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: Advertise
+    pack: ClothesMateAds
+  - type: Speech
+  - type: Tag
+    tags:
+      - DroneUsable
+  - type: Sprite
+    sprite: Siberia/Structures/Machines/VendingMachines/under.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#3db83b"
+
+- type: vendingMachineInventory
+  id: UnderMateInventory
+  startingInventory:
+    ClothingUnderTopWhiteTShirt: 5
+    ClothingUnderBottomBlackPanties: 5
+    ClothingUnderBottomWhitePanties: 5
+    ClothingUnderTopTactic: 5
+    ClothingUnderBottomTactic: 5
+    ClothingUnderTopSyndicate: 5
+    ClothingUnderBottomSyndicate: 5
+    ClothingUnderBottomHos: 5
+    ClothingUnderBottomTiger: 5
+    ClothingUnderBottomBatya: 5
+    ClothingUnderBottomFlower: 5
+    ClothingUnderBottomPinkMan: 5
+    ClothingUnderBottomPantaloons: 5
+    ClothingUnderTopPink: 5
+    ClothingUnderBottomPink: 5
+    ClothingUnderTopDisco: 5
+    ClothingUnderBottomDisco: 5
+    ClothingUnderTopTigerFemale: 5
+    ClothingUnderBottomTigerFemale: 5
+    ClothingUnderTopSanta: 5
+    ClothingUnderBottomSanta: 5
+    ClothingUnderTopGalaxy: 5
+    ClothingUnderBottomGalaxy: 5
+    ClothingUnderTopNeko: 5
+    ClothingUnderBottomNeko: 5
+    ClothingUnderSocksNeko: 5
+    ClothingUniformJustFun: 2
+    ClothingUnderSocksBlack: 5
+    ClothingUnderSocksBlue: 5
+    ClothingUnderSocksBrown: 5
+    ClothingUnderSocksGreen: 5
+    ClothingUnderSocksMime: 5
+    ClothingUnderSocksPink: 5
+    ClothingUnderSocksPurple: 5
+    ClothingUnderSocksRed: 5
+    ClothingUnderSocksWhitev: 5
+    ClothingUnderStockingsBlue: 5
+    ClothingUnderStockingsBrown: 5
+    ClothingUnderStockingsFlesh: 5
+    ClothingUnderStockingsGreen: 5
+    ClothingUnderStockingsMesh: 5
+    ClothingUnderStockingsRed: 5
+    ClothingUnderStockingsWhite: 5
+    ClothingUnderStockingsWhiteBlack: 5
+    ClothingUnderTightsBlack: 5
+    ClothingUnderTightsBlue: 5
+    ClothingUnderTightsBrown: 5
+    ClothingUnderTightsFlesh: 5
+    ClothingUnderTightsGreen: 5
+    ClothingUnderTightsRed: 5
+    ClothingUnderTightsWhite: 5
+    ClothingBottomZebra: 5
+    ClothingBottomElephant: 5
+    ClothingBottomLether: 5
+    ClothingBottomMice: 5
+    ClothingBottomElephant778: 5
+    ClothingBottomSailor: 5
+    ClothingBottomSailorSpecial: 5

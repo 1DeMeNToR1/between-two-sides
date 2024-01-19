@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: OlegKadiua
+  name: Ольгерд и Катя пьеса
+  suffix: library salvage
+  description: пьеса в трех актах
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book_detective
+  - type: Paper
+    content: book-kadiua

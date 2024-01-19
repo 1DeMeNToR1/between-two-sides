@@ -1,0 +1,31 @@
+- type: entity 
+  parent: BookBase
+  id: BookDamGuide1
+  name: |
+   Пособие по эксплуатации генератора
+   на антиматериальном топливе. Том 1.
+  suffix: library salvage
+  description: Руководство по генератору на антиматериальном топливе (ДАМ).
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_struck
+  - type: Paper
+    content: book-dam-guide-1
+
+- type: entity 
+  parent: BookBase
+  id: BookDamGuide2
+  name: |
+   Пособие по эксплуатации генератора
+   на антиматериальном топливе. Том 2.
+  suffix: library salvage
+  description: Руководство по генератору на антиматериальном топливе (ДАМ).
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_struck
+  - type: Paper
+    content: book-dam-guide-2
