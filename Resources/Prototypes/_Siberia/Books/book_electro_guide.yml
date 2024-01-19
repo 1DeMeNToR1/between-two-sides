@@ -1,0 +1,55 @@
+- type: entity 
+  parent: BookBase
+  id: BookElectroGuide1
+  name: Руководство по энергоснабжению станции. Том 1.
+  suffix: library salvage
+  description: Руководство по энергоснабжению станции.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_struck
+  - type: Paper
+    content: book-electro-guide-1
+
+- type: entity 
+  parent: BookBase
+  id: BookElectroGuide2
+  name: Руководство по энергоснабжению станции. Том 2.
+  suffix: library salvage
+  description: Руководство по энергоснабжению станции.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_struck
+  - type: Paper
+    content: book-electro-guide-2
+
+- type: entity 
+  parent: BookBase
+  id: BookElectroGuideNewbie
+  name: Энергосеть для начинающих.
+  suffix: library salvage
+  description: Руководство по энергоснабжению станции. на обложке изображен технический ассистент в сварочной маске, показывающий палец вверх.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_struck
+  - type: Paper
+    content: book-electro-guide-newbie
+
+- type: entity 
+  parent: BookBase
+  id: BookElectroGuideSolar
+  name: Солнечные панели для чайников
+  suffix: library salvage
+  description: Руководство по солнечным панелям. На обложке виднеется огромная станция, которая работает на солнечных панелях.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_struck
+  - type: Paper
+    content: book-electro-guide-solar

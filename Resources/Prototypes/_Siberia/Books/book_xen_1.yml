@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: BookXen1
+  name: Лекции по ксеноархеологии. Часть 1.
+  suffix: library salvage
+  description: Фундаментальное понимание артефакта. Техника безопасности при работе с артефактами.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_names
+  - type: Paper
+    content: book-xen-1

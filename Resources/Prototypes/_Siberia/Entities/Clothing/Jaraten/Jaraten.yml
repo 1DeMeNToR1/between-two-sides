@@ -1,0 +1,234 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: Clothinghottop
+  name: горячий прикид
+  description: Вот это женщина...
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/hottop.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/hottop.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: Clothingjaratendress
+  name: аккуратное платье
+  description: Выглядит элегантно!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/jaratendress.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/jaratendress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Clothingjaratensuit
+  name: потрёпанный костюм
+  description: Этот парень повидал всякое дерьмо...
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/jaratensuit.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/jaratensuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Clothingblacktshirtgraypants
+  name: чёрная футболка с серыми штанами
+  description: мои глаза на уровне головы, а не плеча! извращенец...
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Black_t-shirt_with_gray_pants.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Black_t-shirt_with_gray_pants.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: Clothingukatarobe
+  name: юката
+  description: нежная и приятная на ощупь юката, красивый узор и сладкий запах вишни уносят воспоминания к далеким эпохам.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Robe.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Robe.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingWomenSportSuit
+  name: женский спортивный костюм
+  description: Облегает!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Sport_suit.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Sport_suit.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingInsulatedCape
+  name: утепленная накидка
+  description: Когда-то согревала воинов от лютого мороза, а теперь пылится у тебя в шкафу.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Insulated_cape.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Insulated_cape.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Clothingorangepants
+  name: свободные нейлоновые штаны
+  description: влезут даже самые крепкие бедра
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/pants.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/pants.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Clothingwomanbody
+  name: полупрозрачный боди
+  description: самое то для занятия активным спортом
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/body.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/body.rsi
+
+- type: entity
+  parent: ClothingShoesBase
+  id: Clothingmimesocks
+  name: мимские носочки
+  description: "..."
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/MimeSocks.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/MimeSocks.rsi
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingpinkMeson
+  name: розовые мезонки
+  description: этикетка "для девочек".
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/pinkMeson.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/pinkMeson.rsi
+  - type: VisionCorrection
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingscientistGlasses
+  name: очки
+  description: наверное, помогут с плохим зрением.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/scientistGlasses.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/scientistGlasses.rsi
+  - type: VisionCorrection
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Clothingcyan_turtleneck
+  name: бирюзовая водолазка с черными брюками
+  description: выглядит элегантно
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/cyan_turtleneck.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/cyan_turtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Clothingjumpsuit_with_blue_shirt
+  name: комбинезон с голубой рубашкой
+  description: "звуки рабочего класса"
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/jumpsuit_with_blue_shirt.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/jumpsuit_with_blue_shirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Clothingkunoichi_dress
+  name: платье куноити
+  description: красивое и впечатляющее
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/kunoichi_dress.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/kunoichi_dress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Clothingsky_blue_set
+  name: небесная одежда
+  description: бело-голубая мечта
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/sky_blue_set.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/sky_blue_set.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: Clothingyellow_turtleneck
+  name: желтая водолазка с коричневыми брюками
+  description: выглядит элегантно
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/yellow_turtleneck.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/yellow_turtleneck.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingBlueWinterCoat
+  name: теплая шубка
+  description: греет тело и душу.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/BlueWinterCoat.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/BlueWinterCoat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: Clothingred_pajamas
+  name: пижамная накидка
+  description: греет тело и душу.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/red_pajamas.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/red_pajamas.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingSweaterWithDolphin
+  name: свитер с дельфином
+  description: уносит в далекое детство.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/SweaterWithDolphin.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/SweaterWithDolphin.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingyellowCloak
+  name: желтый плащ
+  description: этикетка "бам-бам"
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/yellowCloak.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/yellowCloak.rsi

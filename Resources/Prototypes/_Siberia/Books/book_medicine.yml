@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: BookOfMedicine1
+  name: Справочник первой помощи.
+  suffix: library salvage
+  description: Справочник первой помощи. Руководство для интерна.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_medical
+  - type: Paper
+    content: book-medicine-guide-1

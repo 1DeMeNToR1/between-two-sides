@@ -1,0 +1,17 @@
+- type: entity 
+  parent: BookBase
+  id: BookUnathErotic1
+  name: |
+   Похотливая унатхская дева.
+   Книга 1 (18+, Горячий текст).
+  suffix: library salvage
+  description: |
+   На обложке видна полуобнаженная унатхская дева.
+   Виднеется выделенное предупреждение о возрастном ограничении
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_rufus
+  - type: Paper
+    content: book-unath-erotic-1

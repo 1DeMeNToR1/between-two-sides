@@ -1,0 +1,42 @@
+- type: entity 
+  parent: BookBase
+  id: SunRider1
+  name: Sunrider Том 1 глава 1
+  suffix: library salvage
+  description: Книга про капитана Кайто Шилдса и его войну против ПАКТ.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book1
+  - type: Paper
+    content: book-sunrider-1
+
+
+- type: entity 
+  parent: BookBase
+  id: SunRider2
+  name: Sunrider Том 1 глава 2
+  suffix: library salvage
+  description: Книга про капитана Кайто Шилдса и его войну против ПАКТ.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book1
+  - type: Paper
+    content: book-sunrider-2
+
+- type: entity 
+  parent: BookBase
+  id: SunRider3
+  name: Sunrider Том 1 глава 3
+  suffix: library salvage
+  description: Книга про капитана Кайто Шилдса и его войну против ПАКТ.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: book1
+  - type: Paper
+    content: book-sunrider-3

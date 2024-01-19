@@ -1,0 +1,31 @@
+- type: entity 
+  parent: BookBase
+  id: BookCancer1
+  name: |
+   Хворь раковая - определение и исцеление.
+   Том первый.
+  suffix: library salvage
+  description: На обложке книги изображен крест, а также её название большими буквами.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_medical
+  - type: Paper
+    content: book-cancer-guide-1
+
+- type: entity 
+  parent: BookBase
+  id: BookCancer2
+  name: | 
+   Хворь раковая - определение и исцеление.
+   Том второй.
+  suffix: library salvage
+  description: На обложке книги изображен крест, а также её название большими буквами.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_medical
+  - type: Paper
+    content: book-cancer-guide-2

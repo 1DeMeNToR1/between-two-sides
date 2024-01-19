@@ -1,0 +1,27 @@
+- type: entity 
+  parent: BookBase
+  id: Book1Airlock1
+  name: Шлюзы и с чем их едят. Том 1.
+  suffix: library salvage
+  description: Шлюзы и с чем их едят. На книге изображен стеклянный шлюз мостика, за которым стоит черная фигура.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_scmmd
+  - type: Paper
+    content: book-airlock-guide-1
+
+- type: entity 
+  parent: BookBase
+  id: Book1Airlock2
+  name: Шлюзы и с чем их едят. Том 2.
+  suffix: library salvage
+  description: Шлюзы и с чем их едят. На книге изображен стеклянный шлюз мостика, за которым стоит черная фигура.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_scmmd
+  - type: Paper
+    content: book-airlock-guide-2

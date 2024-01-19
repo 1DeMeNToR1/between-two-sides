@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: BookRiteg
+  name: Радиоизотопный термоэлектрический генератор
+  suffix: library salvage
+  description: Пособник по использованию РИТЭГа
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_struck
+  - type: Paper
+    content: book-riteg

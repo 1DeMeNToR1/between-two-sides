@@ -1,0 +1,15 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckFoxTail
+  name: лисий хвост
+  description: боже... куда он крепится?!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/foxtail.rsi
+    #отвечает за спрайт в руке
+  # - type: Clothing
+    # sprite: Corvax/Sponsor/Clothing/Neck/Cloaks/gamer.rsi
+    #отвечает за спрайт на персонаже, если ранее указан был тип спрайт, то он будет на персе.
+  # - type: AddAccentClothing
+    # accent: OwOAccent
+

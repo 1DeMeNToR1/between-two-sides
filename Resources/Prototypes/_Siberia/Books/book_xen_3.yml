@@ -1,0 +1,13 @@
+- type: entity 
+  parent: BookBase
+  id: BookXen3
+  name: Лекции по ксеноархеологии. Часть 3. 
+  suffix: library salvage
+  description: Реакции большой глубины и их удержание. Отдельные категории реакций
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/authorbooks.rsi
+    layers:
+    - state: book_names
+  - type: Paper
+    content: book-xen-3

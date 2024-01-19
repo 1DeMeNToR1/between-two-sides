@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: blackpantise
+  name: черное нижнее белье
+  description: самое страшное женское оружие
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpsuit/womanblack.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Jumpsuit/womanblack.rsi
