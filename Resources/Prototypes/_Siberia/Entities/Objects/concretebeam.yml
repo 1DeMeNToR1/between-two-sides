@@ -1,0 +1,156 @@
+- type: entity
+  id: ConcreteRightBeam1Jaraten
+  name: Бетонная балка.
+  description: Помогает удержать потолок на своём законном месте.
+  parent: Concrete2BeamJaraten
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Construction/concretebeam.rsi
+    state: beam1_right
+    drawdepth: Overdoors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+
+- type: entity
+  id: ConcreteLeftBeam1Jaraten
+  name: Бетонная балка.
+  description: Помогает удержать потолок на своём законном месте.
+  parent: Concrete2BeamJaraten
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Construction/concretebeam.rsi
+    state: beam1_left
+    drawdepth: Overdoors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+
+- type: entity
+  id: Concrete1BeamJaraten
+  name: Бетонные балки.
+  description: Помогает удержать потолок на своём законном месте.
+  parent: Concrete2BeamJaraten
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Construction/concretebeam.rsi
+    state: beam
+    drawdepth: Overdoors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+
+- type: entity
+  id: Concrete2BeamJaraten
+  name: Бетонная стена.
+  parent: BaseStructure
+  description: Крепкая бетонная стена.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Construction/concretebeam.rsi
+    state: beam2
+    drawdepth: Overdoors
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StructuralMetallic
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 3
+
+- type: entity
+  id: ConcreteRightBeam2Jaraten
+  name: Бетонная балка.
+  description: Помогает удержать потолок на своём законном месте.
+  parent: Concrete2BeamJaraten
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Construction/concretebeam.rsi
+    state: beam2_right
+    drawdepth: Overdoors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+
+- type: entity
+  id: ConcreteLeftBeam2Jaraten
+  name: Бетонная балка.
+  description: Помогает удержать потолок на своём законном месте.
+  parent: Concrete2BeamJaraten
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Construction/concretebeam.rsi
+    state: beam2_left
+    drawdepth: Overdoors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000

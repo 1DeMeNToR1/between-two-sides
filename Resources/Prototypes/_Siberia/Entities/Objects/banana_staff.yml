@@ -1,0 +1,55 @@
+- type: entity
+  name: бананиумовый посох
+  parent: WeaponStaffBase
+  id: StaffBanana
+  description: великая сила, дарованная хонкоматерью.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/bananastaff.rsi
+    state: banana
+  - type: Item
+    heldPrefix: banana
+  - type: Gun
+    soundGunshot:
+    fireRate: 2
+    path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
+  - type: BasicEntityAmmoProvider
+    proto: Honkpr
+    capacity: 10
+    count: 10
+
+- type: entity
+  name: волшебная кожура
+  id: Honkpr
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/bananastaff.rsi
+    state: honkpr
+  - type: StepTrigger
+    intersectRatio: 0.2
+  - type: CollisionWake
+    enabled: false
+  - type: Physics
+    bodyType: Dynamic
+  - type: Slippery
+    paralyzeTime: 4
+  - type: TimedDespawn
+    lifetime: 4
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+        - SlipLayer
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        density: 30
+        mask:
+        - ItemMask
+
+

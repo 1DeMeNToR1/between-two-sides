@@ -28,11 +28,8 @@
     ClothingHeadHatShrineMaidenWig: 2
     ClothingOuterSuitShrineMaiden: 2
     Gohei: 2
-<<<<<<< HEAD:Resources/Prototypes/_Siberia/VendingMachines/Inventories/theater.yml
-=======
     ClothingHeadHatRedRacoon: 2
     ClothingOuterRedRacoon: 2
->>>>>>> 0e0c3fdaa290760f966e360627768cf7c655c2b7:Resources/Prototypes/Catalog/VendingMachines/Inventories/theater.yml
     ClothingHeadPaperSack: 2
     ClothingHeadPaperSackSmile: 2
     ClothingEyesBlindfold: 1
@@ -74,8 +71,7 @@
     ClothingMaskMoryak: 1
     ClothingShoesMoryak: 1
     ClothingUniformJumpsuitMoryak: 1 # Конец
-    
-    
+
   emaggedInventory:
     ClothingShoesBling: 1
     ClothingOuterDogi: 1
