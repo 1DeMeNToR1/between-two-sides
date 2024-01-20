@@ -16,8 +16,8 @@
   maxAge: 45
   youngAge: 25
   oldAge: 40
-  
-  
+
+
 - type: speciesBaseSprites
   id: MobResomiSprites
   sprites:

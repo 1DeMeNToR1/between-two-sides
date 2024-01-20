@@ -81,7 +81,7 @@
     spawned:
     - id: FoodMeatChicken
       amount: 3
-    - type: ResomiAccent
+  - type: ResomiAccent
   - type: Speech
     speechSounds: Lizard # change it!
     speechVerb: Resomi
