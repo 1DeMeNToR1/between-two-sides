@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingSiberiaNeckScarfStripedBrown
+  name: полосатый коричневый шарф
+  description: Стильный шарфик для поношенного костюма
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Neck/Scarfs/brownscarf.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Neck/Scarfs/brownscarf.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleCowboy
+  name: старая мантия
+  description: Кажется она уже давно изношена...
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Neck/Scarfs/cowboy.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Neck/Scarfs/cowboy.rsi

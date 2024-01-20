@@ -1,14 +1,4 @@
 - type: marking
-  id: XenoTail
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
-  sponsorOnly: false # Corvax-Sponsors
-  sprites:
-    - sprite: Siberia/Mobs/Customization/spesstail.rsi
-      state: xenotail
-
-- type: marking
   id: DragonHorn
   bodyPart: HeadTop
   markingCategory: HeadTop
@@ -17,26 +7,6 @@
   sprites:
     - sprite: Siberia/Mobs/Customization/dragonhorn.rsi
       state: dragon
-
-- type: marking
-  id: DragonTail
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
-  sponsorOnly: false # Corvax-Sponsors
-  sprites:
-    - sprite: Siberia/Mobs/Customization/dragontail.rsi
-      state: dragontail
-
-- type: marking
-  id: DemonHorn1
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
-  sponsorOnly: false # Corvax-Sponsors
-  sprites:
-    - sprite: Siberia/Mobs/Customization/demonhorn1.rsi
-      state: demon1
 
 - type: marking
   id: DemonHorn2
@@ -59,26 +29,6 @@
       state: horn_single-side-horn
 
 - type: marking
-  id: Horn1
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
-  sponsorOnly: false # Corvax-Sponsors
-  sprites:
-    - sprite: Siberia/Mobs/Customization/horn1.rsi
-      state: horn1_chorn_chub
-
-- type: marking
-  id: Horn2
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
-  sponsorOnly: false # Corvax-Sponsors
-  sprites:
-    - sprite: Siberia/Mobs/Customization/horn2.rsi
-      state: horn2_synthhorns_curled
-
-- type: marking
   id: Horn3
   bodyPart: HeadTop
   markingCategory: HeadTop
@@ -87,16 +37,6 @@
   sprites:
     - sprite: Siberia/Mobs/Customization/horn3.rsi
       state: horn3_synthhorns_plain
-
-- type: marking
-  id: ChimeraTail
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
-  sponsorOnly: false # Corvax-Sponsors
-  sprites:
-    - sprite: Siberia/Mobs/Customization/chimera.rsi
-      state: claw_molenar-deathclaw
 
 - type: marking
   id: TifTail

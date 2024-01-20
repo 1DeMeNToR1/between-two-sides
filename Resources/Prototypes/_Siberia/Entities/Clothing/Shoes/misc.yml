@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesMaidoFeet
+  name: чёрные туфли горничной с чулками
+  description: Чёрные туфли с тёмными чулками от набора горничной
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Shoes/Misc/blackmaidofeet.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Shoes/Misc/blackmaidofeet.rsi
+  - type: NoSlip

@@ -1,0 +1,65 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadAreopagite
+  name: шляпа охотника на ведьм
+  description: Не защищает от нечисти в виде АВД
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/areopagite.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/areopagite.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatFezMantis
+  name: бурятская шапка
+  description: У неё что-то сзади... Что это?
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/mantis_fez.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/mantis_fez.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetKendoMen
+  name: мэн
+  description: Шлем для Кэндо. Кажется он сделан из картона...
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Helmets/men.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Helmets/men.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadBlackFedora
+  name: чёрная федора
+  description: Федора для костюма
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/blackfedora.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/blackfedora.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadBlackMaido
+  name: чепец горничной
+  description: Запрещено одевать мужчинам
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/blackmaidohead.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/blackmaidohead.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretQuartm
+  name: берет Квартирмейстера
+  description: Прекрасный берет, точно не напоминающий вам о своём соседе из Службы Безопасности. Впрочем, это не лишает данного берета своей красоты и ощущения спокойствия - одев его лишь раз, вы не захотите его снять.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/QMberet.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/QMberet.rsi

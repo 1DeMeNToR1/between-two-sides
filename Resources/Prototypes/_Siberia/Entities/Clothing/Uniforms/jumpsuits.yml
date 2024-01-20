@@ -107,9 +107,9 @@
   description: Удобная зелёная толстовка.
   components:
     - type: Sprite
-      sprite: Siberia/Clothing/Jaraten/New/green_sweatshirt.rsi
+      sprite: Siberia/Clothing/turtleneck/green_sweatshirt.rsi
     - type: Clothing
-      sprite: Siberia/Clothing/Jaraten/New/green_sweatshirt.rsi
+      sprite: Siberia/Clothing/turtleneck/green_sweatshirt.rsi
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -118,9 +118,9 @@
   description: Удобная коричневая толстовка с белыми рукавами.
   components:
     - type: Sprite
-      sprite: Siberia/Clothing/Jaraten/New/Brown_sweatshirt.rsi
+      sprite: Siberia/Clothing/turtleneck/Brown_sweatshirt.rsi
     - type: Clothing
-      sprite: Siberia/Clothing/Jaraten/New/Brown_sweatshirt.rsi
+      sprite: Siberia/Clothing/turtleneck/Brown_sweatshirt.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -129,9 +129,9 @@
   description: свитер из тонкого трикотажа с высоким воротом.
   components:
     - type: Sprite
-      sprite: Siberia/Clothing/Jaraten/New/beige_turtleneck.rsi
+      sprite: Siberia/Clothing/turtleneck/beige_turtleneck.rsi
     - type: Clothing
-      sprite: Siberia/Clothing/Jaraten/New/beige_turtleneck.rsi
+      sprite: Siberia/Clothing/turtleneck/beige_turtleneck.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -140,9 +140,9 @@
   description: свитер из тонкого трикотажа с высоким воротом.
   components:
     - type: Sprite
-      sprite: Siberia/Clothing/Jaraten/New/red_turtleneck.rsi
+      sprite: Siberia/Clothing/turtleneck/red_turtleneck.rsi
     - type: Clothing
-      sprite: Siberia/Clothing/Jaraten/New/red_turtleneck.rsi
+      sprite: Siberia/Clothing/turtleneck/red_turtleneck.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -151,9 +151,9 @@
   description: свитер из тонкого трикотажа с высоким воротом.
   components:
     - type: Sprite
-      sprite: Siberia/Clothing/Jaraten/New/purple_turtleneck.rsi
+      sprite: Siberia/Clothing/turtleneck/purple_turtleneck.rsi
     - type: Clothing
-      sprite: Siberia/Clothing/Jaraten/New/purple_turtleneck.rsi
+      sprite: Siberia/Clothing/turtleneck/purple_turtleneck.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -162,9 +162,9 @@
   description: свитер из тонкого трикотажа с высоким воротом.
   components:
     - type: Sprite
-      sprite: Siberia/Clothing/Jaraten/New/white_turtleneck.rsi
+      sprite: Siberia/Clothing/turtleneck/white_turtleneck.rsi
     - type: Clothing
-      sprite: Siberia/Clothing/Jaraten/New/white_turtleneck.rsi
+      sprite: Siberia/Clothing/turtleneck/white_turtleneck.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -173,9 +173,9 @@
   description: мягкая зелёная кофта под толстым комбинезоном на лямках.
   components:
     - type: Sprite
-      sprite: Siberia/Clothing/Jaraten/New/green_jumpsuit.rsi
+      sprite: Siberia/Clothing/turtleneck/green_jumpsuit.rsi
     - type: Clothing
-      sprite: Siberia/Clothing/Jaraten/New/green_jumpsuit.rsi
+      sprite: Siberia/Clothing/turtleneck/green_jumpsuit.rsi
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -184,7 +184,7 @@
   description: Грубая шинель чёрного цвета. Выглядит устрашающе.
   components:
     - type: Sprite
-      sprite: Siberia/Clothing/Jaraten/New/overcoat.rsi
+      sprite: Siberia/Clothing/turtleneck/overcoat.rsi
     - type: Clothing
-      sprite: Siberia/Clothing/Jaraten/New/overcoat.rsi
+      sprite: Siberia/Clothing/turtleneck/overcoat.rsi
 

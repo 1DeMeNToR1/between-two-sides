@@ -1,0 +1,210 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitSecurityWarden
+  name: скафандр смотрителя
+  description: Дорогой скафандр разработанный для защиты не только от космического давления, но и от большинства видов повреждений
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/OuterClothing/Hardsuits/warden.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/OuterClothing/Hardsuits/warden.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 10000
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.8
+        Radiation: 0.25
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitSecurityWarden
+
+# - type: entity
+  # parent: ClothingOuterHardsuitBase
+  # id: ClothingOuterHardsuitSalvageUpgraded
+  # name: скафандр "Монолит"
+  # description: Улучшенный скафандр утилизатора со встроенным джетпаком и сервоприводами, облегчающими движение. Дополнительные пластины пластали слегка увеличивают защиту от космических мудаков. Как вы вобще собрали этот кусок хлама?
+  # components:
+  # - type: InputMover
+    # toParent: true
+  # - type: MovementSpeedModifier
+    # weightlessAcceleration: 1
+    # weightlessFriction: 0.3
+    # weightlessModifier: 1.2
+  # - type: UserInterface
+    # interfaces:
+      # - key: enum.SharedGasTankUiKey.Key
+        # type: GasTankBoundUserInterface
+  # - type: GasTank
+    # toggleAction:
+      # name: action-name-internals-toggle
+      # description: action-description-internals-toggle
+      # icon:
+        # sprite: Interface/Alerts/internals.rsi
+        # state: internal2
+      # iconOn:
+        # sprite: Interface/Alerts/internals.rsi
+        # state: internal1
+      # event: !type:ToggleActionEvent
+      # useDelay: 1
+    # outputPressure: 42.6
+    # air:
+      # volume: 250
+      # temperature: 293.15
+  # - type: Jetpack
+    # toggleAction:
+      # icon:
+        # sprite: Objects/Tanks/Jetpacks/void.rsi
+        # state: icon
+      # iconOn:
+        # sprite: Objects/Tanks/Jetpacks/void.rsi
+        # state: icon
+      # name: action-name-jetpack-toggle
+      # description: action-description-jetpack-toggle
+      # useDelay: 1.0
+      # event: !type:ToggleJetpackEvent
+  # - type: ActivatableUI
+    # key: enum.SharedGasTankUiKey.Key
+  # - type: Sprite
+    # sprite: Siberia/Clothing/OuterClothing/Hardsuits/salvageupgraded.rsi
+    # layers:
+    # - state: equipped-OUTERCLOTHING
+    # - state: unshade
+      # shader: unshaded
+  # - type: Clothing
+    # sprite: Siberia/Clothing/OuterClothing/Hardsuits/salvageupgraded.rsi
+    # clothingVisuals:
+      # clothingouter:
+      # - state: equipped-OUTERCLOTHING
+      # - state: unshade
+        # shader: unshaded
+  # - type: PressureProtection
+    # highPressureMultiplier: 0.525
+    # lowPressureMultiplier: 10000
+  # - type: ClothingSpeedModifier
+    # walkModifier: 0.70
+    # sprintModifier: 0.75
+  # - type: Armor
+    # modifiers:
+      # coefficients:
+        # Blunt: 0.65
+        # Slash: 0.5
+        # Piercing: 0.7
+        # Heat: 0.65
+        # Radiation: 0.5
+        # Caustic: 0.5
+  # - type: ExplosionResistance
+    # damageCoefficient: 0.3
+  # - type: ToggleableClothing
+    # clothingPrototype: ClothingHeadHelmetHardsuitSalvageUpgraded
+  # - type: Construction
+    # graph: SalvageHardsuitUpgrade
+    # node: salvagehardsuitupgraded
+
+# - type: entity
+ # parent: ClothingOuterHardsuitBase
+ # id: ClothingOuterHardsuitAdvEngineering
+ # name: скафандр "Циклоп"
+ # description: Улучшенный скафандр инженера с увеличенной защитой от радиации, дополнительными слотами под инструменты и более мощным фонариком
+ # components:
+ # - type: Sprite
+  #  sprite: Siberia/Clothing/OuterClothing/Hardsuits/advengineering.rsi
+ #- type: Clothing
+  #  sprite: Siberia/Clothing/OuterClothing/Hardsuits/advengineering.rsi
+ #- type: PressureProtection
+  #  highPressureMultiplier: 0.04
+  #  lowPressureMultiplier: 1000
+  # - type: ClothingSpeedModifier
+   # walkModifier: 0.9
+   # sprintModifier: 0.85
+  #- type: Armor
+   # modifiers:
+   #   coefficients:
+   #     Blunt: 0.9
+   #     Slash: 0.85
+   #     Piercing: 0.85
+   #     Heat: 0.7
+   #     Radiation: 0.10
+   #     Caustic: 0.85
+  # - type: ExplosionResistance
+   # damageCoefficient: 0.2
+  # - type: ToggleableClothing
+   # clothingPrototype: ClothingHeadHelmetHardsuitAdvEngineering
+  # - type: Construction
+  #  graph: EngineeringHardsuitUpgrade
+  #  node: engineeringsuitupgraded
+  # - type: Storage
+   # maxItemSize: Normal
+   # equipSound:
+    #  path: /Audio/Items/belt_equip.ogg
+   # whitelist:
+    #  tags:
+     #   - Powerdrill
+     #   - Wirecutter
+     #   - Crowbar
+     #   - Screwdriver
+     #   - Flashlight
+     #   - Wrench
+     #   - GeigerCounter
+     #   - Flare
+     #   - CableCoil
+     #   - CigPack
+     #   - Radio
+     #  - HolofanProjector
+     #   - AppraisalTool
+     #   - GasAnalyzer
+     # components:
+     #   - AirlockPainter
+     #   - SignalLinker
+     #   - RCD
+     #   - RCDAmmo
+     #   - Welder
+     #   - PowerCell
+     #   - Geiger
+  # - type: ContainerContainer
+   # containers:
+    #  storagebase: !type:Container
+     #   ents: []
+  # - type: UserInterface
+   # interfaces:
+   # - key: enum.StorageUiKey.Key
+    #  type: StorageBoundUserInterface
+
+# - type: entity
+ # parent: ClothingOuterHardsuitBase
+ # id: ClothingOuterHardsuitAdvScience
+ # name: скафандр "Панацея"
+ # description: Странного вида скафандр неизвестного ученого...
+ # components:
+ # - type: Sprite
+  #  sprite: Siberia/Clothing/OuterClothing/Hardsuits/advscience.rsi
+ # - type: Clothing
+  #  sprite: Siberia/Clothing/OuterClothing/Hardsuits/advscience.rsi
+ # - type: PressureProtection
+   # highPressureMultiplier: 0.72
+   # lowPressureMultiplier: 10000
+ # - type: ClothingSpeedModifier
+  #  walkModifier: 0.95
+  #  sprintModifier: 0.95
+ # - type: Armor
+  #  modifiers:
+   #   coefficients:
+    #    Blunt: 0.8
+    #    Slash: 0.9
+    #    Piercing: 0.80
+    #    Heat: 0.5
+    #    Radiation: 0.1
+    #    Caustic: 0.1
+ # - type: ToggleableClothing
+  #  clothingPrototype: ClothingHeadHelmetHardsuitAdvScience
+ # - type: Construction
+  #  graph: ScienceHardsuitUpgrade
+  #  node: sciencesuitupgrade

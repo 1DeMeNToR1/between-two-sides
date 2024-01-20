@@ -15,7 +15,6 @@
     - state: vehicle
       map: ["enum.VehicleVisualLayers.AutoAnimate"]
     - state: energy
-      map: ["enum.VehicleVisualLayers.AutoAnimate"]
       shader: unshaded
     noRot: true
   - type: MovementIgnoreGravity
@@ -66,7 +65,6 @@
     - state: med
       map: ["enum.VehicleVisualLayers.AutoAnimate"]
     - state: energy
-      map: ["enum.VehicleVisualLayers.AutoAnimate"]
       shader: unshaded
   - type: MovementSpeedModifier
     acceleration: 2

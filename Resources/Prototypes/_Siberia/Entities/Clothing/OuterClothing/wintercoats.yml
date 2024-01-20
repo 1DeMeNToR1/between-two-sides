@@ -1,0 +1,34 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatHyenhSweater
+  name: свитер
+  description: Он колится!
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/OuterClothing/WinterCoats/hyenh.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/OuterClothing/WinterCoats/hyenh.rsi
+    - type: TemperatureProtection
+      coefficient: 0.1
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterWinterCoatLong
+  name: длинный зимний плащ
+  description: Теперь защищает от холода ноги!
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/OuterClothing/WinterCoats/long_winter_coat.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/OuterClothing/WinterCoats/long_winter_coat.rsi
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterWinterCoatMantis
+  name: бурятское зимнее пальто
+  description: Выглядит тёплым... погодите-ка
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/OuterClothing/WinterCoats/mantis_winter_coat.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/OuterClothing/WinterCoats/mantis_winter_coat.rsi

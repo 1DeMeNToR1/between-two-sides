@@ -1,0 +1,24 @@
+- type: entity
+  parent: ClothingOuterWinterCoatToggleable
+  id: ClothingBlackCape
+  name: Чёрная накидка с капюшоном
+  description: Два серпа в комплект не входят.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/OuterClothing/Misc/blackcape.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/OuterClothing/Misc/blackcape.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadBlackCape
+
+
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
+  id: ClothingHeadBlackCape
+  noSpawn: true
+  name: капюшон чёрной накидки
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/OuterClothing/Misc/blackcapehelmet.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/OuterClothing/Misc/blackcapehelmet.rsi

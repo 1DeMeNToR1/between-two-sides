@@ -1,0 +1,26 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakFreedomCloak
+  name: плащ отряда разведки
+  description: Зелёный плащ разведывательного корпуса. "Отдадим свои сердца!"
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Neck/Cloaks/freedomcloak.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodFreedomCloak
+    requiredSlot:
+    - neck
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleQuart
+  name: мантия Квартирмейстера
+  description: Утончённая мантия, созданная по заказу для одного из Глав станции, Квартирмейстера. Если приглядеться, то можно заметить на нём знамя отдела Снабжения, что инкрустировано золотом. Также вы можете ощутить приятный запах корицы, исходящий от неё.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/QMmantle.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/QMmantle.rsi

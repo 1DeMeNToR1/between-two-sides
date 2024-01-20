@@ -1,0 +1,32 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesSecurityAdvanced
+  name: модифицированные очки охраны
+  description: Особые очки охраны со встроенным охранным визором
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/secglasses.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/secglasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: GuideHelp
+    guides:
+    - Security
+  - type: ShowSecurityIcons
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesBlindfoldFake
+  name: глазная повязка
+  description: Подождите-ка! Я знаю кто носил такую же...
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Misc/blindfold.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Misc/blindfold.rsi
