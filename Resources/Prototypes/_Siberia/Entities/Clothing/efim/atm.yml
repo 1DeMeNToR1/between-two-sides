@@ -1,0 +1,133 @@
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterSuitAtmosEfim
+  name: облегчённый пожарный костюм атмоса
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Atmos/atmsuit.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Atmos/atmsuit.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      coefficient: 0.001
+    - type: Armor
+      modifiers:
+        coefficients:
+          Slash: 0.9
+          Heat: 0.3
+          Cold: 0.2
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 1
+
+- type: entity
+  parent: ClothingHeadLightBase
+  id: ClothingHeadHelmetAtmosEfim
+  name: облегчённый шлем пожарного костюма атмоса
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Atmos/atmsuithelm.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Atmos/atmsuithelm.rsi
+    quickEquip: true
+  - type: IngestionBlocker
+  - type: TemperatureProtection
+    coefficient: 0.005
+  - type: PressureProtection
+    highPressureMultiplier: 0.25
+    lowPressureMultiplier: 1000
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasAtmosEfim
+  name: противогаз атмосферного техника
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Atmos/gasmask.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Atmos/gasmask.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.80
+
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmetTvEfim
+  name: телевизор...
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Atmos/TV.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Atmos/TV.rsi
+    quickEquip: true
+  - type: ShowSecurityIcons
+  - type: SolutionScanner
+  - type: IngestionBlocker
+  - type: TemperatureProtection
+    coefficient: 0.005
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HidesHair
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitAtmosEfim
+  noSpawn: true
+  name: облегчённый скафандр атмоса
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Atmos/atmhardsuithelm.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Atmos/atmhardsuithelm.rsi
+  - type: PointLight
+    color: "#FFFFFF"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    coefficient: 0.005
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitAtmosEfim
+  name: облегчённый скафандр атмоса
+  description: A special suit that protects against hazardous, low pressure environments. Has thermal shielding.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Atmos/atmhardsuit.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Atmos/atmhardsuit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    coefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.2
+        Radiation: 0.5
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitAtmosEfim

@@ -11,7 +11,20 @@
     ClothingHeadsetService: 2
     ClothingOuterWinterJani: 2
     ClothingNeckScarfStripedPurple: 3
-
+    ClothingShoesMaidoFeet: 2 # В УборШкафе добавил 2 экземпляра униформы горничной (Надеюсь мужики их одевать не будут...)
+    ClothingHeadBlackMaido: 2
+    ClothingUniformBlackMaidoUpJumpskirt: 2
+    ClothingUniformJumpskirtAnimeMaido: 2
+    ClothingUnderSocksAnimeMaido: 2
+    ClothingHandsTacticalMaidGlovesFake: 1
+    ClothingUniformJumpskirtTacticalMaid: 1
+    ClothingHeadHatTacticalMaidHeadband: 1
+    ClothingHandsGlovesBlackFake: 2
+    ClothingHandsGlovesWhiteFake: 2
+    ClothingHandsGlovesColorOrangeFake: 2
+    ClothingHandsGlovesColorPurpleFake: 2
+    ClothingNeckCloakCleanerLegendary: 1
+    
   emaggedInventory:
     ClothingUniformJumpskirtJanimaid: 2
     ClothingUniformJumpskirtJanimaidmini: 1

@@ -1,0 +1,272 @@
+- type: entity
+  id: WoodenSignJaraten
+  name: Деревянная табличка.
+  description: Она куда-то указывает.
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/minesJaraten.rsi
+    state: sign_left
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.4,0.35,0.4"
+        density: 100
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Effects/chop.ogg
+        params:
+          variation: 0.05
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 1
+            max: 1
+
+- type: entity
+  parent: WoodenSign
+  id: WoodenSignRightJaraten
+  name: Деревянная табличка.
+  description: Она куда-то указывает.
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/minesJaraten.rsi
+    state: sign_right
+
+- type: entity
+  id: WoodenSupportJaraten
+  parent: BaseStructure
+  name: Деревянная опора.
+  description: Помогает удержать потолок на своём законном месте.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/minesJaraten.rsi
+    state: support
+    drawdepth: Overdoors
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.5,0.1,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Effects/chop.ogg
+        params:
+          variation: 0.05
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 1
+            max: 3
+
+- type: entity
+  id: WoodenSupportBeamJaraten
+  name: Деревянные опорные балки.
+  description: Помогает удержать потолок на своём законном месте.
+  parent: WoodenSupport
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/minesJaraten.rsi
+    state: support_beams
+    drawdepth: Overdoors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+
+- type: entity
+  id: WoodenSupportWallJaraten
+  parent: BaseStructure
+  name: Деревянная стена-опора.
+  description: Старая деревянная стена-опора.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/minesJaraten.rsi
+    state: support_wall
+    drawdepth: Overdoors
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 5
+
+- type: entity
+  id: WoodenSupportFlowersWallJaraten
+  parent: BaseStructure
+  name: Деревянная стена-опора с цветами.
+  description: Старая, заросшая цветами опора.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/minesJaraten.rsi
+    state: support_flowers
+    drawdepth: Overdoors
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 5
+
+- type: entity
+  id: WoodenSupportRopeWallJaraten
+  parent: BaseStructure
+  name: Деревянная стена-опора.
+  description: Старые, связанные верёвкой опоры.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/minesJaraten.rsi
+    state: support_rope
+    drawdepth: Overdoors
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 5
+
+- type: entity
+  id: WoodenSupportWallBrokenJaraten
+  parent: WoodenSupportWall
+  name: Сломанная стена-опора.
+  description: Прогнившие под тяжестью лет опоры.
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/minesJaraten.rsi
+    state: support_wall_broken
+    drawdepth: Overdoors
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 1
+            max: 3

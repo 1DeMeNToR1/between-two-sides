@@ -1,0 +1,85 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesWhiteFake
+  name: латексные перчатки
+  suffix: фальшивые
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/latex.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/latex.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesBlackFake
+  name: чёрные перчатки
+  suffix: фальшивые
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/black.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Color/black.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsTacticalMaidGlovesFake
+  name: тактические перчатки горничной
+  description: Тактические перчатки для горничных - каждая уважающая себя горничная должна уметь незаметно устранять свои цели.
+  suffix: фальшивые
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/tacticalmaidgloves.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/tacticalmaidgloves.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtAnimeMaido
+  name: голубая юбка горничной
+  description: ZA WARUDO!!!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Cleaner/animemaido.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Cleaner/animemaido.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksAnimeMaido
+  name: чулки
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Cleaner/chulki.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Cleaner/chulki.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakCleanerLegendary
+  name: плащ легендарного уборщика
+  description: Плащ, передающийся из поколения в поколение лучшим уборщикам своего века.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Cleaner/cleanercape.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesColorPurpleFake
+  suffix: фальшивые
+  name: фиолетовые перчатки
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/purple.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Color/purple.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesColorOrangeFake
+  suffix: фальшивые
+  name: оранжевые перчатки
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/orange.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Color/orange.rsi

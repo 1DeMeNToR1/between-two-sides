@@ -1,0 +1,210 @@
+- type: entity
+  parent: BaseComputer
+  id: ComputerCommsCap
+  name: консоль связи капитана
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: comm
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+  - type: AccessReader
+    access: [[ "Command" ]]
+  - type: CommunicationsConsole
+    title: Капитана станции
+    sound: "/Audio/Siberia/kep.ogg"
+  - type: ActivatableUI
+    key: enum.CommunicationsConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.CommunicationsConsoleUiKey.Key
+      type: CommunicationsConsoleBoundUserInterface
+  - type: Computer
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#3c5eb5"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+
+- type: entity
+  parent: BaseComputer
+  id: ComputerCommsCmo
+  name: консоль связи главного врача
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: comm
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+  - type: AccessReader
+    access: [[ "Command" ]]
+  - type: CommunicationsConsole
+    title: Главного врача
+    sound: "/Audio/Siberia/cmo.ogg"
+  - type: ActivatableUI
+    key: enum.CommunicationsConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.CommunicationsConsoleUiKey.Key
+      type: CommunicationsConsoleBoundUserInterface
+  - type: Computer
+    board: CommsComputerCircuitboard
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#3c5eb5"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+
+- type: entity
+  parent: BaseComputer
+  id: ComputerCommsHop
+  name: консоль связи главы персонала
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: comm
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+  - type: AccessReader
+    access: [[ "Command" ]]
+  - type: CommunicationsConsole
+    title: Главы персонала
+    sound: "/Audio/Siberia/hop.ogg"
+  - type: ActivatableUI
+    key: enum.CommunicationsConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.CommunicationsConsoleUiKey.Key
+      type: CommunicationsConsoleBoundUserInterface
+  - type: Computer
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#3c5eb5"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+
+- type: entity
+  parent: BaseComputer
+  id: ComputerCommsHos
+  name: консоль связи гсб
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: comm
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+  - type: AccessReader
+    access: [[ "Command" ]]
+  - type: CommunicationsConsole
+    title: Главы Службы Безопасности
+    sound: "/Audio/Siberia/hos.ogg"
+  - type: ActivatableUI
+    key: enum.CommunicationsConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.CommunicationsConsoleUiKey.Key
+      type: CommunicationsConsoleBoundUserInterface
+  - type: Computer
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#3c5eb5"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+
+- type: entity
+  parent: BaseComputer
+  id: ComputerCommsRd
+  name: консоль связи научного руководителя
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: comm
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+  - type: AccessReader
+    access: [[ "Command" ]]
+  - type: CommunicationsConsole
+    title: Научного директора
+    sound: "/Audio/Siberia/rd.ogg"
+  - type: ActivatableUI
+    key: enum.CommunicationsConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.CommunicationsConsoleUiKey.Key
+      type: CommunicationsConsoleBoundUserInterface
+  - type: Computer
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#3c5eb5"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+
+- type: entity
+  parent: BaseComputer
+  id: ComputerCommsSe
+  name: консоль связи старшего инженера
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: comm
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+  - type: AccessReader
+    access: [[ "Command" ]]
+  - type: CommunicationsConsole
+    title: Старшего инженера
+    sound: "/Audio/Siberia/se.ogg"
+  - type: ActivatableUI
+    key: enum.CommunicationsConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.CommunicationsConsoleUiKey.Key
+      type: CommunicationsConsoleBoundUserInterface
+  - type: Computer
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#3c5eb5"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic

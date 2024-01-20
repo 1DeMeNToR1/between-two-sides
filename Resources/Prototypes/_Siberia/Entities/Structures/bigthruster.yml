@@ -1,0 +1,77 @@
+- type: entity
+  id: BaseBigThruster
+  parent: BaseStructureDynamic
+  abstract: true
+  components:
+    - type: AmbientSound
+      enabled: false
+      range: 4
+      volume: -4
+      sound:
+        path: /Audio/Effects/shuttle_thruster.ogg
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Rotatable
+      rotateWhileAnchored: true
+    - type: Thruster
+      damage:
+        types:
+          Heat: 300
+      baseThrust: 900
+    - type: InteractionOutline
+    - type: Sprite
+    - type: Appearance
+    - type: ThrusterVisuals
+    - type: ApcPowerReceiver
+      powerLoad: 1500
+    - type: ExtensionCableReceiver
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 300  # Considering we need a lot of thrusters didn't want to make an individual one too tanky
+        behaviors:
+          - !type:DoActsBehavior
+            acts: ["Destruction"]
+    - type: StaticPrice
+      price: 300
+  placement:
+    mode: SnapgridCenter
+        
+- type: entity
+  id: BigThruster
+  name: большой двигатель
+  parent: BaseBigThruster
+  components:
+  - type: Thruster
+  - type: Sprite
+    scale: 4, 4
+    sprite: Structures/Shuttles/thruster.rsi
+    layers:
+    - state: base
+      map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      shader: unshaded
+      visible: false
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
+      offset: 0, 1
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.5,-1.5,1.5,1.5"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer

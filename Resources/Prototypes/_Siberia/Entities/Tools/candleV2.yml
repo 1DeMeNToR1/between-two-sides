@@ -1,0 +1,106 @@
+# - type: entity
+  # name: свеча
+  # parent: BaseItem
+  # id: CandleStick
+  # description: "Свеча 31 века. Выглядит как восковая, но снизу виден разъем для заправки."
+  # components:
+  # # Sloth: What is this comment ?????????
+  # - type: RandomSprite #this has to be before sprite component for the flame to toggle right because weldercomponent behaves weird (and i dont trust myself to fix it right)
+    # available:
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-1: ""
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-2: ""
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-3: ""
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-4: ""
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-5: ""
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-6: ""
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-7: ""
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-8: ""
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-9: ""
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-10: ""
+      # - enum.WelderLayers.Base:
+          # basic_icon_base-11: ""
+  # - type: Sprite
+    # sprite: Siberia/1015/Objects/Tools/candlesV2.rsi
+    # netsync: false
+    # layers:
+    # - state: icon_map
+      # map: ["enum.WelderLayers.Base"]
+    # - state: lighter_flame
+      # map: ["enum.WelderLayers.Flame"]
+      # shader: unshaded
+      # visible: false
+    # - state: basic_icon_top
+  # - type: Item
+    # size: Small
+    # sprite: Siberia/1015/Objects/Tools/candlesV2.rsi
+    # heldPrefix: off
+  # - type: ItemCooldown
+  # - type: RefillableSolution
+    # solution: Welder
+  # - type: SolutionContainerManager
+    # solutions:
+      # Welder:
+        # reagents:
+        # - ReagentId: WeldingFuel
+          # Quantity: 20
+        # maxVol: 20 #uses less fuel than a welder, so this isnt as bad as it looks
+  # - type: MeleeWeapon
+    # damage:
+      # types:
+        # Blunt: 0 #this feels hacky, but is needed for burn damage while active (i think)
+  # - type: Welder
+    # fuelConsumption: 0.01
+    # litMeleeDamageBonus:
+      # types:
+        # Heat: 1
+    # tankSafe: true
+    # welderOnSounds:
+      # collection: lighterOnSounds
+    # welderOffSounds:
+      # collection: lighterOffSounds
+  # - type: PointLight
+    # enabled: false
+    # radius: 1.1 #smallest possible
+    # color: orange
+  # - type: Appearance
+
+# - type: entity
+  # name: ритуальная свеча
+  # parent: CandleStick
+  # id: ScullCandle2
+  # description: "выглядит жутко"
+  # components:
+  # - type: RandomSprite
+    # available:
+      # - enum.WelderLayers.Base:
+          # cheap_icon_base: ""
+          # # cheap_icon_base: Rainbow
+  # - type: Sprite
+    # sprite: Siberia/1015/Objects/Tools/candlesV2.rsi
+    # layers:
+    # - state: icon_map_2
+      # map: ["enum.WelderLayers.Base"]
+    # - state: lighter_flame
+      # map: ["enum.WelderLayers.Flame"]
+      # shader: unshaded
+      # visible: false
+    # - state: cheap_icon_top
+  # - type: SolutionContainerManager
+    # solutions:
+      # Welder:
+        # reagents:
+        # - ReagentId: WeldingFuel
+          # Quantity: 10
+        # maxVol: 10 #uses less fuel than a welder, so this isnt as bad as it looks
+
+    # #TODO: zippos

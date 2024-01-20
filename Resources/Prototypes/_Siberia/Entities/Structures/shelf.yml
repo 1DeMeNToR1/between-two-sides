@@ -1,0 +1,9 @@
+- type: entity
+  parent: PaintingBase
+  id: ShelfWithFlowers
+  name: Полка с цветами.
+  description: От неё веет запахом росы и дешёвого ароматизатора.
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/shelf.rsi
+    state: shelfWithFlowers
