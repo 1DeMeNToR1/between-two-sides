@@ -146,6 +146,7 @@
   - type: FireVisuals
     sprite: Siberia/Mobs/Effects/onfire.rsi
     normalState: Resomi_burning
+    alternateState: Resomi_burning
 
 - type: entity
   save: false
