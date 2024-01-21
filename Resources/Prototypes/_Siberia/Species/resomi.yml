@@ -9,9 +9,9 @@
   markingLimits: MobResomiMarkingLimits
   dollPrototype: MobResomiDummy
   skinColoration: Hues # TintedHues
-  maleFirstNames: names_reptilian_male
-  femaleFirstNames: names_reptilian_female
-  naming: FirstLast # FirstDashFirst
+  maleFirstNames: names_resomi_male
+  femaleFirstNames: names_resomi_female
+  naming: OnlyFirst
   minAge: 15
   maxAge: 45
   youngAge: 25
