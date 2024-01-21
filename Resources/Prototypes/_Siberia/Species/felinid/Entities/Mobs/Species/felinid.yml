@@ -63,9 +63,9 @@
       sprite: Mobs/Species/Human/parts.rsi
       state: r_foot
     - map: [ "bottom" ]
-      shader: StencilDraw    
+      shader: StencilDraw
     - map: [ "top" ]
-      shader: StencilDraw    
+      shader: StencilDraw
     - map: [ "socks" ]
       shader: StencilDraw
     - map: [ "jumpsuit" ]
@@ -144,7 +144,7 @@
     soundHit:
       path: /Audio/Effects/hit_kick.ogg
   - type: Stamina
-    excess: 85
+    critThreshold: 85
 #  - type: PseudoItem
   - type: Perishable
   - type: Hunger
@@ -153,7 +153,7 @@
         Cold: 0.5
         Bloodloss: 0.5
   - type: Thirst
-  
+
 - type: entity
   save: false
   name: Felinid Dummy
@@ -210,9 +210,9 @@
         state: female_full
         visible: false
       - map: [ "bottom" ]
-        shader: StencilDraw    
+        shader: StencilDraw
       - map: [ "top" ]
-        shader: StencilDraw    
+        shader: StencilDraw
       - map: [ "socks" ]
         shader: StencilDraw
       - map: ["jumpsuit"]

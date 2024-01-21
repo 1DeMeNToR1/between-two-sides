@@ -47,12 +47,9 @@
   components:
     - type: Sprite
       sprite: Siberia/Objects/Tools/cumcam.rsi
-      layers:
-      - state: icon
+      state: icon
     - type: Clothing
       sprite: Siberia/Objects/Tools/cumcam.rsi
-      layers:
-      - state: cum
     - type: DeviceNetwork
       deviceNetId: Wireless
       receiveFrequencyId: SurveillanceCameraEntertainment
