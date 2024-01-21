@@ -119,6 +119,7 @@
     baseSprintSpeed : 4.7
   - type: Perishable
   - type: Inventory
+    templateId: resomi
     speciesId: resomi
   - type: DamageVisuals
     thresholds: [ 20, 40, 100 ]
@@ -155,6 +156,7 @@
   - type: HumanoidAppearance
     species: Resomi
   - type: Inventory
+    templateId: resomi
     speciesId: resomi
   - type: Sprite
     drawdepth: Mobs
