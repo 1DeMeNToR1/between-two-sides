@@ -16,6 +16,31 @@
   - type: Sprite
     sprite: Siberia/Nyanotrasen/sakebottle.rsi
 
+    # реагенты
+- type: flavor
+  id: Soju
+  description: Отчетливый вкус соджу, традиционного корейского алкогольного напитка.
+
+- type: reagent
+  id: Soju
+  name: reagent-name-soju
+  parent: BaseAlcohol
+  desc: soju
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: Soju
+  color: "#DDDDDD"
+  metamorphicSprite:
+    sprite: Siberia/Nyanotrasen/sojuglass.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15
+
 ####
 
 - type: entity

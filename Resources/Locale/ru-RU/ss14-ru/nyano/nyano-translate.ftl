@@ -10,6 +10,9 @@ ent-ClothingKimonoSky = Голубое кимоно
 ent-ClothingKimonoGreen = Зелёное кимоно
 # реагент выпивки
 reagent-name-soju = soju
+soju = soju
+reagent-desc-soju = Алкогольный напиток, приготовленный путем перегонки шлифованного риса.
+flavor-complex-soju = как жирный алкогольный рис
 # выпивка
 ent-DrinkSakeBottleFull = Бутылка саке
 ent-DrinkSojuBottleFull = Бутылка Соджу
