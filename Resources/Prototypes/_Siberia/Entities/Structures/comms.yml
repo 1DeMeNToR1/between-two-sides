@@ -16,7 +16,7 @@
   - type: AccessReader
     access: [[ "Command" ]]
   - type: CommunicationsConsole
-    title: Капитана станции
+    title: ComputerCommsCap-title
     sound: "/Audio/Siberia/kep.ogg"
   - type: ActivatableUI
     key: enum.CommunicationsConsoleUiKey.Key
@@ -51,7 +51,7 @@
   - type: AccessReader
     access: [[ "Command" ]]
   - type: CommunicationsConsole
-    title: Главного врача
+    title: ComputerCommsCmo-title
     sound: "/Audio/Siberia/cmo.ogg"
   - type: ActivatableUI
     key: enum.CommunicationsConsoleUiKey.Key
@@ -87,7 +87,7 @@
   - type: AccessReader
     access: [[ "Command" ]]
   - type: CommunicationsConsole
-    title: Главы персонала
+    title: ComputerCommsHop-title
     sound: "/Audio/Siberia/hop.ogg"
   - type: ActivatableUI
     key: enum.CommunicationsConsoleUiKey.Key
@@ -122,7 +122,7 @@
   - type: AccessReader
     access: [[ "Command" ]]
   - type: CommunicationsConsole
-    title: Главы Службы Безопасности
+    title: ComputerCommsHos-title
     sound: "/Audio/Siberia/hos.ogg"
   - type: ActivatableUI
     key: enum.CommunicationsConsoleUiKey.Key
@@ -157,7 +157,7 @@
   - type: AccessReader
     access: [[ "Command" ]]
   - type: CommunicationsConsole
-    title: Научного директора
+    title: ComputerCommsRd-title
     sound: "/Audio/Siberia/rd.ogg"
   - type: ActivatableUI
     key: enum.CommunicationsConsoleUiKey.Key
@@ -192,7 +192,7 @@
   - type: AccessReader
     access: [[ "Command" ]]
   - type: CommunicationsConsole
-    title: Старшего инженера
+    title: ComputerCommsSe-title
     sound: "/Audio/Siberia/se.ogg"
   - type: ActivatableUI
     key: enum.CommunicationsConsoleUiKey.Key

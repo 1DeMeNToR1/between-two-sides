@@ -10,9 +10,9 @@
   - type: Item
     heldPrefix: banana
   - type: Gun
-    soundGunshot:
     fireRate: 2
-    path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
   - type: BasicEntityAmmoProvider
     proto: Honkpr
     capacity: 10
