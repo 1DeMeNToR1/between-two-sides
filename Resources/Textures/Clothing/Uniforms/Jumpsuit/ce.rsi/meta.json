@@ -36,6 +36,10 @@
     {
       "name": "inhand-right",
       "directions": 4
+    },
+    {
+      "name": "equipped-INNERCLOTHING-resomi",
+      "directions": 4
     }
   ]
 }
