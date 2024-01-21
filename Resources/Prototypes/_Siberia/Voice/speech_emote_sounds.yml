@@ -7,3 +7,33 @@
       path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg
     Laugh:
       path: /Audio/Siberia/Voice/Resomi/resomi_laugh.ogg
+
+# having to explicitly variantize things so you DON'T get variations on beep and whirr is fucking bad
+# TODO complain to upstream
+# комменты от Брохи на английском, хмммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммм
+
+- type: emoteSounds
+  id: UnisexIPC
+  sounds:
+    Scream:
+      path: /Audio/Effects/beep1.ogg
+      params:
+        variation: 0.125
+    Laugh:
+      path: /Audio/Effects/sparks1.ogg
+      params:
+        variation: 0.125
+    Ping:
+      path: /Audio/Effects/beep1.ogg
+      params:
+        variation: 0.125
+    Beep:
+      collection: IPCBeeps
+    Boop:
+      collection: IPCBoops
+    Whirr:
+      collection: IPCWhirrs
+    Honk:
+      collection: BikeHorn
+      params:
+        variation: 0.125
