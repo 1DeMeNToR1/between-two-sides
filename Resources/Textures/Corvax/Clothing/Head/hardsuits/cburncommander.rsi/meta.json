@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by 𝘽𝙚𝙡𝙖𝙮#7441",
+  "copyright": "Made by \ud835\ude3d\ud835\ude5a\ud835\ude61\ud835\ude56\ud835\ude6e#7441",
   "size": {
     "x": 32,
     "y": 32
@@ -41,6 +41,14 @@
     },
     {
       "name": "inhand-right-unshaded",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-resomi",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-unshaded-resomi",
       "directions": 4
     }
   ]
