@@ -90,9 +90,11 @@
       Male: UnisexResomi
       Female: UnisexResomi
       Unsexed: UnisexResomi
-  - type: Damageable
+  - type: Damageable # скоро!!
     damageContainer: Biological
     damageModifierSet: Scale
+  - type: Stamina
+    critThreshold: 90
   - type: MeleeWeapon
     hidden: true
     soundHit:
