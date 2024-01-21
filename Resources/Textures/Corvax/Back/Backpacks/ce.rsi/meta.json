@@ -21,6 +21,10 @@
     },
     {
       "name": "icon"
+    },
+    {
+      "name": "equipped-BACKPACK-resomi",
+      "directions": 4
     }
   ]
 }

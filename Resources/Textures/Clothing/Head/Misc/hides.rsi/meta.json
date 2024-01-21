@@ -52,6 +52,40 @@
     {
       "name": "corgi2-equipped-HELMET",
       "directions": 4
+    },
+    {
+      "name": "corgi-equipped-HELMET-resomi",
+      "directions": 4
+    },
+	{
+      "name": "bear-equipped-HELMET-resomi",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
     }
   ]
 }

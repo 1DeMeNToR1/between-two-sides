@@ -66,6 +66,10 @@
     },
     {
       "name": "icon-on"
+    },
+    {
+      "name": "equipped-NECK-resomi",
+      "directions": 4
     }
   ]
 }

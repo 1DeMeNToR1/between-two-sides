@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by лазік#7305",
+  "copyright": "Made by \u043b\u0430\u0437\u0456\u043a#7305",
   "size": {
     "x": 32,
     "y": 32
@@ -20,6 +20,10 @@
     },
     {
       "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BACKPACK-resomi",
       "directions": 4
     }
   ]

@@ -23,6 +23,14 @@
     {
       "name": "equipped-trinkets",
       "directions": 4
+    },
+    {
+      "name": "equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "equipped-trinkets-resomi",
+      "directions": 4
     }
   ]
 }

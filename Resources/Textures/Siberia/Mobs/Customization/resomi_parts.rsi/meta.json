@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "tail_old taken from Baystation12, other by effin(thedusteffin)",  
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tail_old",
+      "directions": 4
+    },
+	{
+      "name": "classic",
+      "directions": 4
+    },
+	{
+      "name": "fluff-classic",
+      "directions": 4
+    },
+	{
+      "name": "fluff-sharp",
+      "directions": 4
+    },
+	{
+      "name": "sharp",
+      "directions": 4
+    },
+	{
+	  "name": "pattern-ears1",
+	  "directions": 4
+	},
+	{
+	  "name": "pattern-ears2",
+	  "directions": 4
+	},
+	{
+	  "name": "pattern-ears3",
+	  "directions": 4
+	},
+	{
+	  "name": "pattern-ears6",
+	  "directions": 4
+	}
+  ]
+}

@@ -44,6 +44,10 @@
     {
       "name": "up-inhand-right",
       "directions": 4
+    },
+    {
+      "name": "equipped-HELMET-resomi",
+      "directions": 4
     }
   ]
 }

@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/infinitystation/Baystation12, and some from fluffy, the ears1-7 were sprited by effin(ds: thedusteffin)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+	  "name": "none",
+	  "directions": 4
+	},
+    {
+      "name": "ears",
+      "directions": 4
+    },
+    {
+      "name": "spiky",
+      "directions": 4
+    },
+    {
+      "name": "hedge",
+      "directions": 4
+    },
+    {
+      "name": "default",
+      "directions": 4
+    },
+    {
+      "name": "long",
+      "directions": 4
+    },
+    {
+      "name": "bursthort",
+      "directions": 4
+    },
+    {
+      "name": "mohawk",
+      "directions": 4
+    },
+    {
+      "name": "pointy",
+      "directions": 4
+    },
+    {
+      "name": "upright",
+      "directions": 4
+    },
+    {
+      "name": "mane",
+      "directions": 4
+    },
+    {
+      "name": "droopy",
+      "directions": 4
+    },
+    {
+      "name": "mushroom",
+      "directions": 4
+    },
+    {
+      "name": "twies",
+      "directions": 4
+    },
+    {
+      "name": "backstrafe",
+      "directions": 4
+    },
+    {
+      "name": "longway",
+      "directions": 4
+    },
+    {
+      "name": "notree",
+      "directions": 4
+    },
+    {
+      "name": "fluffymohawk",
+      "directions": 4
+    },
+    {
+      "name": "mane_beardless",
+      "directions": 4
+    },
+	{
+	  "name": "backstrafe_teshari",
+	  "directions": 4
+	},
+	{
+	  "name": "longway_teshari",
+	  "directions": 4
+	},
+	{
+	  "name": "thin_teshari",
+	  "directions": 4
+	},
+	{
+	  "name": "thinmohawk_teshari",
+	  "directions": 4
+	},
+    {
+      "name": "ears1",
+      "directions": 4
+    },
+    {
+      "name": "ears2",
+      "directions": 4
+    },
+    {
+      "name": "ears3",
+      "directions": 4
+    },
+    {
+      "name": "ears4",
+      "directions": 4
+    },
+    {
+      "name": "ears5",
+      "directions": 4
+    },
+    {
+      "name": "ears6",
+      "directions": 4
+    },
+    {
+      "name": "ears7",
+      "directions": 4
+    }
+  ]
+}
