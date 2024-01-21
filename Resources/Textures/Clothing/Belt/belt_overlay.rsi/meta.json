@@ -194,6 +194,66 @@
     {
       "name": "x4-equipped-BELT",
       "directions": 4
+    },
+    {
+      "name": "analyzer-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "c4-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "electronic-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "geiger_counter-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "injector-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "lighter-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "medipen-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "painter-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "plasmatank-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "rolling_pin-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "rpd-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "rped-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "tele_baton-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "tray-equipped-BELT-resomi",
+      "directions": 4
+    },
+    {
+      "name": "x4-equipped-BELT-resomi",
+      "directions": 4
     }
   ]
 }
