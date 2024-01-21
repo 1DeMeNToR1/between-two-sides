@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodFreedomCloak
+  name: капюшон от плаща отряда разведки
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hoods/freedomhood.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hoods/freedomhood.rsi
+  - type: Tag
+    tags:
+    - HidesHair
+    - WhitelistChameleon

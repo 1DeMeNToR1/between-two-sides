@@ -1,0 +1,90 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieChirno
+  name: Фумо Чирно
+  description: Дура! Дура!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_fumo.rsi
+    state: fumo_chirno
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFlandre
+  name: Фумо Фландре
+  description: Давай сыграем, милая птичка
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_fumo.rsi
+    state: fumo_flandre
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieMarisa
+  name: Фумо Мариса
+  description: Я "одолжу" это
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_fumo.rsi
+    state: fumo_marisa
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieMeiling
+  name: Фумо Мейлин
+  description: Почему так хочется спать?
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_fumo.rsi
+    state: fumo_meiling
+
+- type: entity
+  parent: BasePlushie
+  id: PlushiePatchuli
+  name: Фумо Пачули
+  description: Тишина в библиотеке!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_fumo.rsi
+    state: fumo_patchuli
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieReimu
+  name: Фумо Рейму
+  description: Слово саке и слово смерть означает для вас одно и тоже
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_fumo.rsi
+    state: fumo_reimu
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieRemilia
+  name: Фумо Ремилия
+  description: Позволь испить твоей крови
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_fumo.rsi
+    state: fumo_remilia
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieSakuya
+  name: Фумо Сакуя
+  description: Za Warudo!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_fumo.rsi
+    state: fumo_sakuya
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieYomu
+  name: Фумо Ёму
+  description: Я наполовину счастлива быть "половинкой" призрака!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_fumo.rsi
+    state: fumo_yomu
+

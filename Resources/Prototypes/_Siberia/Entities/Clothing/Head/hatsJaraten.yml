@@ -1,0 +1,54 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatTacticalMaidHeadbandBlue
+  name: Синяя тактическая головная повязка
+  description: Стильная и плотная повязка синего цвета.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/tacticalmaidheadbandBLUE.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/tacticalmaidheadbandBLUE.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatTacticalMaidHeadbandGreen
+  name: Зелёная тактическая головная повязка
+  description: Стильная и плотная повязка зелёного цвета.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/tacticalmaidheadbandGREEN.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/tacticalmaidheadbandGREEN.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatTacticalMaidHeadbandBlack
+  name: Чёрная тактическая головная повязка
+  description: Стильная и плотная повязка чёрного цвета.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/tacticalmaidheadbandBLACK.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/tacticalmaidheadbandBLACK.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatTacticalMaidHeadbandWhite
+  name: Белая тактическая головная повязка
+  description: Стильная и плотная повязка белого цвета.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/tacticalmaidheadbandWHITE.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/tacticalmaidheadbandWHITE.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHorns
+  name: Ободок с рожками.
+  description: Приходят в наборе с крылышками и вставным хвостиком.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Jaraten/horns.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Jaraten/horns.rsi

@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsMantis
+  name: бурятские ботинки
+  description: Мягкие и удобные. Но в них жарко!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Shoes/Boots/mantis_boots.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Shoes/Boots/mantis_boots.rsi

@@ -1,0 +1,75 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformMantisJumpskirt
+  name: бурятская юбка
+  description: Прямиком от туда!
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/mantis_jumpskirt.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/mantis_jumpskirt.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformBlackMaidoUpJumpskirt
+  name: чёрное платье горничной
+  description: Часть набора горничной
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/blackmaidoup.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/blackmaidoup.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformBlackMisatoJumpskirt
+  name: чёрная безрукавка
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/blackmisato.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/blackmisato.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJustFun
+  name: униформа galaxy
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/justforfun.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/justforfun.rsi
+
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformNightFormalJumpskirt
+  name: платье элегантной дамы
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/nightformal.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/nightformal.rsi
+
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformNurseMedJumpskirt
+  name: униформа медсестры
+  description: Форма медсестры без рукавов
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/nursemed.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpskirt/nursemed.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformSkirtRedTopAndDown
+  name: красная юбка и топик
+  description: Удобно для танцев!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/red_new.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/red_new.rsi

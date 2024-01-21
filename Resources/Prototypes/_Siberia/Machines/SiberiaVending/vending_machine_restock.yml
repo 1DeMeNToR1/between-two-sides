@@ -20,8 +20,6 @@
       path: /Audio/Weapons/genhit2.ogg
     soundSwing:
       path: /Audio/Weapons/punchmiss.ogg
-  - type: Item
-    size: 50
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
@@ -51,12 +49,12 @@
   name: пополнение дизайнерской одежды
   description: флексит в руках
   components:
-  - type: VendingMachineRestock
-    canRestock:
-    - SibariaClothesMateInventory
-  - type: Sprite
-    layers:
-    - state: base
-    - state: green_bit
-      shader: unshaded
-    - state: refill_clothes
+    - type: VendingMachineRestock
+      canRestock:
+        - SibariaClothesMateInventory
+    - type: Sprite
+      layers:
+        - state: base
+        - state: green_bit
+          shader: unshaded
+        - state: refill_clothes

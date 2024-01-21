@@ -1,0 +1,90 @@
+- type: entity
+  abstract: true
+  parent: [ ClothingNeckBase ]
+  id: SurveillanceWearCameraBase
+  name: нагрудная камера
+  suffix: abstract
+  description: A camera. It's watching you. Kinda.
+  components:
+    - type: InteractionOutline
+    - type: Eye
+    - type: WirelessNetworkConnection
+      range: 200
+    # - type: Damageable
+      # damageContainer: Inorganic
+      # damageModifierSet: Metallic
+    # - type: Rotatable
+      # rotateWhileAnchored: true
+    # - type: Fixtures
+      # fixtures:
+        # fix1:
+          # shape:
+            # !type:PhysShapeCircle
+            # radius: 0.45
+          # density: 80
+          # mask:
+            # - MachineMask
+    - type: SurveillanceCameraMicrophone
+      blacklist:
+        components:
+          - SurveillanceCamera
+          - SurveillanceCameraMonitor
+          - RadioSpeaker
+    - type: ActiveListener
+      range: 10
+    - type: UserInterface
+      interfaces:
+        - key: enum.SurveillanceCameraSetupUiKey.Camera
+          type: SurveillanceCameraSetupBoundUi
+  # placement:
+    # mode: SnapgridCenter
+
+- type: entity
+  parent: SurveillanceWearCameraBase
+  suffix: Entertainment
+  id: SurveillanceOperatorCum
+  name: наплечная камера
+  components:
+    - type: Sprite
+      sprite: Siberia/Objects/Tools/cumcam.rsi
+      state: icon
+    - type: Clothing
+      sprite: Siberia/Objects/Tools/cumcam.rsi
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+      receiveFrequencyId: SurveillanceCameraEntertainment
+      transmitFrequencyId: SurveillanceCamera
+    - type: SurveillanceCamera
+      networkSet: true
+
+- type: entity
+  parent: SurveillanceWearCameraBase
+  suffix: Entertainment
+  id: SurveillanceSalvCum
+  name: нагрудная камера утилизатора
+  components:
+    - type: Sprite
+      sprite: Siberia/Objects/Tools/cumcam.rsi
+      state: salv
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+      receiveFrequencyId: SurveillanceCameraEntertainment
+      transmitFrequencyId: SurveillanceCamera
+    - type: SurveillanceCamera
+      networkSet: true
+
+- type: entity
+  parent: SurveillanceWearCameraBase
+  suffix: Sec
+  id: SurveillanceSecCum
+  name: нагрудная камера СБ
+  components:
+    - type: Sprite
+      sprite: Siberia/Objects/Tools/cumcam.rsi
+      state: sec
+    - type: DeviceNetwork
+      deviceNetId: Wired
+      receiveFrequencyId: SurveillanceCameraSecurity
+      transmitFrequencyId: SurveillanceCamera
+    - type: SurveillanceCamera
+      networkSet: true

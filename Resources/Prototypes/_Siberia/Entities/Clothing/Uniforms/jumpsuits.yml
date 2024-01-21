@@ -1,0 +1,190 @@
+﻿- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMantisUniform
+  name: бурятская рубашка
+  description: Прямиком от туда!
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/mantis_uniform.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/mantis_uniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitAdidas
+  name: спортивная форма
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/adidas.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/adidas.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlackCargo
+  name: чёрная футболка с карго
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/blackcargo.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/blackcargo.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCargoVdv
+  name: форма ныряльщика
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/cargovdv.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/cargovdv.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualDaily
+  name: белая футболка с джинсами
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/casualdaily.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/casualdaily.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualForm
+  name: белая рубашка с брюками
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/casualform.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/casualform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCJ
+  name: белая майка с джинсами
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/cj.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/cj.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGreenCargo
+  name: чёрная кофта с зелёными карго
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/greencargo.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/greencargo.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSchoolFormal
+  name: школьная форма
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/schoolformal.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/schoolformal.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlackVodolaz
+  name: темная водолазка с брюками
+  description: Удобный и в то же время стильный костюм для подвижной работы.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/blacksviter.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Jumpsuit/blacksviter.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingUniformJumpsuitSviterGreenKofta
+  name: зелёная толстовка
+  description: Удобная зелёная толстовка.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/turtleneck/green_sweatshirt.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/turtleneck/green_sweatshirt.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingUniformOuterBrownTolst
+  name: коричневая толстовка
+  description: Удобная коричневая толстовка с белыми рукавами.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/turtleneck/Brown_sweatshirt.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/turtleneck/Brown_sweatshirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSviterBegue
+  name: бежевая водолазка
+  description: свитер из тонкого трикотажа с высоким воротом.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/turtleneck/beige_turtleneck.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/turtleneck/beige_turtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSviterRed
+  name: красная водолазка
+  description: свитер из тонкого трикотажа с высоким воротом.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/turtleneck/red_turtleneck.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/turtleneck/red_turtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSviterPurple
+  name: фиолетовая водолазка
+  description: свитер из тонкого трикотажа с высоким воротом.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/turtleneck/purple_turtleneck.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/turtleneck/purple_turtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSviterWhite
+  name: белая водолазка
+  description: свитер из тонкого трикотажа с высоким воротом.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/turtleneck/white_turtleneck.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/turtleneck/white_turtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitKoftaGreen
+  name: комбинезон с зелёной кофтой
+  description: мягкая зелёная кофта под толстым комбинезоном на лямках.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/turtleneck/green_jumpsuit.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/turtleneck/green_jumpsuit.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingUniformJumpsuitShinee
+  name: чёрная шинель
+  description: Грубая шинель чёрного цвета. Выглядит устрашающе.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/turtleneck/overcoat.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/turtleneck/overcoat.rsi
+

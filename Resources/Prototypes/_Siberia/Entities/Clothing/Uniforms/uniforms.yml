@@ -1,0 +1,146 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: UniformJabroni
+  name: костюм мастера качалки
+  description: For artists, perfomance artists.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/jabroni.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/jabroni.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: UniformSchoolgirlRed
+  name: красная форма школьницы
+  description: Готовы к школе!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/red.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/red.rsi
+
+- type: entity
+  parent: UniformSchoolgirlRed
+  id: UniformSchoolgirlBlack
+  name: чёрная форма школьницы
+  description: Опять эти ваши бурятские мультики
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/black.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/black.rsi
+
+- type: entity
+  parent: UniformSchoolgirlRed
+  id: UniformSchoolgirlBlue
+  name: синяя форма школьницы
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/blue.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/blue.rsi
+
+- type: entity
+  parent: UniformSchoolgirlRed
+  id: UniformSchoolgirlCyan
+  name: голубая форма школьницы
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/cyan.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/cyan.rsi
+
+- type: entity
+  parent: UniformSchoolgirlRed
+  id: UniformSchoolgirlGreen
+  name: зелёная форма школьницы
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/green.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/green.rsi
+
+- type: entity
+  parent: UniformSchoolgirlRed
+  id: UniformSchoolgirlOrange
+  name: оранжевая форма школьнцы
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/orange.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/orange.rsi
+
+- type: entity
+  parent: UniformSchoolgirlRed
+  id: UniformSchoolgirlPink
+  name: розовая форма школьницы
+  description: Сенпай!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/pink.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/pink.rsi
+
+- type: entity
+  parent: UniformSchoolgirlRed
+  id: UniformSchoolgirlPurple
+  name: фиолетовая форма школьницы
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/purple.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/Schoolgirl/purple.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: UniformGeisha
+  name: платье Гейши
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/geisha.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/geisha.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtNurse
+  name: рубашка медсестры
+  description: Теперь без рукавов!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/nurse.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/nurse.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformKendoHakama
+  name: хакама
+  description: Элегантная тёмно-синяя Хакама для Кэндо
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/hakama.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/hakama.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformMartialGi
+  name: халат
+  description: Просто и понятно. Халат для бани
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/gi.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/gi.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformArc
+  name: длинное фиолетовое платье
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Costume/arc.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Costume/arc.rsi

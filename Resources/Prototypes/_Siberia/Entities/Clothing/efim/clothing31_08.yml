@@ -1,0 +1,79 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBlackBeret
+  name: чёрный берет
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/31_08/blackberet.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/31_08/blackberet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatWhiteBeret
+  name: белый берет
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/31_08/whiteberet.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/31_08/whiteberet.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckNuker
+  name: плащ плюшевого нюкера
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/31_08/nuker.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/31_08/nuker.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckRvanNuker
+  name: порванный плащ плюшевого нюкера
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/31_08/nukerrvan.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/31_08/nukerrvan.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckRanger
+  name: плащ рубэн гада
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/31_08/ranger.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/31_08/ranger.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckWhiteGhost
+  name: белый плащ легендарного призрака
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/31_08/whitecape.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/31_08/whitecape.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingNeckWolf
+  name: волчья шкура
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/31_08/wolfcape.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/31_08/wolfcape.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformBlackPants
+  name: чёрные штаны
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/31_08/blackpants.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/31_08/blackpants.rsi

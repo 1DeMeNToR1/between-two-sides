@@ -1,0 +1,83 @@
+- type: entity
+  name: чёрные стальные ступеньки
+  id: StairSteelBlack
+  parent: Stairs
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/stairs.rsi
+    state: stairs_black
+    drawdepth: FloorTiles
+
+- type: entity
+  name: чёрные стальные ступеньки
+  id: StairSteelBlackStage
+  parent: Stairs
+  suffix: перила
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/stairs.rsi
+    state: stairs_black_stage
+    drawdepth: FloorTiles
+
+- type: entity
+  id: StairSteelWhite
+  name: белые стальные ступеньки
+  parent: Stairs
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/stairs.rsi
+    state: stairs_metal
+    drawdepth: FloorTiles
+
+- type: entity
+  id: StairSteelWhiteStage
+  name: белые стальные ступеньки
+  parent: Stairs
+  suffix: перила
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/stairs.rsi
+    state: stairs_metal_stage
+    drawdepth: FloorTiles
+
+- type: entity
+  id: StairWood
+  name: деревянные ступеньки
+  parent: Stairs
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/stairs.rsi
+    state: stairs_wood
+    drawdepth: FloorTiles
+
+- type: entity
+  id: StairWoodStage
+  name: деревянные ступеньки
+  parent: Stairs
+  suffix: перила
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/stairs.rsi
+    state: stairs_wood_stage
+    drawdepth: FloorTiles
+
+- type: entity
+  id: StairSteel
+  name: стальные ступеньки
+  parent: Stairs
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/stairs.rsi
+    state: stairs_gray_metal
+    drawdepth: FloorTiles
+
+- type: entity
+  id: StairSteelStage
+  name: стальные ступеньки
+  parent: Stairs
+  suffix: перила
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/stairs.rsi
+    state: stairs_gray_metal_stage
+    drawdepth: FloorTiles
