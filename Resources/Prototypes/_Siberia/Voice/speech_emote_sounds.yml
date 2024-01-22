@@ -10,7 +10,6 @@
 
 # having to explicitly variantize things so you DON'T get variations on beep and whirr is fucking bad
 # TODO complain to upstream
-# комменты от Брохи на английском, хмммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммм
 
 - type: emoteSounds
   id: UnisexIPC
