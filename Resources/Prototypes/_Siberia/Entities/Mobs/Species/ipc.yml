@@ -134,7 +134,7 @@
 - type: soundCollection
   id: FootstepIpc
   files:
-  - /Audio/_FTL/robotstep.ogg
+  - /Audio/Siberia/robotstep.ogg
 
 - type: entity
   name: Urist McIPC
