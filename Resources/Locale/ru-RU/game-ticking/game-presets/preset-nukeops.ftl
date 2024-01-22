@@ -2,7 +2,7 @@ nukeops-title = Ядерные оперативники
 nukeops-description = Ядерные оперативники нацелились на станцию. Постарайтесь не дать им взвести и взорвать ядерную бомбу, защищая ядерный диск!
 nukeops-welcome =
     Вы - ядерный оперативник. Ваша задача - взорвать { $station } и убедиться, что от неё осталась лишь груда обломков. Ваше руководство, Синдикат, снабдило вас всем необходимым для выполнения этой задачи.
-    Операция "{ $name }" началась! Смерть Nanotrasen!
+    Операция "{$name}" началась! Смерть Nanotrasen!
 nukeops-opsmajor = [color=crimson]Крупная победа Синдиката![/color]
 nukeops-opsminor = [color=crimson]Малая победа Синдиката![/color]
 nukeops-neutral = [color=yellow]Ничейный исход![/color]
@@ -21,7 +21,7 @@ nukeops-cond-somenukiesalive = Несколько ядерных операти�
 nukeops-cond-allnukiesalive = Все ядерные оперативники выжили.
 nukeops-list-start = Ядерными оперативниками были:
 nukeops-list-name = - [color=White]{ $name }[/color]
-nukeops-list-name-user = - [color=White]{ $name }[/color] ([color=gray]{ $user }[/color])
+nukeops-list-name-user = - [color=White]{ $name }[/color] 
 nukeops-not-enough-ready-players = Недостаточно игроков готовы к игре! { $readyPlayersCount } игроков из необходимых { $minimumPlayers } готовы. Нельзя запустить пресет Ядерные оперативники.
 nukeops-no-one-ready = Нет готовых игроков! Нельзя запустить пресет Ядерные оперативники.
 nukeops-role-commander = Командир
