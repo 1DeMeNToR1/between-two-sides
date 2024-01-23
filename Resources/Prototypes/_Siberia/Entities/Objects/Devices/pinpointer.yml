@@ -1,0 +1,38 @@
+- type: entity
+  name: pinpointer anomaly # может потом локализовать, как П.И.Н.А. типо пингвин?
+  description: A handheld tracking device. While typically far more capable, this one has been configured to lock onto certain signals.
+  parent: BaseItem
+  id: PinpointerAnomaly
+  components:
+  - type: Transform
+    noRot: True
+  - type: Sprite
+    noRot: True
+    sprite: Siberia/Objects/Devices/pinpointer_anomaly.rsi
+    layers:
+    - state: pinpointer
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Item
+    sprite: Siberia/Objects/Devices/pinpointer_anomaly.rsi
+  - type: Pinpointer
+    component: Anomaly
+    targetName: Anomaly
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PinpointerVisuals.IsActive:
+        enum.PinpointerLayers.Screen:
+          True: { visible: True }
+          False: { visible: False }
+      enum.PinpointerVisuals.TargetDistance:
+        enum.PinpointerLayers.Screen:
+          Unknown: { state: pinonnull }
+          Reached: { state: pinondirect }
+          Close: { state: pinonclose }
+          Medium: { state: pinonmedium }
+          Far: { state: pinonfar }
+  - type: AnimationPlayer
