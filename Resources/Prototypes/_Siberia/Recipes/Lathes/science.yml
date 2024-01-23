@@ -1,0 +1,9 @@
+- type: latheRecipe
+  id: PinpointerAnomaly
+  result: PinpointerAnomaly
+  completetime: 5
+  materials:
+    Steel: 1000
+    Glass: 1500
+    Plastic: 1500
+    Gold: 500
