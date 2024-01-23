@@ -310,6 +310,7 @@
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
       - PinpointerAnomaly # Siberia-change
+      - BlueSpacePillCanister # Siberia-change
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
