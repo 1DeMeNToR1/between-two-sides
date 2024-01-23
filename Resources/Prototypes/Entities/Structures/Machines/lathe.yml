@@ -309,6 +309,7 @@
       - FauxTileAstroIce
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
+      - PinpointerAnomaly # Siberia-change
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
