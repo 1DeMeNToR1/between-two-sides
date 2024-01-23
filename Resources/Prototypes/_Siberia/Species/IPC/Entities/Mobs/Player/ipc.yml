@@ -13,6 +13,9 @@
       messagePerceivedByOthers: hugging-success-generic-others
     - type: Input
       context: "human"
+    - type: Icon
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: full
     - type: MobMover
     - type: InputMover
     - type: Alerts
