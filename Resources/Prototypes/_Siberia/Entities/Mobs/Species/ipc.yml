@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Urist McIPC
-  parent: BaseMobSpeciesOrganicEfimIpc
+  parent: BaseMobSpeciesOrganicIpc
   id: BaseMobIPC
   abstract: true
   components:
@@ -155,7 +155,7 @@
   - MobAtmosStandard
   - MobFlammable
   - BaseMobSpecies
-  id: BaseMobSpeciesOrganicEfimIpc
+  id: BaseMobSpeciesOrganicIpc
   abstract: true
   components:
   - type: Barotrauma
