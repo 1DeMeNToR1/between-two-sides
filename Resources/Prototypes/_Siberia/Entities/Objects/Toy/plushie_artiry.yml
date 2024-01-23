@@ -1,0 +1,9 @@
+- type: entity
+  parent: BasePlushie
+  id: СhibiSaber
+  name: Артурия Сэйбер
+  description: Лучшая девочка в аниме
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_artiry.rsi
+    state: СhibiSaber
