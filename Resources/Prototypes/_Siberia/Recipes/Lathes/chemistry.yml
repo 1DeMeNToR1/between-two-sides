@@ -1,0 +1,9 @@
+- type: latheRecipe
+  id: BlueSpacePillCanister
+  result: BlueSpacePillCanister
+  completetime: 1
+  materials:
+    Steel: 600
+    Plastic: 300
+    Gold: 300
+    Silver: 50

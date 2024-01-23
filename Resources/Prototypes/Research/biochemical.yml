@@ -16,6 +16,7 @@
   - ChemicalPayload
   - ClothingEyesGlassesChemical
   - Jug
+  - BlueSpacePillCanister # Siberia-change
 
 - type: technology
   id: SurgicalTools
