@@ -4,3 +4,6 @@
   antagonist: true
   setPreference: false
   objective: roles-antag-subverted-silicon-objective
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 108000 # 30h # Corvax-RoleTime
