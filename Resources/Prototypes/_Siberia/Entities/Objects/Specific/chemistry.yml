@@ -1,0 +1,24 @@
+- type: entity
+  name: advanced pill canister
+  id: BlueSpacePillCanister
+  parent: BaseStorageItem
+  components:
+  - type: Item
+    size: Tiny
+    sprite: Siberia/Objects/Specific/Chemistry/bluespace_pills_canister.rsi
+  - type: Sprite
+    sprite: Siberia/Objects/Specific/Chemistry/bluespace_pills_canister.rsi
+    layers:
+    - state: icon
+  - type: Tag
+    tags:
+      - PillCanister
+  - type: Storage
+    grid:
+    - 0,0,6,4
+    quickInsert: true
+    areaInsert: true
+    areaInsertRadius: 1
+    storageInsertSound: /Audio/Effects/pill_insert.ogg
+    storageRemoveSound: /Audio/Effects/pill_remove.ogg
+  - type: Dumpable
