@@ -1,0 +1,19 @@
+- type: entity
+  id: CrateMultiColoredLamps
+  name: crate of colorful lamps 
+  parent: CrateEngineeringSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: LightTubeCrystalBlue
+        amount: 5
+      - id: LightTubeCrystalCyan
+        amount: 5
+      - id: LightTubeCrystalPink
+        amount: 5
+      - id: LightTubeCrystalRed
+        amount: 5
+      - id: LightTubeCrystalGreen
+        amount: 5
+      - id: LightTubeCrystalOrange
+        amount: 5
