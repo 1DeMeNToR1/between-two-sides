@@ -5,7 +5,7 @@
 #  markingCategory: Head
 #  speciesRestriction: [IPC]
 #  sprites:
-#    - sprite: _FTL/Mobs/Customization/ipc.rsi
+#    - sprite: Siberia/Mobs/Customization/ipc.rsi
 #      state: {}
 
 #region auto generated
@@ -15,7 +15,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: static
 
 - type: marking
@@ -24,7 +24,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: blue
 
 - type: marking
@@ -33,7 +33,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: breakout
 
 - type: marking
@@ -42,7 +42,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: eight
 
 - type: marking
@@ -51,7 +51,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: goggles
 
 - type: marking
@@ -60,7 +60,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: excla
 
 - type: marking
@@ -69,7 +69,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: heart
 
 - type: marking
@@ -78,7 +78,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: monoeye
 
 - type: marking
@@ -87,7 +87,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: nature
 
 - type: marking
@@ -96,7 +96,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: orange
 
 - type: marking
@@ -105,7 +105,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: pink
 
 - type: marking
@@ -114,7 +114,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: question
 
 - type: marking
@@ -123,7 +123,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: shower
 
 - type: marking
@@ -132,7 +132,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: yellow
 
 - type: marking
@@ -141,7 +141,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: scroll
 
 - type: marking
@@ -150,7 +150,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: console
 
 - type: marking
@@ -159,7 +159,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: rgb
 
 - type: marking
@@ -168,7 +168,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: glider
 
 - type: marking
@@ -177,7 +177,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: rainbow
 
 - type: marking
@@ -186,7 +186,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: bsod
 
 - type: marking
@@ -195,7 +195,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: redtext
 
 - type: marking
@@ -204,7 +204,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: sinewave
 
 - type: marking
@@ -213,7 +213,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: screenwave
 
 - type: marking
@@ -222,7 +222,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: ecgwave
 
 - type: marking
@@ -231,7 +231,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: eyes
 
 - type: marking
@@ -240,7 +240,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: eyesstall
 
 - type: marking
@@ -249,7 +249,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: eyesangry
 
 - type: marking
@@ -258,7 +258,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: loading
 
 - type: marking
@@ -267,7 +267,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: windowsxp
 
 - type: marking
@@ -276,7 +276,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: tetris
 
 - type: marking
@@ -285,7 +285,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: tv
 
 - type: marking
@@ -294,7 +294,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: textdrop
 
 - type: marking
@@ -303,7 +303,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: stars
 
 - type: marking
@@ -312,7 +312,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: rainbowdiag
 
 - type: marking
@@ -321,7 +321,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: blank
 
 - type: marking
@@ -330,7 +330,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: smile
 
 - type: marking
@@ -339,7 +339,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: sad
 
 - type: marking
@@ -348,7 +348,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: ring
 
 - type: marking
@@ -357,7 +357,7 @@
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: l
 
 - type: marking
@@ -366,7 +366,7 @@
   markingCategory: HeadTop
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: tvantenna
 
 - type: marking
@@ -375,7 +375,7 @@
   markingCategory: HeadTop
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: tesla
 
 - type: marking
@@ -384,7 +384,7 @@
   markingCategory: HeadTop
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: cyberheadantenna
 
 - type: marking
@@ -393,7 +393,7 @@
   markingCategory: HeadSide
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: sidelights
 
 - type: marking
@@ -402,7 +402,7 @@
   markingCategory: HeadTop
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: antlers
 
 - type: marking
@@ -411,7 +411,7 @@
   markingCategory: HeadTop
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: drone
 
 - type: marking
@@ -420,7 +420,7 @@
   markingCategory: HeadTop
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: crowned
 
 - type: marking
@@ -429,7 +429,7 @@
   markingCategory: HeadTop
   speciesRestriction: [IPC]
   sprites:
-    - sprite: _FTL/Mobs/Customization/ipc.rsi
+    - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: antennae
 
 #endregion
