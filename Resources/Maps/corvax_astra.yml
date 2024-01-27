@@ -23064,27 +23064,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -63.5,-49.5
       parent: 2
-  - uid: 21563
-    components:
-    - type: MetaData
-      flags: PvsPriority
-    - type: Transform
-      pos: 37.5,-14.5
-      parent: 2
-  - uid: 29196
-    components:
-    - type: MetaData
-      flags: PvsPriority
-    - type: Transform
-      pos: 31.5,-20.5
-      parent: 2
-  - uid: 29391
-    components:
-    - type: MetaData
-      flags: PvsPriority
-    - type: Transform
-      pos: 33.5,-14.5
-      parent: 2
   - uid: 32422
     components:
     - type: MetaData
@@ -23155,6 +23134,29 @@ entities:
     - type: Docking
       dockJointId: docking58240
       dockedWith: 614
+- proto: AirlockTheatreLocked
+  entities:
+  - uid: 11100
+    components:
+    - type: MetaData
+      flags: PvsPriority
+    - type: Transform
+      pos: 33.5,-14.5
+      parent: 2
+  - uid: 21563
+    components:
+    - type: MetaData
+      flags: PvsPriority
+    - type: Transform
+      pos: 31.5,-20.5
+      parent: 2
+  - uid: 29196
+    components:
+    - type: MetaData
+      flags: PvsPriority
+    - type: Transform
+      pos: 37.5,-14.5
+      parent: 2
 - proto: AirlockVirologyGlassLocked
   entities:
   - uid: 622
@@ -98552,17 +98554,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingHeadHelmetVoidParamed
-  entities:
-  - uid: 11100
-    components:
-    - type: MetaData
-      flags: InContainer
-    - type: Transform
-      parent: 11099
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingHeadRastaHat
   entities:
   - uid: 33868
@@ -101805,6 +101796,13 @@ entities:
           friction: 0.4
     - type: PlaceableSurface
       isPlaceable: True
+- proto: CrateNPCHamlet
+  entities:
+  - uid: 19139
+    components:
+    - type: Transform
+      pos: 4.5,26.5
+      parent: 2
 - proto: CratePirate
   entities:
   - uid: 27045
@@ -163350,11 +163348,6 @@ entities:
     - type: Transform
       pos: 7.5,15.5
       parent: 2
-  - uid: 19139
-    components:
-    - type: Transform
-      pos: 4.5,26.5
-      parent: 2
   - uid: 19140
     components:
     - type: Transform
@@ -185100,7 +185093,6 @@ entities:
           ents:
           - 11104
           - 11101
-          - 11100
           - 11103
           - 11102
   - uid: 11414
