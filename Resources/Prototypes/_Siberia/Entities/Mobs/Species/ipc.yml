@@ -5,6 +5,9 @@
   id: BaseMobIPC
   abstract: true
   components:
+    - type: Thieving
+      stealthy: true
+      stripTimeReduction: 1
     # The important nessessities
     - type: MovementSpeedModifier
       baseWalkSpeed : 2
@@ -80,6 +83,8 @@
         Dead: BorgDead
     - type: UserInterface
       interfaces:
+      - key: enum.StrippingUiKey.Key
+        type: StrippableBoundUserInterface
       - key: enum.SiliconLawsUiKey.Key
         type: SiliconLawBoundUserInterface
     - type: SiliconLawBound
