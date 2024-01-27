@@ -5,7 +5,7 @@
   components:
     - type: Sprite
       netsync: false
-      sprite: _FTL/Mobs/Species/IPCs/organs.rsi
+      sprite: Siberia/Mobs/Species/IPC/organs.rsi
     - type: Organ
     - type: Extractable
       grindableSolutionName: organ

@@ -18,7 +18,7 @@
       damageContainer: Biological
       damageModifierSet: Metallic
     - type: Icon
-      sprite: _FTL/Mobs/Species/IPCs/parts.rsi
+      sprite: Siberia/Mobs/Species/IPC/parts.rsi
       state: full
     # Damage and speed
     - type: Bloodstream
