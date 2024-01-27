@@ -1,7 +1,7 @@
 - type: entity
   save: false
   name: Urist McIPC
-  parent: BaseMobSpeciesOrganicEfimIpc
+  parent: BaseMobSpeciesOrganicIpc
   id: BaseMobIPC
   abstract: true
   components:
@@ -18,7 +18,7 @@
       damageContainer: Biological
       damageModifierSet: Metallic
     - type: Icon
-      sprite: _FTL/Mobs/Species/IPCs/parts.rsi
+      sprite: Siberia/Mobs/Species/IPC/parts.rsi
       state: full
     # Damage and speed
     - type: Bloodstream
@@ -65,7 +65,7 @@
       sounds:
         Unsexed: UnisexIPC
       wilhelm:
-        path: /Audio/_FTL/Voice/IPC/wilhelm.ogg
+        path: /Audio/Siberia/Voice/IPC/wilhelm.ogg
       wilhelmProbability: 0.001
     - type: Inventory
       templateId: ipc
@@ -80,6 +80,8 @@
         Dead: BorgDead
     - type: UserInterface
       interfaces:
+      - key: enum.StrippingUiKey.Key
+        type: StrippableBoundUserInterface
       - key: enum.SiliconLawsUiKey.Key
         type: SiliconLawBoundUserInterface
     - type: SiliconLawBound
@@ -134,7 +136,7 @@
 - type: soundCollection
   id: FootstepIpc
   files:
-  - /Audio/_FTL/robotstep.ogg
+  - /Audio/Siberia/robotstep.ogg
 
 - type: entity
   name: Urist McIPC
@@ -155,7 +157,7 @@
   - MobAtmosStandard
   - MobFlammable
   - BaseMobSpecies
-  id: BaseMobSpeciesOrganicEfimIpc
+  id: BaseMobSpeciesOrganicIpc
   abstract: true
   components:
   - type: Barotrauma

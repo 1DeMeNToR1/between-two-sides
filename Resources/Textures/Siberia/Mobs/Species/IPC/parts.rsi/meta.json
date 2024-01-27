@@ -46,6 +46,10 @@
     {
       "name": "head",
       "directions": 4
+    },
+	{
+      "name": "full",
+      "directions": 4
     }
   ]
 }

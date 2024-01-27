@@ -1,0 +1,16 @@
+- type: soundCollection
+  id: IPCWhirrs
+  files:
+    - /Audio/Siberia/Voice/IPC/whirr1.ogg
+    - /Audio/Siberia/Voice/IPC/whirr2.ogg
+    - /Audio/Siberia/Voice/IPC/whirr3.ogg
+
+- type: soundCollection
+  id: IPCBeeps
+  files:
+  - /Audio/Siberia/Voice/IPC/beep_2000.ogg
+
+- type: soundCollection
+  id: IPCBoops
+  files:
+  - /Audio/Siberia/Voice/IPC/beep_500.ogg
