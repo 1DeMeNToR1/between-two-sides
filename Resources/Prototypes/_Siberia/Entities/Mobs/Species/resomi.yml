@@ -92,7 +92,7 @@
       Unsexed: UnisexResomi
   - type: Damageable # скоро!!
     damageContainer: Biological
-    damageModifierSet: Scale
+    damageModifierSet: Resomi
   - type: Stamina
     critThreshold: 90
   - type: MeleeWeapon
