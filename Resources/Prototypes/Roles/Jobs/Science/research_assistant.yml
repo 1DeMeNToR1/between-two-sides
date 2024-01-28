@@ -5,7 +5,8 @@
   playTimeTracker: JobResearchAssistant
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 10800 #3 hrs
+      time: 36000 #10 hrs Siberia-RoleTime
+  startingGear: ResearchAssistantGear    
   icon: "JobIconResearchAssistant"
   supervisors: job-supervisors-science
   canBeAntag: false

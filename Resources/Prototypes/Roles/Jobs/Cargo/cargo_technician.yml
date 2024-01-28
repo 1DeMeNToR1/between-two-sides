@@ -3,6 +3,10 @@
   name: job-name-cargotech
   description: job-description-cargotech
   playTimeTracker: JobCargoTechnician
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 7200 #3 hrs # Siberia-RoleTime
   startingGear: CargoTechGear
   icon: "JobIconCargoTechnician"
   supervisors: job-supervisors-qm

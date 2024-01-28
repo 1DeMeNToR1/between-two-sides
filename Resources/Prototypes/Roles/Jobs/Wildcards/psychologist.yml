@@ -3,6 +3,10 @@
   name: job-name-psychologist
   description: job-description-psychologist
   playTimeTracker: JobPsychologist
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 7200 #3 hrs # Siberia-RoleTime
   startingGear: PsychologistGear
   icon: "JobIconPsychologist"
   supervisors: job-supervisors-cmo
