@@ -3,6 +3,10 @@
   name: job-name-boxer
   description: job-description-boxer
   playTimeTracker: JobBoxer
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 7200 #3 hrs # Siberia-RoleTime
   startingGear: BoxerGear
   icon: "JobIconBoxer"
   supervisors: job-supervisors-hop

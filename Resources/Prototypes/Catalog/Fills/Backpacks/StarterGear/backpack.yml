@@ -28,6 +28,7 @@
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: MagazinePistol
+      - id: SurveillanceSecCum # Siberia-change
 
 - type: entity
   noSpawn: true
@@ -40,6 +41,7 @@
       - id: Flash
       - id: ForensicPad
       - id: ForensicScanner
+      - id: SurveillanceSecCum # Siberia-change
 
 - type: entity
   noSpawn: true
@@ -137,6 +139,7 @@
       - id: BoxSurvivalSecurity
       - id: Flash
       - id: MagazinePistol
+      - id: SurveillanceSecCum # Siberia-change
 
 - type: entity
   noSpawn: true
@@ -365,6 +368,7 @@
     - type: StorageFill
       contents:
         - id: BoxSurvival
+        - id: SurveillanceSalvCum # Siberia-change
 
 # Pirate
 

@@ -8,7 +8,12 @@
   supervisors: job-supervisors-everyone
 #  access: # Corvax-MRP
 #  - Maintenance
-
+  canBeAntag: false
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Pacified
+  
 - type: startingGear
   id: PassengerGear
   equipment:
