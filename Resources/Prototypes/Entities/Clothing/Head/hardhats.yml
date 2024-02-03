@@ -20,7 +20,7 @@
     netsync: false
   - type: Appearance
   - type: HandheldLight
-    addPrefix: false
+    addPrefix: true # Siberia-change
     blinkingBehaviourId: blinking
     radiatingBehaviourId: radiating
   - type: LightBehaviour
@@ -41,8 +41,8 @@
         maxValue: 2.0
         isLooped: true
   - type: ToggleableLightVisuals
-    spriteLayer: light
-    # inhandVisuals:        Siberia-change
+    # spriteLayer: light
+    # inhandVisuals:        #Siberia-change
       # left:
       # - state: on-inhand-left
       # right:
