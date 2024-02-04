@@ -14,3 +14,38 @@
   id: IPCBoops
   files:
   - /Audio/Siberia/Voice/IPC/beep_500.ogg
+
+- type: soundCollection
+  id: IPCPilik
+  files:
+  - /Audio/Siberia/Voice/IPC/pilik.ogg
+
+- type: soundCollection
+  id: IPCThink
+  files:
+  - /Audio/Siberia/Voice/IPC/loading.ogg
+
+- type: soundCollection
+  id: IPCNyancat
+  files:
+  - /Audio/Siberia/Voice/IPC/nyan.ogg
+
+- type: soundCollection
+  id: IPCOmg
+  files:
+  - /Audio/Siberia/Voice/IPC/omg.ogg
+
+- type: soundCollection
+  id: IPCError
+  files:
+  - /Audio/Siberia/Voice/IPC/windows-xp-critical-stop.ogg
+
+- type: soundCollection
+  id: IPCStarting
+  files:
+  - /Audio/Siberia/Voice/IPC/windows-xp-startup.ogg
+
+- type: soundCollection
+  id: IPCBdt
+  files:
+  - /Audio/Siberia/Voice/IPC/bdt.ogg

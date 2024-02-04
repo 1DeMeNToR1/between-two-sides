@@ -36,3 +36,31 @@
       collection: BikeHorn
       params:
         variation: 0.125
+    Pilik:
+      collection: IPCPilik
+      params:
+        volume: -10
+    Dymaet:
+      collection: IPCThink
+      params:
+        volume: -10
+    Nyancat:
+      collection: IPCNyancat
+      params:
+        volume: -15
+    Omg:
+      collection: IPCOmg
+      params:
+        volume: -13
+    Error:
+      collection: IPCError
+      params:
+        volume: -10
+    Starting:
+      collection: IPCStarting
+      params:
+        volume: -10
+    Bdt:
+      collection: IPCBdt
+      params:
+        volume: -10

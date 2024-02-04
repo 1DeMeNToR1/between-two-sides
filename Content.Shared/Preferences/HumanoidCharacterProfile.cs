@@ -435,7 +435,7 @@ namespace Content.Shared.Preferences
             var configManager = IoCManager.Resolve<IConfigurationManager>();
             if (configManager.GetCVar(CCVars.RestrictedNames))
             {
-                name = Regex.Replace(name, @"[^А-Яа-яёЁ0-9' -]", string.Empty); // Corvax: Only cyrillic names
+                name = Regex.Replace(name, @"[^А-Яа-яёЁ0-9A-Z,a-z' -]", string.Empty); // Siberia
             }
 
             if (configManager.GetCVar(CCVars.ICNameCase))
