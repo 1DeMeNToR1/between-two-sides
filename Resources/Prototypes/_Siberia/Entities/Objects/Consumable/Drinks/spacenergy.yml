@@ -1,0 +1,17 @@
+- type: entity
+  parent: DrinkCanBaseFull
+  id: DrinkSpaceEnergyCan
+  name: банка Nebula energy 
+  description: Энергетический тонизирующий напиток. Для тех, кто выбрал работу и веселье вместо сна.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: SpaceMountainWind
+          Quantity: 30
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Drinks/spacenergy_drink.rsi
+  - type: Item
+    sprite: Siberia/Objects/Consumable/Drinks/spacenergy_drink.rsi
