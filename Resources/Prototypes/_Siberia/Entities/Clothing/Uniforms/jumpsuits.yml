@@ -188,3 +188,22 @@
     - type: Clothing
       sprite: Siberia/Clothing/turtleneck/overcoat.rsi
 
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingUniformJumpsuitBlackPlashAss
+  name: чёрный плащ
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/assasin_coats/black_plash.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/assasin_coats/black_plash.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingUniformJumpsuitWhitePlashAss
+  name: белый плащ
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/assasin_coats/white_plash.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/assasin_coats/white_plash.rsi

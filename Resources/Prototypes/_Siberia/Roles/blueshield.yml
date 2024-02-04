@@ -1,0 +1,365 @@
+- type: job
+  id: Blueshield
+  name: офицер "Синий Щит"
+  description: Вы нянька Nanotrasen. Охраняйте глав от антагонистов. Не занимайтесь охотой на антагонистов, это не ваша работа.
+  playTimeTracker: JobBlueshield
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 108000 #200 hrs
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 108000 #200 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 144000 #200 hrs
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 108000 # 15000 hours
+    - !type:OverallPlaytimeRequirement
+      time: 252000 #140 hrs
+  weight: 20
+  startingGear: BlueShieldGear
+  icon: "JobIconBlueShield"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  access:
+  - Maintenance
+  - Engineering
+  - Command
+  - External
+  - Research
+  - Brig
+  - Security
+  - Armory
+  - Service
+  - Medical
+  - Cargo
+  - Salvage
+  - Blueshield
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconBlueShield
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Blueshield
+
+- type: startingGear
+  id: BlueShieldGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBlueshield
+    back: ClothingBackpackSecurityFilled
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesSunglasses
+    head: ClothingHeadHatBeretBlueshield
+    id: BlueshieldPDA
+    ears: ClothingHeadsetAltCommand
+    belt: ClothingBeltAssault
+    pocket1: WeaponPistolMk58Nonlethal
+    pocket2: CrowbarRed
+  satchel: ClothingBackpackSatchelSecurityFilled
+  duffelbag: ClothingBackpackDuffelSecurityFilled
+
+- type: playTimeTracker
+  id: JobBlueshield
+
+- type: entity
+  id: SpawnPointBlueshield
+  parent: SpawnPointJobBase
+  name: синий щит
+  components:
+  - type: SpawnPoint
+    job_id: Blueshield
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+
+- type: entity
+  id: LockerBlueShield
+  parent: LockerBaseSecure
+  name: шкаф синего щита
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: bs
+    stateDoorOpen: bs_open
+    stateDoorClosed: bs_door
+  - type: AccessReader
+    access: [["Blueshield"]]
+
+- type: accessLevel
+  id: Blueshield
+  name: Офицер "Синий щит"
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesSecurityBlueShield
+  name: охранные очки офицера "Синий Щит"
+  description: Я! ТУТ! ЗАКОН!
+  components:
+  - type: Sprite
+    sprite: Siberia/Roles/BlueShield/glases.rsi
+  - type: Clothing
+    sprite: Siberia/Roles/BlueShield/glases.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: ShowSecurityIcons
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretBlueshield
+  name: берет офицера "Синий щит"
+  description: Say my name
+  components:
+  - type: Sprite
+    sprite: Siberia/Roles/BlueShield/beret.rsi
+  - type: Clothing
+    sprite: Siberia/Roles/BlueShield/beret.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakBlueshield
+  name: плащ офицера "Синий щит"
+  description: Let's dance!
+  components:
+  - type: Sprite
+    sprite: Siberia/Roles/BlueShield/cape.rsi
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasBlueshield
+  name: боевой противогаз
+  description: Противогаз офицера "Синий щит", оснащённый лёгким пуленепробиваемым стеклом
+  components:
+  - type: Sprite
+    sprite: Siberia/Roles/BlueShield/gasmask.rsi
+  - type: Clothing
+    sprite: Siberia/Roles/BlueShield/gasmask.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.90
+        Heat: 0.90
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlueshield
+  name: форма офицера "Синий щит"
+  description: Рубашка офицера с вшитой бронетканью
+  components:
+  - type: Sprite
+    sprite: Siberia/Roles/BlueShield/uniform.rsi
+  - type: Clothing
+    sprite: Siberia/Roles/BlueShield/uniform.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+- type: entity
+  parent: ClothingOuterHardsuitSecurity
+  id: ClothingOuterHardsuitBlueshield
+  name: скафандр офицера "Синий щит"
+  description: Бронированный скафандр обученного телохранителя глав станции.
+  components:
+  - type: Sprite
+    sprite: Siberia/Roles/BlueShield/hardsuit.rsi
+  - type: Clothing
+    sprite: Siberia/Roles/BlueShield/hardsuit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.5
+        Piercing: 0.5
+        Radiation: 0.5
+        Caustic: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitBlueshield
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitBlueshield
+  noSpawn: true
+  name: шлем скафандра офицера "Синий Щит"
+  components:
+  - type: Sprite
+    sprite: Siberia/Roles/BlueShield/hardhelm.rsi
+  - type: Clothing
+    sprite: Siberia/Roles/BlueShield/hardhelm.rsi
+  - type: PointLight
+    color: "#ffeead"
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: BasePDA
+  id: BlueshieldPDA
+  name: КПК Офицера "Синий щит"
+  description: Пахнет как ЩИТКУРИТИ
+  components:
+  - type: Pda
+    id: BlueshieldIDCard
+    state: pda-bartender
+  - type: PdaBorderColor
+    borderColor: "#333333"
+  - type: Icon
+    state: pda-bartender
+
+- type: entity
+  parent: IDCardStandard
+  id: BlueshieldIDCard
+  name: ID карта офицера "Синий щит"
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: idcentcom
+  - type: PresetIdCard
+    job: Blueshield
+
+- type: entity
+  id: LockerBlueshieldFilled
+  parent: LockerBlueShield
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingEyesGlassesSecurityBlueShield
+      - id: ClothingHandsGlovesCombat
+      - id: ClothingOuterVestWeb
+      - id: ClothingBackpackSatchelHoS
+      - id: ClothingHeadHatSyndieMAA
+      - id: ClothingMaskNeckGaiter
+      - id: PinpointerUniversal
+        amount: 3
+      - id: MedkitCombatFilled
+      - id: WeaponDisabler
+      - id: ClothingNeckCloakBlueshield
+      - id: ClothingHeadHatBeretBlueshield
+      - id: ForensicScanner
+      - id: ClothingBeltSecurityFilled
+      - id: Flash
+      - id:
+      - id:
+      - id:
+      - id:
+      - id:
+
+- type: entity
+  name: ионная винтовка
+  parent: BaseWeaponBattery
+  id: WeaponIonRifle
+  description: Ионная винтовка, созданная дворфом-оружейником. Имеет один заряд и после выстрела уходит на перезарядку. Офицеры "Синий Щит" часто отбрасывают винтовку после выстрела и добивают негодяя револьвером с бронебойными патронами, так что оружейники укрепили каркас винтовки.
+  components:
+  - type: Sprite
+    sprite: Siberia/Roles/BlueShield/ionrifle.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-1
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Siberia/Roles/BlueShield/ionrifle.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Siberia/resonator_blast.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: IonLaser
+    fireCost: 80
+  - type: Battery
+    maxCharge: 100
+    startingCharge: 100
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 20
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 750
+
+- type: hitscan
+  id: IonLaser
+  staminaDamage: 80
+  damage:
+    types:
+      Heat: 60
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_omni
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: beam_omni
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_omni
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: DeathRattleImplantNanotrasen
+  name: Имплант оповещения о смерти
+  description: Этот имплант сообщит о потере сознания/смерти своего владельца в медицинский канал станции
+  noSpawn: true
+  components:
+    - type: SubdermalImplant
+      permanent: true
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+      - Dead
+    - type: Rattle
+      radioChannel: Medical
+
+- type: entity
+  id: DeathRattleImplanterNanotrasen
+  name: Имплант оповещения о смерти
+  parent: BaseImplantOnlyImplanter
+  components:
+    - type: Implanter
+      implant: DeathRattleImplantNanotrasen
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockBlueshieldLocked
+  suffix: Blueshield, Locked
+  components:
+  - type: AccessReader
+    access: [["Blueshield"]]
