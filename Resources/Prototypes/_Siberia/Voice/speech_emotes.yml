@@ -2,39 +2,111 @@
 - type: emote
   id: Whirr
   category: Vocal
-  chatMessages: [whirrs]
+  chatMessages: [жужжит]
   chatTriggers:
-    - whirr
-    - whirrs
-    - whirrs.
-    - whirrs!
+    - жужжит
+    - журчит
+    - жужжит.
+    - жужжит!
 
 - type: emote
   id: Beep
   category: Vocal
-  chatMessages: [beeps]
+  chatMessages: [пикает]
   chatTriggers:
-    - beep
-    - beeps
-    - beeps.
-    - beeps!
+    - пикает
+    - пикает.
+    - пикает!
 
 - type: emote
   id: Boop
   category: Vocal
-  chatMessages: [boops]
+  chatMessages: [буп]
   chatTriggers:
-    - boop
-    - boops
-    - boops.
-    - boops!
+    - бупает
+    - бупает!
+    - бипает
+    - бипает!
+    - боп
+    - бупс.
+    - боп!
 
 - type: emote
   id: Ping
   category: Vocal
-  chatMessages: [pings]
+  chatMessages: [пингует]
   chatTriggers:
-    - ping
-    - pings
-    - pings.
-    - pings!
+    - пинг
+    - пингует
+    - пингует.
+    - пингует!
+    
+- type: emote
+  id: Pilik
+  category: Vocal
+  chatMessages: [пиликает]
+  chatTriggers:
+    - пиликает
+    - пиликает.
+    - пиликает!
+
+- type: emote
+  id: Dymaet
+  category: Vocal
+  chatMessages: [вычисляет]
+  chatTriggers:
+    - вычисляет
+    - вычисляет.
+    - вычисляет!
+    - рассчитывает
+    - рассчитывает.
+    - рассчитывает!    
+    - думает
+    - думает.
+    - думает!
+
+- type: emote
+  id: Nyancat
+  category: Vocal
+  chatMessages: [нянянкает]
+  chatTriggers:
+    - нянянкает
+    
+- type: emote
+  id: Omg
+  category: Vocal
+  chatMessages: [в шоке]
+  chatTriggers:
+    - в шоке
+    - в шоке.
+    - в шоке!
+    
+- type: emote
+  id: Error
+  category: Vocal
+  chatMessages: [выдаёт ошибку]
+  chatTriggers:
+    - выдаёт ошибку
+    - выдаёт ошибку.
+    - выдаёт ошибку!
+    
+- type: emote
+  id: Starting
+  category: Vocal
+  chatMessages: [запускается]
+  chatTriggers:
+    - запускается
+    - запускается.
+    - запускается!
+    - просыпается
+    - просыпается.
+    - просыпается!
+    
+- type: emote
+  id: Bdt
+  category: Vocal
+  chatMessages: [шутит]
+  chatTriggers:
+    - шутит
+    - шутит.
+    - шутит!
