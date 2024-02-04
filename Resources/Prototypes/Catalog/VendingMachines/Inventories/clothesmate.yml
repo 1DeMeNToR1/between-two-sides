@@ -83,6 +83,9 @@
     ClothingHandsGlovesColorGreen: 2
     ClothingHandsGlovesColorOrange: 2
     ClothingHandsGlovesColorPurple: 2
+    #Siberia
+    ClothingOuterCoatBomber: 2
+    ClothingNeckHeadphones: 2
   contrabandInventory:
     ClothingMaskNeckGaiter: 2
     ClothingUniformJumpsuitTacticool: 1

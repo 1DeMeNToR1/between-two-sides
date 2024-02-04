@@ -1,0 +1,62 @@
+# - type: vessel
+  # id: PTS
+  # name: Private Transport Shuttle
+  # description: Пассажирский шаттл на 6 мест и место для пилота
+  # price: 23000
+  # category: Small
+  # group: Civilian
+  # shuttlePath: /Maps/Shuttles/pts.yml
+
+# - type: vessel
+  # id: Barge
+  # name: The Barge
+  # description: Большая шахтёрская баржа с 18 слотами под грузы, 2 ящиками снаряжения утилизаторов и баром
+  # price: 45000
+  # category: Medium
+  # group: Civilian
+  # shuttlePath: /Maps/Shuttles/barge.yml
+  
+# - type: vessel
+  # id: Helix
+  # name: NTMC Helix
+  # description: Большой медицинский модуль для станции. Имеет химическую лабораторию, 3 койки, базовые медикаменты и комнату с криокапсулой
+  # price: 38500
+  # category: Medium
+  # group: Civilian
+  # shuttlePath: /Maps/Shuttles/helix.yml
+  
+# - type: vessel
+  # id: Prospecter
+  # name: NT-7 Prospecter
+  # description: Небольшой шаттл для шахтёрский экспедиций. Имеет мостик, небольшой склад и комнату с ящиком снаряжения утилизатора
+  # price: 19000
+  # category: Small
+  # group: Civilian
+  # shuttlePath: /Maps/Shuttles/prospecter.yml
+
+# - type: vessel
+  # id: courserx
+  # name: KL-CourserX
+  # description: Шаттл среднего размера подходящий охватывающий большую часть возможных проблеи, с которыми вы можете столкнуться в космосе.
+  # price: 40000
+  # category: Medium
+  # group: Civilian
+  # shuttlePath: /Maps/Shuttles/courserx.yml
+
+# - type: vessel
+  # id: pathfinder
+  # name: KL-Pathfinder
+  # description: Небольшой торговый шаттл на 3 места и 20 слотов под грузы. Подойдет и для таких задач, как экспедиции.
+  # price: 20000
+  # category: Small
+  # group: Civilian
+  # shuttlePath: /Maps/Shuttles/pathfinder.yml
+
+# - type: vessel
+  # id: sprinter
+  # name: KL-Sprinter
+  # description: Шаттл среднего размера подходящий для экспедиционных вылазок. Полюбился космогастарбайтерам за свой дизайн.
+  # price: 50000
+  # category: Medium
+  # group: Civilian
+  # shuttlePath: /Maps/Shuttles/sprinter.yml

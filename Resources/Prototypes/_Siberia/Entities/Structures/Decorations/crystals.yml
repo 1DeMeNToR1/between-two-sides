@@ -1,0 +1,473 @@
+# by Malanisa :р
+# Entities\Structures\Decoration
+
+# Кристаллы (Structures)
+
+- type: entity
+  id: CrystalGreenSmallMalanisa
+  parent: BaseStructure
+  name: зелёный кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/crystal.rsi #путь к текстуре
+    state: crystal_green_small
+  - type: Reflect
+    reflectProb: 0.5
+    reflects:
+    - Energy
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+        - Opaque
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#5ea34e"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardGreenMalanisa:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalGreenMalanisa
+  parent: CrystalGreenSmallMalanisa
+  name: зелёный кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_green
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#5ea34e"
+
+- type: entity
+  id: CrystalGreenMediumMalanisa
+  parent: CrystalGreenSmallMalanisa
+  name: зелёный кристалл
+  description: It's a shiny green crystal.
+  components:
+  - type: Sprite
+    state: crystal_green_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#5ea34e"
+
+- type: entity
+  id: CrystalPinkMalanisa
+  parent: CrystalGreenSmallMalanisa
+  name: розовый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_pink
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#a84dab"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardPinkMalanisa:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalPinkSmallMalanisa
+  parent: CrystalPinkMalanisa
+  name: розовый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_pink_small
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#a84dab"
+
+- type: entity
+  id: CrystalPinkMediumMalanisa
+  parent: CrystalPinkMalanisa
+  name: розовый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_pink_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#a84dab"
+
+- type: entity
+  id: CrystalGreyMalanisa
+  parent: CrystalGreenSmallMalanisa
+  name: серый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_grey
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#969696"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardGreyMalanisa:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalGreySmallMalanisa
+  parent: CrystalGreyMalanisa
+  name: серый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_grey_small
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#969696"
+
+- type: entity
+  id: CrystalGreyMediumMalanisa
+  parent: CrystalGreyMalanisa
+  name: серый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_grey_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#969696"
+
+- type: entity
+  id: CrystalOrangeMalanisa
+  parent: CrystalGreenSmallMalanisa
+  name: оранжевый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_orange
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#96863b"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardOrangeMalanisa:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalOrangeSmallMalanisa
+  parent: CrystalOrangeMalanisa
+  name: оранжевый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_orange_small
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#96863b"
+
+- type: entity
+  id: CrystalOrangeMediumMalanisa
+  parent: CrystalOrangeMalanisa
+  name: оранжевый кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_orange_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#96863b"
+
+- type: entity
+  id: CrystalBlueMalanisa
+  parent: CrystalGreenSmallMalanisa
+  name: синий кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_blue
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#3d5cb3"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardBlueMalanisa:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalBlueSmallMalanisa
+  parent: CrystalBlueMalanisa
+  name: синий кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_blue_small
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#3d5cb3"
+
+- type: entity
+  id: CrystalBlueMediumMalanisa
+  parent: CrystalBlueMalanisa
+  name: синий кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_blue_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#3d5cb3"
+
+- type: entity
+  id: CrystalCyanMalanisa
+  parent: CrystalGreenSmallMalanisa
+  name: голубой кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_cyan
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#47a8a5"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CrystalShardCyanMalanisa:
+            min: 0
+            max: 2
+
+- type: entity
+  id: CrystalCyanSmallMalanisa
+  parent: CrystalCyanMalanisa
+  name: голубой кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_cyan_small
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#47a8a5"
+
+- type: entity
+  id: CrystalCyanMediumMalanisa
+  parent: CrystalCyanMalanisa
+  name: голубой кристалл
+  description: Сияющее плотное скопление минерала. Вы можете увидеть своё отражение в нем.
+  components:
+  - type: Sprite
+    state: crystal_cyan_medium
+  - type: PointLight
+    radius: 3
+    energy: 2
+    color: "#47a8a5"
+
+# Осколки (Items)
+
+- type: entity
+  parent: BaseItem
+  id: CrystalShardGreenMalanisa
+  name: осколок зелёного кристалла
+  description: A small piece of crystal shard.
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Decoration/crystal.rsi
+    state: crystalshard_green
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#5ea34e"
+  - type: Tag
+    tags:
+      - CrystalShardGreenMalanisa
+
+- type: Tag
+  id: CrystalShardGreenMalanisa
+
+- type: entity
+  parent: CrystalShardGreenMalanisa
+  id: CrystalShardPinkMalanisa
+  name: осколок розового кристалла
+  description: A small piece of crystal shard.
+  components:
+  - type: Sprite
+    state: crystalshard_pink
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#a84dab"
+  - type: Tag
+    tags:
+      - CrystalShardPinkMalanisa
+
+- type: Tag
+  id: CrystalShardPinkMalanisa
+
+- type: entity
+  parent: CrystalShardGreenMalanisa
+  id: CrystalShardOrangeMalanisa
+  name: осколок оранжевого кристалла
+  description: A small piece of crystal shard.
+  components:
+  - type: Sprite
+    state: crystalshard_orange
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#96863b"
+  - type: Tag
+    tags:
+      - CrystalShardOrangeMalanisa
+
+- type: Tag
+  id: CrystalShardOrangeMalanisa
+
+- type: entity
+  parent: CrystalShardGreenMalanisa
+  id: CrystalShardBlueMalanisa
+  name: осколок синего кристалла
+  description: A small piece of crystal shard.
+  components:
+  - type: Sprite
+    state: crystalshard_blue
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#3d5cb3"
+  - type: Tag
+    tags:
+      - CrystalShardBlueMalanisa
+
+- type: Tag
+  id: CrystalShardBlueMalanisa  
+
+- type: entity
+  parent: CrystalShardGreenMalanisa
+  id: CrystalShardCyanMalanisa
+  name: осколок голубого кристалла
+  description: A small piece of crystal shard.
+  components:
+  - type: Sprite
+    state: crystalshard_cyan
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#47a8a5"
+  - type: Tag
+    tags:
+      - CrystalShardCyanMalanisa
+
+- type: Tag
+  id: CrystalShardCyanMalanisa
+
+- type: entity
+  parent: CrystalShardGreenMalanisa
+  id: CrystalShardGreyMalanisa
+  name: осколок серого кристалла
+  description: Небольшой осколок сиящего кристалла лишь слабо осветит ваш путь.
+  components:
+  - type: Sprite
+    state: crystalshard_grey
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#969696"
+  - type: Tag
+    tags:
+      - CrystalShardGreyMalanisa 
+
+- type: Tag
+  id: CrystalShardGreyMalanisa  

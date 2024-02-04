@@ -1,0 +1,82 @@
+- type: entity
+  name: Шприцемёт Синдиката
+  parent: BaseWeaponSubMachineGun
+  id: SyringeGun
+  description: Шприцемёт, разработанный преступным синдикатом. Способен вмещать до 7 дротиков с различными химическими растворами, которые сразу вводятся в организм
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Weapons/Guns/dartgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Siberia/Objects/Weapons/Guns/dartgun.rsi
+  - type: Gun
+    fireRate: 2
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Siberia/syringeproj.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: SyringeGunMagazine
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - SyringeGunMagazine
+      gun_chamber:
+        name: Chamber
+        startingItem: Syringecartridge
+        priority: 1
+        whitelist:
+          tags:
+            - Syringecartridge
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: Дистанционный инъектор ВП-01
+  parent: BaseWeaponSubMachineGun
+  id: DnaSyringeGun
+  description: Новейшая разработка корпорации Нанотрейзен, однозарядное ружье позволяет стрелять специальными дротиками с химическими веществами, которые сразу вводятся в организм
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Weapons/Guns/dnasyringegun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Siberia/Objects/Weapons/Guns/dnasyringegun.rsi
+  - type: Gun
+    fireRate: 2
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Siberia/syringeproj.ogg
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: Syringecartridge
+        priority: 1
+        whitelist:
+          tags:
+            - Syringecartridge
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance

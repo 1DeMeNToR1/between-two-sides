@@ -1,0 +1,11 @@
+- type: entity
+  name: картриджи инъектора
+  parent: BoxCardboard
+  id: BoxCartridgesSyringe
+  components:
+  - type: Storage
+    maxItemSize: Small
+  - type: StorageFill
+    contents:
+      - id: Syringecartridge
+        amount: 9

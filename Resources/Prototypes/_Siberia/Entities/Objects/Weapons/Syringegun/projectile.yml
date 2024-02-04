@@ -1,0 +1,9 @@
+- type: entity
+  id: syringeprojctile
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Weapons/Guns/Projectiles/projectile.rsi
+    layers:
+    - state: syringeproj

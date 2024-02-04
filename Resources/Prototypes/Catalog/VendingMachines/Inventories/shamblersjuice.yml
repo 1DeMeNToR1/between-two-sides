@@ -7,6 +7,9 @@
     DrinkIcedTeaCan: 2
     DrinkLemonLimeCan: 2
     DrinkFourteenLokoCan: 2
+    # Siberia custom
+    DrinkSpaceEnergyCan: 2
+    # /Siberia custom
   emaggedInventory:
     DrinkNukieCan: 2
     DrinkChangelingStingCan: 2
