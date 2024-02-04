@@ -1,24 +1,26 @@
-- type: entity
-  parent: VehicleKeyJanicart
-  id: VehicleKeyMora12
-  name: ключик от Мора-12
-  description: Смешной и мохнатный желтый ключик.
-  components:
-  - type: Tag
-    tags:
-    - VehicleKey
-    - ATVKeys
-  - type: Sprite
-    sprite: Siberia/Objects/Vehicles/mora12.rsi
-    state: keys
-    netsync: false
+# - type: entity
+  # parent: BaseItem
+  # id: VehicleKeyMora12
+  # name: ключик от Мора-12
+  # description: Смешной и мохнатный желтый ключик.
+  # components:
+  # - type: Item
+    # size: Tiny
+  # - type: Tag
+    # tags:
+    # - VehicleKey
+    # - ATVKeys
+  # - type: Sprite
+    # sprite: Siberia/Objects/Vehicles/mora12.rsi
+    # state: keys
+    # netsync: false
 
-- type: entity
-  parent: VehicleKeyMora12
-  id: VehicleKeyMora12Medical
-  name: ключик от медицинской Мора-12
-  components:
-  - type: Sprite
-    sprite: Siberia/Objects/Vehicles/mora12.rsi
-    state: keys-med
-    netsync: false
+# - type: entity
+  # parent: VehicleKeyMora12
+  # id: VehicleKeyMora12Medical
+  # name: ключик от медицинской Мора-12
+  # components:
+  # - type: Sprite
+    # sprite: Siberia/Objects/Vehicles/mora12.rsi
+    # state: keys-med
+    # netsync: false
