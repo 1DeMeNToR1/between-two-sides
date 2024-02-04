@@ -1,0 +1,116 @@
+- type: entity
+  parent: BaseWall
+  id: WallPaperJaraten1
+  name: Бумажная стена
+  description: Удерживает мастеров боевых искусств внутри, а ассистентов снаружи.
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/paper_wallJaraten.rsi
+  - type: Icon
+    sprite: Siberia/Structures/paper_wallJaraten.rsi
+  - type: Construction
+    graph: Girder
+    node: paperWall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300 # #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    destroySound:
+      path: /Audio/Effects/metalbreak.ogg
+  - type: IconSmooth
+    key: walls
+    base: paperwall
+
+- type: entity
+  parent: BaseWall
+  id: WallPaperJaraten2
+  name: Бумажная стена
+  description: Удерживает мастеров боевых искусств внутри, а ассистентов снаружи.
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/paper_wallJaraten1.rsi
+  - type: Icon
+    sprite: Siberia/Structures/paper_wallJaraten1.rsi
+  - type: Construction
+    graph: Girder
+    node: paperWall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300 # #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metalbreak.ogg
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    destroySound:
+      path: /Audio/Effects/metalbreak.ogg
+  - type: IconSmooth
+    key: walls
+    base: paperwall
+
+
+- type: construction
+  name: Укреплённый деревянный стол
+  id: TableWoodReinforced
+  graph: Table
+  startNode: start
+  targetNode: TableWoodReinforced
+  category: construction-category-furniture
+  description: Квадратный кусок дерева, стоящий на четырех металлических ножках. Очень прочный.
+  icon:
+    sprite: Siberia/Nyanotrasen/rwood.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: entity
+  id: PaperDoorJaraten
+  name: Бумажная дверь
+  parent: WoodDoor
+  description: Дверь, но куда она ведёт?
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/paper_doorJaraten.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Construction
+    graph: DoorGraph
+    node: paperDoor

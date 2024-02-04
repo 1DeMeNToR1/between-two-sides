@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from vgstation at https://github.com/vgstation-coders/vgstation13/commit/1cdfb0230cc96d0ba751fa002d04f8aa2f25ad7d. Edited by ElectroSR.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "one"
+    },
+    {
+      "name": "two"
+    },
+    {
+      "name": "three"
+    },
+    {
+      "name": "four"
+    },
+    {
+      "name": "five"
+    },
+    {
+      "name": "six"
+    },
+    {
+      "name": "seven"
+    },
+    {
+      "name": "eight"
+    },
+    {
+      "name": "nine"
+    },
+    {
+      "name": "zero"
+    },
+    {
+      "name": "small_secure"
+    },
+    {
+      "name": "small_secure_red"
+    },
+    {
+      "name": "dicebag"
+    }
+  ]
+}

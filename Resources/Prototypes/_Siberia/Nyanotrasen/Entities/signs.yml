@@ -1,0 +1,41 @@
+- type: entity
+  parent: BaseSign
+  id: SignSec
+  name: Плакат Службы Безопасности
+  description: Плакат, на которой написано о Службе Безопасности.
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/signs.rsi
+    state: sec
+
+- type: entity
+  parent: BaseSign
+  id: SignLastIdiot
+  name: 0 дней с последнего идиота
+  description: Должно быть, это шутка для инженерного отдела.
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/last_idiot.rsi
+    state: icon
+    offset: "0.5,0"
+
+- type: entity
+  parent: BaseSign
+  id: SignConspiracyBoard
+  name: Конспирологический плакат
+  description: Вы не можете понять, что изображено на плакате.
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/conspiracy_board.rsi
+    state: icon
+    offset: "0.5,0"
+
+- type: entity
+  parent: BaseSign
+  id: SignDojo
+  name: Плакат Додзё
+  description: Табличка с указанием места обучения боевым искусствам.
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/doujou.rsi
+    state: doujousign

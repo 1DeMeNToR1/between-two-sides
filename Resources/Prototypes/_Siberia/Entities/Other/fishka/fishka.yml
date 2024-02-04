@@ -1,0 +1,121 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: BaseFishka
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Other/fiska.rsi
+    noRot: true # If their sprites rotate, the number becomes even more illegible than usual.
+  - type: Tag
+    tags:
+    - fishka
+  - type: Item
+    size: Small
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaOne
+  name: фишка Один
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: one
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaTwo
+  name: фишка Два
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: two
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaThree
+  name: фишка Три
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: three
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaFour
+  name: фишка Четыре
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: four
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaFive
+  name: фишка Пять
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: five
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaSix
+  name: фишка Шесть
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: six
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaSeven
+  name: фишка Семь
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: seven
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaEight
+  name: фишка Восемь
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: eight
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaNine
+  name: фишка Девять
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: nine
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaZero
+  name: фишка Ноль
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: zero
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaDanger1
+  name: фишка Опасность
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: small_secure
+
+- type: entity
+  parent: BaseFishka
+  id: FishkaDanger2
+  name: фишка Опасность
+  description: любимая вещь детектива и ученых. Научи ассистента графам!
+  components:
+  - type: Sprite
+    state: small_secure_red

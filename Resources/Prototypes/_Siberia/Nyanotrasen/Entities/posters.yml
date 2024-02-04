@@ -1,0 +1,254 @@
+- type: entity
+  parent: PosterBase
+  id: PosterLegitDejaVu
+  name: "Зона Deja Vu"
+  description: "Вы здесь впервые. Если эта станция покажется вам знакомой, немедленно сообщите об этом сотруднику NanoTrasen."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Vordenburg.rsi
+    state: poster_dejavu
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitDontPanic
+  name: "Не паникуйте!"
+  description: "Если когда-либо и существовало что-то настолько успокаивающее, что удерживало меня от паники, то это была плывущая в пространстве зеленая капля с парой рук, блестящим красным языком и большими круглыми зубами."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Vordenburg.rsi
+    state: poster_dontpanic
+
+- type: entity
+  parent: PosterBase
+  id: PosterContrabandSaucerNumberOne
+  name: "Sause #1!"
+  description: "Из всех станций в юрисдикции NanoTrasen Saucer Station заняла первое место! Поздравляем!"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Vordenburg.rsi
+    state: poster_saucer1
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitBarDrinks
+  name: "Плакат бара"
+  description: "Бармен всегда рядом, чтобы выслушать ваши горести и в то же время напугать вас. Иди в гости!"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Huvy.rsi
+    state: BAR
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitBotanyFood
+  name: "Ведро фруктов"
+  description: "Ботаники всегда трудятся! Остановитесь и наслаждайтесь лучшим, что они могут предложить!"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Huvy.rsi
+    state: BotanyFood
+
+- type: entity
+  parent: PosterBase
+  id: PosterContrabandBreadLies
+  name: "Хлеб это ложь"
+  description: "Хлеб это ложь. Не существует никакого \"Большого хлеба.\". Пожалуйста, прекратите смотреть на это."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Huvy.rsi
+    state: BreadLies
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitHotDonkExplosion
+  name: "ДОНК!"
+  description: "Насладитесь вкусом любого из наших продуктов, вызывающих ожирение и нездоровых продуктов №1, для вашего удовольствия! ! ДОНК!"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Huvy.rsi
+    state: DONK
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitEatMeat
+  name: "Ешьте мясо!"
+  description: "Кому нужны фрукты или овощи? ЕСТЬ МЯСО! Накачайте свои мышцы и покажите всем свою мощь!"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Huvy.rsi
+    state: EATMEAT
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitMoreBread
+  name: "Больше хлеба!"
+  description: "Хлеба много не бывает! Напеки ещё хлеба!"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Huvy.rsi
+    state: MoreBread
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitPieSlice
+  name: "Плакат с пирогом"
+  description: "Пироги – это полезно и вкусно! Попросите своего шеф-повара приготовить ещё один."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Huvy.rsi
+    state: PIE
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitPizzaHope
+  name: "Пицца надежды"
+  description: "В самые мрачные времена есть только одна надежда – ПИЦЦА! Уговорите местного интенданта заказать экстренный ящик пиццы прямо сейчас!"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Huvy.rsi
+    state: PIZZA
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitMedicate
+  name: "Принимайте лекарства"
+  description: "Возможные побочные эффекты могут включать: тошноту, расстройство желудка, воспаление, отек лица/горла, сыпь, лихорадку, головную боль, головокружение, рвоту и/или диарею, образование синяков, судороги, непреодолимую зевота, общее чувство дискомфорта или болезни, крапивницу. потеря голоса, кровоточивость десен и/или глазных яблок, потеря аппетита, повышенный аппетит, внезапное начало плача, рентгеновское зрение, невнятная речь, импровизированная левитация, недержание мочи, резкий неконтролируемый приступ йодлинга, бессонница, нарколепсия, проказа, спонтанный рост новых конечностей/гениталий, непрекращающийся рост волос на спине, потеря веса, увеличение веса, усадка, дальтонизм, онемение прямой кишки, острая способность различать цвета, неутолимая жажда крови, беспокойные ногти, светочувствительность, принуждение носить школьную форму, цинга, стремление вести наемническую жизнь, неистовая жажда козьей крови, бунтарское желание развить пристрастие к азартным играм, зудящая задница. Свяжитесь со своим врачом для получения медицинской консультации по поводу этих или любых других побочных эффектов, которые могут возникнуть у вас." #credit Chris Zappa
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Velcroboy.rsi
+    state: poster_medicate
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitNoTouching
+  name: "Не трогать"
+  description: "Не трогать!"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Velcroboy.rsi
+    state: poster_notouching
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitChknDnnr
+  name: "Winner Winner Chicken Dinner"
+  description: "Реклама хрустящей жареной курицы."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/CerebralError.rsi
+    state: poster_ChknDnnr
+
+# Station Maps
+- type: entity
+  parent: PosterBase
+  id: PosterMapArena
+  name: "Arena Map"
+  description: "Карта станции Arena."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Velcroboy.rsi
+    state: arenamap
+
+- type: entity
+  parent: PosterBase
+  id: PosterMapGlacier
+  name: "Glacier Map"
+  description: "A map of Glacier outpost."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Hyenh.rsi
+    state: glaciermap
+
+- type: entity
+  parent: PosterBase
+  id: PosterMapShoukou
+  name: "Shōkō Map"
+  description: "Shōkō no mappu desu."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Hyenh.rsi
+    state: shoukoumap
+
+- type: entity
+  parent: PosterBase
+  id: PosterMapNorthway
+  name: "Карта Northway"
+  description: "Карта космического корабля Northway"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Hyenh.rsi
+    state: northwaymap
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitShoukou
+  name: "Shōkō постер"
+  description: "Забавные символы, которые можно прочитать как Сёко или Сяоган, в зависимости от того, кого вы спросите."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/Hyenh.rsi
+    state: shoukouposter
+
+# SAFETY MOTH
+# Actual original art credit to AspEv
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitSMPoisoning
+  name: "Ниан-хранитель – отравление"
+  description: "Safety Moth™ советует зрителю не травить пончики на станции."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/safetymoth.rsi
+    state: safetymoth_1
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitSMBoH
+  name: "Ниан-хранитель - сумка для хранения"
+  description: "Safety Moth™ информирует зрителя об опасностях сумки хранения. «Помните! Сумки хранения могут быть красивыми, но они также довольно опасны! Никогда не кладите одну в другую!»"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/safetymoth.rsi
+    state: safetymoth_2
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitSMFires
+  name: "Ниан-хранитель - огонь"
+  description: "Safety Moth™ способствует безопасному обращению с плазмой и хранению противопожарного оборудования под рукой."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/safetymoth.rsi
+    state: safetymoth_4
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitSMPills
+  name: "Ниан-хранитель - таблетница"
+  description: "Safety Moth™ сообщает зрителям, что оставление таблеток на столах без присмотра может привести к непредвиденным последствиям. «Голодные твари любят есть все! Храните таблетки в ящиках и бутылочках!»"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/safetymoth.rsi
+    state: safetymoth_9
+
+# We don't have supermatter so it's going to be anomalies and glimmer for now
+- type: entity
+  parent: PosterBase
+  id: PosterLegitSMAnomalies
+  name: "Ниан-хранитель - аномалии"
+  description: "Safety Moth™ способствует использованию надлежащего защитного оборудования при работе с аномалиями. «Каждый хороший ниан носит защиту при работе с аномалиями, но не подходите слишком близко! Не все, что светится, — друг!»"
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/safetymoth.rsi
+    state: safetymoth_10
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitSMGlimmer
+  name: "Ниан-хранитель - странные приборы"
+  description: "Safety Moth™ советует зрителям надеть изолирующее оборудование и спрятаться в шкафчиках, когда видят неизвестное устройство на станции."
+  components:
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/safetymoth.rsi
+    state: safetymoth_11

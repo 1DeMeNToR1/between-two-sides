@@ -1,0 +1,65 @@
+- type: entity
+  parent: BaseStorageItem
+  id: FishkaBag
+  name: мешок фишек
+  description: любимые игрушки дека и ученых
+  components:
+  - type: StorageFill
+    contents:
+      - id: FishkaOne
+      - id: FishkaOne
+      - id: FishkaOne
+        ### amount: 3
+      - id: FishkaTwo
+      - id: FishkaTwo
+      - id: FishkaTwo
+        ### amount: 3
+      - id: FishkaThree
+      - id: FishkaThree
+      - id: FishkaThree
+        ### amount: 3
+      - id: FishkaFour
+      - id: FishkaFour
+      - id: FishkaFour
+        ### amount: 3
+      - id: FishkaFive
+      - id: FishkaFive
+      - id: FishkaFive
+        ### amount: 3
+      - id: FishkaSix
+      - id: FishkaSix
+      - id: FishkaSix
+        ### amount: 3
+      - id: FishkaSeven
+      - id: FishkaSeven
+      - id: FishkaSeven
+        ### amount: 3
+      - id: FishkaEight
+      - id: FishkaEight
+      - id: FishkaEight
+        ### amount: 3
+      - id: FishkaNine
+      - id: FishkaNine
+      - id: FishkaNine
+        ### amount: 3
+      - id: FishkaZero
+      - id: FishkaZero
+      - id: FishkaZero
+        ### amount: 3
+      - id: FishkaDanger1
+      - id: FishkaDanger1
+      - id: FishkaDanger1
+        ### amount: 3
+      - id: FishkaDanger2
+      - id: FishkaDanger1
+      - id: FishkaDanger1
+        ### amount: 3
+  - type: Sprite
+    sprite: Siberia/Objects/Other/fiska.rsi
+    state: dicebag
+  - type: Item
+  - type: Storage
+    whitelist:
+      tags:
+        - fishka
+

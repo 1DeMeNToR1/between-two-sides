@@ -1,0 +1,39 @@
+- type: entity
+  id: RandomTraitSpawn
+  name: спавнер монстров техов
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Mobs/Animals/mouse.rsi
+        state: mouse-3
+  - type: RandomSpawner
+    prototypes:
+      - MobFleshGolem
+      - MobRatServant
+      - MobRatServant
+      - MobAbomination
+      - MobSmallPurpleSnake
+      - MobPurpleSnake
+      - MobAngryBee
+      - MobGiantSpiderAngry
+      - SpiderWeb
+      - DehydratedSpaceCarp
+      - WhoopieCushion
+      - Telecrystal1
+      - FoodMeatRotten
+      - FoodDonutPoison
+    chance: 0.95
+    rarePrototypes:
+      - MobBearSpace
+      - MobSpiderSpace
+      - MobCarp
+      - LandMineExplosive
+      - MaterialBananium1
+      - TrashBananaPeelExplosive
+      - LockerBluespaceStation
+      - MobClownSpider
+      - GeneratorRTGDamaged
+      - PenExploding
+    rareChance: 0.05
