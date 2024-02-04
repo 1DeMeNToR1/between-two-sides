@@ -1,7 +1,7 @@
 - type: cargoProduct
   id: EngineeringMultiColoredLamps
   icon:
-    sprite: Objects\Power\light_tube.rsi
+    sprite: Objects/Power/light_tube.rsi
     state: normal
   product: CrateMultiColoredLamps
   cost: 2000
