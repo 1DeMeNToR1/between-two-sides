@@ -13,3 +13,15 @@
     Shock: 1.1
     Heat: 1.2
     Asphyxiation: 1.2
+    
+- type: damageModifierSet
+  id: IPC
+  coefficients:
+    Radiation: 0.1
+    Poison: 0
+    Cellular: 0
+    Shock: 1.1
+    Blunt: 0.7
+    Slash: 0.6
+    Piercing: 0.7
+    Cold: 0.6

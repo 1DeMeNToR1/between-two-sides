@@ -16,7 +16,7 @@
       species: IPC
     - type: Damageable
       damageContainer: Biological
-      damageModifierSet: Metallic
+      damageModifierSet: IPC
     - type: Icon
       sprite: Siberia/Mobs/Species/IPC/parts.rsi
       state: full
