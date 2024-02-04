@@ -24246,28 +24246,6 @@ entities:
     - type: Transform
       pos: -75.52151,181.63173
       parent: 2
-- proto: AntiAnomalyZone50
-  entities:
-  - uid: 23943
-    components:
-    - type: Transform
-      pos: 77.5,114.5
-      parent: 2
-  - uid: 23944
-    components:
-    - type: Transform
-      pos: 73.5,146.5
-      parent: 2
-  - uid: 23945
-    components:
-    - type: Transform
-      pos: -115.5,99.5
-      parent: 2
-  - uid: 23946
-    components:
-    - type: Transform
-      pos: -149.5,7.5
-      parent: 2
 - proto: APCBasic
   entities:
   - uid: 304
