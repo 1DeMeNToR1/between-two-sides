@@ -18,6 +18,18 @@
     },
     {
       "name": "trash"
+    },
+    {
+      "name": "classic-clown"
+    },
+    {
+      "name": "classic-empty"
+    },
+    {
+      "name": "classic-open"
+    },
+    {
+      "name": "classic"
     }
   ]
 }
