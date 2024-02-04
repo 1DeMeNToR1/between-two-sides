@@ -132,7 +132,8 @@
   - Ipc1
   - Ipc2
   - Ipc3
-
+  obeysTo: laws-owner-you
+  
 - type: soundCollection
   id: FootstepIpc
   files:
