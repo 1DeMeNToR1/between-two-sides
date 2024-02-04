@@ -44,6 +44,7 @@
     ClothingHeadHatCasa: 1
     ClothingHeadHatGladiator: 1
     ClothingUniformJumpsuitGladiator: 1
+
     ClothingHeadHatHairflower: 1 # Добавил в ТеатроШкаф эти 3 вещи в единственном экземпляре
     ClothingNeckCloakFreedomCloak: 1
     ClothingNeckCloakGoliathCloak: 1
@@ -59,7 +60,7 @@
     ClothingHeadHatHorns: 2
     ClothingHeadHatTacticalMaidHeadbandWhite: 2
     ClothingHeadHatTacticalMaidHeadbandBlack: 2
-    ClothingHeadHatTacticalMaidHeadbandGreen: 2 
+    ClothingHeadHatTacticalMaidHeadbandGreen: 2
     ClothingHeadHatTacticalMaidHeadbandBlue: 2
     ClothingHandsGlovesYsatyu: 1 # Одежда усатого и моряка
     ClothingHeadYsatyu: 1
@@ -72,8 +73,17 @@
     ClothingShoesMoryak: 1
     ClothingUniformJumpsuitMoryak: 1 # Конец
 
+    ClothingHeadHatCowboyBrown: 1
+    ClothingHeadHatCowboyBlack: 1
+    ClothingHeadHatCowboyWhite: 1
+    ClothingHeadHatCowboyGrey: 1
+    ClothingShoesBootsCowboyBrown: 1
+    ClothingShoesBootsCowboyBlack: 1
+    ClothingShoesBootsCowboyWhite: 1
   emaggedInventory:
     ClothingShoesBling: 1
+    ClothingShoesBootsCowboyFancy: 1
     ClothingOuterDogi: 1
     ClothingMaskSexyClown: 1
     ClothingMaskSexyMime: 1
+    ClothingHeadHatCowboyBountyHunter: 1
