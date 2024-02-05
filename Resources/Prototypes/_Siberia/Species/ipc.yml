@@ -8,9 +8,9 @@
   markingLimits: MobIPCMarkingLimits
   dollPrototype: MobIPCDummy
   skinColoration: Hues
-  maleFirstNames: names_ai_efim
-  femaleFirstNames: names_ai_efim
-  naming: First
+  maleFirstNames: names_ipc
+  femaleFirstNames: names_ipc
+  naming: OnlyFirst
   sexes:
     - Unsexed
 
