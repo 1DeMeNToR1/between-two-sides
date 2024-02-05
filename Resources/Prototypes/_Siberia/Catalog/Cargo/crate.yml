@@ -1,0 +1,127 @@
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateSecgearSiberia
+  name: secgear crate
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/sec_gear.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/sec_gear.rsi
+  - type: AccessReader
+    access: [["Security"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateEngineeringSecureSiberia
+  name: secure engineering crate
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/engicrate_secure.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/engicrate_secure.rsi
+  - type: AccessReader
+    access: [["Engineering"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateMedicalSecureSiberia
+  name: secure medical crate
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/medicalcrate_secure.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/medicalcrate_secure.rsi
+  - type: AccessReader
+    access: [["Medical"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateChemistrySecureSiberia
+  name: secure chemistry crate
+  components:
+    - type: Icon
+      sprite: Structures/Storage/Crates/chemcrate_secure.rsi
+    - type: Sprite
+      sprite: Structures/Storage/Crates/chemcrate_secure.rsi
+    - type: AccessReader
+      access: [["Chemistry"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CratePrivateSecureSiberia
+  name: private crate
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/privatecrate_secure.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/privatecrate_secure.rsi
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateScienceSecureSiberia
+  name: secure science crate
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/scicrate_secure.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/scicrate_secure.rsi
+  - type: AccessReader
+    access: [["Research"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CratePlasmaSiberia
+  name: plasma crate
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/plasma.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/plasma.rsi
+  - type: AccessReader
+    access: [["Engineering"], ["Research"], ["Chemistry"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateSecureSiberia
+  name: secure crate
+  components:
+    - type: Icon
+      sprite: Structures/Storage/Crates/secure.rsi
+    - type: Sprite
+      sprite: Structures/Storage/Crates/secure.rsi
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateHydroSecureSiberia
+  name: secure hydroponics crate
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/hydro_secure.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/hydro_secure.rsi
+  - type: AccessReader
+    access: [["Hydroponics"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateWeaponSecureSiberia
+  name: ящик оружия
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/weapon.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/weapon.rsi
+  - type: AccessReader
+    access: [["Armory"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateCommandSecureSiberia
+  name: ящик командования
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/command.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/command.rsi
+  - type: AccessReader
+    access: [["Command"]]
