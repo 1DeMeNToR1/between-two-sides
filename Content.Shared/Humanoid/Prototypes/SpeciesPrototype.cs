@@ -141,4 +141,5 @@ public enum SpeciesNaming : byte
     FirstDashFirst,
     TheFirstofLast,
     OnlyFirst,
+    First,
 }

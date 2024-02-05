@@ -6,6 +6,7 @@
   abstract: true
   components:
     # The important nessessities
+    - type: ZombieImmune
     - type: MovementSpeedModifier
       baseWalkSpeed : 2
       baseSprintSpeed : 4
@@ -133,7 +134,7 @@
   - Ipc2
   - Ipc3
   obeysTo: laws-owner-you
-  
+
 - type: soundCollection
   id: FootstepIpc
   files:
@@ -235,3 +236,4 @@
     bloodlossHealDamage:
       types:
         Bloodloss: -1
+
