@@ -1,0 +1,34 @@
+- type: entity
+  name: Лотус
+  parent: MobRaccoon
+  id: MobRaccoonLotus
+  description: Енот-следопыт одного из частных сыщиков этой станции. Любит собирать улики с места преступления, а также стирать их в ближайшем источнике воды.
+  components:
+  - type: InteractionPopup
+    successChance: 0.7
+    interactSuccessString: petting-success-raccoon
+    interactFailureString: petting-failure-raccoon
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/raccoon_chatter.ogg
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - VimPilot
+
+- type: entity
+  name: Спавнер енота Лотус
+  id: SpawnMobRaccoonLotus
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MobRaccoonLotus
