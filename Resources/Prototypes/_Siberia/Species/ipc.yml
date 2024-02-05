@@ -9,7 +9,8 @@
   dollPrototype: MobIPCDummy
   skinColoration: Hues
   maleFirstNames: names_ipc
-  naming: FirstDashFirst
+  femaleFirstNames: names_ipc
+  naming: OnlyFirst
   sexes:
     - Unsexed
 

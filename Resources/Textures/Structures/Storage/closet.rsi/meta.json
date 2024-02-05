@@ -546,6 +546,15 @@
     },
     {
       "name": "representative_door"
+    },
+    {
+      "name": "bs"
+    },
+    {
+      "name": "bs_open"
+    },
+    {
+      "name": "bs_door"
     }
   ]
 }

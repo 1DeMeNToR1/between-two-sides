@@ -11,6 +11,7 @@
     heldPrefix: banana
   - type: Gun
     fireRate: 2
+    clumsyProof: true
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
   - type: BasicEntityAmmoProvider
