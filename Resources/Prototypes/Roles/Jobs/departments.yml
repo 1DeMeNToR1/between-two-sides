@@ -58,6 +58,7 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
+  - SeniorEngineer
 
 - type: department
   id: Medical
@@ -70,6 +71,7 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
+  - SeniorPhysician
 
 - type: department
   id: Security
@@ -80,6 +82,8 @@
   - SecurityCadet
   - SecurityOfficer
   - Warden
+  - Brigmedic
+  - SeniorOfficer
 
 - type: department
   id: Science
@@ -89,6 +93,7 @@
   - ResearchDirector
   - Scientist
   - ResearchAssistant
+  - SeniorResearcher
 
 - type: department
   id: Specific
