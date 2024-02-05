@@ -1,7 +1,54 @@
 #Colored lights
+- type: entity
+  parent: PoweredSmallLight
+  id: PoweredSmallLightMaintenance
+  suffix: Maintenance
+  description: "A light fixture. Draws power and produces light when equipped with a light bulb."
+  components:
+  - type: PoweredLight
+    hasLampOnSpawn: LightBulbMaintenance
+    damage:
+      types:
+        Heat: 0.2
 
 - type: entity
-  id: PoweredlightColoredRed
+  parent: SmallLight
+  id: AlwaysPoweredSmallLightMaintenance
+  suffix: Always Powered, Maintenance
+  description: "A light fixture. Draws power and produces light when equipped with a light tube."
+  components:
+  - type: PointLight
+    radius: 1.5
+    energy: 0.7
+    softness: 1.1
+    color: "#FFD1A3"    
+
+- type: entity
+  parent: PoweredSmallLight
+  id: PoweredSmallLightMaintenanceRed
+  suffix: Maintenance, Red
+  description: "A light fixture. Draws power and produces light when equipped with a light bulb."
+  components:
+  - type: PoweredLight
+    hasLampOnSpawn: LightBulbMaintenanceRed
+    damage:
+      types:
+        Heat: 0.2
+
+- type: entity
+  parent: SmallLight
+  id: AlwaysPoweredSmallLightMaintenanceRed
+  suffix: Always Powered, Maintenance, Red
+  description: "A light fixture. Draws power and produces light when equipped with a light tube."
+  components:
+  - type: PointLight
+    radius: 1.5
+    energy: 1.1
+    softness: 1.1
+    color: "#FF6666"
+
+- type: entity
+  id: PoweredLightColoredRed
   description: "A light fixture. Draws power and produces light when equipped with a light tube."
   suffix: Red
   parent: Poweredlight
@@ -13,7 +60,7 @@
         Heat: 0.2
 
 - type: entity
-  id: AlwaysPoweredlightColoredRed
+  id: AlwaysPoweredLightColoredRed
   description: "A light fixture. Draws power and produces light when equipped with a light tube."
   suffix: Always Powered, Red
   parent: AlwaysPoweredWallLight
@@ -25,7 +72,7 @@
     color: "#FF6666"
 
 - type: entity
-  id: PoweredlightColoredFrostyBlue
+  id: PoweredLightColoredFrostyBlue
   description: "A light fixture. Draws power and produces light when equipped with a light tube."
   suffix: Frosty
   parent: Poweredlight
@@ -37,7 +84,7 @@
         Heat: 0.2
 
 - type: entity
-  id: AlwaysPoweredlightColoredFrostyBlue
+  id: AlwaysPoweredLightColoredFrostyBlue
   description: "A light fixture. Draws power and produces light when equipped with a light tube."
   suffix: Always Powered, Frosty
   parent: AlwaysPoweredWallLight
@@ -49,7 +96,7 @@
     color: "#00FFFF"
 
 - type: entity
-  id: PoweredlightColoredBlack
+  id: PoweredLightColoredBlack
   description: "A light fixture. Draws power and produces light when equipped with a light tube."
   suffix: Black
   parent: Poweredlight
@@ -61,7 +108,7 @@
         Heat: 0.2
 
 - type: entity
-  id: AlwaysPoweredlightColoredBlack
+  id: AlwaysPoweredLightColoredBlack
   description: "A light fixture. Draws power and produces light when equipped with a light tube."
   suffix: Always Powered, Black
   parent: AlwaysPoweredWallLight
