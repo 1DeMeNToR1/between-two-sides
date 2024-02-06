@@ -1,0 +1,209 @@
+- type: stack
+  id: FloorTileMetalDiamondSiberia
+  name: steel tile
+  spawn: FloorTileItemMetalDiamondSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileTechmaintSiberia
+  name: techmaint floor
+  spawn: FloorTileItemTechmaintSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileFreezerSiberia
+  name: freezer tile
+  spawn: FloorTileItemFreezerSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileShowroomSiberia
+  name: showroom tile
+  spawn: FloorTileItemShowroomSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileGoldSiberia
+  name: gold floor
+  spawn: FloorTileItemGoldSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileReinforcedSiberia
+  name: reinforced tile
+  spawn: FloorTileItemReinforcedSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileMonoSiberia
+  name: mono tile
+  spawn: FloorTileItemMonoSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileLinoSiberia
+  name: linoleum floor
+  spawn: FloorTileItemLinoSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileHydroSiberia
+  name: hydro tile
+  spawn: FloorTileItemHydroSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackShuttleWhiteSiberia
+  name: white shuttle tile
+  spawn: FloorTileItemShuttleWhiteSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackShuttleBlueSiberia
+  name: blue shuttle tile
+  spawn: FloorTileItemShuttleBlueSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackShuttleOrangeSiberia
+  name: orange shuttle tile
+  spawn: FloorTileItemShuttleOrangeSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackShuttlePurpleSiberia
+  name: purple shuttle tile
+  spawn: FloorTileItemShuttlePurpleSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackShuttleRedSiberia
+  name: red shuttle tile
+  spawn: FloorTileItemShuttleRedSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackEightiesSiberia
+  name: eighties floor tile
+  spawn: FloorTileItemEightiesSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackArcadeBlueSiberia
+  name: blue arcade tile
+  spawn: FloorTileItemArcadeBlueSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackArcadeRedSiberia
+  name: red arcade tile
+  spawn: FloorTileItemArcadeRedSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackCarpetClownSiberia
+  name: clown carpet tile
+  spawn: FloorTileItemCarpetClownSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackBoxingSiberia
+  name: boxing ring tile
+  spawn: FloorTileItemBoxingSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileStackGymSiberia
+  name: gym floor tile
+  spawn: FloorTileItemGymSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileRockVaultSiberia
+  name: rock vault tile
+  spawn: FloorTileItemRockVaultSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileBlueSiberia
+  name: blue floor tile
+  spawn: FloorTileItemBlueSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileBarSiberia
+  name: item bar floor tile
+  spawn: FloorTileItemBarSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileMimeSiberia
+  name: mime floor tile
+  spawn: FloorTileItemMimeSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileKitchenSiberia
+  name: kitchen floor tile
+  spawn: FloorTileItemKitchenSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileLaundrySiberia
+  name: laundry floor tile
+  spawn: FloorTileItemLaundrySiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileSilverSiberia
+  name: silver floor tile
+  spawn: FloorTileItemSilverSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileWoodPatternSiberia
+  name: wood pattern floor
+  spawn: FloorTileItemWoodPatternSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileSteelMaintSiberia
+  name: steel maint floor
+  spawn: FloorTileItemSteelMaintSiberia
+  maxCount: 30
+  itemSize: 5
+
+- type: stack
+  id: FloorTileGratingMaintSiberia
+  name: grating maint floor
+  spawn: FloorTileItemGratingMaintSiberia
+  maxCount: 30
+  itemSize: 5
