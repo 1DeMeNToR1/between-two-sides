@@ -1,0 +1,22 @@
+- type: entity
+  id: CrateSecHardsuit
+  name: ящик скафандров СБ
+  parent: CrateWeaponSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitSecurity
+        amount: 2
+      - id: JetpackSecurity
+        amount: 2
+        
+- type: entity
+  id: CrateSecCum
+  name: ящик нагрудных камер СБ
+  parent: CrateWeaponSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: SurveillanceSecCum
+        amount: 5
+        
