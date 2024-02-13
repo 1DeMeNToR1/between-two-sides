@@ -144,3 +144,48 @@
     sprite: Siberia/Clothing/Uniforms/Costume/arc.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Uniforms/Costume/arc.rsi
+
+#Камуфляж
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformUrbanCamouflage1
+  name: Старый камуфляж песочного цвета
+  description: Пахнет песком и нефтью
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Camo_Forms2/desert_camouflage.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Camo_Forms2/desert_camouflage.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformUrbanCamouflage2
+  name: Старый лесной камуфляж.
+  description: Пахнет шишками и мхом.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Camo_Forms2/forest_camouflage.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Camo_Forms2/forest_camouflage.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformUrbanCamouflage3
+  name: Старый синий камуфляж
+  description: Пахнет горелыми покрышками
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Camo_Forms2/omoncamouflage.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Camo_Forms2/omoncamouflage.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformUrbanCamouflage4
+  name: Старый городской камуфляж
+  description: Пахнет порохом и пылью
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Camo_Forms2/urbancamouflage.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Camo_Forms2/urbancamouflage.rsi
