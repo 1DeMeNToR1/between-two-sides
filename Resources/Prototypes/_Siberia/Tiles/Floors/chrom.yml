@@ -1,0 +1,10 @@
+﻿- type: tile
+  id: PlatingChromite
+  name: хромитовое покрытие
+  sprite: /Textures/Siberia/Tiles/Floors/chrom/plating_chromite.png
+  baseTurf: Lattice
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 0.3
+  heatCapacity: 10000
