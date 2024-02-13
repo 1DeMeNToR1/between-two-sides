@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateFunArtSupplies3000
+  name: ящик профессиональных мелков
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: CrayonBox
+      - id: CrayonWhite
+      - id: CrayonRainbow3000

@@ -1,0 +1,9 @@
+- type: entity
+  id: CrateCargoCum
+  name: ящик нагрудных камер Карго
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: SurveillanceSalvCum
+        amount: 4
