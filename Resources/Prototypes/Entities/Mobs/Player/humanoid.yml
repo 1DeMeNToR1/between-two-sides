@@ -23,6 +23,7 @@
   randomizeName: false
   speciesBlacklist: # Corvax-MRP
     - Diona
+    - Resomi # Siberia-MRP
   components:
     - type: MindShield
     - type: GhostRole
@@ -59,6 +60,8 @@
 - type: randomHumanoidSettings
   id: ERTLeader
   randomizeName: false
+  speciesBlacklist: 
+    - Resomi # Siberia-MRP
   components:
     - type: MindShield
     - type: GhostRole
@@ -89,6 +92,8 @@
 - type: randomHumanoidSettings
   id: ERTLeaderEVA
   parent: ERTLeader
+  speciesBlacklist: 
+    - Resomi # Siberia-MRP
   components:
     - type: MindShield
     - type: GhostRole
@@ -263,6 +268,7 @@
   id: ERTSecurity
   speciesBlacklist: # Corvax-MRP
     - Diona
+    - Resomi # Siberia-MRP
   parent: ERTLeader
   components:
     - type: MindShield
@@ -401,6 +407,7 @@
 - type: randomHumanoidSettings
   speciesBlacklist: # Corvax-MRP
     - Diona
+    - Resomi # Siberia-MRP
   id: CBURNAgent
   components:
     - type: MindShield
@@ -430,6 +437,8 @@
 
 - type: randomHumanoidSettings
   id: CentcomOfficial
+  speciesBlacklist: 
+    - Resomi # Siberia-MRP
   components:
     - type: MindShield
     - type: GhostRole
@@ -456,6 +465,8 @@
 
 - type: randomHumanoidSettings
   id: SyndicateAgent
+  speciesBlacklist: 
+    - Resomi # Siberia-MRP
   components:
     - type: Loadout
       prototypes: [SyndicateOperativeGearExtremelyBasic]
@@ -472,6 +483,8 @@
 
 - type: randomHumanoidSettings
   id: NukeOp
+  speciesBlacklist: 
+    - Resomi # Siberia-MRP
   components:
     - type: NukeOperative
 
