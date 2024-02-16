@@ -1,0 +1,21 @@
+- type: cargoProduct
+  id: BureaucracyPaperOrder
+  icon:
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: paper
+    netsync: false
+  product: CrateBuracPaper
+  cost: 2000
+  category: Materials
+  group: market
+  
+- type: entity
+  id: CrateBuracPaper
+  name: стопки бумаги
+  description: Доставка 3 стопок печатной бумаги
+  parent: CratePlastic
+  components:
+  - type: StorageFill
+    contents:
+    - id: SheetPrinter
+      amount: 3

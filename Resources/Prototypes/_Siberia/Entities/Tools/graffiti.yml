@@ -1,0 +1,20 @@
+- type: entity
+  parent: Crayon
+  id: CrayonRainbow3000
+  name: профессиональный мелок для рисования
+  components:
+  - type: Sprite
+    state: rainbow
+  - type: Item
+    heldPrefix: rainbow
+  - type: Crayon
+    color: Red
+    selectableColor: true
+    capacity: 3000
+    charges: 3000
+  - type: Tag
+    tags:
+    - Write
+    - Crayon
+    - Recyclable
+    - Trash

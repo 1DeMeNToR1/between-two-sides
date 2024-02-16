@@ -1,0 +1,36 @@
+- type: entity
+  id: CrateFunSport
+  name: Ящик со спортинвентарём
+  description: Ящик с базовым снаряжением для спорта
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: Basketball
+        amount: 2
+      - id: Football
+        amount: 2
+      - id: ClothingOuterArmorKendoBogu
+        amount: 3
+      - id: ClothingUniformKendoHakama
+        amount: 3
+      - id: ClothingHeadHelmetKendoMen
+        amount: 3
+      - id: UniformShortsRedWithTop
+        amount: 3
+      - id: UniformShortsRed
+        amount: 3
+      - id: ClothingHandsGlovesBoxingYellow
+        amount: 3
+      - id: ClothingHandsGlovesBoxingGreen
+        amount: 3
+      - id: ClothingHandsGlovesBoxingRed
+        amount: 3 
+      - id: ClothingHandsGlovesBoxingBlue
+        amount: 3         
+      - id: FloorTileItemBoxing
+        amount: 30
+      - id: BaseBallBat
+        amount: 2
+#      - id: Sinai # Добавил этот меч деревянный в заказ
+#        amount: 2
