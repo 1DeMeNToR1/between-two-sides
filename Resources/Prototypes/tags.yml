@@ -1161,9 +1161,6 @@
   id: WallmountSubstationElectronics
 
 - type: Tag
-  id: WeaponAntiqueLaser
-
-- type: Tag
   id: WeaponPistolCHIMPUpgradeKit
 
 - type: Tag
@@ -1171,9 +1168,6 @@
 
 - type: Tag
   id: WetFloorSign
-
-- type: Tag
-  id: Wheat
 
 - type: Tag
   id: WhitelistChameleon

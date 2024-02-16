@@ -121,19 +121,14 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
 
     private void OnIonStormLaws(EntityUid uid, SiliconLawProviderComponent component, ref IonStormLawsEvent args)
     {
-        // Emagged borgs are immune to ion storm
-        if (!HasComp<EmaggedComponent>(uid))
-        {
-            component.Lawset = args.Lawset;
+        component.Lawset = args.Lawset;
 
-            // gotta tell player to check their laws
-            NotifyLawsChanged(uid);
+        // gotta tell player to check their laws
+        NotifyLawsChanged(uid);
 
-            // new laws may allow antagonist behaviour so make it clear for admins
-            if (TryComp<EmagSiliconLawComponent>(uid, out var emag))
-                EnsureEmaggedRole(uid, emag);
-
-        }
+        // new laws may allow antagonist behaviour so make it clear for admins
+        if (TryComp<EmagSiliconLawComponent>(uid, out var emag))
+            EnsureEmaggedRole(uid, emag);
     }
 
     private void OnEmagLawsAdded(EntityUid uid, SiliconLawProviderComponent component, ref GotEmaggedEvent args)
@@ -153,7 +148,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
         component.Lawset?.Laws.Add(new SiliconLaw
         {
             LawString = Loc.GetString("law-emag-secrecy", ("faction", Loc.GetString(component.Lawset.ObeysTo))),
-            Order = component.Lawset.Laws.Max(law => law.Order) + 1
+            Order = component.Lawset.Laws.Count
         });
     }
 

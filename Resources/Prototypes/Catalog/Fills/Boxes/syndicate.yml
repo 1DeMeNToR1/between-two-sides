@@ -40,8 +40,8 @@
   components:
     - type: StorageFill
       contents:
-        - id: ClothingEyesGlassesHiddenSecurity
+        - id: PowerCellHigh
           amount: 1
-        - id: SurveillanceCameraMonitorCircuitboard
+        - id: ClothingEyesGlassesHiddenSecurity
           amount: 1
 

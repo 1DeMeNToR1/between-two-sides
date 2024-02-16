@@ -212,9 +212,9 @@ public abstract class SharedDoorSystem : EntitySystem
         if (!Resolve(uid, ref door))
             return false;
 
-        if (door.State is DoorState.Closed or DoorState.Denying)
+        if (door.State == DoorState.Closed)
         {
-            return TryOpen(uid, door, user, predicted, quiet: door.State == DoorState.Denying);
+            return TryOpen(uid, door, user, predicted);
         }
         else if (door.State == DoorState.Open)
         {
