@@ -1,0 +1,479 @@
+- type: constructionGraph
+  id: FloorTileItemMetalDiamond
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemMetalDiamondSiberia
+
+- type: constructionGraph
+  id: FloorTileItemTechmaint
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemTechmaintSiberia
+
+- type: constructionGraph
+  id: FloorTileItemReinforced
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemReinforcedSiberia
+
+- type: constructionGraph
+  id: FloorTileItemMono
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemMonoSiberia
+
+- type: constructionGraph
+  id: FloorTileItemLino
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemLinoSiberia
+
+- type: constructionGraph
+  id: FloorTileItemRockVault
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemRockVaultSiberia
+
+- type: constructionGraph
+  id: FloorTileItemBlue
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemBlueSiberia
+
+- type: constructionGraph
+  id: FloorTileItemFreezer
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemFreezerSiberia
+
+- type: constructionGraph
+  id: FloorTileItemShowroom
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemShowroomSiberia
+
+- type: constructionGraph
+  id: FloorTileItemHydro
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemHydroSiberia
+
+- type: constructionGraph
+  id: FloorTileItemBar
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemBarSiberia
+
+- type: constructionGraph
+  id: FloorTileItemMime
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemMimeSiberia
+
+- type: constructionGraph
+  id: FloorTileItemKitchen
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemKitchenSiberia
+
+- type: constructionGraph
+  id: FloorTileItemLaundry
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemLaundrySiberia
+
+- type: constructionGraph
+  id: FloorTileItemArcadeBlue
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemArcadeBlueSiberia
+
+- type: constructionGraph
+  id: FloorTileItemArcadeRed
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemArcadeRedSiberia
+
+- type: constructionGraph
+  id: FloorTileItemEighties
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemEightiesSiberia
+
+- type: constructionGraph
+  id: FloorTileItemCarpetClown
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemCarpetClownSiberia
+
+- type: constructionGraph
+  id: FloorTileItemBoxing
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemBoxingSiberia
+
+- type: constructionGraph
+  id: FloorTileItemGym
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemGymSiberia
+
+- type: constructionGraph
+  id: FloorTileItemShuttleWhite
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemShuttleWhiteSiberia
+
+- type: constructionGraph
+  id: FloorTileItemShuttleBlue
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemShuttleBlueSiberia
+
+- type: constructionGraph
+  id: FloorTileItemShuttleOrange
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemShuttleOrangeSiberia
+
+- type: constructionGraph
+  id: FloorTileItemShuttlePurple
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemShuttlePurpleSiberia
+
+- type: constructionGraph
+  id: FloorTileItemShuttleRed
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemShuttleRedSiberia
+
+- type: constructionGraph
+  id: FloorTileItemGold
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemGoldSiberia
+
+- type: constructionGraph
+  id: FloorTileItemSilver
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Plastic
+              amount: 1
+    - node: tile
+      entity: FloorTileItemSilverSiberia
+
+- type: constructionGraph
+  id: FloorTileItemWoodPattern
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: WoodPlank
+              amount: 1
+    - node: tile
+      entity: FloorTileItemWoodPatternSiberia
+
+- type: constructionGraph
+  id: FloorTileItemSteelMaint
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemSteelMaintSiberia
+
+- type: constructionGraph
+  id: FloorTileItemGratingMaint
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tile
+          completed:
+            - !type:SetStackCount
+              amount: 4
+          steps:
+            - material: Steel
+              amount: 1
+    - node: tile
+      entity: FloorTileItemGratingMaintSiberia
