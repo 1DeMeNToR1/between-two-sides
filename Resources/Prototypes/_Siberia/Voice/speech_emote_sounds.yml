@@ -30,6 +30,8 @@
       collection: IPCBeeps
     Boop:
       collection: IPCBoops
+    Whirr:
+      collection: IPCWhirrs
     Honk:
       collection: BikeHorn
       params:

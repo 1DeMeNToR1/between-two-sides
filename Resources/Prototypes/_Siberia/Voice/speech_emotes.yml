@@ -1,5 +1,15 @@
 # IPC emotes
 - type: emote
+  id: Whirr
+  category: Vocal
+  chatMessages: [жужжит]
+  chatTriggers:
+    - жужжит
+    - журчит
+    - жужжит.
+    - жужжит!
+
+- type: emote
   id: Beep
   category: Vocal
   chatMessages: [пикает]
@@ -30,7 +40,7 @@
     - пингует
     - пингует.
     - пингует!
-
+    
 - type: emote
   id: Pilik
   category: Vocal
@@ -50,7 +60,7 @@
     - вычисляет!
     - рассчитывает
     - рассчитывает.
-    - рассчитывает!
+    - рассчитывает!    
     - думает
     - думает.
     - думает!
@@ -61,7 +71,7 @@
   chatMessages: [нянянкает]
   chatTriggers:
     - нянянкает
-
+    
 - type: emote
   id: Omg
   category: Vocal
@@ -70,7 +80,7 @@
     - в шоке
     - в шоке.
     - в шоке!
-
+    
 - type: emote
   id: Error
   category: Vocal
@@ -79,7 +89,7 @@
     - выдаёт ошибку
     - выдаёт ошибку.
     - выдаёт ошибку!
-
+    
 - type: emote
   id: Starting
   category: Vocal
@@ -91,7 +101,7 @@
     - просыпается
     - просыпается.
     - просыпается!
-
+    
 - type: emote
   id: Bdt
   category: Vocal
