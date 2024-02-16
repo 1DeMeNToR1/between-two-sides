@@ -1,4 +1,5 @@
 using Robust.Shared.GameStates;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared.Foldable;
 
@@ -8,19 +9,23 @@ namespace Content.Shared.Foldable;
 /// <remarks>
 /// Will prevent any insertions into containers while this item is unfolded.
 /// </remarks>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true)]
+[RegisterComponent]
+[NetworkedComponent]
 [Access(typeof(FoldableSystem))]
 public sealed partial class FoldableComponent : Component
 {
-    [DataField("folded"), AutoNetworkedField]
+    [DataField("folded")]
     public bool IsFolded = false;
+}
 
-    [DataField]
-    public bool CanFoldInsideContainer = false;
+// ahhh, the ol' "state thats just a copy of the component".
+[Serializable, NetSerializable]
+public sealed class FoldableComponentState : ComponentState
+{
+    public readonly bool IsFolded;
 
-    [DataField]
-    public LocId UnfoldVerbText = "unfold-verb";
-
-    [DataField]
-    public LocId FoldVerbText = "fold-verb";
+    public FoldableComponentState(bool isFolded)
+    {
+        IsFolded = isFolded;
+    }
 }

@@ -12,7 +12,7 @@
   name: Report on the situation at the station
   components:
     - type: Paper
-      content: doc-text-printer-report-station
+      content: doc-text-printer-ReportStation
 
 - type: entity
   parent: PrintedDocument
@@ -20,7 +20,7 @@
   name: Report on elimination of violations
   components:
     - type: Paper
-      content: doc-text-printer-report-on-elimination-of-violations
+      content: doc-text-printer-ReportOnEliminationOfViolations
 
 - type: entity
   parent: PrintedDocument
@@ -28,7 +28,7 @@
   name: Report on the work of the department
   components:
     - type: Paper
-      content: doc-text-printer-report-department
+      content: doc-text-printer-ReporDepartment
 
 - type: entity
   parent: PrintedDocument
@@ -36,7 +36,7 @@
   name: Report on employee performance
   components:
     - type: Paper
-      content: doc-text-printer-report-employee-performance
+      content: doc-text-printer-ReportEmployeePerformance
 
 - type: entity
   parent: PrintedDocument
@@ -44,7 +44,7 @@
   name: Report on chapter meeting
   components:
     - type: Paper
-      content: doc-text-printer-report-on-the-chapters-meeting
+      content: doc-text-printer-ReportOnTheChaptersMeeting
 
 - type: entity
   parent: PrintedDocument
@@ -52,7 +52,7 @@
   name: Internal Investigation Report
   components:
     - type: Paper
-      content: doc-text-printer-internal-affairs-agents-report
+      content: doc-text-printer-InternalAffairsAgentsReport
 
 - type: entity
   parent: PrintedDocument
@@ -60,7 +60,7 @@
   name: Report on technical condition
   components:
     - type: Paper
-      content: doc-text-printer-condition-report
+      content: doc-text-printer-ConditionReport
 
 
 - type: entity
@@ -69,7 +69,7 @@
   name: Report on object Investigation
   components:
     - type: Paper
-      content: doc-text-printer-Report-study-object
+      content: doc-text-printer-ReportStudyObject
 
 - type: entity
   parent: PrintedDocument
@@ -77,7 +77,7 @@
   name: Experiment report
   components:
     - type: Paper
-      content: doc-text-printer-experiment-report
+      content: doc-text-printer-ExperimentReport
 
 - type: entity
   parent: PrintedDocument
@@ -85,7 +85,7 @@
   name: Disposal report
   components:
     - type: Paper
-      content: doc-text-printer-disposal-report
+      content: doc-text-printer-DisposalReport
 
 - type: entity
   parent: PrintedDocument
@@ -93,7 +93,7 @@
   name: Statement of Appointment to the Temporary Acting Authority
   components:
     - type: Paper
-      content: doc-text-printer-application-appointment-interim
+      content: doc-text-printer-ApplicationAppointmentInterim
 
 - type: entity
   parent: PrintedDocument
@@ -101,7 +101,7 @@
   name: Statement of Employment
   components:
     - type: Paper
-      content: doc-text-printer-application-employment
+      content: doc-text-printer-ApplicationEmployment
 
 - type: entity
   parent: PrintedDocument
@@ -109,7 +109,7 @@
   name: Statement of Dismissal
   components:
     - type: Paper
-      content: doc-text-printer-letter-resignation
+      content: doc-text-printer-LetterResignation
 
 - type: entity
   parent: PrintedDocument
@@ -117,7 +117,7 @@
   name: Statement of access
   components:
     - type: Paper
-      content: doc-text-printer-application-access
+      content: doc-text-printer-ApplicationAccess
 
 - type: entity
   parent: PrintedDocument
@@ -125,7 +125,7 @@
   name: Statement for equipment
   components:
     - type: Paper
-      content: doc-text-printer-application-equipment
+      content: doc-text-printer-ApplicationEquipment
 
 - type: entity
   parent: PrintedDocument
@@ -133,7 +133,7 @@
   name: Appeal
   components:
     - type: Paper
-      content: doc-text-printer-appeal
+      content: doc-text-printer-Appeal
 
 - type: entity
   parent: PrintedDocument
@@ -141,7 +141,7 @@
   name: Evacuation Shuttle Request
   components:
     - type: Paper
-      content: doc-text-printer-evacuation-shuttle-request
+      content: doc-text-printer-EvacuationShuttleRequest
 
 - type: entity
   parent: PrintedDocument
@@ -149,7 +149,7 @@
   name: Shuttle registration request
   components:
     - type: Paper
-      content: doc-text-printer-shuttle-registration-request
+      content: doc-text-printer-ShuttleRegistrationRequest
 
 - type: entity
   parent: PrintedDocument
@@ -157,7 +157,7 @@
   name: Request to call members of CC, DSO
   components:
     - type: Paper
-      content: doc-text-printer-request-call-members-central-committee-dso
+      content: doc-text-printer-RequestCallMembersCentralCommitteeDSO
 
 - type: entity
   parent: PrintedDocument
@@ -165,7 +165,7 @@
   name: Request to establish threat level
   components:
     - type: Paper
-      content: doc-text-printer-request-to-establish-threat-level
+      content: doc-text-printer-RequestToEstablishThreatLevel
 
 - type: entity
   parent: PrintedDocument
@@ -173,7 +173,7 @@
   name: Request for salary change
   components:
     - type: Paper
-      content: doc-text-printer-request-change-salary
+      content: doc-text-printer-RequestChangeSalary
 
 - type: entity
   parent: PrintedDocument
@@ -181,7 +181,7 @@
   name: Request for non-listed employment
   components:
     - type: Paper
-      content: doc-text-printer-request-for-non-listed-employment
+      content: doc-text-printer-RequestForNonlistedEmployment
 
 - type: entity
   parent: PrintedDocument
@@ -189,7 +189,7 @@
   name: Request for promotion
   components:
     - type: Paper
-      content: doc-text-printer-request-for-promotion
+      content: doc-text-printer-RequestForPromotion
 
 - type: entity
   parent: PrintedDocument
@@ -197,7 +197,7 @@
   name: Request for the provision of documents
   components:
     - type: Paper
-      content: doc-text-printer-request-documents
+      content: doc-text-printer-RequestDocuments
 
 - type: entity
   parent: PrintedDocument
@@ -205,7 +205,7 @@
   name: Request for euthanasia
   components:
     - type: Paper
-      content: doc-text-printer-request-euthanasia
+      content: doc-text-printer-RequestEuthanasia
 
 - type: entity
   parent: PrintedDocument
@@ -213,7 +213,7 @@
   name: Request for construction works
   components:
     - type: Paper
-      content: doc-text-printer-request-construction-work
+      content: doc-text-printer-RequestConstructionWork
 
 - type: entity
   parent: PrintedDocument
@@ -221,7 +221,7 @@
   name: Request for modernization
   components:
     - type: Paper
-      content: doc-text-printer-request-modernization
+      content: doc-text-printer-RequestModernization
 
 - type: entity
   parent: PrintedDocument
@@ -229,7 +229,7 @@
   name: Complaint for violation of labor order
   components:
     - type: Paper
-      content: doc-text-printer-complaint-violation-labor-rules
+      content: doc-text-printer-ComplaintViolationLaborRules
 
 - type: entity
   parent: PrintedDocument
@@ -237,7 +237,7 @@
   name: Complaint about an offense
   components:
     - type: Paper
-      content: doc-text-printer-complaint-offense
+      content: doc-text-printer-ComplaintОffense
 
 - type: entity
   parent: PrintedDocument
@@ -245,7 +245,7 @@
   name: Authorization to use equipment
   components:
     - type: Paper
-      content: doc-text-printer-permission-equipment
+      content: doc-text-printer-PermissionEquipment
 
 - type: entity
   parent: PrintedDocument
@@ -253,7 +253,7 @@
   name: Permission to travel in case of threat
   components:
     - type: Paper
-      content: doc-text-printer-permission-to-travel-in-case-of-threat
+      content: doc-text-printer-PermissionToTravelInCaseOfThreat
 
 - type: entity
   parent: PrintedDocument
@@ -261,7 +261,7 @@
   name: Authorization to search
   components:
     - type: Paper
-      content: doc-text-printer-search-permission
+      content: doc-text-printer-SearchPermission
 
 - type: entity
   parent: PrintedDocument
@@ -269,7 +269,7 @@
   name: Permission to carry weapons
   components:
     - type: Paper
-      content: doc-text-printer-permission-to-carry-weapons
+      content: doc-text-printer-PermissionToCarryWeapons
 
 - type: entity
   parent: PrintedDocument
@@ -277,7 +277,7 @@
   name: Prescription Drug Authorization
   components:
     - type: Paper
-      content: doc-text-printer-prescription-drug-authorization
+      content: doc-text-printer-PrescriptionDrugAuthorization
 
 - type: entity
   parent: PrintedDocument
@@ -285,7 +285,7 @@
   name: Authorization to dispose of the body
   components:
     - type: Paper
-      content: doc-text-printer-permission-dispose-body
+      content: doc-text-printer-PermissionDisposeBody
 
 - type: entity
   parent: PrintedDocument
@@ -293,7 +293,7 @@
   name: Building permit
   components:
     - type: Paper
-      content: doc-text-printer-construction-permit
+      content: doc-text-printer-ConstructionPermit
 
 - type: entity
   parent: PrintedDocument
@@ -301,7 +301,7 @@
   name: Permission to extend marriage
   components:
     - type: Paper
-      content: doc-text-printer-permission-to-extend-marriage
+      content: doc-text-printer-PermissionToExtendMarriage
 
 - type: entity
   parent: PrintedDocument
@@ -309,7 +309,7 @@
   name: Dismissal order
   components:
     - type: Paper
-      content: doc-text-printer-order-dismissal
+      content: doc-text-printer-OrderDismissal
 
 - type: entity
   parent: PrintedDocument
@@ -317,7 +317,7 @@
   name: Denial of access order
   components:
     - type: Paper
-      content: doc-text-printer-order-deprivation-access
+      content: doc-text-printer-OrderDeprivationAccess
 
 - type: entity
   parent: PrintedDocument
@@ -325,7 +325,7 @@
   name: Incentive order
   components:
     - type: Paper
-      content: doc-text-printer-order-encouragement
+      content: doc-text-printer-OrderEncouragement
 
 - type: entity
   parent: PrintedDocument
@@ -333,7 +333,7 @@
   name: Prisoner parole order
   components:
     - type: Paper
-      content: doc-text-printer-order-parole-prisoner
+      content: doc-text-printer-OrderParolePrisoner
 
 - type: entity
   parent: PrintedDocument
@@ -341,7 +341,7 @@
   name: An order recognizing the reasonableness of the substance
   components:
     - type: Paper
-      content: doc-text-printer-order-recognizing-rentience-creature
+      content: doc-text-printer-OrderRecognizingSentienceCreature
 
 - type: entity
   parent: PrintedDocument
@@ -349,7 +349,7 @@
   name: Order for medical intervention
   components:
     - type: Paper
-      content: doc-text-printer-order-medical-intervention
+      content: doc-text-printer-OrderMedicalIntervention
 
 - type: entity
   parent: PrintedDocument
@@ -357,7 +357,7 @@
   name: Order for the production of a product
   components:
     - type: Paper
-      content: doc-text-printer-product-manufacturing-order
+      content: doc-text-printer-ProductManufacturingOrder
 
 - type: entity
   parent: PrintedDocument
@@ -365,7 +365,7 @@
   name: Purchase order for resources, equipment
   components:
     - type: Paper
-      content: doc-text-printer-order-purchase-resources-equipment
+      content: doc-text-printer-OrderPurchaseResourcesEquipment
 
 - type: entity
   parent: PrintedDocument
@@ -373,7 +373,7 @@
   name: Ordering special equipment
   components:
     - type: Paper
-      content: doc-text-printer-ordering-special-equipment
+      content: doc-text-printer-OrderingSpecialEquipment
 
 - type: entity
   parent: PrintedDocument
@@ -381,7 +381,7 @@
   name: Purchase order for armaments
   components:
     - type: Paper
-      content: doc-text-printer-order-purchase-weapons
+      content: doc-text-printer-OrderPurchaseWeapons
 
 - type: entity
   parent: PrintedDocument
@@ -389,7 +389,7 @@
   name: Certificate
   components:
     - type: Paper
-      content: doc-text-printer-certificate
+      content: doc-text-printer-Certificate
 
 - type: entity
   parent: PrintedDocument
@@ -397,7 +397,7 @@
   name: Certificate of advanced training
   components:
     - type: Paper
-      content: doc-text-printer-certificate-advanced-training
+      content: doc-text-printer-CertificateAdvancedTraining
 
 - type: entity
   parent: PrintedDocument
@@ -405,7 +405,7 @@
   name: Certificate of Offense
   components:
     - type: Paper
-      content: doc-text-printer-certificate-offense
+      content: doc-text-printer-CertificateOffense
 
 - type: entity
   parent: PrintedDocument
@@ -413,7 +413,7 @@
   name: Death certificate
   components:
     - type: Paper
-      content: doc-text-printer-death-certificate
+      content: doc-text-printer-DeathCertificate
 
 - type: entity
   parent: PrintedDocument
@@ -421,7 +421,7 @@
   name: Marriage certificate
   components:
     - type: Paper
-      content: doc-text-printer-marriage-certificate
+      content: doc-text-printer-MarriageCertificate
 
 - type: entity
   parent: PrintedDocument
@@ -429,7 +429,7 @@
   name: Certificate of divorce
   components:
     - type: Paper
-      content: doc-text-printer-divorce-certificate
+      content: doc-text-printer-DivorceCertificate
 
 - type: entity
   parent: PrintedDocument
@@ -437,7 +437,7 @@
   name: Indictment
   components:
     - type: Paper
-      content: doc-text-printer-closing-indictment
+      content: doc-text-printer-ClosingIndictment
 
 - type: entity
   parent: PrintedDocument
@@ -445,7 +445,7 @@
   name: Sentence
   components:
     - type: Paper
-      content: doc-text-printer-sentence
+      content: doc-text-printer-Sentence
 
 - type: entity
   parent: PrintedDocument
@@ -453,7 +453,7 @@
   name: Judgment
   components:
     - type: Paper
-      content: doc-text-printer-judgment
+      content: doc-text-printer-Judgment
 
 - type: entity
   parent: PrintedDocument
@@ -461,7 +461,7 @@
   name: Health report
   components:
     - type: Paper
-      content: doc-text-printer-statement-health
+      content: doc-text-printer-StatementHealth
 
 - type: entity
   parent: PrintedDocument
@@ -469,7 +469,7 @@
   name: Decision to start a trial
   components:
     - type: Paper
-      content: doc-text-printer-decision-to-start-trial
+      content: doc-text-printer-DecisionToStartTrial
 
 - type: entity
   parent: PrintedDocument
@@ -477,7 +477,7 @@
   name: ERROR loading form header
   components:
     - type: Paper
-      content: doc-text-printer-error-loading-form-header
+      content: doc-text-printer-ErrorLoadingFormHeader
 
 - type: entity
   parent: PrintedDocument
@@ -485,7 +485,7 @@
   name: NOTICE OF LIQUIDIZATION
   components:
     - type: Paper
-      content: doc-text-printer-notice-of-liquidation
+      content: doc-text-printer-NOTICEOFLIQUIDATION
 
 - type: entity
   parent: PrintedDocument
@@ -493,7 +493,7 @@
   name: BUSINESS DEAL
   components:
     - type: Paper
-      content: doc-text-printer-business-deal
+      content: doc-text-printer-BUSINESSDEAL
 
 - type: entity
   parent: PrintedDocument
@@ -501,7 +501,7 @@
   name: NOTE BEGINNING MILITARY ACTIONS
   components:
     - type: Paper
-      content: doc-text-printer-note-beginning-military-actions
+      content: doc-text-printer-NOTEBEGINNINGMILITARYACTIONS
 
 - type: entity
   parent: PrintedDocument
@@ -509,4 +509,4 @@
   name: REPORT ACCOMPLISHMENT GOALS
   components:
     - type: Paper
-      content: doc-text-printer-report-accomplishment-goals
+      content: doc-text-printer-REPORTACCOMPLISHMENTGOALS

@@ -169,8 +169,6 @@ flavor-complex-light = как угасший свет
 
 ## Generic alcohol/soda taste. This should be replaced with an actual flavor profile.
 
-flavor-complex-profits = как прибыль
-flavor-complex-fishops = как страшная рыбья операция
 flavor-complex-alcohol = как алкоголь
 flavor-complex-soda = как газировка
 flavor-complex-juice = как сок

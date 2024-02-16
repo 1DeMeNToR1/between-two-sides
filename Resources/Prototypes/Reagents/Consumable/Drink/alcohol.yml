@@ -54,7 +54,7 @@
   desc: reagent-desc-blue-curacao
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: alcohol
-  color: "#0099FF"
+  color: "#0000CD"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/curacaoglass.rsi
     state: icon
@@ -204,7 +204,7 @@
   desc: reagent-desc-melon-liquor
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: watermelon
-  color: "#00FF33"
+  color: "#138808"
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/emeraldglass.rsi
     state: icon
@@ -254,7 +254,7 @@
   desc: reagent-desc-rum
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: rum
-  color: "#f09f42"
+  color: "#664300"
   recognizable: true
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/rumglass.rsi
@@ -334,7 +334,7 @@
   desc: reagent-desc-whiskey
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: whiskey
-  color: "#ee7732"
+  color: "#664300"
   recognizable: true
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/whiskeyglass.rsi

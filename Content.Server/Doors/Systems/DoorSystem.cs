@@ -136,13 +136,13 @@ public sealed class DoorSystem : SharedDoorSystem
         if (!door.BumpOpen)
             return;
 
-        if (door.State is not (DoorState.Closed or DoorState.Denying))
+        if (door.State != DoorState.Closed)
             return;
 
         var otherUid = args.OtherEntity;
 
         if (Tags.HasTag(otherUid, "DoorBumpOpener"))
-            TryOpen(uid, door, otherUid, quiet: door.State == DoorState.Denying);
+            TryOpen(uid, door, otherUid);
     }
     private void OnEmagged(EntityUid uid, DoorComponent door, ref GotEmaggedEvent args)
     {

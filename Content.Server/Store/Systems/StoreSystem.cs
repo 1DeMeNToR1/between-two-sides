@@ -36,14 +36,12 @@ public sealed partial class StoreSystem : EntitySystem
 
         InitializeUi();
         InitializeCommand();
-        InitializeRefund();
     }
 
     private void OnMapInit(EntityUid uid, StoreComponent component, MapInitEvent args)
     {
         RefreshAllListings(component);
         InitializeFromPreset(component.Preset, uid, component);
-        component.StartingMap = Transform(uid).MapUid;
     }
 
     private void OnStartup(EntityUid uid, StoreComponent component, ComponentStartup args)
