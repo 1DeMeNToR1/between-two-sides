@@ -186,6 +186,7 @@
   id: MothWingsCharred
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -195,6 +196,7 @@
   id: MothWingsDbushy
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -206,6 +208,7 @@
   id: MothWingsDeathhead
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -226,6 +229,7 @@
   id: MothWingsDfan
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -235,6 +239,7 @@
   id: MothWingsFeathery
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -244,6 +249,7 @@
   id: MothWingsFirewatch
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -255,6 +261,7 @@
   id: MothWingsGothic
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -264,6 +271,7 @@
   id: MothWingsJungle
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -291,6 +299,7 @@
   id: MothWingsMoffra
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -302,6 +311,7 @@
   id: MothWingsOakworm
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -311,6 +321,7 @@
   id: MothWingsPlasmafire
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -331,6 +342,7 @@
   id: MothWingsRoyal
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -351,6 +363,7 @@
   id: MothWingsStriped
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi
@@ -378,6 +391,7 @@
   id: MothWingsWitchwing
   bodyPart: Tail
   markingCategory: Tail
+  sponsorOnly: true
   speciesRestriction: [Moth]
   sprites:
   - sprite: Mobs/Customization/Moth/moth_wings.rsi

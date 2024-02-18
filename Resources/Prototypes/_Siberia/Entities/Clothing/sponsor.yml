@@ -275,7 +275,7 @@
   id: AugmentsRoboticLeftHand
   bodyPart: LHand
   markingCategory: Arms
-  sponsorOnly: false
+  sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
       state: robotic_l_hand
@@ -284,7 +284,7 @@
   id: AugmentsRoboticLeftArm
   bodyPart: LArm
   markingCategory: Arms
-  sponsorOnly: false
+  sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
       state: robotic_l_arm
@@ -311,7 +311,7 @@
   id: RoboticLeftArm
   bodyPart: LArm
   markingCategory: Arms
-  sponsorOnly: false
+  sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
       state: r_l_arm
@@ -320,7 +320,7 @@
   id: RoboticChestMale
   bodyPart: Chest
   markingCategory: Chest
-  sponsorOnly: false
+  sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
       state: r_torso_male
@@ -329,7 +329,7 @@
   id: RoboticChestFemale
   bodyPart: Chest
   markingCategory: Chest
-  sponsorOnly: false
+  sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
       state: r_torso_female
@@ -338,7 +338,7 @@
   id: RoboticLeftLeg
   bodyPart: LLeg
   markingCategory: Legs
-  sponsorOnly: false
+  sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
       state: r_l_leg
@@ -347,7 +347,7 @@
   id: RoboticLeftFoot
   bodyPart: RFoot
   markingCategory: Legs
-  sponsorOnly: false
+  sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
       state: r_l_foot
@@ -356,7 +356,7 @@
   id: RoboticRightLeg
   bodyPart: LLeg
   markingCategory: Legs
-  sponsorOnly: false
+  sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
       state: r_r_leg
@@ -365,7 +365,7 @@
   id: RoboticRightFoot
   bodyPart: RFoot
   markingCategory: Legs
-  sponsorOnly: false
+  sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
       state: r_r_foot
@@ -374,7 +374,7 @@
   id: MalstremEyeRight
   bodyPart: Eyes
   markingCategory: Head
-  sponsorOnly: false
+  sponsorOnly: true
   speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf]
   sprites:
   - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -384,7 +384,7 @@
   id: MalstremEyeLeft
   bodyPart: Eyes
   markingCategory: Head
-  sponsorOnly: false
+  sponsorOnly: true
   speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf]
   sprites:
   - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -394,7 +394,7 @@
   id: MalstremEyeCyclop
   bodyPart: Eyes
   markingCategory: Head
-  sponsorOnly: false
+  sponsorOnly: true
   speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf]
   sprites:
   - sprite: Corvax/Mobs/Customization/augments.rsi

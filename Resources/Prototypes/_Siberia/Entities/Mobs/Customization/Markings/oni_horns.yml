@@ -4,7 +4,7 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
-  sponsorOnly: false # Corvax-Sponsors
+  sponsorOnly: true # Corvax-Sponsors
   speciesRestriction: [Human]
   sprites:
   - sprite: Siberia/Mobs/Customization/oni_horns.rsi
@@ -15,7 +15,7 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
-  sponsorOnly: false # Corvax-Sponsors
+  sponsorOnly: true # Corvax-Sponsors
   speciesRestriction: [Human]
   sprites:
   - sprite: Siberia/Mobs/Customization/oni_horns.rsi
@@ -26,7 +26,7 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
-  sponsorOnly: false # Corvax-Sponsors
+  sponsorOnly: true # Corvax-Sponsors
   speciesRestriction: [Human]
   sprites:
   - sprite: Siberia/Mobs/Customization/oni_horns.rsi
@@ -37,7 +37,7 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
-  sponsorOnly: false # Corvax-Sponsors
+  sponsorOnly: true # Corvax-Sponsors
   speciesRestriction: [Human]
   sprites:
   - sprite: Siberia/Mobs/Customization/oni_horns.rsi
@@ -48,7 +48,7 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
-  sponsorOnly: false # Corvax-Sponsors
+  sponsorOnly: true # Corvax-Sponsors
   speciesRestriction: [Human]
   sprites:
   - sprite: Siberia/Mobs/Customization/oni_horns.rsi
@@ -59,7 +59,7 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
-  sponsorOnly: false # Corvax-Sponsors
+  sponsorOnly: true # Corvax-Sponsors
   speciesRestriction: [Human]
   sprites:
   - sprite: Siberia/Mobs/Customization/oni_horns.rsi
@@ -70,7 +70,7 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
-  sponsorOnly: false # Corvax-Sponsors
+  sponsorOnly: true # Corvax-Sponsors
   speciesRestriction: [Human]
   sprites:
   - sprite: Siberia/Mobs/Customization/oni_horns.rsi
