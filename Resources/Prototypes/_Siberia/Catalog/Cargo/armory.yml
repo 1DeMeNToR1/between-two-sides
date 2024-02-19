@@ -1,0 +1,10 @@
+- type: cargoProduct
+  id: OldLaserRifleOrder
+  name: ящик старых лазерных винтовок
+  icon:
+    sprite: Siberia/Objects/Weapons/Guns/Battery/Oldlaser_gun.rsi
+    state: icon
+  product: CrateArmoryOldLaserCarbine
+  cost: 2500
+  category: Armory
+  group: market

@@ -1,0 +1,11 @@
+### Ящик с ГиперСМЭСом ###
+- type: entity
+  id: CrateEngineeringHyperSMES
+  name: ящик смэс гиперемкости
+  parent: CrateEngineeringSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: HyperSMESBasicEmpty
+        amount: 1
+### Ящик с ГиперСМЭСом конец ###

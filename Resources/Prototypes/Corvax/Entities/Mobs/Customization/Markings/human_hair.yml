@@ -190,6 +190,7 @@
   id: HumanHairFroofylong
   bodyPart: Hair
   markingCategory: Hair
+  sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/human_hair.rsi
       state: froofylong

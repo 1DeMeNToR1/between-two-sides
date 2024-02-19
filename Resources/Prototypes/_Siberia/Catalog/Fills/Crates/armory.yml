@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateArmoryOldLaserCarbine
+  name: ящик старых лазерных винтовок
+  description: Содержит 2 смертоносных высокоэнергетичных лазерных винтовки. Чтобы открыть ящик нужен уровень допуска Оружейная
+  parent: CrateWeaponSecure
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponOldLaserRifle
+        amount: 2

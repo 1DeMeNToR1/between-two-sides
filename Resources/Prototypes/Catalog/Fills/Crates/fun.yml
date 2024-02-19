@@ -292,6 +292,7 @@
         amount: 2
       - id: PlasticBanana
       - id: WhoopieCushion
+      - id: ClownBalls  #Siberia-changes
       - id: ToyHammer
       - id: MrChips
         orGroup: GiftPool

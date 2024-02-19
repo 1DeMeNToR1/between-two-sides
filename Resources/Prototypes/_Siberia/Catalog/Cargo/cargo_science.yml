@@ -1,0 +1,55 @@
+- type: cargoProduct
+  id: ScienceXenoQueen
+  name: контейнер с ксено-королевой
+  icon:
+    sprite: Mobs/Aliens/Xenos/queen.rsi
+    state: sleeping
+  product: CrateXenoQueen
+  cost: 6000
+  category: Science
+  group: market
+  
+- type: cargoProduct
+  id: ScienceXenoRunner
+  name: контейнер с ксено-бегуном
+  icon:
+    sprite: Mobs/Aliens/Xenos/runner.rsi
+    state: sleeping
+  product: CrateXenoRunner
+  cost: 4000
+  category: Science
+  group: market
+  
+- type: cargoProduct
+  id: ScienceXenoRavager
+  name: контейнер с ксено-разрушителем
+  icon:
+    sprite: Mobs/Aliens/Xenos/ravager.rsi
+    state: sleeping
+  product: CrateXenoRavager
+  cost: 5000
+  category: Science
+  group: market
+
+# - type: cargoProduct
+  # id: ScienceEVAHardsuit
+  # name: ящик скафандров EVA
+  # icon:
+    # sprite: Clothing/OuterClothing/Hardsuits/eva.rsi
+    # state: icon
+  # product: CrateEVAHardsuit
+  # cost: 4000
+  # category: Science
+  # group: market
+  
+#- type: cargoProduct
+#  id: ScienceBluespaceBackpack
+#  name: ящик блюспейс рюкзаков
+#  icon:
+#    sprite: Clothing/Back/Backpacks/holding.rsi
+#    state: holding
+#  product: CrateBluespaceBackpack
+#  cost: 15000
+#  category: Science
+#  group: market
+  

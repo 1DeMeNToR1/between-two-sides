@@ -3,7 +3,7 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Human, Felinid, Vulpkanin, SlimePerson]
-  sponsorOnly: false # Corvax-Sponsors
+  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Siberia/Clothing/foxtail.rsi
       state: equipped-NECKindexbrown

@@ -1,0 +1,391 @@
+- type: tile
+  id: FloorTechMaintSiberia
+  name: tiles-techmaint-floor
+  sprite: /Textures/Tiles/tech_maint.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaintSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorReinforcedSiberia
+  name: tiles-reinforced-floor
+  sprite: /Textures/Tiles/reinforced.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemReinforcedSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMonoSiberia
+  name: tiles-mono-floor
+  sprite: /Textures/Tiles/mono.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMonoSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorLinoSiberia
+  name: tiles-linoleum-floor
+  sprite: /Textures/Tiles/lino.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemLinoSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalDiamondSiberia
+  name: tiles-diamond-plate-floor
+  sprite: /Textures/Tiles/metaldiamond.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemMetalDiamondSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorRockVaultSiberia
+  name: tiles-rock-floor
+  sprite: /Textures/Tiles/rock_vault.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemRockVaultSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorBlueSiberia
+  name: tiles-blue-tile
+  sprite: /Textures/Tiles/blue.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemBlueSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorFreezerSiberia
+  name: tiles-freezer
+  sprite: /Textures/Tiles/freezer.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemFreezerSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorShowroomSiberia
+  name: tiles-showroom-floor
+  sprite: /Textures/Tiles/showroom.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemShowroomSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorHydroSiberia
+  name: tiles-hydro-floor
+  sprite: /Textures/Tiles/hydro.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemHydroSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorBarSiberia
+  name: tiles-bar-floor
+  sprite: /Textures/Tiles/bar.png
+  variants: 4
+  placementVariants: [ 0, 1, 2, 3 ]
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemBarSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMimeSiberia
+  name: tiles-mime-floor
+  sprite: /Textures/Tiles/mime.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemMimeSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorKitchenSiberia
+  name: tiles-kitchen-floor
+  sprite: /Textures/Tiles/kitchen.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemKitchenSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorLaundrySiberia
+  name: tiles-laundry-floor
+  sprite: /Textures/Tiles/laundry.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemLaundrySiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorArcadeBlueSiberia
+  name: tiles-blue-arcade-floor
+  sprite: /Textures/Tiles/arcadeblue.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepCarpet
+  barestepSounds:
+    collection: BarestepCarpet
+  friction: 0.40
+  itemDrop: FloorTileItemArcadeBlueSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorArcadeRedSiberia
+  name: tiles-red-arcade-floor
+  sprite: /Textures/Tiles/arcadered.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepCarpet
+  barestepSounds:
+    collection: BarestepCarpet
+  friction: 0.40
+  itemDrop: FloorTileItemArcadeRedSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorEightiesSiberia
+  name: tiles-eighties-floor
+  sprite: /Textures/Tiles/eighties.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepCarpet
+  barestepSounds:
+    collection: BarestepCarpet
+  friction: 0.40
+  itemDrop: FloorTileItemEightiesSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCarpetClownSiberia
+  name: tiles-clown-carpet-floor
+  sprite: /Textures/Tiles/carpetclown.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepCarpet
+  barestepSounds:
+    collection: BarestepCarpet
+  friction: 0.40
+  itemDrop: FloorTileItemCarpetClownSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorBoxingSiberia
+  name: tiles-boxing-ring-floor
+  sprite: /Textures/Tiles/boxing.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  friction: 0.40
+  itemDrop: FloorTileItemBoxingSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorGymSiberia
+  name: tiles-gym-floor
+  sprite: /Textures/Tiles/gym.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  friction: 0.40
+  itemDrop: FloorTileItemGymSiberia
+  heatCapacity: 10000
+
+# Shuttle
+- type: tile
+  id: FloorShuttleWhiteSiberia
+  name: tiles-white-shuttle-floor
+  sprite: /Textures/Tiles/shuttlewhite.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemShuttleWhiteSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorShuttleBlueSiberia
+  name: tiles-blue-shuttle-floor
+  sprite: /Textures/Tiles/shuttleblue.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemShuttleBlueSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorShuttleOrangeSiberia
+  name: tiles-orange-shuttle-floor
+  sprite: /Textures/Tiles/shuttleorange.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemShuttleOrangeSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorShuttlePurpleSiberia
+  name: tiles-purple-shuttle-floor
+  sprite: /Textures/Tiles/shuttlepurple.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemShuttlePurpleSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorShuttleRedSiberia
+  name: tiles-red-shuttle-floor
+  sprite: /Textures/Tiles/shuttlered.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemShuttleRedSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorGoldSiberia
+  name: tiles-gold-tile
+  sprite: /Textures/Tiles/gold.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemGoldSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSilverSiberia
+  name: tiles-silver-tile
+  sprite: /Textures/Tiles/silver.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemSilverSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaint2Siberia
+  name: tiles-techmaint2-floor
+  sprite: /Textures/Tiles/steel_maint.png
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteelMaintSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaint3Siberia
+  name: tiles-techmaint3-floor
+  sprite: /Textures/Tiles/grating_maint.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemGratingMaintSiberia
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodTileSiberia
+  name: tiles-wood2
+  sprite: /Textures/Tiles/wood_tile.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWoodPatternSiberia
+  heatCapacity: 10000

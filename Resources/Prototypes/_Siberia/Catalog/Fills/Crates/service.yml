@@ -1,0 +1,91 @@
+- type: entity
+  id: CrateMeatBox
+  name: ящик экзотических продуктов
+  parent: CrateFreezer
+  components:
+  - type: StorageFill
+    contents:
+      - id: FoodMeatCrab
+        amount: 8
+      - id: FoodMeatXeno
+        amount: 8
+      - id: FoodMeatGoliath
+        amount: 8
+      - id: FoodMeatBear
+        amount: 8
+      - id: FoodMeatSpider
+        amount: 8
+      - id: FoodMeatPenguin
+        amount: 8
+      - id: FoodMeatPlant
+        amount: 8
+      - id: FoodMeatLizard
+        amount: 8
+      - id: FoodMeatSpiderLeg
+        amount: 8
+      - id: FoodBoxDonkpocket
+        amount: 1
+      - id: FoodBoxDonkpocketHonk
+        amount: 1
+      - id: FoodBoxDonkpocketPizza
+        amount: 1
+      - id: FoodBoxDonkpocketTeriyaki
+        amount: 1
+      - id: FoodBoxDonkpocketBerry
+        amount: 1
+      - id: FoodBoxDonkpocketSpicy
+        amount: 1
+        
+- type: entity
+  id: CrateSponsor
+  name: ящик дрип-гардероба
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterCoatUSSPOvercoatBlack
+        amount: 1
+      - id: ClothingHeadHatCapLeatherHoS
+        amount: 1
+      - id: ClothingHandsWatchDivine
+        amount: 1
+      - id: ClothingNeckFoxTail
+        amount: 1
+      - id: ClothingUniformJumpsuitSkeleton
+        amount: 1
+      - id: ClothingCloakGamer
+        amount: 1
+      - id: ClothingOuterAtmosianBomberJacket
+        amount: 1
+      - id: ClothingCloakAtmosian
+        amount: 1
+      - id: ClothingMaskSkull
+        amount: 1
+      - id: ClothingMaskGasAtmosian
+        amount: 1
+      - id: ClothingHeadHatCapUSSPBlack
+        amount: 1
+      - id: ClothingHandsGlovesLeatherUSSPBlack
+        amount: 1
+      - id: ClothingShoesUSSPBlack
+        amount: 1
+      - id: ClothingNeckCloakGoliathCloak
+        amount: 1
+      - id: ClothingNeckCloakFreedomCloak
+        amount: 1
+      - id: ClothingUniformJumpsuitUSSPBlack
+        amount: 1
+      - id: ClothingNeckCloakMoth
+        amount: 1
+      - id: ClothingHeadHatHoodMoth
+        amount: 1
+        
+- type: entity
+  id: CrateServCum
+  name: ящик операторских камер
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+      - id: SurveillanceOperatorCum
+        amount: 2

@@ -1,0 +1,172 @@
+- type: cargoProduct
+  id: LightHardsuit
+  icon:
+    sprite: Siberia/Clothing/31_08/salvageupg.rsi
+    state: icon
+    netsync: false
+  product: CrateHardsuitsLight
+  cost: 8000
+  category: Armory
+  group: market
+
+- type: entity
+  id: CrateHardsuitsLight
+  name: ящик с облегчёнными скафандрами
+  description: Содержит 2 образца модифицированного шахтёрского скафандра
+  parent: CrateCommandSecure
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterHardsuitSpatioUpgraded
+      amount: 2
+
+- type: cargoProduct
+  id: LightMagboots
+  icon:
+    sprite: Siberia/Clothing/31_08/magboots-upg.rsi
+    state: icon
+    netsync: false
+  product: CrateHardboots
+  cost: 3000
+  category: Armory
+  group: market
+
+- type: entity
+  id: CrateHardboots
+  name: ящик с улучшенными магнитными сапогами
+  description: Содержит 2 образца модифицированных магнитных ботинок
+  parent: CrateCommandSecure
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingShoesBootsMagUpgraded
+      amount: 2
+      
+- type: cargoProduct
+  id: TEGCore
+  icon:
+    sprite: Structures/Decoration/banner.rsi
+    state: banner_engineering
+    netsync: false
+  product: TegCenter
+  cost: 6000
+  category: Engineering
+  group: market
+
+- type: cargoProduct
+  id: TEGAir
+  icon:
+    sprite: Structures/Piping/Atmospherics/tinyfan.rsi
+    state: icon
+    netsync: false
+  product: TegCirculator
+  cost: 2500
+  category: Engineering
+  group: market
+  
+- type: cargoProduct
+  id: MilitaryBackpacks
+  icon:
+    sprite: Corvax/Back/Duffels/military.rsi
+    state: icon
+    netsync: false
+  product: CrateMilitaryBackpacks
+  cost: 6500
+  category: Fun
+  group: market
+
+- type: entity
+  id: CrateMilitaryBackpacks
+  name: ящик с армейскими рюкзаками
+  description: Содержит 3 вида армейских рюкзаков в одном экземпляре
+  parent: CrateCommandSecure
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingBackpackDuffelMilitary
+      amount: 2
+    - id: ClothingMilitaryBackpack
+      amount: 2
+    - id: ClothingBackpackMilitarySatchel
+      amount: 2
+      
+#- type: cargoProduct
+ # id: RgbFunnySheet
+  #icon:
+  #  sprite: Objects/Weapons/Guns/Basic/staves.rsi
+   # state: nothing
+   # netsync: false
+  #product: RGBStaff
+  #cost: 15000
+  #category: Fun
+  #group: market
+  
+- type: cargoProduct
+  id: CloningConsoleComputer
+  icon:
+    sprite: Objects/Misc/module.rsi
+    state: cpu_medical
+  product: CloningConsoleComputerCircuitboard
+  cost: 2000
+  category: Circuitboards
+  group: market
+  
+- type: cargoProduct
+  id: MedicalScanner
+  icon:
+    sprite: Objects/Misc/module.rsi
+    state: medical
+  product: MedicalScannerMachineCircuitboard
+  cost: 2000
+  category: Circuitboards
+  group: market
+  
+- type: cargoProduct
+  id: CloningPodMachine
+  icon:
+    sprite: Objects/Misc/module.rsi
+    state: medical
+  product: CloningPodMachineCircuitboard
+  cost: 2000
+  category: Circuitboards
+  group: market
+
+- type: cargoProduct
+  id: MilitarySwatSet
+  icon:
+    sprite: Clothing/Mask/swat.rsi
+    state: icon
+    netsync: false
+  product: CrateMilitarySwat
+  cost: 14000
+  category: Armory
+  group: market
+
+- type: entity
+  id: CrateMilitarySwat
+  name: ящик с набором спецназа
+  description: Содержит набор спецназа для выполнения различных боевых задач в условиях присутствия атмосферы
+  parent: CrateWeaponSecure
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingShoesSwat
+      amount: 1
+    - id: ClothingOuterArmorHeavy
+      amount: 1
+    - id: ClothingHandsGlovesCombat
+      amount: 1
+    - id: ClothingMaskGasSwat
+      amount: 1
+    - id: MedkitCombatFilled
+      amount: 1
+    - id: ClothingHeadHelmetSwatSyndicate
+      amount: 1
+    - id: WeaponDisabler
+      amount: 1
+    - id: WeaponRevolverMateba
+      amount: 1
+    - id: SpeedLoaderMagnum
+      amount: 2
+    - id: SpeedLoaderMagnumRubber
+      amount: 2

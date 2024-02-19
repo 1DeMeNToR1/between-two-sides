@@ -2,6 +2,7 @@
   id: ScarEyeRight
   bodyPart: Head
   markingCategory: Head
+  sponsorOnly: true
   speciesRestriction: [Human, Dwarf]
   coloring:
     default:
@@ -16,6 +17,7 @@
   id: ScarEyeLeft
   bodyPart: Head
   markingCategory: Head
+  sponsorOnly: true
   speciesRestriction: [Human, Dwarf]
   coloring:
     default:

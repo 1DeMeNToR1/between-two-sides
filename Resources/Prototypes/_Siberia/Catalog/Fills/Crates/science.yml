@@ -1,0 +1,61 @@
+- type: entity
+  id: CrateXenoQueenFake
+  name: контейнер для артефактов
+  parent: CrateArtifactContainer
+  components:
+  - type: StorageFill
+    contents:
+      - id: MobXenoQueen
+        amount: 1
+        
+- type: entity
+  id: CrateXenoQueen
+  name: контейнер с ксено-королевой
+  parent: CrateArtifactContainer
+  components:
+  - type: StorageFill
+    contents:
+      - id: MobXenoQueen
+        amount: 1
+        
+- type: entity
+  id: CrateXenoRunner
+  name: контейнер с ксено-бегуном
+  parent: CrateArtifactContainer
+  components:
+  - type: StorageFill
+    contents:
+      - id: MobXenoRunner
+        amount: 1
+
+- type: entity
+  id: CrateXenoRavager
+  name: контейнер с ксено-разрушителем
+  parent: CrateArtifactContainer
+  components:
+  - type: StorageFill
+    contents:
+      - id: MobXenoRavager
+        amount: 1
+        
+#- type: entity
+#  id: CrateEVAHardsuit
+#  name: ящик скафандров EVA
+#  parent: CrateGenericSteel
+#  components:
+#  - type: StorageFill
+#    contents:
+#      - id: ClothingOuterHardsuitEVA
+#        amount: 3
+#      - id: ClothingHeadHelmetEVA
+#        amount: 3
+        
+#- type: entity
+#  id: CrateBluespaceBackpack
+#  name: ящик блюспейс рюкзаков
+#  parent: CrateGenericSteel
+#  components:
+#  - type: StorageFill
+#    contents:
+#      - id: ClothingBackpackHoldingLimit
+#        amount: 2

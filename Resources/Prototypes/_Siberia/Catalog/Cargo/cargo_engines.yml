@@ -1,0 +1,10 @@
+- type: cargoProduct
+  id: EngineHyperSMES
+  name: ящик СМЭС гиперемкости
+  icon:
+    sprite: Siberia/Structures/Machines/hypersmes.rsi
+    state: hypersmes
+  product: CrateEngineeringHyperSMES
+  cost: 15000
+  category: Engineering
+  group: market
