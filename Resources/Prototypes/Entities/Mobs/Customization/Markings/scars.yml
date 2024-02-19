@@ -4,11 +4,7 @@
   markingCategory: Head
   sponsorOnly: true
   speciesRestriction: [Human, Dwarf]
-  coloring:
-    default:
-      type:
-        !type:TattooColoring
-      fallbackColor: "#FFFFFF"
+  followSkinColor: true
   sprites:
   - sprite: Mobs/Customization/scars.rsi
     state: scar_eye_right
@@ -19,11 +15,7 @@
   markingCategory: Head
   sponsorOnly: true
   speciesRestriction: [Human, Dwarf]
-  coloring:
-    default:
-      type:
-        !type:TattooColoring
-      fallbackColor: "#FFFFFF"
+  followSkinColor: true
   sprites:
   - sprite: Mobs/Customization/scars.rsi
     state: scar_eye_left
@@ -32,7 +24,7 @@
   id: ScarTopSurgeryShort
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Human]
+  speciesRestriction: [Human, Dwarf]
   sexRestriction: [Male]
   followSkinColor: true
   sprites:
@@ -43,9 +35,19 @@
   id: ScarTopSurgeryLong
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Human]
+  speciesRestriction: [Human, Dwarf]
   sexRestriction: [Male]
   followSkinColor: true
   sprites:
   - sprite: Mobs/Customization/scars.rsi
     state: scar_top_surgery_long
+
+- type: marking
+  id: ScarChest
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Human, Dwarf]
+  followSkinColor: true
+  sprites:
+  - sprite: Mobs/Customization/scars.rsi
+    state: scar_chest
