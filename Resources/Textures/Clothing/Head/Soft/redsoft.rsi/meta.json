@@ -41,6 +41,10 @@
     {
       "name": "flipped-inhand-right",
       "directions": 4
+    },
+	{
+      "name": "flipped-equipped-HELMET-resomi",
+      "directions": 4
     }
   ]
 }
