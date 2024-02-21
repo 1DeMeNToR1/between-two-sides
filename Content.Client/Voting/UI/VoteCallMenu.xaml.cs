@@ -29,7 +29,6 @@ namespace Content.Client.Voting.UI
         public static readonly (string name, StandardVoteType type, (string name, string id)[]? secondaries)[]
             AvailableVoteTypes =
             {
-                ("ui-vote-type-restart", StandardVoteType.Restart, null),
                 ("ui-vote-type-gamemode", StandardVoteType.Preset, null),
                 ("ui-vote-type-map", StandardVoteType.Map, null)
             };

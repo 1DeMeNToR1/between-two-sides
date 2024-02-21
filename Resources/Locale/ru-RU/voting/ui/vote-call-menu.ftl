@@ -1,4 +1,3 @@
-ui-vote-type-restart = Перезапуск раунда
 ui-vote-type-gamemode = Следующий режим игры
 ui-vote-type-map = Следующая карта
 # Window title of the vote create menu
