@@ -63,3 +63,17 @@
     sprite: Siberia/Clothing/Head/Hats/QMberet.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Head/Hats/QMberet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingParatrooperberet
+  name: Потрёпанный берет
+  description: Старый берет войск СССП. Как его занесло сюда - загадка.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/Paratrooper_beret.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/Paratrooper_beret.rsi
+  - type: Tag
+    tags:
+        - HamsterWearable
