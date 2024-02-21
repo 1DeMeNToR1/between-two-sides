@@ -32,3 +32,23 @@
       sprite: Siberia/Clothing/OuterClothing/WinterCoats/mantis_winter_coat.rsi
     - type: Clothing
       sprite: Siberia/Clothing/OuterClothing/WinterCoats/mantis_winter_coat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: Vatnik
+  name: Старый ватник
+  description: Старый ватник из СССП, изрядно поеденный молью.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/OuterClothing/WinterCoats/oldvatnik.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/OuterClothing/WinterCoats/oldvatnik.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
