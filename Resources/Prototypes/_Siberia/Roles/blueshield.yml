@@ -6,18 +6,18 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 108000 #200 hrs
+      time: 108000000 #200 hrs
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 108000 #200 hrs
+      time: 108000000 #200 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 144000 #200 hrs
+      time: 144000000 #200 hrs
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 108000 # 15000 hours
+      time: 108000000 # 15000 hours
     - !type:OverallPlaytimeRequirement
-      time: 252000 #140 hrs
+      time: 252000000 #140 hrs
   weight: 20
   startingGear: BlueShieldGear
   icon: "JobIconBlueShield"

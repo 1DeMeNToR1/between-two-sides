@@ -6,10 +6,10 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 7200
+      time: 7200000000
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 14800
+      time: 1480000000
   startingGear: BrigmedicGear
   icon: "JobIconBrigmedic"
   supervisors: job-supervisors-hos
@@ -27,6 +27,5 @@
 
 #space-station-14\Resources\Prototypes\Roles\Jobs\Security
 
-- type: playTimeTracker 
-  id: JobBrigmedic                  
-  
+- type: playTimeTracker
+  id: JobBrigmedic
