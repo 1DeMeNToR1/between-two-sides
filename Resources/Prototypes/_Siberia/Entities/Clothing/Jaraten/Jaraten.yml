@@ -132,7 +132,6 @@
   - type: Clothing
     sprite: Siberia/Clothing/scientistGlasses.rsi
   - type: VisionCorrection
-  - type: IdentityBlocker
 
 - type: entity
   parent: ClothingUniformBase
