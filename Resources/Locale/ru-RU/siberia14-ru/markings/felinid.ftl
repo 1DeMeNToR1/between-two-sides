@@ -1,11 +1,3 @@
-hairball-action = Откашлять комок шерсти
-hairball-action-desc = Очистите свой пищевод и получите классный комок шерсти, который можно швырять в людей.
-hairball-cough = {CAPITALIZE(THE($name))} начинает откашливать комок шерсти!
-
-action-name-eat-mouse = Съесть мышь
-action-description-eat-mouse = Съесть мышь в вашей руке, чтобы напитаться и получить заряд заряд в виде комочка шерсти.
-
-
 marking-FelinidEarsBasic = Уши фелинида (основа)
 marking-FelinidEarsBasic-basic_outer = Уши (наружнее ухо)
 marking-FelinidEarsBasic-basic_inner = Уши (внутреннее ухо)
@@ -66,11 +58,6 @@ marking-FelinidTailBasicWithBowAndBell-basic_bell = Колокольчик
 
 ent-MobFelinidBase = Урист МакФелинид
 ent-MobFelinid = Урист МакФелинид
-
-
-ent-Hairball = комок шерсти
-    .desc = Фелиниды...
-
 
 species-name-felinid = Фелинид
 
