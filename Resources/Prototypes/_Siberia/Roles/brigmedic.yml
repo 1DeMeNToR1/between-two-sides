@@ -6,10 +6,10 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 7200000000
+      time: 7200000 # whitelist
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 1480000000
+      time: 1480000 # whitelist
   startingGear: BrigmedicGear
   icon: "JobIconBrigmedic"
   supervisors: job-supervisors-hos
