@@ -1,0 +1,657 @@
+- type: entity
+  save: false
+  abstract: true
+  id: SimpleHostileMobBase
+  suffix: AI
+  components:
+  - type: LagCompensation
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+      Acidic: [Touch, Ingestion]
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: IdleCompound
+  - type: Input
+    context: "human"
+  - type: NpcFactionMember
+    factions:
+    - SimpleNeutral
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 3
+  - type: HealthExaminable
+    examinableTypes:
+    - Blunt
+    - Slash
+    - Piercing
+    - Heat
+    - Shock
+  - type: MovedByPressure
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      path: /Audio/Effects/hit_kick.ogg
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: KinematicController # Same for all inheritors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          # Circles, cuz rotation of rectangles looks very bad
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: SolutionContainerManager
+  - type: Bloodstream
+    bloodlossDamage:
+      types:
+        Bloodloss:
+          1
+    bloodlossHealDamage:
+      types:
+        Bloodloss:
+          -1
+  - type: Damageable
+    damageContainer: Biological
+  - type: RadiationReceiver
+  - type: AtmosExposed
+  - type: Flammable
+    fireSpread: true
+    canResistFire: true
+    damage:
+      types:
+        Heat: 1 #per second, scales with number of fire 'stacks'
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: 0
+    currentTemperature: 310.15
+    coldDamage:
+      types:
+        Cold : 0.1 #per second, scales with temperature & other constants
+    specificHeat: 42
+    heatDamage:
+      types:
+        Heat : 0.1 #per second, scales with temperature & other constants
+  - type: MobState
+  - type: Deathgasp
+  - type: MobStateActions
+    actions:
+      Critical:
+      - CritSuccumb
+      - CritFakeDeath
+      - CritLastWords
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Critical
+      100: Dead
+  - type: Stamina
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 400
+      behaviors:
+      - !type:GibBehavior { }
+  - type: CombatMode
+  - type: Internals
+  - type: StatusIcon
+  - type: StatusEffects
+    allowed:
+    - SlowedDown
+    - Stutter
+    - Electrocution
+    - ForcedSleep
+    - TemporaryBlindness
+    - Pacified
+  - type: Body
+    prototype: Animal
+  - type: InjectableSolution
+    solution: chemicals
+  - type: Examiner
+  - type: MeleeWeapon
+    hidden: true
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      groups:
+        Brute: 5
+  - type: Appearance
+  - type: RotationVisuals
+    defaultRotation: 0
+    horizontalRotation: 0
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Generic_mob_burning
+  - type: Actions
+  - type: DoAfter
+  - type: Climbing
+  - type: Flashable
+  - type: Polymorphable
+  - type: Pullable
+  - type: Buckle
+  - type: StandingState
+  - type: Alerts
+  - type: NameIdentifier
+    group: GenericNumber
+  # - type: SlowOnDamage
+    # speedModifierThresholds:
+      # 60: 0.7
+      # 80: 0.5
+  - type: MobPrice
+    price: 1000 # Living critters are valuable in space.
+  - type: Perishable
+
+- type: entity
+  name: БАЗА СТРЕЛЯЮЩИХ МОБОВ
+  id: MobShootingBase
+  abstract: true
+  parent: SimpleHostileMobBase
+  components:
+  - type: Insulated
+  - type: CombatMode
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: XenoCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Hands
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Xenos/burrower.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Dead
+  - type: Stamina
+    critThreshold: 200
+  - type: Bloodstream
+    bloodReagent: Blood
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    angle: 0
+    soundHit:
+     collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      groups:
+        Brute: 6
+  - type: Puller
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: -150
+    currentTemperature: 310.15
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+  - type: NoSlip
+  - type: Perishable #Ummmm the acid kills a lot of the bacteria or something
+    molsPerSecondPerUnitMass: 0.0005
+  - type: FootstepModifier # Corvax-Sounds
+    footstepSoundCollection:
+      collection: FootstepBootsHard
+      params:
+        volume: -5
+  - type: Tool
+    speed: 1.5
+    qualities:
+      - Prying
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  # - type: GhostRole
+    # allowMovement: true
+    # allowSpeech: true
+    # makeSentient: true
+    # name: Солдат синдиката
+    # description: Time to revolution
+    # rules: Вы проникший на станцию НТ солдат синдиката, захватите станцию под свой контроль!
+  # - type: GhostTakeoverAvailable
+
+- type: soundCollection
+  id: FootstepBootsHard
+  files:
+  - /Audio/Effects/Footsteps/suitstep1.ogg
+  - /Audio/Effects/Footsteps/suitstep2.ogg
+
+- type: entity
+  name: солдат синдиката
+  suffix: Пистолет
+  parent: MobShootingBase
+  id: MobSyndicatePistol
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Siberia/Other/Syndicate/pistol.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: Stamina
+    critThreshold: 300
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.75
+    rechargeSound: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletPistol
+    capacity: 1
+    count: 1
+  - type: Gun
+    fireRate: 0.75
+    useKey: false
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 235
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    angle: 0
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    animation: WeaponArcSlash
+    damage:
+      groups:
+        Brute: 15
+
+- type: entity
+  name: солдат синдиката
+  suffix: Автомат
+  parent: MobShootingBase
+  id: MobSyndicateSmg
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Siberia/Other/Syndicate/smg.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      125: Dead
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: Stamina
+    critThreshold: 300
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.5
+    rechargeSound: /Audio/Weapons/Guns/Cock/smg_cock.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletPistol
+    capacity: 10
+    count: 1
+  - type: Gun
+    fireRate: 2
+    useKey: true
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 235
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    angle: 0
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    animation: WeaponArcSlash
+    damage:
+      groups:
+        Brute: 15
+
+- type: entity
+  name: солдат синдиката
+  suffix: Дробовик
+  parent: MobShootingBase
+  id: MobSyndicateShotgun
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Siberia/Other/Syndicate/shotgun.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: Stamina
+    critThreshold: 300
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.75
+    rechargeSound: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
+  - type: BasicEntityAmmoProvider
+    proto: ShellShotgun
+    capacity: 1
+    count: 1
+  - type: Gun
+    fireRate: 0.75
+    useKey: false
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_auto.ogg
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 235
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    angle: 0
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    animation: WeaponArcSlash
+    damage:
+      groups:
+        Brute: 15
+
+- type: entity
+  name: солдат синдиката
+  suffix: Нож
+  parent: MobShootingBase
+  id: MobSyndicateKnife
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Siberia/Other/Syndicate/knife.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      75: Dead
+  - type: HTN
+    rootTask:
+      task: XenoCompound
+  - type: Stamina
+    critThreshold: 300
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 235
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 5
+    baseSprintSpeed : 5
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    angle: 60
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    animation: WeaponArcSlash
+    damage:
+      groups:
+        Brute: 15
+
+- type: entity
+  name: солдат синдиката
+  suffix: Меч
+  parent: MobShootingBase
+  id: MobSyndicateBlade
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Siberia/Other/Syndicate/blade.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      75: Dead
+  - type: HTN
+    rootTask:
+      task: XenoCompound
+  - type: Stamina
+    critThreshold: 300
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 235
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 5
+    baseSprintSpeed : 5
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    angle: 60
+    soundHit:
+        path: /Audio/Weapons/eblade1.ogg
+    animation: WeaponArcSlash
+    damage:
+      groups:
+        Burn: 10
+  - type: PointLight
+    enabled: true
+    radius: 2.5
+    color: red
+    netsync: false
+  - type: Reflect
+    enabled: true
+    reflectProb: .75
+    spread: 75
+
+- type: entity
+  name: спавн синдиБОТ меч
+  id: SpawnMobSyndicateSoldierBlade
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Siberia/Other/Syndicate/blade.rsi
+        state: alive
+  - type: ConditionalSpawner
+    prototypes:
+      - MobSyndicateBlade
+
+- type: entity
+  name: спавн синдиБОТ нож
+  id: SpawnMobSyndicateSoldierKnife
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Siberia/Other/Syndicate/knife.rsi
+        state: alive
+  - type: ConditionalSpawner
+    prototypes:
+      - MobSyndicateKnife
+
+- type: entity
+  name: спавн синдиБОТ пистолет
+  id: SpawnMobSyndicateSoldierPistol
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Siberia/Other/Syndicate/pistol.rsi
+        state: alive
+  - type: ConditionalSpawner
+    prototypes:
+      - MobSyndicatePistol
+
+- type: entity
+  name: спавн синдиБОТ смг
+  id: SpawnMobSyndicateSoldierSmg
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Siberia/Other/Syndicate/smg.rsi
+        state: alive
+  - type: ConditionalSpawner
+    prototypes:
+      - MobSyndicateSmg
+
+- type: entity
+  name: спавн синдиБОТ дробаш
+  id: SpawnMobSyndicateSoldierShotgun
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Siberia/Other/Syndicate/shotgun.rsi
+        state: alive
+  - type: ConditionalSpawner
+    prototypes:
+      - MobSyndicateShotgun
