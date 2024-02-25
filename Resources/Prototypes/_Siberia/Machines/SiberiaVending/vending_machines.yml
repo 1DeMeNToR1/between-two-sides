@@ -14,9 +14,9 @@
   - type: Advertise
     pack: ClothesMateAds
   - type: Speech
-  - type: Tag
-    tags:
-      - DroneUsable
+  # - type: Tag
+    # tags:
+      # - DroneUsable
   - type: Sprite
     sprite: Siberia/Structures/Machines/VendingMachines/clothing.rsi
     layers:
