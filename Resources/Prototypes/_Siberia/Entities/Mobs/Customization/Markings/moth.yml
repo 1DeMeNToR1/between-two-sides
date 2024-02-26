@@ -1,0 +1,32 @@
+# Крылья
+
+- type: marking
+  id: MothWingsGrandpaInsideHearty
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Moth]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/moth_wings.rsi
+    state: hearty
+
+- type: marking
+  id: MothWingsGrandpaInsideEyes
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Moth]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/moth_wings.rsi
+    state: eyes_primary
+  - sprite: Siberia/Mobs/Customization/moth_wings.rsi
+    state: eyes_secondary
+
+- type: marking
+  id: MothWingsGrandpaInsideSpiral
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Moth]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/moth_wings.rsi
+    state: spiral_primary
+  - sprite: Siberia/Mobs/Customization/moth_wings.rsi
+    state: spiral_secondary
