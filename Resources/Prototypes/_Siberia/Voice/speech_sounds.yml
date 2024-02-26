@@ -10,8 +10,8 @@
 - type: speechSounds
   id: Vulpkanin
   saySound:
-    path: /Audio/Siberia/vulpkanin/Voice/Talk/vulp.ogg
+    path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp.ogg
   askSound:
-    path: /Audio/Siberia/vulpkanin/Voice/Talk/vulp_ask.ogg
+    path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp_ask.ogg
   exclaimSound:
-    path: /Audio/Siberia/vulpkanin/Voice/Talk/vulp_exclaim.ogg
+    path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp_exclaim.ogg
