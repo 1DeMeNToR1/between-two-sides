@@ -10,7 +10,7 @@
     state: hearty
 
 - type: marking
-  id: MothWingsGrandpaInsideEyes
+  id: MothWingsEyes
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Moth]
