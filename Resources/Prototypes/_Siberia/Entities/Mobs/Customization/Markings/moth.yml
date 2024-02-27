@@ -21,7 +21,7 @@
     state: eyes_secondary
 
 - type: marking
-  id: MothWingsGrandpaInsideSpiral
+  id: MothWingsSpiral
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Moth]
