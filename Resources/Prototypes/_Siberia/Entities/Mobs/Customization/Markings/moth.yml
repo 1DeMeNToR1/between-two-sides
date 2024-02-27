@@ -1,7 +1,7 @@
 # Крылья
 
 - type: marking
-  id: MothWingsGrandpaInsideHearty
+  id: MothWingsHearty
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Moth]
