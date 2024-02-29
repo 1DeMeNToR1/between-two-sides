@@ -1,0 +1,10 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieBiblio
+  name: плюшевый библиотекарь
+  description: На этикетке написанано "Шарлотта Тебякина"
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/biblio_woman.rsi
+    state: plushie
+
