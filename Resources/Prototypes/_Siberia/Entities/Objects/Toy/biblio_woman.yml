@@ -2,7 +2,7 @@
   parent: BasePlushie
   id: PlushieBiblio
   name: плюшевый библиотекарь
-  description: На этикетке написанано "Шарлотта Тебякина"
+  description: Тихая и скромная игрушка. Идеально подходит для библиотеки.
   components:
   - type: Sprite
     sprite: Siberia/Objects/Toy/biblio_woman.rsi
