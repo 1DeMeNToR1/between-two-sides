@@ -76,7 +76,8 @@ namespace Content.Shared.Roles
             Dictionary<string, TimeSpan> playTimes,
             [NotNullWhen(false)] out FormattedMessage? reason,
             IEntityManager entManager,
-            IPrototypeManager prototypes)
+            IPrototypeManager prototypes,
+            bool isWhitelisted)
         {
             reason = null;
             if (job.Requirements == null)
@@ -84,7 +85,7 @@ namespace Content.Shared.Roles
 
             foreach (var requirement in job.Requirements)
             {
-                if (!TryRequirementMet(requirement, playTimes, out reason, entManager, prototypes))
+                if (!TryRequirementMet(requirement, playTimes, out reason, entManager, prototypes, isWhitelisted))
                     return false;
             }
 
@@ -99,7 +100,8 @@ namespace Content.Shared.Roles
             Dictionary<string, TimeSpan> playTimes,
             [NotNullWhen(false)] out FormattedMessage? reason,
             IEntityManager entManager,
-            IPrototypeManager prototypes)
+            IPrototypeManager prototypes,
+            bool isWhitelisted)
         {
             reason = null;
 
@@ -162,7 +164,7 @@ namespace Content.Shared.Roles
                             return true;
 
                         reason = FormattedMessage.FromMarkup(Loc.GetString(
-                              "role-timer-overall-insufficient", 
+                              "role-timer-overall-insufficient",
                               ("time", Math.Ceiling(overallDiff))));
                         return false;
                     }
@@ -220,6 +222,16 @@ namespace Content.Shared.Roles
                     }
                 default:
                     throw new NotImplementedException();
+                // whitelist
+                case WhitelistRequirement _: // Siberia - Whitelist requirement
+                    if (isWhitelisted == null)
+                        throw new ArgumentNullException(nameof(isWhitelisted), "isWhitelisted cannot be null.");
+
+                    if (isWhitelisted)
+                        return true;
+
+                    reason = FormattedMessage.FromMarkup(Loc.GetString("playtime-deny-reason-not-whitelisted"));
+                    return false;
             }
         }
     }

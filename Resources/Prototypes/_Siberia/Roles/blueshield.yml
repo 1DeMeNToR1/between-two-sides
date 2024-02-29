@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 10800000 # whitelist
+      time: 10000000 # whitelist
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 10800000 # whitelist
