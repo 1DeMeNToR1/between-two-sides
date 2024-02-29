@@ -1,0 +1,9 @@
+- type: entity
+  parent: PosterBase
+  id: PosterLegitXuinya
+  name: "Опасайся неведомой ёбаной хуйни"
+  description: "Плакат, призывающий остерегаться неведомую ёбанную хуйню."
+  components:
+    - type: Sprite
+      sprite: Siberia/Structures/Wallmounts/posters.rsi
+      state: xuinya

@@ -207,3 +207,14 @@
       sprite: Siberia/Clothing/Uniforms/assasin_coats/white_plash.rsi
     - type: Clothing
       sprite: Siberia/Clothing/Uniforms/assasin_coats/white_plash.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGreenCargoShirt
+  name: Зелёная рубашко с карго
+  description: Тонкая зелёная рубашка с штанами карго.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpsuit/greencargoshirt.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Jumpsuit/greencargoshirt.rsi
