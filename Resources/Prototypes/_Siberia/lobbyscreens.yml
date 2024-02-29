@@ -1,67 +1,75 @@
 ﻿- type: lobbyBackground
   id: brothers
   background: /Textures/LobbyScreens/brothers.png
-  
+
 - type: lobbyBackground
   id: usual_sb
   background: /Textures/LobbyScreens/usual_sb.jpg
-  
+
 - type: lobbyBackground
   id: kill_mimes
   background: /Textures/LobbyScreens/kill_mimes.jpg
-  
+
 - type: lobbyBackground
   id: nosegs
   background: /Textures/LobbyScreens/nosegs.png
-  
+
 - type: lobbyBackground
   id: slime
   background: /Textures/LobbyScreens/slime.png
-  
+
 - type: lobbyBackground
   id: captine
   background: /Textures/LobbyScreens/captine.png
-  
+
 - type: lobbyBackground
   id: tehs
   background: /Textures/LobbyScreens/tehs.png
-  
+
 - type: lobbyBackground
   id: gangs2
   background: /Textures/LobbyScreens/gangs2.png
-  
+
 - type: lobbyBackground
   id: gangs
   background: /Textures/LobbyScreens/gangs.png
-  
+
 - type: lobbyBackground
   id: docenot
   background: /Textures/LobbyScreens/docenot.png
-  
+
 - type: lobbyBackground
   id: pepsi
   background: /Textures/LobbyScreens/pepsi.png
-  
+
 - type: lobbyBackground
   id: dec
   background: /Textures/LobbyScreens/dec.png
-  
+
 - type: lobbyBackground
   id: story2
   background: /Textures/LobbyScreens/story2.png
-  
+
 - type: lobbyBackground
   id: medsos
   background: /Textures/LobbyScreens/medsos.png
- 
+
 - type: lobbyBackground
   id: cheremyha
   background: /Textures/LobbyScreens/cheremyha.png
- 
+
 - type: lobbyBackground
   id: pizza-eater
   background: /Textures/LobbyScreens/pizza-eater.png
-  
+
 - type: lobbyBackground
   id: many
   background: /Textures/LobbyScreens/many.png
+
+- type: lobbyBackground
+  id: ntplesen
+  background: /Textures/LobbyScreens/ntplesen.png
+
+- type: lobbyBackground
+  id: siberia
+  background: /Textures/LobbyScreens/siberia.png
