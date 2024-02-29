@@ -106,7 +106,7 @@ namespace Content.Server.Preferences.Managers
             var sponsorPrototypes = _sponsorsManager.TryGetInfo(message.MsgChannel.UserId, out var sponsor)
                 ? sponsor.AllowedMarkings
                 : new string[]{};
-            profile.EnsureValid(sponsorPrototypes);
+            profile.EnsureValid(_cfg, _protos, sponsorPrototypes);
             // Corvax-Sponsors-End
             var profiles = new Dictionary<int, ICharacterProfile>(curPrefs.Characters)
             {
@@ -206,7 +206,7 @@ namespace Content.Server.Preferences.Managers
                         var sponsorPrototypes = _sponsorsManager.TryGetInfo(session.UserId, out var sponsor)
                             ? sponsor.AllowedMarkings
                             : new string[] { };
-                        profile.EnsureValid(sponsorPrototypes);
+                        profile.EnsureValid(_cfg, _protos, sponsorPrototypes);
                     }
                     // Corvax-Sponsors-End
                     prefsData.Prefs = prefs;

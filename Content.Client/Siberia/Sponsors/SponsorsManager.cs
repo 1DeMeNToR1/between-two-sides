@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Siberia.Sponsors;
 using Robust.Shared.Network;
+using Robust.Shared.IoC;
 
 namespace Content.Client.Siberia.Sponsors;
 
