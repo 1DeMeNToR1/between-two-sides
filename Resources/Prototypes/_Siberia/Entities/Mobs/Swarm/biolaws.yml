@@ -1,0 +1,28 @@
+- type: siliconLaw
+  id: BioDefault1
+  order: 1
+  lawString: law-biodefault-1
+
+- type: siliconLaw
+  id: BioDefault2
+  order: 2
+  lawString: law-biodefault-2
+
+- type: siliconLaw
+  id: BioDefault3
+  order: 3
+  lawString: law-biodefault-3
+
+- type: siliconLaw
+  id: BioDefault4
+  order: 4
+  lawString: law-biodefault-4
+
+- type: siliconLawset
+  id: BioSwarm
+  laws:
+  - BioDefault1
+  - BioDefault2
+  - BioDefault3
+  - BioDefault4
+  obeysTo: laws-owner-beings

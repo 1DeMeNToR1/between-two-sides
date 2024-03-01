@@ -1,0 +1,54 @@
+- type: htnCompound
+  id: BioDroneCompound
+  branches:
+  - preconditions:
+      - !type:HasOrdersPrecondition
+        orders: enum.SwarmAdeptOrderType.Stay
+    tasks:
+      - !type:HTNCompoundTask
+        task: IdleCompound
+  - preconditions:
+      - !type:HasOrdersPrecondition
+        orders: enum.SwarmAdeptOrderType.Follow
+    tasks:
+      - !type:HTNCompoundTask
+        task: FollowCompound
+  - preconditions:
+      - !type:HasOrdersPrecondition
+        orders: enum.SwarmAdeptOrderType.Loose
+    tasks:
+      - !type:HTNCompoundTask
+        task: SimpleRangedHostileCompound
+
+- type: dataset
+  id: SwarmAdeptCommandStay
+  values:
+    - "Приказ: Оставаться на позициях!"
+
+- type: dataset
+  id: SwarmAdeptCommandFollow
+  values:
+    - "Приказ: Следовать за Адептом Роя!"
+
+- type: dataset
+  id: SwarmAdeptCommandCheeseEm #Сломана команда, убрал у адепта её
+  values:
+    - "Приказ: Оборонять Адепта Роя!"
+
+- type: dataset
+  id: SwarmAdeptCommandLoose
+  values:
+    - "Приказ: Рассредоточиться!"
+
+- type: htnCompound
+  id: SwarmMedibotCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeCombatCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: InjectNearbyCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
