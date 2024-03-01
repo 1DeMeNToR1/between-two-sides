@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Database;
 using Content.Shared.CCVar;
+using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
 using Robust.Shared.Asynchronous;
 using Robust.Shared.Collections;
@@ -54,7 +55,7 @@ public delegate void CalcPlayTimeTrackersCallback(ICommonSession player, HashSet
 /// Operations like refreshing and sending play time info to clients are deferred until the next frame (note: not tick).
 /// </para>
 /// </remarks>
-public sealed class PlayTimeTrackingManager
+public sealed partial class PlayTimeTrackingManager
 {
     [Dependency] private readonly IServerDbManager _db = default!;
     [Dependency] private readonly IServerNetManager _net = default!;
@@ -85,6 +86,7 @@ public sealed class PlayTimeTrackingManager
         _sawmill = Logger.GetSawmill("play_time");
 
         _net.RegisterNetMessage<MsgPlayTime>();
+        _net.RegisterNetMessage<MsgWhitelist>(); // siberia-change
 
         _cfg.OnValueChanged(CCVars.PlayTimeSaveInterval, f => _saveInterval = TimeSpan.FromSeconds(f), true);
     }
@@ -132,7 +134,13 @@ public sealed class PlayTimeTrackingManager
                 SendPlayTimes(player);
                 data.NeedSendTimers = false;
             }
-
+            // siberia-changes start
+            if (data.NeedRefreshWhitelist)
+            {
+                SendWhitelistCached(player);
+                data.NeedRefreshWhitelist = false;
+            }
+            // siberia-changes stop
             data.IsDirty = false;
         }
 
@@ -311,11 +319,13 @@ public sealed class PlayTimeTrackingManager
         {
             data.TrackerTimes.Add(timer.Tracker, timer.TimeSpent);
         }
+        session.ContentData()!.Whitelisted = await _db.GetWhitelistStatusAsync(session.UserId); // siberia-changes
 
         data.Initialized = true;
 
         QueueRefreshTrackers(session);
         QueueSendTimers(session);
+        QueueSendWhitelist(session);
     }
 
     public void ClientDisconnected(ICommonSession session)
@@ -421,6 +431,7 @@ public sealed class PlayTimeTrackingManager
         public bool IsDirty;
         public bool NeedRefreshTackers;
         public bool NeedSendTimers;
+        public bool NeedRefreshWhitelist; // siberia-changes
 
         // Active tracking info
         public readonly HashSet<string> ActiveTrackers = new();

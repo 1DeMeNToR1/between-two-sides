@@ -4,20 +4,7 @@
   description: Вы нянька Nanotrasen. Охраняйте глав от антагонистов. Не занимайтесь охотой на антагонистов, это не ваша работа.
   playTimeTracker: JobBlueshield
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 10800000 # whitelist
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 10800000 # whitelist
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 14400000 # whitelist
-    - !type:DepartmentTimeRequirement
-      department: Command
-      time: 10800000 # whitelist
-    - !type:OverallPlaytimeRequirement
-      time: 25200000 # whitelist
+    - !type:WhitelistRequirement
   weight: 20
   startingGear: BlueShieldGear
   icon: "JobIconBlueShield"
