@@ -1,0 +1,479 @@
+#################### ИНСТРУМЕНТЫ РОЯ ##########################
+- type: entity
+  name: Устройство строительства
+  parent: BaseItem
+  id: RCDSwarm
+  description: Древнее устройство, имеющее схожее устройство работы с РСУ.
+  components:
+  - type: SwarmRCD
+    delay: 10
+    floor: FloorBasalt
+    successSound: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg
+  - type: LimitedCharges
+    maxCharges: 20
+    charges: 20
+  - type: UseDelay
+  - type: Sprite
+    sprite: Siberia/Mobs/Silicon/BioSwarm/rcd.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 12
+
+- type: entity
+  name: спрей дрона роя
+  parent: BaseItem
+  description: Инжектор наномашин, который использует дрон-лекарь роя.
+  id: SwarmHealerHypospray
+  components:
+  - type: Sprite
+    sprite: Siberia/Mobs/Silicon/BioSwarm/hypospray.rsi
+    state: hypo
+  - type: Item
+    sprite: Siberia/Mobs/Silicon/BioSwarm/hypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 20
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyMobs: false
+  - type: UseDelay
+    delay: 0.5
+  - type: SolutionRegeneration
+    solution: hypospray
+    generated:
+      reagents:
+      - ReagentId: SwarmNanomachines
+        Quantity: 2
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 4
+
+- type: entity
+  name: сварочный аппарат роя
+  parent: WelderIndustrial
+  id: WelderSwarm
+  description: "Странное устройство роя. Кажется им можно забивать фелинидов"
+  components:
+  - type: Sprite
+    sprite: Siberia/Mobs/Silicon/BioSwarm/welder_industrialadv.rsi
+  - type: Item
+    sprite: Siberia/Mobs/Silicon/BioSwarm/welder_industrialadv.rsi
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 250
+        maxVol: 250
+  - type: Tool
+    speed: 1.3
+
+#################### СТРУКТУРЫ РОЯ ##########################
+
+- type: entity
+  id: SwarmWeb
+  name: покрытие роя
+  description: Странная механическая поверхность. При ходьбе по ней втыкает шипы.
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: MeleeSound
+      soundGroups:
+        Brute:
+          path:
+            "/Audio/Weapons/smash.ogg"
+    - type: Sprite
+      sprite: Siberia/Mobs/Silicon/BioSwarm/gear.rsi
+      layers:
+        - state: floor
+      drawdepth: WallMountedItems
+    - type: GenericVisualizer
+      visuals:
+        enum.SpiderWebVisuals.Variant:
+          spiderWebLayer:
+            1:  {state: floor}
+            2:  {state: floor1}
+    - type: Appearance
+    - type: Clickable
+    - type: Transform
+      anchored: true
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          hard: false
+          density: 7
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          layer:
+          - MidImpassable
+    - type: Damageable
+      damageModifierSet: Wood
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            SheetPlasteel:
+              min: 2
+              max: 5
+    - type: Temperature
+      heatDamage:
+        types:
+          Heat: 5
+      coldDamage: {}
+      ColdDamageThreshold: 0
+    - type: Flammable
+      fireSpread: true
+      cold:
+        types: {}
+      damage:
+        types:
+          Heat: 5
+    - type: Reactive
+      groups:
+        Flammable: [Touch]
+        Extinguish: [Touch]
+    - type: SpiderWebObject
+    - type: SlowContacts
+      walkSpeedModifier: 0.5
+      sprintSpeedModifier: 0.5
+      ignoreWhitelist:
+        components:
+            - IgnoreSpiderWeb
+    - type: DamageContacts
+      damage:
+        types:
+          Piercing: 1.5
+      ignoreWhitelist:
+        tags:
+        - Flesh
+
+- type: entity
+  parent: BaseWall
+  id: WallSwarmbot
+  name: стена роя
+  components:
+  - type: Tag
+    tags:
+      - Wall
+      - RCDDeconstructWhitelist
+  - type: Sprite
+    sprite: Siberia/Mobs/Silicon/BioSwarm/bibotwall.rsi
+  - type: Icon
+    sprite: Siberia/Mobs/Silicon/BioSwarm/bibotwall.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: IconSmooth
+    key: walls
+    base: bibotwall
+
+- type: entity
+  id: SwarmbotFactory
+  name: завод дронов роя
+  description: Странное устройство, поглощающее энергию и создающее дронов роя.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: DragonRift
+    spawn: MobSwarmbotBuilder
+    spawnCooldown: 120
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    layers:
+    - sprite: Siberia/Mobs/Silicon/BioSwarm/factory.rsi
+      state: factory
+  - type: InteractionOutline
+  - type: Clickable
+  - type: PointLight
+    enabled: true
+    color: "#d06116"
+    radius: 10.0
+    energy: 5.0
+    netsync: false
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 550
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+  - type: Timer
+  - type: TimedSpawner
+    prototypes:
+      - MobSwarmbotGuard
+      - MobSwarmbotHealer
+      # round ~90m
+      # one spawner should only spawn ~5 mice for sanity reasons
+      # therefore 18m
+      # use 50% chance for randomness and balance with halved interval
+    chance: 0.5
+    intervalSeconds: 180
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 1
+  - type: NodeContainer
+    examinable: true
+    nodes:
+      input:
+        !type:CableDeviceNode
+        nodeGroupID: HVPower
+  - type: PowerSink
+  - type: Battery
+    maxCharge: 750000000
+    pricePerJoule: 0.0003
+  - type: ExaminableBattery
+  - type: PowerConsumer
+    voltage: High
+    drawRate: 10000
+  - type: WarpPoint
+    location: swarmfactory
+
+#################### РАЗНОЕ РОЯ ##########################
+
+- type: statusIcon
+  id: SwarmFaction
+  priority: 0
+  locationPreference: Left
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Geneticist
+
+- type: speechSounds
+  id: Swarm
+  saySound:
+    path: /Audio/Siberia/Mobs/Swarm/Borg.ogg
+  askSound:
+    path: /Audio/Siberia/Mobs/Swarm/Borg.ogg
+  exclaimSound:
+    path: /Audio/Siberia/Mobs/Swarm/Borg.ogg
+
+- type: entity
+  abstract: true
+  parent: BaseObjective
+  id: BaseSwarmAdeptObjective
+  components:
+  - type: Objective
+    difficulty: 1.5
+    issuer: swarm
+  - type: RoleRequirement
+    roles:
+      components:
+      - DragonRole
+
+- type: entity
+  noSpawn: true
+  parent: BaseSwarmAdeptObjective
+  id: SwarmFactoryObjective
+  components:
+  - type: Objective
+    icon:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/factory.rsi
+      state: factory
+  - type: NumberObjective
+    min: 3
+    max: 3
+    title: objective-swarm-factory-title
+    description: objective-swarm-factory-description
+  - type: CarpRiftsCondition
+
+- type: entity
+  noSpawn: true
+  parent: [BaseSwarmAdeptObjective, BaseSurviveObjective]
+  id: SwarmAdeptSurviveObjective
+  name: Выжить
+  description: Вы должны оставаться в живых, чтобы сохранять контроль.
+  components:
+  - type: Objective
+    icon:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
+      state: alive
+
+- type: entity
+  noSpawn: true
+  parent: BaseGameRule
+  id: Swarm
+  components:
+  - type: GenericAntagRule
+    agentName: swarm-round-end-agent-name
+    objectives:
+    - SwarmFactoryObjective
+    - SwarmAdeptSurviveObjective
+
+- type: hitscan
+  id: SwarmLaser
+  damage:
+    types:
+      Heat: 10
+      Radiation: 5
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_xray
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: xray
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_xray
+
+- type: hitscan
+  id: RedHeavySwarmLaser
+  damage:
+    types:
+      Heat: 20
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_beam_heavy
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: beam_heavy
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_beam_heavy
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: SwarmEmpImplant
+  name: EMP implant
+  description: This implant creates an electromagnetic pulse when activated.
+  noSpawn: true
+  components:
+    - type: SubdermalImplant
+      implantAction: ActionActivateEmpSwarm
+    - type: TriggerImplantAction
+    - type: EmpOnTrigger
+      range: 10
+      energyConsumption: 500000
+      disableDuration: 20
+
+- type: statusIcon
+  id: SwarmIcon
+  priority: 2
+  locationPreference: Left
+  layer: Mod
+  icon:
+    sprite: Siberia/Mobs/Silicon/BioSwarm/swarmjob.rsi
+    state: icon-swarm-job
+
+- type: advertisementsPack
+  id: SwarmAds
+  advertisements:
+  - advertisement-swarm-1
+  - advertisement-swarm-2
+  - advertisement-swarm-3
+  - advertisement-swarm-4
+  - advertisement-swarm-5
+  - advertisement-swarm-6
+  - advertisement-swarm-7
+
+#################### МОДУЛИ РОЯ ##########################
+
+- type: entity
+  id: SwarmBotBuilder
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: модуль строителя-дрона роя
+  components:
+  - type: Sprite
+    sprite: Siberia/Mobs/Silicon/BioSwarm/swarmmodule.rsi
+    layers:
+    - state: swarm
+    - state: icon-swarm
+  - type: ItemBorgModule
+    items:
+    - RCDSwarm
+
+- type: entity
+  id: SwarmBotHealer
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: модуль лекаря-дрона роя
+  components:
+  - type: Sprite
+    sprite: Siberia/Mobs/Silicon/BioSwarm/swarmmodule.rsi
+    layers:
+    - state: swarm
+    - state: icon-swarm
+  - type: ItemBorgModule
+    items:
+    - SwarmHealerHypospray
+    - WelderSwarm
+
+#################### ХИМИКАТ РОЯ ##########################
+
+- type: reagent
+  id: SwarmNanomachines
+  name: reagent-name-swarmnanomachines
+  group: Toxins
+  desc: reagent-desc-swarmnanomachines
+  flavor: metallic
+  color: "#6e6e6e"
+  physicalDesc: reagent-physical-desc-vibrant
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: 2
+      - !type:PopupMessage
+        type: Local
+        visualType: MediumCaution
+        messages: [ "generic-reagent-effect-swarmmachines" ]
+        probability: 0.33

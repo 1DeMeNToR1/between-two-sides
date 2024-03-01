@@ -1,0 +1,10 @@
+ghost-role-information-swarmbulder-name = Дрон-строитель роя
+ghost-role-information-swarmbulder-description = Разбирайте станцию, распространяйте структуру роя, умирайте от лома.
+ghost-role-information-swarmguard-name = Дрон-страж роя
+ghost-role-information-swarmguard-description = Охраняйте строителей роя, жарьте кошкодевочек на стейк, умирайте от клоуна.
+ghost-role-information-swarmhealer-name = Дрон-лекарь роя
+ghost-role-information-swarmhealer-description = Помогайте раненным дронам роя, колите наномашины вобще всем вокруг, умрите от ГВ.
+ghost-role-information-swarmadept-name = АДЕПТ РОЯ
+ghost-role-information-swarmadept-description = Создавайте заводы, командуйте дронами, умрите от блюспейс артиллерии.
+ghost-role-information-adeptguard-name = Дрон-страж адепта
+ghost-role-information-adeptguard-description = Охраняйте адепта роя, случайно взрывайте канистры, умирайте от звука ahelp.

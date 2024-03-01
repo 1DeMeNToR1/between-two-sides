@@ -1,0 +1,133 @@
+- type: entity
+  id: ActionSwarmAdeptRaiseArmy
+  name: Создать дрона-стража адепта
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 30
+    icon:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
+      state: alive
+    event: !type:SwarmAdeptRaiseArmyActionEvent
+
+- type: entity
+  id: ActionSwarmAdeptDomain
+  name: Выбросить углекислый газ
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 6
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_smoke
+    event: !type:SwarmAdeptDomainActionEvent
+
+- type: entity
+  id: ActionSwarmAdeptOrderStay
+  name: Приказ стражам адепта Занять позиции
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 1
+    icon:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      state: stayOff
+    iconOn:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      state: stay
+    event:
+      !type:SwarmAdeptOrderActionEvent
+        type: Stay
+    priority: 5
+
+- type: entity
+  id: ActionSwarmAdeptOrderFollow
+  name: Приказ стражам адепта Следовать
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 1
+    icon:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      state: followOff
+    iconOn:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      state: follow
+    event:
+      !type:SwarmAdeptOrderActionEvent
+      type: Follow
+    priority: 6
+
+- type: entity
+  id: ActionSwarmAdeptOrderCheeseEm #Отключён
+  name: Оборонять Адепта Роя!
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 1
+    icon:
+      sprite: Interface/Actions/actions_rat_king.rsi
+      state: attackOff
+    iconOn:
+      sprite: Interface/Actions/actions_rat_king.rsi
+      state: attack
+    event:
+      !type:SwarmAdeptOrderActionEvent
+      type: CheeseEm
+    priority: 7
+
+- type: entity
+  id: ActionSwarmAdeptOrderLoose
+  name: Приказ стражам адепта Атаковать ближайшую органику
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 1
+    icon:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      state: looseOff
+    iconOn:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      state: loose
+    event:
+      !type:SwarmAdeptOrderActionEvent
+      type: Loose
+    priority: 8
+    
+- type: entity
+  id: ActionSpawnFactory
+  name: Создать завод роя
+  description: Создает завод роя, который переодически создает дронов роя. Созданные на заводе дроны не подчиняются адепту роя.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/factory.rsi
+      state: factory
+    event: !type:DragonSpawnRiftActionEvent
+    useDelay: 1
+    
+- type: entity
+  id: ActionSwarmFloor
+  name: Покрытие роя
+  description: Создаёт под дроном покрытие роя, которое замедляет и наносит урон всем, кроме дронов роя.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: Interface/Actions/defile.png
+    event: !type:SpiderWebActionEvent
+    useDelay: 25
+    
+- type: entity
+  id: ActionActivateEmpSwarm
+  name: ЭМИ взрыв роя
+  noSpawn: true
+  components:
+  - type: InstantAction
+    useDelay: 600
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: Objects/Weapons/Grenades/empgrenade.rsi
+      state: icon
+    event: !type:ActivateImplantEvent
