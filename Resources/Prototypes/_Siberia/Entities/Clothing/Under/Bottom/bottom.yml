@@ -45,9 +45,9 @@
   name: тёмные трусики
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/tacticbottom.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/tacticbottom.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/tacticbottom.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/tacticbottom.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -55,9 +55,9 @@
   name: тактические трусики
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/lacebottom.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/lacebottom.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/lacebottom.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/lacebottom.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -65,9 +65,9 @@
   name: трусы службы безопасности
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/HOS.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/HOS.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/HOS.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/HOS.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -75,9 +75,9 @@
   name: тигриные трусы
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/tiger.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/tiger.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/tiger.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/tiger.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -85,9 +85,9 @@
   name: батины труханы
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/batya.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/batya.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/batya.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/batya.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -95,9 +95,9 @@
   name: зелёные трусы с цветочками
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/flower.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/flower.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/flower.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/flower.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -105,9 +105,9 @@
   name: розовые мужские трусы
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/pink.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/pink.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/pink.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/pink.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -115,9 +115,9 @@
   name: панталоны
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/pantaloons.rsi
+    sprite: Siberia/Clothing/Under/Bottom/pantaloons.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/pantaloons.rsi
+    sprite: Siberia/Clothing/Under/Bottom/pantaloons.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -125,9 +125,9 @@
   name: розовые трусики
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/pinkD.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/pinkD.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/pinkD.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/pinkD.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -135,9 +135,9 @@
   name: диско трусики
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/discobottom.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/discobottom.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/discobottom.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/discobottom.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -145,9 +145,9 @@
   name: тигриные трусики
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/tigerbottom.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/tigerbottom.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/tigerbottom.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/tigerbottom.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -155,9 +155,9 @@
   name: новогодние трусики
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/santabottom.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/santabottom.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/santabottom.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Female/santabottom.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -165,9 +165,9 @@
   name: чёрные унисекс-трусы
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/blackpanties.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/blackpanties.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/blackpanties.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/blackpanties.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -175,9 +175,9 @@
   name: белые унисекс-трусы
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/whitepanties.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/whitepanties.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/whitepanties.rsi
+    sprite: Siberia/Clothing/Under/Bottom/Male/whitepanties.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -186,9 +186,9 @@
   description: Стандартные трусы для Объединенной федерации мимов
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/778b/zebra.rsi
+    sprite: Siberia/Clothing/Under/Bottom/zebra.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/778b/zebra.rsi
+    sprite: Siberia/Clothing/Under/Bottom/zebra.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -197,9 +197,9 @@
   description: Эластичные трусы со странным карманном
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/778b/elephant.rsi
+    sprite: Siberia/Clothing/Under/Bottom/elephant.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/778b/elephant.rsi
+    sprite: Siberia/Clothing/Under/Bottom/elephant.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -208,9 +208,9 @@
   description: Эти трусы сделаны из прочной синтетической кожи
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/778b/lether.rsi
+    sprite: Siberia/Clothing/Under/Bottom/lether.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/778b/lether.rsi
+    sprite: Siberia/Clothing/Under/Bottom/lether.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -219,9 +219,9 @@
   description: На трусах красуется прекрасная мышка
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/778b/mice.rsi
+    sprite: Siberia/Clothing/Under/Bottom/mice.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/778b/mice.rsi
+    sprite: Siberia/Clothing/Under/Bottom/mice.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -230,9 +230,9 @@
   description: Эластичные трусы со странным карманном
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/778b/elephant.rsi
+    sprite: Siberia/Clothing/Under/Bottom/elephant.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/778b/elephant.rsi
+    sprite: Siberia/Clothing/Under/Bottom/elephant.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -241,9 +241,9 @@
   description: Стандартные трусы с красивым принтом
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/778b/sailor.rsi
+    sprite: Siberia/Clothing/Under/Bottom/sailor.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/778b/sailor.rsi
+    sprite: Siberia/Clothing/Under/Bottom/sailor.rsi
 
 - type: entity
   parent: ClothingBottomBaseButcherable
@@ -252,8 +252,8 @@
   description: Улучшенные стандартные трусы с красивым принтом
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/778b/sailor-special.rsi
+    sprite: Siberia/Clothing/Under/Bottom/sailor-special.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/778b/sailor-special.rsi    
+    sprite: Siberia/Clothing/Under/Bottom/sailor-special.rsi    
 
     
