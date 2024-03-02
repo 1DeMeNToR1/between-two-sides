@@ -24,11 +24,12 @@ namespace Content.Shared.Roles
 
         [DataField]
         public List<EntProtoId> Inhand = new(0);
+
         [DataField("top")]
-        private string _top = string.Empty;
+        private string _top = "ClothingUnderTopWhiteM";  // string.Empty;
 
         [DataField("bottom")]
-        private string _bottom = string.Empty;
+        private string _bottom = "ClothingUnderBottomWhiteU"; // string.Empty;
 
         [ViewVariables]
         [IdDataField]
