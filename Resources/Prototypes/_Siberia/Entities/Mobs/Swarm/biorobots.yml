@@ -17,9 +17,9 @@
           radius: 0.35
         density: 50
         mask:
-        - MobMask
+        - FlyingMobMask
         layer:
-        - MobLayer
+        - FlyingMobLayer
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 4
@@ -209,7 +209,6 @@
     bloodlossHealDamage:
       types:
         Bloodloss: -1
-    icon: "SwarmIcon"
   # - type: Metabolizer
     # solutionOnBody: false
     # updateFrequency: 0.8
@@ -258,7 +257,9 @@
           radius: 0.35
         density: 20
         mask:
-        - MobMask
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
   - type: GhostRole
     makeSentient: true
     name: ghost-role-information-swarmbulder-name
@@ -351,6 +352,8 @@
         density: 20
         mask:
         - FlyingMobMask
+        layer:
+        - FlyingMobLayer
   - type: GhostRole
     makeSentient: true
     name: ghost-role-information-swarmguard-name
@@ -401,7 +404,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      240: Dead
+      200: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -410,12 +413,12 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 260
+        damage: 240
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 260
+        damage: 240
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -457,6 +460,8 @@
         density: 20
         mask:
         - FlyingMobMask
+        layer:
+        - FlyingMobLayer
   - type: GhostRole
     makeSentient: true
     name: ghost-role-information-swarmhealer-name
@@ -563,6 +568,8 @@
         density: 15500
         mask:
         - FlyingMobMask
+        layer:
+        - FlyingMobLayer
   - type: GhostRole
     makeSentient: true
     name: ghost-role-information-swarmadept-name
@@ -595,7 +602,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      800: Dead
+      700: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -604,12 +611,12 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 800
+        damage: 700
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 800
+        damage: 700
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -663,7 +670,7 @@
     hidden: true
     damage:
       groups:
-        Brute: 20
+        Brute: 15
       types:
         Shock: 10
         Structural: 20
@@ -685,9 +692,6 @@
   - type: Spider
     webPrototype: SwarmWeb
     webAction: ActionSwarmFloor
-  - type: MovementSpeedModifier
-    baseWalkSpeed : 3
-    baseSprintSpeed : 5
 
 ######################### СТРАЖ АДЕПТА РОЯ #############################
 
@@ -738,6 +742,8 @@
         density: 20
         mask:
         - FlyingMobMask
+        layer:
+        - FlyingMobLayer
   - type: GhostRole
     makeSentient: true
     name: ghost-role-information-adeptguard-name
@@ -784,7 +790,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      180: Dead
+      140: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -793,12 +799,12 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 220
+        damage: 140
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 220
+        damage: 140
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -818,18 +824,18 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
+      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
+      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
     - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
       state: unshade
       shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
+      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
   - type: MobThresholds
     thresholds:
       0: Alive
-      120: Dead
+      100: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -861,18 +867,18 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
+      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
+      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
     - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
       state: unshade
       shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
+      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 15
+        Heat: 10
         Structural: 10
     animation: WeaponArcKick
     range: 1.7
@@ -900,7 +906,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      180: Dead
+      150: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -909,12 +915,12 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 210
+        damage: 180
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 210
+        damage: 180
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -932,14 +938,14 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
+      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
+      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
     - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
       state: unshade
       shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
+      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -952,12 +958,12 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 110
+        damage: 80
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 110
+        damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
