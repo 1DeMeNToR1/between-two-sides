@@ -59,9 +59,9 @@
   name: белая майка
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/whitetshirt.rsi
+    sprite: Siberia/Clothing/Under/Top/whitetshirt.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/whitetshirt.rsi
+    sprite: Siberia/Clothing/Under/Top/whitetshirt.rsi
 
 - type: entity
   parent: ClothingTopBaseButcherable
@@ -69,9 +69,9 @@
   name: новогодний лифчик
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/santatop.rsi
+    sprite: Siberia/Clothing/Under/Top/santatop.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/santatop.rsi
+    sprite: Siberia/Clothing/Under/Top/santatop.rsi
 
 - type: entity
   parent: ClothingTopBaseButcherable
@@ -79,9 +79,9 @@
   name: тигриный лифчик
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/tigertop.rsi
+    sprite: Siberia/Clothing/Under/Top/tigertop.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/tigertop.rsi
+    sprite: Siberia/Clothing/Under/Top/tigertop.rsi
 
 - type: entity
   parent: ClothingTopBaseButcherable
@@ -89,9 +89,9 @@
   name: диско лифчик
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/discotop.rsi
+    sprite: Siberia/Clothing/Under/Top/discotop.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/discotop.rsi
+    sprite: Siberia/Clothing/Under/Top/discotop.rsi
 
 - type: entity
   parent: ClothingTopBaseButcherable
@@ -99,9 +99,9 @@
   name: розовый лифчик
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/pinkTOP.rsi
+    sprite: Siberia/Clothing/Under/Top/pinkTOP.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/pinkTOP.rsi
+    sprite: Siberia/Clothing/Under/Top/pinkTOP.rsi
 
 - type: entity
   parent: ClothingTopBaseButcherable
@@ -109,9 +109,9 @@
   name: тактический лифчик
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/lacetop.rsi
+    sprite: Siberia/Clothing/Under/Top/lacetop.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/lacetop.rsi
+    sprite: Siberia/Clothing/Under/Top/lacetop.rsi
 
 - type: entity
   parent: ClothingTopBaseButcherable
@@ -119,9 +119,9 @@
   name: тёмный лифчик
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Jaraten/tactictop.rsi
+    sprite: Siberia/Clothing/Under/Top/tactictop.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Jaraten/tactictop.rsi
+    sprite: Siberia/Clothing/Under/Top/tactictop.rsi
 
 - type: entity
   parent: ClothingTopBaseButcherable
