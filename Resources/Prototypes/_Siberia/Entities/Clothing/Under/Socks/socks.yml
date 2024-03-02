@@ -1,0 +1,275 @@
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksBlack
+  name: Черные носки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/black.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/black.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksBlue
+  name: Синие носки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/blue.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/blue.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksBrown
+  name: Коричневые носки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/brown.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/brown.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksGreen
+  name: Зеленые носки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/green.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/green.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksMime
+  name: Носки мима
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/mime.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/mime.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksPink
+  name: Розовые носки
+  description: маленькое, розовое зло
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/pink.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/pink.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksPurple
+  name: Фиолетовые носки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/purple.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/purple.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksRed
+  name: Красные носки
+  description: 
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/red.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/red.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksWhite
+  name: Белые носки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/white.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/white.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderStockingsBlue
+  name: Синие чулки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Stockings/blue.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Stockings/blue.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderStockingsBrown
+  name: Коричневые чулки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Stockings/brown.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Stockings/brown.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderStockingsFlesh
+  name: Телесные чулки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Stockings/flesh.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Stockings/flesh.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderStockingsGreen
+  name: Зеленые чулки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Stockings/green.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Stockings/green.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderStockingsMesh
+  name: Сечатые чулки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Stockings/mesh.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Stockings/mesh.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderStockingsRed
+  name: Красные чулки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Stockings/red.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Stockings/red.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderStockingsWhite
+  name: Белые чулки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Stockings/white.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Stockings/white.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderStockingsWhiteBlack
+  name: Чулки белые с черной полосой
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Stockings/white-black.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Stockings/white-black.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderTightsBlack
+  name: Черные колготки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Tights/black.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Tights/black.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderTightsBlue
+  name: Синие колготки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Tights/blue.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Tights/blue.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderTightsBrown
+  name: Коричневые колготки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Tights/brown.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Tights/brown.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderTightsFlesh
+  name: Телесные колготки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Tights/flesh.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Tights/flesh.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderTightsGreen
+  name: Зеленые колготки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Tights/green.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Tights/green.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderTightsRed
+  name: Красные колготки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Tights/red.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Tights/red.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderTightsWhite
+  name: Белые колготки
+  description:
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Tights/white.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Tights/white.rsi
+
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksNeko
+  name: neko socks
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/neko.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/neko.rsi
+
+    
