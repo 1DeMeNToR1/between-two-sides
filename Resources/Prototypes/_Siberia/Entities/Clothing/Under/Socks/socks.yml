@@ -104,9 +104,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Stockings/blue.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/blue.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Stockings/blue.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/blue.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -115,9 +115,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Stockings/brown.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/brown.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Stockings/brown.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/brown.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -126,9 +126,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Stockings/flesh.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/flesh.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Stockings/flesh.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/flesh.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -137,9 +137,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Stockings/green.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/green.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Stockings/green.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/green.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -148,9 +148,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Stockings/mesh.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/mesh.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Stockings/mesh.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/mesh.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -159,9 +159,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Stockings/red.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/red.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Stockings/red.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/red.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -170,9 +170,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Stockings/white.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/white.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Stockings/white.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/white.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -181,9 +181,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Stockings/white-black.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/white-black.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Stockings/white-black.rsi
+    sprite: Siberia/Clothing/Under/Socks/Stockings/white-black.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -192,9 +192,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Tights/black.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/black.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Tights/black.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/black.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -203,9 +203,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Tights/blue.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/blue.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Tights/blue.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/blue.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -214,9 +214,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Tights/brown.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/brown.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Tights/brown.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/brown.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -225,9 +225,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Tights/flesh.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/flesh.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Tights/flesh.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/flesh.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -236,9 +236,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Tights/green.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/green.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Tights/green.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/green.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -247,9 +247,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Tights/red.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/red.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Tights/red.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/red.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
@@ -258,9 +258,9 @@
   description:
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Under/Tights/white.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/white.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Under/Tights/white.rsi
+    sprite: Siberia/Clothing/Under/Socks/Tights/white.rsi
 
 - type: entity
   parent: ClothingSocksBaseButcherable
