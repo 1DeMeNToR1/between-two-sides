@@ -21,35 +21,35 @@
     - id: MobSwarmbotHealerWeak
       prob: 0.02
       
-- type: entity
-  parent: BaseGameRule
-  id: SwarmAdeptSpawn
-  noSpawn: true
-  components:
-  - type: StationEvent
-    weight: 5
-    duration: 1
-    earliestStart: 45
-    reoccurrenceDelay: 60
-    minimumPlayers: 20
-  - type: RandomSpawnRule
-    prototype: SpawnPointGhostSwarmAdept
+# - type: entity ######################## Выключил по причине: Слишком сильный
+  # parent: BaseGameRule
+  # id: SwarmAdeptSpawn
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # weight: 5
+    # duration: 1
+    # earliestStart: 45
+    # reoccurrenceDelay: 60
+    # minimumPlayers: 20
+  # - type: RandomSpawnRule
+    # prototype: SpawnPointGhostSwarmAdept
     
-- type: entity
-  parent: MarkerBase
-  id: SpawnPointGhostSwarmAdept
-  noSpawn: true
-  name: спавн роли призрака
-  suffix: Адепт Роя
-  components:
-  - type: GhostRole
-    name: ghost-role-information-swarmadept-name
-    description: ghost-role-information-swarmadept-description
-    rules: ghost-role-component-default-rules
-  - type: GhostRoleMobSpawner
-    prototype: MobSwarmbotAdeptus
-  - type: Sprite
-    layers:
-    - state: green
-    - sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
-      state: alive
+# - type: entity
+  # parent: MarkerBase
+  # id: SpawnPointGhostSwarmAdept
+  # noSpawn: true
+  # name: спавн роли призрака
+  # suffix: Адепт Роя
+  # components:
+  # - type: GhostRole
+    # name: ghost-role-information-swarmadept-name
+    # description: ghost-role-information-swarmadept-description
+    # rules: ghost-role-component-default-rules
+  # - type: GhostRoleMobSpawner
+    # prototype: MobSwarmbotAdeptus
+  # - type: Sprite
+    # layers:
+    # - state: green
+    # - sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
+      # state: alive
