@@ -77,3 +77,14 @@
   - type: Tag
     tags:
         - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatRedRibbon
+  name: Красный Бант
+  description: До глупости большой бант
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/redribbon.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/redribbon.rsi

@@ -73,3 +73,14 @@
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/red_new.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/red_new.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtSuika
+  name: Рваная рубашка с фиолетовой юбкой
+  description: Пахнущая саке рубашка без руковов с безвкусной юбкой
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpsuit/suikasuit.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Jumpsuit/suikasuit.rsi
