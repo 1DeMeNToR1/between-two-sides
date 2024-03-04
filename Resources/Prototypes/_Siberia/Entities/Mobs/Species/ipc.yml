@@ -111,6 +111,12 @@
     - type: ActiveRadio
       channels:
       - Binary
+    - type: Accentless
+      removes:
+        - type: DiseaseCarrier
+        - type: RadiationReceiver
+        - type: Perishable
+    - type: Uncloneable
 
 - type: siliconLaw
   id: Ipc1
