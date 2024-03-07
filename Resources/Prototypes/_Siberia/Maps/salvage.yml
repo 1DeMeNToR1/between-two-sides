@@ -3,3 +3,7 @@
 - type: salvageMap
   id: SpaceWareHouse
   mapPath: /Maps/Siberia/Salvage/space-ware-house.yml
+  
+- type: salvageMap
+  id: Honkoball
+  mapPath: /Maps/Siberia/Salvage/honkobll.yml
