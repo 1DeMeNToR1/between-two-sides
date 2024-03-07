@@ -45,9 +45,9 @@ namespace Content.Shared.Roles
                     return Satchel;
                 if (slot == "back" && profile.Backpack == BackpackPreference.Duffelbag && !string.IsNullOrEmpty(Duffelbag))
                     return Duffelbag;
-                if (slot == "top" && profile.Sex == Sex.Female && !string.IsNullOrEmpty(_top))
+                if (slot == "top" &&  !string.IsNullOrEmpty(_top))
                     return _top;
-                if (slot == "bottom" && profile.Sex == Sex.Female && !string.IsNullOrEmpty(_bottom))
+                if (slot == "bottom" &&  !string.IsNullOrEmpty(_bottom))
                     return _bottom;
 
             }
