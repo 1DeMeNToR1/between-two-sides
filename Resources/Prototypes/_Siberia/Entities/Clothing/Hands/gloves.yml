@@ -1,0 +1,39 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesHorny
+  name: Розовые перчатки в полоску
+  description: Стойте, не надо на меня это одевать!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Hands/Gloves/fingerhorny.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Hands/Gloves/fingerhorny.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-red
+    
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesHornyTwo
+  name: Фиолетовые перчатки в полоску
+  description: Стойте, не надо на меня это одевать!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Hands/Gloves/fingerhornytwo.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Hands/Gloves/fingerhornytwo.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-purple
+    
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGoldenRing
+  name: золотое обручальное кольцо
+  description: одно кольцо, чтобы править всеми
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Hands/Gloves/ring.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Hands/Gloves/ring.rsi    
