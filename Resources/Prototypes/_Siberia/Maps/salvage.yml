@@ -7,3 +7,7 @@
 - type: salvageMap
   id: Honkoball
   mapPath: /Maps/Siberia/Salvage/honkobll.yml
+  
+- type: salvageMap
+  id: Tehi
+  mapPath: /Maps/Siberia/Salvage/tehi.yml  
