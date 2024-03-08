@@ -1,0 +1,29 @@
+#Entities/Clothing/Hands/gloves.yml
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesHorny
+  name: Розовые перчатки в полоску
+  description: Стойте, не надо на меня это одевать!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Hands/fingerhorny.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Hands/fingerhorny.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-red
+    
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesHornyTwo
+  name: Фиолетовые перчатки в полоску
+  description: Стойте, не надо на меня это одевать!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Hands/fingerhornytwo.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Hands/fingerhornytwo.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-purple
