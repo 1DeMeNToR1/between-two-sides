@@ -26,7 +26,7 @@
 - type: entity
   parent: FoodTinBase
   id: FoodTinOlivki
-  name: Оливки
+  name: Консервированные оливки
   description: Маслины.
   components:
   - type: Sprite
@@ -42,7 +42,7 @@
 - type: entity
   parent: FoodTinBaseTrash
   id: FoodTinOlivkiTrash
-  name: Оливки
+  name: Консервированные оливки
   components:
   - type: Sprite
     sprite: Siberia/Objects/Consumable/Food/Tins/olivki.rsi
