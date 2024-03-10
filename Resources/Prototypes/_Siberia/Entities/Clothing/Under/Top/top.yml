@@ -52,4 +52,85 @@
     sprite: Siberia/Clothing/Under/Top/nekoblack.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Under/Top/nekoblack.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopWhiteTShirt
+  name: белая майка
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/whitetshirt.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/whitetshirt.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopSanta
+  name: новогодний лифчик
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/santatop.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/santatop.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopTigerFemale
+  name: тигриный лифчик
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/tigertop.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/tigertop.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopDisco
+  name: диско лифчик
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/discotop.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/discotop.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopPink
+  name: розовый лифчик
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/pinkTOP.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/pinkTOP.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopSyndicate
+  name: тактический лифчик
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/lacetop.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/lacetop.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopTactic
+  name: тёмный лифчик
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/tactictop.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/tactictop.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopGalaxy
+  name: верх от galaxy
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/galaxy.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/galaxy.rsi
+
     

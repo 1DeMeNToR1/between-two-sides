@@ -24,11 +24,12 @@ namespace Content.Shared.Roles
 
         [DataField]
         public List<EntProtoId> Inhand = new(0);
+
         [DataField("top")]
-        private string _top = string.Empty;
+        private string _top = "ClothingUnderTopWhiteM";
 
         [DataField("bottom")]
-        private string _bottom = string.Empty;
+        private string _bottom = "ClothingUnderBottomWhiteU";
 
         [ViewVariables]
         [IdDataField]
@@ -44,9 +45,9 @@ namespace Content.Shared.Roles
                     return Satchel;
                 if (slot == "back" && profile.Backpack == BackpackPreference.Duffelbag && !string.IsNullOrEmpty(Duffelbag))
                     return Duffelbag;
-                if (slot == "top" && profile.Sex == Sex.Female && !string.IsNullOrEmpty(_top))
+                if (slot == "top" &&  !string.IsNullOrEmpty(_top))
                     return _top;
-                if (slot == "bottom" && profile.Sex == Sex.Female && !string.IsNullOrEmpty(_bottom))
+                if (slot == "bottom" &&  !string.IsNullOrEmpty(_bottom))
                     return _bottom;
 
             }
