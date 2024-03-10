@@ -1,0 +1,11 @@
+- type: technology
+  id: LaserMk58Weapons
+  name: research-technology-laserMk58-weapons
+  icon:
+    sprite: Siberia/Objects/Weapons/Guns/Battery/mk58L.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 1
+  cost: 20000
+  recipeUnlocks:
+  - Mk85L

@@ -1,18 +1,18 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "",
+  "copyright": "Made by Jaraten for SiberiaServer",
   "size": {
     "x": 32,
     "y": 32
   },
   "states": [
     {
-      "name": "poledance",
+      "name": "comfyred",
       "directions": 4
     },
     {
-      "name": "poledance-knocked",
+      "name": "highchair",
       "directions": 4
     }
   ]

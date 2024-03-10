@@ -9,7 +9,7 @@
         types:
           Caustic: 2
     - type: Sprite
-      sprite: Siberia/Objects/Weapons/Guns/Turrets/tentacles_shoot.rsi
+      sprite: Siberia/Objects/Weapons/Guns/Projectiles/tentacles_shoot.rsi
       layers:
         - state: xeno_toxic
     - type: Ammo

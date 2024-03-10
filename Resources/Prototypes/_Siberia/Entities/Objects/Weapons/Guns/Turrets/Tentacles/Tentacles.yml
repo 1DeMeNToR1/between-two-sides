@@ -1,6 +1,6 @@
 - type: entity
   name: Тентакли турель
-  description: Shoots 9mm acid projectiles
+  description: Стреляющая тентакля? Что за хрень?
   parent: BaseWeaponTurret
   id: WeaponTurretTentacles
   suffix: Xeno

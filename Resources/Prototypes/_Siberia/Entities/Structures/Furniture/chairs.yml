@@ -1,0 +1,41 @@
+- type: entity
+  name: деревянный барный стул
+  id: ChairBarWood
+  parent: SeatBase
+  components:
+  - type: Anchorable
+  - type: Rotatable
+  - type: Sprite
+    sprite: Siberia/Structures/Furniture/chairs.rsi
+    state: highchair
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 1
+            max: 1
+  - type: Tag
+    tags:
+    - Wooden
+  - type: StaticPrice
+    price: 75
+    
+- type: entity
+  name: деревянное комфортное кресло
+  id: ChairComfortyWood
+  parent: ChairBarWood
+  components:
+  - type: Sprite
+    state: comfyred

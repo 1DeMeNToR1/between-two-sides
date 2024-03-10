@@ -1,0 +1,27 @@
+- type: entity
+  name: мк58-Л
+  parent: BaseWeaponPowerCellSmall
+  id: WeaponLaserMk58
+  description: Разработка Е.М. Corp. Лазерная версия популярного пистолета МК58, который может питаться батарейками. Дёшево и просто!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Weapons/Guns/Battery/mk58L.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Item
+    sprite: Siberia/Objects/Weapons/Guns/Battery/mk58L.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Gun
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Siberia/Weapons/Gunshots/Battery/mk58laser.ogg

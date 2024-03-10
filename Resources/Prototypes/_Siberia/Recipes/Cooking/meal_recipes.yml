@@ -1,0 +1,24 @@
+# Бургеры
+
+- type: microwaveMealRecipe
+  id: RecipeBurgerVeryLong
+  name: рецепт супер длинного бутерброда
+  result: FoodBurgerVeryLong
+  time: 25
+  solids:
+    FoodBreadBaguette: 1
+    FoodCheeseSlice: 3
+    FoodTomato: 3
+    FoodMeatBacon: 2
+    FoodCabbage: 1
+
+# Торты
+
+- type: microwaveMealRecipe
+  id: RecipeFoodCakeSpider
+  name: рецепт паучьего тортика
+  result: FoodCakeSpider
+  time: 5
+  solids:
+    FoodCakePlain: 1
+    FoodMeatSpider: 2

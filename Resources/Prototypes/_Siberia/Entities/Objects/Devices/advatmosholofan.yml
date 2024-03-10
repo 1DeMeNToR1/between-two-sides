@@ -1,0 +1,35 @@
+- type: entity
+  id: AdvancedAtmosHolofanProjector
+  parent: BaseItem
+  name: продвинутый атмос-голопроектор
+  description: "Разработка Е.М. Corp. Продвинутая версия атмосферного голопроектора, позволяет создать до 5-ти голобарьеров, которые стоят бесконечно. Создание 6-го барьера дизентегрирует остальные 5 барьеров"
+  components:
+  - type: Sprite
+    sprite: /Textures/Siberia/Objects/Devices/advatmosholo.rsi
+    layers:
+    - state: icon
+  - type: AdvHolofan
+
+- type: entity
+  id: AdvancedAtmosHoloFan
+  name: Продвинутный атмосферный голобарьер
+  description: Барьер из света светоносного кристалла. Выглядит ярко!
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Holo/advatmosholofan.rsi
+    state: icon
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+  - type: Airtight
+    noAirWhenFullyAirBlocked: false
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+    canCollide: false

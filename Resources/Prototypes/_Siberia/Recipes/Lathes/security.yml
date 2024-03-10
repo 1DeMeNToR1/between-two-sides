@@ -1,0 +1,8 @@
+- type: latheRecipe
+  id: Mk85L
+  result: WeaponLaserMk58
+  completetime: 10
+  materials:
+     Steel: 800
+     Plastic: 400
+     Glass: 800
