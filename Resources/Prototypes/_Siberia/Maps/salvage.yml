@@ -1,13 +1,16 @@
 
-
 - type: salvageMap
   id: SpaceWareHouse
   mapPath: /Maps/Siberia/Salvage/space-ware-house.yml
-  
+
 - type: salvageMap
   id: Honkoball
   mapPath: /Maps/Siberia/Salvage/honkobll.yml
-  
+
 - type: salvageMap
   id: Tehi
-  mapPath: /Maps/Siberia/Salvage/tehi.yml  
+  mapPath: /Maps/Siberia/Salvage/tehi.yml
+
+- type: salvageMap
+  id: SnakeMine
+  mapPath: /Maps/Siberia/Salvage/snake-mine.yml
