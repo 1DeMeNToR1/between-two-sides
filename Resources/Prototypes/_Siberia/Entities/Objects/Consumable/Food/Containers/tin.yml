@@ -1,0 +1,48 @@
+- type: entity
+  parent: FoodTinBase
+  id: FoodTinСondensedMilk
+  name: Сгущёнка
+  description: Вкус детства.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/Tins/condensedmilk.rsi
+  - type: FlavorProfile
+    flavors:
+    - creamy
+    - sweet
+  - type: Food
+    trash: FoodTinСondensedMilkTrash
+
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: FoodTinСondensedMilkTrash
+  name: Сгущёнка
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/Tins/condensedmilk.rsi
+
+
+- type: entity
+  parent: FoodTinBase
+  id: FoodTinOlivki
+  name: Оливки
+  description: Маслины.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/Tins/olivki.rsi
+  - type: FlavorProfile
+    flavors:
+    - oily
+    - slaty
+  - type: Food
+    trash: FoodTinOlivkiTrash
+
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: FoodTinOlivkiTrash
+  name: Оливки
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/Tins/olivki.rsi
