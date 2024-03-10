@@ -1,5 +1,48 @@
 - type: entity
   parent: BasePlushie
+  id: PlushieBiblio
+  name: плюшевый библиотекарь
+  description: Тихая и скромная игрушка. Идеально подходит для библиотеки.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/biblio_woman.rsi
+    state: plushie
+
+- type: entity
+  parent: BaseItem
+  id: DemonCore
+  name: демон-кор
+  description: почему он светится?
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/toys.rsi
+    state: orb
+    shader: unshaded
+  - type: PointLight
+    radius: 2
+    color: "#00CCFF"
+  - type: Item
+    size: Huge
+    sprite: Objects/Fun/toys.rsi
+    heldPrefix: orb
+  - canCollide: False
+    type: Physics
+  - slope: 0.4
+    intensity: 6
+    type: RadiationSource
+
+- type: entity
+  parent: BasePlushie
+  id: СhibiSaber
+  name: Артурия Сэйбер
+  description: Лучшая девочка в аниме
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_artiry.rsi
+    state: СhibiSaber
+
+- type: entity
+  parent: BasePlushie
   id: PlushieChirno
   name: Фумо Чирно
   description: Дура! Дура!
@@ -88,3 +131,12 @@
     sprite: Siberia/Objects/Toy/plushie_fumo.rsi
     state: fumo_yomu
 
+- type: entity
+  parent: BasePlushie
+  id: FumoSuika
+  name: Фумо Суйка
+  description: Я так хочу пить!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/fumo_suika.rsi
+    state: fumo_suika
