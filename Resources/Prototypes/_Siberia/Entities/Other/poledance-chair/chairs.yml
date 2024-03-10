@@ -20,7 +20,7 @@
         mask:
         - TableMask
   - type: Sprite
-    sprite: Siberia/Structures/Furniture/chairs.rsi
+    sprite: Siberia/Structures/Furniture/poledance.rsi
     noRot: true
   - type: Strap
     position: Stand
