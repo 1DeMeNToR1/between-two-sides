@@ -1,4 +1,4 @@
-# Бутеры
+# Бургеры
 
 - type: microwaveMealRecipe
   id: RecipeBurgerVeryLong
@@ -11,3 +11,14 @@
     FoodTomato: 3
     FoodMeatBacon: 2
     FoodCabbage: 1
+
+# Торты
+
+- type: microwaveMealRecipe
+  id: RecipeFoodCakeSpider
+  name: рецепт паучьего тортика
+  result: FoodCakeSpider
+  time: 5
+  solids:
+    FoodCakePlain: 1
+    FoodMeatSpider: 2

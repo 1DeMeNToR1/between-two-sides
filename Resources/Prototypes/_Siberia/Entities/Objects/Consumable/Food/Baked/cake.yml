@@ -1,0 +1,43 @@
+- type: entity
+  name: Торт из паука
+  parent: FoodCakeBase
+  id: FoodCakeSpider
+  description: Выглядит аппетитно...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/Baked/spidercake.rsi
+    state: food-Cake-Spider
+  - type: SliceableFood
+    slice: FoodCakeSliceSpider
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 5
+
+- type: entity
+  name: Кусочек паучьего торта
+  parent: FoodCakeSliceBase
+  id: FoodCakeSliceSpider
+  description: Кусочек паучьего торта. Выглядит аппетитно...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/Baked/spidercake.rsi
+    state: spider-slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 1
