@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseItem
+  id: Buket
+  name: букет цветов
+  description: Пышный букет роз. Нет ничего приятнее, чем этот подарок от любимого человека.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Other/buket.rsi
+    state: icon
+  - type: Item
+    size: Large
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    damage:
+      types:
+        Blunt: 1
