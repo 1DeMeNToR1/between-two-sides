@@ -21635,8 +21635,6 @@ entities:
     - type: Docking
       dockJointId: docking168406
       dockedWith: 36727
-    - type: RecentlyDocked
-      lastDocked: 1323
   - uid: 2492
     components:
     - type: Transform
@@ -21768,8 +21766,6 @@ entities:
     - type: Transform
       pos: 41.5,9.5
       parent: 7605
-    - type: RecentlyDocked
-      lastDocked: 33076
   - uid: 36495
     components:
     - type: Transform
