@@ -1,0 +1,29 @@
+- type: entity
+  name: Супер длинный бутерброд.
+  parent: FoodBreadSliceBase
+  id: FoodBurgerVeryLong
+  description: Восхитительно! В нём точно есть душа Лобстера!
+  components:
+  - type: Food
+  - type: FlavorProfile
+    flavors:
+      - свинина
+      - счастье
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/superbuter.rsi
+    layers:
+    - state: superbuter
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Tag
+    tags:
+    - Meat

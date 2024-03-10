@@ -1,0 +1,11 @@
+- type: microwaveMealRecipe
+  id: RecipeBurgerVeryLong
+  name: рецепт супер длинного бутерброда
+  result: FoodBurgerVeryLong
+  time: 25
+  solids:
+    FoodBreadBaguette: 1
+    FoodCheeseSlice: 3
+    FoodTomato: 3
+    FoodMeatBacon: 2
+    FoodCabbage: 1
