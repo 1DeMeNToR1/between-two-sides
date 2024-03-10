@@ -32,7 +32,7 @@
     eyes: ClothingEyesGlassesSunglasses
     head: ClothingHeadHatFedoraBrown
     id: DetectivePDA
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetDetective # Siberia-change
     belt: ClothingBeltHolsterFilled
   innerClothingSkirt: ClothingUniformJumpskirtDetective
   satchel: ClothingBackpackSatchelFilledDetective
