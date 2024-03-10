@@ -1,0 +1,58 @@
+- type: entity
+  id: AdvancedSecurityHolofanProjector
+  parent: BaseItem
+  name: продвинутый охранный-голопроектор
+  description: "Разработка Е.М. Corp. Продвинутая версия охранного голопроектора, позволяет создать до 5-ти барьеров, которые стоят бесконечно. Создание 6-го барьера дизентегрирует остальные 5 барьеров"
+  components:
+  - type: Sprite
+    sprite: /Textures/Siberia/Objects/Devices/advsecurityholo.rsi
+    layers:
+    - state: icon
+  - type: AdvHolofan
+    firstHolofanPrototype: AdvHolosignSecurity
+    secondHolofanPrototype: AdvHolosignSecurity
+    thirdHolofanPrototype: AdvHolosignSecurity
+    fourthHolofanPrototype: AdvHolosignSecurity
+    fifthHolofanPrototype: AdvHolosignSecurity
+
+- type: entity
+  id: AdvHolosignSecurity
+  name: охранный голобарьер
+  description: Осязаемая голографическая проекция охранного барьера из светоносного кристалла. На вид горячая и яркая!
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Physics
+      bodyType: Static
+      canCollide: true
+    - type: Sprite
+      sprite: Structures/Holo/security.rsi
+      state: icon
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.3,-0.3,0.3,0.3"
+          mask:
+            - TableMask
+          layer:
+            - TableLayer
+    - type: PointLight
+      enabled: true
+      radius: 3
+      color: red
+    - type: Climbable
+    - type: Clickable
+    - type: Transform
+      anchored: true
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 30
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]

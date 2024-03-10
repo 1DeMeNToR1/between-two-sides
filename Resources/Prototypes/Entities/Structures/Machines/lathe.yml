@@ -322,6 +322,8 @@
       - DeviceQuantumSpinInverter
       - PinpointerAnomaly # Siberia-change
       - BlueSpacePillCanister # Siberia-change
+      - AdvancedAtmosHoloprojector # Siberia-change
+      - AdvancedSecurityHoloprojector # Siberia-change
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
@@ -458,6 +460,8 @@
       - ArtifactCrusherMachineCircuitboard
       - TelecomServerCircuitboard
       - MassMediaCircuitboard
+      - AdvancedAtmosHoloprojector # Siberia-change
+      - AdvancedSecurityHoloprojector # Siberia-change
   - type: MaterialStorage
     whitelist:
       tags:

@@ -1,0 +1,15 @@
+# Tier 1
+
+- type: technology
+  id: HoloprojectionsEquipment
+  name: research-technology-holoprojections-equipment
+  icon:
+    sprite: Siberia/Objects/Devices/advatmosholo.rsi
+    state: icon
+  discipline: Industrial
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - AdvancedAtmosHoloprojector
+  - AdvancedSecurityHoloprojector
+

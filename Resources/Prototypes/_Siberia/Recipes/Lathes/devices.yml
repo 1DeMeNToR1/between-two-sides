@@ -1,0 +1,17 @@
+- type: latheRecipe
+  id: AdvancedAtmosHoloprojector
+  result: AdvancedAtmosHolofanProjector
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: AdvancedSecurityHoloprojector
+  result: AdvancedSecurityHolofanProjector
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
