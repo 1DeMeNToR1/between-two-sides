@@ -111,6 +111,9 @@
     - type: ActiveRadio
       channels:
       - Binary
+    - type: Accentless
+      removes:
+        - type: Perishable
 
 - type: siliconLaw
   id: Ipc1
