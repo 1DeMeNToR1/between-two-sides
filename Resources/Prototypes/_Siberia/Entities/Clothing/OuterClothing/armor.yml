@@ -11,3 +11,14 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.85
+
+- type: entity
+  parent: ClothingOuterArmorHeavy
+  id: ClothingOuterArmorHeavyForces
+  name: защитный костюм
+  description: Тяжелобронированный костюм, защищающий от тяжёлых обстоятельств.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/OuterClothing/Armor/bulletproofarmor.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/OuterClothing/Armor/bulletproofarmor.rsi
