@@ -1,0 +1,150 @@
+- type: entity
+  id: SwarmRewardSphereBase
+  name: сфера хранилища роя
+  description: Блюспейс артефакт. Неизвестно что он говорит, но голос изнутри этой штуки ругается, отправляя вам что-то из хранилища.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Siberia/Mobs/Silicon/BioSwarm/gift.rsi
+    layers:
+      - state: gift
+      
+- type: entity
+  id: SwarmRewardSphere
+  parent: [SwarmRewardSphereBase, BaseItem]
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: SwarmRewardSphereTrash
+      - id: ResearchDisk10000
+        prob: .1
+        orGroup: GiftPool
+      - id: SpaceCash5000
+        prob: .5
+        orGroup: GiftPool
+      - id: ResearchDisk5000
+        orGroup: GiftPool
+        prob: .5
+      - id: MobCatSyndy
+        prob: .01
+        orGroup: GiftPool
+      - id: ClothingBackpackSatchelHolding
+        prob: .01
+        orGroup: GiftPool
+      - id: MaterialBananium
+        prob: .1
+        orGroup: GiftPool
+      - id: MaterialSheetMeat
+        prob: .1
+        orGroup: GiftPool
+      - id: BluespaceBeaker
+        prob: .1
+        orGroup: GiftPool
+      - id: SheetUranium
+        prob: .1
+        orGroup: GiftPool
+      - id: SheetPlasma
+        prob: .1
+        orGroup: GiftPool
+      - id: SheetPlasteel
+        prob: .1
+        orGroup: GiftPool
+      - id: SheetSteel
+        prob: .1
+        orGroup: GiftPool
+      - id: SheetGlass
+        prob: .1
+        orGroup: GiftPool
+      - id: SheetPlastic
+        prob: .1
+        orGroup: GiftPool
+      - id: IngotGold
+        prob: .1
+        orGroup: GiftPool
+      - id: IngotSilver
+        prob: .1
+        orGroup: GiftPool
+      - id: MaterialDiamond
+        prob: .1
+        orGroup: GiftPool
+      - id: SyringeBluespace
+        prob: .1
+        orGroup: GiftPool
+      - id: AnomalyBluespace
+        prob: .2
+        orGroup: GiftPool
+      - id: ClothingOuterArmorReflective
+        prob: .1
+        orGroup: GiftPool
+      - id: PlushieSpaceLizard
+        prob: .1
+        orGroup: GiftPool   
+      - id: WeaponPistolN1984
+        prob: .01
+        orGroup: GiftPool
+      - id: WeaponLightMachineGunL6
+        prob: .01
+        orGroup: GiftPool
+      - id: BorgModuleSyndicateWeapon
+        prob: .01
+        orGroup: GiftPool
+      - id: WeaponLaserCannon
+        prob: .01
+        orGroup: GiftPool
+      - id: WeaponPistolCHIMP
+        prob: .01
+        orGroup: GiftPool
+      - id: WeaponHealgun
+        prob: .01
+        orGroup: GiftPool
+      - id: WeaponPulsePistol
+        prob: .01
+        orGroup: GiftPool
+      - id: WeaponDisablerSMG
+        prob: .01
+        orGroup: GiftPool
+      - id: WeaponAdvancedLaser
+        prob: .01
+        orGroup: GiftPool
+      - id: WeaponXrayCannon
+        prob: .01
+        orGroup: GiftPool
+      - id: ClothingOuterArmorHeavy
+        prob: .01
+        orGroup: GiftPool
+      - id: RCDSwarm
+        prob: .01
+        orGroup: GiftPool
+      - id: ClothingMaskClown
+        prob: .01
+        orGroup: GiftPool
+      - id: ClothingOuterHardsuitCBURN
+        prob: .01
+        orGroup: GiftPool
+      - id: WeaponTurretXeno
+        prob: .01
+        orGroup: GiftPool
+      - id: ClothingOuterHardsuitMaxim
+        prob: .01
+        orGroup: GiftPool
+      - id: SwarmHealerHyposprayNormal
+        prob: .01
+        orGroup: GiftPool
+    sound:
+      path: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg
+      
+- type: entity
+  id: SwarmRewardSphereTrash
+  noSpawn: true
+  parent: BaseItem
+  name: Открытая сфера хранилища роя
+  description: Опять этот задрот убил всех дронов и залутал сферы. ГГВП Я ливаю!
+  components:
+  - type: Sprite
+    sprite: Siberia/Mobs/Silicon/BioSwarm/gift.rsi
+    layers:
+      - state: unwrapped
+  - type: Tag
+    tags:
+    - Trash
+  - type: SpaceGarbage

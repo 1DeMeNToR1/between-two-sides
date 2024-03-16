@@ -59,6 +59,34 @@
     damage:
       types:
         Blunt: 4
+
+- type: entity
+  name: спрей дрона роя
+  parent: BaseItem
+  description: Инжектор наномашин, который использует дрон-лекарь роя. Кажется в нём кончились наномашины...
+  id: SwarmHealerHyposprayNormal
+  components:
+  - type: Sprite
+    sprite: Siberia/Mobs/Silicon/BioSwarm/hypospray.rsi
+    state: hypo
+  - type: Item
+    sprite: Siberia/Mobs/Silicon/BioSwarm/hypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 20
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyMobs: false
+  - type: UseDelay
+    delay: 0.5
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 4
         
 - type: entity
   name: сварочный аппарат роя
@@ -217,7 +245,7 @@
   components:
   - type: DragonRift
     spawn: MobSwarmbotBuilder
-    spawnCooldown: 120
+    spawnCooldown: 120000000
   - type: Transform
     anchored: true
     noRot: true
@@ -260,19 +288,19 @@
   - type: EmitSoundOnSpawn
     sound:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
-  - type: Timer
-  - type: TimedSpawner
-    prototypes:
-      - MobSwarmbotGuard
-      - MobSwarmbotHealer
-      # round ~90m
-      # one spawner should only spawn ~5 mice for sanity reasons
-      # therefore 18m
-      # use 50% chance for randomness and balance with halved interval
-    chance: 0.5
-    intervalSeconds: 180
-    minimumEntitiesSpawned: 1
-    maximumEntitiesSpawned: 1
+  # - type: Timer
+  # - type: TimedSpawner
+    # prototypes:
+      # - MobSwarmbotGuard
+      # - MobSwarmbotHealer
+      # # round ~90m
+      # # one spawner should only spawn ~5 mice for sanity reasons
+      # # therefore 18m
+      # # use 50% chance for randomness and balance with halved interval
+    # chance: 0.5
+    # intervalSeconds: 180
+    # minimumEntitiesSpawned: 1
+    # maximumEntitiesSpawned: 1
   - type: NodeContainer
     examinable: true
     nodes:
@@ -289,7 +317,34 @@
     drawRate: 10000
   - type: WarpPoint
     location: swarmfactory
-
+  - type: ActivatableUI
+    key: enum.LatheUiKey.Key
+  - type: UserInterface
+    interfaces:
+    - key: enum.LatheUiKey.Key
+      type: LatheBoundUserInterface
+    - key: enum.ResearchClientUiKey.Key
+      type: ResearchClientBoundUserInterface
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+  - type: Lathe
+    idleState: factory
+    runningState: factory
+    staticRecipes:
+      - SwarmbotBuilder
+      - SwarmbotGuard
+      - SwarmbotHealer
+  - type: ResearchClient
+  - type: TechnologyDatabase
+  - type: ApcPowerReceiver
+    powerLoad: 0
+  - type: ExtensionCableReceiver
+  - type: LightningTarget
+    priority: 1
 #################### РАЗНОЕ РОЯ ##########################
     
 - type: statusIcon
