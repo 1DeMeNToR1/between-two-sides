@@ -1,0 +1,83 @@
+- type: latheRecipe
+  id: EngineeringUpgradedHardsuit
+  result: RndBriefcaseEngihardsuit
+  category: Robotics
+  completetime: 60
+  materials:
+    Steel: 2000
+    Plastic: 1000
+    Glass: 1000
+    Plasma: 1000
+    Silver: 1000
+    Uranium: 500
+    Gold: 1000
+
+- type: latheRecipe
+  id: SecurityHeavyUpgradedHardsuit
+  result: RndBriefcaseSecurityHeavysuit
+  category: Robotics
+  completetime: 60
+  materials:
+    Steel: 3000
+    Plastic: 1500
+    Glass: 2000
+    Plasma: 1500
+    Silver: 1500
+    Uranium: 500
+    Gold: 1000
+
+- type: latheRecipe
+  id: SecurityLightUpgradedHardsuit
+  result: RndBriefcaseSecurityLightsuit
+  category: Robotics
+  completetime: 60
+  materials:
+    Steel: 1500
+    Plastic: 1000
+    Glass: 1000
+    Plasma: 1000
+    Silver: 1000
+    Uranium: 500
+    Gold: 500
+
+- type: latheRecipe
+  id: ResearchUpgradedHardsuit
+  result: RndBriefcaseResearchhardsuit
+  category: Robotics
+  completetime: 60
+  materials:
+    Steel: 3000
+    Plastic: 500
+    Glass: 2000
+    Plasma: 2000
+    Silver: 3000
+    Uranium: 1000
+    Gold: 1500
+
+- type: latheRecipe
+  id: SalvageUpgradedHardsuit
+  result: RndBriefcaseSalvagehardsuit
+  category: Robotics
+  completetime: 60
+  materials:
+    Steel: 3000
+    Plastic: 1500
+    Glass: 1500
+    Plasma: 3000
+    Silver: 3000
+    Uranium: 1000
+    Gold: 1000
+
+- type: latheRecipe
+  id: MedicalUpgradedHardsuit
+  result: RndBriefcaseMedicalhardsuit
+  category: Robotics
+  completetime: 60
+  materials:
+    Steel: 1000
+    Plastic: 1500
+    Glass: 3000
+    Plasma: 2500
+    Silver: 2000
+    Uranium: 500
+    Gold: 2000

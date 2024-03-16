@@ -1,0 +1,1 @@
+research-technology-portable-healing = Портативное лечение

@@ -576,6 +576,12 @@
     - HamtrLLeg
     - HamtrRLeg
     - VimHarness
+    - EngineeringUpgradedHardsuit # Siberia-change
+    - SecurityHeavyUpgradedHardsuit # Siberia-change
+    - SecurityLightUpgradedHardsuit # Siberia-change
+    - ResearchUpgradedHardsuit # Siberia-change
+    - SalvageUpgradedHardsuit # Siberia-change
+    - MedicalUpgradedHardsuit # Siberia-change
   - type: MaterialStorage
     whitelist:
       tags:
