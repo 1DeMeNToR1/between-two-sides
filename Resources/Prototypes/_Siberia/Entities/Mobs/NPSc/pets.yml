@@ -1,0 +1,84 @@
+- type: entity
+  name: Деофчик
+  parent: SimpleMobBase
+  id: MobCatDeof
+  description: Этот кот Вам кого-то напоминает..
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Siberia/Mobs/Pets/cat_deof.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: Deof
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 15
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Inventory
+    speciesId: cat
+    templateId: pet
+  - type: Item
+    size: Large
+    heldPrefix: cak
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: Deof
+      Dead:
+        Base: Deof_dead
+  - type: Speech
+    speechSounds: Cat
+    speechVerb: SmallMob
+  - type: Clothing
+    quickEquip: false
+    sprite: Siberia/Mobs/Pets/cat_deof.rsi
+    equippedPrefix: cak
+    slots:
+    - HEAD
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 5
+    baseSprintSpeed : 3
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 3
+  - type: ReplacementAccent
+    accent: cat
+  - type: InteractionPopup
+    successChance: 0.7
+    interactSuccessString: petting-success-cat
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/cat_meow.ogg
+  - type: MeleeWeapon
+    damage:
+      types:
+        Piercing: 5
+  - type: Grammar
+    attributes:
+      gender: epicene
+  - type: MobPrice
+    price: 5000
+  - type: CanEscapeInventory
+    baseResistTime: 2
+  - type: Tag
+    tags:
+    - VimPilot
+    - DoorBumpOpener
+
+
