@@ -1,0 +1,67 @@
+- type: entity
+  id: HandTeleporterMapping
+  parent: BaseItem
+  name: телепортер
+  suffix: Лестница/Маппинг
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Devices/hand_teleporter.rsi
+    layers:
+    - state: icon
+  - type: HandTeleporter
+    firstPortalPrototype: PortalChasmFirst
+    secondPortalPrototype: PortalChasmSecond
+
+- type: entity
+  id: BasePortalChasmMapping
+  abstract: true
+  name: крутая лестница
+  description: Не для толстых гуманоидов.
+  components:
+  - type: Transform
+    anchored: True
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    sprite: /Textures/Siberia/Effects/ladder.rsi
+  - type: Fixtures
+    fixtures:
+      portalFixture:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.48,0.25,0.48"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        hard: false
+  - type: Portal
+
+- type: entity
+  id: PortalChasmFirst
+  parent: BasePortalChasmMapping
+  description: Боже, чёртовы лестницы...
+  components:
+  - type: Sprite
+    layers:
+    - state: ladder1
+  - type: Portal
+    canTeleportToOtherMaps: true
+    arrivalSound: /Audio/Siberia/Effects/ladder1.ogg
+    departureSound: /Audio/Siberia/Effects/ladder1.ogg
+
+
+- type: entity
+  id: PortalChasmSecond
+  parent: BasePortalChasmMapping
+  description: Боже, чёртовы лестницы...
+  components:
+  - type: Sprite
+    layers:
+    - state: ladder2
+  - type: Portal
+    canTeleportToOtherMaps: true
+    arrivalSound: /Audio/Siberia/Effects/ladder1.ogg
+    departureSound: /Audio/Siberia/Effects/ladder1.ogg
