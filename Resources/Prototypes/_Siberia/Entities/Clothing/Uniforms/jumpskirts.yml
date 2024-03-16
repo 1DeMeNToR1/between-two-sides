@@ -77,10 +77,43 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtSuika
-  name: Рваная рубашка с фиолетовой юбкой
+  name: рваная рубашка с фиолетовой юбкой
   description: Пахнущая саке рубашка без руковов с безвкусной юбкой
   components:
   - type: Sprite
-    sprite: Siberia/Clothing/Uniforms/Jumpsuit/suikasuit.rsi
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/suikasuit.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Uniforms/Jumpsuit/suikasuit.rsi
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/suikasuit.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingEveningDressBlue
+  name: синее вечернее платье
+  description: Наконец то вечернее платье, а не юбка.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/blue_dress.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/blue_dress.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingEveningDressRed
+  name: красное вечернее платье
+  description: Яркое вечернее платье подчеркивающее ваши достоинства.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/red_dress.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/red_dress.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingEveningDressGreen
+  name: зеленое вечернее платье
+  description: В этом вечернем платье можно подобраться к дионам очень близко.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/green_dress.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/green_dress.rsi
