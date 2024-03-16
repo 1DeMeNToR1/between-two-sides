@@ -199,3 +199,14 @@
       sprite: Siberia/Clothing/Uniforms/Costume/delovoi.rsi
     - type: Clothing
       sprite: Siberia/Clothing/Uniforms/Costume/delovoi.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformFurer
+  name: костюм вождя
+  description: Выглядит потрасаяюще и пугающе.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Uniforms/Costume/furer.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Uniforms/Costume/furer.rsi
