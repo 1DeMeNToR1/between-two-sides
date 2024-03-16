@@ -67,7 +67,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingParatrooperberet
-  name: Потрёпанный берет
+  name: потрёпанный берет
   description: Старый берет войск СССП. Как его занесло сюда - загадка.
   components:
   - type: Sprite
@@ -81,10 +81,21 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatRedRibbon
-  name: Красный Бант
+  name: красный Бант
   description: До глупости большой бант
   components:
   - type: Sprite
     sprite: Siberia/Clothing/Head/Hats/redribbon.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Head/Hats/redribbon.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadFurer
+  name: фуражка вождя
+  description: Выглядит одновременно потрясающе и устрашающе.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Head/Hats/furerhat.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Head/Hats/furerhat.rsi
