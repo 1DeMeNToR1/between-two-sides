@@ -25,3 +25,35 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Siberia/Weapons/Gunshots/Battery/mk58laser.ogg
+
+- type: entity
+  name: ЛУ-03
+  parent: BaseWeaponBatterySmall
+  id: WeaponHealgun
+  description: Лечащее устройство компании Д.К.Б. Стреляет снарядом омнизинообразного геля, способствующим лечению лёгких ран. Устройство можно зарядить в заряднике.
+  components:
+    - type: Sprite
+      sprite: Siberia/Objects/Weapons/Guns/Battery/healgun.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-unshaded-4
+          map: ["enum.GunVisualLayers.MagUnshaded"]
+          shader: unshaded
+    - type: Gun
+      fireRate: 0.5
+      soundGunshot:
+        path: /Audio/Siberia/Weapons/Gunshots/Battery/healgun.ogg
+        params:
+          volume: -5
+    - type: ProjectileBatteryAmmoProvider
+      proto: BulletHealgun
+      fireCost: 600
+    - type: Battery
+      maxCharge: 2400
+      startingCharge: 2400
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: true
+    - type: Appearance

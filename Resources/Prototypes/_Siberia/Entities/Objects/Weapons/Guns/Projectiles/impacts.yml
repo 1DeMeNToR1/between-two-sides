@@ -1,0 +1,17 @@
+- type: entity
+  id: BulletImpactEffectHealgun
+  noSpawn: true
+  components:
+    - type: TimedDespawn
+      lifetime: 0.2
+    - type: Sprite
+      drawdepth: Effects
+      layers:
+        - shader: unshaded
+          map: ["enum.EffectLayers.Unshaded"]
+          sprite: Siberia/Objects/Weapons/Guns/Projectiles/healgun_bullet.rsi
+          state: healgun_impact
+    - type: EffectVisuals
+    - type: Tag
+      tags:
+        - HideContextMenu
