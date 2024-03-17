@@ -1,5 +1,5 @@
 - type: entity
-  name: Супер длинный бутерброд.
+  name: супер длинный бутерброд.
   parent: FoodBreadSliceBase
   id: FoodBurgerVeryLong
   description: Восхитительно! В нём точно есть душа Лобстера!

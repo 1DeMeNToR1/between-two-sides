@@ -1,5 +1,5 @@
 - type: entity
-  name: Торт из паука
+  name: торт из паука
   parent: FoodCakeBase
   id: FoodCakeSpider
   description: Выглядит аппетитно...
@@ -22,7 +22,7 @@
           Quantity: 5
 
 - type: entity
-  name: Кусочек паучьего торта
+  name: кусочек паучьего торта
   parent: FoodCakeSliceBase
   id: FoodCakeSliceSpider
   description: Кусочек паучьего торта. Выглядит аппетитно...

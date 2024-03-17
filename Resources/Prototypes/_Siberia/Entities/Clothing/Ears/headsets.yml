@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetDetective
-  name: Гарнитура детектива
-  description: Гарнитура, используемая детективом. 
+  name: гарнитура детектива
+  description: Гарнитура, используемая детективом.
   components:
   - type: ContainerFill
     containers:
