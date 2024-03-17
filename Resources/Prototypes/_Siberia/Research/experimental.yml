@@ -1,0 +1,11 @@
+- type: technology
+  id: PortableHealing
+  name: research-technology-portable-healing
+  icon:
+    sprite: Siberia/Objects/Weapons/Guns/Battery/healgun.rsi
+    state: icon
+  discipline: Experimental
+  tier: 2
+  cost: 35000
+  recipeUnlocks:
+  - HealgunRecipe

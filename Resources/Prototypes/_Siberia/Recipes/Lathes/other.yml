@@ -81,3 +81,17 @@
     Silver: 2000
     Uranium: 500
     Gold: 2000
+
+- type: latheRecipe
+  id: HealgunRecipe
+  result: WeaponHealgun
+  category: Tools
+  completetime: 20
+  materials:
+    Steel: 500
+    Plastic: 500
+    Glass: 500
+    Plasma: 2500
+    Silver: 500
+    Uranium: 500
+    Gold: 500
