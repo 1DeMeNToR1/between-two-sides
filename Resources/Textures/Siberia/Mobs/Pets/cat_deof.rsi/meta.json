@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprited for Siberia SS14 by gamecrol(DS)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "Deof",
+      "directions": 4
+    },
+    {
+      "name": "Deof_dead"
+    },
+    {
+      "name": "cak-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "cak-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "cak-equipped-HELMET",
+      "directions": 4
+    }
+  ]
+}

@@ -23,58 +23,87 @@
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: ClothingHeadHelmetHardsuitSalvageUpgraded
+  id: ClothingHeadHelmetHardsuitEngineeringRndUpgraded
   noSpawn: true
-  name: шлем скафандра "Монолит"
+  name: шлем улучшенного инженерного скафандра
+  description: Если вы видите этот визор, то скорее всего этот человек пришёл разгребсти дерьмо за вами.
   components:
+  - type: BreathMask
   - type: Sprite
-    sprite: Siberia/Clothing/Head/Hardsuits/salvageupgraded.rsi
+    sprite: Siberia/Clothing/Head/Hardsuits/engupgraded.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Head/Hardsuits/salvageupgraded.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.525
-    lowPressureMultiplier: 10000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.8
+    sprite: Siberia/Clothing/Head/Hardsuits/engupgraded.rsi
   - type: PointLight
-    color: "#adffe6"
+    color: "#ADFFF8"
     radius: 7
     energy: 3
-
-- type: entity
-  parent: ClothingHeadHardsuitWithLightBase
-  id: ClothingHeadHelmetHardsuitAdvEngineering
-  noSpawn: true
-  name: шлем скафандра "Циклоп"
-  components:
-  - type: Sprite
-    sprite: Siberia/Clothing/Head/Hardsuits/advengineering.rsi
-  - type: Clothing
-    sprite: Siberia/Clothing/Head/Hardsuits/advengineering.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.1
     lowPressureMultiplier: 1000
-  - type: PointLight
-    color: "#adffe6"
-    radius: 7
-    energy: 3
+  - type: RadarConsole
+    maxRange: 64
+    followEntity: true
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+      - key: enum.RadarConsoleUiKey.Key
+        type: RadarConsoleBoundUserInterface
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
-  id: ClothingHeadHelmetHardsuitAdvScience
+  id: ClothingHeadHelmetHardsuitSecurityRndUpgraded
+  name: шлем тяжелобронированного скафандра охраны
   noSpawn: true
-  name: шлем скафандра "Панацея"
+  description: Если вы видите этот визор, то скорее всего ОНИ ПРИШЛИ ЗА ВАМИ. RUN FOR YOUR LIFE!
   components:
+  - type: BreathMask
   - type: Sprite
-    sprite: Siberia/Clothing/Head/Hardsuits/advscience.rsi
+    sprite: Siberia/Clothing/Head/Hardsuits/heavysecurity.rsi
   - type: Clothing
-    sprite: Siberia/Clothing/Head/Hardsuits/advscience.rsi
+    sprite: Siberia/Clothing/Head/Hardsuits/heavysecurity.rsi
+  - type: PointLight
+    color: "#CB736C"
+    radius: 7
+    energy: 3
   - type: PressureProtection
-    highPressureMultiplier: 0.1
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.80
+        Piercing: 0.80
+        Heat: 0.80
+        Radiation: 0.80
+        Caustic: 0.95
+  - type: ShowSecurityIcons
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitSecurityLightRndUpgraded
+  name: шлем легкобронированного скафандра охраны
+  noSpawn: true
+  description: Если вы видите этот визор, то скорее всего вам не убежать...
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hardsuits/lightsecurity.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hardsuits/lightsecurity.rsi
+  - type: PointLight
+    color: "#D04439"
+    radius: 7
+    energy: 3
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
     lowPressureMultiplier: 1000
   - type: Armor
     modifiers:
@@ -83,9 +112,115 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
-        Radiation: 0.95
-        Caustic: 0.95
+  - type: ShowSecurityIcons
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitMedicalRndUpgraded
+  name: улучшенный шлем скафандра медика
+  noSpawn: true
+  description: Шлем напоминающий вам о том что вы должны включить датчики.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hardsuits/medupgraded.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hardsuits/medupgraded.rsi
   - type: PointLight
-    color: "#9400D3"
+    color: "#D5ECF1"
     radius: 7
     energy: 3
+  - type: PressureProtection
+    highPressureMultiplier: 0.6
+    lowPressureMultiplier: 1000
+  - type: ShowSecurityIcons
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - Inorganic
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+  - type: ShowHungerIcons
+  - type: ShowThirstIcons
+  - type: SolutionScanner
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitMiningRndUpgraded
+  noSpawn: true
+  name: шлем улучшенного шахтёрского скафандра
+  description: Diggy Diggy hole!
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hardsuits/salvageupgraded.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hardsuits/salvageupgraded.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: PointLight
+    color: "#79F6E1"
+    radius: 10
+    energy: 5
+  - type: ToggleableClothing
+    requiredSlot: HEAD
+    slot: gloves
+    clothingPrototype: ClothingMiningGlovesHardsuitMiningRndUpgraded
+
+- type: entity
+  parent: ClothingHandsButcherable
+  id: ClothingMiningGlovesHardsuitMiningRndUpgraded
+  name: протокинетические перчатки скафандра
+  noSpawn: true
+  description: Позволяют крушить чёртов камень как перья!
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/ihscombat.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/ihscombat.rsi
+  - type: MeleeWeapon
+    autoAttack: true
+    angle: 0
+    wideAnimationRotation: -90
+    attackRate: 3.5
+    damage:
+      types:
+       Blunt: 3
+       Structural: 20
+    soundHit:
+      path: /Audio/Weapons/plasma_cutter.ogg
+    animation: WeaponArcFist
+  - type: Tag
+    tags:
+    - Pickaxe
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitRndBiologic
+  name: шлем био скафандра VI
+  noSpawn: true
+  description: Не защищает от воздействия спуска в бездну.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hardsuits/scienceupgraded.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hardsuits/scienceupgraded.rsi
+  - type: PointLight
+    color: "#B008D9"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: SolutionScanner

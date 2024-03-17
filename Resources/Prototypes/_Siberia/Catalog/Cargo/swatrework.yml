@@ -1,0 +1,36 @@
+- type: entity
+  id: CrateMilitarySwat
+  name: ящик с набором спецназа
+  description: Содержит набор спецназа для выполнения различных боевых задач в условиях присутствия атмосферы
+  parent: CrateWeaponSecure
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingShoesSwat
+      amount: 1
+    - id: ClothingOuterArmorHeavyForces
+      amount: 1
+    - id: ClothingHandsGlovesCombat
+      amount: 1
+    - id: ClothingMaskGasSwat
+      amount: 1
+    - id: MedkitCombatFilled
+      amount: 1
+    - id: ClothingHeadHelmetSwatForces
+      amount: 1
+    - id: WeaponDisablerSMG
+      amount: 1
+    - id: Truncheon
+      amount: 1
+    - id: CombatKnife
+      amount: 1      
+    - id: TelescopicShield
+      amount: 1
+    - id: ClothingEyesGlassesSecurity
+      amount: 1
+    - id: WeaponSubMachineGunDrozd
+      amount: 1
+    - id: MagazinePistolSubMachineGun
+      amount: 2
+    - id: MagazinePistolSubMachineGunRubber
+      amount: 2

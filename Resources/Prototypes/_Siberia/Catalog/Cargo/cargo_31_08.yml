@@ -41,7 +41,7 @@
     contents:
     - id: ClothingShoesBootsMagUpgraded
       amount: 2
-      
+
 - type: cargoProduct
   id: TEGCore
   icon:
@@ -63,7 +63,7 @@
   cost: 2500
   category: Engineering
   group: market
-  
+
 - type: cargoProduct
   id: MilitaryBackpacks
   icon:
@@ -89,7 +89,7 @@
       amount: 2
     - id: ClothingBackpackMilitarySatchel
       amount: 2
-      
+
 #- type: cargoProduct
  # id: RgbFunnySheet
   #icon:
@@ -100,7 +100,7 @@
   #cost: 15000
   #category: Fun
   #group: market
-  
+
 - type: cargoProduct
   id: CloningConsoleComputer
   icon:
@@ -110,7 +110,7 @@
   cost: 2000
   category: Circuitboards
   group: market
-  
+
 - type: cargoProduct
   id: MedicalScanner
   icon:
@@ -120,7 +120,7 @@
   cost: 2000
   category: Circuitboards
   group: market
-  
+
 - type: cargoProduct
   id: CloningPodMachine
   icon:
@@ -130,43 +130,3 @@
   cost: 2000
   category: Circuitboards
   group: market
-
-- type: cargoProduct
-  id: MilitarySwatSet
-  icon:
-    sprite: Clothing/Mask/swat.rsi
-    state: icon
-    netsync: false
-  product: CrateMilitarySwat
-  cost: 14000
-  category: Armory
-  group: market
-
-- type: entity
-  id: CrateMilitarySwat
-  name: ящик с набором спецназа
-  description: Содержит набор спецназа для выполнения различных боевых задач в условиях присутствия атмосферы
-  parent: CrateWeaponSecure
-  components:
-  - type: StorageFill
-    contents:
-    - id: ClothingShoesSwat
-      amount: 1
-    - id: ClothingOuterArmorHeavy
-      amount: 1
-    - id: ClothingHandsGlovesCombat
-      amount: 1
-    - id: ClothingMaskGasSwat
-      amount: 1
-    - id: MedkitCombatFilled
-      amount: 1
-    - id: ClothingHeadHelmetSwatSyndicate
-      amount: 1
-    - id: WeaponDisabler
-      amount: 1
-    - id: WeaponRevolverMateba
-      amount: 1
-    - id: SpeedLoaderMagnum
-      amount: 2
-    - id: SpeedLoaderMagnumRubber
-      amount: 2

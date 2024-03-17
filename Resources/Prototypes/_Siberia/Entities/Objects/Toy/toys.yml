@@ -140,3 +140,13 @@
   - type: Sprite
     sprite: Siberia/Objects/Toy/fumo_suika.rsi
     state: fumo_suika
+
+- type: entity
+  parent: BasePlushie
+  id: PlushVolk
+  name: игрушечный волк
+  description: Кусает ваш бок, когда вы спите в обнимку с ним.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushievolk.rsi
+    state: plushievolk

@@ -88,3 +88,14 @@
     sprite: Siberia/Clothing/Head/Hats/redribbon.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Head/Hats/redribbon.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadFurer
+  name: фуражка вождя
+  description: Выглядит одновременно потрясающе и устрашающе.
+  components:
+    - type: Sprite
+      sprite: Siberia/Clothing/Head/Hats/furerhat.rsi
+    - type: Clothing
+      sprite: Siberia/Clothing/Head/Hats/furerhat.rsi

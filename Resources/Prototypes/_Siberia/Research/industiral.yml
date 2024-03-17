@@ -13,3 +13,21 @@
   - AdvancedAtmosHoloprojector
   - AdvancedSecurityHoloprojector
 
+# Tier 2
+
+- type: technology
+  id: UpgradedHardsuits
+  name: research-technology-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/basic.rsi
+    state: icon
+  discipline: Industrial
+  tier: 2
+  cost: 60000
+  recipeUnlocks:
+  - EngineeringUpgradedHardsuit
+  - SecurityHeavyUpgradedHardsuit
+  - SecurityLightUpgradedHardsuit
+  - ResearchUpgradedHardsuit
+  - SalvageUpgradedHardsuit
+  - MedicalUpgradedHardsuit

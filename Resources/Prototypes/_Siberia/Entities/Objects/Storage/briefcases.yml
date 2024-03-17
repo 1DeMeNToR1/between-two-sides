@@ -1,0 +1,77 @@
+- type: entity
+  id: RndBriefcaseSecurityHeavysuit
+  parent: RndBriefcaseBaseSecure
+  name: закрытый брифкейс
+  suffix: СБТяжёлый
+  description: Закрытый брифкейс. Невозможно уничтожить. Для открытия требуется доступ "Служба Безопасности". Содержит тяжелобронированный скафандр СБ.
+  components:
+  - type: AccessReader
+    access: [["Security"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitSecurityRndUpgraded
+      
+- type: entity
+  id: RndBriefcaseSecurityLightsuit
+  parent: RndBriefcaseBaseSecure
+  name: закрытый брифкейс
+  suffix: СБЛёгкий
+  description: Закрытый брифкейс. Невозможно уничтожить. Для открытия требуется доступ "Служба Безопасности". Содержит легкобронированный скафандр СБ.
+  components:
+  - type: AccessReader
+    access: [["Security"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitSecurityLightRndUpgraded
+      
+- type: entity
+  id: RndBriefcaseResearchhardsuit
+  parent: RndBriefcaseBaseSecure
+  name: закрытый брифкейс
+  suffix: Научный
+  description: Закрытый брифкейс. Невозможно уничтожить. Для открытия требуется доступ "Научный отдел". Содержит скафандр биологической защиты VI.
+  components:
+  - type: AccessReader
+    access: [["Research"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitRndBiologic
+      
+- type: entity
+  id: RndBriefcaseEngihardsuit
+  parent: RndBriefcaseBaseSecure
+  name: закрытый брифкейс
+  suffix: Инженерный
+  description: Закрытый брифкейс. Невозможно уничтожить. Для открытия требуется доступ "Инженерный". Содержит улучшенный инженерный скафандр.
+  components:
+  - type: AccessReader
+    access: [["Engineering"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitEngineeringRndUpgraded
+      
+- type: entity
+  id: RndBriefcaseMedicalhardsuit
+  parent: RndBriefcaseBaseSecure
+  name: закрытый брифкейс
+  suffix: Медицинский
+  description: Закрытый брифкейс. Невозможно уничтожить. Для открытия требуется доступ "Медицинский". Содержит улучшенный медицинский скафандр.
+  components:
+  - type: AccessReader
+    access: [["Medical"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitMedicalRndUpgraded
+      
+- type: entity
+  id: RndBriefcaseSalvagehardsuit
+  parent: RndBriefcaseBaseSecure
+  name: закрытый брифкейс
+  suffix: Утиль
+  description: Закрытый брифкейс. Невозможно уничтожить. Для открытия требуется доступ "Утилизаторы". Содержит улучшенный шахтёрский скафандр.
+  components:
+  - type: AccessReader
+    access: [["Salvage"]]
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitMiningRndUpgraded

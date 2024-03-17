@@ -1,0 +1,31 @@
+- type: entity
+  name: Электрический миниган
+  parent: BaseWeaponBattery
+  id: WeaponTeslaMinigun
+  description: Пу-пу-пу...
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/HMGs/minigun.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    sprite: Objects/Weapons/Guns/HMGs/minigun.rsi
+  - type: Gun
+    fireRate: 15
+    selectedMode: FullAuto
+    availableModes:
+      - SemiAuto
+      - FullAuto
+    projectileSpeed: 20
+    soundGunshot:
+      path: /Audio/Effects/Lightning/lightningshock.ogg
+      params:
+        variation: 0.2
+  - type: ProjectileBatteryAmmoProvider
+    proto: TeslaGunBullet
+    fireCost: 100
+  - type: Battery
+    maxCharge: 50000
+    startingCharge: 50000
+  - type: Appearance
