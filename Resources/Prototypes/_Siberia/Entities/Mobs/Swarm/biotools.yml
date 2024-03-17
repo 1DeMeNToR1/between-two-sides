@@ -25,7 +25,7 @@
       types:
         Blunt: 12
         Structural: 25
-        
+
 - type: entity
   name: спрей дрона роя
   parent: BaseItem
@@ -87,7 +87,7 @@
     damage:
       types:
         Blunt: 4
-        
+
 - type: entity
   name: сварочный аппарат роя
   parent: WelderIndustrial
@@ -109,7 +109,7 @@
     speed: 1.3
 
 #################### СТРУКТУРЫ РОЯ ##########################
-    
+
 - type: entity
   id: SwarmWeb
   name: покрытие роя
@@ -183,12 +183,6 @@
         Flammable: [Touch]
         Extinguish: [Touch]
     - type: SpiderWebObject
-    - type: SlowContacts
-      walkSpeedModifier: 0.5
-      sprintSpeedModifier: 0.5
-      ignoreWhitelist:
-        components:
-            - IgnoreSpiderWeb
     - type: DamageContacts
       damage:
         types:
@@ -346,7 +340,7 @@
   - type: LightningTarget
     priority: 1
 #################### РАЗНОЕ РОЯ ##########################
-    
+
 - type: statusIcon
   id: SwarmFaction
   priority: 0
@@ -363,7 +357,7 @@
     path: /Audio/Siberia/Mobs/Swarm/Borg.ogg
   exclaimSound:
     path: /Audio/Siberia/Mobs/Swarm/Borg.ogg
-          
+
 - type: entity
   abstract: true
   parent: BaseObjective
@@ -404,7 +398,7 @@
     icon:
       sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
       state: alive
-      
+
 - type: entity
   noSpawn: true
   parent: BaseGameRule
@@ -415,7 +409,7 @@
     objectives:
     - SwarmFactoryObjective
     - SwarmAdeptSurviveObjective
-    
+
 - type: hitscan
   id: SwarmLaser
   damage:
@@ -431,7 +425,7 @@
   impactFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: impact_xray
-    
+
 - type: entity
   name: disabler bolt
   id: BulletDisablerSwarm
@@ -497,7 +491,7 @@
   icon:
     sprite: Siberia/Mobs/Silicon/BioSwarm/swarmjob.rsi
     state: icon-swarm-job
-    
+
 - type: advertisementsPack
   id: SwarmAds
   advertisements:
@@ -510,7 +504,7 @@
   - advertisement-swarm-7
 
 #################### МОДУЛИ РОЯ ##########################
-          
+
 - type: entity
   id: SwarmBotBuilder
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
@@ -541,7 +535,7 @@
     - WelderSwarm
 
 #################### ХИМИКАТ РОЯ ##########################
-    
+
 - type: reagent
   id: SwarmNanomachines
   name: reagent-name-swarmnanomachines

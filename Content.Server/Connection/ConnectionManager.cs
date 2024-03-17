@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using Content.Corvax.Interfaces.Server;
 using Content.Server.Database;
@@ -83,7 +84,11 @@ namespace Content.Server.Connection
                 if (banHits is { Count: > 0 })
                     await _db.AddServerBanHitsAsync(id, banHits);
 
-                e.Deny(msg);
+                var properties = new Dictionary<string, object>();
+                if (reason == ConnectionDenyReason.Full)
+                    properties["delay"] = _cfg.GetCVar(CCVars.GameServerFullReconnectDelay);
+
+                e.Deny(new NetDenyReason(msg, properties));
             }
             else
             {
@@ -236,13 +241,11 @@ namespace Content.Server.Connection
         // Corvax-Queue-Start: Make these conditions in one place, for checks in the connection and in the queue
         public async Task<bool> HavePrivilegedJoin(NetUserId userId)
         {
-            var isAdmin = await _dbManager.GetAdminDataForAsync(userId) != null;
-            var havePriorityJoin = _sponsorsManager.TryGetInfo(userId, out var sponsor) && sponsor.HavePriorityJoin;
+            var adminBypass = _cfg.GetCVar(CCVars.AdminBypassMaxPlayers) && await _dbManager.GetAdminDataForAsync(userId) != null;
             var wasInGame = EntitySystem.TryGet<GameTicker>(out var ticker) &&
                             ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
                             status == PlayerGameStatus.JoinedGame;
-            return isAdmin ||
-                   havePriorityJoin || // Corvax-Sponsors
+            return adminBypass ||
                    wasInGame;
         }
         // Corvax-Queue-End
