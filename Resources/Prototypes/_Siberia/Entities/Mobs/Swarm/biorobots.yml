@@ -74,7 +74,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      70: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -83,13 +83,18 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 180
+        damage: 100
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 180
+        damage: 100
       behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SwarmRewardSphere:
+            min: 0
+            max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Input
@@ -408,7 +413,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      180: Dead
+      130: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -417,13 +422,18 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 250
+        damage: 160
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 250
+        damage: 160
       behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SwarmRewardSphere:
+            min: 0
+            max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: MovementIgnoreGravity
@@ -520,7 +530,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      80: Dead
+      50: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -529,13 +539,18 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 70
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 70
       behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SwarmRewardSphere:
+            min: 0
+            max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: SwarmDrone
@@ -620,6 +635,11 @@
         !type:DamageTrigger
         damage: 500
       behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SwarmRewardSphere:
+            min: 4
+            max: 5
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: ShowHealthBars
@@ -697,6 +717,8 @@
     baseWalkSpeed : 3
     baseSprintSpeed : 4
   - type: MovementIgnoreGravity
+  - type: Body
+    prototype: SwarmBot
 
 ######################### СТРАЖ АДЕПТА РОЯ #############################
 
@@ -794,7 +816,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      180: Dead
+      100: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -803,12 +825,12 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 240
+        damage: 120
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 240
+        damage: 120
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -840,7 +862,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      80: Dead
+      70: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -849,13 +871,18 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 100
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 100
       behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SwarmRewardSphere:
+            min: 0
+            max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
@@ -911,7 +938,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      140: Dead
+      100: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -920,13 +947,18 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 150
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 150
       behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SwarmRewardSphere:
+            min: 0
+            max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       
@@ -954,7 +986,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      80: Dead
+      50: Dead
     stateAlertDict:
       Alive: BorgHealth
       Dead: BorgDead
@@ -963,13 +995,18 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 100
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 100
       behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SwarmRewardSphere:
+            min: 0
+            max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
         

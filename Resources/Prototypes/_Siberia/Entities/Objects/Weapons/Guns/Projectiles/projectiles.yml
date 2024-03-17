@@ -1,0 +1,51 @@
+- type: entity
+  name : disabler bolt
+  id: BulletHealgun
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Sprite
+    sprite: Siberia/Objects/Weapons/Guns/Projectiles/healgun_bullet.rsi
+    layers:
+    - state: healgun
+      shader: unshaded
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.3,0.15,0.3"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+  - type: Ammo
+  - type: StaminaDamageOnCollide
+    damage: 10
+  - type: Projectile
+    impactEffect: BulletImpactEffectHealgun
+    damage:
+      types:
+        Heat: -10
+        Asphyxiation: -10
+        Bloodloss: -10
+        Blunt: -15
+        Caustic: -10
+        Cold: -10
+        Piercing: -15
+        Poison: -10
+        Radiation: -10
+        Shock: -10
+        Slash: -15
+    soundHit:
+      collection: WeakHit
+    forceSound: true

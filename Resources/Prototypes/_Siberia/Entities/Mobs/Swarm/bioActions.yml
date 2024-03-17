@@ -4,7 +4,7 @@
   noSpawn: true
   components:
   - type: InstantAction
-    useDelay: 60
+    useDelay: 120
     icon:
       sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
       state: alive
