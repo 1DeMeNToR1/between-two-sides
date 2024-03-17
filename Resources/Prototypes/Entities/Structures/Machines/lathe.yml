@@ -326,6 +326,7 @@
       - BlueSpacePillCanister # Siberia-change
       - AdvancedAtmosHoloprojector # Siberia-change
       - AdvancedSecurityHoloprojector # Siberia-change
+      - HealgunRecipe # Siberia-change
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
