@@ -10,7 +10,7 @@
     proto: CartridgeMagnum
     capacity: 10
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Magnum/mag_ash.rsi
+    sprite: Siberia/Objects/Weapons/Guns/Ammunition/Magazine/Rifles/mag_ash.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
