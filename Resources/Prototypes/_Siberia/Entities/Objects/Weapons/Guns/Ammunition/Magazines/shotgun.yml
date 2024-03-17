@@ -3,6 +3,9 @@
   name: магазин для сайги
   parent: BaseMagazineShotgun
   components:
+  - type: Tag
+    tags:
+      - MagazineSaiga12
   - type: BallisticAmmoProvider
     proto: ShellShotgun
   - type: Sprite

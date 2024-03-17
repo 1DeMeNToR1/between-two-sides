@@ -1272,3 +1272,6 @@
 # Siberia-changes
 - type: Tag
   id: MagazineSaiga12
+
+- type: Tag
+  id: MagazineAssaultRifle

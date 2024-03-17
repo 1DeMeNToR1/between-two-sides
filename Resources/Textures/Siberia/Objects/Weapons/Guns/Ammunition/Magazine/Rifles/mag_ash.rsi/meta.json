@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Sprited for Siberia SS14 by rogolistnik aka Pigeon183 (DS)",
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "mag-1"
+        }
+    ]
+}
