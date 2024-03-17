@@ -26,6 +26,7 @@
   - Mime
   - Musician
   - Passenger
+  - Detective
   - Reporter
   - Visitor
   - Zookeeper
@@ -80,7 +81,6 @@
   - HeadOfSecurity
   - SecurityCadet
   - SecurityOfficer
-  - Detective
   - Warden
   - Brigmedic
   - SeniorOfficer
