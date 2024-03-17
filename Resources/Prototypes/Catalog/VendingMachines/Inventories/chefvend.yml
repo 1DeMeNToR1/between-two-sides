@@ -11,6 +11,8 @@
     FoodCondimentBottleKetchup: 1
     FoodCondimentBottleBBQ: 1
     FoodCondimentBottleVinegar: 2
+    FoodTinСondensedMilk: 3 # Siberia-change
+    FoodTinOlivki: 3 # Siberia-change
     ReagentContainerOliveoil: 2
     ReagentContainerMayo: 1
     VariantCubeBox: 1
@@ -20,4 +22,4 @@
     FoodButter: 4
     FoodCheese: 1
     FoodMeat: 6
-    
+

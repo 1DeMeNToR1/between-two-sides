@@ -1,7 +1,7 @@
 - type: entity
   parent: FoodTinBase
   id: FoodTinСondensedMilk
-  name: Сгущёнка
+  name: сгущёнка
   description: Вкус детства.
   components:
   - type: Sprite
@@ -17,7 +17,7 @@
 - type: entity
   parent: FoodTinBaseTrash
   id: FoodTinСondensedMilkTrash
-  name: Сгущёнка
+  name: сгущёнка
   components:
   - type: Sprite
     sprite: Siberia/Objects/Consumable/Food/Tins/condensedmilk.rsi
@@ -26,7 +26,7 @@
 - type: entity
   parent: FoodTinBase
   id: FoodTinOlivki
-  name: Оливки
+  name: консервированные оливки
   description: Маслины.
   components:
   - type: Sprite
@@ -42,7 +42,7 @@
 - type: entity
   parent: FoodTinBaseTrash
   id: FoodTinOlivkiTrash
-  name: Оливки
+  name: консервированные оливки
   components:
   - type: Sprite
     sprite: Siberia/Objects/Consumable/Food/Tins/olivki.rsi
