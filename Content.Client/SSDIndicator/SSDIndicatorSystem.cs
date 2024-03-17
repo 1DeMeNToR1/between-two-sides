@@ -34,9 +34,11 @@ public sealed class SSDIndicatorSystem : EntitySystem
             !_mobState.IsDead(uid) &&
             !HasComp<ActiveNPCComponent>(uid) &&
             TryComp<MindContainerComponent>(uid, out var mindContainer) &&
-            mindContainer.ShowExamineInfo)
+            mindContainer.ShowExamineInfo);
+/* Siberia-change start
         {
             args.StatusIcons.Add(_prototype.Index<StatusIconPrototype>(component.Icon));
         }
+*/ // Siberia-change end
     }
 }

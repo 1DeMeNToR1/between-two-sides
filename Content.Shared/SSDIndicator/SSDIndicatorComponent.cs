@@ -1,4 +1,5 @@
-﻿using Content.Shared.StatusIcon;
+﻿
+using Content.Shared.StatusIcon;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
@@ -14,8 +15,10 @@ public sealed partial class SSDIndicatorComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
     public bool IsSSD = true;
-
-    [ViewVariables(VVAccess.ReadWrite)]
+/* Siberia-change start
+   [ViewVariables(VVAccess.ReadWrite)]
     [DataField("icon", customTypeSerializer: typeof(PrototypeIdSerializer<StatusIconPrototype>))]
     public string Icon = "SSDIcon";
+*/ // Siberia-change end
 }
+
