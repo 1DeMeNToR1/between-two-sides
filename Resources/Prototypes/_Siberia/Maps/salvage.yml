@@ -14,3 +14,11 @@
 - type: salvageMap
   id: SnakeMine
   mapPath: /Maps/Siberia/Salvage/snake-mine.yml
+
+- type: salvageMap
+  id: BaseScienceRND
+  mapPath: /Maps/Siberia/Salvage/base-science-rnd.yml
+
+- type: salvageMap
+  id: WildWestBar
+  mapPath: /Maps/Siberia/Salvage/wild-west-bar.yml
