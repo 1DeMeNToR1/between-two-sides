@@ -61,7 +61,7 @@ public sealed class AdvHolofanSystem : EntitySystem
             var doafterArgs = new DoAfterArgs(EntityManager, args.User, component.HolofanCreationDelay, new AdvHolofanDoAfterEvent(), uid, used: uid)
             {
                 BreakOnDamage = true,
-                BreakOnUserMove = true,
+                BreakOnMove = true,
                 MovementThreshold = 0.5f,
             };
 
