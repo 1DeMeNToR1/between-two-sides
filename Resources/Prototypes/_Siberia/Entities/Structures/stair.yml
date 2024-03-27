@@ -41,7 +41,7 @@
     drawdepth: FloorTiles
 
 - type: entity
-  id: StairWood
+  id: StairWoodAlt
   name: деревянные ступеньки
   parent: Stairs
   components:
