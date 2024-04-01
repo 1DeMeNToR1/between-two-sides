@@ -7,7 +7,7 @@
     layers:
       - state: red
       - sprite: Mobs/Animals/mouse.rsi
-        state: mouse-3
+        state: mouse-2
   - type: RandomSpawner
     prototypes:
       - MobFleshGolem

@@ -105,8 +105,7 @@ public sealed class SwarmRCDSystem : EntitySystem
             BreakOnDamage = true,
             NeedHand = true,
             BreakOnHandChange = true,
-            BreakOnUserMove = true,
-            BreakOnTargetMove = args.Target != null,
+            BreakOnMove = true,
             AttemptFrequency = AttemptFrequency.EveryTick
         };
 
