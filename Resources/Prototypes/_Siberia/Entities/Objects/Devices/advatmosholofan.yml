@@ -9,6 +9,8 @@
     layers:
     - state: icon
   - type: AdvHolofan
+    maxProjectors: 5
+    signProto: AdvancedAtmosHoloFan
 
 - type: entity
   id: AdvancedAtmosHoloFan
