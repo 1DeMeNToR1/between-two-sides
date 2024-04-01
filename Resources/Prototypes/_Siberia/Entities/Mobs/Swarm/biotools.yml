@@ -492,9 +492,9 @@
     sprite: Siberia/Mobs/Silicon/BioSwarm/swarmjob.rsi
     state: icon-swarm-job
 
-- type: advertisementsPack
+- type: messagePack
   id: SwarmAds
-  advertisements:
+  messages:
   - advertisement-swarm-1
   - advertisement-swarm-2
   - advertisement-swarm-3
