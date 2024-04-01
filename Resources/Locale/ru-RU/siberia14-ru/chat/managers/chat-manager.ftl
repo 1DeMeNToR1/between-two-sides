@@ -1,3 +1,4 @@
+chat-speech-verb-name-resomi = Резоми
 chat-speech-verb-resomi-1 = щебечет
 chat-speech-verb-resomi-2 = чирикает
 chat-speech-verb-resomi-3 = чивикает
