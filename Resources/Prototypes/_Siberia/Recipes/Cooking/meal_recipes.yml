@@ -22,3 +22,17 @@
   solids:
     FoodCakePlain: 1
     FoodMeatSpider: 2
+
+# Еда из уличных собачек и кошечек
+    
+- type: microwaveMealRecipe
+  id: RecipeShava
+  name: рецепт шаурмы
+  result: FoodShava
+  time: 15
+  reagents:
+    Mayo: 5
+  solids:
+    FoodCabbage: 1
+    FoodMeatCutlet: 2
+    FoodTomato: 1    
