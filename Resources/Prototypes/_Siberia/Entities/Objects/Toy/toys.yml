@@ -150,3 +150,14 @@
   - type: Sprite
     sprite: Siberia/Objects/Toy/plushievolk.rsi
     state: plushievolk
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieNutra
+  name: Плюшевая Нутра
+  description: Плюшевая унатха в должности утилизатора, для поднятия морального духа самим рабочим карго.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushenutra.rsi
+    state: unati
+    
