@@ -30,7 +30,6 @@
   - Reporter
   - Visitor
   - Zookeeper
-  - Detective
   - ServiceWorker
 
 - type: department
