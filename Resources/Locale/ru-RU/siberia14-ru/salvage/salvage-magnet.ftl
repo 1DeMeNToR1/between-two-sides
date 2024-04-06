@@ -11,3 +11,4 @@ salvage-map-proto-BaseScienceRND = Научная база
 salvage-map-proto-WildWestBar = Бар дикого запада
 salvage-map-proto-ChurchOfCult = Церковь культа
 salvage-map-proto-LonelyEngineer = Одинокий инженер
+salvage-map-proto-PartsOfStations = Части станций

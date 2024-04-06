@@ -30,3 +30,8 @@
 - type: salvageMap
   id: LonelyEngineer
   mapPath: /Maps/Siberia/Salvage/lonely-engineer.yml
+
+- type: salvageMap
+  id: PartsOfStations
+  mapPath: /Maps/Siberia/Salvage/parts-of-stations.yml
+  
