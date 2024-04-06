@@ -1,0 +1,29 @@
+- type: entity
+  name: Shava
+  parent: FoodBreadSliceBase
+  id: FoodShava
+  description: desc.
+  components:
+  - type: Food
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - cheap
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/shava.rsi
+    layers:
+    - state: icon
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
