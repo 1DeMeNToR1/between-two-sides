@@ -179,3 +179,42 @@
   - type: EmitSoundOnTrigger
     sound:
       path: /Audio/Voice/Reptilian/reptilian_scream.ogg  
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieResomiColour
+  name: плюшевая резоми
+  description: Выглядит немного боязливой.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_resomi.rsi
+    state: icon
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Siberia/Voice/Resomi/resomi_laugh.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg   
+
+- type: entity
+  parent: PlushieResomiColour
+  id: PlushieResomiBlack
+  name: плюшевая резоми
+  description: Выглядит немного боязливой.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_resomi.rsi
+    state: icon-black   
