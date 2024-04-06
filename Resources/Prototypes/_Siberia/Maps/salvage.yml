@@ -27,3 +27,6 @@
   id: ChurchOfCult
   mapPath: /Maps/Siberia/Salvage/church-of-cult.yml
   
+- type: salvageMap
+  id: LonelyEngineer
+  mapPath: /Maps/Siberia/Salvage/lonely-engineer.yml
