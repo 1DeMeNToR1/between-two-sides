@@ -22,3 +22,8 @@
 - type: salvageMap
   id: WildWestBar
   mapPath: /Maps/Siberia/Salvage/wild-west-bar.yml
+
+- type: salvageMap
+  id: ChurchOfCult
+  mapPath: /Maps/Siberia/Salvage/church-of-cult.yml
+  
