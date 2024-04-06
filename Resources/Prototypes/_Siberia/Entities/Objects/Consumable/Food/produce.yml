@@ -1,0 +1,30 @@
+- type: entity
+  name: mandarine
+  parent: FoodProduceBase
+  id: FoodMandarine
+  description: It's a little piece of Eden.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - mandarine
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 7
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: Siberia/Objects/Specific/Hydroponics/mandarine.rsi
+  - type: Produce
+    seedId: mandarine
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceMandarine
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit

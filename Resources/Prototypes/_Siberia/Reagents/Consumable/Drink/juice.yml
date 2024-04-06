@@ -1,0 +1,8 @@
+- type: reagent
+  id: JuiceMandarine
+  name: reagent-name-juice-mandarine
+  parent: BaseDrink
+  desc: reagent-desc-juice-mandarine
+  physicalDesc: reagent-physical-desc-tropical
+  flavor: mandarine
+  color: orange
