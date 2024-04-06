@@ -2,3 +2,9 @@
   id: copper
   flavorType: Base
   description: flavor-base-copper
+  
+- type: flavor
+  id: mandarine
+  flavorType: Base
+  description: flavor-complex-mandarine
+  

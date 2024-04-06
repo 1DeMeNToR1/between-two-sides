@@ -1,0 +1,9 @@
+- type: entity
+  parent: SeedBase
+  name: packet of cotton seeds
+  id: MandarineSeeds
+  components:
+    - type: Seed
+      seedId: mandarine
+    - type: Sprite
+      sprite: Siberia/Objects/Specific/Hydroponics/mandarine.rsi
