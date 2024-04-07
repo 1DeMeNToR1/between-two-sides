@@ -8,9 +8,12 @@
   description: Базовое описание атмоса
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_world
+    - state: paper
+    - state: cover_strong
+      color: "#680086"
+    - state: icon_planet
   - type: Paper
     content: book-frizone-1
 
@@ -25,9 +28,12 @@
   description: Описание возможных практических случаев и способов их решения
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_world
+    - state: paper
+    - state: cover_strong
+      color: "#680086"
+    - state: icon_planet
   - type: Paper
     content: book-frizone-2
 
@@ -42,9 +48,12 @@
   description: Поймет далеко не каждый
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_world
+    - state: paper
+    - state: cover_strong
+      color: "#680086"
+    - state: icon_planet
   - type: Paper
     content: book-frizone-3
 # ---- End Library Salvage Fills ----
@@ -59,9 +68,12 @@
   description: это точно не безопасно!
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_world
+    - state: paper
+    - state: cover_strong
+      color: "#680086"
+    - state: icon_planet
   - type: Paper
     content: book-frizone-4  
 

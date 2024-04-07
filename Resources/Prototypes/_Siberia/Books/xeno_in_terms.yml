@@ -8,6 +8,8 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
-    - state: book4
+    - state: paper
+    - state: cover_strong
+      color: "#004766"
   - type: Paper
     content: book-xeno-in-terms

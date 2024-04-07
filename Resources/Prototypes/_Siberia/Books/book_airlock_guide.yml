@@ -6,9 +6,12 @@
   description: Шлюзы и с чем их едят. На книге изображен стеклянный шлюз мостика, за которым стоит черная фигура.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_scmmd
+    - state: paper
+    - state: cover_base
+      color: "#00004e"
+    - state: icon_scmmd
   - type: Paper
     content: book-airlock-guide-1
 
@@ -20,8 +23,11 @@
   description: Шлюзы и с чем их едят. На книге изображен стеклянный шлюз мостика, за которым стоит черная фигура.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_scmmd
+    - state: paper
+    - state: cover_base
+      color: "#00004e"
+    - state: icon_scmmd
   - type: Paper
     content: book-airlock-guide-2

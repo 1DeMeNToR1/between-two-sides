@@ -6,8 +6,12 @@
   description: Реакции малой глубины и их удержание.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_names
+    - state: paper
+    - state: cover_strong
+      color: "#636363"
+    - state: icon_letter_N
+      color: "#464646"
   - type: Paper
     content: book-xen-2

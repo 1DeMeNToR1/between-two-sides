@@ -8,6 +8,9 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_detective
+    - state: paper
+    - state: cover_strong
+      color: "#87011c"
+    - state: icon_magnifier
   - type: Paper
     content: book-kadiua

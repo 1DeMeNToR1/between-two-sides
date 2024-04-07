@@ -6,8 +6,12 @@
   description: Пособник по использованию РИТЭГа
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_struck
+    - state: paper
+    - state: cover_strong
+      color: "#3d3131"
+    - state: icon_lightning
+      color: "#f9e766"
   - type: Paper
     content: book-riteg

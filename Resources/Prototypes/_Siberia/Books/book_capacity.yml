@@ -6,8 +6,11 @@
   description: На заднем плане обложки книги виден большой ангар, на переднем же плане виден человек в капитанском костюме.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_aurora
+    - state: paper
+    - state: cover_strong
+      color: "#161616"
+    - state: icon_aurora
   - type: Paper
     content: book-capacity

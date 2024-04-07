@@ -8,9 +8,12 @@
   description: На обложке книги изображен крест, а также её название большими буквами.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_medical
+    - state: paper
+    - state: cover_strong
+    - state: icon_medical_cross
+      color: "#476ecc"
   - type: Paper
     content: book-cancer-guide-1
 
@@ -24,8 +27,11 @@
   description: На обложке книги изображен крест, а также её название большими буквами.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_medical
+    - state: paper
+    - state: cover_strong
+    - state: icon_medical_cross
+      color: "#476ecc"
   - type: Paper
     content: book-cancer-guide-2
