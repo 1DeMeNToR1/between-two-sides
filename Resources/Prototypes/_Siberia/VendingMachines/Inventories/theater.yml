@@ -47,7 +47,7 @@
     ClothingHeadHatGladiator: 1
     ClothingUniformJumpsuitGladiator: 1
 
-    ClothingHeadHatHairflower: 1 # Добавил в ТеатроШкаф эти 3 вещи в единственном экземпляре
+    # Добавил в ТеатроШкаф эти 3 вещи в единственном экземпляре
     ClothingNeckCloakFreedomCloak: 1
     ClothingNeckCloakGoliathCloak: 1
     ClothingNeckCloakMoth: 1
