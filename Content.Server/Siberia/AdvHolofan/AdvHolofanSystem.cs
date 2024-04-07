@@ -4,6 +4,7 @@ using Robust.Server.Audio;
 using Content.Shared.Siberia.AdvHolofan;
 using Content.Shared.Storage;
 using Content.Shared.Coordinates.Helpers;
+using Content.Shared.Interaction.Events;
 
 namespace Content.Server.Siberia.AdvHolofan;
 
@@ -12,29 +13,42 @@ public sealed class AdvHolofanSystem : EntitySystem
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
 
-    private readonly List<EntityUid> Signs = new();
-
     public override void Initialize()
     {
         SubscribeLocalEvent<AdvHolofanComponent, BeforeRangedInteractEvent>(OnBeforeInteract);
         SubscribeLocalEvent<AdvHolofanComponent, ExaminedEvent>(OnExamine);
+        SubscribeLocalEvent<AdvHolofanComponent, UseInHandEvent>(OnUseInHand);
     }
 
     private void OnExamine(EntityUid uid, AdvHolofanComponent comp, ExaminedEvent args)
     {
         using (args.PushGroup(nameof(AdvHolofanComponent)))
         {
-            args.PushMarkup(Loc.GetString("actived-signs", ("count", Signs.Count)));
+            args.PushMarkup(Loc.GetString("actived-signs", ("count", comp.Signs.Count)));
 
-            if (Signs.Count == 0)
+            if (comp.Signs.Count == 0)
             {
                 args.PushMarkup(Loc.GetString("max-holo-signs"));
             }
         }
     }
+    private void OnUseInHand(EntityUid uid, AdvHolofanComponent comp, UseInHandEvent args)
+    {
+        if (comp.Signs.Count > 0)
+        {
+            foreach (var holo in comp.Signs)
+            {
+                QueueDel(holo);
+            }
 
+            comp.Signs.Clear();
+            _audio.PlayPvs(comp.ClearHolofansSound, uid);
+        }
 
-    private void OnBeforeInteract(EntityUid uid, AdvHolofanComponent component, BeforeRangedInteractEvent args)
+        args.Handled = true;
+    }
+
+    private void OnBeforeInteract(EntityUid uid, AdvHolofanComponent comp, BeforeRangedInteractEvent args)
     {
         if (args.Handled
             || !args.CanReach // prevent placing out of range
@@ -42,27 +56,26 @@ public sealed class AdvHolofanSystem : EntitySystem
            )
             return;
 
-        if (Signs.Count == component.MaxProjectors)
+        if (comp.Signs.Count == comp.MaxProjectors)
         {
-            foreach (var holo in Signs)
+            foreach (var holo in comp.Signs)
             {
                 QueueDel(holo);
             }
-            Signs.Clear();
-            _audio.PlayPvs(component.ClearHolofansSound, uid);
+            comp.Signs.Clear();
+            _audio.PlayPvs(comp.ClearHolofansSound, uid);
         }
-        else
-        {
-            var holoUid = EntityManager.SpawnEntity(component.SignProto, args.ClickLocation.SnapToGrid(EntityManager));
-            var xform = Transform(holoUid);
-            if (!xform.Anchored)
-                _transform.AnchorEntity(holoUid, xform); // anchor to prevent any tempering with (don't know what could even interact with it)
 
-            args.Handled = true;
+        var holoUid = EntityManager.SpawnEntity(comp.SignProto, args.ClickLocation.SnapToGrid(EntityManager));
+        var xform = Transform(holoUid);
+        if (!xform.Anchored)
+            _transform.AnchorEntity(holoUid, xform); // anchor to prevent any tempering with (don't know what could even interact with it)
 
-            _audio.PlayPvs(component.NewHolofanSound, uid);
-            Signs.Add(holoUid);
+        args.Handled = true;
 
-        }
+        _audio.PlayPvs(comp.NewHolofanSound, uid);
+        comp.Signs.Add(holoUid);
+
+
     }
 }

@@ -18,6 +18,8 @@ public sealed partial class AdvHolofanComponent : Component
     [DataField("signProto", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string SignProto = "HolosignWetFloor";
 
+    public List<EntityUid> Signs = new();
+
     [DataField(required: true)]
     public int MaxProjectors = default!;
 
