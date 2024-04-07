@@ -1,133 +1,81 @@
-using Content.Server.Administration.Logs;
-using Content.Shared.DoAfter;
-using Content.Shared.Database;
-using Content.Shared.Interaction.Events;
-using Content.Shared.Teleportation.Systems;
+using Content.Shared.Examine;
+using Content.Shared.Interaction;
 using Robust.Server.Audio;
 using Content.Shared.Siberia.AdvHolofan;
+using Content.Shared.Storage;
+using Content.Shared.Coordinates.Helpers;
+using Content.Shared.Interaction.Events;
 
 namespace Content.Server.Siberia.AdvHolofan;
 
 public sealed class AdvHolofanSystem : EntitySystem
 {
-    [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly LinkedEntitySystem _link = default!;
     [Dependency] private readonly AudioSystem _audio = default!;
-    [Dependency] private readonly SharedDoAfterSystem _doafter = default!;
+    [Dependency] private readonly SharedTransformSystem _transform = default!;
 
     public override void Initialize()
     {
+        SubscribeLocalEvent<AdvHolofanComponent, BeforeRangedInteractEvent>(OnBeforeInteract);
+        SubscribeLocalEvent<AdvHolofanComponent, ExaminedEvent>(OnExamine);
         SubscribeLocalEvent<AdvHolofanComponent, UseInHandEvent>(OnUseInHand);
-        SubscribeLocalEvent<AdvHolofanComponent, AdvHolofanDoAfterEvent>(OnDoAfter);
     }
 
-    private void OnDoAfter(EntityUid uid, AdvHolofanComponent component, DoAfterEvent args)
+    private void OnExamine(EntityUid uid, AdvHolofanComponent comp, ExaminedEvent args)
     {
-        if (args.Cancelled || args.Handled)
-            return;
+        using (args.PushGroup(nameof(AdvHolofanComponent)))
+        {
+            args.PushMarkup(Loc.GetString("actived-signs", ("count", comp.Signs.Count)));
 
-        HandleHolofanUpdating(uid, component, args.Args.User);
+            if (comp.Signs.Count == 0)
+            {
+                args.PushMarkup(Loc.GetString("max-holo-signs"));
+            }
+        }
+    }
+    private void OnUseInHand(EntityUid uid, AdvHolofanComponent comp, UseInHandEvent args)
+    {
+        if (comp.Signs.Count > 0)
+        {
+            foreach (var holo in comp.Signs)
+            {
+                QueueDel(holo);
+            }
+
+            comp.Signs.Clear();
+            _audio.PlayPvs(comp.ClearHolofansSound, uid);
+        }
 
         args.Handled = true;
     }
 
-    private void OnUseInHand(EntityUid uid, AdvHolofanComponent component, UseInHandEvent args)
+    private void OnBeforeInteract(EntityUid uid, AdvHolofanComponent comp, BeforeRangedInteractEvent args)
     {
-        if (Deleted(component.FirstHolofan))
-            component.FirstHolofan = null;
-
-        if (Deleted(component.SecondHolofan))
-            component.SecondHolofan = null;
-
-        if (Deleted(component.ThirdHolofan))
-            component.ThirdHolofan = null;
-
-        if (Deleted(component.FourthHolofan))
-            component.FourthHolofan = null;
-
-        if (Deleted(component.FifthHolofan))
-            component.FifthHolofan = null;
-
-        if (component.FirstHolofan != null && component.SecondHolofan != null && component.ThirdHolofan != null && component.FourthHolofan != null && component.FifthHolofan != null)
-        {
-            HandleHolofanUpdating(uid, component, args.User);
-        }
-        else
-        {
-            var xform = Transform(args.User);
-            if (xform.ParentUid != xform.GridUid)
-                return;
-
-            var doafterArgs = new DoAfterArgs(EntityManager, args.User, component.HolofanCreationDelay, new AdvHolofanDoAfterEvent(), uid, used: uid)
-            {
-                BreakOnDamage = true,
-                BreakOnMove = true,
-                MovementThreshold = 0.5f,
-            };
-
-            _doafter.TryStartDoAfter(doafterArgs);
-        }
-    }
-
-    private void HandleHolofanUpdating(EntityUid uid, AdvHolofanComponent component, EntityUid user)
-    {
-        if (Deleted(user))
+        if (args.Handled
+            || !args.CanReach // prevent placing out of range
+            || HasComp<StorageComponent>(args.Target) // if it's a storage component like a bag, we ignore usage so it can be stored
+           )
             return;
 
-        var xform = Transform(user);
+        if (comp.Signs.Count == comp.MaxProjectors)
+        {
+            foreach (var holo in comp.Signs)
+            {
+                QueueDel(holo);
+            }
+            comp.Signs.Clear();
+            _audio.PlayPvs(comp.ClearHolofansSound, uid);
+        }
 
-        if (Deleted(component.FirstHolofan) && Deleted(component.SecondHolofan) && Deleted(component.ThirdHolofan) && Deleted(component.FourthHolofan) && Deleted(component.FifthHolofan))
-        {
+        var holoUid = EntityManager.SpawnEntity(comp.SignProto, args.ClickLocation.SnapToGrid(EntityManager));
+        var xform = Transform(holoUid);
+        if (!xform.Anchored)
+            _transform.AnchorEntity(holoUid, xform); // anchor to prevent any tempering with (don't know what could even interact with it)
 
-            if (xform.ParentUid != xform.GridUid)
-                return;
+        args.Handled = true;
 
-            component.FirstHolofan = Spawn(component.FirstHolofanPrototype, Transform(user).Coordinates);
-            _adminLogger.Add(LogType.EntitySpawn, LogImpact.Low, $"{ToPrettyString(user):player} opened {ToPrettyString(component.FirstHolofan.Value)} at {Transform(component.FirstHolofan.Value).Coordinates} using {ToPrettyString(uid)}");
-            _audio.PlayPvs(component.NewHolofanSound, uid);
-        }
-        else if (Deleted(component.SecondHolofan))
-        {
-            component.SecondHolofan = Spawn(component.SecondHolofanPrototype, Transform(user).Coordinates);
-            _adminLogger.Add(LogType.EntitySpawn, LogImpact.Low, $"{ToPrettyString(user):player} opened {ToPrettyString(component.SecondHolofan.Value)} at {Transform(component.SecondHolofan.Value).Coordinates} linked to {ToPrettyString(component.FirstHolofan!.Value)} using {ToPrettyString(uid)}");
-            _link.TryLink(component.FirstHolofan!.Value, component.SecondHolofan.Value, true);
-            _audio.PlayPvs(component.NewHolofanSound, uid);
-        }
-        else if (Deleted(component.ThirdHolofan))
-        {
-            component.ThirdHolofan = Spawn(component.ThirdHolofanPrototype, Transform(user).Coordinates);
-            _adminLogger.Add(LogType.EntitySpawn, LogImpact.Low, $"{ToPrettyString(user):player} opened {ToPrettyString(component.ThirdHolofan.Value)} at {Transform(component.ThirdHolofan.Value).Coordinates} linked to {ToPrettyString(component.SecondHolofan!.Value)} using {ToPrettyString(uid)}");
-            _link.TryLink(component.SecondHolofan!.Value, component.ThirdHolofan.Value, true);
-            _audio.PlayPvs(component.NewHolofanSound, uid);
-        }
-        else if (Deleted(component.FourthHolofan))
-        {
-            component.FourthHolofan = Spawn(component.FourthHolofanPrototype, Transform(user).Coordinates);
-            _adminLogger.Add(LogType.EntitySpawn, LogImpact.Low, $"{ToPrettyString(user):player} opened {ToPrettyString(component.FourthHolofan.Value)} at {Transform(component.FourthHolofan.Value).Coordinates} linked to {ToPrettyString(component.ThirdHolofan!.Value)} using {ToPrettyString(uid)}");
-            _link.TryLink(component.ThirdHolofan!.Value, component.FourthHolofan.Value, true);
-            _audio.PlayPvs(component.NewHolofanSound, uid);
-        }
-        else if (Deleted(component.FifthHolofan))
-        {
-            component.FifthHolofan = Spawn(component.FifthHolofanPrototype, Transform(user).Coordinates);
-            _adminLogger.Add(LogType.EntitySpawn, LogImpact.Low, $"{ToPrettyString(user):player} opened {ToPrettyString(component.FifthHolofan.Value)} at {Transform(component.FifthHolofan.Value).Coordinates} linked to {ToPrettyString(component.FourthHolofan!.Value)} using {ToPrettyString(uid)}");
-            _link.TryLink(component.FourthHolofan!.Value, component.FifthHolofan.Value, true);
-            _audio.PlayPvs(component.NewHolofanSound, uid);
-        }
-        else
-        {
-            QueueDel(component.FirstHolofan!.Value);
-            QueueDel(component.SecondHolofan!.Value);
-            QueueDel(component.ThirdHolofan!.Value);
-            QueueDel(component.FourthHolofan!.Value);
-            QueueDel(component.FifthHolofan!.Value);
+        _audio.PlayPvs(comp.NewHolofanSound, uid);
+        comp.Signs.Add(holoUid);
 
-            component.FirstHolofan = null;
-            component.SecondHolofan = null;
-            component.ThirdHolofan = null;
-            component.FourthHolofan = null;
-            component.FifthHolofan = null;
-            _audio.PlayPvs(component.ClearHolofansSound, uid);
-        }
+
     }
 }

@@ -9,11 +9,8 @@
     layers:
     - state: icon
   - type: AdvHolofan
-    firstHolofanPrototype: AdvHolosignSecurity
-    secondHolofanPrototype: AdvHolosignSecurity
-    thirdHolofanPrototype: AdvHolosignSecurity
-    fourthHolofanPrototype: AdvHolosignSecurity
-    fifthHolofanPrototype: AdvHolosignSecurity
+    maxProjectors: 5
+    signProto: AdvHolosignSecurity
 
 - type: entity
   id: AdvHolosignSecurity
