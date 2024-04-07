@@ -1,0 +1,36 @@
+- type: entity
+  parent: BaseItem
+  id: FoldingFan
+  name: веер
+  description: Изящный веер для дам желающих воссоздать атмосферу аристократического бала.
+  components:
+    - type: ItemToggle
+      soundActivate:
+        path: /Audio/Weapons/Guns/Misc/arrow_nock.ogg
+      soundDeactivate:
+        path: /Audio/Weapons/Guns/Misc/arrow_nock.ogg
+    - type: ItemToggleSize
+      activatedSize: Huge
+    - type: ItemToggleDisarmMalus
+      activatedDisarmMalus: 1.0
+    - type: Sprite
+      sprite: Siberia/Objects/Misc/folding_fan.rsi
+      layers:
+        - state: folding_fan_off
+        - state: folding_fan_on
+          visible: false
+          map: [ "shield" ]
+    - type: Item
+      size: Small
+      sprite: Siberia/Objects/Misc/folding_fan.rsi
+      heldPrefix: off
+    - type: UseDelay
+      delay: 0.6
+    - type: ToggleableLightVisuals
+      spriteLayer: shield
+      inhandVisuals:
+        left:
+          - state: on-inhand-left
+        right:
+          - state: on-inhand-right
+    - type: Appearance
