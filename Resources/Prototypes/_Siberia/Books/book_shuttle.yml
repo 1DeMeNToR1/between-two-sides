@@ -12,6 +12,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_old
       color: "#202020"
   - type: Paper
@@ -29,6 +30,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_old
       color: "#202020"
   - type: Paper
@@ -46,6 +48,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_old
       color: "#202020"
   - type: Paper
@@ -63,6 +66,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_old
       color: "#202020"
   - type: Paper
@@ -80,6 +84,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_old
       color: "#202020"
   - type: Paper

@@ -8,6 +8,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_base
       color: "#00004e"
     - state: icon_scmmd
@@ -24,6 +25,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_base
       color: "#00004e"
     - state: icon_scmmd

@@ -12,6 +12,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_strong
       color: "#659dd4"
     - state: icon_skull

@@ -10,6 +10,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_strong
     - state: icon_medical_cross
       color: "#476ecc"
@@ -28,6 +29,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_strong
     - state: icon_medical_cross
       color: "#476ecc"

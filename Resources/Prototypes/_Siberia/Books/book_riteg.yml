@@ -8,6 +8,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_strong
       color: "#3d3131"
     - state: icon_lightning

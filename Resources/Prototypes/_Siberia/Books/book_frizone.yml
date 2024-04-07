@@ -10,6 +10,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_strong
       color: "#680086"
     - state: icon_planet
@@ -29,6 +30,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_strong
       color: "#680086"
     - state: icon_planet
@@ -48,6 +50,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_strong
       color: "#680086"
     - state: icon_planet
@@ -67,6 +70,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
+    - state: paper
     - state: cover_strong
       color: "#680086"
     - state: icon_planet
