@@ -1,12 +1,12 @@
 # IPC emotes
-- type: emote
-  id: Beep
-  category: Vocal
-  chatMessages: [пикает]
-  chatTriggers:
-    - пикает
-    - пикает.
-    - пикает!
+# - type: emote
+  # id: Beep
+  # category: Vocal
+  # chatMessages: [пикает]
+  # chatTriggers:
+    # - пикает
+    # - пикает.
+    # - пикает!
 
 - type: emote
   id: Boop
@@ -21,15 +21,15 @@
     - бупс.
     - боп!
 
-- type: emote
-  id: Ping
-  category: Vocal
-  chatMessages: [пингует]
-  chatTriggers:
-    - пинг
-    - пингует
-    - пингует.
-    - пингует!
+# - type: emote
+  # id: Ping
+  # category: Vocal
+  # chatMessages: [пингует]
+  # chatTriggers:
+    # - пинг
+    # - пингует
+    # - пингует.
+    # - пингует!
 
 - type: emote
   id: Pilik
