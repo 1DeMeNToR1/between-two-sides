@@ -112,6 +112,13 @@
     ClothingUniformUrbanCamouflage3: 2
     ClothingUniformUrbanCamouflage4: 2
     ClothingUniformJumpsuitGreenCargoShirt: 2
+    ClothingEveningDressBlue: 1
+    ClothingEveningDressRed: 1
+    ClothingEveningDressGreen: 1
+    ClothingEveningShoesColorRed: 1
+    ClothingEveningShoesColorGreen: 1
+    ClothingEveningShoesColorBlue: 1
+    ClothingEveningShoesColorBlack: 1
   contrabandInventory:
     ClothingUniformJumpsuitTacticool: 1
     ClothingUniformJumpskirtTacticool: 1
