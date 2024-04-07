@@ -5,10 +5,13 @@
     "y": 32
   },
   "license": "CC-BY-SA-3.0",
-  "copyright": "Sprited for Siberia SS14 by MrDen4ik(DS)",
+  "copyright": "xuinya sprited by MrDen4ik(DS), watched sprited by kitkat0275(DS) for Siberia SS14",
     "states": [
         {
             "name": "xuinya"
+        },
+		{
+            "name": "watched"
         }
     ]
 }

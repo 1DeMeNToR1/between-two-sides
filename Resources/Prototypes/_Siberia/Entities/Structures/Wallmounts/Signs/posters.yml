@@ -7,3 +7,14 @@
     - type: Sprite
       sprite: Siberia/Structures/Wallmounts/posters.rsi
       state: xuinya
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitXuinya
+  name: "Плакат спец служб НТ."
+  description: "Похоже, за твоим каждом шагом следят. Поэтому важно быть внимательными к своим действиям и словам."
+  components:
+    - type: Sprite
+      sprite: Siberia/Structures/Wallmounts/posters.rsi
+      state: watched
+      
