@@ -8,7 +8,8 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
-    - state: book1
+    - state: cover_old
+      color: "#202020"
   - type: Paper
     content: book-sunrider-1
 
@@ -23,7 +24,8 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
-    - state: book1
+    - state: cover_old
+      color: "#202020"
   - type: Paper
     content: book-sunrider-2
 
@@ -37,6 +39,7 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
-    - state: book1
+    - state: cover_old
+      color: "#202020"
   - type: Paper
     content: book-sunrider-3

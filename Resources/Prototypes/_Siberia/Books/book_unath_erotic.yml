@@ -10,8 +10,10 @@
    Виднеется выделенное предупреждение о возрастном ограничении
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_rufus
+    - state: cover_strong
+      color: "#659dd4"
+    - state: icon_skull
   - type: Paper
     content: book-unath-erotic-1

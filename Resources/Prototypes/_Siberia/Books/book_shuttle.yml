@@ -12,7 +12,8 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
-    - state: book1
+    - state: cover_old
+      color: "#202020"
   - type: Paper
     content: book-shuttle-1
       
@@ -28,7 +29,8 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
-    - state: book1
+    - state: cover_old
+      color: "#202020"
   - type: Paper
     content: book-shuttle-2
       
@@ -44,7 +46,8 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
-    - state: book1
+    - state: cover_old
+      color: "#202020"
   - type: Paper
     content: book-shuttle-3
       
@@ -60,7 +63,8 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
-    - state: book1
+    - state: cover_old
+      color: "#202020"
   - type: Paper
     content: book-shuttle-4
 
@@ -76,7 +80,8 @@
   - type: Sprite
     sprite: Objects/Misc/books.rsi
     layers:
-    - state: book1
+    - state: cover_old
+      color: "#202020"
   - type: Paper
     content: book-shuttle-5
 # ---- End Library Salvage Fills ----

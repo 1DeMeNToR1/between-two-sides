@@ -6,8 +6,10 @@
   description: Руководство по клонированию.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_medical
+    - state: cover_strong
+    - state: icon_medical_cross
+      color: "#476ecc"
   - type: Paper
     content: book-clone-guide

@@ -6,9 +6,12 @@
   description: Руководство по энергоснабжению станции.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_struck
+    - state: cover_strong
+      color: "#3d3131"
+    - state: icon_lightning
+      color: "#f9e766"
   - type: Paper
     content: book-electro-guide-1
 
@@ -20,9 +23,12 @@
   description: Руководство по энергоснабжению станции.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_struck
+    - state: cover_strong
+      color: "#3d3131"
+    - state: icon_lightning
+      color: "#f9e766"
   - type: Paper
     content: book-electro-guide-2
 
@@ -34,9 +40,12 @@
   description: Руководство по энергоснабжению станции. на обложке изображен технический ассистент в сварочной маске, показывающий палец вверх.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_struck
+    - state: cover_strong
+      color: "#3d3131"
+    - state: icon_lightning
+      color: "#f9e766"
   - type: Paper
     content: book-electro-guide-newbie
 
@@ -48,8 +57,11 @@
   description: Руководство по солнечным панелям. На обложке виднеется огромная станция, которая работает на солнечных панелях.
   components:
   - type: Sprite
-    sprite: Objects/Misc/authorbooks.rsi
+    sprite: Objects/Misc/books.rsi
     layers:
-    - state: book_struck
+    - state: cover_strong
+      color: "#3d3131"
+    - state: icon_lightning
+      color: "#f9e766"
   - type: Paper
     content: book-electro-guide-solar
