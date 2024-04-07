@@ -5,4 +5,3 @@ actived-signs =
        *[other] активных барьеров
     }
 max-holo-signs = Доступно [color=green]максимум[/color] барьеров.	
-	
