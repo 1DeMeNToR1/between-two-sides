@@ -58,6 +58,8 @@
   - type: TypingIndicator
     proto: alien
   - type: NoSlip
+  - type: Speech
+    speechVerb: LargeMob
 
 - type: entity
   name: ксено-горничная
