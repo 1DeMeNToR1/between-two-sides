@@ -8,3 +8,14 @@
     sprite: Siberia/Clothing/Shoes/Boots/mantis_boots.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Shoes/Boots/mantis_boots.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesMegu
+  name: оранжевые ботинки
+  description: Самое то для дальних прогулок.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Shoes/Boots/meguminboots.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Shoes/Boots/meguminboots.rsi

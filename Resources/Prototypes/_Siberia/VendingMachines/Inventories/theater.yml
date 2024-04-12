@@ -74,7 +74,14 @@
     ClothingMaskMoryak: 1
     ClothingShoesMoryak: 1
     ClothingUniformJumpsuitMoryak: 1 # Конец
-
+    # Костюм Мегумин. Начало
+    ClothingHeadHatMegu: 1
+    ClothingUniformJumpskirtMegu: 1
+    ClothingEyesMegu: 1
+    ClothingNeckCloakMegu: 1
+    ClothingUnderSocksMegu: 1
+    ClothingShoesMegu: 1
+    # Костюм Мегумин. Конец
     ClothingHeadHatCowboyBrown: 1
     ClothingHeadHatCowboyBlack: 1
     ClothingHeadHatCowboyWhite: 1
