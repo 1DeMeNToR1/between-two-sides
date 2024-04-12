@@ -278,7 +278,7 @@
   name: чулок и бинт
   description: Странное сочетание чулка и бинта на ногу, кому это нужно?
   components:
-  type: Sprite
-  sprite: Siberia/Clothing/Under/Socks/meguminsocks.rsi
-  type: Clothing
-  sprite: Siberia/Clothing/Under/Socks/meguminsocks.rsi
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/meguminsocks.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/meguminsocks.rsi
