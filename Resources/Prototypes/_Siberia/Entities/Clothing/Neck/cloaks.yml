@@ -24,3 +24,12 @@
     sprite: Siberia/Clothing/Head/Hats/QMmantle.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Head/Hats/QMmantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakFlanWing
+  name: крылья с разноцветными кристалами
+  description: Необычные крылья с блестящими кристалами, на таких вряд ли далеко улетишь.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Neck/Cloaks/flanwing.rsi

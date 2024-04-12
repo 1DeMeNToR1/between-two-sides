@@ -99,3 +99,14 @@
       sprite: Siberia/Clothing/Head/Hats/furerhat.rsi
     - type: Clothing
       sprite: Siberia/Clothing/Head/Hats/furerhat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatWhiteCap
+  name: белый чепец
+  description: Милый чепец с красной лентой.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/flancap.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/flancap.rsi
