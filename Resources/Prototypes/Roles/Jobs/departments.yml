@@ -6,6 +6,7 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
+  - Expeditor # Siberia-change
 
 - type: department
   id: Civilian
