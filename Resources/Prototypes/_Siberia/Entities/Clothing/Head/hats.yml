@@ -99,3 +99,14 @@
       sprite: Siberia/Clothing/Head/Hats/furerhat.rsi
     - type: Clothing
       sprite: Siberia/Clothing/Head/Hats/furerhat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCapOfficer
+  name: фуражка офицера
+  description: Красная фуражка, которая подбадривает, заставляет Вас бить первым.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/officercap.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/officercap.rsi
