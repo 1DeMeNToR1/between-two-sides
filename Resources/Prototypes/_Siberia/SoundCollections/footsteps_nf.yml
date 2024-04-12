@@ -1,0 +1,12 @@
+- type: soundCollection
+  id: FootstepClownSqueezeBottle
+  files:
+  - /Audio/Siberia/Effects/splat.ogg
+  - /Audio/Effects/Footsteps/clownstep2.ogg
+  - /Audio/Siberia/Effects/splat.ogg
+
+- type: soundCollection
+  id: FootstepClownSqueezeBottleWhoopie
+  files:
+  - /Audio/Effects/Emotes/parp1.ogg
+  - /Audio/Siberia/Effects/splat.ogg

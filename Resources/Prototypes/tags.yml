@@ -1177,7 +1177,7 @@
 
 - type: Tag
   id: SuitEVA
-  
+
 - type: Tag
   id: Sunglasses
 
@@ -1332,6 +1332,12 @@
 
 - type: Tag
   id: MagazineAssaultRifle
+
+- type: Tag
+  id: WhoopieCushion
+
+- type: Tag
+  id: Mustard
 
 - type: Tag
   id: RCDDeconstructWhitelist # For Siberia-Swarmers
