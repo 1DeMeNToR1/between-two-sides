@@ -6,6 +6,7 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
+  - Expeditor # Siberia-change
 
 - type: department
   id: Civilian
@@ -81,6 +82,7 @@
   - HeadOfSecurity
   - SecurityCadet
   - SecurityOfficer
+  - Pilot # Corvax-Pilot
   - Warden
   - Brigmedic
   - SeniorOfficer

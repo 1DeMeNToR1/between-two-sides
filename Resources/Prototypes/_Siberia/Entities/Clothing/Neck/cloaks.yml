@@ -24,3 +24,12 @@
     sprite: Siberia/Clothing/Head/Hats/QMmantle.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Head/Hats/QMmantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakMegu
+  name: коричневый плащ
+  description: Темный плащ с золотистыми краями.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Neck/Cloaks/megumincloak.rsi

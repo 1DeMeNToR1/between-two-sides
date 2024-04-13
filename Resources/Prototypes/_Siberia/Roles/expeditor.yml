@@ -1,0 +1,143 @@
+- type: job
+  id: Expeditor
+  name: исследователь экспедиций
+  description: Исследуйте и отдыхайте на планетах!
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 180000 # 3 hrs
+  playTimeTracker: JobExpeditor
+  startingGear: ExpeditorGear
+  icon: "JobIconExpeditor"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-qm
+  canBeAntag: true
+  access:
+  - Maintenance
+  - Cargo
+  - Salvage
+  - External
+  - Expeditor
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconExpeditor
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Expeditor
+
+- type: startingGear
+  id: ExpeditorGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitExpeditor
+    back: ClothingBackpackSalvageFilled
+    shoes: ClothingShoesBootsCombat
+    id: ExpeditorPDA
+    ears: ClothingHeadsetCargo
+    gloves: ClothingHandsGlovesFingerless
+  satchel: ClothingBackpackSatchelSalvageFilled
+  duffelbag: ClothingBackpackDuffelSalvageFilled
+
+- type: playTimeTracker
+  id: JobExpeditor
+
+- type: entity
+  id: SpawnPointExpeditor
+  parent: SpawnPointJobBase
+  name: экспедитор
+  components:
+  - type: SpawnPoint
+    job_id: expeditor
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+
+- type: entity
+  id: LockerExpeditor
+  parent: LockerBaseSecure
+  name: шкаф исследователя экспедиций
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: exp
+    stateDoorOpen: exp_open
+    stateDoorClosed: exp_door
+  - type: AccessReader
+    access: [["Expeditor"]]
+
+- type: accessLevel
+  id: Expeditor
+  name: Исследователь экспедиций
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitExpeditor
+  name: форма исследователя экспедиций
+#  description: Рубашка офицера с вшитой бронетканью
+  components:
+  - type: Sprite
+    sprite: Siberia/Roles/Expeditor/exp_cloth.rsi
+  - type: Clothing
+    sprite: Siberia/Roles/Expeditor/exp_cloth.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+- type: entity
+  parent: BasePDA
+  id: ExpeditorPDA
+  name: КПК исследователя экспедиций
+  description: Оснащен gps-системой
+  components:
+  - type: Pda
+    id: ExpeditorIDCard
+    state: pda-expeditor
+  - type: PdaBorderColor
+    borderColor: "#D44B21"
+  - type: Icon
+    state: pda-expeditor
+  - type: HandheldGPS
+
+- type: entity
+  parent: IDCardStandard
+  id: ExpeditorIDCard
+  name: ID карта исследователя экспедиций
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idexpeditor
+  - type: PresetIdCard
+    job: Expeditor
+
+- type: entity
+  id: LockerExpeditorFilled
+  parent: LockerExpeditor
+  components:
+  - type: StorageFill
+    contents:
+    - id: BruteAutoInjector
+    - id: BurnAutoInjector
+    - id: ClothingOuterArmorPodWars
+    - id: ClothingMaskGasExplorer
+    - id: CombatKnife
+    - id: ClothingBeltUtilityFilled
+    - id: NitrogenTankFilled
+    - id: OxygenTankFilled
+    - id: ClothingHeadHelmetSwat
+
+
+- type: entity
+  parent: AirlockCargo
+  id: AirlockExpeditorLocked
+  name: шлюз
+  suffix: Expeditor, Locked
+  components:
+  - type: AccessReader
+    access: [["Expeditor"]]

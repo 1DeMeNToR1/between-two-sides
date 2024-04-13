@@ -110,3 +110,15 @@
     sprite: Siberia/Clothing/Head/Hats/officercap.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Head/Hats/officercap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatMegu
+  name: алая шляпа
+  description: Шляпа внушающая страх в окружающих.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/boomhat.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/boomhat.rsi
+
