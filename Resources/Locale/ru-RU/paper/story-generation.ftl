@@ -10,7 +10,6 @@ story-gen-book-type9 = архив
 story-gen-book-type10 = кодекс
 story-gen-book-type11 = текст
 story-gen-book-type12 = компендиум
-
 story-gen-book-genre1 = детектив
 story-gen-book-genre2 = комедия
 story-gen-book-genre3 = хоррор
@@ -25,7 +24,6 @@ story-gen-book-genre11 = исторический роман
 story-gen-book-genre12 = биография
 story-gen-book-genre13 = приключенческая история
 story-gen-book-genre14 = драма
-
 story-gen-book-appearance1 = древний
 story-gen-book-appearance2 = потёртый
 story-gen-book-appearance3 = грязный
@@ -53,7 +51,6 @@ story-gen-book-appearance24 = тиснёный
 story-gen-book-appearance25 = неправильный
 story-gen-book-appearance26 = позолоченный
 story-gen-book-appearance27 = странный
-
 story-gen-book-character1 = клоун
 story-gen-book-character2 = мим
 story-gen-book-character3 = репортёр
@@ -94,7 +91,6 @@ story-gen-book-character37 = дворф
 story-gen-book-character38 = вор
 story-gen-book-character39 = волшебник
 story-gen-book-character40 = слайм
-
 story-gen-book-character-trait1 = глупый
 story-gen-book-character-trait2 = умный
 story-gen-book-character-trait3 = смешной
@@ -119,7 +115,6 @@ story-gen-book-character-trait21 = страшно красивый
 story-gen-book-character-trait22 = роботизированный
 story-gen-book-character-trait23 = голографический
 story-gen-book-character-trait24 = истерически смеющийся
-
 story-gen-book-event1 = нашествия зомби
 story-gen-book-event2 = ядерного взрыва
 story-gen-book-event3 = массового убийства
@@ -144,7 +139,6 @@ story-gen-book-event21 = слишком большого количества с
 story-gen-book-event22 = ссоры с близким другом
 story-gen-book-event23 = внезапной потери дома в результате пожара
 story-gen-book-event24 = потери КПК
-
 story-gen-book-action1 = сливаются в поцелуе, на глазах у
 story-gen-book-action2 = насмерть душат
 story-gen-book-action3 = умудряются разнести на части
@@ -157,7 +151,6 @@ story-gen-book-action9 = присутствуют на свадьбе, вмес�
 story-gen-book-action10 = объединяют усилия, чтобы победить общего врага, которым является
 story-gen-book-action11 = вынуждены работать вместе, чтобы спастись от
 story-gen-book-action12 = делают ценный подарок
-
 story-gen-book-action-trait1 = ужасно
 story-gen-book-action-trait2 = отвратительно
 story-gen-book-action-trait3 = чудесно
@@ -171,7 +164,6 @@ story-gen-book-action-trait10 = сурово
 story-gen-book-action-trait11 = безжалостно
 story-gen-book-action-trait12 = игриво
 story-gen-book-action-trait13 = задумчиво
-
 story-gen-book-location1 = в подземном комплексе
 story-gen-book-location2 = во время экспедиции
 story-gen-book-location3 = пойманные в открытом космосе
@@ -206,17 +198,15 @@ story-gen-book-location31 = во время психической проекц�
 story-gen-book-location32 = в ловушке в теневом измерении
 story-gen-book-location33 = при попытке спастись с разрушенной космической станции
 story-gen-book-location34 = находясь между шаром Теслы и гравитационной сингулярностью
-
 story-gen-book-element1 = Сюжет
 story-gen-book-element2 = Сюжетный поворот
 story-gen-book-element3 = Апогей истории
-story-gen-book-element4 = Момент завершения
+story-gen-book-element4 = Эпилог
 story-gen-book-element5 = Финал
 story-gen-book-element6 = Вывод из этой истории
-story-gen-book-element7 = Лейтмотив этого произведения
+story-gen-book-element7 = Момент кульминации
 story-gen-book-element8 = Литературный стиль
 story-gen-book-element9 = Стиль иллюстраций
-
 story-gen-book-element-trait1 = нагоняет ужас
 story-gen-book-element-trait2 = вызывает отвращение
 story-gen-book-element-trait3 = прекрасен

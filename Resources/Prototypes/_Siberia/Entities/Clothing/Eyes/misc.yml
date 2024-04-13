@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesMegu
+  name: красная повязка
+  description: Она сдержит силу вашего глаза.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Eyes/Misc/redeyepatch.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Eyes/Misc/redeyepatch.rsi
+  - type: EyeProtection
+    protectionTime: 5

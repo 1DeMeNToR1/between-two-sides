@@ -1,0 +1,100 @@
+- type: entity
+  parent: ClothingShoesClown
+  id: ClothingShoesClownModWhoopie
+  suffix: "Whoopie"
+  description: "Модифицированные стандартные клоунские туфли. Черт возьми, они такие мягкие."
+  components:
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: Parp
+      params:
+        variation: 0.125
+  - type: Construction
+    graph: GraphClothingShoesClownModWhoopie
+    node: whoopiemod
+
+- type: entity
+  parent: ClothingShoesClown
+  id: ClothingShoesClownModKetchup
+  suffix: "Ketchup"
+  description: "Модифицированные стандартные клоунские туфли. Черт возьми, они такие мокрые!"
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Ketchup
+          Quantity: 30
+  - type: DrawableSolution
+    solution: food
+  - type: DrainableSolution
+    solution: food
+  - type: Spillable
+    solution: food
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClownSqueezeBottle
+      params:
+        variation: 0.125
+  - type: Construction
+    graph: GraphClothingShoesClownModKetchup
+    node: ketchupmod
+
+- type: entity
+  parent: ClothingShoesClown
+  id: ClothingShoesClownModMustarchup
+  suffix: "Mustarchup"
+  description: "Модифицированные стандартные клоунские туфли. Черт возьми, они такие мокрые!"
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Ketchup
+          Quantity: 15
+        - ReagentId: Mustard
+          Quantity: 15
+  - type: DrawableSolution
+    solution: food
+  - type: DrainableSolution
+    solution: food
+  - type: Spillable
+    solution: food
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: squeezeBottleUseSounds
+      params:
+        variation: 0.125
+  - type: Construction
+    graph: GraphClothingShoesClownModMustarchup
+    node: mustarchupmod
+
+- type: entity
+  parent: ClothingShoesClown
+  id: ClothingShoesClownModUltimate
+  suffix: "Ultimate"
+  description: "Модифицированные стандартные клоунские туфли. Черт возьми, они такие мокрые!"
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Ketchup
+          Quantity: 30
+  - type: DrawableSolution
+    solution: food
+  - type: DrainableSolution
+    solution: food
+  - type: Spillable
+    solution: food
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClownSqueezeBottleWhoopie
+      params:
+        variation: 0.125
+  - type: Construction
+    graph: GraphClothingShoesClownModUltimate
+    node: ketchupmod

@@ -1,107 +1,107 @@
-- type: entity
-  parent: DrinkBottleGlassBaseFull
-  id: DrinkSakeBottleFull
-  name: sake bottle
-  description: |
-    Чист, да временами туманен
-    Желанен, как алкогольное мороженое
-    Налей кружку да выпей его!
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        reagents:
-        - ReagentId: Sake
-          Quantity: 100
-  - type: Sprite
-    sprite: Siberia/Nyanotrasen/sakebottle.rsi
+#- type: entity
+#  parent: DrinkBottleGlassBaseFull
+#  id: DrinkSakeBottleFull
+#  name: sake bottle
+#  description: |
+#    Чист, да временами туманен
+#    Желанен, как алкогольное мороженое
+#    Налей кружку да выпей его!
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      drink:
+#        reagents:
+#        - ReagentId: Sake
+#          Quantity: 100
+#  - type: Sprite
+#    sprite: Siberia/Nyanotrasen/sakebottle.rsi
 
     # реагенты
-- type: flavor
-  id: Soju
-  description: Отчетливый вкус соджу, традиционного корейского алкогольного напитка.
+# - type: flavor
+#  id: Soju
+#  description: Отчетливый вкус соджу, традиционного корейского алкогольного напитка.
 
-- type: reagent
-  id: Soju
-  name: reagent-name-soju
-  parent: BaseAlcohol
-  desc: soju
-  physicalDesc: reagent-physical-desc-strong-smelling
-  flavor: Soju
-  color: "#DDDDDD"
-  metamorphicSprite:
-    sprite: Siberia/Nyanotrasen/sojuglass.rsi
-    state: icon
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.15
+# - type: reagent
+#  id: Soju
+#  name: reagent-name-soju
+#  parent: BaseAlcohol
+#  desc: soju
+#  physicalDesc: reagent-physical-desc-strong-smelling
+#  flavor: Soju
+#  color: "#DDDDDD"
+#  metamorphicSprite:
+#    sprite: Siberia/Nyanotrasen/sojuglass.rsi
+#    state: icon
+#  metabolisms:
+#    Drink:
+#      effects:
+#      - !type:SatiateThirst
+#        factor: 2
+#      - !type:AdjustReagent
+#        reagent: Ethanol
+#        amount: 0.15
 
 ####
 
-- type: entity
-  parent: DrinkBottleGlassBaseFull
-  id: DrinkSojuBottleFull
-  name: soju bottle
-  description: Это как саке, но НАМНОГО КРЕПЧЕ!
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        reagents:
-        - ReagentId: Soju
-          Quantity: 100
-  - type: Sprite
-    sprite: Siberia/Nyanotrasen/sojubottle.rsi
+# - type: entity
+#  parent: DrinkBottleGlassBaseFull
+#  id: DrinkSojuBottleFull
+#  name: soju bottle
+#  description: Это как саке, но НАМНОГО КРЕПЧЕ!
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      drink:
+#        reagents:
+#        - ReagentId: Soju
+#          Quantity: 100
+#  - type: Sprite
+#    sprite: Siberia/Nyanotrasen/sojubottle.rsi
 
-- type: entity
-  parent: DrinkGlassBase
-  id: DrinkTokkuri
-  name: tokkuri
-  description: Цветочный и полный саке!
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 100
-        reagents:
-        - ReagentId: Sake
-          Quantity: 100
-  - type: Sprite
-    sprite: Siberia/Nyanotrasen/saketokkuri.rsi
+# - type: entity
+#  parent: DrinkGlassBase
+#  id: DrinkTokkuri
+#  name: tokkuri
+#  description: Цветочный и полный саке!
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      drink:
+#        maxVol: 100
+#        reagents:
+#        - ReagentId: Sake
+#          Quantity: 100
+#  - type: Sprite
+#    sprite: Siberia/Nyanotrasen/saketokkuri.rsi
 
 
-- type: entity
-  parent: DrinkBottleGlassBaseFull
-  id: DrinkHolyWaterFull
-  name: flask of holy water
-  description: Обычный кувшин святой воды.
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        reagents:
-        - ReagentId: Water
-          Quantity: 100
-  - type: Sprite
-    sprite: Siberia/Nyanotrasen/flaskholywater.rsi
+# - type: entity
+#  parent: DrinkBottleGlassBaseFull
+#  id: DrinkHolyWaterFull
+#  name: flask of holy water
+#  description: Обычный кувшин святой воды.
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      drink:
+#        reagents:
+#        - ReagentId: Water
+#          Quantity: 100
+#  - type: Sprite
+#    sprite: Siberia/Nyanotrasen/flaskholywater.rsi
 
-- type: entity
-  parent: DrinkBaseCup
-  id: DrinkSakeCup
-  name: sakazuki
-  description: Церемониальная белая чаша для питья саке.
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        reagents:
-        - ReagentId: Sake
-          Quantity: 20
-  - type: Sprite
-    sprite: Siberia/Nyanotrasen/sakecup.rsi
-    state: icon
+# - type: entity
+#  parent: DrinkBaseCup
+#  id: DrinkSakeCup
+#  name: sakazuki
+#  description: Церемониальная белая чаша для питья саке.
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      drink:
+#        reagents:
+#        - ReagentId: Sake
+#          Quantity: 20
+#  - type: Sprite
+#    sprite: Siberia/Nyanotrasen/sakecup.rsi
+#    state: icon

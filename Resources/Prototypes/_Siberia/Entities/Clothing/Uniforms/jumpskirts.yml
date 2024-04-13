@@ -128,3 +128,14 @@
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/flanskirt.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/flanskirt.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtMegu
+  name: алое платье
+  description: Алое платье с длинным рукавом, кого-то вам напоминает.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/meguminskirt.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/meguminskirt.rsi

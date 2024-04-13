@@ -79,7 +79,7 @@
   parent: ClothingSocksBaseButcherable
   id: ClothingUnderSocksRed
   name: Красные носки
-  description: 
+  description:
   components:
   - type: Sprite
     sprite: Siberia/Clothing/Under/Socks/red.rsi
@@ -272,4 +272,13 @@
   - type: Clothing
     sprite: Siberia/Clothing/Under/Socks/neko.rsi
 
-    
+- type: entity
+  parent: ClothingSocksBaseButcherable
+  id: ClothingUnderSocksMegu
+  name: чулок и бинт
+  description: Странное сочетание чулка и бинта на ногу, кому это нужно?
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Socks/meguminsocks.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Socks/meguminsocks.rsi

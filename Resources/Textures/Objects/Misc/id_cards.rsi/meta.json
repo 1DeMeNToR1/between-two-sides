@@ -35,6 +35,9 @@
       "name": "gold"
     },
     {
+      "name": "idexpeditor"
+    },
+    {
       "name": "idpassenger"
     },
     {
@@ -218,7 +221,10 @@
       "name": "idseniorphysician"
     },
     {
-      "name": "idseniorofficer"
+        "name": "idseniorofficer"
+    },
+    {
+      "name": "idpilot"
     },
     {
       "name": "gold-inhand-left",
