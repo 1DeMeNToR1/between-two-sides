@@ -120,6 +120,17 @@
 
 - type: entity
   parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtFlan
+  name: красное платье
+  description: Милое красное платье с оборкамии большим бантом на спине.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/flanskirt.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Jumpskirt/flanskirt.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtMegu
   name: алое платье
   description: Алое платье с длинным рукавом, кого-то вам напоминает.

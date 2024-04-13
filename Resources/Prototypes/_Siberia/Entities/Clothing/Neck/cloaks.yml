@@ -27,6 +27,15 @@
 
 - type: entity
   parent: ClothingNeckBase
+  id: ClothingNeckCloakFlanWing
+  name: крылья с разноцветными кристалами
+  description: Необычные крылья с блестящими кристалами, на таких вряд ли далеко улетишь.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Neck/Cloaks/flanwing.rsi
+
+- type: entity
+  parent: ClothingNeckBase
   id: ClothingNeckCloakMegu
   name: коричневый плащ
   description: Темный плащ с золотистыми краями.

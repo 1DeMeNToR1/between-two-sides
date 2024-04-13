@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesRedShoes
+  name: красные туфли
+  description: Милые туфельки с белым носком.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Shoes/Color/flanboot.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Shoes/Color/flanboot.rsi

@@ -102,6 +102,17 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatWhiteCap
+  name: белый чепец
+  description: Милый чепец с красной лентой.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hats/flancap.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hats/flancap.rsi
+ 
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadHatCapOfficer
   name: фуражка офицера
   description: Красная фуражка, которая подбадривает, заставляет Вас бить первым.

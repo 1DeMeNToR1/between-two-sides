@@ -74,6 +74,12 @@
     ClothingMaskMoryak: 1
     ClothingShoesMoryak: 1
     ClothingUniformJumpsuitMoryak: 1 # Конец
+    # Одежда Фландри. Начало
+    ClothingHeadHatWhiteCap: 1
+    ClothingUniformJumpskirtFlan: 1
+    ClothingNeckCloakFlanWing: 1
+    ClothingShoesRedShoes: 1
+    # Одежда Фландри. Конец
     # Костюм Мегумин. Начало
     ClothingHeadHatMegu: 1
     ClothingUniformJumpskirtMegu: 1
