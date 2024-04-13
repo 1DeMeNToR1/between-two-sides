@@ -138,8 +138,6 @@
       map: ["flame"]
       visible: false
       shader: unshaded
-  - type: IgnitionSource
-    ignited: false
   - type: ItemToggle
     predictable: false
     soundActivate:
@@ -232,7 +230,5 @@
       map: ["flame"]
       visible: false
       shader: unshaded
-  - type: IgnitionSource
-    ignited: false
   - type: StealTarget
     stealGroup: FlippoEngravedLighter
