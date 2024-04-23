@@ -58,50 +58,50 @@
 #  - type: Sprite
 #    sprite: Siberia/Nyanotrasen/sojubottle.rsi
 
-# - type: entity
-#  parent: DrinkGlassBase
-#  id: DrinkTokkuri
-#  name: tokkuri
-#  description: Цветочный и полный саке!
-#  components:
-#  - type: SolutionContainerManager
-#    solutions:
-#      drink:
-#        maxVol: 100
-#        reagents:
-#        - ReagentId: Sake
-#          Quantity: 100
-#  - type: Sprite
-#    sprite: Siberia/Nyanotrasen/saketokkuri.rsi
+- type: entity
+  parent: DrinkGlassBase
+  id: DrinkTokkuri
+  name: tokkuri
+  description: Цветочный и полный саке!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 100
+        reagents:
+        - ReagentId: Sake
+          Quantity: 100
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/saketokkuri.rsi
 
 
-# - type: entity
-#  parent: DrinkBottleGlassBaseFull
-#  id: DrinkHolyWaterFull
-#  name: flask of holy water
-#  description: Обычный кувшин святой воды.
-#  components:
-#  - type: SolutionContainerManager
-#    solutions:
-#      drink:
-#        reagents:
-#        - ReagentId: Water
-#          Quantity: 100
-#  - type: Sprite
-#    sprite: Siberia/Nyanotrasen/flaskholywater.rsi
+- type: entity
+  parent: DrinkBottleGlassBaseFull
+  id: DrinkHolyWaterFull
+  name: flask of holy water
+  description: Обычный кувшин святой воды.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Water
+          Quantity: 100
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/flaskholywater.rsi
 
-# - type: entity
-#  parent: DrinkBaseCup
-#  id: DrinkSakeCup
-#  name: sakazuki
-#  description: Церемониальная белая чаша для питья саке.
-#  components:
-#  - type: SolutionContainerManager
-#    solutions:
-#      drink:
-#        reagents:
-#        - ReagentId: Sake
-#          Quantity: 20
-#  - type: Sprite
-#    sprite: Siberia/Nyanotrasen/sakecup.rsi
-#    state: icon
+- type: entity
+  parent: DrinkBaseCup
+  id: DrinkSakeCup
+  name: sakazuki
+  description: Церемониальная белая чаша для питья саке.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Sake
+          Quantity: 20
+  - type: Sprite
+    sprite: Siberia/Nyanotrasen/sakecup.rsi
+    state: icon

@@ -1,7 +1,7 @@
 - type: gameMap
   id: CrazyMarathon
   mapName: 'Marathon Station'
-  mapPath: /Maps/Crazymarathon_v1_06.02.24.yml
+  mapPath: /Maps/Crazymarathon_v2.yml
   minPlayers: 35
   maxPlayers: 70
   stations:
@@ -62,8 +62,9 @@
             #Lawyer: [ 2, 2 ] # Corvax-IAA
             #supply
             Quartermaster: [ 1, 1 ]
-            SalvageSpecialist: [ 3, 3 ]
+            SalvageSpecialist: [ 2, 2 ]
             CargoTechnician: [ 3, 3 ]
+            Expeditor: [ 2, 2 ]
             #civilian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
