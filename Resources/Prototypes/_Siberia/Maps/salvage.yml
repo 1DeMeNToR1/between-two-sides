@@ -34,4 +34,8 @@
 - type: salvageMap
   id: PartsOfStations
   mapPath: /Maps/Siberia/Salvage/parts-of-stations.yml
+
+- type: salvageMap
+  id: AbandonedTradingPost
+  mapPath: /Maps/Siberia/Salvage/abandoned-trading-post.yml
   
