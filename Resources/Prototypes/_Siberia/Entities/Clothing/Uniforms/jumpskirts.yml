@@ -139,3 +139,20 @@
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/meguminskirt.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/meguminskirt.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtGreenHudi
+  name: зелёное худи
+  description: Худи зелёного цвета с короткой юбкой.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpsuit/greenhudi.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodGreenHudi
+    requiredSlot:
+    - innerclothing
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}

@@ -11,3 +11,20 @@
     tags:
     - HidesHair
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodGreenHudi
+  name: капюшон от зелёного худи
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Head/Hoods/greenhudi.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Head/Hoods/greenhudi.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - HidesHair
+  # - type: HideLayerClothing
+    # slots:
+    # - Hair    ## разблокировать в апстриме
