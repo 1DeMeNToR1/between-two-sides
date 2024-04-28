@@ -13,3 +13,4 @@ salvage-map-proto-ChurchOfCult = Церковь культа
 salvage-map-proto-LonelyEngineer = Одинокий инженер
 salvage-map-proto-PartsOfStations = Части станций
 salvage-map-proto-AbandonedTradingPost = Заброшенный торговый пост
+salvage-map-proto-JanitorsUtilityRoom = Подсобка уборщика
