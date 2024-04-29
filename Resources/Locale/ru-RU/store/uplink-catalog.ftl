@@ -84,8 +84,8 @@ uplink-agent-id-card-name = ID карта Агента
 uplink-agent-id-card-desc = Модифицированная ID карта, которая может копировать доступы с других карт и менять своё имя и должность по усмотрению.
 uplink-black-jetpack-name = Чёрный джетпак
 uplink-black-jetpack-desc = Чёрный джетпак. Позволяет летать в космосе. Топливо входит в комплект.
-uplink-reinforcement-radio-monkey-name = Телепорт обезьяньего подкрепления
-uplink-reinforcement-radio-monkey-desc = Вызовите на подмогу специально обученную обезьяну. Обезьяны комплектуются одной сигаретой Синдиката.
+uplink-reinforcement-radio-ancestor-name = Genetic Ancestor Reinforcement Teleporter
+uplink-reinforcement-radio-ancestor-desc = Call in a trained ancestor of your choosing to assist you. Comes with a single syndicate cigarette.
 uplink-reinforcement-radio-name = Телепорт подкрепления
 uplink-reinforcement-radio-desc = Телепортирует агента крайне сомнительного качества. Не имеет кнопки отключения, покупайте его только если вы готовы к вечеринке. У агента есть пистолет без запасных патронов и нож. Это всё.
 uplink-reinforcement-radio-cyborg-assault-name = Телепорт штурмового киборга Синдиката
@@ -145,7 +145,7 @@ uplink-knives-kit-name = Набор метательлных ножей
 uplink-knives-kit-desc = Набор из 4 фирменных метательных ножей Синдиката, идеально подходящих для вонзания в тело жертвы.
 # Bundles
 uplink-meds-bundle-name = Медицинский набор
-uplink-meds-bundle-desc = Все, что нужно для возвращения в строй ваших товарищей: главным образом, боевая аптечка, дефибриллятор и три боевых медипена.
+uplink-meds-bundle-desc = Всё, что нужно для возвращения в строй ваших товарищей: главным образом, боевая аптечка, дефибриллятор и три боевых медипена.
 uplink-ammo-bundle-name = Набор боеприпасов
 uplink-ammo-bundle-desc = Перезаряжаю! Содержит 4 магазина для C-20r, 4 барабана для Бульдога и 2 короба патронов для L6 SAW.
 uplink-sniper-bundle-name = Набор снайпера
@@ -199,6 +199,8 @@ uplink-disposable-turret-name = Одноразовая баллистическ�
 uplink-disposable-turret-desc = На вид и по функционалу напоминает обычный электротехнический ящик для инструментов. После удара ящик превращается в баллистическую турель, которая теоретически может стрелять во всех, кроме представителей Синдиката. С помощью отвёртки её можно превратить обратно в ящик для инструментов, а с помощью гаечного ключа - отремонтировать.
 uplink-cluster-banana-peel-name = Кластерный банан
 uplink-cluster-banana-peel-desc = После приземления распадается на 6 взрывных банановых кожур, которые автоматически детонируют через 20 секунд, если на них никто не поскользнётся.
+uplink-cane-blade-name = Cane Blade
+uplink-cane-blade-desc = A cane that has a hidden blade that can be unsheathed.
 # Armor
 uplink-chameleon-name = Набор "Хамелеон"
 uplink-chameleon-desc = Рюкзак, полный вещей, оснащённых технологией хамелеона, позволяющих вам маскироваться под кого угодно на станции, и даже больше!
@@ -252,6 +254,8 @@ uplink-slipocalypse-clustersoap-name = Кластерное мыло Сколь�
 uplink-slipocalypse-clustersoap-desc = После приземления разбрасывает вокруг себя маленькие кусочки мыла Синдиката, которые испарятся сами через 60 секунд.
 uplink-mobcat-microbomb-name = СиндиКот
 uplink-mobcat-microbomb-desc = Ручной кот, оснащённый имплантом Микробомба. Взрывается при серьёзном ранении. Может больно кусаться.
+uplink-chameleon-projector-name = Chameleon Projector
+uplink-chameleon-projector-desc = Disappear in plain sight by creating a hologram of an item around you. Do not use this to play the game "Object Search".
 # Pointless
 uplink-revolver-cap-gun-name = Игрушечный пистолет
 uplink-revolver-cap-gun-desc = Выглядит почти как настоящий! От 8 лет и старше.

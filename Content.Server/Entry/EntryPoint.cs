@@ -106,6 +106,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<GhostKickManager>().Initialize();
                 IoCManager.Resolve<TTSManager>().Initialize(); // Corvax-TTS
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
+                IoCManager.Resolve<ServerApi>().Initialize();
                 IoCManager.Resolve<DiscordAuthManager>().Initialize();
                 IoCManager.Resolve<SponsorsManager>().Initialize();
 
@@ -181,6 +182,7 @@ namespace Content.Server.Entry
         {
             _playTimeTracking?.Shutdown();
             _dbManager?.Shutdown();
+            IoCManager.Resolve<ServerApi>().Shutdown();
         }
 
         private static void LoadConfigPresets(IConfigurationManager cfg, IResourceManager res, ISawmill sawmill)
