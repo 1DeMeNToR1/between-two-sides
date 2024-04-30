@@ -52,6 +52,10 @@
     {
       "name": "contrastedsoles-equipped-FEET-vox",
       "directions": 4
-    }
+    },
+    {
+      "name": "equipped-FEET-resomi",
+      "directions": 4
+    }	
   ]
 }

@@ -55,6 +55,10 @@
     {
       "name": "equipped-INNERCLOTHING-resomi",
       "directions": 4
-    }
+    },
+    {
+      "name": "prisoner-equipped-INNERCLOTHING-resomi",
+      "directions": 4
+    }	
   ]
 }
