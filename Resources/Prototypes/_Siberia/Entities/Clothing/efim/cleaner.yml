@@ -69,10 +69,26 @@
   name: фиолетовые перчатки
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/purple.rsi
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    clothingVisuals:
+      gloves:
+      - state: icon
+        color: "#9C0DE1"    
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/purple.rsi
-
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+        color: "#9C0DE1"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#9C0DE1"
+      right:
+      - state: inhand-right
+        color: "#9C0DE1"
+        
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsGlovesColorOrangeFake
@@ -80,6 +96,23 @@
   name: оранжевые перчатки
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/orange.rsi
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#EF8100"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#EF8100"
+      right:
+      - state: inhand-right
+        color: "#EF8100"
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/orange.rsi
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+        color: "#EF8100"
+  - type: Fiber
+    fiberColor: fibers-orange        
