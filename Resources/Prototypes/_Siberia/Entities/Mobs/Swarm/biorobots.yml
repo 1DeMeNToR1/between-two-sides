@@ -408,7 +408,8 @@
       path: /Audio/Weapons/Guns/Gunshots/Magic/staff_door.ogg
     soundEmpty:
       path: /Audio/Items/Lighters/lighter_off.ogg
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
   - type: ShowSyndicateIcons
   - type: MobThresholds
     thresholds:
@@ -651,7 +652,8 @@
     - Biological
     - Inorganic
   - type: SolutionScanner
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
   - type: ShowSyndicateIcons
   - type: Bloodstream
     bloodMaxVolume: 650
@@ -811,7 +813,8 @@
       path: /Audio/Weapons/plasma_cutter.ogg
     soundEmpty:
       path: /Audio/Items/Lighters/lighter_off.ogg
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
   - type: ShowSyndicateIcons
   - type: MobThresholds
     thresholds:

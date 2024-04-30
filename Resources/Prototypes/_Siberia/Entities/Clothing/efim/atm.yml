@@ -68,7 +68,9 @@
   - type: Clothing
     sprite: Siberia/Clothing/Atmos/TV.rsi
     quickEquip: true
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
   - type: SolutionScanner
   - type: IngestionBlocker
   - type: TemperatureProtection

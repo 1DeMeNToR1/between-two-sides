@@ -81,7 +81,9 @@
         Heat: 0.80
         Radiation: 0.80
         Caustic: 0.95
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons        
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
@@ -112,7 +114,9 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
@@ -136,7 +140,6 @@
   - type: PressureProtection
     highPressureMultiplier: 0.6
     lowPressureMultiplier: 1000
-  - type: ShowSecurityIcons
   - type: ShowHealthBars
     damageContainers:
     - Biological
@@ -174,37 +177,37 @@
     color: "#79F6E1"
     radius: 10
     energy: 5
-  - type: ToggleableClothing
-    requiredSlot: HEAD
-    slot: gloves
-    clothingPrototype: ClothingMiningGlovesHardsuitMiningRndUpgraded
+  # - type: ToggleableClothing
+    # requiredSlot: HEAD
+    # slot: gloves
+    # clothingPrototype: ClothingMiningGlovesHardsuitMiningRndUpgraded
 
-- type: entity
-  parent: ClothingHandsButcherable
-  id: ClothingMiningGlovesHardsuitMiningRndUpgraded
-  name: протокинетические перчатки скафандра
-  noSpawn: true
-  description: Позволяют крушить чёртов камень как перья!
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/ihscombat.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/ihscombat.rsi
-  - type: MeleeWeapon
-    autoAttack: true
-    angle: 0
-    wideAnimationRotation: -90
-    attackRate: 3.5
-    damage:
-      types:
-       Blunt: 3
-       Structural: 20
-    soundHit:
-      path: /Audio/Weapons/plasma_cutter.ogg
-    animation: WeaponArcFist
-  - type: Tag
-    tags:
-    - Pickaxe
+# - type: entity
+  # parent: ClothingHandsButcherable
+  # id: ClothingMiningGlovesHardsuitMiningRndUpgraded
+  # name: протокинетические перчатки скафандра
+  # noSpawn: true
+  # description: Позволяют крушить чёртов камень как перья!
+  # components:
+  # - type: Sprite
+    # sprite: Clothing/Hands/Gloves/ihscombat.rsi
+  # - type: Clothing
+    # sprite: Clothing/Hands/Gloves/ihscombat.rsi
+  # - type: MeleeWeapon
+    # autoAttack: true
+    # angle: 0
+    # wideAnimationRotation: -90
+    # attackRate: 3.5
+    # damage:
+      # types:
+       # Blunt: 3
+       # Structural: 20
+    # soundHit:
+      # path: /Audio/Weapons/plasma_cutter.ogg
+    # animation: WeaponArcFist
+  # - type: Tag
+    # tags:
+    # - Pickaxe
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase

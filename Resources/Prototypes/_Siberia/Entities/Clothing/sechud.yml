@@ -18,7 +18,9 @@
   - type: GuideHelp
     guides:
     - Security
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
 
 - type: entity
   parent: ClothingEyesBase
