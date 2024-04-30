@@ -47,7 +47,7 @@
     key: enum.RadarConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-      - key: enum.RadarConsoleUiKey.Key
+      enum.RadarConsoleUiKey.Key:
         type: RadarConsoleBoundUserInterface
   - type: ShowHealthIcons
     damageContainers:

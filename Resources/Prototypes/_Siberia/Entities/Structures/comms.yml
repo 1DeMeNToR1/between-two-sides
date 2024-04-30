@@ -22,8 +22,8 @@
     key: enum.CommunicationsConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.CommunicationsConsoleUiKey.Key
-      type: CommunicationsConsoleBoundUserInterface
+      enum.CommunicationsConsoleUiKey.Key:
+        type: CommunicationsConsoleBoundUserInterface
   - type: Computer
   - type: PointLight
     radius: 1.5
@@ -57,8 +57,8 @@
     key: enum.CommunicationsConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.CommunicationsConsoleUiKey.Key
-      type: CommunicationsConsoleBoundUserInterface
+      enum.CommunicationsConsoleUiKey.Key:
+        type: CommunicationsConsoleBoundUserInterface
   - type: Computer
     board: CommsComputerCircuitboard
   - type: PointLight
@@ -93,8 +93,8 @@
     key: enum.CommunicationsConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.CommunicationsConsoleUiKey.Key
-      type: CommunicationsConsoleBoundUserInterface
+      enum.CommunicationsConsoleUiKey.Key:
+        type: CommunicationsConsoleBoundUserInterface
   - type: Computer
   - type: PointLight
     radius: 1.5
@@ -128,8 +128,8 @@
     key: enum.CommunicationsConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.CommunicationsConsoleUiKey.Key
-      type: CommunicationsConsoleBoundUserInterface
+      enum.CommunicationsConsoleUiKey.Key:
+        type: CommunicationsConsoleBoundUserInterface
   - type: Computer
   - type: PointLight
     radius: 1.5
@@ -163,8 +163,8 @@
     key: enum.CommunicationsConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.CommunicationsConsoleUiKey.Key
-      type: CommunicationsConsoleBoundUserInterface
+      enum.CommunicationsConsoleUiKey.Key:
+        type: CommunicationsConsoleBoundUserInterface
   - type: Computer
   - type: PointLight
     radius: 1.5
@@ -198,8 +198,8 @@
     key: enum.CommunicationsConsoleUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.CommunicationsConsoleUiKey.Key
-      type: CommunicationsConsoleBoundUserInterface
+      enum.CommunicationsConsoleUiKey.Key:
+        type: CommunicationsConsoleBoundUserInterface
   - type: Computer
   - type: PointLight
     radius: 1.5

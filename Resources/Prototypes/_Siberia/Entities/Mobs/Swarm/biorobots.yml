@@ -170,10 +170,10 @@
     needsHands: false
   - type: UserInterface
     interfaces:
-    - key: enum.SiliconLawsUiKey.Key
-      type: SiliconLawBoundUserInterface
-    - key: enum.BorgUiKey.Key
-      type: BorgBoundUserInterface
+      enum.SiliconLawsUiKey.Key:
+        type: SiliconLawBoundUserInterface
+      enum.BorgUiKey.Key:
+        type: BorgBoundUserInterface
   - type: ActivatableUI
     key: enum.BorgUiKey.Key
   - type: SiliconLawBound
