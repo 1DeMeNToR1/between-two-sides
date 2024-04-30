@@ -111,7 +111,7 @@ namespace Content.Server.Preferences.Managers
             var sponsorPrototypes = _sponsorsManager.TryGetInfo(message.MsgChannel.UserId, out var sponsor)
                 ? sponsor.AllowedMarkings
                 : new string[]{};
-            profile.EnsureValid(_cfg, _protos, sponsorPrototypes);
+            profile.EnsureValid(session, collection, sponsorPrototypes);
             // Corvax-Sponsors-End
 
             var profiles = new Dictionary<int, ICharacterProfile>(curPrefs.Characters)
@@ -213,7 +213,7 @@ namespace Content.Server.Preferences.Managers
                         var sponsorPrototypes = _sponsorsManager.TryGetInfo(session.UserId, out var sponsor)
                             ? sponsor.AllowedMarkings
                             : new string[] { };
-                        profile.EnsureValid(_cfg, _protos, sponsorPrototypes);
+                        profile.EnsureValid(session, collection, sponsorPrototypes);
                     }
                     // Corvax-Sponsors-End
                     prefsData.Prefs = prefs;
@@ -320,7 +320,10 @@ namespace Content.Server.Preferences.Managers
             // Clean up preferences in case of changes to the game,
             // such as removed jobs still being selected.
 
-            var sponsorPrototypes = _sponsors != null && _sponsors.TryGetPrototypes(session.UserId, out var prototypes) ? prototypes.ToArray() : []; // Corvax-Sponsors
+            var sponsorPrototypes = _sponsorsManager.TryGetInfo(session.UserId, out var sponsor)
+                ? sponsor.AllowedMarkings
+                : new string[] { };
+            // _sponsors != null && _sponsors.TryGetPrototypes(session.UserId, out var prototypes) ? prototypes.ToArray() : []; // Corvax-Sponsors
             return new PlayerPreferences(prefs.Characters.Select(p =>
             {
                 ICharacterProfile newProf;
