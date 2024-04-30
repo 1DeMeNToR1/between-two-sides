@@ -1,0 +1,38 @@
+# Custom Siberia role's loadout's
+
+- type: roleLoadout
+  id: JobBlueshield
+  groups:
+  - SecurityBackpack
+  - BlueShieldJumpsuit
+  
+- type: roleLoadout
+  id: JobSeniorEngineer
+  groups:
+  - SeniorEngineerJumpsuit
+  - StationEngineerBackpack
+ 
+- type: roleLoadout
+  id: JobSeniorPhysician 
+  groups:
+  - SeniorPhysicianJumpsuit
+  - MedicalBackpack
+  
+- type: roleLoadout
+  id: JobSeniorResearcher 
+  groups:
+  - ScientistBackpack
+  - SeniorResearcherJumpsuit
+
+- type: roleLoadout
+  id: JobSeniorOfficer 
+  groups:
+  - SecurityBackpack
+  - SeniorOfficerJumpsuit  
+  
+- type: roleLoadout
+  id: JobExpeditor 
+  groups:
+  - SalvageSpecialistBackpack
+  - ExpeditorJumpsuit    
+  

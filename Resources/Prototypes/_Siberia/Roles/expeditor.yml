@@ -30,14 +30,10 @@
 - type: startingGear
   id: ExpeditorGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitExpeditor
-    back: ClothingBackpackSalvageFilled
     shoes: ClothingShoesBootsCombat
     id: ExpeditorPDA
     ears: ClothingHeadsetCargo
     gloves: ClothingHandsGlovesFingerless
-  satchel: ClothingBackpackSatchelSalvageFilled
-  duffelbag: ClothingBackpackDuffelSalvageFilled
 
 - type: playTimeTracker
   id: JobExpeditor

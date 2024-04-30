@@ -43,8 +43,6 @@
 - type: startingGear
   id: BlueShieldGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitBlueshield
-    back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsJack
     eyes: ClothingEyesGlassesSunglasses
     head: ClothingHeadHatBeretBlueshield
@@ -53,8 +51,6 @@
     belt: ClothingBeltAssault
     pocket1: WeaponPistolMk58Nonlethal
     pocket2: CrowbarRed
-  satchel: ClothingBackpackSatchelSecurityFilled
-  duffelbag: ClothingBackpackDuffelSecurityFilled
 
 - type: playTimeTracker
   id: JobBlueshield
