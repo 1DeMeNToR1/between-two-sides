@@ -1,7 +1,7 @@
 - type: gameMap
   id: CrazyMarathon
   mapName: 'Marathon Station'
-  mapPath: /Maps/Crazymarathon_v2.yml
+  mapPath: /Maps/crazymarathon_v2.yml
   minPlayers: 35
   maxPlayers: 70
   stations:
