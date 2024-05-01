@@ -1,7 +1,7 @@
 - type: gameMap
-  id: CrazyMarathon
+  id: SiberiaMarathon
   mapName: 'Marathon Station'
-  mapPath: /Maps/Crazymarathon_v2.yml
+  mapPath: /Maps/Siberia/siberiamarathon.yml
   minPlayers: 35
   maxPlayers: 70
   stations:
