@@ -43,18 +43,14 @@
 - type: startingGear
   id: BlueShieldGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitBlueshield
-    back: ClothingBackpackSecurityFilled
     shoes: ClothingShoesBootsJack
     eyes: ClothingEyesGlassesSunglasses
     head: ClothingHeadHatBeretBlueshield
     id: BlueshieldPDA
     ears: ClothingHeadsetAltCommand
     belt: ClothingBeltAssault
-    pocket1: WeaponPistolMk58Nonlethal
+    pocket1: WeaponPistolMk58
     pocket2: CrowbarRed
-  satchel: ClothingBackpackSatchelSecurityFilled
-  duffelbag: ClothingBackpackDuffelSecurityFilled
 
 - type: playTimeTracker
   id: JobBlueshield
@@ -101,7 +97,9 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
   - type: Tag
     tags:
     - WhitelistChameleon

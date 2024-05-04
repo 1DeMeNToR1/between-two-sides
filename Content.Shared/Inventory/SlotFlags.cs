@@ -30,4 +30,6 @@ public enum SlotFlags
     TOP = 1 << 7,
     BOTTOM = 1 << 7,
     All = ~NONE,
+
+    WITHOUT_POCKET = All & ~POCKET
 }

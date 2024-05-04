@@ -32,5 +32,5 @@
       amount: 1
     - id: MagazinePistolSubMachineGun
       amount: 2
-    - id: MagazinePistolSubMachineGunRubber
+    - id: MagazinePistolSubMachineGun
       amount: 2

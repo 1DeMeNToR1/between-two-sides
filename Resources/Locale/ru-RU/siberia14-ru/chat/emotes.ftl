@@ -1,0 +1,13 @@
+chat-emote-name-boop = Бууп
+chat-emote-name-pilik = Пилик
+chat-emote-name-dymaet = Думает
+chat-emote-name-nyancat = Ньянкэт
+chat-emote-name-omg = OMG
+chat-emote-name-error = Ошибка
+chat-emote-name-starting = Запуск
+chat-emote-name-bdt = Шутить
+chat-emote-name-hiss =Шипеть
+chat-emote-name-meow = Не смей
+chat-emote-name-mew = Мяу
+chat-emote-name-growl = Рычать
+chat-emote-name-purr = Мурлыкать

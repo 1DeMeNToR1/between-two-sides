@@ -41,7 +41,7 @@
           Heat: 2
           Cold: -1
     - type: Repairable
-      fuelcost: 5 # cause most of the fuel is used how long its turned on for
+      fuelCost: 5 # cause most of the fuel is used how long its turned on for
       doAfterDelay: 7
       damage:
         types:
@@ -81,10 +81,10 @@
         Dead: BorgDead
     - type: UserInterface
       interfaces:
-      - key: enum.StrippingUiKey.Key
-        type: StrippableBoundUserInterface
-      - key: enum.SiliconLawsUiKey.Key
-        type: SiliconLawBoundUserInterface
+        enum.StrippingUiKey.Key:
+          type: StrippableBoundUserInterface
+        enum.SiliconLawsUiKey.Key:
+          type: SiliconLawBoundUserInterface
     - type: SiliconLawBound
     - type: IonStormTarget
     - type: SiliconLawProvider

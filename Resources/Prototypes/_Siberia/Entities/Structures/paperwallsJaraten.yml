@@ -30,8 +30,8 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
-    destroySound:
-      path: /Audio/Effects/metalbreak.ogg
+    # destroySound:
+      # path: /Audio/Effects/metalbreak.ogg
   - type: IconSmooth
     key: walls
     base: paperwall
@@ -68,8 +68,8 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
-    destroySound:
-      path: /Audio/Effects/metalbreak.ogg
+    # destroySound:
+      # path: /Audio/Effects/metalbreak.ogg
   - type: IconSmooth
     key: walls
     base: paperwall

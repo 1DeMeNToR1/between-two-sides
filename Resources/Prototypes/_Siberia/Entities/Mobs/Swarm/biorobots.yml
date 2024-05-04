@@ -60,12 +60,11 @@
   - type: NameIdentifier
     group: GenericNumber
   - type: Repairable
-    fuelcost: 15
+    fuelCost: 15
     doAfterDelay: 8
   - type: Tag
     tags:
     - DoorBumpOpener
-    - ShoesRequiredStepTriggerImmune
     - Flesh
   - type: MobState
     allowedStates:
@@ -170,10 +169,10 @@
     needsHands: false
   - type: UserInterface
     interfaces:
-    - key: enum.SiliconLawsUiKey.Key
-      type: SiliconLawBoundUserInterface
-    - key: enum.BorgUiKey.Key
-      type: BorgBoundUserInterface
+      enum.SiliconLawsUiKey.Key:
+        type: SiliconLawBoundUserInterface
+      enum.BorgUiKey.Key:
+        type: BorgBoundUserInterface
   - type: ActivatableUI
     key: enum.BorgUiKey.Key
   - type: SiliconLawBound
@@ -309,12 +308,12 @@
     tags:
     - FootstepSound
     - DoorBumpOpener
-    - ShoesRequiredStepTriggerImmune
     - Flesh
   - type: Speech
     speechSounds: Swarm
   - type: SwarmDrone
-    
+  - type: StepTriggerImmune
+  
 ######################### СТРАЖ РОЯ #############################
 
 - type: entity
@@ -376,10 +375,10 @@
   - type: Tag
     tags:
     - DoorBumpOpener
-    - ShoesRequiredStepTriggerImmune
     - Flesh
   - type: Speech
     speechSounds: Swarm
+  - type: StepTriggerImmune  
   - type: MeleeWeapon
     damage:
       types:
@@ -408,7 +407,8 @@
       path: /Audio/Weapons/Guns/Gunshots/Magic/staff_door.ogg
     soundEmpty:
       path: /Audio/Items/Lighters/lighter_off.ogg
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
   - type: ShowSyndicateIcons
   - type: MobThresholds
     thresholds:
@@ -500,10 +500,10 @@
   - type: Tag
     tags:
     - DoorBumpOpener
-    - ShoesRequiredStepTriggerImmune
     - Flesh
   - type: Speech
     speechSounds: Swarm
+  - type: StepTriggerImmune
   - type: ContainerFill
     containers:
       borg_module:
@@ -612,10 +612,10 @@
   - type: Tag
     tags:
     - DoorBumpOpener
-    - ShoesRequiredStepTriggerImmune
     - Flesh
   - type: Speech
     speechSounds: Swarm
+  - type: StepTriggerImmune
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -651,7 +651,8 @@
     - Biological
     - Inorganic
   - type: SolutionScanner
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
   - type: ShowSyndicateIcons
   - type: Bloodstream
     bloodMaxVolume: 650
@@ -666,8 +667,8 @@
       tags:
       - Wall
   - type: Dragon
-    spawnsLeft: 2
-    spawnsProto: MobSwarmbotBuilder
+    # spawnsLeft: 2
+    # spawnsProto: MobSwarmbotBuilder
     spawnRiftAction: ActionSpawnFactory
     riftPrototype: SwarmbotFactory
     maxAccumulator: 99999999
@@ -782,7 +783,6 @@
   - type: Tag
     tags:
     - DoorBumpOpener
-    - ShoesRequiredStepTriggerImmune
     - Flesh
   - type: Speech
     speechSounds: Swarm
@@ -811,7 +811,8 @@
       path: /Audio/Weapons/plasma_cutter.ogg
     soundEmpty:
       path: /Audio/Items/Lighters/lighter_off.ogg
-  - type: ShowSecurityIcons
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
   - type: ShowSyndicateIcons
   - type: MobThresholds
     thresholds:

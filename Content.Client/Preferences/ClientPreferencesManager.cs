@@ -1,12 +1,10 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using Content.Client.Siberia.Sponsors;
 using Content.Corvax.Interfaces.Client;
 using Content.Shared.Preferences;
 using Robust.Client;
+using Robust.Client.Player;
 using Robust.Shared.Configuration;
-using Robust.Shared.IoC;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
@@ -18,10 +16,11 @@ namespace Content.Client.Preferences
     ///     connection.
     ///     Stores preferences on the server through <see cref="SelectCharacter" /> and <see cref="UpdateCharacter" />.
     /// </summary>
-    public sealed class ClientPreferencesManager : IClientPreferencesManager
+    public partial class ClientPreferencesManager : IClientPreferencesManager
     {
         [Dependency] private readonly IClientNetManager _netManager = default!;
         [Dependency] private readonly IBaseClient _baseClient = default!;
+        [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly IPrototypeManager _prototypes = default!;
@@ -68,12 +67,13 @@ namespace Content.Client.Preferences
 
         public void UpdateCharacter(ICharacterProfile profile, int slot)
         {
+            var collection = IoCManager.Instance!;
             // Corvax-Sponsors-Start
             //var sponsorPrototypes = _sponsorsManager?.Prototypes.ToArray() ?? [];
             var sponsorPrototypes = _sponsorsManager.TryGetInfo(out var sponsor)
                 ? sponsor.AllowedMarkings
                 : new string[]{};
-            profile.EnsureValid(_cfg, _prototypes, sponsorPrototypes);
+            profile.EnsureValid(_playerManager.LocalSession!, collection, sponsorPrototypes);
             // Corvax-Sponsors-End
             var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters) {[slot] = profile};
             Preferences = new PlayerPreferences(characters, Preferences.SelectedCharacterIndex, Preferences.AdminOOCColor);

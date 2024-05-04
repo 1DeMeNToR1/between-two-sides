@@ -71,10 +71,10 @@
     key: enum.SharedGasTankUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
-    - key: enum.SharedGasTankUiKey.Key
-      type: GasTankBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
   - type: UseDelay
     delay: 0.5
   - type: GasTank
@@ -128,8 +128,8 @@
     key: enum.SharedGasTankUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.SharedGasTankUiKey.Key
-      type: GasTankBoundUserInterface
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
   - type: GasTank
     outputPressure: 21.3
     air:
@@ -179,8 +179,8 @@
     key: enum.SharedGasTankUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.SharedGasTankUiKey.Key
-      type: GasTankBoundUserInterface
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
   - type: GasTank
     outputPressure: 21.3
     air:
@@ -227,12 +227,12 @@
     key: enum.SharedGasTankUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.SharedGasTankUiKey.Key
-      type: GasTankBoundUserInterface
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
-    - key: enum.TransferAmountUiKey.Key
-      type: TransferAmountBoundUserInterface
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
   - type: GasTank
     outputPressure: 21.3
     air:
@@ -304,10 +304,10 @@
     key: enum.SharedGasTankUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.SharedGasTankUiKey.Key
-      type: GasTankBoundUserInterface
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
   - type: GasTank
     outputPressure: 21.3
     air:
@@ -376,8 +376,8 @@
     key: enum.SharedGasTankUiKey.Key
   - type: UserInterface
     interfaces:
-    - key: enum.SharedGasTankUiKey.Key
-      type: GasTankBoundUserInterface
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
   - type: GasTank
     outputPressure: 21.3
     air:
