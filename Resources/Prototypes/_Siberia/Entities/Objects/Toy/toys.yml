@@ -178,7 +178,7 @@
       path: /Audio/Voice/Reptilian/reptilian_scream.ogg
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/Voice/Reptilian/reptilian_scream.ogg  
+      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
 
 - type: entity
   parent: BasePlushie
@@ -207,7 +207,7 @@
       path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg   
+      path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg
 
 - type: entity
   parent: PlushieResomiColour
@@ -217,4 +217,38 @@
   components:
   - type: Sprite
     sprite: Siberia/Objects/Toy/plushie_resomi.rsi
-    state: icon-black   
+    state: icon-black
+
+- type: entity
+  id: volleyball
+  parent: BaseItem
+  name: волейбольный мяч
+  description: Обычный мяч.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/voleyball.rsi
+    state: icon
+    scale: 0.7, 0.7
+  - type: Item
+    size: Normal
+    sprite: Siberia/Objects/Toy/voleyball.rsi
+  - type: Tag
+    tags:
+      - VolleyBall
+
+- type: entity
+  id: volleyballfriend
+  parent: BaseItem
+  name: волейбольный друг
+  description: Друг из мяча.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/voleyball.rsi
+    state: icon1
+    scale: 0.7, 0.7
+  - type: Item
+    size: Normal
+    sprite: Siberia/Objects/Toy/voleyball.rsi
+  - type: Construction
+    graph: volleyballfriendsib
+    node: volleyballfriendsib
