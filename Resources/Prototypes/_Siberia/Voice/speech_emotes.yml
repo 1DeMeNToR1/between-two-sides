@@ -10,6 +10,7 @@
 
 - type: emote
   id: Boop
+  name: chat-emote-name-boop
   category: Vocal
   chatMessages: [буп]
   chatTriggers:
@@ -33,6 +34,7 @@
 
 - type: emote
   id: Pilik
+  name: chat-emote-name-pilik
   category: Vocal
   chatMessages: [пиликает]
   chatTriggers:
@@ -42,6 +44,7 @@
 
 - type: emote
   id: Dymaet
+  name: chat-emote-name-dymaet
   category: Vocal
   chatMessages: [вычисляет]
   chatTriggers:
@@ -57,6 +60,7 @@
 
 - type: emote
   id: Nyancat
+  name: chat-emote-name-nyancat
   category: Vocal
   chatMessages: [нянянкает]
   chatTriggers:
@@ -64,6 +68,7 @@
 
 - type: emote
   id: Omg
+  name: chat-emote-name-omg
   category: Vocal
   chatMessages: [в шоке]
   chatTriggers:
@@ -73,6 +78,7 @@
 
 - type: emote
   id: Error
+  name: chat-emote-name-error
   category: Vocal
   chatMessages: [выдаёт ошибку]
   chatTriggers:
@@ -82,6 +88,7 @@
 
 - type: emote
   id: Starting
+  name: chat-emote-name-starting
   category: Vocal
   chatMessages: [запускается]
   chatTriggers:
@@ -94,6 +101,7 @@
 
 - type: emote
   id: Bdt
+  name: chat-emote-name-bdt
   category: Vocal
   chatMessages: [шутит]
   chatTriggers:
@@ -103,6 +111,7 @@
     
 - type: emote
   id: Hiss
+  name: chat-emote-name-hiss
   category: Vocal
   chatMessages: [hisses.]
   chatTriggers:
@@ -116,6 +125,7 @@
 
 - type: emote
   id: Meow
+  name: chat-emote-name-meow
   category: Vocal
   chatMessages: [meows.]
   chatTriggers:
@@ -140,6 +150,7 @@
 
 - type: emote
   id: Mew
+  name: chat-emote-name-mew
   category: Vocal
   chatMessages: [mews.]
   chatTriggers:
@@ -154,6 +165,7 @@
 
 - type: emote
   id: Growl
+  name: chat-emote-name-growl
   category: Vocal
   chatMessages: [growls.]
   chatTriggers:
@@ -168,6 +180,7 @@
 
 - type: emote
   id: Purr
+  name: chat-emote-name-purr
   category: Vocal
   chatMessages: [purrs.]
   chatTriggers:
