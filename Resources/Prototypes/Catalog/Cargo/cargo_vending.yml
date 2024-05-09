@@ -23,7 +23,7 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockChefvendFilled
-  cost: 680
+  cost: 820 # Siberia-changes
   category: cargoproduct-category-name-service
   group: market
 
@@ -33,7 +33,7 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockClothesFilled
-  cost: 2400
+  cost: 2520 # Siberia-changes
   category: cargoproduct-category-name-service
   group: market
 
@@ -43,7 +43,7 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockAutoDrobeFilled
-  cost: 1200
+  cost: 1610 # Siberia-changes
   category: cargoproduct-category-name-service
   group: market
 
@@ -174,7 +174,7 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockSeedsFilled
-  cost: 3375
+  cost: 3460 # Siberia-changes
   category: cargoproduct-category-name-hydroponics
   group: market
 

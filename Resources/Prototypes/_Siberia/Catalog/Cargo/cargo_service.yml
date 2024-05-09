@@ -5,7 +5,7 @@
     sprite: Objects/Consumable/Food/meat.rsi
     state: goliath
   product: CrateMeatBox
-  cost: 1500
+  cost: 1650
   category: Service
   group: market
 
