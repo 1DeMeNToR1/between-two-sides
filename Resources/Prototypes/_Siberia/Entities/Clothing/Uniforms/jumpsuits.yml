@@ -211,10 +211,22 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitGreenCargoShirt
-  name: Зелёная рубашко с карго
+  name: зелёная рубашко с карго
   description: Тонкая зелёная рубашка с штанами карго.
   components:
   - type: Sprite
     sprite: Siberia/Clothing/Uniforms/Jumpsuit/greencargoshirt.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Uniforms/Jumpsuit/greencargoshirt.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBunnysuit
+  name: костюм кролика
+  description: Довольно открытый костюм кролика. Убедись, что ты будешь хорошей девочкой-кроликом.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Uniforms/Jumpsuit/bunnysuit.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Uniforms/Jumpsuit/bunnysuit.rsi
