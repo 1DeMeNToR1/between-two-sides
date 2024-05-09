@@ -165,7 +165,6 @@
     emagStaticRecipes:
       - BoxLethalshot
       - BoxShotgunFlare
-      - GrenadeBlast
       - MagazineBoxLightRifle
       - MagazineBoxMagnum
       - MagazineBoxPistol
@@ -187,6 +186,7 @@
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
+      - GrenadeBlast
       - GrenadeEMP
       - GrenadeFlash
       - MagazineBoxLightRifleIncendiary
@@ -725,6 +725,7 @@
       - BoxShotgunUranium
       - ExplosivePayload
       - FlashPayload
+      - GrenadeBlast
       - GrenadeEMP
       - GrenadeFlash
       - HoloprojectorSecurity
@@ -745,6 +746,7 @@
       - MagazineRifleUranium
       - MagazineShotgunBeanbag
       - MagazineShotgunIncendiary
+      - PortableRecharger
       - PowerCageHigh
       - PowerCageMedium
       - PowerCageSmall
@@ -767,14 +769,6 @@
       - WeaponLaserCannon
       - WeaponLaserCarbine
       - WeaponXrayCannon
-      - PowerCageSmall
-      - PowerCageMedium
-      - PowerCageHigh
-      - ShuttleGunSvalinnMachineGunCircuitboard
-      - ShuttleGunPerforatorCircuitboard
-      - ShuttleGunFriendshipCircuitboard
-      - ShuttleGunDusterCircuitboard
-      - PortableRecharger
       - Mk85L # Siberia-change
   - type: MaterialStorage
     whitelist:
