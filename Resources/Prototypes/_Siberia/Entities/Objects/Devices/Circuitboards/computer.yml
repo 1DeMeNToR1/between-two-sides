@@ -1,0 +1,53 @@
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: AlertsComputerCapCircuitboard
+  name: alerts computer board
+  description: A computer printed circuit board for an alerts computer.
+  components:
+    - type: ComputerBoard
+      prototype: ComputerAlert
+      
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: AlertsComputerCmoCircuitboard
+  name: alerts computer board
+  description: A computer printed circuit board for an alerts computer.
+  components:
+    - type: ComputerBoard
+      prototype: ComputerAlert
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: AlertsComputerHopCircuitboard
+  name: alerts computer board
+  description: A computer printed circuit board for an alerts computer.
+  components:
+    - type: ComputerBoard
+      prototype: ComputerAlert
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: AlertsComputerHosCircuitboard
+  name: alerts computer board
+  description: A computer printed circuit board for an alerts computer.
+  components:
+    - type: ComputerBoard
+      prototype: ComputerAlert
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: AlertsComputerRdCircuitboard
+  name: alerts computer board
+  description: A computer printed circuit board for an alerts computer.
+  components:
+    - type: ComputerBoard
+      prototype: ComputerAlert
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: AlertsComputerSeCircuitboard
+  name: alerts computer board
+  description: A computer printed circuit board for an alerts computer.
+  components:
+    - type: ComputerBoard
+      prototype: ComputerAlert            
