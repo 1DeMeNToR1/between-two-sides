@@ -259,11 +259,6 @@
       - id: ForensicScanner
       - id: ClothingBeltSecurityFilled
       - id: Flash
-      - id:
-      - id:
-      - id:
-      - id:
-      - id:
 
 - type: entity
   name: ионная винтовка
