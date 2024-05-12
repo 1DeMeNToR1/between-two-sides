@@ -20,13 +20,6 @@
   - External
   - Expeditor
 
-- type: statusIcon
-  parent: JobIcon
-  id: JobIconExpeditor
-  icon:
-    sprite: Interface/Misc/job_icons.rsi
-    state: Expeditor
-
 - type: startingGear
   id: ExpeditorGear
   equipment:
