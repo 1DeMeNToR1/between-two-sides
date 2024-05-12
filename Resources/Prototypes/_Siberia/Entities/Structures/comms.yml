@@ -25,6 +25,7 @@
       enum.CommunicationsConsoleUiKey.Key:
         type: CommunicationsConsoleBoundUserInterface
   - type: Computer
+    board: AlertsComputerCapCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -60,7 +61,7 @@
       enum.CommunicationsConsoleUiKey.Key:
         type: CommunicationsConsoleBoundUserInterface
   - type: Computer
-    board: CommsComputerCircuitboard
+    board: AlertsComputerCmoCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -96,6 +97,7 @@
       enum.CommunicationsConsoleUiKey.Key:
         type: CommunicationsConsoleBoundUserInterface
   - type: Computer
+    board: AlertsComputerHopCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -131,6 +133,7 @@
       enum.CommunicationsConsoleUiKey.Key:
         type: CommunicationsConsoleBoundUserInterface
   - type: Computer
+    board: AlertsComputerHosCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -166,6 +169,7 @@
       enum.CommunicationsConsoleUiKey.Key:
         type: CommunicationsConsoleBoundUserInterface
   - type: Computer
+    board: AlertsComputerRdCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -201,6 +205,7 @@
       enum.CommunicationsConsoleUiKey.Key:
         type: CommunicationsConsoleBoundUserInterface
   - type: Computer
+    board: AlertsComputerSeCircuitboard
   - type: PointLight
     radius: 1.5
     energy: 1.6

@@ -62,6 +62,17 @@
               amount: 2
               doAfter: 2
 
+        - to: paperWall # Siberia-changes
+          completed:
+            - !type:SnapToGrid
+              southRotation: true
+          conditions:
+            - !type:EntityAnchored {}
+          steps:
+            - material: Paper
+              amount: 2
+              doAfter: 2
+              
         - to: uraniumWall
           completed:
             - !type:SnapToGrid
@@ -185,6 +196,18 @@
             - tool: Prying
               doAfter: 10
 
+    - node: paperWall # Siberia-changes
+      entity: WallPaperJaraten2
+      edges:
+        - to: girder
+          completed:
+            - !type:GivePrototype
+              prototype: SheetPaper1
+              amount: 2
+          steps:
+            - tool: Prying
+              doAfter: 10
+              
     - node: uraniumWall
       entity: WallUranium
       edges:

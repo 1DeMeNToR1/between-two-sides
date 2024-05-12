@@ -33,13 +33,6 @@
     components:
       - type: CommandStaff
 
-- type: statusIcon
-  parent: JobIcon
-  id: JobIconBlueShield
-  icon:
-    sprite: Interface/Misc/job_icons.rsi
-    state: Blueshield
-
 - type: startingGear
   id: BlueShieldGear
   equipment:
@@ -259,11 +252,6 @@
       - id: ForensicScanner
       - id: ClothingBeltSecurityFilled
       - id: Flash
-      - id:
-      - id:
-      - id:
-      - id:
-      - id:
 
 - type: entity
   name: ионная винтовка

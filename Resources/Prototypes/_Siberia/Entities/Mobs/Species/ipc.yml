@@ -158,7 +158,7 @@
 - type: entity
   save: false
   parent:
-  - MobBloodstreamEfimIpc
+  - MobBloodstreamIpc
   - MobAtmosStandard
   - MobFlammable
   - BaseMobSpecies
@@ -225,10 +225,17 @@
         amount: 5
   - type: FireVisuals
     alternateState: Standing
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 0
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
 
 - type: entity
   save: false
-  id: MobBloodstreamEfimIpc
+  id: MobBloodstreamIpc
   abstract: true
   components:
   - type: SolutionContainerManager

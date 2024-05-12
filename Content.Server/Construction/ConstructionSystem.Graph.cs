@@ -304,8 +304,8 @@ namespace Content.Server.Construction
                 return null;
 
             // [Optional] Exit if the new entity's prototype is a parent of the original
-            // E.g., if an entity with the 'AirlockCommand' prototype was to be replaced with a new entity that
-            // had the 'Airlock' prototype, and DoNotReplaceInheritingEntities was true, the code block would
+            // E.g., if an entity with the 'AirlockCommand' prototype was to be replaced with a new entity that 
+            // had the 'Airlock' prototype, and DoNotReplaceInheritingEntities was true, the code block would 
             // exit here because 'AirlockCommand' is derived from 'Airlock'
             if (GetCurrentNode(uid, construction)?.DoNotReplaceInheritingEntities == true &&
                 metaData.EntityPrototype?.ID != null)
@@ -394,22 +394,15 @@ namespace Content.Server.Construction
                 }
             }
 
-            /*var entChangeEv = new ConstructionChangeEntityEvent(newUid, uid);
+            var entChangeEv = new ConstructionChangeEntityEvent(newUid, uid);
             RaiseLocalEvent(uid, entChangeEv);
             RaiseLocalEvent(newUid, entChangeEv, broadcast: true);
 
             foreach (var logic in GetCurrentNode(newUid, newConstruction)!.TransformLogic)
             {
                 logic.Transform(uid, newUid, userUid, new(EntityManager));
-            }*/
-            // Siberia-changes-start
-            var currentNode = GetCurrentNode(newUid, newConstruction);
-
-            foreach (var logic in (currentNode?.TransformLogic ?? Array.Empty<IGraphTransform>()))
-            {
-                logic.Transform(uid, newUid, userUid, new(EntityManager));
             }
-            // Siberia-changes-end
+
             EntityManager.InitializeAndStartEntity(newUid);
 
             QueueDel(uid);

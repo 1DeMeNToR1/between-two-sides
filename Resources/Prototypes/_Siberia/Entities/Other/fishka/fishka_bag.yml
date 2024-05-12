@@ -59,6 +59,9 @@
     state: dicebag
   - type: Item
   - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,7,8
     whitelist:
       tags:
         - fishka
