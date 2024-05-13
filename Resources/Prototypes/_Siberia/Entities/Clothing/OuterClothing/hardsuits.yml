@@ -385,3 +385,34 @@
       moles:
         - 2.051379050
       temperature: 293.15
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitAssault
+  name: штурмовой скафандр
+  description: За демократию!
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/OuterClothing/Hardsuits/assault.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/OuterClothing/Hardsuits/assault.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Radiation: 0.5
+        Heat: 0.5
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitAssault
