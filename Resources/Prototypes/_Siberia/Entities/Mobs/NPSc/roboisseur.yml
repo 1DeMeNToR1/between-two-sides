@@ -1,0 +1,20 @@
+- type: entity
+  parent: BaseStructure
+  id: Roboisseur
+  name: Mr. Butlertron
+  description: Он просит доставить еду особым клиентам по всему космосу. Работает на основе Блюспейс доставки еды!
+  components:
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    sprite: Siberia/Mobs/NPC/roboisseur.rsi
+    layers:
+    - state: roboisseur-1
+  - type: Speech
+    speechSounds: Pai
+  - type: Roboisseur
+  - type: Appearance
+  - type: Grammar
+    attributes:
+      gender: male
+      proper: true
