@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.InteropServices;
-using Content.Corvax.Interfaces.Server;
+using Content.Corvax.Interfaces.Shared;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Administration.Systems;
@@ -151,6 +151,14 @@ namespace Content.Server.Chat.Managers
 
             ChatMessageToMany(ChatChannel.Admin, message, wrappedMessage, default, false, true, clients);
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Admin announcement: {message}");
+        }
+
+        public void SendAdminAnnouncementMessage(ICommonSession player, string message, bool suppressLog = true)
+        {
+            var wrappedMessage = Loc.GetString("chat-manager-send-admin-announcement-wrap-message",
+                ("adminChannelName", Loc.GetString("chat-manager-admin-channel-name")),
+                ("message", FormattedMessage.EscapeText(message)));
+            ChatMessageToOne(ChatChannel.Admin, message, wrappedMessage, default, false, player.Channel);
         }
 
         public void SendAdminAlert(string message)

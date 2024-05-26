@@ -1,8 +1,8 @@
 using System.Collections.Immutable;
 using System.Runtime.InteropServices;
-using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using Content.Corvax.Interfaces.Server;
+using Content.Corvax.Interfaces.Shared;
 using Content.Server.Database;
 using Content.Server.GameTicking;
 using Content.Server.Preferences.Managers;

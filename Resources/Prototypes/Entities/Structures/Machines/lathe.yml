@@ -925,6 +925,7 @@
       - Saw
       - Hemostat
       - ClothingEyesGlassesChemical
+      - WhiteCane
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
