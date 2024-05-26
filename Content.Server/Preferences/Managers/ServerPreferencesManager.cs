@@ -2,7 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Content.Corvax.Interfaces.Server;
+using Content.Corvax.Interfaces.Shared;
 using Content.Server.Database;
 using Content.Server.Humanoid;
 using Content.Server.Siberia.Sponsors;
@@ -33,10 +33,14 @@ namespace Content.Server.Preferences.Managers
         [Dependency] private readonly IDependencyCollection _dependencies = default!;
         [Dependency] private readonly IPrototypeManager _protos = default!;
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
+        [Dependency] private readonly ILogManager _log = default!;
+
 
         // Cache player prefs on the server so we don't need as much async hell related to them.
         private readonly Dictionary<NetUserId, PlayerPrefData> _cachedPlayerPrefs =
             new();
+
+        private ISawmill _sawmill = default!;
 
         // private int MaxCharacterSlots => _cfg.GetCVar(CCVars.GameMaxCharacterSlots); // Corvax-Sponsors
 
@@ -46,6 +50,7 @@ namespace Content.Server.Preferences.Managers
             _netManager.RegisterNetMessage<MsgSelectCharacter>(HandleSelectCharacterMessage);
             _netManager.RegisterNetMessage<MsgUpdateCharacter>(HandleUpdateCharacterMessage);
             _netManager.RegisterNetMessage<MsgDeleteCharacter>(HandleDeleteCharacterMessage);
+            _sawmill = _log.GetSawmill("prefs");
         }
 
         private async void HandleSelectCharacterMessage(MsgSelectCharacter message)
@@ -82,34 +87,32 @@ namespace Content.Server.Preferences.Managers
 
         private async void HandleUpdateCharacterMessage(MsgUpdateCharacter message)
         {
-            var slot = message.Slot;
-            var profile = message.Profile;
             var userId = message.MsgChannel.UserId;
 
-            if (profile == null)
-            {
-                Logger.WarningS("prefs",
-                    $"User {userId} sent a {nameof(MsgUpdateCharacter)} with a null profile in slot {slot}.");
-                return;
-            }
+            // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
+            if (message.Profile == null)
+                _sawmill.Error($"User {userId} sent a {nameof(MsgUpdateCharacter)} with a null profile in slot {message.Slot}.");
+            else
+                await SetProfile(userId, message.Slot, message.Profile);
+        }
 
+        public async Task SetProfile(NetUserId userId, int slot, ICharacterProfile profile)
+        {
             if (!_cachedPlayerPrefs.TryGetValue(userId, out var prefsData) || !prefsData.PrefsLoaded)
             {
-                Logger.WarningS("prefs", $"User {userId} tried to modify preferences before they loaded.");
+                _sawmill.Error($"Tried to modify user {userId} preferences before they loaded.");
                 return;
             }
 
             if (slot < 0 || slot >= GetMaxUserCharacterSlots(userId)) // Corvax-Sponsors
-            {
                 return;
-            }
 
             var curPrefs = prefsData.Prefs!;
             var session = _playerManager.GetSessionById(userId);
 
             // Corvax-Sponsors-Start: Ensure removing sponsor markings if client somehow bypassed client filtering
             // WARN! It's not removing markings from DB!
-            var sponsorPrototypes = _sponsorsManager.TryGetInfo(message.MsgChannel.UserId, out var sponsor)
+            var sponsorPrototypes = _sponsorsManager.TryGetInfo(session.Channel.UserId, out var sponsor)
                 ? sponsor.AllowedMarkings
                 : new string[]{};
             profile.EnsureValid(session, _dependencies, sponsorPrototypes);
@@ -122,10 +125,8 @@ namespace Content.Server.Preferences.Managers
 
             prefsData.Prefs = new PlayerPreferences(profiles, slot, curPrefs.AdminOOCColor);
 
-            if (ShouldStorePrefs(message.MsgChannel.AuthType))
-            {
-                await _db.SaveCharacterSlotAsync(message.MsgChannel.UserId, message.Profile, message.Slot);
-            }
+            if (ShouldStorePrefs(session.Channel.AuthType))
+                await _db.SaveCharacterSlotAsync(userId, profile, slot);
         }
 
         private async void HandleDeleteCharacterMessage(MsgDeleteCharacter message)

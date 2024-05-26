@@ -6,7 +6,6 @@ objectives-round-end-result =
     }
 objectives-round-end-result-in-custody = { $custody } из { $count } были арестованы.
 objectives-player-user-named = [color=White][/color] ([color=gray][/color])
-objectives-player-user = [color=gray][/color]
 objectives-player-named = [color=White][/color]
 objectives-no-objectives = { $custody }{ $title }.
 objectives-with-objectives = { $custody }{ $title } со следующими целями:

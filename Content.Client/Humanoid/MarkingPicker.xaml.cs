@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Client.Siberia.Sponsors;
+using Content.Corvax.Interfaces.Shared;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
