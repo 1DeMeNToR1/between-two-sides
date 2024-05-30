@@ -37,11 +37,11 @@
   name: экспедитор
   components:
   - type: SpawnPoint
-    job_id: expeditor
+    job_id: Expeditor
   - type: Sprite
     layers:
       - state: green
-      - state: captain
+      - state: salvagespecialist
 
 - type: entity
   id: LockerExpeditor
