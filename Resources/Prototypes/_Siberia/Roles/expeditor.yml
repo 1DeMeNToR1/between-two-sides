@@ -5,7 +5,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 180000 # 3 hrs
+      time: 10800 # 3 Siberia-RoleTime
   playTimeTracker: JobExpeditor
   startingGear: ExpeditorGear
   icon: "JobIconExpeditor"
