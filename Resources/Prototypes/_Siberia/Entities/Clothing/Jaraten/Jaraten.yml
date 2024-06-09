@@ -98,7 +98,7 @@
     sprite: Siberia/Clothing/body.rsi
 
 - type: entity
-  parent: ClothingShoesBase
+  parent: ClothingSocksBaseButcherable
   id: Clothingmimesocks
   name: мимские носочки
   description: "..."
