@@ -24,6 +24,7 @@ using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Roles.Jobs;
+using Content.Shared.Tag;
 using Robust.Server.Containers;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
@@ -60,6 +61,7 @@ namespace Content.Server.Cloning
         [Dependency] private readonly SharedMindSystem _mindSystem = default!;
         [Dependency] private readonly MetaDataSystem _metaSystem = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
+        [Dependency] private readonly TagSystem _tags = default!;
 
         public readonly Dictionary<MindComponent, EntityUid> ClonesWaitingForMind = new();
         public const float EasyModeCloningCost = 0.7f;
@@ -175,6 +177,19 @@ namespace Content.Server.Cloning
 
             if (_configManager.GetCVar(CCVars.BiomassEasyMode))
                 cloningCost = (int) Math.Round(cloningCost * EasyModeCloningCost);
+            // Check if they have the uncloneable tag
+            if (_tags.HasTag(bodyToClone, "Unclonable"))
+            {
+                if (clonePod.ConnectedConsole != null)
+                {
+                    _chatSystem.TrySendInGameICMessage(clonePod.ConnectedConsole.Value,
+                        Loc.GetString("cloning-console-uncloneable-trait-error"),
+                        InGameICChatType.Speak,
+                        false);
+                }
+
+                return false;
+            }
 
             // biomass checks
             var biomassAmount = _material.GetMaterialAmount(uid, clonePod.RequiredMaterial);
