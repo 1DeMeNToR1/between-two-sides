@@ -65,6 +65,9 @@
       uiWindowPos: 0,3
       strippingWindowPos: 0,1
       displayName: Neck
+      blacklist:
+        tags:
+          - Socks      
     - name: mask
       slotTexture: mask
       slotFlags: MASK
