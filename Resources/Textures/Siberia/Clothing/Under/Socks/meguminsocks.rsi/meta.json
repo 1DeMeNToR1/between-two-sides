@@ -10,8 +10,12 @@
     {
       "name": "icon"
     },
-	{
+    {
       "name": "equipped-SOCKS",
+      "directions": 4
+    },
+    {
+      "name": "equipped-SOCKS-resomi",
       "directions": 4
     }
   ]
