@@ -7,6 +7,7 @@ using Content.Shared.Coordinates.Helpers;
 using Content.Shared.Interaction.Events;
 using JetBrains.Annotations;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Timing;
 
 namespace Content.Shared.Siberia.AdvHolofan.Components;
 [UsedImplicitly]
@@ -14,6 +15,7 @@ public abstract class SharedAdvHolofanSystem : EntitySystem
 {
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     public override void Initialize()
     {
@@ -40,7 +42,8 @@ public abstract class SharedAdvHolofanSystem : EntitySystem
     }
     public virtual void OnBeforeInteract(EntityUid uid, AdvHolofanComponent comp, BeforeRangedInteractEvent args)
     {
-        if (args.Handled
+        if (!_timing.IsFirstTimePredicted
+            || args.Handled
             || !args.CanReach // prevent placing out of range
             || HasComp<StorageComponent>(args.Target) // if it's a storage component like a bag, we ignore usage so it can be stored
            )
@@ -64,7 +67,7 @@ public abstract class SharedAdvHolofanSystem : EntitySystem
         comp.UiUpdateNeeded = true;
         args.Handled = true;
 
-        Dirty(uid, comp);
+        // Dirty(uid, comp);
 
         _audio.PlayPvs(comp.NewHolofanSound, uid);
         comp.Signs.Add(holoUid);

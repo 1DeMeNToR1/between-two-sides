@@ -1,4 +1,4 @@
-using Robust.Server.Audio;
+/*using Robust.Server.Audio;
 using Content.Shared.Siberia.AdvHolofan.Components;
 using Content.Shared.Storage;
 using Content.Shared.Coordinates.Helpers;
@@ -50,6 +50,6 @@ public sealed partial class AdvHolofanSystem : SharedAdvHolofanSystem
     public override void OnUseInHand(EntityUid uid, AdvHolofanComponent comp, UseInHandEvent args)
     {
         base.OnUseInHand(uid, comp, args);
-    }*/
+    }
 }
-
+*/
