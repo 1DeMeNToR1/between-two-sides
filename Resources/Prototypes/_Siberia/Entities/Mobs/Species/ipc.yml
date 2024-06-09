@@ -101,6 +101,7 @@
         - FootstepSound
         - CanPilot
         - DoorBumpOpener
+        - Unclonable
     - type: TypingIndicator
       proto: robot
     - type: Insulated
