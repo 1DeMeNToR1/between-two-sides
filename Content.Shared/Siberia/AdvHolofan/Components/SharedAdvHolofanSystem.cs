@@ -1,6 +1,4 @@
-using Content.Shared.Examine;
 using Content.Shared.Interaction;
-using Robust.Shared.Audio;
 using Content.Shared.Siberia.AdvHolofan.Components;
 using Content.Shared.Storage;
 using Content.Shared.Coordinates.Helpers;
@@ -19,23 +17,10 @@ public abstract class SharedAdvHolofanSystem : EntitySystem
 
     public override void Initialize()
     {
-        SubscribeLocalEvent<AdvHolofanComponent, ExaminedEvent>(OnExamine);
         SubscribeLocalEvent<AdvHolofanComponent, BeforeRangedInteractEvent>(OnBeforeInteract);
         SubscribeLocalEvent<AdvHolofanComponent, UseInHandEvent>(OnUseInHand);
     }
 
-    private void OnExamine(EntityUid uid, AdvHolofanComponent comp, ExaminedEvent args)
-    {
-        using (args.PushGroup(nameof(AdvHolofanComponent)))
-        {
-            args.PushMarkup(Loc.GetString("actived-signs", ("count", comp.Signs.Count)));
-
-            if (comp.Signs.Count == 0)
-            {
-                args.PushMarkup(Loc.GetString("max-holo-signs"));
-            }
-        }
-    }
     public String GetStr(AdvHolofanComponent comp)
     {
         return Loc.GetString("actived-signs", ("count", comp.Signs.Count));
@@ -64,13 +49,11 @@ public abstract class SharedAdvHolofanSystem : EntitySystem
         if (!xform.Anchored)
             _transform.AnchorEntity(holoUid, xform); // anchor to prevent any tempering with (don't know what could even interact with it)
 
-        comp.UiUpdateNeeded = true;
-        args.Handled = true;
-
-        // Dirty(uid, comp);
-
         _audio.PlayPvs(comp.NewHolofanSound, uid);
         comp.Signs.Add(holoUid);
+
+        comp.UiUpdateNeeded = true;
+        args.Handled = true;
     }
     public virtual void OnUseInHand(EntityUid uid, AdvHolofanComponent comp, UseInHandEvent args)
     {
@@ -84,8 +67,6 @@ public abstract class SharedAdvHolofanSystem : EntitySystem
             comp.Signs.Clear();
             _audio.PlayPvs(comp.ClearHolofansSound, uid);
         }
-
-        Dirty(uid, comp);
 
         comp.UiUpdateNeeded = true;
         args.Handled = true;
