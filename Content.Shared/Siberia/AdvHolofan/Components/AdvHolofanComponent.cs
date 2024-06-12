@@ -31,6 +31,4 @@ public sealed partial class AdvHolofanComponent : Component
     [DataField("clearHolofansSound")]
     public SoundSpecifier ClearHolofansSound = new SoundPathSpecifier("/Audio/Magic/Cults/ClockCult/steam_whoosh.ogg");
 
-    [DataField("updateRate")]
-    public float UpdateRate = 1.5f;
 }
