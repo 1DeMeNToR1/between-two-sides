@@ -18,9 +18,8 @@ public sealed partial class AdvHolofanComponent : Component
     [DataField("signProto", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string SignProto = "HolosignWetFloor";
 
-    //[AutoNetworkedField]
-    public List<EntityUid> Signs = new();
 
+    public List<EntityUid> Signs = new();
 
     [ViewVariables(VVAccess.ReadWrite)]
     public Boolean UiUpdateNeeded { get; set; }
