@@ -135,6 +135,7 @@ namespace Content.Client.Stylesheets
         public const string StyleClassPowerStateLow = "PowerStateLow";
         public const string StyleClassPowerStateGood = "PowerStateGood";
 
+        public const string StyleClassDigitsItemStatus = "DigitsItemStatus"; // Siberia-changes
         public const string StyleClassItemStatus = "ItemStatus";
         public const string StyleClassItemStatusNotHeld = "ItemStatusNotHeld";
         public static readonly Color ItemStatusNotHeldColor = Color.Gray;
@@ -1234,6 +1235,11 @@ namespace Content.Client.Stylesheets
                 new StyleRule(SelectorElement.Class(StyleClassItemStatus), new[]
                 {
                     new StyleProperty("font", notoSans10),
+                }),
+
+                new StyleRule(SelectorElement.Class(StyleClassDigitsItemStatus), new [] // Siberia-changes
+                {
+                    new StyleProperty("font", notoSansBold16),
                 }),
 
                 Element()
