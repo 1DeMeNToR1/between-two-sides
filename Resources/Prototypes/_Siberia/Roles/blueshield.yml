@@ -330,9 +330,18 @@
       implant: DeathRattleImplantNanotrasen
 
 - type: entity
-  parent: AirlockCommand
+  parent: AirlockCommandLocked
   id: AirlockBlueshieldLocked
   suffix: Blueshield, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBS ]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsBS
+  suffix: Cargo, Locked
   components:
   - type: AccessReader
     access: [["Blueshield"]]
