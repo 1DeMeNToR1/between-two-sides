@@ -332,6 +332,7 @@
 - type: entity
   parent: AirlockCommandLocked
   id: AirlockBlueshieldLocked
+  name: шлюз
   suffix: Blueshield, Locked
   components:
   - type: ContainerFill
