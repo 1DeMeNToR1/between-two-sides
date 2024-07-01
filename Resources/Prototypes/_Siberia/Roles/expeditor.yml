@@ -123,10 +123,19 @@
 
 
 - type: entity
-  parent: AirlockCargo
+  parent: AirlockCargoLocked
   id: AirlockExpeditorLocked
   name: шлюз
   suffix: Expeditor, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsExp ]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsExp
+  suffix: Cargo, Locked
   components:
   - type: AccessReader
     access: [["Expeditor"]]
