@@ -163,20 +163,20 @@
     - мяу
     - мяу!
 
-- type: emote
-  id: Growl
-  name: chat-emote-name-growl
-  category: Vocal
-  chatMessages: [growls.]
-  chatTriggers:
-    - growl
-    - growls
-    - growls.
-    - growls!
-    - growling
-    - growled
-    - рычит
-    - рычит!
+# - type: emote # redo..
+  # id: Growl
+  # name: chat-emote-name-growl
+  # category: Vocal
+  # chatMessages: [growls.]
+  # chatTriggers:
+    # - growl
+    # - growls
+    # - growls.
+    # - growls!
+    # - growling
+    # - growled
+    # - рычит
+    # - рычит!
 
 - type: emote
   id: Purr
