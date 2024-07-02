@@ -490,16 +490,11 @@
     sprite: Siberia/Mobs/Silicon/BioSwarm/swarmjob.rsi
     state: icon-swarm-job
 
-- type: messagePack
+- type: localizedDataset
   id: SwarmAds
-  messages:
-  - advertisement-swarm-1
-  - advertisement-swarm-2
-  - advertisement-swarm-3
-  - advertisement-swarm-4
-  - advertisement-swarm-5
-  - advertisement-swarm-6
-  - advertisement-swarm-7
+  values:
+    prefix: advertisement-swarm-
+    count: 7
 
 #################### МОДУЛИ РОЯ ##########################
 
