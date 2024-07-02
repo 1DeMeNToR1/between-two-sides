@@ -83,10 +83,8 @@
       - map: [ "clownedon" ] # Dynamically generated
         sprite: "Siberia/Effects/creampie.rsi"
         state: "creampie_vulpkanin"
-        visible: false   
+        visible: false
   - type: VulpkaninAccent
-  - type: Speech
-    speechSounds: Vulpkanin        
   - type: Body
     prototype: Vulpkanin
     requiredLegs: 2
