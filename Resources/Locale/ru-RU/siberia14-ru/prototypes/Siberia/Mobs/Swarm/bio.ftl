@@ -22,7 +22,7 @@ objective-swarm-factory-description =
     } и не допустить их разрушения.
 swarm-round-end-agent-name = адепт роя
 objective-issuer-swarm = [color=#7567b6]Адепт роя[/color]
-dragon-role-briefing = Создайте 3 карповых разлома и захватите этот квадрант!
+# dragon-role-briefing = Создайте 3 карповых разлома и захватите этот квадрант!
 swarm-adept-low-energy = Слишком мало энергии, чтобы использовать этой способность!
 swarm-adept-domain-popup = В воздух поднимается облако углекислого газа.
 advertisement-swarm-1 = Сверхразум роя!
