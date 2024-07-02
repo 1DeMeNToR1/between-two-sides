@@ -123,6 +123,7 @@
     - ForcedSleep
     - TemporaryBlindness
     - Pacified
+    - Flashed
   - type: Body
     prototype: Animal
   - type: InjectableSolution
@@ -145,7 +146,6 @@
   - type: Actions
   - type: DoAfter
   - type: Climbing
-  - type: Flashable
   - type: Polymorphable
   - type: Pullable
   - type: Buckle
