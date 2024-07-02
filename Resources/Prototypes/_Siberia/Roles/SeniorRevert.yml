@@ -75,7 +75,6 @@
   id: SeniorResearcherGear
   equipment:
     head: ClothingHeadHatBeretRND
-    back: ClothingBackpackScienceFilled
     shoes: ClothingShoesColorBlack
     outerClothing: ClothingOuterCoatLabSeniorResearcher
     id: SeniorResearcherPDA
