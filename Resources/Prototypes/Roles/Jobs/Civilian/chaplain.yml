@@ -24,3 +24,7 @@
     shoes: ClothingShoesColorBlack
     id: ChaplainPDA
     ears: ClothingHeadsetService
+  storage:
+    back:
+    - Bible
+    - RubberStampChaplain
