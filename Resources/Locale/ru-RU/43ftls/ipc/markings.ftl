@@ -141,24 +141,3 @@ marking-IPCScreenAntennae-antennae = Экран
 
 marking-IPCScreenTvAntenna = ТВ Антенна
 marking-IPCScreenTvAntenna-tvantenna = Экран
-
-marking-IPCScreenTesla = Тесла
-marking-IPCScreenTesla-tesla = Экран
-
-marking-IPCScreenCyberheadantenna = Кибер антенна
-marking-IPCScreenCyberheadantenna-cyberheadantenna = Экран
-
-marking-IPCScreenSidelights = Боковой свет
-marking-IPCScreenSidelights-sidelights = Экран
-
-marking-IPCScreenAntlers = Рога
-marking-IPCScreenAntlers-antlers = Экран
-
-marking-IPCScreenDrone = Дрон
-marking-IPCScreenDrone-drone = Экран
-
-marking-IPCScreenCrowned = Корона
-marking-IPCScreenCrowned-crowned = Экран
-
-marking-IPCScreenAntennae = Антенна
-marking-IPCScreenAntennae-antennae = Экран

@@ -43,7 +43,7 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockAutoDrobeFilled
-  cost: 1610 # Siberia-changes
+  cost: 1710 # Siberia-changes
   category: cargoproduct-category-name-service
   group: market
 

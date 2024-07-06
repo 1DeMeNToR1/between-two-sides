@@ -3,11 +3,14 @@
   parent: BaseGameRule
   noSpawn: true
   components:
+  - type: GameRule
+    delay:
+      min: 10
+      max: 10  
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    startDelay: 10
     earliestStart: 30
     minimumPlayers: 20
     weight: 5

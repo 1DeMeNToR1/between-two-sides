@@ -9,5 +9,4 @@ chat-emote-name-bdt = Шутить
 chat-emote-name-hiss =Шипеть
 chat-emote-name-meow = Не смей
 chat-emote-name-mew = Мяу
-chat-emote-name-growl = Рычать
 chat-emote-name-purr = Мурлыкать

@@ -50,7 +50,7 @@
   - type: MobPrice
     price: 10000
   - type: Tool
-    speed: 1.5
+    speedModifier: 1.5
     qualities:
       - Prying
     useSound:
