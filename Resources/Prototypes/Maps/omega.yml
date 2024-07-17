@@ -1,8 +1,8 @@
-﻿- type: gameMap
+- type: gameMap
   id: Omega
   mapName: 'Omega'
   mapPath: /Maps/omega.yml
-  minPlayers: 0
+  minPlayers: 10
   maxPlayers: 35
   stations:
     Omega:
@@ -14,10 +14,8 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'TG'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/corvax_emergency.yml # Corvax-EmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]

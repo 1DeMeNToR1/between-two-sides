@@ -8,6 +8,7 @@
     offset: 0.15,0.15
   - type: ThrowingAngle
     angle: 225
+  - type: LandAtCursor
   - type: Tag
     tags:
     - Spear
@@ -52,10 +53,10 @@
     quickEquip: false
     slots:
     - back
+    - suitStorage
   - type: Construction
     graph: Spear
     node: spear
-  - type: ItemCooldown
   - type: SolutionContainerManager
     solutions:
       melee:
@@ -66,9 +67,9 @@
     solution: melee
   - type: InjectableSolution
     solution: melee
-  - type: SolutionInjectOnCollide
+  - type: SolutionInjectOnEmbed
     transferAmount: 2
-    blockSlots: NONE
+    solution: melee
   - type: SolutionTransfer
     maxTransferAmount: 2
   - type: Wieldable
@@ -107,7 +108,6 @@
       types:
         Blunt: 5
   - type: UseDelay
-    delay: 1
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 1

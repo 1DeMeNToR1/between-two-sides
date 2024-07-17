@@ -1,6 +1,6 @@
 ﻿[game]
 hostname = "🛰️ Corvax — Атара 🌌 [TTS]"
-desc = "[Требуется 20 часов на другом сервере Corvax!]\nКорвакс первый русскоязычный проект в Space Station 14.\nНа этом сервере средние требования к RP.\n[Имеется интеграция TTS (Text-To-Speech)]"
+desc = "Корвакс — первый русскоязычный проект в Space Station 14.\nНа этом сервере средние требования к RP.\n[Имеется интеграция TTS (Text-To-Speech)]"
 map_pool = "CorvaxDefaultMapPool"
 maxplayers = 150
 soft_max_players = 70
@@ -10,10 +10,13 @@ map_rotation = true
 enabled = true
 show_reason = true
 min_account_age = 0
-min_overall_hours = 20
+min_overall_minutes = 0
+deny_vpn = true
+enable_without_admins = true
+disable_with_admins = true
 
 [rules]
-time = 10.0
+time = 180.0
 
 [hub]
 advertise = true

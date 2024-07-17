@@ -1,4 +1,2 @@
-ent-Ninja = { ent-BaseGameRule }
-    .desc = { ent-BaseGameRule.desc }
-ent-Dragon = { ent-BaseGameRule }
+ent-Thief = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
