@@ -4,15 +4,19 @@ using System.Text;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
+using Content.Server.Examine;
 using Content.Server.GameTicking;
+using Content.Server.Players.RateLimiting;
 using Content.Server.Speech.Components;
 using Content.Server.Speech.EntitySystems;
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.ActionBlocker;
+using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Database;
+using Content.Shared.Examine;
 using Content.Shared.Ghost;
 using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
@@ -20,6 +24,8 @@ using Content.Shared.Interaction;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Players;
 using Content.Shared.Radio;
+using Content.Shared.Speech;
+using Content.Shared.Whitelist;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -56,10 +62,14 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
     [Dependency] private readonly ReplacementAccentSystem _wordreplacement = default!;
+    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
 
-    public const int VoiceRange = 10; // how far voice goes in world units
-    public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
-    public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
+    // Corvax-TTS-Start: Moved from Server to Shared
+    // public const int VoiceRange = 10; // how far voice goes in world units
+    // public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
+    // public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
+    // Corvax-TTS-End
     public const string DefaultAnnouncementSound = "/Audio/Corvax/Announcements/announce.ogg"; // Corvax-Announcements
     public const string CentComAnnouncementSound = "/Audio/Corvax/Announcements/centcomm.ogg"; // Corvax-Announcements
 
@@ -71,21 +81,12 @@ public sealed partial class ChatSystem : SharedChatSystem
     public override void Initialize()
     {
         base.Initialize();
-        InitializeEmotes();
-        _configurationManager.OnValueChanged(CCVars.LoocEnabled, OnLoocEnabledChanged, true);
-        _configurationManager.OnValueChanged(CCVars.DeadLoocEnabled, OnDeadLoocEnabledChanged, true);
-        _configurationManager.OnValueChanged(CCVars.CritLoocEnabled, OnCritLoocEnabledChanged, true);
+        CacheEmotes();
+        Subs.CVar(_configurationManager, CCVars.LoocEnabled, OnLoocEnabledChanged, true);
+        Subs.CVar(_configurationManager, CCVars.DeadLoocEnabled, OnDeadLoocEnabledChanged, true);
+        Subs.CVar(_configurationManager, CCVars.CritLoocEnabled, OnCritLoocEnabledChanged, true);
 
         SubscribeLocalEvent<GameRunLevelChangedEvent>(OnGameChange);
-    }
-
-    public override void Shutdown()
-    {
-        base.Shutdown();
-        ShutdownEmotes();
-        _configurationManager.UnsubValueChanged(CCVars.LoocEnabled, OnLoocEnabledChanged);
-        _configurationManager.UnsubValueChanged(CCVars.DeadLoocEnabled, OnDeadLoocEnabledChanged);
-        _configurationManager.UnsubValueChanged(CCVars.CritLoocEnabled, OnCritLoocEnabledChanged);
     }
 
     private void OnLoocEnabledChanged(bool val)
@@ -186,7 +187,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             return;
         }
 
-        if (player != null && !_chatManager.HandleRateLimit(player))
+        if (player != null && _chatManager.HandleRateLimit(player) != RateLimitStatus.Allowed)
             return;
 
         // Sus
@@ -275,7 +276,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (!CanSendInGame(message, shell, player))
             return;
 
-        if (player != null && !_chatManager.HandleRateLimit(player))
+        if (player != null && _chatManager.HandleRateLimit(player) != RateLimitStatus.Allowed)
             return;
 
         // It doesn't make any sense for a non-player to send in-game OOC messages, whereas non-players may be sending
@@ -286,9 +287,13 @@ public sealed partial class ChatSystem : SharedChatSystem
         message = SanitizeInGameOOCMessage(message);
 
         var sendType = type;
-        // If dead player LOOC is disabled, unless you are an aghost, send dead messages to dead chat
-        if (!_adminManager.IsAdmin(player) && !_deadLoocEnabled &&
-            (HasComp<GhostComponent>(source) || _mobStateSystem.IsDead(source)))
+        // If dead player LOOC is disabled, unless you are an admin with Moderator perms, send dead messages to dead chat
+        if ((_adminManager.IsAdmin(player) && _adminManager.HasAdminFlag(player, AdminFlags.Moderator)) // Override if admin
+            || _deadLoocEnabled
+            || (!HasComp<GhostComponent>(source) && !_mobStateSystem.IsDead(source))) // Check that player is not dead
+        {
+        }
+        else
             sendType = InGameOOCChatType.Dead;
 
         // If crit player LOOC is disabled, don't send the message at all.
@@ -317,12 +322,14 @@ public sealed partial class ChatSystem : SharedChatSystem
     /// <param name="colorOverride">Optional color for the announcement message</param>
     public void DispatchGlobalAnnouncement(
         string message,
-        string sender = "Central Command",
+        string? sender = null,
         bool playSound = true,
         SoundSpecifier? announcementSound = null,
         Color? colorOverride = null
         )
     {
+        sender ??= Loc.GetString("chat-manager-sender-announcement");
+
         var wrappedMessage = Loc.GetString("chat-manager-sender-announcement-wrap-message", ("sender", sender), ("message", FormattedMessage.EscapeText(message)));
         _chatManager.ChatMessageToAll(ChatChannel.Radio, message, wrappedMessage, default, false, true, colorOverride);
         if (playSound)
@@ -344,11 +351,13 @@ public sealed partial class ChatSystem : SharedChatSystem
     public void DispatchStationAnnouncement(
         EntityUid source,
         string message,
-        string sender = "Central Command",
+        string? sender = null,
         bool playDefaultSound = true,
         SoundSpecifier? announcementSound = null,
         Color? colorOverride = null)
     {
+        sender ??= Loc.GetString("chat-manager-sender-announcement");
+
         var wrappedMessage = Loc.GetString("chat-manager-sender-announcement-wrap-message", ("sender", sender), ("message", FormattedMessage.EscapeText(message)));
         var station = _stationSystem.GetOwningStation(source);
 
@@ -389,8 +398,11 @@ public sealed partial class ChatSystem : SharedChatSystem
             return;
 
         var message = TransformSpeech(source, originalMessage);
+
         if (message.Length == 0)
             return;
+
+        var speech = GetSpeechVerb(source, message);
 
         // get the entity's apparent name (if no override provided).
         string name;
@@ -403,14 +415,13 @@ public sealed partial class ChatSystem : SharedChatSystem
             var nameEv = new TransformSpeakerNameEvent(source, Name(source));
             RaiseLocalEvent(source, nameEv);
             name = nameEv.Name;
+            // Check for a speech verb override
+            if (nameEv.SpeechVerb != null && _prototypeManager.TryIndex<SpeechVerbPrototype>(nameEv.SpeechVerb, out var proto))
+                speech = proto;
         }
 
         name = FormattedMessage.EscapeText(name);
-        // Corvax-SpeakerColor-Start
-        if (TryComp<HumanoidAppearanceComponent>(source, out var comp))
-            name = $"[color={comp.SpeakerColor.ToHex()}]{name}[/color]";
-        // Corvax-SpeakerColor-End
-        var speech = GetSpeechVerb(source, message);
+
         var wrappedMessage = Loc.GetString(speech.Bold ? "chat-manager-entity-say-bold-wrap-message" : "chat-manager-entity-say-wrap-message",
             ("entityName", name),
             ("verb", Loc.GetString(_random.Pick(speech.SpeechVerbStrings))),
@@ -424,8 +435,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         RaiseLocalEvent(source, ev, true);
 
         // To avoid logging any messages sent by entities that are not players, like vendors, cloning, etc.
-		// Also doesn't log if hideLog is true.
-        if (!HasComp<ActorComponent>(source) || hideLog == true)
+        // Also doesn't log if hideLog is true.
+        if (!HasComp<ActorComponent>(source) || hideLog)
             return;
 
         if (originalMessage == message)
@@ -459,7 +470,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
             return;
 
-        var message = TransformSpeech(source, originalMessage);
+        var message = TransformSpeech(source, FormattedMessage.RemoveMarkup(originalMessage));
         if (message.Length == 0)
             return;
 
@@ -480,10 +491,6 @@ public sealed partial class ChatSystem : SharedChatSystem
             name = nameEv.Name;
         }
         name = FormattedMessage.EscapeText(name);
-        // Corvax-SpeakerColor-Start
-        if (TryComp<HumanoidAppearanceComponent>(source, out var comp))
-            name = $"[color={comp.SpeakerColor.ToHex()}]{name}[/color]";
-        // Corvax-SpeakerColor-End
 
         var wrappedMessage = Loc.GetString("chat-manager-entity-whisper-wrap-message",
             ("entityName", name), ("message", FormattedMessage.EscapeText(message)));
@@ -507,14 +514,13 @@ public sealed partial class ChatSystem : SharedChatSystem
                 continue; // Won't get logged to chat, and ghosts are too far away to see the pop-up, so we just won't send it to them.
 
             if (data.Range <= WhisperClearRange)
-                _chatManager.ChatMessageToOne(ChatChannel.Whisper, message, wrappedMessage, source, false, session.ConnectedClient);
+                _chatManager.ChatMessageToOne(ChatChannel.Whisper, message, wrappedMessage, source, false, session.Channel);
             //If listener is too far, they only hear fragments of the message
-            //Collisiongroup.Opaque is not ideal for this use. Preferably, there should be a check specifically with "Can Ent1 see Ent2" in mind
-            else if (_interactionSystem.InRangeUnobstructed(source, listener, WhisperMuffledRange, Shared.Physics.CollisionGroup.Opaque)) //Shared.Physics.CollisionGroup.Opaque
-                _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedobfuscatedMessage, source, false, session.ConnectedClient);
+            else if (_examineSystem.InRangeUnOccluded(source, listener, WhisperMuffledRange))
+                _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedobfuscatedMessage, source, false, session.Channel);
             //If listener is too far and has no line of sight, they can't identify the whisperer's identity
             else
-                _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedUnknownMessage, source, false, session.ConnectedClient);
+                _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedUnknownMessage, source, false, session.Channel);
         }
 
         _replay.RecordServerMessage(new ChatMessage(ChatChannel.Whisper, message, wrappedMessage, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
@@ -562,7 +568,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         var wrappedMessage = Loc.GetString("chat-manager-entity-me-wrap-message",
             ("entityName", name),
             ("entity", ent),
-            ("message", FormattedMessage.EscapeText(action)));
+            ("message", FormattedMessage.RemoveMarkup(action)));
 
         if (checkEmote)
             TryEmoteChatInput(source, action);
@@ -606,7 +612,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         {
             wrappedMessage = Loc.GetString("chat-manager-send-admin-dead-chat-wrap-message",
                 ("adminChannelName", Loc.GetString("chat-manager-admin-channel-name")),
-                ("userName", player.ConnectedClient.UserName),
+                ("userName", player.Channel.UserName),
                 ("message", FormattedMessage.EscapeText(message)));
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Admin dead chat from {player:Player}: {message}");
         }
@@ -625,7 +631,8 @@ public sealed partial class ChatSystem : SharedChatSystem
 
     #region Utility
 
-    private enum MessageRangeCheckResult {
+    private enum MessageRangeCheckResult
+    {
         Disallowed,
         HideChat,
         Full
@@ -681,7 +688,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             if (entRange == MessageRangeCheckResult.Disallowed)
                 continue;
             var entHideChat = entRange == MessageRangeCheckResult.HideChat;
-            _chatManager.ChatMessageToOne(channel, message, wrappedMessage, source, entHideChat, session.ConnectedClient, author: author);
+            _chatManager.ChatMessageToOne(channel, message, wrappedMessage, source, entHideChat, session.Channel, author: author);
         }
 
         _replay.RecordServerMessage(new ChatMessage(channel, message, wrappedMessage, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
@@ -764,7 +771,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             .AddWhereAttachedEntity(HasComp<GhostComponent>)
             .Recipients
             .Union(_adminManager.ActiveAdmins)
-            .Select(p => p.ConnectedClient);
+            .Select(p => p.Channel);
     }
 
     private string SanitizeMessagePeriod(string message)
@@ -808,7 +815,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         foreach (var player in _playerManager.Sessions)
         {
-            if (player.AttachedEntity is not {Valid: true} playerEntity)
+            if (player.AttachedEntity is not { Valid: true } playerEntity)
                 continue;
 
             var transformEntity = xforms.GetComponent(playerEntity);
@@ -829,7 +836,7 @@ public sealed partial class ChatSystem : SharedChatSystem
                 recipients.Add(player, new ICChatRecipientData(-1, true));
         }
 
-        RaiseLocalEvent(new ExpandICChatRecipientstEvent(source, voiceGetRange, recipients));
+        RaiseLocalEvent(new ExpandICChatRecipientsEvent(source, voiceGetRange, recipients));
         return recipients;
     }
 
@@ -857,6 +864,16 @@ public sealed partial class ChatSystem : SharedChatSystem
         return modifiedMessage.ToString();
     }
 
+    public string BuildGibberishString(IReadOnlyList<char> charOptions, int length)
+    {
+        var sb = new StringBuilder();
+        for (var i = 0; i < length; i++)
+        {
+            sb.Append(_random.Pick(charOptions));
+        }
+        return sb.ToString();
+    }
+
     #endregion
 }
 
@@ -864,7 +881,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 ///     This event is raised before chat messages are sent out to clients. This enables some systems to send the chat
 ///     messages to otherwise out-of view entities (e.g. for multiple viewports from cameras).
 /// </summary>
-public record ExpandICChatRecipientstEvent(EntityUid Source, float VoiceRange, Dictionary<ICommonSession, ChatSystem.ICChatRecipientData> Recipients)
+public record ExpandICChatRecipientsEvent(EntityUid Source, float VoiceRange, Dictionary<ICommonSession, ChatSystem.ICChatRecipientData> Recipients)
 {
 }
 
@@ -872,11 +889,13 @@ public sealed class TransformSpeakerNameEvent : EntityEventArgs
 {
     public EntityUid Sender;
     public string Name;
+    public string? SpeechVerb;
 
-    public TransformSpeakerNameEvent(EntityUid sender, string name)
+    public TransformSpeakerNameEvent(EntityUid sender, string name, string? speechVerb = null)
     {
         Sender = sender;
         Name = name;
+        SpeechVerb = speechVerb;
     }
 }
 

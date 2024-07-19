@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Inventory;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
@@ -42,7 +42,7 @@ public partial class SharedGunSystem
 
         while (enumerator.NextItem(out var item))
         {
-            if (component.ProviderWhitelist == null || component.ProviderWhitelist.IsValid(item, EntityManager))
+            if (_whitelistSystem.IsWhitelistFailOrNull(component.ProviderWhitelist, item))
                 continue;
 
             slotEntity = item;

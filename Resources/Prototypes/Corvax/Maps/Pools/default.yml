@@ -3,21 +3,28 @@
   maps:
   - CorvaxDelta
   - CorvaxAvrite
-  - CorvaxSpectrum
-  - CorvaxGate
   - CorvaxSilly
   - CorvaxOutpost
-  - Aspid
+  - CorvaxAstra
+  - CorvaxMaus
+  - CorvaxIshimura
+  - CorvaxPaper
+  - CorvaxPilgrim
+  - CorvaxSplit
+  - CorvaxTerra
+  - CorvaxFrame
+  - CorvaxPearl
+  - Atlas
   - Bagel
-  - Barratry
   - Box
   - Cluster
   - Core
   - Fland
-  - Gemini
   - Marathon
   - Meta
+  - Oasis
   - Omega
   - Origin
   - Saltern
   - Packed
+  - Reach

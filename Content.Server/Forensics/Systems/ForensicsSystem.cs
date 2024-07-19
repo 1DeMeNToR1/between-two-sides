@@ -1,14 +1,19 @@
 using Content.Server.Body.Components;
-using Content.Server.Chemistry.EntitySystems;
 using Content.Server.DoAfter;
+using Content.Server.Fluids.EntitySystems;
+using Content.Server.Forensics.Components;
+using Content.Server.Popups;
+using Content.Shared.Popups;
+using Content.Shared.Chemistry.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Forensics;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory;
-using Content.Shared.Tag;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Random;
+using Content.Shared.Verbs;
+using Robust.Shared.Utility;
 
 namespace Content.Server.Forensics
 {
@@ -16,8 +21,8 @@ namespace Content.Server.Forensics
     {
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly InventorySystem _inventory = default!;
-        [Dependency] private readonly TagSystem _tagSystem = default!;
         [Dependency] private readonly DoAfterSystem _doAfterSystem = default!;
+        [Dependency] private readonly PopupSystem _popupSystem = default!;
         public override void Initialize()
         {
             SubscribeLocalEvent<FingerprintComponent, ContactInteractionEvent>(OnInteract);
@@ -26,9 +31,12 @@ namespace Content.Server.Forensics
 
             SubscribeLocalEvent<DnaComponent, BeingGibbedEvent>(OnBeingGibbed);
             SubscribeLocalEvent<ForensicsComponent, MeleeHitEvent>(OnMeleeHit);
-            SubscribeLocalEvent<ForensicsComponent, AfterInteractEvent>(OnAfterInteract);
+            SubscribeLocalEvent<ForensicsComponent, GotRehydratedEvent>(OnRehydrated);
+            SubscribeLocalEvent<CleansForensicsComponent, AfterInteractEvent>(OnAfterInteract, after: new[] { typeof(AbsorbentSystem) });
             SubscribeLocalEvent<ForensicsComponent, CleanForensicsDoAfterEvent>(OnCleanForensicsDoAfter);
             SubscribeLocalEvent<DnaComponent, TransferDnaEvent>(OnTransferDnaEvent);
+            SubscribeLocalEvent<CleansForensicsComponent, GetVerbsEvent<UtilityVerb>>(OnUtilityVerb);
+
         }
 
         private void OnInteract(EntityUid uid, FingerprintComponent component, ContactInteractionEvent args)
@@ -48,7 +56,7 @@ namespace Content.Server.Forensics
 
         private void OnBeingGibbed(EntityUid uid, DnaComponent component, BeingGibbedEvent args)
         {
-            foreach(EntityUid part in args.GibbedParts)
+            foreach (EntityUid part in args.GibbedParts)
             {
                 var partComp = EnsureComp<ForensicsComponent>(part);
                 partComp.DNAs.Add(component.DNA);
@@ -58,43 +66,119 @@ namespace Content.Server.Forensics
 
         private void OnMeleeHit(EntityUid uid, ForensicsComponent component, MeleeHitEvent args)
         {
-            if((args.BaseDamage.DamageDict.TryGetValue("Blunt", out var bluntDamage) && bluntDamage.Value > 0) ||
+            if ((args.BaseDamage.DamageDict.TryGetValue("Blunt", out var bluntDamage) && bluntDamage.Value > 0) ||
                 (args.BaseDamage.DamageDict.TryGetValue("Slash", out var slashDamage) && slashDamage.Value > 0) ||
                 (args.BaseDamage.DamageDict.TryGetValue("Piercing", out var pierceDamage) && pierceDamage.Value > 0))
             {
-                foreach(EntityUid hitEntity in args.HitEntities)
+                foreach (EntityUid hitEntity in args.HitEntities)
                 {
-                    if(TryComp<DnaComponent>(hitEntity, out var hitEntityComp))
+                    if (TryComp<DnaComponent>(hitEntity, out var hitEntityComp))
                         component.DNAs.Add(hitEntityComp.DNA);
                 }
             }
         }
 
-        private void OnAfterInteract(EntityUid uid, ForensicsComponent component, AfterInteractEvent args)
+        private void OnRehydrated(Entity<ForensicsComponent> ent, ref GotRehydratedEvent args)
         {
-            if (args.Handled)
-                return;
+            CopyForensicsFrom(ent.Comp, args.Target);
+        }
 
-            if (!_tagSystem.HasTag(args.Used, "CleansForensics"))
-                return;
-
-            if((component.DNAs.Count > 0 && component.CanDnaBeCleaned) || (component.Fingerprints.Count + component.Fibers.Count > 0))
+        /// <summary>
+        /// Copy forensic information from a source entity to a destination.
+        /// Existing forensic information on the target is still kept.
+        /// </summary>
+        public void CopyForensicsFrom(ForensicsComponent src, EntityUid target)
+        {
+            var dest = EnsureComp<ForensicsComponent>(target);
+            foreach (var dna in src.DNAs)
             {
-                var doAfterArgs = new DoAfterArgs(EntityManager, args.User, component.CleanDelay, new CleanForensicsDoAfterEvent(), uid, target: args.Target, used: args.Used)
+                dest.DNAs.Add(dna);
+            }
+
+            foreach (var fiber in src.Fibers)
+            {
+                dest.Fibers.Add(fiber);
+            }
+
+            foreach (var print in src.Fingerprints)
+            {
+                dest.Fingerprints.Add(print);
+            }
+        }
+
+        private void OnAfterInteract(Entity<CleansForensicsComponent> cleanForensicsEntity, ref AfterInteractEvent args)
+        {
+            if (args.Handled || !args.CanReach || args.Target == null)
+                return;
+
+            args.Handled = TryStartCleaning(cleanForensicsEntity, args.User, args.Target.Value);
+        }
+
+        private void OnUtilityVerb(Entity<CleansForensicsComponent> entity, ref GetVerbsEvent<UtilityVerb> args)
+        {
+            if (!args.CanInteract || !args.CanAccess)
+                return;
+
+            // These need to be set outside for the anonymous method!
+            var user = args.User;
+            var target = args.Target;
+
+            var verb = new UtilityVerb()
+            {
+                Act = () => TryStartCleaning(entity, user, target),
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/bubbles.svg.192dpi.png")),
+                Text = Loc.GetString(Loc.GetString("forensics-verb-text")),
+                Message = Loc.GetString(Loc.GetString("forensics-verb-message")),
+                // This is important because if its true using the cleaning device will count as touching the object.
+                DoContactInteraction = false
+            };
+
+            args.Verbs.Add(verb);
+        }
+
+        /// <summary>
+        ///     Attempts to clean the given item with the given CleansForensics entity.
+        /// </summary>
+        /// <param name="cleanForensicsEntity">The entity that is being used to clean the target.</param>
+        /// <param name="user">The user that is using the cleanForensicsEntity.</param>
+        /// <param name="target">The target of the forensics clean.</param>
+        /// <returns>True if the target can be cleaned and has some sort of DNA or fingerprints / fibers and false otherwise.</returns>
+        public bool TryStartCleaning(Entity<CleansForensicsComponent> cleanForensicsEntity, EntityUid user, EntityUid target)
+        {
+            if (!TryComp<ForensicsComponent>(target, out var forensicsComp))
+            {
+                _popupSystem.PopupEntity(Loc.GetString("forensics-cleaning-cannot-clean", ("target", target)), user, user, PopupType.MediumCaution);
+                return false;
+            }
+
+            var totalPrintsAndFibers = forensicsComp.Fingerprints.Count + forensicsComp.Fibers.Count;
+            var hasRemovableDNA = forensicsComp.DNAs.Count > 0 && forensicsComp.CanDnaBeCleaned;
+
+            if (hasRemovableDNA || totalPrintsAndFibers > 0)
+            {
+                var cleanDelay = cleanForensicsEntity.Comp.CleanDelay;
+                var doAfterArgs = new DoAfterArgs(EntityManager, user, cleanDelay, new CleanForensicsDoAfterEvent(), cleanForensicsEntity, target: target, used: cleanForensicsEntity)
                 {
                     BreakOnHandChange = true,
                     NeedHand = true,
                     BreakOnDamage = true,
-                    BreakOnTargetMove = true,
+                    BreakOnMove = true,
                     MovementThreshold = 0.01f,
-                    DistanceThreshold = component.CleanDistance,
+                    DistanceThreshold = forensicsComp.CleanDistance,
                 };
-
 
                 _doAfterSystem.TryStartDoAfter(doAfterArgs);
 
-                args.Handled = true;
+                _popupSystem.PopupEntity(Loc.GetString("forensics-cleaning", ("target", target)), user, user);
+
+                return true;
             }
+            else
+            {
+                _popupSystem.PopupEntity(Loc.GetString("forensics-cleaning-cannot-clean", ("target", target)), user, user, PopupType.MediumCaution);
+                return false;
+            }
+
         }
 
         private void OnCleanForensicsDoAfter(EntityUid uid, ForensicsComponent component, CleanForensicsDoAfterEvent args)
@@ -141,6 +225,9 @@ namespace Content.Server.Forensics
 
         private void ApplyEvidence(EntityUid user, EntityUid target)
         {
+            if (HasComp<IgnoresFingerprintsComponent>(target))
+                return;
+
             var component = EnsureComp<ForensicsComponent>(target);
             if (_inventory.TryGetSlotEntity(user, "gloves", out var gloves))
             {
@@ -175,6 +262,7 @@ namespace Content.Server.Forensics
             {
                 EnsureComp<ForensicsComponent>(recipient, out var recipientComp);
                 recipientComp.DNAs.Add(donorComp.DNA);
+                recipientComp.CanDnaBeCleaned = canDnaBeCleaned;
             }
         }
 

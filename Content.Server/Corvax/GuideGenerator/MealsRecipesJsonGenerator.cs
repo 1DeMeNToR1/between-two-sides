@@ -7,7 +7,7 @@ using Content.Shared.Kitchen;
 using Robust.Shared.Prototypes;
 using Content.Shared.Construction.Prototypes;
 using Content.Server.Construction.Components;
-using Content.Server.Chemistry.ReactionEffects;
+using Content.Server.EntityEffects.Effects;
 
 namespace Content.Server.GuideGenerator;
 
@@ -42,13 +42,14 @@ public sealed class MealsRecipesJsonGenerator
                 .Where(x => x.Components.TryGetComponent("SolutionContainerManager", out var _))
                 .Where(x => (Regex.Match(x.ID.ToLower().Trim(), @".*[Ff]ood*").Success)) // we dont need some "organ" or "pills" prototypes.
                 .Select(x => new GrindRecipeEntry(x))
+                .Where(x => x.Result != null)
                 .ToDictionary(x => x.Id, x => x);
 
 
         // construction-related items start
         var constructionGraphs =
             constructable
-                .Where(x => (Regex.Match(x.ID.ToLower().Trim(), @".*.*[Bb]acon*|.*[Ss]teak*|[Pp]izza*").Success)) // we only need recipes that has "bacon", "steak" and "pizza" in it, since they are the only "constructable" recipes
+                .Where(x => (Regex.Match(x.ID.ToLower().Trim(), @".*.*[Bb]acon*|.*[Ss]teak*|[Pp]izza*|[Tt]ortilla*|[Ee]gg*").Success)) // we only need recipes that has "bacon", "steak", "pizza" "tortilla" and "egg" in it, since they are the only "constructable" recipes
                 .ToDictionary(x => x.ID, x => x);
 
         var constructableEntities = // list of entities which names match regex and has Construction component
