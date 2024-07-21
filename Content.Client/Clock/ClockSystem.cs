@@ -1,10 +1,18 @@
 using Content.Shared.Clock;
 using Robust.Client.GameObjects;
-
+using Content.Client.Items;
 namespace Content.Client.Clock;
 
 public sealed class ClockSystem : SharedClockSystem
 {
+    // Siberia clock item status code
+    public override void Initialize()
+    {
+        base.Initialize();
+        Subs.ItemStatus<ClockComponent>(ent => new ClockStatusControl(ent));
+    }
+    // Siberia clock item status code
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
