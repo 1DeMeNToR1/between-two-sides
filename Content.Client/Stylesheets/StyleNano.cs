@@ -137,6 +137,9 @@ namespace Content.Client.Stylesheets
         public const string StyleClassPowerStateLow = "PowerStateLow";
         public const string StyleClassPowerStateGood = "PowerStateGood";
 
+        // Siberia style-nano code // needs to be redone when upstreaming with Redux
+        public const string StyleClassDigitsItemStatus = "DigitsItemStatus";
+        // Siberia style-nano code
         public const string StyleClassItemStatus = "ItemStatus";
         public const string StyleClassItemStatusNotHeld = "ItemStatusNotHeld";
         public static readonly Color ItemStatusNotHeldColor = Color.Gray;
@@ -1237,6 +1240,12 @@ namespace Content.Client.Stylesheets
                 {
                     new StyleProperty("font", notoSans10),
                 }),
+                // Siberia style-nano code // needs to be redone when upstreaming with Redux
+                new StyleRule(SelectorElement.Class(StyleClassDigitsItemStatus), new[]
+                {
+                    new StyleProperty("font", notoSans16),
+                }),
+                // Siberia style-nano code
 
                 Element()
                     .Class(StyleClassItemStatusNotHeld)
