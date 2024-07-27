@@ -11,8 +11,10 @@
         path: /Audio/Weapons/Guns/Misc/arrow_nock.ogg
     - type: ItemToggleSize
       activatedSize: Huge
-    - type: ItemToggleDisarmMalus
-      activatedDisarmMalus: 1.0
+    - type: ComponentToggler
+      components:
+      - type: DisarmMalus
+        malus: 0.6
     - type: Sprite
       sprite: Siberia/Objects/Misc/folding_fan.rsi
       layers:
