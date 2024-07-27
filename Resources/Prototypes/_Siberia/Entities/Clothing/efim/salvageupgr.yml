@@ -55,7 +55,7 @@
     clothingPrototype: ClothingHeadHelmetHardsuitSpatioUpgraded
 
 - type: entity
-  parent: ClothingShoesBase
+  parent: ClothingShoesBootsMag
   id: ClothingShoesBootsMagUpgraded
   name: модифицированные магнитные сапоги
   description: Магнитные сапоги с модификацией джетпака и облегчённым весом
@@ -65,12 +65,9 @@
     state: icon
   - type: Clothing
     sprite: Siberia/Clothing/31_08/magboots-upg.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsSyndie
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.9
-    enabled: false
   - type: GasTank
     outputPressure: 42.6
     air:

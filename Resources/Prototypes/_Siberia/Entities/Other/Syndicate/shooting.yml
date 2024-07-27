@@ -582,7 +582,6 @@
     color: red
     netsync: false
   - type: Reflect
-    enabled: true
     reflectProb: .75
     spread: 75
 
