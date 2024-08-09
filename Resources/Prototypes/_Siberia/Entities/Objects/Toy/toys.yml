@@ -262,3 +262,53 @@
   - type: Sprite
     sprite: Siberia/Objects/Toy/brigmedtoy.rsi
     state: icon
+
+- type: entity
+  parent: BasePlushie
+  id: PlusheLasarhos
+  name: Игрушка Лазарь.
+  description: Какой он важный!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_lazar.rsi
+    state: lazar-hos
+
+- type: entity
+  parent: BasePlushie
+  id: PlusheLazarusmedic
+  name: Игрушка Лазарь.
+  description: Какой он важный!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_lazar.rsi
+    state: lazar-med
+
+- type: entity
+  parent: BasePlushie
+  id: PlusheLazarusvirus
+  name: Игрушка Лазарь.
+  description: Какой он важный!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_lazar.rsi
+    state: lazar-vir
+
+- type: entity
+  parent: BasePlushie
+  id: PlusheLazarussurgeon
+  name: Игрушка Лазарь.
+  description: Какой он важный!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_lazar.rsi
+    state: lazar-surg
+
+- type: entity
+  parent: BasePlushie
+  id: PlusheLazaruscmo
+  name: Игрушка Лазарь.
+  description: Какой он важный!
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_lazar.rsi
+    state: lazar-cmo
