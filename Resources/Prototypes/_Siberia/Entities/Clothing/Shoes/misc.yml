@@ -53,3 +53,60 @@
     sprite: Siberia/Clothing/Shoes/Misc/evening_black.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Shoes/Misc/evening_black.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesRebeccas
+  name: космические кроссовки
+  description: они не заменят вам часть скафандра.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Shoes/Misc/rebeccasshoes.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Shoes/Misc/rebeccasshoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesYsatyu
+  name: ботинки Мужика
+  description: Проложит путь к ближайшим самогонным месторождениям.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Shoes/Specific/ysatyu.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Shoes/Specific/ysatyu.rsi
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesMoryak
+  name: бошмаки Моряка
+  description: Тесные матроские башмаки, но хотя бы водонепроницаемые.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Clown/Shoes/Specific/moryak.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Clown/Shoes/Specific/moryak.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: Clothingxenopriestboots
+  name: передвижной паразит Ксено-жреца
+  description: вставьте ноги и ползите.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/xeno-priest-boots.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/xeno-priest-boots.rsi
+  - type: NoSlip
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesUSSPBlack
+  name: old ussp boots
+  description: Pretty old stuff from USSP
+  suffix: Sponsor
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Shoes/ussp.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Shoes/ussp.rsi
