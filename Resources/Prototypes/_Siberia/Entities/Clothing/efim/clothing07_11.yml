@@ -1,14 +1,4 @@
 - type: entity
-  parent: ClothingShoesBaseButcherable
-  id: ClothingShoesColorGrayGreen
-  name: серо-зелёные кросовки
-  components:
-  - type: Sprite
-    sprite: Siberia/Clothing/07_11/gray-green_boot.rsi
-  - type: Clothing
-    sprite: Siberia/Clothing/07_11/gray-green_boot.rsi
-
-- type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitDenGreenHoody
   name: зелёный худи
@@ -27,16 +17,6 @@
     sprite: Siberia/Clothing/07_11/headband_yellow.rsi
   - type: Clothing
     sprite: Siberia/Clothing/07_11/headband_yellow.rsi
-
-- type: entity
-  parent: ClothingShoesBaseButcherable
-  id: ClothingShoesColorDenPinkBoots
-  name: розовые кросовки
-  components:
-  - type: Sprite
-    sprite: Siberia/Clothing/07_11/pink_boots.rsi
-  - type: Clothing
-    sprite: Siberia/Clothing/07_11/pink_boots.rsi
 
 - type: entity
   parent: ClothingUniformBase

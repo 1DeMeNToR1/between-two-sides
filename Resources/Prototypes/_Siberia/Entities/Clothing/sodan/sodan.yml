@@ -28,14 +28,3 @@
         Piercing: 0.9
         Heat: 0.8
 
-- type: entity
-  parent: ClothingShoesBaseButcherable
-  id: Clothingxenopriestboots
-  name: передвижной паразит Ксено-жреца
-  description: вставьте ноги и ползите.
-  components:
-  - type: Sprite
-    sprite: Siberia/Clothing/xeno-priest-boots.rsi
-  - type: Clothing
-    sprite: Siberia/Clothing/xeno-priest-boots.rsi
-  - type: NoSlip

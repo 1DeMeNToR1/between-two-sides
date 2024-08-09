@@ -71,28 +71,6 @@
       sprite: Siberia/Clothing/Clown/Neck/Scarfs/ysatyu.rsi
 
 - type: entity
-  parent: ClothingShoesBase
-  id: ClothingShoesMoryak
-  name: бошмаки Моряка
-  description: Тесные матроские башмаки, но хотя бы водонепроницаемые.
-  components:
-  - type: Sprite
-    sprite: Siberia/Clothing/Clown/Shoes/Specific/moryak.rsi
-  - type: Clothing
-    sprite: Siberia/Clothing/Clown/Shoes/Specific/moryak.rsi
-
-- type: entity
-  parent: ClothingShoesBaseButcherable
-  id: ClothingShoesYsatyu
-  name: ботинки Мужика
-  description: Проложит путь к ближайшим самогонным месторождениям.
-  components:
-  - type: Sprite
-    sprite: Siberia/Clothing/Clown/Shoes/Specific/ysatyu.rsi
-  - type: Clothing
-    sprite: Siberia/Clothing/Clown/Shoes/Specific/ysatyu.rsi
-
-- type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitMoryak
   name: комбинезон Моряка
