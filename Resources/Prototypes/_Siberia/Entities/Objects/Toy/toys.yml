@@ -252,3 +252,13 @@
   - type: Construction
     graph: volleyballfriendsib
     node: volleyballfriendsib
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieBrigMedic
+  name: плюшевый бригмедик
+  description: Очаровательная лисица бригмедик. Пахнет порохом и омнизином.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/brigmedtoy.rsi
+    state: icon
