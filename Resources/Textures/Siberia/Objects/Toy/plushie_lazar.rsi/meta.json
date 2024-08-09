@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprited for Siberia SS14 by rogolistnik(DS)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "lazar-cmo"
+    },
+    {
+      "name": "lazar-hos"
+    },
+    {
+      "name": "lazar-med"
+    },
+    {
+      "name": "lazar-surg"
+    },
+    {
+      "name": "lazar-vir"
+    }
+  ]
+}
