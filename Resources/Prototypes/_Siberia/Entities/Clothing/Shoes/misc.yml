@@ -53,3 +53,14 @@
     sprite: Siberia/Clothing/Shoes/Misc/evening_black.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Shoes/Misc/evening_black.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesRebeccas
+  name: космические кроссовки
+  description: они не заменят вам часть скафандра.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Shoes/Misc/rebeccasshoes.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/Shoes/Misc/rebeccasshoes.rsi
