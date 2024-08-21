@@ -49,3 +49,14 @@
     sprite: Siberia/Clothing/31_08/neon.rsi
   - type: Clothing
     sprite: Siberia/Clothing/31_08/neon.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatInspector
+  name: inspector's coat
+  description: Строгий плащ инспектора, в нём вы будете выглядеть устрашающе при проверках.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/OuterClothing/Coats/insp_coat.rsi
+  - type: Clothing
+    sprite: Siberia/Clothing/OuterClothing/Coats/insp_coat.rsi
