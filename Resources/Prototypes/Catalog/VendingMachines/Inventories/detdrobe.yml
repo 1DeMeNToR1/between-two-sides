@@ -7,6 +7,7 @@
     ClothingOuterCoatDetectiveLoadout: 3
     ClothingOuterCoatDetectiveLoadoutGrey: 1
     ClothingOuterCoatDetectiveDark: 1 # Corvax-Resprite-Detective
+    ClothingOuterCoatInspector: 1 # Siberia-change
     ClothingHeadHatFedoraBrown: 2
     ClothingUniformJumpsuitDetectiveGrey: 2
     ClothingUniformJumpskirtDetectiveGrey: 2
@@ -20,4 +21,4 @@
     FishkaBag: 3
     ClothingBackpackSatchelLeather: 2
     ClothingShoesBootsLaceup: 2
-    ClothingNeckTieRed: 2 
+    ClothingNeckTieRed: 2
