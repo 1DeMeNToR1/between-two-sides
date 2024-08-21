@@ -1,0 +1,29 @@
+- type: entity
+  name: двойная кровать
+  id: TwoBedR
+  parent: Bed
+  description: Двойная кровать для парочки или же для очень наглого существа.
+  suffix: Правый
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Furniture/doublebed.rsi
+    state: bedr
+    noRot: true
+  - type: Strap
+    buckleOffset: "0,-0.5"
+    unbuckleOffset: "0,-0.5"
+
+- type: entity
+  name: двойная кровать
+  id: TwoBedL
+  parent: Bed
+  description: Двойная кровать для парочки или же для очень наглого существа.
+  suffix: Левый
+  components:
+  - type: Sprite
+    sprite: Siberia/Structures/Furniture/doublebed.rsi
+    state: bedl
+    noRot: true
+  - type: Strap
+    buckleOffset: "0,0.5"
+    unbuckleOffset: "0,0.5"
