@@ -189,3 +189,11 @@
   sprites:
     - sprite: Siberia/Mobs/Customization/bayonette.rsi
       state: sephalt
+
+- type: marking
+  id: HumanHairFloorSiberia
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Siberia/Mobs/Customization/floorlength_braid.rsi
+      state: floorlength_braid

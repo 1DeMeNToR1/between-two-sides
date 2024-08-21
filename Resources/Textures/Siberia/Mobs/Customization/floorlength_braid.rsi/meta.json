@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "copyright": "Sprited for Siberia SS14 by s3ph1ra(DS)",
+    "license": "CC-BY-SA-3.0",
+    "states": [
+      {
+        "name": "floorlength_braid",
+        "directions": 4
+      }
+    ]
+  }
