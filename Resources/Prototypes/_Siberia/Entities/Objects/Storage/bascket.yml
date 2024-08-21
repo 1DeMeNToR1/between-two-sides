@@ -1,0 +1,15 @@
+- type: entity
+  parent: BaseStorageItem
+  id: PicnicBasket
+  name: корзина для пикника
+  description: Плетеная корзина для пикника с крышкой. Эта корзина будет приятным дополнением для Вашего романтического времяпрепровождения на природе.
+  components:
+  - type: Item
+    size: Ginormous
+    sprite: Siberia/Objects/Storage/picnic_basket.rsi
+  - type: Sprite
+    sprite: Siberia/Objects/Storage/picnic_basket.rsi
+    state: icon
+  - type: Storage
+    grid:
+    - 0,0,5,3
