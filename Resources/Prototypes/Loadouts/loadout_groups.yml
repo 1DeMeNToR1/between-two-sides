@@ -989,6 +989,7 @@
   - ArmorVest
   - ArmorVestSlim
   - SecurityOfficerWintercoat
+  - CoatSecurityOvercoat # Siberia-change
 
 - type: loadoutGroup
   id: SecurityShoes

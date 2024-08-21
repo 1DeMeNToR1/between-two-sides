@@ -177,6 +177,17 @@
   equipment:
     outerClothing: ClothingOuterWinterSec
 
+# Siberia-change start
+- type: loadout
+  id: CoatSecurityOvercoat
+  equipment: CoatSecurityOvercoat
+
+- type: startingGear
+  id: CoatSecurityOvercoat
+  equipment:
+    outerClothing: ClothingOuterCoatSecurityOvercoat
+# Siberia-change stop
+
 # Shoes
 - type: loadout
   id: CombatBoots
