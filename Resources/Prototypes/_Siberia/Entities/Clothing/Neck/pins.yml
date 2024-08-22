@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingNeckPinBase
+  id: ClothingNeckSiberia
+  name: сибирский значок
+  description: Этот значок похож на зеленую планету.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Neck/Misc/pins.rsi
+    state: sib
+  - type: Clothing
+    sprite: Siberia/Clothing/Neck/Misc/pins.rsi
+    equippedPrefix: sib
