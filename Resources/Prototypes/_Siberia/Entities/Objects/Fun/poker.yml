@@ -1,0 +1,509 @@
+- type: stack
+  id: Pokerc5
+  name: фишки
+  icon: { sprite: Siberia/Objects/Fun/Poker/pokerchips5.rsi, state: icon }
+  spawn: PokerChips5
+  maxCount: 30
+
+- type: entity
+  id: PokerChips5
+  parent: BaseItem
+  name: фишка для покера
+  description: Номинал фишки - 5 кредитов. Эти фишки используют для азартных игр, возможно где-то рядом подпольное казино...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerchips5.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Stack
+    stackType: Pokerc5
+  - type: StackPrice
+    price: 5
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  parent: PokerChips5
+  id: PokerChips51
+  name: фишка для покера
+  suffix: Single
+  components:
+  - type: Sprite
+    state: icon
+  - type: Stack
+    stackType: Pokerc5
+    count: 1
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: stack
+  id: Pokerc10
+  name: фишки
+  icon: { sprite: Siberia/Objects/Fun/Poker/pokerchips10.rsi, state: icon }
+  spawn: PokerChips10
+  maxCount: 30
+
+- type: entity
+  id: PokerChips10
+  parent: BaseItem
+  name: фишка для покера
+  description: Номинал фишки - 10 кредитов. Эти фишки используют для азартных игр, возможно где-то рядом подпольное казино...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerchips10.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Stack
+    stackType: Pokerc10
+  - type: StackPrice
+    price: 10
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  parent: PokerChips10
+  id: PokerChips101
+  name: фишка для покера
+  suffix: Single
+  components:
+  - type: Sprite
+    state: icon
+  - type: Stack
+    stackType: Pokerc10
+    count: 1
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: stack
+  id: Pokerc25
+  name: фишки
+  icon: { sprite: Siberia/Objects/Fun/Poker/pokerchips25.rsi, state: icon }
+  spawn: PokerChips25
+  maxCount: 30
+
+- type: entity
+  id: PokerChips25
+  parent: BaseItem
+  name: фишка для покера
+  description: Номинал фишки - 25 кредитов. Эти фишки используют для азартных игр, возможно где-то рядом подпольное казино...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerchips25.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Stack
+    stackType: Pokerc25
+  - type: StackPrice
+    price: 25
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  parent: PokerChips25
+  id: PokerChips251
+  name: фишка для покера
+  suffix: Single
+  components:
+  - type: Sprite
+    state: icon
+  - type: Stack
+    stackType: Pokerc25
+    count: 1
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: stack
+  id: Pokerc50
+  name: фишки
+  icon: { sprite: Siberia/Objects/Fun/Poker/pokerchips50.rsi, state: icon }
+  spawn: PokerChips50
+  maxCount: 30
+
+- type: entity
+  id: PokerChips50
+  parent: BaseItem
+  name: фишка для покера
+  description: Номинал фишки - 50 кредитов. Эти фишки используют для азартных игр, возможно где-то рядом подпольное казино...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerchips50.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Stack
+    stackType: Pokerc50
+  - type: StackPrice
+    price: 50
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  parent: PokerChips50
+  id: PokerChips501
+  name: фишка для покера
+  suffix: Single
+  components:
+  - type: Sprite
+    state: icon
+  - type: Stack
+    stackType: Pokerc50
+    count: 1
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: stack
+  id: Pokerc100
+  name: фишки
+  icon: { sprite: Siberia/Objects/Fun/Poker/pokerchips100.rsi, state: icon }
+  spawn: PokerChips100
+  maxCount: 30
+
+- type: entity
+  id: PokerChips100
+  parent: BaseItem
+  name: фишка для покера
+  description: Номинал фишки - 100 кредитов. Эти фишки используют для азартных игр, возможно где-то рядом подпольное казино...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerchips100.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Stack
+    stackType: Pokerc100
+  - type: StackPrice
+    price: 100
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  parent: PokerChips100
+  id: PokerChips1001
+  name: фишка для покера
+  suffix: Single
+  components:
+  - type: Sprite
+    state: icon
+  - type: Stack
+    stackType: Pokerc100
+    count: 1
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: stack
+  id: Pokerc250
+  name: фишки
+  icon: { sprite: Siberia/Objects/Fun/Poker/pokerchips250.rsi, state: icon }
+  spawn: PokerChips250
+  maxCount: 30
+
+- type: entity
+  id: PokerChips250
+  parent: BaseItem
+  name: фишка для покера
+  description: Номинал фишки - 250 кредитов. Эти фишки используют для азартных игр, возможно где-то рядом подпольное казино...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerchips250.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Stack
+    stackType: Pokerc250
+  - type: StackPrice
+    price: 250
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  parent: PokerChips250
+  id: PokerChips2501
+  name: фишка для покера
+  suffix: Single
+  components:
+  - type: Sprite
+    state: icon
+  - type: Stack
+    stackType: Pokerc250
+    count: 1
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: stack
+  id: Pokerc500
+  name: фишки
+  icon: { sprite: Siberia/Objects/Fun/Poker/pokerchips500.rsi, state: icon }
+  spawn: PokerChips500
+  maxCount: 30
+
+- type: entity
+  id: PokerChips500
+  parent: BaseItem
+  name: фишка для покера
+  description: Номинал фишки - 500 кредитов. Эти фишки используют для азартных игр, возможно где-то рядом подпольное казино...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerchips500.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Stack
+    stackType: Pokerc500
+  - type: StackPrice
+    price: 500
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  parent: PokerChips500
+  id: PokerChips5001
+  name: фишка для покера
+  suffix: Single
+  components:
+  - type: Sprite
+    state: icon
+  - type: Stack
+    stackType: Pokerc500
+    count: 1
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: stack
+  id: Pokerc1000
+  name: фишки
+  icon: { sprite: Siberia/Objects/Fun/Poker/pokerchips1000.rsi, state: icon }
+  spawn: PokerChips1000
+  maxCount: 30
+
+- type: entity
+  id: PokerChips1000
+  parent: BaseItem
+  name: фишка для покера
+  description: Номинал фишки - 1000 кредитов. Эти фишки используют для азартных игр, возможно где-то рядом подпольное казино...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerchips1000.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Stack
+    stackType: Pokerc1000
+  - type: StackPrice
+    price: 1000
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  parent: PokerChips1000
+  id: PokerChips10001
+  name: фишка для покера
+  suffix: Single
+  components:
+  - type: Sprite
+    state: icon
+  - type: Stack
+    stackType: Pokerc1000
+    count: 1
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: stack
+  id: Pokerc5000
+  name: фишки
+  icon: { sprite: Siberia/Objects/Fun/Poker/pokerchips5000.rsi, state: icon }
+  spawn: PokerChips5000
+  maxCount: 30
+
+- type: entity
+  id: PokerChips5000
+  parent: BaseItem
+  name: фишка для покера
+  description: Номинал фишки - 5000 кредитов. Эти фишки используют для азартных игр, возможно где-то рядом подпольное казино...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerchips5000.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Stack
+    stackType: Pokerc5000
+  - type: StackPrice
+    price: 5000
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  parent: PokerChips5000
+  id: PokerChips50001
+  name: фишка для покера
+  suffix: Single
+  components:
+  - type: Sprite
+    state: icon
+  - type: Stack
+    stackType: Pokerc5000
+    count: 1
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: stack
+  id: Pokerc10000
+  name: фишки
+  icon: { sprite: Siberia/Objects/Fun/Poker/pokerchips10000.rsi, state: icon }
+  spawn: PokerChips10000
+  maxCount: 30
+
+- type: entity
+  id: PokerChips10000
+  parent: BaseItem
+  name: фишка для покера
+  description: Номинал фишки - 10000 кредитов. Эти фишки используют для азартных игр, возможно где-то рядом подпольное казино...
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerchips10000.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Stack
+    stackType: Pokerc10000
+  - type: StackPrice
+    price: 10000
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  parent: PokerChips10000
+  id: PokerChips100001
+  name: фишка для покера
+  suffix: Single
+  components:
+  - type: Sprite
+    state: icon
+  - type: Stack
+    stackType: Pokerc10000
+    count: 1
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  id: PokerChipsDealler
+  parent: BaseItem
+  name: фишка диллера
+  description: Фишка диллера сделана из золота.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerdealler.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  id: PokerChipsBigBlind
+  parent: BaseItem
+  name: фишка большого блайнда
+  description: Фишка диллера сделана из золота.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerbigblind.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  id: PokerChipsSmallBlind
+  parent: BaseItem
+  name: фишка малого блайнда
+  description: Фишка диллера сделана из золота.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokersmallblind.rsi
+    state: icon
+    scale: 0.3, 0.3
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - PokerUnit
+
+- type: entity
+  id: PokerChipsStorage
+  parent: [ BaseStorageItem, BaseBagOpenClose ]
+  name: коробка фишек для игры в покер
+  description: Коробка наполненная пластиковыми фишками разного номинала.
+  components:
+  - type: Item
+    sprite: Siberia/Objects/Fun/Poker/pokerstorage.rsi
+    size: Large
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Poker/pokerstorage.rsi
+    state: icon
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,4,3
+    quickInsert: true
+    areaInsert: true
+    whitelist:
+      tags:
+      - PokerUnit
+  - type: StorageFill
+    contents:
+    - id: PokerChips5
+      amount: 2
+    - id: PokerChips10
+      amount: 2
+    - id: PokerChips25
+      amount: 2
+    - id: PokerChips50
+      amount: 2
+    - id: PokerChips100
+      amount: 2
+    - id: PokerChips250
+    - id: PokerChips500
+    - id: PokerChips1000
+    - id: PokerChips5000
+    - id: PokerChips10000
+    - id: PokerChipsDealler
+    - id: PokerChipsBigBlind
+    - id: PokerChipsSmallBlind

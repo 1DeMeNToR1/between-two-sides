@@ -1,0 +1,1331 @@
+- type: entity
+  id: CardGameBox
+  parent: [ BaseStorageItem, BaseBagOpenClose ]
+  name: коробка игральных карт
+  description: коробка картонных игральных карт.
+  components:
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/cardgamestorage.rsi
+    state: box-closed
+    layers:
+    - state: box-closed
+    - state: box-open
+      map: ["openLayer"]
+      visible: false
+  - type: Storage
+    maxItemSize: Tiny
+    grid:
+    - 0,0,12,3
+    quickInsert: true
+    areaInsert: true
+    whitelist:
+      tags:
+      - CardUnit
+  - type: StorageFill
+    contents:
+    - id: CardUnitHeartTwo
+    - id: CardUnitHeartThree
+    - id: CardUnitHeartFour
+    - id: CardUnitHeartFive
+    - id: CardUnitHeartSix
+    - id: CardUnitHeartSeven
+    - id: CardUnitHeartEight
+    - id: CardUnitHeartNine
+    - id: CardUnitHeartTen
+    - id: CardUnitHeartJack
+    - id: CardUnitHeartQueen
+    - id: CardUnitHeartKing
+    - id: CardUnitHeartAce
+    - id: CardUnitSpadesTwo
+    - id: CardUnitSpadesThree
+    - id: CardUnitSpadesFour
+    - id: CardUnitSpadesFive
+    - id: CardUnitSpadesSix
+    - id: CardUnitSpadesSeven
+    - id: CardUnitSpadesEight
+    - id: CardUnitSpadesNine
+    - id: CardUnitSpadesTen
+    - id: CardUnitSpadesJack
+    - id: CardUnitSpadesQueen
+    - id: CardUnitSpadesKing
+    - id: CardUnitSpadesAce
+    - id: CardUnitDiamondsTwo
+    - id: CardUnitDiamondsThree
+    - id: CardUnitDiamondsFour
+    - id: CardUnitDiamondsFive
+    - id: CardUnitDiamondsSix
+    - id: CardUnitDiamondsSeven
+    - id: CardUnitDiamondsEight
+    - id: CardUnitDiamondsNine
+    - id: CardUnitDiamondsTen
+    - id: CardUnitDiamondsJack
+    - id: CardUnitDiamondsQueen
+    - id: CardUnitDiamondsKing
+    - id: CardUnitDiamondsAce
+    - id: CardUnitClubsTwo
+    - id: CardUnitClubsThree
+    - id: CardUnitClubsFour
+    - id: CardUnitClubsFive
+    - id: CardUnitClubsSix
+    - id: CardUnitClubsSeven
+    - id: CardUnitClubsEight
+    - id: CardUnitClubsNine
+    - id: CardUnitClubsTen
+    - id: CardUnitClubsJack
+    - id: CardUnitClubsQueen
+    - id: CardUnitClubsKing
+    - id: CardUnitClubsAce
+  - type: Dumpable
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartTwo
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhtwo.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartThree
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhthree.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartFour
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhfour.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartFive
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhfive.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartSix
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhsix.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartSeven
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhseven.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartEight
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardheight.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartNine
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhnine.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartTen
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhten.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartJack
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhjack.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartQueen
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhqueen.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartKing
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhking.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitHeartAce
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhace.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesTwo
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardstwo.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesThree
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsthree.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesFour
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsfour.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesFive
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsfive.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesSix
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardssix.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesSeven
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsseven.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesEight
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardseight.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesNine
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsnine.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesTen
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsten.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesJack
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsjack.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesQueen
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsqueen.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesKing
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsking.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitSpadesAce
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsace.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsTwo
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardctwo.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsThree
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcthree.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsFour
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcfour.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsFive
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcfive.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsSix
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcsix.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsSeven
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcseven.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsEight
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardceight.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsNine
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcnine.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsTen
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcten.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsJack
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcjack.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsQueen
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcqueen.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsKing
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcking.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitClubsAce
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcace.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsTwo
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddtwo.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsThree
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddthree.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsFour
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddfour.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsFive
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddfive.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsSix
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddsix.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsSeven
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddseven.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsEight
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddeight.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsNine
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddnine.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsTen
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddten.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsJack
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddjack.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsQueen
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddqueen.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsKing
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddking.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
+
+- type: entity
+  id: CardUnitDiamondsAce
+  parent: [ BaseItem, BaseFoldable ]
+  name: игральная карта
+  description: бумажная игральная карта.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - CardUnit
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddace.rsi
+    scale: 0.5, 0.5
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Appearance
