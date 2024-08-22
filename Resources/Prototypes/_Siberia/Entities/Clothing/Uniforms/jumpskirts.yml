@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformMantisJumpskirt
   name: бурятская юбка
   description: Прямиком от туда!
@@ -10,7 +10,7 @@
       sprite: Siberia/Clothing/Uniforms/Jumpskirt/mantis_jumpskirt.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformBlackMaidoUpJumpskirt
   name: чёрное платье горничной
   description: Часть набора горничной
@@ -21,7 +21,7 @@
       sprite: Siberia/Clothing/Uniforms/Jumpskirt/blackmaidoup.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformBlackMisatoJumpskirt
   name: чёрная безрукавка
   components:
@@ -31,7 +31,7 @@
       sprite: Siberia/Clothing/Uniforms/Jumpskirt/blackmisato.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformJustFun
   name: униформа galaxy
   components:
@@ -42,7 +42,7 @@
 
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformNightFormalJumpskirt
   name: платье элегантной дамы
   components:
@@ -53,7 +53,7 @@
 
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformNurseMedJumpskirt
   name: униформа медсестры
   description: Форма медсестры без рукавов
@@ -64,7 +64,7 @@
       sprite: Siberia/Clothing/Uniforms/Jumpskirt/nursemed.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformSkirtRedTopAndDown
   name: красная юбка и топик
   description: Удобно для танцев!
@@ -75,7 +75,7 @@
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/red_new.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformJumpskirtSuika
   name: рваная рубашка с фиолетовой юбкой
   description: Пахнущая саке рубашка без руковов с безвкусной юбкой
@@ -86,7 +86,7 @@
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/suikasuit.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingEveningDressBlue
   name: синее вечернее платье
   description: Наконец то вечернее платье, а не юбка.
@@ -97,7 +97,7 @@
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/blue_dress.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingEveningDressRed
   name: красное вечернее платье
   description: Яркое вечернее платье подчеркивающее ваши достоинства.
@@ -108,7 +108,7 @@
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/red_dress.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingEveningDressGreen
   name: зеленое вечернее платье
   description: В этом вечернем платье можно подобраться к дионам очень близко.
@@ -119,7 +119,7 @@
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/green_dress.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformJumpskirtFlan
   name: красное платье
   description: Милое красное платье с оборкамии большим бантом на спине.
@@ -130,7 +130,7 @@
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/flanskirt.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformJumpskirtMegu
   name: алое платье
   description: Алое платье с длинным рукавом, кого-то вам напоминает.
@@ -141,7 +141,7 @@
     sprite: Siberia/Clothing/Uniforms/Jumpskirt/meguminskirt.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformJumpskirtGreenHudi
   name: зелёное худи
   description: Худи зелёного цвета с короткой юбкой.
