@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "copyright": "Sprited for Siberia SS14 by filin5524(DS)",
+    "license": "CC-BY-SA-3.0",
+    "states": [
+      {
+        "name": "rebekka",
+        "directions": 4
+      }
+    ]
+}
