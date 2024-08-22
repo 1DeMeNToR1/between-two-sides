@@ -36,6 +36,9 @@
   - ClothingNeckNovaPin
   - ClothingNeckWhiteListPin
   # Corvax-Loadouts-End
+  # Siberia-Loadouts-Start
+  - ClothingNeckSiberia
+  # Siberia-Loadouts-End
 - type: loadoutGroup
   id: Glasses
   name: loadout-group-glasses
