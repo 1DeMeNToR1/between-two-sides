@@ -122,7 +122,8 @@
 # Siberia-change start
 - type: loadout
   id: CoatSecurityOvercoat
-  equipment: CoatSecurityOvercoat
+  equipment:
+    outerClothing: ClothingOuterCoatSecurityOvercoat
 
 - type: startingGear
   id: CoatSecurityOvercoat
