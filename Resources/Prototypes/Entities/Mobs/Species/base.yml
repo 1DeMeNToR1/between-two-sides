@@ -20,7 +20,6 @@
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - map: [ "bottom" ]
     - map: [ "top" ]
-    - map: ["jumpsuit"]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
     - map: [ "socks" ]
