@@ -197,3 +197,11 @@
   sprites:
     - sprite: Siberia/Mobs/Customization/floorlength_braid.rsi
       state: floorlength_braid
+
+- type: marking
+  id: HumanHairRebekkaSiberia
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Siberia/Mobs/Customization/rebekka_hair.rsi
+      state: rebekka
