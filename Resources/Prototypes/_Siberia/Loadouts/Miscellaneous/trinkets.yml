@@ -1,9 +1,11 @@
 - type: loadout
-  id: ClothingNeckSiberia
-  equipment: ClothingNeckSiberia
-
-- type: startingGear
-  id: ClothingNeckSiberia
+  id: ClothingNeckSiberiaPin
   storage:
     back:
-    - ClothingNeckSiberia
+    - ClothingNeckSiberiaPin
+
+- type: startingGear
+  id: ClothingNeckSiberiaPin
+  storage:
+    back:
+    - ClothingNeckSiberiaPin
