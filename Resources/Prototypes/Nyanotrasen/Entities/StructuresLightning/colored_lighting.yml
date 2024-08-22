@@ -7,6 +7,7 @@
   components:
   - type: PoweredLight
     hasLampOnSpawn: LightBulbMaintenance
+  - type: DamageOnInteract
     damage:
       types:
         Heat: 0.2
@@ -21,7 +22,7 @@
     radius: 1.5
     energy: 0.7
     softness: 1.1
-    color: "#FFD1A3"    
+    color: "#FFD1A3"
 
 - type: entity
   parent: PoweredSmallLight
@@ -31,6 +32,7 @@
   components:
   - type: PoweredLight
     hasLampOnSpawn: LightBulbMaintenanceRed
+  - type: DamageOnInteract
     damage:
       types:
         Heat: 0.2
@@ -55,6 +57,7 @@
   components:
   - type: PoweredLight
     hasLampOnSpawn: ColoredLightTubeRed
+  - type: DamageOnInteract
     damage:
       types:
         Heat: 0.2
@@ -79,6 +82,7 @@
   components:
   - type: PoweredLight
     hasLampOnSpawn: ColoredLightTubeFrostyBlue
+  - type: DamageOnInteract
     damage:
       types:
         Heat: 0.2
@@ -103,6 +107,7 @@
   components:
   - type: PoweredLight
     hasLampOnSpawn: ColoredLightTubeBlackLight
+  - type: DamageOnInteract
     damage:
       types:
         Heat: 0.2

@@ -6,6 +6,7 @@
   components:
   - type: PoweredLight
     hasLampOnSpawn: BlueLightTube
+  - type: DamageOnInteract
     damage:
       types:
         Heat: 0.2
