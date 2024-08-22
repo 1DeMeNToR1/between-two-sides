@@ -397,17 +397,6 @@
       sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
       state: alive
 
-- type: entity
-  noSpawn: true
-  parent: BaseGameRule
-  id: Swarm
-  components:
-  - type: GenericAntagRule
-    agentName: swarm-round-end-agent-name
-    objectives:
-    - SwarmFactoryObjective
-    - SwarmAdeptSurviveObjective
-
 - type: hitscan
   id: SwarmLaser
   damage:

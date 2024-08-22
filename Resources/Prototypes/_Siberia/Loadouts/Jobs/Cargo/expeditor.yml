@@ -1,8 +1,9 @@
 # Jumpsuit
 - type: loadout
   id: ExpeditorJumpsuit
-  equipment: ExpeditorJumpsuit
-  
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitExpeditor
+
 - type: startingGear
   id: ExpeditorJumpsuit
   equipment:
