@@ -339,7 +339,7 @@
     priority: 1
 #################### РАЗНОЕ РОЯ ##########################
 
-- type: statusIcon
+- type: jobIcon
   id: SwarmFaction
   priority: 0
   locationPreference: Left
@@ -481,7 +481,7 @@
       energyConsumption: 500000
       disableDuration: 20
 
-- type: statusIcon
+- type: jobIcon
   id: SwarmIcon
   priority: 2
   locationPreference: Left # Corvax-TypingIndicator
