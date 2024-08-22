@@ -339,7 +339,7 @@
     priority: 1
 #################### РАЗНОЕ РОЯ ##########################
 
-- type: statusIcon
+- type: jobIcon
   id: SwarmFaction
   priority: 0
   locationPreference: Left
@@ -396,17 +396,6 @@
     icon:
       sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
       state: alive
-
-- type: entity
-  noSpawn: true
-  parent: BaseGameRule
-  id: Swarm
-  components:
-  - type: GenericAntagRule
-    agentName: swarm-round-end-agent-name
-    objectives:
-    - SwarmFactoryObjective
-    - SwarmAdeptSurviveObjective
 
 - type: hitscan
   id: SwarmLaser
@@ -481,7 +470,7 @@
       energyConsumption: 500000
       disableDuration: 20
 
-- type: statusIcon
+- type: jobIcon
   id: SwarmIcon
   priority: 2
   locationPreference: Left # Corvax-TypingIndicator

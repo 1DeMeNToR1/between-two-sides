@@ -12,7 +12,8 @@
     - creamy
     - sweet
   - type: Food
-    trash: FoodTinСondensedMilkTrash
+    trash:
+    - FoodTinСondensedMilkTrash
     utensil: Spoon
 
 
@@ -40,7 +41,8 @@
     - oily
     - slaty
   - type: Food
-    trash: FoodTinOlivkiTrash
+    trash:
+    - FoodTinOlivkiTrash
 
 
 - type: entity

@@ -5,24 +5,24 @@ using Content.Client.Clickable;
 using Content.Client.Corvax.TTS;
 using Content.Client.DebugMon;
 using Content.Client.Eui;
+using Content.Client.Fullscreen;
 using Content.Client.GhostKick;
+using Content.Client.Guidebook;
 using Content.Client.Launcher;
+using Content.Client.Mapping;
 using Content.Client.Parallax.Managers;
 using Content.Client.Players.PlayTimeTracking;
+using Content.Client.Replay;
 using Content.Client.Screenshot;
-using Content.Client.Fullscreen;
 using Content.Client.Stylesheets;
 using Content.Client.Viewport;
 using Content.Client.Voting;
 using Content.Shared.Administration.Logs;
-using Content.Client.Guidebook;
 using Content.Client.Lobby;
-using Content.Client.Replay;
 using Content.Client.Siberia.DiscordAuth;
 using Content.Client.Siberia.Sponsors;
 using Content.Shared.Administration.Managers;
 using Content.Shared.Players.PlayTimeTracking;
-
 
 namespace Content.Client.IoC
 {
@@ -52,6 +52,7 @@ namespace Content.Client.IoC
             collection.Register<DocumentParsingManager>();
             collection.Register<ContentReplayPlaybackManager, ContentReplayPlaybackManager>();
             collection.Register<ISharedPlaytimeManager, JobRequirementsManager>();
+            collection.Register<MappingManager>();
             collection.Register<DebugMonitorManager>();
             collection.Register<SponsorsManager>();
             collection.Register<DiscordAuthManager>();

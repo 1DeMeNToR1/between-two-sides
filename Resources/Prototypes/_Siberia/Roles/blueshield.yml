@@ -4,7 +4,18 @@
   description: Вы нянька Nanotrasen. Охраняйте глав от антагонистов. Не занимайтесь охотой на антагонистов, это не ваша работа.
   playTimeTracker: JobBlueshield
   requirements:
-    - !type:WhitelistRequirement
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 72000 #20 hours # Siberia-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 72000 #20 hours # Siberia-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 180000 # 50 hours # Siberia-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 180000 # 50 hours # Siberia-RoleTime
   weight: 20
   startingGear: BlueShieldGear
   icon: "JobIconBlueShield"

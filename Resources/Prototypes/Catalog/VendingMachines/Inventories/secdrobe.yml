@@ -24,3 +24,5 @@
     ClothingShoesBootsCombat: 1
     ClothingShoesBootsWinterSec: 2
     ClothingHeadHatCapOfficer: 3 # Siberia-change
+  contrabandInventory:
+    ClothingMaskClownSecurity: 1

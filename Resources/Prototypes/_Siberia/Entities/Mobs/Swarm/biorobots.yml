@@ -234,7 +234,7 @@
 
 
 ######################### СТРОИТЕЛЬ РОЯ #############################
-   
+
 - type: entity
   parent: MobSwarmbotBase
   id: MobSwarmbotBuilder
@@ -247,7 +247,7 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi    
+      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
       sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
@@ -313,7 +313,7 @@
     speechSounds: Swarm
   - type: SwarmDrone
   - type: StepTriggerImmune
-  
+
 ######################### СТРАЖ РОЯ #############################
 
 - type: entity
@@ -337,7 +337,7 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi   
+      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
       sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
@@ -378,7 +378,7 @@
     - Flesh
   - type: Speech
     speechSounds: Swarm
-  - type: StepTriggerImmune  
+  - type: StepTriggerImmune
   - type: MeleeWeapon
     damage:
       types:
@@ -439,7 +439,7 @@
   - type: MovementIgnoreGravity
 
 ######################### ЛЕКАРЬ РОЯ #############################
-      
+
 - type: entity
   parent: MobSwarmbotBase
   id: MobSwarmbotHealer
@@ -452,7 +452,7 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi    
+      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
       sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
@@ -555,7 +555,7 @@
         acts: [ "Destruction" ]
   - type: SwarmDrone
   - type: MovementIgnoreGravity
-        
+
 ######################### АДЕПТ РОЯ - ЭТО БОСС #############################
 
 - type: entity
@@ -570,7 +570,7 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi    
+      sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
       sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
@@ -672,8 +672,6 @@
     spawnRiftAction: ActionSpawnFactory
     riftPrototype: SwarmbotFactory
     maxAccumulator: 99999999
-  - type: GenericAntag
-    rule: Swarm
   - type: Hunger
     thresholds: # only animals and rats are derived from this prototype so let's override it here and in rats' proto
       Overfed: 20000
@@ -745,7 +743,7 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi    
+      sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
       sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
@@ -836,7 +834,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: MovementIgnoreGravity
-        
+
 ###################### КЛОНЫ ДЛЯ СПАВН ИВЕНТА НА СТАНЦИИ - ОНИ СЛАБЕЕ ОБЫЧНЫХ, ЧТОБ НЕ заРДМить ВЕСЬ ЭКИПАЖ ###################
 
 - type: entity
@@ -852,7 +850,7 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi    
+      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
       sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
@@ -900,7 +898,7 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi  
+      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
       sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
@@ -962,7 +960,7 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-      
+
 - type: entity
   parent: MobSwarmbotHealer
   id: MobSwarmbotHealerWeak
@@ -976,7 +974,7 @@
     layers:
     - map: ["enum.BorgVisualLayers.Light"]
       state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi    
+      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
     - map: [ "enum.DamageStateVisualLayers.Base" ]
       state: alive
       sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
@@ -1010,4 +1008,3 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-        
