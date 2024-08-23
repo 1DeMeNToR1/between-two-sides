@@ -10,8 +10,8 @@
     state: bedr
     noRot: true
   - type: Strap
-    buckleOffset: "0,-0.5"
-    unbuckleOffset: "0,-0.5"
+    buckleOffset: "0,-0.2"
+    unbuckleOffset: "0,-0.2"
 
 - type: entity
   name: двойная кровать
@@ -25,5 +25,5 @@
     state: bedl
     noRot: true
   - type: Strap
-    buckleOffset: "0,0.5"
-    unbuckleOffset: "0,0.5"
+    buckleOffset: "0,0.2"
+    unbuckleOffset: "0,0.2"
