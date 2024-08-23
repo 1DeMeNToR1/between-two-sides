@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateServiceSibCoVendFilled
+  parent: CratePlastic
+  name: ящик пополнения Sib Co
+  description: Содержит два набора пополнения торгомата Sib Co.
+  components:
+    - type: StorageFill
+      contents:
+      - id: VendingMachineRestockSib
+      - id: VendingMachineRestockSib

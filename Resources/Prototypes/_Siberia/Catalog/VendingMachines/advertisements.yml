@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: SibVendAds
+  values:
+    prefix: advertisement-sibvend-
+    count: 5

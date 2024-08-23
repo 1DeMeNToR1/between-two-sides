@@ -1,0 +1,12 @@
+- type: cargoProduct
+  id: CrateServiceSibCoVend
+  icon:
+    sprite: Siberia/Objects/Specific/Service/vendsibrestock.rsi
+    state: base
+    layers:
+    - state: refill_sibvend
+    - state: green_bit
+  product: CrateServiceSibCoVendFilled
+  cost: 1200
+  category: cargoproduct-category-name-service
+  group: market
