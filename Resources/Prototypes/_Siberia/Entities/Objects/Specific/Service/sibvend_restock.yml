@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockSib
+  name: набор пополнения Sib Co.
+  description: Пополнение для торгомата корпорации Sib Co.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - SibVendInventory
+  - type: Sprite
+    sprite: Siberia/Objects/Specific/Service/vendsibrestock.rsi
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_sibvend

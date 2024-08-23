@@ -1,0 +1,9 @@
+- type: vendingMachineInventory
+  id: SibVendInventory
+  startingInventory:
+    ChipsBacon: 3
+    ChipsChanterelles: 3
+    ChipsCheese: 3
+    ChipsCrab: 3
+    ChipsGreen: 3
+    ChipsOnion: 3

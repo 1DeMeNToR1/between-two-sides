@@ -1,0 +1,192 @@
+- type: entity
+  name: чипсы с беконом
+  parent: FoodSnackBase
+  id: ChipsBacon
+  description: Чипсы из "настоящего" картофеля, со вкусом бекона.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - bacon
+      - potatoes
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: bacon
+    scale: 0.5, 0.5
+  - type: Item
+  - type: Food
+    trash:
+    - ChipsBaconTrash
+
+- type: entity
+  parent: BaseItem
+  id: ChipsBaconTrash
+  name: пустой пакет чипсов
+  description: Мусор.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: bacon_trash
+    scale: 0.5, 0.5
+  - type: Item
+    size: Tiny
+
+- type: entity
+  name: чипсы с запечёнными лисичками
+  parent: FoodSnackBase
+  id: ChipsChanterelles
+  description: Чипсы из "настоящего" картофеля, со вкусом лисичек из печи.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - smokey
+      - spaceshroom
+      - potatoes
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: chanterelles
+    scale: 0.5, 0.5
+  - type: Item
+  - type: Food
+    trash:
+    - ChipsChanterellesTrash
+
+- type: entity
+  parent: BaseItem
+  id: ChipsChanterellesTrash
+  name: пустой пакет чипсов
+  description: Мусор.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: chanterelles_trash
+    scale: 0.5, 0.5
+  - type: Item
+    size: Tiny
+
+- type: entity
+  name: чипсы с сыром
+  parent: FoodSnackBase
+  id: ChipsCheese
+  description: Чипсы из "настоящего" картофеля, со вкусом сыра.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - cheesy
+      - potatoes
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: cheese
+    scale: 0.5, 0.5
+  - type: Item
+  - type: Food
+    trash:
+    - ChipsCheeseTrash
+
+- type: entity
+  parent: BaseItem
+  id: ChipsCheeseTrash
+  name: пустой пакет чипсов
+  description: Мусор.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: cheese_trash
+    scale: 0.5, 0.5
+  - type: Item
+    size: Tiny
+
+- type: entity
+  name: чипсы с крабом
+  parent: FoodSnackBase
+  id: ChipsCrab
+  description: Чипсы из "настоящего" картофеля, со вкусом краба.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - crabby
+      - potatoes
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: crab
+    scale: 0.5, 0.5
+  - type: Item
+  - type: Food
+    trash:
+    - ChipsCrabTrash
+
+- type: entity
+  parent: BaseItem
+  id: ChipsCrabTrash
+  name: пустой пакет чипсов
+  description: Мусор.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: crab_trash
+    scale: 0.5, 0.5
+  - type: Item
+    size: Tiny
+
+- type: entity
+  name: чипсы с зеленью
+  parent: FoodSnackBase
+  id: ChipsGreen
+  description: Чипсы из "настоящего" картофеля, со вкусом зелени.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fiber
+      - potatoes
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: green
+    scale: 0.5, 0.5
+  - type: Item
+  - type: Food
+    trash:
+    - ChipsGreenTrash
+
+- type: entity
+  parent: BaseItem
+  id: ChipsGreenTrash
+  name: пустой пакет чипсов
+  description: Мусор.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: green_trash
+    scale: 0.5, 0.5
+  - type: Item
+    size: Tiny
+
+- type: entity
+  name: чипсы с зелёным луком
+  parent: FoodSnackBase
+  id: ChipsOnion
+  description: Чипсы из "настоящего" картофеля, со вкусом зелёного лука.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - onion
+      - potatoes
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: onion
+    scale: 0.5, 0.5
+  - type: Item
+  - type: Food
+    trash:
+    - ChipsOnionTrash
+
+- type: entity
+  parent: BaseItem
+  id: ChipsOnionTrash
+  name: пустой пакет чипсов
+  description: Мусор.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Consumable/Food/chips.rsi
+    state: onion_trash
+    scale: 0.5, 0.5
+  - type: Item
+    size: Tiny
