@@ -61,6 +61,6 @@
   - type: Anchorable
   - type: Strap
     position: Stand
-    buckleOffset: "0,0.75"
+    buckleOffset: "0,0.3"
   - type: Sprite
     state: poledance
