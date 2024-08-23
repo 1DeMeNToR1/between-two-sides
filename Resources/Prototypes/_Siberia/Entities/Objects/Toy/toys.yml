@@ -312,3 +312,28 @@
   - type: Sprite
     sprite: Siberia/Objects/Toy/plushie_lazar.rsi
     state: lazar-cmo
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFoxLisya
+  name: плюшевая Лися
+  description: Невероятно... Пушистая? Лиса по именя Лися.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Fun/foxtoy.rsi
+    state: lisa
+  - type: EmitSoundOnUse
+    sound:
+      collection: Fox
+  - type: EmitSoundOnActivate
+    sound:
+      collection: Fox
+  - type: EmitSoundOnCollide
+    sound:
+      collection: Fox
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToyFall
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: ToySqueak
