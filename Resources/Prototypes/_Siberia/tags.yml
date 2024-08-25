@@ -10,3 +10,32 @@
 
 - type: Tag
   id: PokerUnit
+
+- type: Tag
+  id: fishka
+
+# Med
+- type: Tag
+  id: Syringecartridge
+
+- type: Tag
+  id: SyringeGunMagazine
+
+# Crystals
+- type: Tag
+  id: CrystalShardGreyMalanisa
+
+- type: Tag
+  id: CrystalShardCyanMalanisa
+
+- type: Tag
+  id: CrystalShardBlueMalanisa
+
+- type: Tag
+  id: CrystalShardOrangeMalanisa
+
+- type: Tag
+  id: CrystalShardPinkMalanisa
+
+- type: Tag
+  id: CrystalShardGreenMalanisa

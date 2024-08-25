@@ -374,9 +374,6 @@
     tags:
       - CrystalShardGreenMalanisa
 
-- type: Tag
-  id: CrystalShardGreenMalanisa
-
 - type: entity
   parent: CrystalShardGreenMalanisa
   id: CrystalShardPinkMalanisa
@@ -392,9 +389,6 @@
   - type: Tag
     tags:
       - CrystalShardPinkMalanisa
-
-- type: Tag
-  id: CrystalShardPinkMalanisa
 
 - type: entity
   parent: CrystalShardGreenMalanisa
@@ -412,9 +406,6 @@
     tags:
       - CrystalShardOrangeMalanisa
 
-- type: Tag
-  id: CrystalShardOrangeMalanisa
-
 - type: entity
   parent: CrystalShardGreenMalanisa
   id: CrystalShardBlueMalanisa
@@ -430,9 +421,6 @@
   - type: Tag
     tags:
       - CrystalShardBlueMalanisa
-
-- type: Tag
-  id: CrystalShardBlueMalanisa  
 
 - type: entity
   parent: CrystalShardGreenMalanisa
@@ -450,9 +438,6 @@
     tags:
       - CrystalShardCyanMalanisa
 
-- type: Tag
-  id: CrystalShardCyanMalanisa
-
 - type: entity
   parent: CrystalShardGreenMalanisa
   id: CrystalShardGreyMalanisa
@@ -468,6 +453,3 @@
   - type: Tag
     tags:
       - CrystalShardGreyMalanisa 
-
-- type: Tag
-  id: CrystalShardGreyMalanisa  
