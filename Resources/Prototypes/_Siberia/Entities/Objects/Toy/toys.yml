@@ -320,7 +320,7 @@
   description: Невероятно... Пушистая? Лиса по именя Лися.
   components:
   - type: Sprite
-    sprite: Siberia/Objects/Fun/foxtoy.rsi
+    sprite: Siberia/Objects/Toy/foxtoy.rsi
     state: lisa
   - type: EmitSoundOnUse
     sound:
