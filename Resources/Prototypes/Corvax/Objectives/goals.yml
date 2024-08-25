@@ -2,35 +2,35 @@
 
 - type: stationGoal
   id: Shuttle
-  text: station-goal-shuttle
+  text: siberia-station-goal-shuttle # Siberia-goals-locale
 
 - type: stationGoal
   id: Singularity
-  text: station-goal-singularity
+  text: siberia-station-goal-singularity # Siberia-goals-locale
 
 - type: stationGoal
   id: SolarPanels
-  text: station-goal-solar-panels
+  text: siberia-station-goal-solar-panels # Siberia-goals-locale
 
 - type: stationGoal
   id: Artifacts
-  text: station-goal-artifacts
+  text: siberia-station-goal-artifacts # Siberia-goals-locale
 
 - type: stationGoal
   id: Bank
-  text: station-goal-bank
+  text: siberia-station-goal-bank # Siberia-goals-locale
 
 - type: stationGoal
   id: Zoo
-  text: station-goal-zoo
+  text: siberia-station-goal-zoo # Siberia-goals-locale
 
 - type: stationGoal
   id: MiningOutpost
-  text: station-goal-mining-outpost
+  text: siberia-station-goal-mining-outpost # Siberia-goals-locale
 
 - type: stationGoal
   id: Tesla
-  text: station-goal-tesla
+  text: siberia-station-goal-tesla # Siberia-goals-locale
 
 # Special goals
 
