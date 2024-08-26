@@ -4,7 +4,6 @@
   id: Unclonable
 
 # Card
-
 - type: Tag
   id: CardUnit
 
@@ -39,3 +38,33 @@
 
 - type: Tag
   id: CrystalShardGreenMalanisa
+
+- type: Tag
+  id: RCDDeconstructWhitelist # For Siberia-Swarmers
+
+# Underwear-system
+- type: Tag
+  id: Socks
+
+- type: Tag
+  id: Top
+
+- type: Tag
+  id: Bottom
+
+# Weapon
+- type: Tag
+  id: MagazineAssaultRifle
+
+- type: Tag
+  id: MagazineSaiga12
+
+# Fun
+- type: Tag
+  id: WhoopieCushion
+
+- type: Tag
+  id: Mustard
+
+- type: Tag
+  id: VolleyBall
