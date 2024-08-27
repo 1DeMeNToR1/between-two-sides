@@ -4,6 +4,11 @@
   abstract: true
   id: MobSwarmbotBase
   components:
+  - type: ItemToggle
+    activated: false # gets activated when a mind is added
+    onUse: false # no item-swarm toggling sorry
+    toggleLight: false
+  - type: AccessToggle
   - type: LagCompensation
   - type: Clickable
   - type: Damageable
