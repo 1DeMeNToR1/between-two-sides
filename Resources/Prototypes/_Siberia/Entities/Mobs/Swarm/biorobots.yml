@@ -160,6 +160,9 @@
     selectedModule: null
     hasMindState: light
     noMindState: light
+    moduleWhitelist:
+      tags:
+      - SwarmModule
   - type: ContainerContainer
     containers:
       borg_module: !type:Container { }
@@ -293,7 +296,7 @@
   - type: ContainerFill
     containers:
       borg_module:
-        - SwarmBotBuilder
+        - SwarmModuleRCD
   - type: ItemSlots
     slots:
       cell_slot:
@@ -507,7 +510,7 @@
   - type: ContainerFill
     containers:
       borg_module:
-        - SwarmBotHealer
+        - SwarmModuleMed
   - type: ShowHealthBars
     damageContainers:
     - Inorganic

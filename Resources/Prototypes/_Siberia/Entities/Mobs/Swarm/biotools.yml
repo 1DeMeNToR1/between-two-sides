@@ -1,32 +1,5 @@
 #################### ИНСТРУМЕНТЫ РОЯ ##########################
 - type: entity
-  name: Устройство строительства
-  parent: BaseItem
-  id: RCDSwarm
-  description: Древнее устройство, имеющее схожее устройство работы с РСУ.
-  components:
-  - type: SwarmRCD
-    delay: 6
-    floor: FloorBasalt
-    successSound: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg
-  - type: LimitedCharges
-    maxCharges: 20
-    charges: 20
-  - type: AutoRecharge
-    rechargeDuration: 20
-  - type: UseDelay
-  - type: Sprite
-    sprite: Siberia/Mobs/Silicon/BioSwarm/rcd.rsi
-    state: icon
-  - type: Item
-    size: Normal
-  - type: MeleeWeapon
-    damage:
-      types:
-        Blunt: 12
-        Structural: 25
-
-- type: entity
   name: спрей дрона роя
   parent: BaseItem
   description: Инжектор наномашин, который использует дрон-лекарь роя.
@@ -188,45 +161,6 @@
       ignoreWhitelist:
         tags:
         - Flesh
-
-- type: entity
-  parent: BaseWall
-  id: WallSwarmbot
-  name: стена роя
-  components:
-  - type: Tag
-    tags:
-      - Wall
-      - RCDDeconstructWhitelist
-  - type: Sprite
-    sprite: Siberia/Mobs/Silicon/BioSwarm/bibotwall.rsi
-  - type: Icon
-    sprite: Siberia/Mobs/Silicon/BioSwarm/bibotwall.rsi
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-    - trigger:
-        !type:DamageTrigger
-        damage: 25
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: IconSmooth
-    key: walls
-    base: bibotwall
 
 - type: entity
   id: SwarmbotFactory
@@ -484,37 +418,6 @@
   values:
     prefix: advertisement-swarm-
     count: 7
-
-#################### МОДУЛИ РОЯ ##########################
-
-- type: entity
-  id: SwarmBotBuilder
-  parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: модуль строителя-дрона роя
-  components:
-  - type: Sprite
-    sprite: Siberia/Mobs/Silicon/BioSwarm/swarmmodule.rsi
-    layers:
-    - state: swarm
-    - state: icon-swarm
-  - type: ItemBorgModule
-    items:
-    - RCDSwarm
-
-- type: entity
-  id: SwarmBotHealer
-  parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: модуль лекаря-дрона роя
-  components:
-  - type: Sprite
-    sprite: Siberia/Mobs/Silicon/BioSwarm/swarmmodule.rsi
-    layers:
-    - state: swarm
-    - state: icon-swarm
-  - type: ItemBorgModule
-    items:
-    - SwarmHealerHypospray
-    - WelderSwarm
 
 #################### ХИМИКАТ РОЯ ##########################
 

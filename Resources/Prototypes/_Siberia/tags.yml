@@ -68,3 +68,8 @@
 
 - type: Tag
   id: VolleyBall
+
+# Swarmers
+
+- type: Tag
+  id: SwarmModule
