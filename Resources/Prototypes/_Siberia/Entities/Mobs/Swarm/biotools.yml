@@ -160,7 +160,7 @@
           Piercing: 1.5
       ignoreWhitelist:
         tags:
-        - Flesh
+        - Swarm
 
 - type: entity
   id: SwarmbotFactory

@@ -70,7 +70,7 @@
   - type: Tag
     tags:
     - DoorBumpOpener
-    - Flesh
+    - Swarm
   - type: MobState
     allowedStates:
       - Alive
