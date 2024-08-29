@@ -2,7 +2,7 @@
   id: CardGameBox
   parent: [ BaseStorageItem, BaseBagOpenClose ]
   name: коробка игральных карт
-  description: коробка картонных игральных карт.
+  description: коробка бумажных игральных карт.
   components:
   - type: Item
     size: Small
@@ -96,12 +96,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhtwo.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: two
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -120,12 +120,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhthree.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: three
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -144,12 +144,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhfour.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: four
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -168,12 +168,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhfive.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: five
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -192,12 +192,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhsix.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: six
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -216,12 +216,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhseven.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: seven
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -240,12 +240,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardheight.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: eight
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -264,12 +264,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhnine.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: nine
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -288,12 +288,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhten.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: ten
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -312,12 +312,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhjack.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: jack
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -336,12 +336,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhqueen.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: queen
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -360,12 +360,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhking.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: king
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -384,12 +384,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardhace.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/hearts.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: ace
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -408,12 +408,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardstwo.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: two
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -432,12 +432,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsthree.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: three
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -456,12 +456,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsfour.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: four
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -480,12 +480,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsfive.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: five
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -504,12 +504,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardssix.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: six
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -528,12 +528,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsseven.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: seven
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -552,12 +552,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardseight.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: eight
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -576,12 +576,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsnine.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: nine
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -600,12 +600,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsten.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: ten
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -624,12 +624,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsjack.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: jack
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -648,12 +648,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsqueen.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: queen
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -672,12 +672,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsking.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: king
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -696,12 +696,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardsace.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/spades.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: ace
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -720,12 +720,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardctwo.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: two
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -744,12 +744,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcthree.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: three
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -768,12 +768,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcfour.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: four
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -792,12 +792,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcfive.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: five
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -816,12 +816,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcsix.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: six
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -840,12 +840,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcseven.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: seven
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -864,12 +864,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardceight.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: eight
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -888,12 +888,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcnine.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: nine
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -912,12 +912,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcten.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: ten
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -936,12 +936,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcjack.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: jack
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -960,12 +960,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcqueen.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: queen
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -984,12 +984,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcking.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: king
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1008,12 +1008,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/cardcace.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/clubs.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: ace
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1032,12 +1032,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddtwo.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: two
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1056,12 +1056,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddthree.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: three
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1080,12 +1080,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddfour.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: four
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1104,12 +1104,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddfive.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: five
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1128,12 +1128,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddsix.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: six
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1152,12 +1152,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddseven.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: seven
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1176,12 +1176,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddeight.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: eight
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1200,12 +1200,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddnine.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: nine
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1224,12 +1224,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddten.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: ten
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1248,12 +1248,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddjack.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: jack
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1272,12 +1272,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddqueen.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: queen
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1296,12 +1296,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddking.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: king
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
@@ -1320,12 +1320,12 @@
   - type: Foldable
     canFoldInsideContainer: true
   - type: Sprite
-    sprite: Siberia/Objects/Fun/Cardgame/Cards/carddace.rsi
+    sprite: Siberia/Objects/Fun/Cardgame/Cards/diamond.rsi
     scale: 0.5, 0.5
     layers:
-    - state: icon
+    - state: back
       map: [ "unfoldedLayer" ]
-    - state: icon-open
+    - state: ace
       map: ["foldedLayer"]
       visible: false
   - type: Appearance
