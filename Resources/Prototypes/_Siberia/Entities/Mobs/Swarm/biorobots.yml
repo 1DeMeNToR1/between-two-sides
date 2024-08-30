@@ -415,9 +415,6 @@
       path: /Audio/Weapons/Guns/Gunshots/Magic/staff_door.ogg
     soundEmpty:
       path: /Audio/Items/Lighters/lighter_off.ogg
-  - type: ShowJobIcons
-  - type: ShowMindShieldIcons
-  - type: ShowSyndicateIcons
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -659,9 +656,6 @@
     - Biological
     - Inorganic
   - type: SolutionScanner
-  - type: ShowJobIcons
-  - type: ShowMindShieldIcons
-  - type: ShowSyndicateIcons
   - type: Bloodstream
     bloodMaxVolume: 650
   - type: Devourer
@@ -817,9 +811,6 @@
       path: /Audio/Weapons/plasma_cutter.ogg
     soundEmpty:
       path: /Audio/Items/Lighters/lighter_off.ogg
-  - type: ShowJobIcons
-  - type: ShowMindShieldIcons
-  - type: ShowSyndicateIcons
   - type: MobThresholds
     thresholds:
       0: Alive
