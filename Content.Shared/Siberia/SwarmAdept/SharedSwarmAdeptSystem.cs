@@ -10,7 +10,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 
-using Content.Shared.Siberia.SwarmAdept;
+
 
 namespace Content.Shared.Siberia.SwarmAdept;
 
@@ -37,7 +37,7 @@ public abstract class SharedSwarmAdeptSystem : EntitySystem
     {
         if (!TryComp(uid, out ActionsComponent? comp))
             return;
-
+        // TODO: Заменить ActionGrantComponent компонентом.
         _action.AddAction(uid, ref component.ActionRaiseArmyEntity, component.ActionRaiseArmy, component: comp);
         _action.AddAction(uid, ref component.ActionDomainEntity, component.ActionDomain, component: comp);
         _action.AddAction(uid, ref component.ActionOrderStayEntity, component.ActionOrderStay, component: comp);
@@ -57,7 +57,7 @@ public abstract class SharedSwarmAdeptSystem : EntitySystem
 
         if (!TryComp(uid, out ActionsComponent? comp))
             return;
-
+        // TODO: Заменить ActionGrantComponent компонентом.
         _action.RemoveAction(uid, component.ActionRaiseArmyEntity, comp);
         _action.RemoveAction(uid, component.ActionDomainEntity, comp);
         _action.RemoveAction(uid, component.ActionOrderStayEntity, comp);

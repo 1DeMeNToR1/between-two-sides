@@ -1,4 +1,4 @@
-using Content.Shared.Siberia.SwarmAdept;
+using Content.Shared.StatusIcon;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -12,6 +12,9 @@ public sealed partial class SwarmAdeptComponent : Component
 {
     [DataField("actionRaiseArmy", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string ActionRaiseArmy = "ActionSwarmAdeptRaiseArmy";
+
+    [DataField("swarmStatusIcon")]
+    public ProtoId<FactionIconPrototype> StatusIcon { get; set; } = "SwarmFaction";
 
     /// <summary>
     ///     The action for the Raise Army ability

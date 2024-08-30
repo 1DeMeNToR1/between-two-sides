@@ -442,6 +442,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: MovementIgnoreGravity
+  - type: SwarmDrone
 
 ######################### ЛЕКАРЬ РОЯ #############################
 
@@ -833,6 +834,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: MovementIgnoreGravity
+  - type: SwarmDrone
 
 ###################### КЛОНЫ ДЛЯ СПАВН ИВЕНТА НА СТАНЦИИ - ОНИ СЛАБЕЕ ОБЫЧНЫХ, ЧТОБ НЕ заРДМить ВЕСЬ ЭКИПАЖ ###################
 

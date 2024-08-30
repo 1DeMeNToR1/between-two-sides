@@ -1,5 +1,7 @@
 using Content.Shared.Siberia.SwarmAdept;
+using Content.Shared.StatusIcon;
 using Robust.Shared.GameStates;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Siberia.SwarmAdept;
 
@@ -13,4 +15,7 @@ public sealed partial class SwarmDroneComponent : Component
     [DataField("king")]
     [AutoNetworkedField]
     public EntityUid? King;
+
+    [DataField("swarmStatusIcon")]
+    public ProtoId<FactionIconPrototype> StatusIcon { get; set; } = "SwarmFaction";
 }

@@ -273,14 +273,6 @@
     priority: 1
 #################### РАЗНОЕ РОЯ ##########################
 
-- type: jobIcon
-  id: SwarmFaction
-  priority: 0
-  locationPreference: Left
-  icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
-    state: Geneticist
-
 - type: speechSounds
   id: Swarm
   saySound:
@@ -403,15 +395,6 @@
       range: 10
       energyConsumption: 500000
       disableDuration: 20
-
-- type: jobIcon
-  id: SwarmIcon
-  priority: 2
-  locationPreference: Left # Corvax-TypingIndicator
-  layer: Mod
-  icon:
-    sprite: Siberia/Mobs/Silicon/BioSwarm/swarmjob.rsi
-    state: icon-swarm-job
 
 - type: localizedDataset
   id: SwarmAds
