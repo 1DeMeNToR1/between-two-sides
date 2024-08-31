@@ -10,6 +10,7 @@
     successSound: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg
     availablePrototypes:
     - WallSwarm
+    - Deconstruct
   - type: LimitedCharges
     maxCharges: 20
     charges: 20
