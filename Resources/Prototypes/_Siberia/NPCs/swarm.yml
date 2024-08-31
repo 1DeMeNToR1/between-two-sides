@@ -20,26 +20,6 @@
       - !type:HTNCompoundTask
         task: SimpleRangedHostileCompound
 
-- type: dataset
-  id: SwarmAdeptCommandStay
-  values:
-    - "Приказ: Оставаться на позициях!"
-
-- type: dataset
-  id: SwarmAdeptCommandFollow
-  values:
-    - "Приказ: Следовать за Адептом Роя!"
-
-- type: dataset
-  id: SwarmAdeptCommandCheeseEm #Сломана команда, убрал у адепта её
-  values:
-    - "Приказ: Оборонять Адепта Роя!"
-
-- type: dataset
-  id: SwarmAdeptCommandLoose
-  values:
-    - "Приказ: Рассредоточиться!"
-
 - type: htnCompound
   id: SwarmMedibotCompound
   branches:
