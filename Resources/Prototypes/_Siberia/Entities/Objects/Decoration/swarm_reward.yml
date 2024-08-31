@@ -5,7 +5,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Siberia/Mobs/Silicon/BioSwarm/gift.rsi
+    sprite: Siberia/Objects/Decoration/swarm_reward.rsi
     layers:
       - state: gift
 
@@ -141,7 +141,7 @@
   description: Опять этот задрот убил всех дронов и залутал сферы. ГГВП Я ливаю!
   components:
   - type: Sprite
-    sprite: Siberia/Mobs/Silicon/BioSwarm/gift.rsi
+    sprite: Siberia/Objects/Decoration/swarm_reward.rsi
     layers:
       - state: unwrapped
   - type: Tag
