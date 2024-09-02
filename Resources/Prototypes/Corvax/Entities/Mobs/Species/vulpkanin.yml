@@ -108,7 +108,6 @@
     damage:
       types:
         Slash: 5
-  - type: LightweightDrunk
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Vulpkanin

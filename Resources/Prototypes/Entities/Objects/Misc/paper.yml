@@ -18,7 +18,7 @@
   - type: PaperLabelType
   - type: ActivatableUI
     key: enum.PaperUiKey.Key
-    requireHands: false
+    requiresComplex: false
   - type: UserInterface
     interfaces:
       enum.PaperUiKey.Key:
@@ -59,20 +59,21 @@
               max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-#Siberia-changes-start
-#  - type: Food
-  #  solution: food
-  #  delay: 7
-  #  forceFeedDelay: 7
-#  - type: BadFood
-#  - type: SolutionContainerManager
-  #  solutions:
-    #  food:
-      #  maxVol: 1
-      #  reagents:
-      #  - ReagentId: Fiber
-        #  Quantity: 1
-#Siberia-changes-stop
+  - type: Food
+    solution: food
+    delay: 7
+    forceFeedDelay: 7
+  - type: FlavorProfile
+    flavors:
+    - paper
+  - type: BadFood
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 1
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 1
 # Corvax-Printer-Start
   - type: Material
   - type: PhysicalComposition
@@ -655,7 +656,7 @@
             - Paper
   - type: ActivatableUI
     key: enum.PaperUiKey.Key
-    requireHands: false
+    requiresComplex: false
   - type: UserInterface
     interfaces:
       enum.PaperUiKey.Key:
