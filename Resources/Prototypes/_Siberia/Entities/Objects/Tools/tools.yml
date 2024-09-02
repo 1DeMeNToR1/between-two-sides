@@ -18,7 +18,7 @@
     rechargeDuration: 15
   - type: UseDelay
   - type: Sprite
-    sprite: Siberia/Mobs/Silicon/BioSwarm/rcd.rsi
+    sprite: Siberia/Objects/Tools/swarmrcd.rsi
     state: icon
   - type: Item
     size: Normal

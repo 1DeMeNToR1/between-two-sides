@@ -1,0 +1,5 @@
+- type: localizedDataset # TODO: delete this cringe
+  id: SwarmAds
+  values:
+    prefix: advertisement-swarm-
+    count: 7

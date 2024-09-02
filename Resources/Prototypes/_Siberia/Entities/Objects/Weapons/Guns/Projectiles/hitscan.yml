@@ -1,0 +1,15 @@
+- type: hitscan
+  id: SwarmLaser
+  damage:
+    types:
+      Heat: 5
+      Radiation: 5
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_xray
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: xray
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_xray

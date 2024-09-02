@@ -49,3 +49,45 @@
     soundHit:
       collection: WeakHit
     forceSound: true
+
+- type: entity
+  name: disabler bolt
+  id: BulletDisablerSwarm
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+    - state: bluespace
+      shader: unshaded
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.3,0.15,0.3"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+  - type: Ammo
+  - type: StaminaDamageOnCollide
+    damage: 20
+  - type: Projectile
+    impactEffect: BulletImpactEffectDisabler
+    damage:
+      types:
+        Heat: 5
+    soundHit:
+      collection: WeakHit
+    forceSound: true

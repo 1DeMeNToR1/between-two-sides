@@ -1,7 +1,7 @@
 - type: factionIcon
   id: SwarmFaction
   priority: 11
-  shoTo:
+  showTo:
     components:
     - ShowAntagIcons
     - SwarmAdept

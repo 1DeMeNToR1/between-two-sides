@@ -30,10 +30,10 @@
   - type: InstantAction
     useDelay: 1
     icon:
-      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: stayOff
     iconOn:
-      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: stay
     event:
       !type:SwarmAdeptOrderActionEvent
@@ -48,10 +48,10 @@
   - type: InstantAction
     useDelay: 1
     icon:
-      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: followOff
     iconOn:
-      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: follow
     event:
       !type:SwarmAdeptOrderActionEvent
@@ -84,10 +84,10 @@
   - type: InstantAction
     useDelay: 1
     icon:
-      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: looseOff
     iconOn:
-      sprite: Siberia/Mobs/Silicon/BioSwarm/actions_swarm_adept.rsi
+      sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: loose
     event:
       !type:SwarmAdeptOrderActionEvent
@@ -102,7 +102,7 @@
   components:
   - type: InstantAction
     icon:
-      sprite: Siberia/Mobs/Silicon/BioSwarm/factory.rsi
+      sprite: Siberia/Structures/Machines/swarm_factory.rsi
       state: factory
     event: !type:DragonSpawnRiftActionEvent
     useDelay: 1
