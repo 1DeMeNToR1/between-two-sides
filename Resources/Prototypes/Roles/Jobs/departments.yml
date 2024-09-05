@@ -16,7 +16,6 @@
   color: "#9FED58"
   roles:
   - Bartender
-  - Borg
   - Botanist
   - Boxer
   - Chaplain
@@ -103,6 +102,15 @@
   - Scientist
   - ResearchAssistant
   - SeniorResearcher
+
+- type: department
+  id: Silicon
+  name: department-Silicon
+  description: department-Silicon-description
+  color: "#D381C9"
+  roles:
+  - Borg
+  - StationAi
 
 - type: department
   id: Specific
