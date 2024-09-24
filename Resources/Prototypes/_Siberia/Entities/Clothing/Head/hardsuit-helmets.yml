@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSecurityWarden
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   name: шлем скафандра смотрителя
   description: Бронированный шлем для скафандра смотрителя
   components:
@@ -24,7 +24,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitEngineeringRndUpgraded
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   name: шлем улучшенного инженерного скафандра
   description: Если вы видите этот визор, то скорее всего этот человек пришёл разгребсти дерьмо за вами.
   components:
@@ -57,7 +57,7 @@
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSecurityRndUpgraded
   name: шлем тяжелобронированного скафандра охраны
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Если вы видите этот визор, то скорее всего ОНИ ПРИШЛИ ЗА ВАМИ. RUN FOR YOUR LIFE!
   components:
   - type: BreathMask
@@ -92,7 +92,7 @@
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSecurityLightRndUpgraded
   name: шлем легкобронированного скафандра охраны
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Если вы видите этот визор, то скорее всего вам не убежать...
   components:
   - type: BreathMask
@@ -125,7 +125,7 @@
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitMedicalRndUpgraded
   name: улучшенный шлем скафандра медика
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Шлем напоминающий вам о том что вы должны включить датчики.
   components:
   - type: BreathMask
@@ -154,7 +154,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitMiningRndUpgraded
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   name: шлем улучшенного шахтёрского скафандра
   description: Diggy Diggy hole!
   components:
@@ -186,7 +186,7 @@
   # parent: ClothingHandsButcherable
   # id: ClothingMiningGlovesHardsuitMiningRndUpgraded
   # name: протокинетические перчатки скафандра
-  # noSpawn: true
+  # categories: [ HideSpawnMenu ]
   # description: Позволяют крушить чёртов камень как перья!
   # components:
   # - type: Sprite
@@ -213,7 +213,7 @@
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitRndBiologic
   name: шлем био скафандра VI
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Не защищает от воздействия спуска в бездну.
   components:
   - type: BreathMask

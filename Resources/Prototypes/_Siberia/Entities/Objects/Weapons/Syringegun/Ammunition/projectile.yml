@@ -1,7 +1,7 @@
 - type: entity
   id: SyringeGunProject
   name: Syrgine
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: syringeprojctile
   components:
   - type: Sprite

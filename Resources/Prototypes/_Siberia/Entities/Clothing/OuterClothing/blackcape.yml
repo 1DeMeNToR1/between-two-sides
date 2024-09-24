@@ -15,7 +15,7 @@
 - type: entity
   parent: ClothingHeadHatHoodWinterBase
   id: ClothingHeadBlackCape
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   name: капюшон чёрной накидки
   components:
   - type: Sprite

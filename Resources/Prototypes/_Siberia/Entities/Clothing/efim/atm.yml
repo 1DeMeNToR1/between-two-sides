@@ -87,7 +87,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitAtmosEfim
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   name: облегчённый скафандр атмоса
   components:
   - type: Sprite

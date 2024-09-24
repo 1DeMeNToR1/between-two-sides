@@ -2,7 +2,7 @@
   name : disabler bolt
   id: BulletHealgun
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Reflective
     reflective:
