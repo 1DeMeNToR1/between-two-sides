@@ -41,7 +41,6 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
         _net.RegisterNetMessage<MsgRoleBans>(RxRoleBans);
         _net.RegisterNetMessage<MsgPlayTime>(RxPlayTime);
         _net.RegisterNetMessage<MsgJobWhitelist>(RxJobWhitelist);
-        _net.RegisterNetMessage<MsgWhitelist>(RxWhitelist);
 
         _client.RunLevelChanged += ClientOnRunLevelChanged;
     }

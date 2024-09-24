@@ -179,7 +179,6 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         _tracking.QueueRefreshTrackers(ev.PlayerSession);
         // Send timers to client when they join lobby, so the UIs are up-to-date.
         _tracking.QueueSendTimers(ev.PlayerSession);
-        _tracking.QueueSendWhitelist(ev.PlayerSession); //siberia-changes
     }
 
     private void OnStationJobsGetCandidates(ref StationJobsGetCandidatesEvent ev)
@@ -224,7 +223,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             Log.Error($"Unable to check playtimes {Environment.StackTrace}");
             playTimes = new Dictionary<string, TimeSpan>();
         }
-        var isWhitelisted = player.ContentData()?.Whitelisted ?? false; // siberia-changes
+
         foreach (var job in _prototypes.EnumeratePrototypes<JobPrototype>())
         {
             if (JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, (HumanoidCharacterProfile?) _preferencesManager.GetPreferences(player.UserId).SelectedCharacter))
@@ -246,7 +245,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             Log.Error($"Playtimes weren't ready yet for {player} on roundstart!");
             playTimes ??= new Dictionary<string, TimeSpan>();
         }
-        var isWhitelisted = player.ContentData()?.Whitelisted ?? false; // siberia-changes
+
         for (var i = 0; i < jobs.Count; i++)
         {
             if (_prototypes.TryIndex(jobs[i], out var job)

@@ -4,7 +4,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Database;
 using Content.Shared.CCVar;
-using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
 using Robust.Shared.Asynchronous;
 using Robust.Shared.Collections;
@@ -89,7 +88,6 @@ public sealed partial class PlayTimeTrackingManager : ISharedPlaytimeManager, IP
         _sawmill = Logger.GetSawmill("play_time");
 
         _net.RegisterNetMessage<MsgPlayTime>();
-        _net.RegisterNetMessage<MsgWhitelist>(); // siberia-change
 
         _cfg.OnValueChanged(CCVars.PlayTimeSaveInterval, f => _saveInterval = TimeSpan.FromSeconds(f), true);
     }
@@ -137,13 +135,7 @@ public sealed partial class PlayTimeTrackingManager : ISharedPlaytimeManager, IP
                 SendPlayTimes(player);
                 data.NeedSendTimers = false;
             }
-            // siberia-changes start
-            if (data.NeedRefreshWhitelist)
-            {
-                SendWhitelistCached(player);
-                data.NeedRefreshWhitelist = false;
-            }
-            // siberia-changes stop
+
             data.IsDirty = false;
         }
 
@@ -328,13 +320,11 @@ public sealed partial class PlayTimeTrackingManager : ISharedPlaytimeManager, IP
         {
             data.TrackerTimes.Add(timer.Tracker, timer.TimeSpent);
         }
-        session.ContentData()!.Whitelisted = await _db.GetWhitelistStatusAsync(session.UserId); // siberia-changes
 
         data.Initialized = true;
 
         QueueRefreshTrackers(session);
         QueueSendTimers(session);
-        QueueSendWhitelist(session);
     }
 
     public void ClientDisconnected(ICommonSession session)
@@ -453,7 +443,6 @@ public sealed partial class PlayTimeTrackingManager : ISharedPlaytimeManager, IP
         public bool IsDirty;
         public bool NeedRefreshTackers;
         public bool NeedSendTimers;
-        public bool NeedRefreshWhitelist; // siberia-changes
 
         // Active tracking info
         public readonly HashSet<string> ActiveTrackers = new();
