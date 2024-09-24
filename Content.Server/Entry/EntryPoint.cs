@@ -24,7 +24,7 @@ using Content.Server.Players.RateLimiting;
 using Content.Server.Preferences.Managers;
 using Content.Server.ServerInfo;
 using Content.Server.ServerUpdates;
-using Content.Server.Siberia.DiscordAuth;
+// using Content.Server.Siberia.DiscordAuth;
 using Content.Server.Siberia.Sponsors;
 using Content.Server.Voting.Managers;
 using Content.Shared.CCVar;
@@ -111,7 +111,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<TTSManager>().Initialize(); // Corvax-TTS
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
                 IoCManager.Resolve<ServerApi>().Initialize();
-                IoCManager.Resolve<DiscordAuthManager>().Initialize();
+//                IoCManager.Resolve<DiscordAuthManager>().Initialize();
                 IoCManager.Resolve<SponsorsManager>().Initialize();
 
                 _voteManager.Initialize();
