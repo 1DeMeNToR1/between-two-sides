@@ -38,11 +38,7 @@ public sealed class ContentPlayerData
     /// </summary>
     public bool ExplicitlyDeadminned { get; set; }
 
-    /// <summary>
-    ///     Siberia - Are they whitelisted? Lets us avoid async.
-    /// </summary>
-    [ViewVariables]
-    public bool Whitelisted { get; set; }
+
     /// <summary>
     /// If true, the admin will not show up in adminwho except to admins with the <see cref="AdminFlags.Stealth"/> flag.
     /// </summary>

@@ -197,7 +197,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitBlueshield
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   name: шлем скафандра офицера "Синий Щит"
   components:
   - type: Sprite
@@ -322,7 +322,7 @@
   id: DeathRattleImplantNanotrasen
   name: Имплант оповещения о смерти
   description: Этот имплант сообщит о потере сознания/смерти своего владельца в медицинский канал станции
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: SubdermalImplant
       permanent: true

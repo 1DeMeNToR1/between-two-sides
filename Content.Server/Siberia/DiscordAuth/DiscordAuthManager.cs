@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿/*
+using System.Diagnostics.CodeAnalysis;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
@@ -129,3 +130,4 @@ public sealed class DiscordAuthManager
     [UsedImplicitly]
     private sealed record DiscordGenerateLinkResponse(string Url);
 }
+*/

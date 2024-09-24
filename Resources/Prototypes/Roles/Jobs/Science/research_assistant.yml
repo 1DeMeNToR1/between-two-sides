@@ -6,10 +6,10 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 36000 #10 hrs Siberia-RoleTime
-  startingGear: ResearchAssistantGear    
+  startingGear: ResearchAssistantGear
   icon: "JobIconResearchAssistant"
   supervisors: job-supervisors-science
-  canBeAntag: false
+  canBeAntag: true # Corvax-MRP: Available not only for newbies
   access:
   - Research
   - Maintenance

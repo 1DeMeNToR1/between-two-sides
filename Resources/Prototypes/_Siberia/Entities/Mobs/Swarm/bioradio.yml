@@ -1,7 +1,0 @@
-- type: radioChannel
-  id: SwarmRadio
-  name: chat-radio-swarm
-  keycode: 'ж' # Siberia-Localization
-  frequency: 1450
-  color: "#6c008a"
-  longRange: true

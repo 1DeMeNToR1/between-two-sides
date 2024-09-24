@@ -24,7 +24,6 @@ public sealed partial class JobRequirementLoadoutEffect : LoadoutEffect
             return true;
         }
 
-        var isWhitelisted = session.ContentData()?.Whitelisted ?? false;
         var manager = collection.Resolve<ISharedPlaytimeManager>();
         var playtimes = manager.GetPlayTimes(session);
         return Requirement.Check(collection.Resolve<IEntityManager>(),

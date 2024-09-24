@@ -15,6 +15,7 @@ using Content.Server.Mapping;
 using Content.Server.Maps;
 using Content.Server.MoMMI;
 using Content.Server.NodeContainer.NodeGroups;
+using Content.Server.Objectives;
 using Content.Server.Players;
 using Content.Server.Players.JobWhitelist;
 using Content.Server.Players.PlayTimeTracking;
@@ -22,7 +23,7 @@ using Content.Server.Players.RateLimiting;
 using Content.Server.Preferences.Managers;
 using Content.Server.ServerInfo;
 using Content.Server.ServerUpdates;
-using Content.Server.Siberia.DiscordAuth;
+// using Content.Server.Siberia.DiscordAuth;
 using Content.Server.Siberia.Sponsors;
 using Content.Server.Voting.Managers;
 using Content.Server.Worldgen.Tools;
@@ -72,7 +73,7 @@ namespace Content.Server.IoC
             IoCManager.Register<JobWhitelistManager>();
             IoCManager.Register<PlayerRateLimitManager>();
             IoCManager.Register<SponsorsManager>();
-            IoCManager.Register<DiscordAuthManager>();
+//            IoCManager.Register<DiscordAuthManager>();
             IoCManager.Register<MappingManager>();
         }
     }
