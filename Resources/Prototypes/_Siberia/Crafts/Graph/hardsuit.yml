@@ -1,0 +1,36 @@
+- type: constructionGraph
+  id: MaximumHardsuit
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: maximumhardsuit
+          steps:
+            - tag: HardsuitSpatio
+              name: Скафандр утилизатора
+              icon:
+                sprite: Clothing/OuterClothing/Hardsuits/spatio.rsi
+                state: icon
+            - tag: MaterialGoliathHide
+              name: Шкура Голиафа
+              icon:
+                sprite: Objects/Materials/hide.rsi
+                state: goliath_hide
+            - tag: MaterialGoliathHide
+              name: Шкура Голиафа
+              icon:
+                sprite: Objects/Materials/hide.rsi
+                state: goliath_hide
+            - tag: MaterialGoliathHide
+              name: Шкура Голиафа
+              icon:
+                sprite: Objects/Materials/hide.rsi
+                state: goliath_hide
+            - tag: MaterialGoliathHide
+              name: Шкура Голиафа
+              icon:
+                sprite: Objects/Materials/hide.rsi
+                state: goliath_hide
+              doAfter: 10
+    - node: maximumhardsuit
+      entity: ClothingOuterHardsuitMaxim
