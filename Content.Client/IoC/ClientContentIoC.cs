@@ -21,8 +21,11 @@ using Content.Shared.Administration.Logs;
 using Content.Client.Lobby;
 using Content.Client.Siberia.DiscordAuth;
 using Content.Client.Siberia.Sponsors;
+using Content.Client.Players.RateLimiting;
 using Content.Shared.Administration.Managers;
+using Content.Shared.Chat;
 using Content.Shared.Players.PlayTimeTracking;
+using Content.Shared.Players.RateLimiting;
 
 namespace Content.Client.IoC
 {
@@ -34,6 +37,7 @@ namespace Content.Client.IoC
 
             collection.Register<IParallaxManager, ParallaxManager>();
             collection.Register<IChatManager, ChatManager>();
+            collection.Register<ISharedChatManager, ChatManager>();
             collection.Register<IClientPreferencesManager, ClientPreferencesManager>();
             collection.Register<IStylesheetManager, StylesheetManager>();
             collection.Register<IScreenshotHook, ScreenshotHook>();
@@ -50,12 +54,12 @@ namespace Content.Client.IoC
             collection.Register<ExtendedDisconnectInformationManager>();
             collection.Register<JobRequirementsManager>();
             collection.Register<DocumentParsingManager>();
-            collection.Register<ContentReplayPlaybackManager, ContentReplayPlaybackManager>();
+            collection.Register<ContentReplayPlaybackManager>();
             collection.Register<ISharedPlaytimeManager, JobRequirementsManager>();
             collection.Register<MappingManager>();
             collection.Register<DebugMonitorManager>();
-            collection.Register<SponsorsManager>();
-            collection.Register<DiscordAuthManager>();
+            collection.Register<PlayerRateLimitManager>();
+            collection.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
         }
     }
 }
