@@ -6,5 +6,5 @@
   targetNode: maximumhardsuit
   category: construction-category-clothing
   description: Добывался кровью и потом
-  icon: { sprite: Clothing\OuterClothing\Hardsuits\maxim.rsi, state: icon }
+  icon: { sprite: Clothing/OuterClothing/Hardsuits/maxim.rsi, state: icon }
   objectType: Item
