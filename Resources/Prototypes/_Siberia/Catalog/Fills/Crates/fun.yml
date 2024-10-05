@@ -8,3 +8,16 @@
       - id: CrayonBox
       - id: CrayonWhite
       - id: CrayonRainbow3000
+
+- type: entity
+  id: CrateFunweaponriflefoam
+  parent: CratePlastic
+  name: ящик игрушечных ружей
+  description: Для пострелушек в кругу друзей
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponRifleFoam
+        amount: 2
+      - id: BoxDonkSoftBox
+        amount: 2
