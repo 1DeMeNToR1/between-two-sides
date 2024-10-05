@@ -1,0 +1,130 @@
+- type: entity
+  name: чайные листья
+  parent: FoodProduceBase
+  id: FoodTea
+  description: Листья, из которых делается напиток с самих небес.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - crazyteaflavor
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: JuiceCrazyTea
+          Quantity: 5
+  - type: Sprite
+    sprite: Siberia/Objects/Specific/Hydroponics/tea.rsi
+  - type: Produce
+    seedId: CrazyTea
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  parent: SeedBase
+  name: семена чая
+  id: CrazyTeaSeeds
+  components:
+    - type: Seed
+      seedId: CrazyTea
+    - type: Sprite
+      sprite: Siberia/Objects/Specific/Hydroponics/tea.rsi
+
+- type: seed
+  id: CrazyTea
+  name: чайное дерево
+  noun: чайное дерево
+  displayName: чайное дерево
+  plantRsi: Siberia/Objects/Specific/Hydroponics/tea.rsi
+  packetPrototype: CrazyTeaSeeds
+  productPrototypes:
+    - FoodTea
+  harvestRepeat: Repeat
+  lifespan: 55
+  maturation: 3
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  idealLight: 6
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+
+- type: reagent
+  id: JuiceCrazyTea
+  name: reagent-name-ground-tea-leaves
+  desc: reagent-name-Juice-Tea
+  parent: BaseDrink
+  physicalDesc: reagent-name-Juice-Tea
+  flavor: crazyteaflavor
+  color: brown
+
+- type: reagent
+  id: JuiceTea
+  name: reagent-name-Tea
+  parent: BaseDrink
+  desc: reagent-name-Juice
+  physicalDesc: reagent-name-Juice
+  flavor: crazyteaflavor
+  color: brown
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:HealthChange
+        conditions:
+        - !type:TotalDamage
+          max: 50
+        damage:
+          groups:
+            Brute: -0.5
+          types:
+            Poison: -0.5
+            Cold: -0.33
+
+- type: flavor
+  id: crazyteaflavor
+  flavorType: Complex
+  description: как чай
+
+- type: reagent
+  id: CrazyTeaBanana
+  name: reagent-name-Tea-Banana
+  parent: JuiceTea
+  physicalDesc: reagent-name-Juice
+  flavor: banana
+  color: brown
+
+- type: reagent
+  id: CrazyTeaWatermelon
+  name: reagent-name-Tea-Watermelon
+  parent: JuiceTea
+  physicalDesc: reagent-name-Juice
+  flavor: watermelon
+  color: brown
+
+- type: reagent
+  id: CrazyTeaApple
+  name: reagent-name-Tea-Apple
+  parent: JuiceTea
+  physicalDesc: reagent-name-Juice
+  flavor: apple
+  color: brown
+
+- type: reagent
+  id: CrazyTeaBerry
+  name: reagent-name-Tea-Berry
+  parent: JuiceTea
+  physicalDesc: reagent-name-Juice
+  flavor: berry
+  color: brown

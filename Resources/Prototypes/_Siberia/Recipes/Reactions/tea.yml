@@ -1,0 +1,49 @@
+- type: reaction
+  id: CrazyTea
+  reactants:
+    JuiceCrazyTea:
+      amount: 1
+    Water:
+      amount: 1
+  products:
+    JuiceTea: 2
+
+- type: reaction
+  id: TeaApple
+  reactants:
+    JuiceTea:
+      amount: 1
+    JuiceApple:
+      amount: 1
+  products:
+    CrazyTeaApple: 2
+
+- type: reaction
+  id: TeaBanana
+  reactants:
+    JuiceTea:
+      amount: 1
+    JuiceBanana:
+      amount: 1
+  products:
+    CrazyTeaBanana: 2
+
+- type: reaction
+  id: TeaWatermelon
+  reactants:
+    JuiceTea:
+      amount: 1
+    JuiceWatermelon:
+      amount: 1
+  products:
+    CrazyTeaWatermelon: 2
+
+- type: reaction
+  id: TeaBerry
+  reactants:
+    JuiceTea:
+      amount: 1
+    JuiceBerry:
+      amount: 1
+  products:
+    CrazyTeaBerry: 2
