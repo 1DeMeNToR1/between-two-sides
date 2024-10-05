@@ -8,7 +8,7 @@
     sprite: Siberia/Clothing/Under/Top/whitemale.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Under/Top/whitemale.rsi
-    
+
 - type: entity
   parent: ClothingTopBaseButcherable
   id: ClothingUnderTopWhiteF
@@ -19,7 +19,7 @@
     sprite: Siberia/Clothing/Under/Top/whitefemale.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Under/Top/whitefemale.rsi
-    
+
 - type: entity
   parent: ClothingTopBaseButcherable
   id: ClothingUnderTopShirtIan
@@ -133,4 +133,347 @@
   - type: Clothing
     sprite: Siberia/Clothing/Under/Top/galaxy.rsi
 
-    
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingBlackPiquantTop
+  name: черный пикантный топик
+  description: Фривольнее бельё для тех дам, что желают порадовать своих мужчин.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/piquanttop.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#28273A"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      - state: color-inhand-left
+        color: "#28273A"
+      right:
+      - state: inhand-right
+      - state: color-inhand-right
+        color: "#28273A"
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/piquanttop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#28273A"
+      - state: equipped-INNERCLOTHING
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingRedPiquantTop
+  name: красный пикантный топик
+  description: Фривольнее бельё для тех дам, что желают порадовать своих мужчин.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/piquanttop.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#910000"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      - state: color-inhand-left
+        color: "#910000"
+      right:
+      - state: inhand-right
+      - state: color-inhand-right
+        color: "#910000"
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/piquanttop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#910000"
+      - state: equipped-INNERCLOTHING
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingBluePiquantTop
+  name: синий пикантный топик
+  description: Фривольнее бельё для тех дам, что желают порадовать своих мужчин.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/piquanttop.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#416DAF"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      - state: color-inhand-left
+        color: "#416DAF"
+      right:
+      - state: inhand-right
+      - state: color-inhand-right
+        color: "#416DAF"
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/piquanttop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#416DAF"
+      - state: equipped-INNERCLOTHING
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingPurplePiquantTop
+  name: фиолетовый пикантный топик
+  description: Фривольнее бельё для тех дам, что желают порадовать своих мужчин.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/piquanttop.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#341255"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      - state: color-inhand-left
+        color: "#341255"
+      right:
+      - state: inhand-right
+      - state: color-inhand-right
+        color: "#341255"
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/piquanttop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#341255"
+      - state: equipped-INNERCLOTHING
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingOrangePiquantTop
+  name: оранжевый пикантный топик
+  description: Фривольнее бельё для тех дам, что желают порадовать своих мужчин.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/piquanttop.rsi
+    layers:
+    - state: icon
+    - state: icon-color
+      color: "#F5AA5B"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      - state: color-inhand-left
+        color: "#F5AA5B"
+      right:
+      - state: inhand-right
+      - state: color-inhand-right
+        color: "#F5AA5B"
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/piquanttop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#F5AA5B"
+      - state: equipped-INNERCLOTHING
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingBlackElegantSwimsuitTop
+  name: черный элегантный топик купальника
+  description: Покажи всем красоту своего тела.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    layers:
+    - state: icon
+      color: "#212030"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#212030"
+      right:
+      - state: inhand-right
+        color: "#212030"
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#212030"
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingRedElegantSwimsuitTop
+  name: красный элегантный топик купальника
+  description: Покажи всем красоту своего тела.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    layers:
+    - state: icon
+      color: "#680000"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#680000"
+      right:
+      - state: inhand-right
+        color: "#680000"
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#680000"
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingGreenElegantSwimsuitTop
+  name: зеленый элегантный топик купальника
+  description: Покажи всем красоту своего тела.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    layers:
+    - state: icon
+      color: "#1B5437"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#1B5437"
+      right:
+      - state: inhand-right
+        color: "#1B5437"
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#1B5437"
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingBlueElegantSwimsuitTop
+  name: синий элегантный топик купальника
+  description: Покажи всем красоту своего тела.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    layers:
+    - state: icon
+      color: "#416DAF"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#416DAF"
+      right:
+      - state: inhand-right
+        color: "#416DAF"
+  - type: Clothing
+    sprite: CSiberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#416DAF"
+      - state: equipped-INNERCLOTHING
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingPurpleElegantSwimsuitTop
+  name: фиолетовый элегантный топик купальника
+  description: Покажи всем красоту своего тела.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    layers:
+    - state: icon
+      color: "#341255"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#341255"
+      right:
+      - state: inhand-right
+        color: "#341255"
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#341255"
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingOrangeElegantSwimsuitTop
+  name: оранжевый элегантный топик купальника
+  description: Покажи всем красоту своего тела.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    layers:
+    - state: icon
+      color: "#F5AA5B"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#F5AA5B"
+      right:
+      - state: inhand-right
+        color: "#F5AA5B"
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/elegantswimsuittop.rsi
+    clothingVisuals:
+      top:
+      - state: color-equipped-INNERCLOTHING
+        color: "#F5AA5B"
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopAzure
+  name: лазурный топ купальника
+  description: Синева неба хорошо сочитается с морской гладью.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/azuretop.rsi
+    layers:
+    - state: icon
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/azuretop.rsi
+
+- type: entity
+  parent: ClothingTopBaseButcherable
+  id: ClothingUnderTopKitsuneArms
+  name: Элитный топ купальника Kitsune Arms
+  description: Лимитированное нижнее белье от компании Kitsune arms для лучших её клиентов.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Under/Top/kitsunearmstop.rsi
+    layers:
+    - state: icon
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Clothing
+    sprite: Siberia/Clothing/Under/Top/kitsunearmstop.rsi

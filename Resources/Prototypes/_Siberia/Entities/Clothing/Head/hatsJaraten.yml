@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatTacticalMaidHeadbandBlue
-  name: Синяя тактическая головная повязка
+  name: синяя тактическая головная повязка
   description: Стильная и плотная повязка синего цвета.
   components:
   - type: Sprite
@@ -12,7 +12,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatTacticalMaidHeadbandGreen
-  name: Зелёная тактическая головная повязка
+  name: зелёная тактическая головная повязка
   description: Стильная и плотная повязка зелёного цвета.
   components:
   - type: Sprite
@@ -23,7 +23,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatTacticalMaidHeadbandBlack
-  name: Чёрная тактическая головная повязка
+  name: чёрная тактическая головная повязка
   description: Стильная и плотная повязка чёрного цвета.
   components:
   - type: Sprite
@@ -34,7 +34,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatTacticalMaidHeadbandWhite
-  name: Белая тактическая головная повязка
+  name: белая тактическая головная повязка
   description: Стильная и плотная повязка белого цвета.
   components:
   - type: Sprite
@@ -45,7 +45,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatHorns
-  name: Ободок с рожками.
+  name: ободок с рожками
   description: Приходят в наборе с крылышками и вставным хвостиком.
   components:
   - type: Sprite
