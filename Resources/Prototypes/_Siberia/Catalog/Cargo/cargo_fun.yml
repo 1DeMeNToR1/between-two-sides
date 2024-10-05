@@ -8,3 +8,13 @@
   cost: 1500
   category: Fun
   group: market
+
+- type: cargoProduct
+  id: CrateFunweaponriflefoam
+  icon:
+    sprite: Objects/Weapons/Guns/Rifles/foam_rifle.rsi
+    state: icon
+  product: CrateFunweaponriflefoam
+  cost: 1500
+  category: cargoproduct-category-name-fun
+  group: market
