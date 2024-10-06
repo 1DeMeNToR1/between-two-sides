@@ -25,7 +25,6 @@ namespace Content.Shared.Siberia.SwarmRCD.Systems;
 public sealed class SwarmRCDSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IMapManager _mapMan = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly ITileDefinitionManager _tileDefMan = default!;
@@ -133,10 +132,11 @@ public sealed class SwarmRCDSystem : EntitySystem
                 return;
         }
 
-        var mapGrid = _mapMan.GetGrid(gridId.Value);
-        var tile = mapGrid.GetTileRef(location);
+        if (!TryComp<MapGridComponent>(gridId.Value, out var grid))
+            return;
+        var tile = grid.GetTileRef(location);
 
-        if (!IsSwarmRCDStillValid(uid, comp, args.Event.User, args.Event.Target, mapGrid, tile, args.Event.StartingMode))
+        if (!IsSwarmRCDStillValid(uid, comp, args.Event.User, args.Event.Target, grid, tile, args.Event.StartingMode))
             args.Cancel();
     }
 
@@ -158,7 +158,8 @@ public sealed class SwarmRCDSystem : EntitySystem
                 return;
         }
 
-        var mapGrid = _mapMan.GetGrid(gridId.Value);
+        if (!TryComp<MapGridComponent>(gridId.Value, out var mapGrid))
+            return;
         var tile = mapGrid.GetTileRef(location);
         var snapPos = mapGrid.TileIndicesFor(location);
 
@@ -228,7 +229,7 @@ public sealed class SwarmRCDSystem : EntitySystem
             return false;
 
         var unobstructed = target == null
-            ? _interaction.InRangeUnobstructed(user, mapGrid.GridTileToWorld(tile.GridIndices), popup: true)
+            ? _interaction.InRangeUnobstructed(user, mapGrid.GridTileToLocal(tile.GridIndices), popup: true)
             : _interaction.InRangeUnobstructed(user, target.Value, popup: true);
 
         if (!unobstructed)
@@ -260,7 +261,7 @@ public sealed class SwarmRCDSystem : EntitySystem
                         return false;
                     }
                     // the turf can't be destroyed (planet probably)
-                    var tileDef = (ContentTileDefinition) _tileDefMan[tile.Tile.TypeId];
+                    var tileDef = (ContentTileDefinition)_tileDefMan[tile.Tile.TypeId];
                     if (tileDef.Indestructible)
                     {
                         _popup.PopupClient(Loc.GetString("rcd-component-tile-indestructible-message"), uid, user);
@@ -310,10 +311,10 @@ public sealed class SwarmRCDSystem : EntitySystem
     {
         _audio.PlayPredicted(comp.SwapModeSound, uid, user);
 
-        var mode = (int) comp.Mode;
+        var mode = (int)comp.Mode;
         mode = ++mode % SwarmRcdModeCount;
-        comp.Mode = (SwarmRcdMode) mode;
-        Dirty(comp);
+        comp.Mode = (SwarmRcdMode)mode;
+        Dirty(comp.Owner, comp); // deprecated да мне похуй
 
         var msg = Loc.GetString("rcd-component-change-mode", ("mode", comp.Mode.ToString()));
         _popup.PopupClient(msg, uid, user);

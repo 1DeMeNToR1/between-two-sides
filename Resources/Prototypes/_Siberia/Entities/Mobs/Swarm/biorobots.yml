@@ -312,7 +312,7 @@
   - type: Speech
     speechSounds: Swarm
   - type: SwarmDrone
-  - type: StepTriggerImmune
+  - type: ProtectedFromStepTriggers
 
 ######################### СТРАЖ РОЯ #############################
 
@@ -378,7 +378,7 @@
     - Flesh
   - type: Speech
     speechSounds: Swarm
-  - type: StepTriggerImmune
+  - type: ProtectedFromStepTriggers
   - type: MeleeWeapon
     damage:
       types:
@@ -503,7 +503,7 @@
     - Flesh
   - type: Speech
     speechSounds: Swarm
-  - type: StepTriggerImmune
+  - type: ProtectedFromStepTriggers
   - type: ContainerFill
     containers:
       borg_module:
@@ -615,7 +615,7 @@
     - Flesh
   - type: Speech
     speechSounds: Swarm
-  - type: StepTriggerImmune
+  - type: ProtectedFromStepTriggers
   - type: MobThresholds
     thresholds:
       0: Alive
