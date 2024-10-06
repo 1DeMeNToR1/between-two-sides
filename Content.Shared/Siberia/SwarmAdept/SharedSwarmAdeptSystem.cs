@@ -1,0 +1,120 @@
+using Content.Shared.Actions;
+using Content.Shared.DoAfter;
+using Content.Shared.Random;
+using Content.Shared.Random.Helpers;
+using Content.Shared.Verbs;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Network;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
+using Robust.Shared.Serialization;
+
+using Content.Shared.Siberia.SwarmAdept;
+
+namespace Content.Shared.Siberia.SwarmAdept;
+
+public abstract class SharedSwarmAdeptSystem : EntitySystem
+{
+    [Dependency] private readonly INetManager _net = default!;
+    [Dependency] protected readonly IPrototypeManager PrototypeManager = default!;
+    [Dependency] protected readonly IRobustRandom Random = default!;
+    [Dependency] private readonly SharedActionsSystem _action = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
+
+    /// <inheritdoc/>
+    public override void Initialize()
+    {
+        SubscribeLocalEvent<SwarmAdeptComponent, ComponentStartup>(OnStartup);
+        SubscribeLocalEvent<SwarmAdeptComponent, ComponentShutdown>(OnShutdown);
+        SubscribeLocalEvent<SwarmAdeptComponent, SwarmAdeptOrderActionEvent>(OnOrderAction);
+
+        SubscribeLocalEvent<SwarmDroneComponent, ComponentShutdown>(OnServantShutdown);
+    }
+
+    private void OnStartup(EntityUid uid, SwarmAdeptComponent component, ComponentStartup args)
+    {
+        if (!TryComp(uid, out ActionsComponent? comp))
+            return;
+
+        _action.AddAction(uid, ref component.ActionRaiseArmyEntity, component.ActionRaiseArmy, component: comp);
+        _action.AddAction(uid, ref component.ActionDomainEntity, component.ActionDomain, component: comp);
+        _action.AddAction(uid, ref component.ActionOrderStayEntity, component.ActionOrderStay, component: comp);
+        _action.AddAction(uid, ref component.ActionOrderFollowEntity, component.ActionOrderFollow, component: comp);
+        _action.AddAction(uid, ref component.ActionOrderLooseEntity, component.ActionOrderLoose, component: comp);
+
+        UpdateActions(uid, component);
+    }
+
+    private void OnShutdown(EntityUid uid, SwarmAdeptComponent component, ComponentShutdown args)
+    {
+        foreach (var servant in component.Servants)
+        {
+            if (TryComp(servant, out SwarmDroneComponent? servantComp))
+                servantComp.King = null;
+        }
+
+        if (!TryComp(uid, out ActionsComponent? comp))
+            return;
+
+        _action.RemoveAction(uid, component.ActionRaiseArmyEntity, comp);
+        _action.RemoveAction(uid, component.ActionDomainEntity, comp);
+        _action.RemoveAction(uid, component.ActionOrderStayEntity, comp);
+        _action.RemoveAction(uid, component.ActionOrderFollowEntity, comp);
+        _action.RemoveAction(uid, component.ActionOrderLooseEntity, comp);
+    }
+
+    private void OnOrderAction(EntityUid uid, SwarmAdeptComponent component, SwarmAdeptOrderActionEvent args)
+    {
+        if (component.CurrentOrder == args.Type)
+            return;
+        args.Handled = true;
+
+        component.CurrentOrder = args.Type;
+        Dirty(uid, component);
+
+        DoCommandCallout(uid, component);
+        UpdateActions(uid, component);
+        UpdateAllServants(uid, component);
+    }
+
+    private void OnServantShutdown(EntityUid uid, SwarmDroneComponent component, ComponentShutdown args)
+    {
+        if (TryComp(component.King, out SwarmAdeptComponent? swarmAdeptComponent))
+            swarmAdeptComponent.Servants.Remove(uid);
+    }
+
+    private void UpdateActions(EntityUid uid, SwarmAdeptComponent? component = null)
+    {
+        if (!Resolve(uid, ref component))
+            return;
+
+        _action.SetToggled(component.ActionOrderStayEntity, component.CurrentOrder == SwarmAdeptOrderType.Stay);
+        _action.SetToggled(component.ActionOrderFollowEntity, component.CurrentOrder == SwarmAdeptOrderType.Follow);
+        _action.SetToggled(component.ActionOrderCheeseEmEntity, component.CurrentOrder == SwarmAdeptOrderType.CheeseEm);
+        _action.SetToggled(component.ActionOrderLooseEntity, component.CurrentOrder == SwarmAdeptOrderType.Loose);
+        _action.StartUseDelay(component.ActionOrderStayEntity);
+        _action.StartUseDelay(component.ActionOrderFollowEntity);
+        _action.StartUseDelay(component.ActionOrderCheeseEmEntity);
+        _action.StartUseDelay(component.ActionOrderLooseEntity);
+    }
+
+    public void UpdateAllServants(EntityUid uid, SwarmAdeptComponent component)
+    {
+        foreach (var servant in component.Servants)
+        {
+            UpdateServantNpc(servant, component.CurrentOrder);
+        }
+    }
+
+    public virtual void UpdateServantNpc(EntityUid uid, SwarmAdeptOrderType orderType)
+    {
+
+    }
+
+    public virtual void DoCommandCallout(EntityUid uid, SwarmAdeptComponent component)
+    {
+
+    }
+}

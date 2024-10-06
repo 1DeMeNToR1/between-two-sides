@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "By jaraten(discord)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "bibotwall0",
+      "directions": 4
+    },
+    {
+      "name": "bibotwall1",
+      "directions": 4
+    },
+    {
+      "name": "bibotwall2",
+      "directions": 4
+    },
+    {
+      "name": "bibotwall3",
+      "directions": 4
+    },
+    {
+      "name": "bibotwall4",
+      "directions": 4
+    },
+    {
+      "name": "bibotwall5",
+      "directions": 4
+    },
+    {
+      "name": "bibotwall6",
+      "directions": 4
+    },
+    {
+      "name": "bibotwall7",
+      "directions": 4
+    }
+  ]
+}

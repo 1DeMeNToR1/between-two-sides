@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Created by EnderBroha&Jaraten for SiberiaServer.",
+  "size": {
+    "x": 8,
+    "y": 8
+  },
+  "states": [
+    {
+      "name": "icon-swarm-job"
+    }
+  ]
+}
