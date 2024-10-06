@@ -370,7 +370,7 @@
       - DragonRole
 
 - type: entity
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: BaseSwarmAdeptObjective
   id: SwarmFactoryObjective
   components:
@@ -386,7 +386,7 @@
   - type: CarpRiftsCondition
 
 - type: entity
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: [BaseSwarmAdeptObjective, BaseSurviveObjective]
   id: SwarmAdeptSurviveObjective
   name: Выжить
@@ -417,7 +417,7 @@
   name: disabler bolt
   id: BulletDisablerSwarm
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Reflective
     reflective:
@@ -460,7 +460,7 @@
   id: SwarmEmpImplant
   name: EMP implant
   description: This implant creates an electromagnetic pulse when activated.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: SubdermalImplant
       implantAction: ActionActivateEmpSwarm

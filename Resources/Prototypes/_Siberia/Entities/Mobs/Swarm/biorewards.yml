@@ -8,7 +8,7 @@
     sprite: Siberia/Mobs/Silicon/BioSwarm/gift.rsi
     layers:
       - state: gift
-      
+
 - type: entity
   id: SwarmRewardSphere
   parent: [SwarmRewardSphereBase, BaseItem]
@@ -78,7 +78,7 @@
         orGroup: GiftPool
       - id: PlushieSpaceLizard
         prob: .1
-        orGroup: GiftPool   
+        orGroup: GiftPool
       - id: WeaponPistolN1984
         prob: .01
         orGroup: GiftPool
@@ -132,10 +132,10 @@
         orGroup: GiftPool
     sound:
       path: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg
-      
+
 - type: entity
   id: SwarmRewardSphereTrash
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: BaseItem
   name: Открытая сфера хранилища роя
   description: Опять этот задрот убил всех дронов и залутал сферы. ГГВП Я ливаю!

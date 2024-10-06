@@ -1,7 +1,7 @@
 - type: entity
   id: ActionSwarmAdeptRaiseArmy
   name: Создать дрона-стража адепта
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     useDelay: 120
@@ -13,7 +13,7 @@
 - type: entity
   id: ActionSwarmAdeptDomain
   name: Выбросить углекислый газ
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     useDelay: 6
@@ -25,7 +25,7 @@
 - type: entity
   id: ActionSwarmAdeptOrderStay
   name: Приказ стражам адепта Занять позиции
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     useDelay: 1
@@ -43,7 +43,7 @@
 - type: entity
   id: ActionSwarmAdeptOrderFollow
   name: Приказ стражам адепта Следовать
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     useDelay: 1
@@ -61,7 +61,7 @@
 - type: entity
   id: ActionSwarmAdeptOrderCheeseEm #Отключён
   name: Оборонять Адепта Роя!
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     useDelay: 1
@@ -79,7 +79,7 @@
 - type: entity
   id: ActionSwarmAdeptOrderLoose
   name: Приказ стражам адепта Атаковать ближайшую органику
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     useDelay: 1
@@ -93,12 +93,12 @@
       !type:SwarmAdeptOrderActionEvent
       type: Loose
     priority: 8
-    
+
 - type: entity
   id: ActionSpawnFactory
   name: Создать завод роя
   description: Создает завод роя, который переодически создает дронов роя. Созданные на заводе дроны не подчиняются адепту роя.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     icon:
@@ -106,22 +106,22 @@
       state: factory
     event: !type:DragonSpawnRiftActionEvent
     useDelay: 1
-    
+
 - type: entity
   id: ActionSwarmFloor
   name: Покрытие роя
   description: Создаёт под дроном покрытие роя, которое замедляет и наносит урон всем, кроме дронов роя.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     icon: Interface/Actions/defile.png
     event: !type:SpiderWebActionEvent
     useDelay: 25
-    
+
 - type: entity
   id: ActionActivateEmpSwarm
   name: ЭМИ взрыв роя
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     useDelay: 600

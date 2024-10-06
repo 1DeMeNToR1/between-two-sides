@@ -1,12 +1,12 @@
 - type: entity
   id: SwarmSpawn
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: GameRule
     delay:
       min: 10
-      max: 10  
+      max: 10
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
@@ -23,7 +23,7 @@
       prob: 0.02
     - id: MobSwarmbotHealerWeak
       prob: 0.02
-      
+
 # - type: entity ######################## Выключил по причине: Слишком сильный
   # parent: BaseGameRule
   # id: SwarmAdeptSpawn
@@ -37,7 +37,7 @@
     # minimumPlayers: 20
   # - type: RandomSpawnRule
     # prototype: SpawnPointGhostSwarmAdept
-    
+
 # - type: entity
   # parent: MarkerBase
   # id: SpawnPointGhostSwarmAdept
