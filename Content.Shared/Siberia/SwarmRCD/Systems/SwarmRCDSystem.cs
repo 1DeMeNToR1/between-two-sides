@@ -314,7 +314,7 @@ public sealed class SwarmRCDSystem : EntitySystem
         var mode = (int)comp.Mode;
         mode = ++mode % SwarmRcdModeCount;
         comp.Mode = (SwarmRcdMode)mode;
-        Dirty(comp.Owner, comp); // deprecated да мне похуй
+        Dirty(comp.Owner, comp);
 
         var msg = Loc.GetString("rcd-component-change-mode", ("mode", comp.Mode.ToString()));
         _popup.PopupClient(msg, uid, user);
