@@ -24,5 +24,4 @@
     ears: ClothingHeadsetMedical
   storage:
     back:
-#    - BoxSurvivalMedical
-    - RubberStampPsychologist # Corvax-MRP
+    - RubberStampPsychologist

@@ -20,7 +20,6 @@
   startingGear: BlueShieldGear
   icon: "JobIconBlueShield"
   requireAdminNotify: true
-  joinNotifyCrew: true
   whitelisted: true
   supervisors: job-supervisors-centcom
   canBeAntag: false

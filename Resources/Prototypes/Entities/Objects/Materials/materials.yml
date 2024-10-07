@@ -762,6 +762,10 @@
     - goliath_hide
     - goliath_hide_2
     - goliath_hide_3
+  - type: Tag # Siberia-craft
+    tags:
+    - MaterialGoliathHide
+    - RawMaterial
   - type: Item
     size: Large
     shape:

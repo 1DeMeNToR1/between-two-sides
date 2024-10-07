@@ -73,3 +73,11 @@
 
 - type: Tag
   id: Swarm
+
+# Material
+- type: Tag
+  id: MaterialGoliathHide
+
+# Hardsuit
+- type: Tag
+  id: HardsuitSpatio

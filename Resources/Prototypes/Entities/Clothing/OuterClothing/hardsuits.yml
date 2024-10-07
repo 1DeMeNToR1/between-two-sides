@@ -124,6 +124,11 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSpatio
+  - type: Tag # Siberia-craft
+    tags:
+    - HardsuitSpatio # for ClothingOuterHardsuitMaxim craft
+    - Hardsuit
+    - WhitelistChameleon
 
 #Salvage Hardsuit
 - type: entity
@@ -187,6 +192,9 @@
     coolingCoefficient: 0.001
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitMaxim
+  - type: Construction # Siberia-craft
+    graph: MaximumHardsuit
+    node: maximumhardsuit
 
 #Security Hardsuit
 - type: entity

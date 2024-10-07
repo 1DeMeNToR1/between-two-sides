@@ -1,0 +1,10 @@
+- type: construction
+  name: Максимальный скафандр утилизатора
+  id: MaximumHardsuit
+  graph: MaximumHardsuit
+  startNode: start
+  targetNode: maximumhardsuit
+  category: construction-category-clothing
+  description: Добывался кровью и потом
+  icon: { sprite: Clothing/OuterClothing/Hardsuits/maxim.rsi, state: icon }
+  objectType: Item

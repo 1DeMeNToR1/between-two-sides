@@ -1,0 +1,17 @@
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelLeather
+  name: кожаный вещмешок
+  description: Обычный вещмешок из кожи.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Back/leatherduffel.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackLeather
+  name: кожаный рюкзак
+  description: Кому-то надоело носить сумку на одном плече.
+  components:
+  - type: Sprite
+    sprite: Siberia/Clothing/Back/leatherbackpack.rsi

@@ -1,0 +1,192 @@
+- type: entity
+  parent: BaseStructure
+  id: LaserWeaponTurret
+  name: Лазерная турель
+  components:
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Actions
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.45,-0.45,0.45,0.45"
+          density: 60
+          mask:
+            - MachineMask
+          layer:
+            - MachineLayer
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: Siberia/Objects/Weapons/Guns/Turrets/lasturrets.rsi
+      drawdepth: Mobs
+      layers:
+        - state: lazturret
+    - type: InteractionPopup
+      interactDelay: 0.2
+      successChance: 0.8
+      interactSuccessString: petting-success-generic
+      interactFailureString: petting-failure-generic
+      interactSuccessSound:
+        path: /Audio/Effects/double_beep.ogg
+    - type: CombatMode
+      toggleMouseRotator: false
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          # TODO: Construction graph
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalGlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetSteel1:
+                  min: 3
+                  max: 5
+    - type: Gun
+      fireRate: 3
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+    - type: HitscanBatteryAmmoProvider
+      proto: RedMediumLaser
+      fireCost: 100
+    # TODO: Power ammo provider?
+    - type: Battery
+      maxCharge: 5000
+      startingCharge: 5000
+    - type: HTN
+      rootTask:
+        task: TurretCompound
+      blackboard:
+        RotateSpeed: !type:Single
+          3.141
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/Effects/double_beep.ogg
+    - type: BatterySelfRecharger
+      autoRecharge: true
+      autoRechargeRate: 100
+    - type: MouseRotator
+      angleTolerance: 5
+      rotationSpeed: 180
+      simple4DirMode: false
+    - type: NpcFactionMember
+      factions:
+      - NanoTrasen
+    - type: NoRotateOnInteract
+    - type: NoRotateOnMove
+    - type: Input
+      context: "human"
+    - type: GhostRole
+      name: Лазерная турель
+      description: Вы ИИ лазерной турели. Ваша обязанность - подчинение экипажу и его защита.
+      rules: Вам запрещается стрелять по экипажу. Сделайте все, чтобы сохранить его целостность.
+    - type: GhostTakeoverAvailable
+
+- type: ghostRole
+  id: LaserTurretSiberia
+  name: Лазерная турель
+  description: Вы ИИ лазерной турели. Ваша обязанность - подчинение экипажу и его защита.
+  rules: Вам запрещается стрелять по экипажу. Сделайте все, чтобы сохранить его целостность.
+  entityPrototype: LaserWeaponTurret
+
+- type: constructionGraph
+  id: LaserWeaponTurretDisposable
+  start: LaserWeaponTurret
+  graph:
+  - node: LaserWeaponTurret
+    entity: LaserWeaponTurret
+    edges:
+    - to: LaserWeaponTurret
+      completed:
+      - !type:SpawnPrototype
+            prototype: ToolboxElectricalLaserTurret
+            amount: 1
+      - !type:DeleteEntity {}
+      steps:
+        - tool: Screwing
+          doAfter: 5
+
+- type: entity
+  name: Упакованная турель
+  parent: BaseItem
+  id: ToolboxElectricalLaserTurret
+  description: Достаточно стукнуть гаечным ключем и турель сами начнет свою установку. Чудеса технологии!
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Robotics/mmi.rsi
+    layers:
+      - state: posibrain-occupied
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 1
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              LaserWeaponTurret:
+                min: 1
+                max: 1
+
+- type: technology
+  id: LaserTurretSiberia
+  name: research-technology-WeaponAI-turrets
+  icon:
+    sprite: Siberia/Objects/Storage/briefcase.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - RndBriefcaseLaserTurret
+
+- type: latheRecipe
+  id: RndBriefcaseLaserTurret
+  result: RndBriefcaseLaserTurret
+  category: Weapons
+  completetime: 4
+  materials:
+    Steel: 1500
+    Plastic: 300
+    Gold: 300
+    Glass: 1000
+
+- type: entity
+  id: RndBriefcaseLaserTurret
+  parent: RndBriefcaseBaseSecure
+  name: закрытый брифкейс
+  description: Закрытый брифкейс. Невозможно уничтожить. Для открытия требуется доступ "Научный отдел". Содержит скафандр биологической защиты VI.
+  components:
+  - type: AccessReader
+    access: [["Research"]]
+  - type: StorageFill
+    contents:
+      - id: ToolboxElectricalLaserTurret

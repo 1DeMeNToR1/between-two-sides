@@ -198,7 +198,8 @@
       - ClothingHeadHatWelding
       - WetFloorSign
       - ClothingHeadHatCone
-
+      - FreezerElectronics
+      - Flare
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
@@ -357,6 +358,7 @@
       - HealgunRecipe # Siberia-change
       - AdvancedAtmosHoloprojector # Siberia-change
       - AdvancedSecurityHoloprojector # Siberia-change
+      - RndBriefcaseLaserTurret # Siberia-change
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
@@ -449,6 +451,7 @@
     - UniformPrinterMachineCircuitboard
     - FloorGreenCircuit
     - FloorBlueCircuit
+    - FloorRedCircuit
     - MicrowaveMachineCircuitboard
     - ReagentGrinderMachineCircuitboard
     - ElectricGrillMachineCircuitboard
