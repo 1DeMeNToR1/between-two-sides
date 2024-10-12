@@ -12,7 +12,7 @@
       - DragonRole
 
 - type: entity
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: BaseSwarmAdeptObjective
   id: SwarmFactoryObjective
   components:
@@ -28,7 +28,7 @@
   - type: CarpRiftsCondition
 
 - type: entity
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: [BaseSwarmAdeptObjective, BaseSurviveObjective]
   id: SwarmAdeptSurviveObjective
   name: Выжить

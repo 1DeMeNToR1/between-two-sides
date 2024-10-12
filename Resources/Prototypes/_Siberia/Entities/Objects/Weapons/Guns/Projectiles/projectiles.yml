@@ -54,7 +54,7 @@
   name: disabler bolt
   id: BulletDisablerSwarm
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Reflective
     reflective:

@@ -3,7 +3,7 @@
   id: SwarmEmpImplant
   name: EMP implant
   description: This implant creates an electromagnetic pulse when activated.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: SubdermalImplant
       implantAction: ActionActivateEmpSwarm
