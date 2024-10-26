@@ -39,9 +39,6 @@
 - type: Tag
   id: CrystalShardGreenMalanisa
 
-- type: Tag
-  id: RCDDeconstructWhitelist # For Siberia-Swarmers
-
 # Underwear-system
 - type: Tag
   id: Socks
@@ -68,6 +65,14 @@
 
 - type: Tag
   id: VolleyBall
+
+# Swarmers
+
+- type: Tag
+  id: SwarmModule
+
+- type: Tag
+  id: Swarm
 
 # Material
 - type: Tag

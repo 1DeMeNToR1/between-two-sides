@@ -1,0 +1,14 @@
+- type: entity
+  parent: BaseSubdermalImplant
+  id: SwarmEmpImplant
+  name: EMP implant
+  description: This implant creates an electromagnetic pulse when activated.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: SubdermalImplant
+      implantAction: ActionActivateEmpSwarm
+    - type: TriggerImplantAction
+    - type: EmpOnTrigger
+      range: 10
+      energyConsumption: 500000
+      disableDuration: 20

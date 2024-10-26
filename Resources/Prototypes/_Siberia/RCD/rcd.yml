@@ -1,0 +1,12 @@
+# Walls
+- type: rcd
+  id: WallSwarm
+  category: WallsAndFlooring
+  sprite: /Textures/Siberia/Interface/Radial/RCD/swarm_wall.png
+  mode: ConstructObject
+  prototype: WallSwarm 
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  rotation: Fixed
+  fx: EffectRCDConstruct2

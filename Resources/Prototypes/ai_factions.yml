@@ -83,3 +83,17 @@
   - Zombie
   - SimpleHostile
   - Dragon
+
+- type: npcFaction # Siberia-changes
+  id: BioSwarm
+  hostile:
+  - NanoTrasen
+  - SimpleNeutral
+  - SimpleHostile
+  - Syndicate
+  - Passive
+  - PetsNT
+  - Revolutionary
+  - Zombie
+  - Dragon
+  - Xeno

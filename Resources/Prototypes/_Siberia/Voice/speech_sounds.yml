@@ -15,3 +15,12 @@
     path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp_ask.ogg
   exclaimSound:
     path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp_exclaim.ogg
+
+- type: speechSounds
+  id: Swarm
+  saySound:
+    path: /Audio/Siberia/Mobs/Swarm/Borg.ogg
+  askSound:
+    path: /Audio/Siberia/Mobs/Swarm/Borg.ogg
+  exclaimSound:
+    path: /Audio/Siberia/Mobs/Swarm/Borg.ogg

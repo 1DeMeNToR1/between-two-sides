@@ -1,0 +1,34 @@
+- type: htnCompound
+  id: BioDroneCompound
+  branches:
+  - preconditions:
+      - !type:HasOrdersPrecondition
+        orders: enum.SwarmAdeptOrderType.Stay
+    tasks:
+      - !type:HTNCompoundTask
+        task: IdleCompound
+  - preconditions:
+      - !type:HasOrdersPrecondition
+        orders: enum.SwarmAdeptOrderType.Follow
+    tasks:
+      - !type:HTNCompoundTask
+        task: FollowCompound
+  - preconditions:
+      - !type:HasOrdersPrecondition
+        orders: enum.SwarmAdeptOrderType.Loose
+    tasks:
+      - !type:HTNCompoundTask
+        task: SimpleRangedHostileCompound
+
+- type: htnCompound
+  id: SwarmMedibotCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeCombatCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: InjectNearbyCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound

@@ -1,0 +1,20 @@
+# TODO: kill this
+- type: entity
+  name: сварочный аппарат роя
+  parent: WelderIndustrial
+  id: WelderSwarm
+  description: "Странное устройство роя. Кажется им можно забивать фелинидов"
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Tools/welder_swarm.rsi
+  - type: Item
+    sprite: Siberia/Objects/Tools/welder_swarm.rsi
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 250
+        maxVol: 250
+  - type: Tool
+    speedModifier: 1.3

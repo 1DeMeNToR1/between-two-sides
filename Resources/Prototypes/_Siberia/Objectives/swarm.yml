@@ -1,0 +1,40 @@
+- type: entity
+  abstract: true
+  parent: BaseObjective
+  id: BaseSwarmAdeptObjective
+  components:
+  - type: Objective
+    difficulty: 1.5
+    issuer: objective-issuer-swarm
+  - type: RoleRequirement
+    roles:
+      components:
+      - DragonRole
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseSwarmAdeptObjective
+  id: SwarmFactoryObjective
+  components:
+  - type: Objective
+    icon:
+      sprite: Siberia/Structures/Machines/swarm_factory.rsi
+      state: factory
+  - type: NumberObjective
+    min: 3
+    max: 3
+    title: objective-swarm-factory-title
+    description: objective-swarm-factory-description
+  - type: CarpRiftsCondition
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: [BaseSwarmAdeptObjective, BaseSurviveObjective]
+  id: SwarmAdeptSurviveObjective
+  name: Выжить
+  description: Вы должны оставаться в живых, чтобы сохранять контроль.
+  components:
+  - type: Objective
+    icon:
+      sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
+      state: alive
