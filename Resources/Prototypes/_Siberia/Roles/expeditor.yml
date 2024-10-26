@@ -10,6 +10,7 @@
   startingGear: ExpeditorGear
   icon: "JobIconExpeditor"
   requireAdminNotify: true
+  joinNotifyCrew: true
   supervisors: job-supervisors-qm
   canBeAntag: true
   access:
@@ -57,7 +58,7 @@
 
 - type: accessLevel
   id: Expeditor
-  name: Исследователь экспедиций
+  name: id-card-access-level-expeditor #Siberia
 
 - type: entity
   parent: ClothingUniformBase
