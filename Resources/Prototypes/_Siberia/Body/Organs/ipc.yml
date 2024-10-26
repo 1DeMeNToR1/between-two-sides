@@ -20,37 +20,83 @@
 - type: entity
   id: OrganIPCCPU
   parent: BaseIPCOrgan
-  name: integrated posibrain
-  description: It seems to be a machine of sorts?
+  name: позитронный мозг
+  description: Оно выглядит живым?
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
-      state: posibrain
+      state: brain-prosthetic
     - type: Organ
     - type: Metabolizer
       updateInterval: 1.5
       maxReagents: 2
       metabolizerTypes: [IPC]
       removeEmpty: true
+    - type: ToggleableGhostRole
+      examineTextMindPresent: positronic-brain-installed
+      examineTextMindSearching: positronic-brain-still-searching
+      examineTextNoMind: positronic-brain-off
+      beginSearchingText: positronic-brain-searching
+      roleName: positronic-brain-role-name
+      roleDescription: positronic-brain-role-description
+      roleRules: ghost-role-information-silicon-rules
+      wipeVerbText: positronic-brain-wipe-device-verb-text
+      wipeVerbPopup: positronic-brain-wiped-device
+      stopSearchVerbText: positronic-brain-stop-searching-verb-text
+      stopSearchVerbPopup: positronic-brain-stopped-searching
+      job: Borg
+    - type: BlockMovement
+    - type: Examiner
+    - type: BorgBrain
+    - type: IntrinsicRadioReceiver
+    - type: IntrinsicRadioTransmitter
+      channels:
+      - Binary
+    - type: ActiveRadio
+      channels:
+      - Binary
+      - Common
+    - type: NameIdentifier
+      group: PositronicBrain
+    - type: DoAfter
+    - type: Actions
+    - type: TypingIndicator
+      proto: robot
+    - type: Speech
+      speechSounds: Pai
+    - type: ReplacementAccent
+      accent: silicon
+    - type: MobState
+      allowedStates:
+      - Alive
+    - type: Appearance
+    - type: Tag
+      tags:
+      - CannotSuicide
+      - MindTransferTarget
+    - type: GuideHelp
+      guides:
+      - Cyborgs
+      - Robotics
 
 - type: entity
   id: OrganIPCGPU
   parent: BaseIPCOrgan
-  name: ipc gpu
-  description: A low-tech GPU. Albeit, it looks super expensive. It is used to render images to the posibrain.
+  name: графический процессор КПБ
+  description: Графический процессор КПБ, который обрабатывает изображение и отправляет в позитронный мозг. Выглядит очень дорогим.
   components:
     - type: Sprite
-      state: posibrain
+      state: cortical-stack
     - type: Organ
 
 - type: entity
   id: OrganIPCFan
   parent: BaseIPCOrgan
-  name: ipc fan
-  description: A low-tech fan that circulates air to cool down the IPC.
+  name: Жёсткий диск КПБ
+  description: Хранит данные КПБ. Тесты показали что после извлечения субъект теряет память.
   components:
     - type: Sprite
-      state: posibrain
+      state: heart-prosthetic
     - type: Organ
     - type: Lung
     - type: Metabolizer

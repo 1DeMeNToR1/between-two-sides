@@ -49,3 +49,34 @@
   id: IPCBdt
   files:
   - /Audio/Siberia/Voice/IPC/bdt.ogg
+
+- type: soundCollection
+  id: IPCBonk
+  files:
+  - /Audio/Siberia/Voice/IPC/bonk.ogg
+
+- type: soundCollection
+  id: IPCBoom
+  files:
+  - /Audio/Siberia/Voice/IPC/boom.ogg
+
+- type: soundCollection
+  id: IPCDiscord
+  files:
+  - /Audio/Siberia/Voice/IPC/discord.ogg
+
+- type: soundCollection
+  id: IPCErrorA
+  files:
+  - /Audio/Siberia/Voice/IPC/error.ogg
+
+- type: soundCollection
+  id: IPCGear
+  files:
+  - /Audio/Siberia/Voice/IPC/gear.ogg
+
+- type: soundCollection
+  id: IPCTv
+  files:
+  - /Audio/Siberia/Voice/IPC/tv.ogg
+

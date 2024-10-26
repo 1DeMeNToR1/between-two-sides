@@ -86,6 +86,9 @@
         enum.SiliconLawsUiKey.Key:
           type: SiliconLawBoundUserInterface
     - type: SiliconLawBound
+    - type: ActionGrant
+      actions:
+        - ActionViewLaws
     - type: IonStormTarget
     - type: SiliconLawProvider
       laws: Ipc
@@ -108,13 +111,22 @@
     - type: IntrinsicRadioReceiver
     - type: IntrinsicRadioTransmitter
       channels:
-      - Binary
+      - Trinary
     - type: ActiveRadio
       channels:
-      - Binary
+      - Trinary
     - type: Accentless
       removes:
         - type: Perishable
+    - type: TransferMindOnGib
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 200
+        behaviors:
+        - !type:GibBehavior { }
+  
 
 - type: siliconLaw
   id: Ipc1
@@ -226,13 +238,16 @@
         amount: 5
   - type: FireVisuals
     alternateState: Standing
-  - type: Respirator
-    damage:
-      types:
-        Asphyxiation: 0
-    damageRecovery:
-      types:
-        Asphyxiation: -1.0
+  - type: Accentless
+    removes:
+    - type: Respirator
+      damage:
+        types:
+          Asphyxiation: 0
+      damageRecovery:
+        types:
+          Asphyxiation: -1.0
+
 
 - type: entity
   save: false

@@ -97,6 +97,9 @@
       strippingWindowPos: 2,4
       dependsOn: jumpsuit
       displayName: ID
+      blacklist: # Siberia-changes
+        tags:
+          - IPCWearable
     - name: belt
       slotTexture: belt
       fullTextureName: template_small

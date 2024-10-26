@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "copyright": "Taken from ss13, ported by EnderBroha",
+  "license": "CC-BY-SA-3.0",
+  "states": [
+    {
+      "name": "r_ind_hephaestus_head",
+      "directions": 4
+    },
+    {
+      "name": "r_ind_hephaestus_eyes",
+      "directions": 4
+    },
+    {
+      "name": "r_ind_hephaestus_l_arm",
+      "directions": 4
+    },
+    {
+      "name": "r_ind_hephaestus_l_foot",
+      "directions": 4
+    },
+    {
+      "name": "r_ind_hephaestus_l_hand",
+      "directions": 4
+    },
+    {
+      "name": "r_ind_hephaestus_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "r_ind_hephaestus_r_arm",
+      "directions": 4
+    },
+    {
+      "name": "r_ind_hephaestus_r_foot",
+      "directions": 4
+    },
+    {
+      "name": "r_ind_hephaestus_r_hand",
+      "directions": 4
+    },
+    {
+      "name": "r_ind_hephaestus_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "r_ind_hephaestus_torso",
+      "directions": 4
+    }
+  ]
+}

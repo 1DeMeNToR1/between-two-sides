@@ -1344,6 +1344,10 @@
       "directions": 4
     },
     {
+      "name": "empty",
+      "directions": 4
+    },
+    {
       "name": "smile",
       "directions": 4
     },

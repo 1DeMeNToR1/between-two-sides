@@ -665,6 +665,17 @@
     - ResearchUpgradedHardsuit # Siberia-change
     - SalvageUpgradedHardsuit # Siberia-change
     - MedicalUpgradedHardsuit # Siberia-change
+    - IPCUpgradeMedHudRecipe # Siberia-change
+    - IPCUpgradeSecHudRecipe # Siberia-change
+    - IPCUpgradeDiagnosticHudRecipe # Siberia-change
+    - IPCUpgradeServiceHudRecipe # Siberia-change
+    - IPCUpgradeMultiHudRecipe # Siberia-change
+    - IPCUpgradeArmorRecipe # Siberia-change
+    - IPCUpgradeSpeedRecipe # Siberia-change
+    - IPCUpgradeStorageRecipe # Siberia-change
+    - IPCUpgradeInstrumentsRecipe # Siberia-change
+    - IPCUpgradeMicrowaveRecipe # Siberia-change
+    - IPCUpgradeDispenserRecipe # Siberia-change
   - type: MaterialStorage
     whitelist:
       tags:

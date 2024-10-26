@@ -11,6 +11,7 @@
 - type: emote
   id: Boop
   name: chat-emote-name-boop
+  icon: Interface/Emotes/beep.png
   category: Vocal
   chatMessages: [буп]
   chatTriggers:
@@ -35,6 +36,7 @@
 - type: emote
   id: Pilik
   name: chat-emote-name-pilik
+  icon: Interface/Emotes/beep.png
   category: Vocal
   chatMessages: [пиликает]
   chatTriggers:
@@ -45,6 +47,7 @@
 - type: emote
   id: Dymaet
   name: chat-emote-name-dymaet
+  icon: Interface/Emotes/beep.png
   category: Vocal
   chatMessages: [вычисляет]
   chatTriggers:
@@ -61,6 +64,7 @@
 - type: emote
   id: Nyancat
   name: chat-emote-name-nyancat
+  icon: Interface/Emotes/beep.png
   category: Vocal
   chatMessages: [нянянкает]
   chatTriggers:
@@ -69,6 +73,7 @@
 - type: emote
   id: Omg
   name: chat-emote-name-omg
+  icon: Interface/Emotes/beep.png
   category: Vocal
   chatMessages: [в шоке]
   chatTriggers:
@@ -79,6 +84,7 @@
 - type: emote
   id: Error
   name: chat-emote-name-error
+  icon: Interface/Emotes/beep.png
   category: Vocal
   chatMessages: [выдаёт ошибку]
   chatTriggers:
@@ -89,6 +95,7 @@
 - type: emote
   id: Starting
   name: chat-emote-name-starting
+  icon: Interface/Emotes/beep.png
   category: Vocal
   chatMessages: [запускается]
   chatTriggers:
@@ -100,8 +107,68 @@
     - просыпается!
 
 - type: emote
+  id: IPCBonk
+  name: chat-emote-name-bonk
+  icon: Interface/Emotes/beep.png
+  category: Vocal
+  chatMessages: [стукает]
+  chatTriggers:
+    - стукает
+
+- type: emote
+  id: IPCBoom
+  name: chat-emote-name-boom
+  icon: Interface/Emotes/beep.png
+  category: Vocal
+  chatMessages: [поражён]
+  chatTriggers:
+    - поражён
+    - удивлён
+    - удивился
+
+- type: emote
+  id: IPCDiscord
+  name: chat-emote-name-discord
+  icon: Interface/Emotes/beep.png
+  category: Vocal
+  chatMessages: [отключился]
+  chatTriggers:
+    - отключился
+    - отключился.
+    - отключился!
+
+- type: emote
+  id: IPCErrorA
+  name: chat-emote-name-errora
+  icon: Interface/Emotes/beep.png
+  category: Vocal
+  chatMessages: [отрицает]
+  chatTriggers:
+    - отрицает
+    - недоволен
+
+- type: emote
+  id: IPCGear
+  name: chat-emote-name-gear
+  icon: Interface/Emotes/beep.png
+  category: Vocal
+  chatMessages: [обрабатывает]
+  chatTriggers:
+    - обрабатывает
+
+- type: emote
+  id: IPCTv
+  name: chat-emote-name-tv
+  icon: Interface/Emotes/beep.png
+  category: Vocal
+  chatMessages: [потерял сигнал]
+  chatTriggers:
+    - потерял сигнал
+
+- type: emote
   id: Bdt
   name: chat-emote-name-bdt
+  icon: Interface/Emotes/beep.png
   category: Vocal
   chatMessages: [шутит]
   chatTriggers:

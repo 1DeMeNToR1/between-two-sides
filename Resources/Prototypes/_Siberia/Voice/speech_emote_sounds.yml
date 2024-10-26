@@ -58,6 +58,30 @@
       collection: IPCStarting
       params:
         volume: -10
+    IPCBonk:
+      collection: IPCBonk
+      params:
+        volume: -10
+    IPCBoom:
+      collection: IPCBoom
+      params:
+        volume: -10
+    IPCDiscord:
+      collection: IPCDiscord
+      params:
+        volume: -10
+    IPCErrorA:
+      collection: IPCErrorA
+      params:
+        volume: -10
+    IPCGear:
+      collection: IPCGear
+      params:
+        volume: -10
+    IPCTv:
+      collection: IPCTv
+      params:
+        volume: -10
     Bdt:
       collection: IPCBdt
       params:

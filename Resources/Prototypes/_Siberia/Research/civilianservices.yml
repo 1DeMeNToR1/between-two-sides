@@ -1,0 +1,21 @@
+- type: technology
+  id: IPCUpgrades
+  name: research-technology-IPCUpgrades-upgrade
+  icon:
+    sprite: Objects/Misc/module.rsi
+    state: boris
+  discipline: CivilianServices
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - IPCUpgradeMedHudRecipe
+  - IPCUpgradeSecHudRecipe
+  - IPCUpgradeDiagnosticHudRecipe
+  - IPCUpgradeServiceHudRecipe
+  - IPCUpgradeMultiHudRecipe
+  - IPCUpgradeArmorRecipe
+  - IPCUpgradeSpeedRecipe
+  - IPCUpgradeStorageRecipe
+  - IPCUpgradeInstrumentsRecipe
+  - IPCUpgradeMicrowaveRecipe
+  - IPCUpgradeDispenserRecipe

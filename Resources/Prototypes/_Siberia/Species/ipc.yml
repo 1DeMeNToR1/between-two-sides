@@ -48,11 +48,21 @@
       points: 1
       required: false
     Head:
-      points: 1
-      required: false
+      points: 2
+      required: true
+      defaultMarkings: [ IPCScreenEmpty, IPCMainHead ]
     Chest:
       points: 1
-      required: false
+      required: true
+      defaultMarkings: [ IPCMainChest ]
+    Legs:
+      points: 4
+      required: true
+      defaultMarkings: [ IPCMainLArm, IPCMainLHand, IPCMainRArm, IPCMainRHand ]
+    Arms:
+      points: 4
+      required: true
+      defaultMarkings: [ IPCMainLFoot, IPCMainLLeg, IPCMainRFoot, IPCMainRLeg ]
 
 - type: humanoidBaseSprite
   id: MobIPCHead
@@ -138,4 +148,3 @@
     sprite: Siberia/Mobs/Species/IPC/parts.rsi
     state: r_foot
 
-# TODO AAAAAAAAA

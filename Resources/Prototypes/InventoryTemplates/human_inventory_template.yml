@@ -22,7 +22,7 @@
       slotTexture: top
       slotFlags: TOP
       stripTime: 3
-      uiWindowPos: 1,1 
+      uiWindowPos: 1,1
       strippingWindowPos: 2,2
       displayName: Top
       whitelist:
@@ -67,7 +67,7 @@
       displayName: Neck
       blacklist:
         tags:
-          - Socks      
+          - Socks
     - name: mask
       slotTexture: mask
       slotFlags: MASK
@@ -137,6 +137,9 @@
       strippingWindowPos: 2,4
       dependsOn: jumpsuit
       displayName: ID
+      blacklist: # Siberia-changes
+        tags:
+          - IPCWearable
     - name: belt
       slotTexture: belt
       fullTextureName: template_small

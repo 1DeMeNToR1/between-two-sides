@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "copyright": "Taken from ss13, ported by EnderBroha",
+  "license": "CC-BY-SA-3.0",
+  "states": [
+    {
+      "name": "morpheus_airborne",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_panel",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_blitz",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_blitz_eyes",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_head",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_eyes",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_prime",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_prime_eyes",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_monitor_head",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_l_arm",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_l_foot",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_l_hand",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_r_arm",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_r_hand",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_torso",
+      "directions": 4
+    },
+    {
+      "name": "morpheus_main_r_foot",
+      "directions": 4
+    }
+  ]
+}
