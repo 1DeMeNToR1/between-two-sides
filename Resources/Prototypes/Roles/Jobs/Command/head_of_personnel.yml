@@ -51,6 +51,7 @@
   - Cargo
   - Atmospherics
   - Medical
+  - Expeditor # Siberia-changes
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
