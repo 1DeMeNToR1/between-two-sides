@@ -5,3 +5,11 @@
   frequency: 1450
   color: "#6c008a"
   longRange: true
+
+- type: radioChannel
+  id: Trinary
+  name: chat-radio-trinary
+  keycode: 'з' # Siberia-Localization
+  frequency: 1001
+  color: "#2e6ffd"
+  longRange: true

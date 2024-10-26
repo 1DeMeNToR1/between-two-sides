@@ -15,3 +15,103 @@
   materials:
     Steel: 300
     Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeMedHudRecipe
+  result: IPCUpgradeMedHud
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeSecHudRecipe
+  result: IPCUpgradeSecHud
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeDiagnosticHudRecipe
+  result: IPCUpgradeDiagnosticHud
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeServiceHudRecipe
+  result: IPCUpgradeServiceHud
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeMultiHudRecipe
+  result: IPCUpgradeMultiHud
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeArmorRecipe
+  result: IPCUpgradeArmor
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeSpeedRecipe
+  result: IPCUpgradeSpeed
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeStorageRecipe
+  result: IPCUpgradeStorage
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeInstrumentsRecipe
+  result: IPCUpgradeInstruments
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeMicrowaveRecipe
+  result: IPCUpgradeMicrowave
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: IPCUpgradeDispenserRecipe
+  result: IPCUpgradeDispenser
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 200
+

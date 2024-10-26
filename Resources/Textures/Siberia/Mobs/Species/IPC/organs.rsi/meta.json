@@ -33,6 +33,34 @@
           0.1
         ]
       ]
+    },
+    {
+      "name": "brain-prosthetic",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cortical-stack",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "heart-prosthetic"
     }
   ]
 }

@@ -1,0 +1,229 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: BaseIPCUpgrade
+  name: Апгрейд КПБ БАЗА
+  description: Модуль улучшения КПБ.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    layers:
+    - state: cddrive
+  - type: Item
+    size: Huge
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - idcard
+  - type: MultiHandedItem
+  - type: Tag
+    tags:
+    - IPCWearable
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeMedHud
+  name: Улучшение КПБ - Медицинский визор
+  components:
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+  - type: SolutionScanner
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeSecHud
+  name: Улучшение КПБ - Охранный визор
+  components:
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeDiagnosticHud
+  name: Улучшение КПБ - Диагностический визор
+  components:
+  - type: ShowHealthBars
+    damageContainers:
+    - Inorganic
+    - Silicon
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeServiceHud
+  name: Улучшение КПБ - Сервисный визор
+  components:
+  - type: ShowThirstIcons
+  - type: ShowHungerIcons
+  - type: SolutionScanner
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeMultiHud
+  name: Улучшение КПБ - Мультивизор
+  components:
+  - type: ShowThirstIcons
+  - type: ShowHungerIcons
+  - type: SolutionScanner
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeArmor
+  name: Улучшение КПБ - Броня
+  components:
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Caustic: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.75
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeSpeed
+  name: Улучшение КПБ - Скорость
+  components:
+  - type: ExplosionResistance
+    damageCoefficient: 1.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 1.6
+        Slash: 1.6
+        Piercing: 1.6
+        Caustic: 1.7
+  - type: ClothingSpeedModifier
+    walkModifier: 1.35
+    sprintModifier: 1.35
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeStorage
+  name: Улучшение КПБ - Хранилище
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,4,3
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeInstruments
+  name: Улучшение КПБ - Аудиосистема
+  components:
+  - type: Instrument
+    allowPercussion: true
+    allowProgramChange: true
+  - type: ActivatableUI
+    blockSpectators: true # otherwise they can play client-side music
+    inHandsOnly: false
+    singleUser: true
+    requiresComplex: true
+    verbText: verb-instrument-openui
+    key: enum.InstrumentUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.InstrumentUiKey.Key:
+        type: InstrumentBoundUserInterface
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeMicrowave
+  name: Улучшение КПБ - Микроволновка
+  components:
+  - type: Microwave
+    capacity: 10
+  - type: ActivatableUI
+    key: enum.MicrowaveUiKey.Key
+  - type: DeviceLinkSink
+    ports:
+    - On
+  - type: UserInterface
+    interfaces:
+      enum.MicrowaveUiKey.Key:
+        type: MicrowaveBoundUserInterface
+  - type: ApcPowerReceiver
+    powerLoad: 0
+  - type: ContainerContainer
+    containers:
+      microwave_entity_container: !type:Container
+      machine_board: !type:Container
+      machine_parts: !type:Container
+
+- type: entity
+  abstract: false
+  parent: BaseIPCUpgrade
+  id: IPCUpgradeDispenser
+  name: Улучшение КПБ - Раздатчик
+  components:
+  - type: Machine
+  - type: ApcPowerReceiver
+    powerLoad: 0
+  - type: ActivatableUI
+    key: enum.ReagentDispenserUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ReagentDispenserUiKey.Key:
+        type: ReagentDispenserBoundUserInterface
+  - type: ReagentDispenser
+    storageWhitelist:
+      tags:
+      - DrinkBottle
+    beakerSlot:
+      whitelistFailPopup: reagent-dispenser-component-cannot-put-entity-message
+      whitelist:
+        components:
+        - FitsInDispenser
+    pack: EmptyInventory
+  - type: ItemSlots
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      beakerSlot: !type:ContainerSlot
+  - type: Clickable
+  - type: GuideHelp
+    guides:
+    - Bartender
+    - Drinks
