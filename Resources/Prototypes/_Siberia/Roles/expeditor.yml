@@ -10,7 +10,6 @@
   startingGear: ExpeditorGear
   icon: "JobIconExpeditor"
   requireAdminNotify: true
-  joinNotifyCrew: true
   supervisors: job-supervisors-qm
   canBeAntag: true
   access:
