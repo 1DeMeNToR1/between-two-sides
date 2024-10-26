@@ -386,7 +386,6 @@
       top:
       - state: color-equipped-INNERCLOTHING
         color: "#416DAF"
-      - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingTopBaseButcherable
@@ -415,7 +414,7 @@
         color: "#341255"
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingTopBaseButcherable
   id: ClothingOrangeElegantSwimsuitTop
   name: оранжевый элегантный топик купальника
   description: Покажи всем красоту своего тела.

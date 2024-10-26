@@ -528,7 +528,6 @@
       bottom:
       - state: color-equipped-INNERCLOTHING
         color: "#416DAF"
-      - state: equipped-INNERCLOTHING
 
 - type: entity
   parent: ClothingBottomBaseButcherable
