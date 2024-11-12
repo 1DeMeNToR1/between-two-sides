@@ -622,6 +622,8 @@
     - RightLegBorgService
     - HeadBorgService
     - TorsoBorgService
+    - MedicalFuelpackIPC # Siberia-change
+    - MedicalGauzeIPC # Siberia-change
     dynamicRecipes:
     - ProximitySensor
     - BorgModuleLightReplacer

@@ -441,6 +441,17 @@
     - sprite: Siberia/Mobs/Customization/ipc.rsi
       state: empty
 
+- type: marking
+  id: IPCWingsUltrakill
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [IPC]
+  sprites:
+  - sprite: Siberia/Mobs/Customization/ipc_wingwide.rsi
+    state: energy
+  - sprite: Siberia/Mobs/Customization/ipc_wingwide.rsi
+    state: blank
+
 #Боди-парты
 
 #БАЗАБОДИ
@@ -1542,6 +1553,98 @@
   sprites:
     - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
       state: r_ind_zenghu_r_foot
+
+#proto
+
+- type: marking
+  id: IPCProtoChest
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      state: proto_torso
+
+- type: marking
+  id: IPCProtoHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      state: proto_head
+
+- type: marking
+  id: IPCProtoLArm
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      state: proto_l_arm
+
+- type: marking
+  id: IPCProtoLHand
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      state: proto_l_hand
+
+- type: marking
+  id: IPCProtoRArm
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      state: proto_r_arm
+
+- type: marking
+  id: IPCProtoRHand
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      state: proto_r_hand
+
+- type: marking
+  id: IPCProtoLLeg
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      state: proto_l_leg
+
+- type: marking
+  id: IPCProtoLFoot
+  bodyPart: LFoot
+  markingCategory: Legs
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      state: proto_l_foot
+
+- type: marking
+  id: IPCProtoRLeg
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      state: proto_r_leg
+
+- type: marking
+  id: IPCProtoRFoot
+  bodyPart: RFoot
+  markingCategory: Legs
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      state: proto_r_foot
 
 
 #endregion

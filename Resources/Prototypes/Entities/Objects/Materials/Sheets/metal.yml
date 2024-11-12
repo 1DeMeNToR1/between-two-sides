@@ -69,6 +69,13 @@
           Quantity: 9
         - ReagentId: Carbon
           Quantity: 1
+  - type: Healing # Siberia-Change
+    delay: 0.6
+    damageContainers:
+    - BiologicalIPC
+    damage:
+      groups:
+        Toxin: -10
 
 - type: entity
   parent: SheetSteel

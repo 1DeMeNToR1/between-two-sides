@@ -29,6 +29,13 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 15
+  - type: Healing # Siberia-Change
+    delay: 0.6
+    damageContainers:
+    - BiologicalIPC
+    damage:
+      groups:
+        Burn: -10
 
 - type: entity
   id: CableHVStack

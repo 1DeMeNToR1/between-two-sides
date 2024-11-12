@@ -8,15 +8,15 @@
     # The important nessessities
     - type: ZombieImmune
     - type: MovementSpeedModifier
-      baseWalkSpeed : 2
-      baseSprintSpeed : 4
+      baseWalkSpeed : 1.9
+      baseSprintSpeed : 3.9
     - type: Body
       prototype: IPC
       requiredLegs: 2
     - type: HumanoidAppearance
       species: IPC
     - type: Damageable
-      damageContainer: Biological
+      damageContainer: BiologicalIPC
       damageModifierSet: IPC
     - type: Icon
       sprite: Siberia/Mobs/Species/IPC/parts.rsi
@@ -107,7 +107,6 @@
         - Unclonable
     - type: TypingIndicator
       proto: robot
-    - type: Insulated
     - type: IntrinsicRadioReceiver
     - type: IntrinsicRadioTransmitter
       channels:
@@ -122,7 +121,8 @@
     - type: Destructible
       thresholds:
       - trigger:
-          !type:DamageTrigger
+          !type:DamageTypeTrigger
+          damageType: Blunt
           damage: 200
         behaviors:
         - !type:GibBehavior { }
@@ -234,8 +234,8 @@
   - type: Butcherable
     butcheringType: Spike # TODO human.
     spawned:
-      - id: FoodMeat
-        amount: 5
+      - id: SheetPlasteel1
+        amount: 30
   - type: FireVisuals
     alternateState: Standing
   - type: Accentless

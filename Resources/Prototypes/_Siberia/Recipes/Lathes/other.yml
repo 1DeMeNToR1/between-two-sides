@@ -95,3 +95,23 @@
     Silver: 500
     Uranium: 500
     Gold: 500
+
+- type: latheRecipe
+  id: MedicalFuelpackIPC
+  result: FuelpackIPC
+  category: Robotics
+  completetime: 4
+  materials:
+    Steel: 100
+    Plastic: 100
+    Glass: 300
+
+- type: latheRecipe
+  id: MedicalGauzeIPC
+  result: GauzeIPC
+  category: Robotics
+  completetime: 4
+  materials:
+    Steel: 300
+    Plastic: 100
+    Glass: 100
