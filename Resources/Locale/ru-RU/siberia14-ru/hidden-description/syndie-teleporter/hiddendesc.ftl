@@ -1,0 +1,2 @@
+nidden-desc-handteleporter-syndicate = [color=#e31735]Передовая разработка Синдиката позволяющая перемещаться в пространстве используя редспейс.[/color]
+nidden-desc-handteleporter-research = [color=#D381C9]Дешёвая подделка ручного телепорта от Nanotrasen, способная создавать не более одного портала.[/color]
