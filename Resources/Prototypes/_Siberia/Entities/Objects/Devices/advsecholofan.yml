@@ -5,12 +5,15 @@
   description: "Разработка Е.М. Corp. Продвинутая версия охранного голопроектора, позволяет создать до 5-ти барьеров, которые стоят бесконечно. Создание 6-го барьера дизентегрирует остальные 5 барьеров"
   components:
   - type: Sprite
-    sprite: /Textures/Siberia/Objects/Devices/advsecurityholo.rsi
+    sprite: Siberia/Objects/Devices/advsecurityholo.rsi
     layers:
     - state: icon
   - type: AdvHolofan
-    maxProjectors: 5
-    signProto: AdvHolosignSecurity
+    firstHolofanPrototype: AdvHolosignSecurity
+    secondHolofanPrototype: AdvHolosignSecurity
+    thirdHolofanPrototype: AdvHolosignSecurity
+    fourthHolofanPrototype: AdvHolosignSecurity
+    fifthHolofanPrototype: AdvHolosignSecurity
 
 - type: entity
   id: AdvHolosignSecurity

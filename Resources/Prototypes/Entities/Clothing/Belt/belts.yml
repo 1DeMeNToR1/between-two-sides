@@ -176,6 +176,7 @@
         - CigPack
         - Taser
       components:
+        - AdvHolofan # Siberia-change
         - Stunbaton
         - FlashOnTrigger
         - SmokeOnTrigger
@@ -478,6 +479,7 @@
         - CombatKnife
         - Truncheon
       components:
+        - AdvHolofan # Siberia-change
         - Stunbaton
         - FlashOnTrigger
         - SmokeOnTrigger

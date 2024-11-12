@@ -5,12 +5,10 @@
   description: "Разработка Е.М. Corp. Продвинутая версия атмосферного голопроектора, позволяет создать до 5-ти голобарьеров, которые стоят бесконечно. Создание 6-го барьера дизентегрирует остальные 5 барьеров"
   components:
   - type: Sprite
-    sprite: /Textures/Siberia/Objects/Devices/advatmosholo.rsi
+    sprite: Siberia/Objects/Devices/advatmosholo.rsi
     layers:
     - state: icon
   - type: AdvHolofan
-    maxProjectors: 5
-    signProto: AdvancedAtmosHoloFan
 
 - type: entity
   id: AdvancedAtmosHoloFan
