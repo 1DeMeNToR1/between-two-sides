@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingTopBaseButcherable
   id: ClothingUnderTopWhiteM
-  name: white male tank
-  description: Mr White!
+  name: белая мужская майка
+  description: Белая мужская майка.
   components:
   - type: Sprite
     sprite: Siberia/Clothing/Under/Top/whitemale.rsi
@@ -12,8 +12,8 @@
 - type: entity
   parent: ClothingTopBaseButcherable
   id: ClothingUnderTopWhiteF
-  name: white female top
-  description: Mr White!
+  name: белый женский топ
+  description: Белый женский топик.
   components:
   - type: Sprite
     sprite: Siberia/Clothing/Under/Top/whitefemale.rsi
@@ -23,8 +23,8 @@
 - type: entity
   parent: ClothingTopBaseButcherable
   id: ClothingUnderTopShirtIan
-  name: Ian Shirt
-  description: Love me, wooof!
+  name: рубашка Иана
+  description: Люби меня, ууууф!
   components:
   - type: Sprite
     sprite: Siberia/Clothing/Under/Top/ian.rsi
@@ -45,7 +45,7 @@
 - type: entity
   parent: ClothingTopBaseButcherable
   id: ClothingUnderTopNeko
-  name: neko top
+  name: неко топик
   description: NYA~~~!
   components:
   - type: Sprite

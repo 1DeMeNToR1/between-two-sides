@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingBottomBaseButcherable
   id: ClothingUnderBottomWhiteU
-  name: white unisex pants
+  name: белые унисекс трусы
   description: Mr White!
   components:
   - type: Sprite
@@ -22,7 +22,7 @@
 - type: entity
   parent: ClothingBottomBaseButcherable
   id: ClothingUnderBottomNeko
-  name: black neko bottom
+  name: черные неко трусики
   components:
   - type: Sprite
     sprite: Siberia/Clothing/Under/Bottom/Female/neko.rsi
@@ -32,7 +32,7 @@
 - type: entity
   parent: ClothingBottomBaseButcherable
   id: ClothingUnderBottomSchool
-  name: school style bottom
+  name: школьные трусики
   components:
   - type: Sprite
     sprite: Siberia/Clothing/Under/Bottom/Female/school.rsi
@@ -182,7 +182,7 @@
 - type: entity
   parent: ClothingBottomBaseButcherable
   id: ClothingBottomZebra
-  name: Трусы Зебра
+  name: трусы Зебра
   description: Стандартные трусы для Объединенной федерации мимов
   components:
   - type: Sprite
@@ -193,7 +193,7 @@
 - type: entity
   parent: ClothingBottomBaseButcherable
   id: ClothingBottomElephant
-  name: Трусы Слоник
+  name: трусы Слоник
   description: Эластичные трусы со странным карманном
   components:
   - type: Sprite
@@ -204,7 +204,7 @@
 - type: entity
   parent: ClothingBottomBaseButcherable
   id: ClothingBottomLether
-  name: Коженные трусы
+  name: коженные трусы
   description: Эти трусы сделаны из прочной синтетической кожи
   components:
   - type: Sprite
@@ -215,7 +215,7 @@
 - type: entity
   parent: ClothingBottomBaseButcherable
   id: ClothingBottomMice
-  name: Трусы с мышкой
+  name: трусы с мышкой
   description: На трусах красуется прекрасная мышка
   components:
   - type: Sprite
@@ -226,7 +226,7 @@
 - type: entity
   parent: ClothingBottomBaseButcherable
   id: ClothingBottomElephant778
-  name: Трусы Слоник
+  name: трусы Слоник
   description: Эластичные трусы со странным карманном
   components:
   - type: Sprite
@@ -237,7 +237,7 @@
 - type: entity
   parent: ClothingBottomBaseButcherable
   id: ClothingBottomSailor
-  name: Трусы Моряка
+  name: трусы Моряка
   description: Стандартные трусы с красивым принтом
   components:
   - type: Sprite
@@ -248,7 +248,7 @@
 - type: entity
   parent: ClothingBottomBaseButcherable
   id: ClothingBottomSailorSpecial
-  name: Трусы Моряка MK-2
+  name: трусы Моряка MK-2
   description: Улучшенные стандартные трусы с красивым принтом
   components:
   - type: Sprite
