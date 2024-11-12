@@ -6,6 +6,7 @@ using Content.Client.Corvax.TTS;
 using Content.Client.Options;
 using Content.Client.Eui;
 using Content.Client.Fullscreen;
+using Content.Client.GameTicking.Managers;
 using Content.Client.GhostKick;
 using Content.Client.Guidebook;
 using Content.Client.Input;
@@ -76,6 +77,7 @@ namespace Content.Client.Entry
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
         [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
         [Dependency] private readonly DebugMonitorManager _debugMonitorManager = default!;
+        [Dependency] private readonly TitleWindowManager _titleWindowManager = default!;
 
         public override void Init()
         {
@@ -146,6 +148,12 @@ namespace Content.Client.Entry
             _configManager.SetCVar("interface.resolutionAutoScaleMinimum", 0.5f);
         }
 
+        public override void Shutdown()
+        {
+            base.Shutdown();
+            _titleWindowManager.Shutdown();
+        }
+
         public override void PostInit()
         {
             base.PostInit();
@@ -168,6 +176,7 @@ namespace Content.Client.Entry
             _documentParsingManager.Initialize();
             _sponsorsManager.Initialize();
             _discordAuthManager.Initialize();
+            _titleWindowManager.Initialize();
 
             _baseClient.RunLevelChanged += (_, args) =>
             {
