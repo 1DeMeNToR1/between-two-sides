@@ -1,0 +1,25 @@
+- type: entity
+  id: SyndieHandTeleporter
+  parent: BaseItem
+  name: портативная приставка
+  description: Портативная приставка с игрой про трёхголового змея.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Devices/syndie_teleporter.rsi
+    layers:
+    - state: icon
+  - type: SyndieHandTeleporter
+  - type: HiddenDescription
+    entries:
+    - label: nidden-desc-handteleporter-syndicate
+      whitelistMind:
+        components:
+        - TraitorRole
+        - NukeOperative
+    - label: nidden-desc-handteleporter-research
+      jobRequired:
+        - ResearchAssistant
+        - ResearchDirector
+        - Scientist
+        - Borg
+

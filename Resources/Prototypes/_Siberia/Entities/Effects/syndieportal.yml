@@ -1,0 +1,17 @@
+- type: entity
+  parent: PortalRed
+  id: SyndiePortal
+  name: блюспейс портал
+  description: От этого портала веет холодом и смертью.
+  components:
+  - type: Sprite
+    sprite: Siberia/Effects/syndieportal.rsi
+    layers:
+    - state: portal-syndie
+  - type: PointLight
+    color: DarkRed
+    radius: 3
+    energy: 1
+    netsync: false
+  - type: TimedDespawn
+    lifetime: 3

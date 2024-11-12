@@ -1,0 +1,12 @@
+- type: listing
+  id: UplinkSyndieHandTeleporter
+  name: uplink-teleporter-name
+  description: uplink-teleporter-desc
+  productEntity: SyndieHandTeleporter
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 7
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkDisruption
