@@ -1,0 +1,78 @@
+- type: entity
+  parent: BaseHealingItem
+  id: FuelpackIPC
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Bloodpack
+  - type: Sprite
+    sprite: Objects/Misc/stock_parts.rsi
+    state: bluespace_matter_bin
+  - type: Healing
+    damageContainers:
+      - BiologicalIPC
+    damage:
+      types:
+        Bloodloss: -0.5 #lowers bloodloss damage
+    ModifyBloodLevel: 15 #restores about 5% blood per use on standard humanoids.
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: FuelpackIPC
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: BaseHealingItem
+  id: GauzeIPC
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Gauze
+  - type: Sprite
+    sprite: Objects/Misc/stock_parts.rsi
+    state: hdd2
+  - type: Healing
+    damageContainers:
+      - BiologicalIPC
+    damage:
+      types:
+        Slash: -5
+        Piercing: -10
+    bloodlossModifier: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: GauzeIPC
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  id: GauzeIPC1
+  parent: GauzeIPC
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: stack
+  id: GauzeIPC
+  name: GauzeIPC
+  icon: { sprite: "/Textures/Objects/Misc/stock_parts.rsi", state: hdd2 }
+  spawn: GauzeIPC
+  maxCount: 10
+
+- type: stack
+  id: FuelpackIPC
+  name: FuelpackIPC
+  icon: { sprite: "/Textures/Objects/Misc/stock_parts.rsi", state: bluespace_matter_bin }
+  spawn: FuelpackIPC
+  maxCount: 10

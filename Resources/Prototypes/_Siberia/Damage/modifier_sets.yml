@@ -17,11 +17,12 @@
 - type: damageModifierSet
   id: IPC
   coefficients:
-    Radiation: 0
-    Poison: 0
+    Radiation: 0.5
+    Caustic: 1.2
+    Poison: 0.5
     Cellular: 0
-    Shock: 1.5
-    Blunt: 0.8
-    Slash: 0.8
-    Piercing: 0.8
-    Cold: 0.6
+    Shock: 6
+    Blunt: 0.9
+    Slash: 0.9
+    Piercing: 0.9
+    Cold: 0.7

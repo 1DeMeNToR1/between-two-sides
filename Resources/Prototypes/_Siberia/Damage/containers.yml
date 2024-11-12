@@ -1,0 +1,8 @@
+- type: damageContainer
+  id: BiologicalIPC
+  supportedGroups:
+    - Brute
+    - Burn
+    - Toxin
+    - Airloss
+    - Genetic
