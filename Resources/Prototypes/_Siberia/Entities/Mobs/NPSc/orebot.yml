@@ -1,0 +1,110 @@
+- type: entity
+  parent: MobSiliconBase
+  id: MobOreBotGhost
+  name: Призрак
+  description: Бот следующий за специальным передатчиком. Собирает руду в экипированные контейнеры для руды Призрака. Обладает внутренним хранилищем для всякого хлама. Почему его назвали призраком?
+  components:
+  - type: Sprite
+    sprite: Siberia/Mobs/Silicon/orebot.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+  - type: Access
+    tags:
+    - Cargo
+    - Maintenance
+    - Salvage
+  - type: Dumpable
+  - type: Storage
+    grid:
+    - 0,0,9,3
+    maxItemSize: Normal
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: PointLight
+    enabled: true
+    radius: 2
+    softness: 2
+    color: "#ff7e18"
+    autoRot: true
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - Bot
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Supply
+  - type: MovementIgnoreGravity
+  - type: Physics
+    bodyStatus: InAir
+  - type: NoSlip
+  - type: MovementAlwaysTouching
+  - type: CanMoveInAir
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.40
+        density: 20
+        mask:
+          - FlyingMobMask
+        layer:
+          - FlyingMobLayer
+  - type: NpcFactionMember
+    factions:
+      - NanoTrasen
+  - type: HTN
+    rootTask:
+      task: FollowGhostCompound
+    blackboard:
+      NavInteract: !type:Bool
+        true
+      IdleRange: !type:Single
+        0
+      FollowCloseRange: !type:Single
+        1.0
+      FollowRange: !type:Single
+        2.0
+  - type: NPCImprintingOnSpawnBehaviour
+    whitelist:
+      components:
+      - Signaller
+  - type: Inventory
+    templateId: orebot
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Supply
+    - Common
+  - type: ReplacementAccent
+    accent: silicon
+  - type: TypingIndicator
+    proto: robot
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Borg
+  - type: Vocal
+    sounds:
+      Unsexed: UnisexSilicon
+  - type: Puller
+  - type: Hands
+  - type: ComplexInteraction
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 120
+      behaviors:
+      - !type:GibBehavior { }

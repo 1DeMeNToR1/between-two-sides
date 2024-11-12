@@ -1,0 +1,53 @@
+- type: entity
+  name: Контейнер для руды Призрака
+  id: OreBagGhost
+  parent: BaseStorageItem
+  components:
+  - type: MagnetPickup
+    range: 3
+    slotFlags: OUTERCLOTHING
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: ash_plating
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - outerClothing
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,9,3
+    quickInsert: true
+    areaInsert: true
+    whitelist:
+      tags:
+        - ArtifactFragment
+        - Ore
+  - type: Dumpable
+
+- type: entity
+  parent: BaseItem
+  id: RemoteGhostSignaller
+  name: Передатчик Призрака
+  description: Устройство за которым будет следовать Призрак.
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/signaltrigger.rsi
+    state: signaltrigger
+  - type: Signaller
+  - type: UseDelay
+  - type: StaticPrice
+    price: 40
+  - type: DeviceLinkSource
+    ports:
+      - Pressed
+  - type: Tag
+    tags:
+    - Payload
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 15
