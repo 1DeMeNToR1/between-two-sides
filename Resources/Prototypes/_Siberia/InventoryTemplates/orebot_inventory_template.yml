@@ -1,0 +1,39 @@
+﻿- type: inventoryTemplate
+  id: orebot
+  slots:
+    - name: belt
+      slotTexture: id
+      fullTextureName: template_small
+      slotFlags: OUTERCLOTHING
+      slotGroup: SecondHotbar
+      stripTime: 1
+      uiWindowPos: 3,1
+      strippingWindowPos: 1,5
+      displayName: Belt
+    - name: belt2
+      slotTexture: id
+      fullTextureName: template_small
+      slotFlags: OUTERCLOTHING
+      slotGroup: SecondHotbar
+      stripTime: 1
+      uiWindowPos: 2,3
+      strippingWindowPos: 1,4
+      displayName: Belt
+    - name: belt3
+      slotTexture: id
+      fullTextureName: template_small
+      slotFlags: OUTERCLOTHING
+      slotGroup: SecondHotbar
+      stripTime: 1
+      uiWindowPos: 2,0
+      strippingWindowPos: 2,5
+      displayName: Belt
+    - name: belt4
+      slotTexture: id
+      fullTextureName: template_small
+      slotFlags: OUTERCLOTHING
+      slotGroup: SecondHotbar
+      stripTime: 1
+      uiWindowPos: 3,0
+      strippingWindowPos: 0,5
+      displayName: Belt

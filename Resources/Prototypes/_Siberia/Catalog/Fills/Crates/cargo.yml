@@ -7,3 +7,18 @@
     contents:
       - id: SurveillanceSalvCum
         amount: 4
+
+- type: entity
+  id: CrateCargoOreBotGhost
+  parent: CratePrivateSecure
+  name: комплект Призрака
+  description: Содержит Призрака, его передатчик и 4 контейнера для руды Призрака.
+  components:
+  - type: StorageFill
+    contents:
+      - id: OreBagGhost
+        amount: 4
+      - id: RemoteGhostSignaller
+        amount: 1
+      - id: MobOreBotGhost
+        amount: 1

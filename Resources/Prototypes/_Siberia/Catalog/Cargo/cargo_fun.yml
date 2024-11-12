@@ -18,3 +18,13 @@
   cost: 1500
   category: cargoproduct-category-name-fun
   group: market
+
+- type: cargoProduct
+  id: CrateCargoOreBotGhostOrder
+  icon:
+    sprite: Siberia/Mobs/Silicon/orebot.rsi
+    state: alive
+  product: CrateCargoOreBotGhost
+  cost: 2000
+  category: cargoproduct-category-name-cargo
+  group: market
