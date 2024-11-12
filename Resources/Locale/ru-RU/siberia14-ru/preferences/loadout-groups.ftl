@@ -4,3 +4,4 @@ loadout-group-seniorphysician-jumpsuit = Комбинезон ведущего �
 loadout-group-seniorresearcher-jumpsuit = Комбинезон ведущего учёного
 loadout-group-seniorofficer-jumpsuit = Комбинезон инструктора службы безопасности
 loadout-group-expeditorjumpsuit-jumpsuit = Форма исследователя экспедиций
+loadout-group-underwears = Нижнее бельё

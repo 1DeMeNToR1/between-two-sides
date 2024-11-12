@@ -9,3 +9,8 @@
   storage:
     back:
     - ClothingNeckSiberiaPin
+
+- type: loadout
+  id: ClothingEyesBlindfoldFake
+  equipment:
+    eyes: ClothingEyesBlindfoldFake

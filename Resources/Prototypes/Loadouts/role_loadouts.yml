@@ -3,6 +3,7 @@
   id: JobCaptain
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - CaptainHead
   - CaptainNeck
   - CaptainJumpsuit
@@ -16,6 +17,7 @@
   id: JobHeadOfPersonnel
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - HoPHead
   - HoPNeck
@@ -37,6 +39,7 @@
   id: JobPassenger
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - PassengerJumpsuit
   - CommonBackpack
@@ -54,6 +57,7 @@
   id: JobBartender
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - BartenderHead
   - BartenderJumpsuit
@@ -68,6 +72,7 @@
   id: JobServiceWorker
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - BartenderJumpsuit
   - CommonBackpack
@@ -80,6 +85,7 @@
   id: JobChef
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - ChefHead
   - ChefMask
@@ -95,6 +101,7 @@
   id: JobLibrarian
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - LibrarianJumpsuit
   - CommonBackpack
@@ -107,6 +114,7 @@
   id: JobLawyer
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - LawyerNeck
   - LawyerJumpsuit
@@ -120,6 +128,7 @@
   id: JobChaplain
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - ChaplainHead
   - ChaplainMask
@@ -136,6 +145,7 @@
   id: JobJanitor
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - JanitorHead
   - JanitorJumpsuit
@@ -152,6 +162,7 @@
   id: JobBotanist
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - BotanistHead
   - BotanistJumpsuit
@@ -166,6 +177,7 @@
   id: JobClown
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - ClownHead
   - ClownJumpsuit
@@ -180,6 +192,7 @@
   id: JobMime
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - MimeHead
   - MimeMask
@@ -195,6 +208,7 @@
   id: JobMusician
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - MusicianJumpsuit
   - CommonBackpack
@@ -210,6 +224,7 @@
   id: JobQuartermaster
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - QuartermasterHead
   - QuartermasterNeck
@@ -226,6 +241,7 @@
   id: JobCargoTechnician
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - CargoTechnicianHead
   - CargoTechnicianJumpsuit
@@ -241,6 +257,7 @@
   id: JobSalvageSpecialist
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
@@ -255,6 +272,7 @@
   id: JobChiefEngineer
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - ChiefEngineerHead
   - ChiefEngineerJumpsuit
@@ -270,6 +288,7 @@
   id: JobTechnicalAssistant
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - TechnicalAssistantJumpsuit
   - StationEngineerBackpack
@@ -281,6 +300,7 @@
   id: JobStationEngineer
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - StationEngineerHead
   - StationEngineerJumpsuit
@@ -296,6 +316,7 @@
   id: JobAtmosphericTechnician
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
@@ -310,6 +331,7 @@
   id: JobResearchDirector
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - ResearchDirectorHead
   - ResearchDirectorNeck
@@ -327,6 +349,7 @@
   id: JobScientist
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - ScientistHead
   - ScientistNeck
@@ -345,6 +368,7 @@
   id: JobResearchAssistant
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - ResearchAssistantJumpsuit
   - ScientistBackpack
@@ -358,6 +382,7 @@
   id: JobHeadOfSecurity
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - HeadofSecurityHead
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
@@ -374,6 +399,7 @@
   id: JobWarden
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - WardenHead
   - WardenJumpsuit
   - SecurityBackpack
@@ -389,6 +415,7 @@
   id: JobSecurityOfficer
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - SecurityHead
   - SecurityJumpsuit
   - SecurityBackpack
@@ -405,6 +432,7 @@
   id: JobDetective
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - DetectiveHead
   - DetectiveNeck
@@ -421,6 +449,7 @@
   id: JobSecurityCadet
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - SecurityCadetJumpsuit
   - SecurityBackpack
   - SurvivalSecurity
@@ -432,6 +461,7 @@
   id: JobChiefMedicalOfficer
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - ChiefMedicalOfficerHead
   - MedicalMask
@@ -450,6 +480,7 @@
   id: JobMedicalDoctor
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - MedicalDoctorHead
   - MedicalMask
@@ -468,6 +499,7 @@
   id: JobMedicalIntern
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - MedicalInternJumpsuit
   - MedicalBackpack
@@ -480,6 +512,7 @@
   id: JobChemist
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - MedicalMask
   - ChemistJumpsuit
@@ -495,6 +528,7 @@
   id: JobParamedic
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - GroupTankHarness
   - ParamedicHead
   - MedicalMask
@@ -512,6 +546,7 @@
 - type: roleLoadout
   id: JobZookeeper
   groups:
+  - Underwears # Siberia-Loadouts
   - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - CommonBackpack
@@ -523,6 +558,7 @@
 - type: roleLoadout
   id: JobReporter
   groups:
+  - Underwears # Siberia-Loadouts
   - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - ReporterJumpsuit
@@ -535,6 +571,7 @@
 - type: roleLoadout
   id: JobPsychologist
   groups:
+  - Underwears # Siberia-Loadouts
   - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - PsychologistJumpsuit
@@ -547,6 +584,7 @@
 - type: roleLoadout
   id: JobBoxer
   groups:
+  - Underwears # Siberia-Loadouts
   - Inventory # Corvax-Loadouts
   - GroupTankHarness
   - BoxerJumpsuit

@@ -1,0 +1,327 @@
+# Top
+- type: loadout
+  id: ClothingUnderTopWhiteTShirt
+  equipment:
+    top: ClothingUnderTopWhiteTShirt
+
+- type: loadout
+  id: ClothingUnderTopSyndicate
+  equipment:
+    top: ClothingUnderTopSyndicate
+
+- type: loadout
+  id: ClothingUnderTopTactic
+  equipment:
+    top: ClothingUnderTopTactic
+
+- type: loadout
+  id: ClothingUnderTopDisco
+  equipment:
+    top: ClothingUnderTopDisco
+
+- type: loadout
+  id: ClothingUnderTopPink
+  equipment:
+    top: ClothingUnderTopPink
+
+- type: loadout
+  id: ClothingUnderTopSanta
+  equipment:
+    top: ClothingUnderTopSanta
+
+- type: loadout
+  id: ClothingUnderTopTigerFemale
+  equipment:
+    top: ClothingUnderTopTigerFemale
+
+- type: loadout
+  id: ClothingUnderTopGalaxy
+  equipment:
+    top: ClothingUnderTopGalaxy
+
+- type: loadout
+  id: ClothingBlackPiquantTop
+  equipment:
+    top: ClothingBlackPiquantTop
+
+- type: loadout
+  id: ClothingRedPiquantTop
+  equipment:
+    top: ClothingRedPiquantTop
+
+- type: loadout
+  id: ClothingPurplePiquantTop
+  equipment:
+    top: ClothingPurplePiquantTop
+
+- type: loadout
+  id: ClothingOrangePiquantTop
+  equipment:
+    top: ClothingOrangePiquantTop
+
+- type: loadout
+  id: ClothingBluePiquantTop
+  equipment:
+    top: ClothingBluePiquantTop
+
+- type: loadout
+  id: ClothingUnderTopNeko
+  equipment:
+    top: ClothingUnderTopNeko
+
+# Bottom
+- type: loadout
+  id: ClothingUnderBottomWhitePanties
+  equipment:
+    bottom: ClothingUnderBottomWhitePanties
+
+- type: loadout
+  id: ClothingUnderBottomBlackPanties
+  equipment:
+    bottom: ClothingUnderBottomBlackPanties
+
+- type: loadout
+  id: ClothingUnderBottomSyndicate
+  equipment:
+    bottom: ClothingUnderBottomSyndicate
+
+- type: loadout
+  id: ClothingUnderBottomTactic
+  equipment:
+    bottom: ClothingUnderBottomTactic
+
+- type: loadout
+  id: ClothingUnderBottomDisco
+  equipment:
+    bottom: ClothingUnderBottomDisco
+
+- type: loadout
+  id: ClothingUnderBottomPink
+  equipment:
+    bottom: ClothingUnderBottomPink
+
+- type: loadout
+  id: ClothingUnderBottomSanta
+  equipment:
+    bottom: ClothingUnderBottomSanta
+
+- type: loadout
+  id: ClothingBlackPiquantBottom
+  equipment:
+    bottom: ClothingBlackPiquantBottom
+
+- type: loadout
+  id: ClothingUnderBottomTigerFemale
+  equipment:
+    bottom: ClothingUnderBottomTigerFemale
+
+- type: loadout
+  id: ClothingUnderBottomGalaxy
+  equipment:
+    bottom: ClothingUnderBottomGalaxy
+
+- type: loadout
+  id: ClothingRedPiquantBottom
+  equipment:
+    bottom: ClothingRedPiquantBottom
+
+- type: loadout
+  id: ClothingPurplePiquantBottom
+  equipment:
+    bottom: ClothingPurplePiquantBottom
+
+- type: loadout
+  id: ClothingOrangePiquantBottom
+  equipment:
+    bottom: ClothingOrangePiquantBottom
+
+- type: loadout
+  id: ClothingBluePiquantBottom
+  equipment:
+    bottom: ClothingBluePiquantBottom
+
+- type: loadout
+  id: ClothingUnderBottomNeko
+  equipment:
+    bottom: ClothingUnderBottomNeko
+
+- type: loadout
+  id: ClothingUnderBottomBatya
+  equipment:
+    bottom: ClothingUnderBottomBatya
+
+- type: loadout
+  id: ClothingUnderBottomTiger
+  equipment:
+    bottom: ClothingUnderBottomTiger
+
+- type: loadout
+  id: ClothingUnderBottomHos
+  equipment:
+    bottom: ClothingUnderBottomHos
+
+- type: loadout
+  id: ClothingUnderBottomPantaloons
+  equipment:
+    bottom: ClothingUnderBottomPantaloons
+
+- type: loadout
+  id: ClothingUnderBottomPinkMan
+  equipment:
+    bottom: ClothingUnderBottomPinkMan
+
+- type: loadout
+  id: ClothingUnderBottomFlower
+  equipment:
+    bottom: ClothingUnderBottomFlower
+
+- type: loadout
+  id: ClothingBottomSailor
+  equipment:
+    bottom: ClothingBottomSailor
+
+- type: loadout
+  id: ClothingBottomSailorSpecial
+  equipment:
+    bottom: ClothingBottomSailorSpecial
+
+- type: loadout
+  id: ClothingBottomMice
+  equipment:
+    bottom: ClothingBottomMice
+
+- type: loadout
+  id: ClothingBottomElephant778
+  equipment:
+    bottom: ClothingBottomElephant778
+
+- type: loadout
+  id: ClothingBottomLether
+  equipment:
+    bottom: ClothingBottomLether
+
+- type: loadout
+  id: ClothingBottomZebra
+  equipment:
+    bottom: ClothingBottomZebra
+
+# Socks
+- type: loadout
+  id: ClothingUnderSocksNeko
+  equipment:
+    socks: ClothingUnderSocksNeko
+
+- type: loadout
+  id: ClothingUnderSocksPurple
+  equipment:
+    socks: ClothingUnderSocksPurple
+
+- type: loadout
+  id: ClothingUnderSocksRed
+  equipment:
+    socks: ClothingUnderSocksRed
+
+- type: loadout
+  id: ClothingUnderSocksMime
+  equipment:
+    socks: ClothingUnderSocksMime
+
+- type: loadout
+  id: ClothingUnderSocksPink
+  equipment:
+    socks: ClothingUnderSocksPink
+
+- type: loadout
+  id: ClothingUnderSocksBrown
+  equipment:
+    socks: ClothingUnderSocksBrown
+
+- type: loadout
+  id: ClothingUnderSocksBlue
+  equipment:
+    socks: ClothingUnderSocksBlue
+
+- type: loadout
+  id: ClothingUnderSocksGreen
+  equipment:
+    socks: ClothingUnderSocksGreen
+
+- type: loadout
+  id: ClothingUnderSocksBlack
+  equipment:
+    socks: ClothingUnderSocksBlack
+
+- type: loadout
+  id: ClothingUnderStockingsBrown
+  equipment:
+    socks: ClothingUnderStockingsBrown
+
+- type: loadout
+  id: ClothingUnderStockingsBlue
+  equipment:
+    socks: ClothingUnderStockingsBlue
+
+- type: loadout
+  id: ClothingUnderStockingsGreen
+  equipment:
+    socks: ClothingUnderStockingsGreen
+
+- type: loadout
+  id: ClothingUnderStockingsFlesh
+  equipment:
+    socks: ClothingUnderStockingsFlesh
+
+- type: loadout
+  id: ClothingUnderStockingsWhiteBlack
+  equipment:
+    socks: ClothingUnderStockingsWhiteBlack
+
+- type: loadout
+  id: ClothingUnderStockingsMesh
+  equipment:
+    socks: ClothingUnderStockingsMesh
+
+- type: loadout
+  id: ClothingUnderStockingsRed
+  equipment:
+    socks: ClothingUnderStockingsRed
+
+- type: loadout
+  id: ClothingUnderStockingsWhite
+  equipment:
+    socks: ClothingUnderStockingsWhite
+
+- type: loadout
+  id: ClothingUnderTightsBlack
+  equipment:
+    socks: ClothingUnderTightsBlack
+
+- type: loadout
+  id: ClothingUnderTightsBrown
+  equipment:
+    socks: ClothingUnderTightsBrown
+
+- type: loadout
+  id: ClothingUnderTightsBlue
+  equipment:
+    socks: ClothingUnderTightsBlue
+
+- type: loadout
+  id: ClothingUnderTightsGreen
+  equipment:
+    socks: ClothingUnderTightsGreen
+
+- type: loadout
+  id: ClothingUnderTightsFlesh
+  equipment:
+    socks: ClothingUnderTightsFlesh
+
+- type: loadout
+  id: ClothingUnderTightsRed
+  equipment:
+    socks: ClothingUnderTightsRed
+
+- type: loadout
+  id: ClothingUnderTightsWhite
+  equipment:
+    socks: ClothingUnderTightsWhite
