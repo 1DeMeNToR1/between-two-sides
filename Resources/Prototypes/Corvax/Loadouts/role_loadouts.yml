@@ -2,6 +2,7 @@
   id: JobIAA
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
@@ -13,6 +14,7 @@
   id: JobPilot
   groups:
   - Inventory # Corvax-Loadouts
+  - Underwears # Siberia-Loadouts
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing

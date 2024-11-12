@@ -1,4 +1,3 @@
-# Miscellaneous
 - type: loadoutGroup
   id: Trinkets
   name: loadout-group-trinkets
@@ -8,7 +7,6 @@
   - SpaceLaw # Corvax-HyperLink
   - FlowerWreath
   - Hairflower
-  - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
   - Lighter
@@ -43,24 +41,8 @@
   # Corvax-Loadouts-End
   # Siberia-Loadouts-Start
   - ClothingNeckSiberiaPin
+  - ClothingEyesBlindfoldFake
   # Siberia-Loadouts-End
-  - TowelColorBlack
-  - TowelColorDarkBlue
-  - TowelColorDarkGreen
-  - TowelColorGold
-  - TowelColorGray
-  - TowelColorGreen
-  - TowelColorLightBlue
-  - TowelColorLightBrown
-  - TowelColorMaroon
-  - TowelColorMime
-  - TowelColorOrange
-  - TowelColorPurple
-  - TowelColorRed
-  - TowelColorSilver
-  - TowelColorWhite
-  - TowelColorYellow
-
 - type: loadoutGroup
   id: Glasses
   name: loadout-group-glasses
