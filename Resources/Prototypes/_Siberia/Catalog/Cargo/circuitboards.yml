@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: ServerMachineCircuitboard
+  icon:
+    sprite: Objects/Misc/module.rsi
+    state: science
+  product: ResearchAndDevelopmentServerMachineCircuitboard
+  cost: 10000
+  category: cargoproduct-category-name-circuitboards
+  group: market

@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateServerMachineCircuitboard
+  parent: CrateScienceSecure
+  name: плата сервер РнД
+  description: Машинная плата для сервера РнД.
+  components:
+    - type: StorageFill
+      contents:
+        - id: ResearchAndDevelopmentServerMachineCircuitboard
+          amount: 1
