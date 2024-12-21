@@ -6,7 +6,8 @@
 
 - type: stationGoal
   id: Singularity
-  text: siberia-station-goal-singularity # Siberia-goals-locale
+  text: station-goal-singularity
+  minPlayers: 15
 
 - type: stationGoal
   id: SolarPanels
@@ -14,11 +15,13 @@
 
 - type: stationGoal
   id: Artifacts
-  text: siberia-station-goal-artifacts # Siberia-goals-locale
+  text: station-goal-artifacts
+  minPlayers: 15
 
 - type: stationGoal
   id: Bank
-  text: siberia-station-goal-bank # Siberia-goals-locale
+  text: station-goal-bank
+  minPlayers: 15
 
 - type: stationGoal
   id: Zoo
@@ -26,35 +29,43 @@
 
 - type: stationGoal
   id: MiningOutpost
-  text: siberia-station-goal-mining-outpost # Siberia-goals-locale
+  text: station-goal-mining-outpost
+  minPlayers: 15
 
 - type: stationGoal
   id: Tesla
-  text: siberia-station-goal-tesla # Siberia-goals-locale
+  text: station-goal-tesla
+  minPlayers: 15
 
 - type: stationGoal
   id: SecurityTraining
   text: station-goal-security
+  minPlayers: 15
 
 - type: stationGoal
   id: ShuttleMed
   text: station-goal-shuttle-med
+  minPlayers: 10
 
 - type: stationGoal
   id: ShuttleSec
   text: station-goal-shuttle-sec
+  minPlayers: 10
 
 - type: stationGoal
   id: ShuttleRnd
   text: station-goal-shuttle-rnd
+  minPlayers: 10
 
 - type: stationGoal
   id: ShuttleSrv
   text: station-goal-shuttle-srv
+  minPlayers: 10
 
 - type: stationGoal
   id: ShuttleEmergency
   text: station-goal-shuttle-emergency
+  minPlayers: 10
 
 - type: stationGoal
   id: Theatre
@@ -63,6 +74,7 @@
 - type: stationGoal
   id: CellAI
   text: station-goal-ai
+  minPlayers: 15
 
 - type: stationGoal
   id: Botany
@@ -71,6 +83,11 @@
 - type: stationGoal
   id: Bunker
   text: station-goal-bunker
+
+- type: stationGoal
+  id: Survive
+  text: station-goal-survive
+  maxPlayers: 40
 
 # Special goals
 - type: stationGoal
