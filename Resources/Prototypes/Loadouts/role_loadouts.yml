@@ -32,7 +32,7 @@
 # Silicons
 - type: roleLoadout
   id: JobStationAi
-  nameDataset: names_ai
+  nameDataset: NamesAI
 
 # Civilian
 - type: roleLoadout
@@ -433,7 +433,6 @@
   groups:
   - Inventory # Corvax-Loadouts
   - Underwears # Siberia-Loadouts
-  - GroupTankHarness
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit
