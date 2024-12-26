@@ -45,7 +45,7 @@ namespace Content.Server.Siberia.SwarmAdept
             if (!TryComp<HungerComponent>(uid, out var hunger))
                 return;
 
-            if (hunger.CurrentHunger < component.HungerPerArmyUse)
+            if (_hunger.GetHunger(hunger) < component.HungerPerArmyUse)
             {
                 _popup.PopupEntity(Loc.GetString("swarm-adept-low-energy"), uid, uid);
                 return;
@@ -71,7 +71,7 @@ namespace Content.Server.Siberia.SwarmAdept
                 return;
 
             //make sure the hunger doesn't go into the negatives
-            if (hunger.CurrentHunger < component.HungerPerDomainUse)
+            if (_hunger.GetHunger(hunger) < component.HungerPerDomainUse)
             {
                 _popup.PopupEntity(Loc.GetString("swarm-adept-low-energy"), uid, uid);
                 return;
