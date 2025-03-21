@@ -88,7 +88,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitAtmosEfim
   categories: [ HideSpawnMenu ]
   name: облегчённый скафандр атмоса

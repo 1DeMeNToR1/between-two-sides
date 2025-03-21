@@ -194,7 +194,7 @@
     clothingPrototype: ClothingHeadHelmetHardsuitBlueshield
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitBlueshield
   categories: [ HideSpawnMenu ]
   name: шлем скафандра офицера "Синий Щит"

@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitSecurityWarden
   categories: [ HideSpawnMenu ]
   name: шлем скафандра смотрителя
@@ -22,7 +22,7 @@
         Piercing: 0.8
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitEngineeringRndUpgraded
   categories: [ HideSpawnMenu ]
   name: шлем улучшенного инженерного скафандра
@@ -54,7 +54,7 @@
     - Biological
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitSecurityRndUpgraded
   name: шлем тяжелобронированного скафандра охраны
   categories: [ HideSpawnMenu ]
@@ -89,7 +89,7 @@
     protectionTime: 5
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitSecurityLightRndUpgraded
   name: шлем легкобронированного скафандра охраны
   categories: [ HideSpawnMenu ]
@@ -122,7 +122,7 @@
     protectionTime: 5
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitMedicalRndUpgraded
   name: улучшенный шлем скафандра медика
   categories: [ HideSpawnMenu ]
@@ -152,7 +152,7 @@
   - type: SolutionScanner
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitMiningRndUpgraded
   categories: [ HideSpawnMenu ]
   name: шлем улучшенного шахтёрского скафандра
@@ -210,7 +210,7 @@
     # - Pickaxe
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitRndBiologic
   name: шлем био скафандра VI
   categories: [ HideSpawnMenu ]

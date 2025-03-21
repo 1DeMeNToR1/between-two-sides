@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitSpatioUpgraded
   categories: [ HideSpawnMenu ]
   name: улучшенный лёгкий шлем скафандра утилизатора
