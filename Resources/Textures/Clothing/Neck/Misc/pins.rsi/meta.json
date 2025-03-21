@@ -22,6 +22,10 @@
             "directions": 4
         },
         {
+            "name": "aro-equipped-NECK-resomi",
+            "directions": 4
+        },
+        {
             "name": "aroace"
         },
         {
@@ -36,6 +40,10 @@
             "directions": 4
         },
         {
+            "name": "asex-equipped-NECK-resomi",
+            "directions": 4
+        },
+        {
             "name": "autism"
         },
         {
@@ -47,6 +55,10 @@
         },
         {
             "name": "bi-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "bi-equipped-NECK-resomi",
             "directions": 4
         },
         {
@@ -71,10 +83,18 @@
             "directions": 4
         },
         {
+            "name": "inter-equipped-NECK-resomi",
+            "directions": 4
+        },
+        {
             "name": "les"
         },
         {
             "name": "les-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "les-equipped-NECK-resomi",
             "directions": 4
         },
         {
@@ -85,10 +105,18 @@
             "directions": 4
         },
         {
+            "name": "lgbt-equipped-NECK-resomi",
+            "directions": 4
+        },
+        {
             "name": "non"
         },
         {
             "name": "non-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "non-equipped-NECK-resomi",
             "directions": 4
         },
         {
@@ -99,10 +127,18 @@
             "directions": 4
         },
         {
+            "name": "pan-equipped-NECK-resomi",
+            "directions": 4
+        },
+        {
             "name": "trans"
         },
         {
             "name": "trans-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "trans-equipped-NECK-resomi",
             "directions": 4
         },
         {
