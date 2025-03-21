@@ -85,7 +85,7 @@ namespace Content.Server.Connection
 
             _ipintel = new IPIntel.IPIntel(new IPIntelApi(_http, _cfg), _db, _cfg, _logManager, _chatManager, _gameTiming);
 
-            IoCManager.Instance!.TryResolveType(out _sponsorsMgr); // Corvax-Sponsors
+        //    IoCManager.Instance!.TryResolveType(out _sponsorsMgr); // Corvax-Sponsors
             _netMgr.Connecting += NetMgrOnConnecting;
             _netMgr.AssignUserIdCallback = AssignUserIdCallback;
             _plyMgr.PlayerStatusChanged += PlayerStatusChanged;
