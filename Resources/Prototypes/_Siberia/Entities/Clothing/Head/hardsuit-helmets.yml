@@ -9,6 +9,8 @@
     sprite: Siberia/Clothing/Head/Hardsuits/warden.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Head/Hardsuits/warden.rsi
+    slots:
+    - HEAD
   - type: PointLight
     color: "#ffef5a"
   - type: PressureProtection
@@ -32,6 +34,8 @@
   - type: Sprite
     sprite: Siberia/Clothing/Head/Hardsuits/engupgraded.rsi
   - type: Clothing
+    slots:
+    - HEAD
     sprite: Siberia/Clothing/Head/Hardsuits/engupgraded.rsi
   - type: PointLight
     color: "#ADFFF8"
@@ -65,6 +69,8 @@
     sprite: Siberia/Clothing/Head/Hardsuits/heavysecurity.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Head/Hardsuits/heavysecurity.rsi
+    slots:
+    - HEAD
   - type: PointLight
     color: "#CB736C"
     radius: 7
@@ -99,6 +105,8 @@
   - type: Sprite
     sprite: Siberia/Clothing/Head/Hardsuits/lightsecurity.rsi
   - type: Clothing
+    slots:
+    - HEAD
     sprite: Siberia/Clothing/Head/Hardsuits/lightsecurity.rsi
   - type: PointLight
     color: "#D04439"
@@ -132,6 +140,8 @@
   - type: Sprite
     sprite: Siberia/Clothing/Head/Hardsuits/medupgraded.rsi
   - type: Clothing
+    slots:
+    - HEAD
     sprite: Siberia/Clothing/Head/Hardsuits/medupgraded.rsi
   - type: PointLight
     color: "#D5ECF1"
@@ -163,6 +173,8 @@
     sprite: Siberia/Clothing/Head/Hardsuits/salvageupgraded.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Head/Hardsuits/salvageupgraded.rsi
+    slots:
+    - HEAD
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
@@ -221,6 +233,8 @@
     sprite: Siberia/Clothing/Head/Hardsuits/scienceupgraded.rsi
   - type: Clothing
     sprite: Siberia/Clothing/Head/Hardsuits/scienceupgraded.rsi
+    slots:
+    - HEAD
   - type: PointLight
     color: "#B008D9"
   - type: PressureProtection

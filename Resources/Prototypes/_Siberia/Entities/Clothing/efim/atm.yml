@@ -96,6 +96,8 @@
   - type: Sprite
     sprite: Siberia/Clothing/Atmos/atmhardsuithelm.rsi
   - type: Clothing
+    slots:
+    - HEAD
     sprite: Siberia/Clothing/Atmos/atmhardsuithelm.rsi
   - type: PointLight
     color: "#FFFFFF"

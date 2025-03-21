@@ -11,6 +11,8 @@
     - state: icon-flash
   - type: Clothing
     sprite: Siberia/Clothing/31_08/salvageupghelmet.rsi
+    slots:
+    - HEAD
     clothingVisuals:
       head:
       - state: off-equipped-HELMET

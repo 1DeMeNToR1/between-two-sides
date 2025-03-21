@@ -203,6 +203,8 @@
     sprite: Siberia/Roles/BlueShield/hardhelm.rsi
   - type: Clothing
     sprite: Siberia/Roles/BlueShield/hardhelm.rsi
+    slots:
+    - HEAD
   - type: PointLight
     color: "#ffeead"
   - type: PressureProtection
