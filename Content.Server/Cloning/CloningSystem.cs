@@ -1,39 +1,23 @@
-using Content.Server.Atmos.EntitySystems;
-using Content.Server.Chat.Systems;
-using Content.Server.Cloning.Components;
-using Content.Server.DeviceLinking.Systems;
-using Content.Server.EUI;
-using Content.Server.Fluids.EntitySystems;
 using Content.Server.Humanoid;
-using Content.Server.Jobs;
-using Content.Server.Materials;
-using Content.Server.Popups;
-using Content.Server.Power.EntitySystems;
-using Content.Shared.Atmos;
-using Content.Shared.CCVar;
-using Content.Shared.Chemistry.Components;
+using Content.Shared.Administration.Logs;
 using Content.Shared.Cloning;
-using Content.Shared.Damage;
-using Content.Shared.DeviceLinking.Events;
-using Content.Shared.Emag.Components;
-using Content.Shared.Emag.Systems;
-using Content.Shared.Examine;
-using Content.Shared.GameTicking;
+using Content.Shared.Cloning.Events;
+using Content.Shared.Database;
 using Content.Shared.Humanoid;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Roles.Jobs;
-using Content.Shared.Tag;
 using Robust.Server.Containers;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
-using Robust.Shared.Physics.Components;
+using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Random;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 
 namespace Content.Server.Cloning
 {
@@ -61,7 +45,6 @@ namespace Content.Server.Cloning
         [Dependency] private readonly SharedMindSystem _mindSystem = default!;
         [Dependency] private readonly MetaDataSystem _metaSystem = default!;
         [Dependency] private readonly SharedJobSystem _jobs = default!;
-        [Dependency] private readonly TagSystem _tags = default!;
 
         public readonly Dictionary<MindComponent, EntityUid> ClonesWaitingForMind = new();
         public const float EasyModeCloningCost = 0.7f;
@@ -87,52 +70,54 @@ namespace Content.Server.Cloning
 
         internal void TransferMindToClone(EntityUid mindId, MindComponent mind)
         {
-            if (!ClonesWaitingForMind.TryGetValue(mind, out var entity) ||
-                !EntityManager.EntityExists(entity) ||
-                !TryComp<MindContainerComponent>(entity, out var mindComp) ||
-                mindComp.Mind != null)
-                return;
-
-            _mindSystem.TransferTo(mindId, entity, ghostCheckOverride: true, mind: mind);
-            _mindSystem.UnVisit(mindId, mind);
-            ClonesWaitingForMind.Remove(mind);
-        }
-
-        private void HandleMindAdded(EntityUid uid, BeingClonedComponent clonedComponent, MindAddedMessage message)
-        {
-            if (clonedComponent.Parent == EntityUid.Invalid ||
-                !EntityManager.EntityExists(clonedComponent.Parent) ||
-                !TryComp<CloningPodComponent>(clonedComponent.Parent, out var cloningPodComponent) ||
-                uid != cloningPodComponent.BodyContainer.ContainedEntity)
+            if (!_componentFactory.TryGetRegistration(componentName, out var componentRegistration))
             {
-                EntityManager.RemoveComponent<BeingClonedComponent>(uid);
-                return;
+                Log.Error($"Tried to use invalid component registration for cloning: {componentName}");
+                continue;
             }
-            UpdateStatus(clonedComponent.Parent, CloningPodStatus.Cloning, cloningPodComponent);
-        }
 
-        private void OnPortDisconnected(EntityUid uid, CloningPodComponent pod, PortDisconnectedEvent args)
-        {
-            pod.ConnectedConsole = null;
-        }
-
-        private void OnAnchor(EntityUid uid, CloningPodComponent component, ref AnchorStateChangedEvent args)
-        {
-            if (component.ConnectedConsole == null || !TryComp<CloningConsoleComponent>(component.ConnectedConsole, out var console))
-                return;
-
-            if (args.Anchored)
+            if (EntityManager.TryGetComponent(original, componentRegistration.Type, out var sourceComp)) // Does the original have this component?
             {
-                _cloningConsoleSystem.RecheckConnections(component.ConnectedConsole.Value, uid, console.GeneticScanner, console);
-                return;
+                if (HasComp(clone.Value, componentRegistration.Type)) // CopyComp cannot overwrite existing components
+                    RemComp(clone.Value, componentRegistration.Type);
+                CopyComp(original, clone.Value, sourceComp);
             }
-            _cloningConsoleSystem.UpdateUserInterface(component.ConnectedConsole.Value, console);
         }
 
-        private void OnExamined(EntityUid uid, CloningPodComponent component, ExaminedEvent args)
-        {
-            if (!args.IsInDetailsRange || !_powerReceiverSystem.IsPowered(uid))
-                return;
+        var cloningEv = new CloningEvent(settings, clone.Value);
+        RaiseLocalEvent(original, ref cloningEv); // used for datafields that cannot be directly copied
+
+        // Add equipment first so that SetEntityName also renames the ID card.
+        if (settings.CopyEquipment != null)
+            CopyEquipment(original, clone.Value, settings.CopyEquipment.Value, settings.Whitelist, settings.Blacklist);
+
+        // Copy storage on the mob itself as well.
+        // This is needed for slime storage.
+        CopyStorage(original, clone.Value, settings.Whitelist, settings.Blacklist);
+
+        var originalName = Name(original);
+        if (TryComp<NameModifierComponent>(original, out var nameModComp)) // if the originals name was modified, use the unmodified name
+            originalName = nameModComp.BaseName;
+
+        // This will properly set the BaseName and EntityName for the clone.
+        // Adding the component first before renaming will make sure RefreshNameModifers is called.
+        // Without this the name would get reverted to Urist.
+        // If the clone has no name modifiers, NameModifierComponent will be removed again.
+        EnsureComp<NameModifierComponent>(clone.Value);
+        _metaData.SetEntityName(clone.Value, originalName);
+
+        _adminLogger.Add(LogType.Chat, LogImpact.Medium, $"The body of {original:player} was cloned as {clone.Value:player}");
+        return true;
+    }
+
+    /// <summary>
+    ///     Copies the equipment the original has to the clone.
+    ///     This uses the original prototype of the items, so any changes to components that are done after spawning are lost!
+    /// </summary>
+    public void CopyEquipment(Entity<InventoryComponent?> original, Entity<InventoryComponent?> clone, SlotFlags slotFlags, EntityWhitelist? whitelist = null, EntityWhitelist? blacklist = null)
+    {
+        if (!Resolve(original, ref original.Comp) || !Resolve(clone, ref clone.Comp))
+            return;
 
             args.PushMarkup(Loc.GetString("cloning-pod-biomass", ("number", _material.GetMaterialAmount(uid, component.RequiredMaterial))));
         }
@@ -177,19 +162,6 @@ namespace Content.Server.Cloning
 
             if (_configManager.GetCVar(CCVars.BiomassEasyMode))
                 cloningCost = (int) Math.Round(cloningCost * EasyModeCloningCost);
-            // Check if they have the uncloneable tag
-            if (_tags.HasTag(bodyToClone, "Unclonable"))
-            {
-                if (clonePod.ConnectedConsole != null)
-                {
-                    _chatSystem.TrySendInGameICMessage(clonePod.ConnectedConsole.Value,
-                        Loc.GetString("cloning-console-uncloneable-trait-error"),
-                        InGameICChatType.Speak,
-                        false);
-                }
-
-                return false;
-            }
 
             // biomass checks
             var biomassAmount = _material.GetMaterialAmount(uid, clonePod.RequiredMaterial);
@@ -304,56 +276,17 @@ namespace Content.Server.Cloning
             if (!Resolve(uid, ref clonePod))
                 return;
 
-            if (clonePod.BodyContainer.ContainedEntity is not { Valid: true } entity || clonePod.CloningProgress < clonePod.CloningTime)
-                return;
+        var coords = Transform(target).Coordinates;
 
-            EntityManager.RemoveComponent<BeingClonedComponent>(entity);
-            _containerSystem.Remove(entity, clonePod.BodyContainer);
-            clonePod.CloningProgress = 0f;
-            clonePod.UsedBiomass = 0;
-            UpdateStatus(uid, CloningPodStatus.Idle, clonePod);
-            RemCompDeferred<ActiveCloningPodComponent>(uid);
-        }
+        // delete all items in the target storage
+        _container.CleanContainer(target.Comp.Container);
 
-        private void EndFailedCloning(EntityUid uid, CloningPodComponent clonePod)
+        // recursively replace them
+        foreach ((var itemUid, var itemLocation) in original.Comp.StoredItems)
         {
-            clonePod.FailedClone = false;
-            clonePod.CloningProgress = 0f;
-            UpdateStatus(uid, CloningPodStatus.Idle, clonePod);
-            var transform = Transform(uid);
-            var indices = _transformSystem.GetGridTilePositionOrDefault((uid, transform));
-            var tileMix = _atmosphereSystem.GetTileMixture(transform.GridUid, null, indices, true);
-
-            if (HasComp<EmaggedComponent>(uid))
-            {
-                _audio.PlayPvs(clonePod.ScreamSound, uid);
-                Spawn(clonePod.MobSpawnId, transform.Coordinates);
-            }
-
-            Solution bloodSolution = new();
-
-            var i = 0;
-            while (i < 1)
-            {
-                tileMix?.AdjustMoles(Gas.Ammonia, 6f);
-                bloodSolution.AddReagent("Blood", 50);
-                if (_robustRandom.Prob(0.2f))
-                    i++;
-            }
-            _puddleSystem.TrySpillAt(uid, bloodSolution, out _);
-
-            if (!HasComp<EmaggedComponent>(uid))
-            {
-                _material.SpawnMultipleFromMaterial(_robustRandom.Next(1, (int) (clonePod.UsedBiomass / 2.5)), clonePod.RequiredMaterial, Transform(uid).Coordinates);
-            }
-
-            clonePod.UsedBiomass = 0;
-            RemCompDeferred<ActiveCloningPodComponent>(uid);
-        }
-
-        public void Reset(RoundRestartCleanupEvent ev)
-        {
-            ClonesWaitingForMind.Clear();
+            var copy = CopyItem(itemUid, coords, whitelist, blacklist);
+            if (copy != null)
+                _storage.InsertAt(target, copy.Value, itemLocation, out _, playSound: false);
         }
     }
 }

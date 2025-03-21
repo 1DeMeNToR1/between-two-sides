@@ -9,9 +9,11 @@
     DrinkLemonLimeCan: 2
     DrinkLemonLimeCranberryCan: 2
     DrinkFourteenLokoCan: 2
-    # Siberia custom
+    # Siberia-changes-start
     DrinkSpaceEnergyCan: 2
-    # /Siberia custom
+    # Siberia-changes-stop
+  contrabandInventory:
+    DrinkChangelingStingCan: 2
   emaggedInventory:
     DrinkNukieCan: 2
     DrinkChangelingStingCan: 2

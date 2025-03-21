@@ -36,6 +36,10 @@
     damage:
       groups:
         Burn: -10
+  - type: GuideHelp
+    guides:
+    - VoltageNetworks
+    - Power
 
 - type: entity
   id: CableHVStack
