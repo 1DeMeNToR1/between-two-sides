@@ -1,7 +1,8 @@
 - type: latheRecipe
   id: EngineeringUpgradedHardsuit
   result: RndBriefcaseEngihardsuit
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 60
   materials:
     Steel: 2000
@@ -15,7 +16,8 @@
 - type: latheRecipe
   id: SecurityHeavyUpgradedHardsuit
   result: RndBriefcaseSecurityHeavysuit
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 60
   materials:
     Steel: 3000
@@ -29,7 +31,8 @@
 - type: latheRecipe
   id: SecurityLightUpgradedHardsuit
   result: RndBriefcaseSecurityLightsuit
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 60
   materials:
     Steel: 1500
@@ -43,7 +46,8 @@
 - type: latheRecipe
   id: ResearchUpgradedHardsuit
   result: RndBriefcaseResearchhardsuit
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 60
   materials:
     Steel: 3000
@@ -57,7 +61,8 @@
 - type: latheRecipe
   id: SalvageUpgradedHardsuit
   result: RndBriefcaseSalvagehardsuit
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 60
   materials:
     Steel: 3000
@@ -71,7 +76,8 @@
 - type: latheRecipe
   id: MedicalUpgradedHardsuit
   result: RndBriefcaseMedicalhardsuit
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 60
   materials:
     Steel: 1000
@@ -85,7 +91,8 @@
 - type: latheRecipe
   id: HealgunRecipe
   result: WeaponHealgun
-  category: Tools
+  categories:
+  - Tools
   completetime: 20
   materials:
     Steel: 500
@@ -99,7 +106,8 @@
 - type: latheRecipe
   id: MedicalFuelpackIPC
   result: FuelpackIPC
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 4
   materials:
     Steel: 100
@@ -109,7 +117,8 @@
 - type: latheRecipe
   id: MedicalGauzeIPC
   result: GauzeIPC
-  category: Robotics
+  categories:
+  - Robotics
   completetime: 4
   materials:
     Steel: 300
