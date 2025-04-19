@@ -97,10 +97,8 @@
   - type: Lathe
     idleState: factory
     runningState: factory
-    staticRecipes:
-      - SwarmbotBuilder
-      - SwarmbotGuard
-      - SwarmbotHealer
+    staticPacks:
+      - SwarmBot
   - type: ResearchClient
   - type: TechnologyDatabase
   - type: ApcPowerReceiver
