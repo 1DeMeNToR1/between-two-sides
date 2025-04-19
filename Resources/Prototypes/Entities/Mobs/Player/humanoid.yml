@@ -14,6 +14,14 @@
     - type: MindShield
     - type: AntagImmune
 
+- type: randomHumanoidSettings
+  id: EventHumanoidCentcomm
+  parent: EventHumanoidMindShielded
+  components:
+  - type: AutoImplant
+    implants:
+    - DeathRattleImplantCentcomm
+
 ## Death Squad
 
 - type: entity
@@ -33,7 +41,7 @@
 
 - type: randomHumanoidSettings
   id: DeathSquad
-  parent: EventHumanoidMindShielded
+  parent: EventHumanoidCentcomm
   randomizeName: false
   speciesBlacklist: ['Diona', 'Resomi'] # Corvax-Siberia-MRP
   components:
@@ -73,7 +81,7 @@
 
 - type: randomHumanoidSettings
   id: ERTLeader
-  parent: EventHumanoidMindShielded
+  parent: EventHumanoidCentcomm
   randomizeName: false
   speciesBlacklist: ['Resomi'] # Siberia-MRP
   components:
@@ -509,7 +517,7 @@
     - Diona
     - Resomi # Siberia-MRP
   id: CBURNAgent
-  parent: EventHumanoidMindShielded
+  parent: EventHumanoidCentcomm
   components:
     - type: Loadout
       prototypes: [CBURNGear]
@@ -539,7 +547,7 @@
 
 - type: randomHumanoidSettings
   id: CentcomOfficial
-  parent: EventHumanoidMindShielded
+  parent: EventHumanoidCentcomm
   speciesBlacklist: ['Resomi'] # Siberia-MRP
   components:
     - type: GhostRole

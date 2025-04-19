@@ -15,13 +15,13 @@
     ClothingOuterWinterMiner: 2
     ClothingNeckScarfStripedBrown: 3
     ClothingShoesBootsWinterCargo: 2
-    # Siberia changes start
-    # I don't understand this change, it's not my idea
+    # Siberia-changes-start
     ClothingBackpackSalvage: 3
     ClothingBackpackSatchelSalvage: 3
     ClothingBackpackDuffelSalvage: 3
     ClothingShoesBootsSalvage: 3
-    # Siberia changes end
+    # Siberia-changes-end
+    MailBag: 2
   contrabandInventory:
     ToyFigurineCargoTech: 1
     ToyFigurineSalvage: 1
