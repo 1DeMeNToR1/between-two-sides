@@ -44,7 +44,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieChirno
-  name: Фумо Чирно
+  name: фумо Чирно
   description: Дура! Дура!
   components:
   - type: Sprite
@@ -54,7 +54,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieFlandre
-  name: Фумо Фландре
+  name: фумо Фландре
   description: Давай сыграем, милая птичка
   components:
   - type: Sprite
@@ -64,7 +64,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieMarisa
-  name: Фумо Мариса
+  name: фумо Мариса
   description: Я "одолжу" это
   components:
   - type: Sprite
@@ -74,7 +74,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieMeiling
-  name: Фумо Мейлин
+  name: фумо Мейлин
   description: Почему так хочется спать?
   components:
   - type: Sprite
@@ -84,7 +84,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushiePatchuli
-  name: Фумо Пачули
+  name: фумо Пачули
   description: Тишина в библиотеке!
   components:
   - type: Sprite
@@ -94,7 +94,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieReimu
-  name: Фумо Рейму
+  name: фумо Рейму
   description: Слово саке и слово смерть означает для вас одно и тоже
   components:
   - type: Sprite
@@ -104,7 +104,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieRemilia
-  name: Фумо Ремилия
+  name: фумо Ремилия
   description: Позволь испить твоей крови
   components:
   - type: Sprite
@@ -114,7 +114,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieSakuya
-  name: Фумо Сакуя
+  name: фумо Сакуя
   description: Za Warudo!
   components:
   - type: Sprite
@@ -124,7 +124,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieYomu
-  name: Фумо Ёму
+  name: фумо Ёму
   description: Я наполовину счастлива быть "половинкой" призрака!
   components:
   - type: Sprite
@@ -134,7 +134,7 @@
 - type: entity
   parent: BasePlushie
   id: FumoSuika
-  name: Фумо Суйка
+  name: фумо Суйка
   description: Я так хочу пить!
   components:
   - type: Sprite
@@ -154,7 +154,7 @@
 - type: entity
   parent: BasePlushie
   id: PlushieNutra
-  name: Плюшевая Нутра
+  name: плюшевая Нутра
   description: Плюшевая унатха в должности утилизатора, для поднятия морального духа самим рабочим карго.
   components:
   - type: Sprite
@@ -266,8 +266,8 @@
 - type: entity
   parent: BasePlushie
   id: PlusheLasarhos
-  name: Игрушка Лазарь.
-  description: Какой он важный!
+  name: игрушка главы службы безопасности
+  description: Плюшевая игрушка главы службы безопасности.
   components:
   - type: Sprite
     sprite: Siberia/Objects/Toy/plushie_lazar.rsi
@@ -276,8 +276,8 @@
 - type: entity
   parent: BasePlushie
   id: PlusheLazarusmedic
-  name: Игрушка Лазарь.
-  description: Какой он важный!
+  name: игрушка медика
+  description: Плюшевая игрушка настоящего медика.
   components:
   - type: Sprite
     sprite: Siberia/Objects/Toy/plushie_lazar.rsi
@@ -286,8 +286,8 @@
 - type: entity
   parent: BasePlushie
   id: PlusheLazarusvirus
-  name: Игрушка Лазарь.
-  description: Какой он важный!
+  name: игрушка вирусолога
+  description: Плюшевая игрушка настоящего вирусолога.
   components:
   - type: Sprite
     sprite: Siberia/Objects/Toy/plushie_lazar.rsi
@@ -296,8 +296,8 @@
 - type: entity
   parent: BasePlushie
   id: PlusheLazarussurgeon
-  name: Игрушка Лазарь.
-  description: Какой он важный!
+  name: игрушка настоящего хирурга
+  description: Плюшевая игрушка настоящего хирурга.
   components:
   - type: Sprite
     sprite: Siberia/Objects/Toy/plushie_lazar.rsi
@@ -306,8 +306,8 @@
 - type: entity
   parent: BasePlushie
   id: PlusheLazaruscmo
-  name: Игрушка Лазарь.
-  description: Какой он важный!
+  name: игрушка главного врача
+  description: Плюшевая игрушка настоящего главного врача.
   components:
   - type: Sprite
     sprite: Siberia/Objects/Toy/plushie_lazar.rsi
