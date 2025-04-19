@@ -226,7 +226,6 @@
   components:
   - type: Pda
     id: BlueshieldIDCard
-    state: pda-bartender
   - type: PdaBorderColor
     borderColor: "#333333"
   - type: Icon

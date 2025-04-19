@@ -85,7 +85,6 @@
   components:
   - type: Pda
     id: ExpeditorIDCard
-    state: pda-expeditor
   - type: PdaBorderColor
     borderColor: "#D44B21"
   - type: Icon
