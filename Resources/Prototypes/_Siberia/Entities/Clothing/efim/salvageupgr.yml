@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitSpatioUpgraded
   categories: [ HideSpawnMenu ]
   name: улучшенный лёгкий шлем скафандра утилизатора
@@ -11,6 +11,8 @@
     - state: icon-flash
   - type: Clothing
     sprite: Siberia/Clothing/31_08/salvageupghelmet.rsi
+    slots:
+    - HEAD
     clothingVisuals:
       head:
       - state: off-equipped-HELMET

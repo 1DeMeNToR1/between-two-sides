@@ -3,7 +3,7 @@
   mapName: 'Omega'
   mapPath: /Maps/Siberia/siberiaomega.yml
   maxRandomOffset: 0
-  randomRotation: false  
+  randomRotation: false
   minPlayers: 0
   maxPlayers: 35
   stations:
@@ -16,7 +16,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'TG'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/corvax_emergency.yml # Corvax-EmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml
         - type: StationJobs
           availableJobs:
             #service

@@ -17,8 +17,11 @@
     ClothingHandsGlovesColorBlack: 2
     ClothingHandsGlovesLatex: 2
     ClothingHeadsetSecurity: 2
-    #Siberia
+    # Siberia-changes-start
     FishkaBag: 3
     ClothingBackpackSatchelLeather: 2
     ClothingShoesBootsLaceup: 2
     ClothingNeckTieRed: 2
+    # Siberia-changes-stop
+  contrabandInventory:
+    ToyFigurineDetective: 1

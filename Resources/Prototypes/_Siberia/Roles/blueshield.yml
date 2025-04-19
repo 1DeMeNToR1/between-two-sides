@@ -194,7 +194,7 @@
     clothingPrototype: ClothingHeadHelmetHardsuitBlueshield
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitBlueshield
   categories: [ HideSpawnMenu ]
   name: шлем скафандра офицера "Синий Щит"
@@ -203,6 +203,8 @@
     sprite: Siberia/Roles/BlueShield/hardhelm.rsi
   - type: Clothing
     sprite: Siberia/Roles/BlueShield/hardhelm.rsi
+    slots:
+    - HEAD
   - type: PointLight
     color: "#ffeead"
   - type: PressureProtection
@@ -224,7 +226,6 @@
   components:
   - type: Pda
     id: BlueshieldIDCard
-    state: pda-bartender
   - type: PdaBorderColor
     borderColor: "#333333"
   - type: Icon

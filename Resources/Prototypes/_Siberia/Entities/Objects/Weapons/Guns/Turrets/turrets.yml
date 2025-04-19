@@ -171,7 +171,8 @@
 - type: latheRecipe
   id: RndBriefcaseLaserTurret
   result: RndBriefcaseLaserTurret
-  category: Weapons
+  categories:
+  - Weapons
   completetime: 4
   materials:
     Steel: 1500

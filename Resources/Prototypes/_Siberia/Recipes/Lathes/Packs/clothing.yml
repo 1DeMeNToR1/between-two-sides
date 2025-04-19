@@ -1,0 +1,15 @@
+## Static
+
+
+
+## Dynamic
+
+- type: latheRecipePack
+  id: UpgradedHardsuit
+  recipes:
+  - EngineeringUpgradedHardsuit
+  - SecurityHeavyUpgradedHardsuit
+  - SecurityLightUpgradedHardsuit
+  - ResearchUpgradedHardsuit
+  - SalvageUpgradedHardsuit
+  - MedicalUpgradedHardsuit

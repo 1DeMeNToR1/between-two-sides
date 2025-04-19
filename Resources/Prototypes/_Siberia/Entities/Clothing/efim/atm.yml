@@ -88,7 +88,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: ClothingHeadSuitWithLightBase
   id: ClothingHeadHelmetHardsuitAtmosEfim
   categories: [ HideSpawnMenu ]
   name: облегчённый скафандр атмоса
@@ -96,6 +96,8 @@
   - type: Sprite
     sprite: Siberia/Clothing/Atmos/atmhardsuithelm.rsi
   - type: Clothing
+    slots:
+    - HEAD
     sprite: Siberia/Clothing/Atmos/atmhardsuithelm.rsi
   - type: PointLight
     color: "#FFFFFF"

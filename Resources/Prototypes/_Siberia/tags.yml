@@ -78,10 +78,6 @@
 - type: Tag
   id: MaterialGoliathHide
 
-# Hardsuit
-- type: Tag
-  id: HardsuitSpatio
-
 # IPC
 - type: Tag
   id: IPCWearable
