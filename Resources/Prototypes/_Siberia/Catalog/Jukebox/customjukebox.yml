@@ -1,0 +1,65 @@
+- type: jukebox
+  id: Brandy
+  name: Brandy
+  path:
+    path: /Audio/Siberia/Jukebox/Brandy.ogg
+
+- type: jukebox
+  id: ComeALittleBitCloser
+  name: Come A Little Bit Closer
+  path:
+    path: /Audio/Siberia/Jukebox/ComeALittleBitCloser.ogg
+
+- type: jukebox
+  id: FatherAndSon
+  name: Father & Son
+  path:
+    path: /Audio/Siberia/Jukebox/FatherAndSon.ogg
+
+- type: jukebox
+  id: FlashLight
+  name: Flash Light
+  path:
+    path: /Audio/Siberia/Jukebox/FlashLight.ogg
+
+- type: jukebox
+  id: FlyMeToTheMoon
+  name: Fly Me To The Moon
+  path:
+    path: /Audio/Siberia/Jukebox/FlyMeToTheMoon.ogg
+
+- type: jukebox
+  id: LetsGroove
+  name: Lets Groove
+  path:
+    path: /Audio/Siberia/Jukebox/LetsGroove.ogg
+
+- type: jukebox
+  id: Sinceyoubeengone
+  name: Since you been gone
+  path:
+    path: /Audio/Siberia/Jukebox/Sinceyoubeengone.ogg
+
+- type: jukebox
+  id: SouthernNights
+  name: Southern Nights
+  path:
+    path: /Audio/Siberia/Jukebox/SouthernNights.ogg
+
+- type: jukebox
+  id: TheCrystalShip
+  name: The Crystal Ship
+  path:
+    path: /Audio/Siberia/Jukebox/TheCrystalShip.ogg
+
+- type: jukebox
+  id: The Pina Colada song
+  name: The Pina Colada
+  path:
+    path: /Audio/Siberia/Jukebox/ThePinaColadasong.ogg
+
+- type: jukebox
+  id: WhamBamShang-A-Lang
+  name: Wham Bam Shang-A-Lang
+  path:
+    path: /Audio/Siberia/Jukebox/WhamBamShang-A-Lang.ogg
