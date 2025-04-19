@@ -207,14 +207,6 @@
     - Instruments
     - Equipment
     - FauxTiles
-    - PinpointerAnomaly # Siberia-change
-    - BlueSpacePillCanister # Siberia-change
-    - AdvancedAtmosHoloprojector # Siberia-change
-    - AdvancedSecurityHoloprojector # Siberia-change
-    - HealgunRecipe # Siberia-change
-    - AdvancedAtmosHoloprojector # Siberia-change
-    - AdvancedSecurityHoloprojector # Siberia-change
-    - RndBriefcaseLaserTurret # Siberia-change
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
@@ -318,30 +310,14 @@
     - RoboticsStatic
     - BorgModulesStatic
     - BorgLimbsStatic
-    - MedicalFuelpackIPC # Siberia-change
-    - MedicalGauzeIPC # Siberia-change
+    - MedicalIPC # Siberia-change
     dynamicPacks:
     - Robotics
     - BorgModules
     - MechParts
     - MechEquipment
-    - EngineeringUpgradedHardsuit # Siberia-change
-    - SecurityHeavyUpgradedHardsuit # Siberia-change
-    - SecurityLightUpgradedHardsuit # Siberia-change
-    - ResearchUpgradedHardsuit # Siberia-change
-    - SalvageUpgradedHardsuit # Siberia-change
-    - MedicalUpgradedHardsuit # Siberia-change
-    - IPCUpgradeMedHudRecipe # Siberia-change
-    - IPCUpgradeSecHudRecipe # Siberia-change
-    - IPCUpgradeDiagnosticHudRecipe # Siberia-change
-    - IPCUpgradeServiceHudRecipe # Siberia-change
-    - IPCUpgradeMultiHudRecipe # Siberia-change
-    - IPCUpgradeArmorRecipe # Siberia-change
-    - IPCUpgradeSpeedRecipe # Siberia-change
-    - IPCUpgradeStorageRecipe # Siberia-change
-    - IPCUpgradeInstrumentsRecipe # Siberia-change
-    - IPCUpgradeMicrowaveRecipe # Siberia-change
-    - IPCUpgradeDispenserRecipe # Siberia-change
+    - UpgradedHardsuit # Siberia-change
+    - IPCUpgrade # Siberia-change
   - type: MaterialStorage
     whitelist:
       tags:
@@ -427,7 +403,6 @@
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
-    - Mk85L # Siberia-change
   - type: MaterialStorage
     whitelist:
       tags:

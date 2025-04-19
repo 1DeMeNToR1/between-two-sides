@@ -1,0 +1,24 @@
+## Static
+
+- type: latheRecipePack
+  id: MedicalIPC
+  recipes:
+  - MedicalFuelpackIPC
+  - MedicalGauzeIPC
+
+## Dynamic
+
+- type: latheRecipePack
+  id: IPCUpgrade
+  recipes:
+  - IPCUpgradeMedHudRecipe
+  - IPCUpgradeSecHudRecipe
+  - IPCUpgradeDiagnosticHudRecipe
+  - IPCUpgradeServiceHudRecipe
+  - IPCUpgradeMultiHudRecipe
+  - IPCUpgradeArmorRecipe
+  - IPCUpgradeSpeedRecipe
+  - IPCUpgradeStorageRecipe
+  - IPCUpgradeInstrumentsRecipe
+  - IPCUpgradeMicrowaveRecipe
+  - IPCUpgradeDispenserRecipe

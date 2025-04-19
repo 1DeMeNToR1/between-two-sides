@@ -127,6 +127,7 @@
   - WeaponLaserCannon
   - WeaponLaserCarbine
   - WeaponXrayCannon
+  - Mk85L # Siberia-change
 
 - type: latheRecipePack
   id: SecurityDisablers

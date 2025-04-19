@@ -92,6 +92,8 @@
   - SyringeCryostasis
   - BluespaceBeaker
   - SyringeBluespace
+  - BlueSpacePillCanister # Siberia-change
+  - HealgunRecipe # Siberia-change
 
 - type: latheRecipePack
   id: MedicalBoards

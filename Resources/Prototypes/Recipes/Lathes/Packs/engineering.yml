@@ -65,6 +65,7 @@
   id: AtmosTools
   recipes:
   - HolofanProjector
+  - AdvancedAtmosHoloprojector # Siberia-change
 
 - type: latheRecipePack
   id: EngineeringWeapons
