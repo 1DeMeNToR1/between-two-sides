@@ -337,3 +337,13 @@
   - type: EmitSoundOnTrigger
     sound:
       collection: ToySqueak
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieScience
+  name: игрушка ученого
+  description: Плюшевая игрушка ученого.
+  components:
+  - type: Sprite
+    sprite: Siberia/Objects/Toy/plushie_science.rsi
+    state: plushie-science
