@@ -9,6 +9,7 @@
       - ClothMade
       - Paper
       - Fruit # Siberia-change
+      - Pill
   - type: SolutionContainerManager
     solutions:
       stomach:
