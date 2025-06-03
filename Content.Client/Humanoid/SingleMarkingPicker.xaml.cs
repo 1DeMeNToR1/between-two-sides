@@ -199,8 +199,8 @@ public sealed partial class SingleMarkingPicker : BoxContainer
             var item = MarkingList.AddItem(Loc.GetString($"marking-{id}"), _sprite.Frame0(marking.Sprites[0]));
             item.Metadata = marking.ID;
             // Corvax-Sponsors-Start
-            if (marking.SponsorOnly && _siberiaSponsorsManager.TryGetInfo(out var sponsor))
-                item.Disabled = !sponsor.AllowedMarkings.Contains(marking.ID);
+            if (marking.SponsorOnly && _siberiaSponsorsManager != null)
+                item.Disabled = !_siberiaSponsorsManager.GetClientPrototypes().Contains(marking.ID);
             // Corvax-Sponsors-End
 
             if (_markings[Slot].MarkingId == id)
