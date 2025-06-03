@@ -77,6 +77,7 @@ namespace Content.IntegrationTests.Tests
             "CorvaxTushkan",
             "CorvaxGlacier",
             "CorvaxAwesome",
+			"CorvaxChloris",
             // Corvax-End
             "Dev",
             "TestTeg",
@@ -100,7 +101,9 @@ namespace Content.IntegrationTests.Tests
             "Plasma",
             "Elkridge",
             "Convex",
-            "Relic"
+            "Relic",
+            "dm01-entryway"
+
         };
 
         /// <summary>
