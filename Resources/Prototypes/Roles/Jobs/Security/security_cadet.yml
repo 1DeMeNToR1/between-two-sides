@@ -6,6 +6,10 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 36000 #10 hrs Siberia-RoleTime
+    - !type:TraitsRequirement #Corvax-TraitsRequirement
+      inverted: true
+      traits:
+      - Muted
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security

@@ -482,6 +482,7 @@
         - MagazineMagnum
         - CombatKnife
         - Truncheon
+        - HandGrenade
       components:
         - AdvHolofan # Siberia-change
         - Stunbaton
@@ -658,7 +659,7 @@
   - type: Clothing
     sprite: Clothing/Belt/militarywebbing.rsi
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.1
 
 - type: entity
   parent: ClothingBeltMilitaryWebbing

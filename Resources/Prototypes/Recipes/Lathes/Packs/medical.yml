@@ -15,6 +15,7 @@
   - Syringe
   - PillCanister
   - HandLabeler
+  - BaseChemistryEmptyVial
 
 - type: latheRecipePack
   parent: BasicChemistryStatic
@@ -94,6 +95,8 @@
   - SyringeBluespace
   - BlueSpacePillCanister # Siberia-change
   - HealgunRecipe # Siberia-change
+  - LauncherSyringe
+  - MiniSyringe
 
 - type: latheRecipePack
   id: MedicalBoards
