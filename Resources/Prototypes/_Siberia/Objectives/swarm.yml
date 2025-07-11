@@ -8,8 +8,7 @@
     issuer: objective-issuer-swarm
   - type: RoleRequirement
     roles:
-      components:
-      - DragonRole
+    - DragonRole
 
 - type: entity
   categories: [ HideSpawnMenu ]
