@@ -1,4 +1,5 @@
 using Content.Shared.Actions;
+using Content.Shared.Actions.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
@@ -9,8 +10,6 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
-
-
 
 namespace Content.Shared.Siberia.SwarmAdept;
 
@@ -57,12 +56,13 @@ public abstract class SharedSwarmAdeptSystem : EntitySystem
 
         if (!TryComp(uid, out ActionsComponent? comp))
             return;
-        // TODO: Заменить ActionGrantComponent компонентом.
-        _action.RemoveAction(uid, component.ActionRaiseArmyEntity, comp);
-        _action.RemoveAction(uid, component.ActionDomainEntity, comp);
-        _action.RemoveAction(uid, component.ActionOrderStayEntity, comp);
-        _action.RemoveAction(uid, component.ActionOrderFollowEntity, comp);
-        _action.RemoveAction(uid, component.ActionOrderLooseEntity, comp);
+
+        var actions = new Entity<ActionsComponent?>(uid, comp);
+        _action.RemoveAction(actions, component.ActionRaiseArmyEntity);
+        _action.RemoveAction(actions, component.ActionDomainEntity);
+        _action.RemoveAction(actions, component.ActionOrderStayEntity);
+        _action.RemoveAction(actions, component.ActionOrderFollowEntity);
+        _action.RemoveAction(actions, component.ActionOrderLooseEntity);
     }
 
     private void OnOrderAction(EntityUid uid, SwarmAdeptComponent component, SwarmAdeptOrderActionEvent args)
