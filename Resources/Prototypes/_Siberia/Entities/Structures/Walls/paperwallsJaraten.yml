@@ -76,16 +76,13 @@
 
 
 - type: construction
-  name: Укреплённый деревянный стол
+  name: table-wood-reinforced-name
   id: TableWoodReinforced
   graph: Table
   startNode: start
   targetNode: TableWoodReinforced
   category: construction-category-furniture
-  description: Квадратный кусок дерева, стоящий на четырех металлических ножках. Очень прочный.
-  icon:
-    sprite: Siberia/Nyanotrasen/rwood.rsi
-    state: full
+  description: table-wood-reinforced-description
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
