@@ -15,16 +15,16 @@
   description: почему он светится?
   components:
   - type: Sprite
-    sprite: Objects/Fun/toys.rsi
-    state: orb
+    sprite: Objects/Fun/pondering_orb.rsi
+    state: icon
     shader: unshaded
   - type: PointLight
     radius: 2
     color: "#00CCFF"
   - type: Item
     size: Huge
-    sprite: Objects/Fun/toys.rsi
-    heldPrefix: orb
+    sprite: Objects/Fun/pondering_orb.rsi
+    heldPrefix: icon
   - canCollide: False
     type: Physics
   - slope: 0.4

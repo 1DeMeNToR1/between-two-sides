@@ -1,8 +1,8 @@
 - type: cargoProduct
   id: FunSportInventory
   icon:
-    sprite: Objects/Fun/toys.rsi
-    state: basketball
+    sprite: Objects/Fun/Balls/basketball.rsi
+    state: icon
   product: CrateFunSport
   cost: 4000
   category: Fun
