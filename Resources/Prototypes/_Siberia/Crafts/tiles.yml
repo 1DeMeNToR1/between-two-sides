@@ -1,299 +1,269 @@
 - type: construction
-  name: алмазная плитка
+  name: craft-tile-construction-diamond
   id: FloorTileItemMetalDiamondSiberiaCraft
   graph: FloorTileItemMetalDiamond
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: metaldiamond }
   objectType: Item
 
 - type: construction
-  name: решётка технических тоннелей
+  name: craft-tile-construction-techmaint
   id: FloorTileItemTechmaintSiberiaCraft
   graph: FloorTileItemTechmaint
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: techfloor }
   objectType: Item
 
 - type: construction
-  name: укреплённая плитка
+  name: craft-tile-construction-reinforced
   id: FloorTileItemReinforcedSiberiaCraft
   graph: FloorTileItemReinforced
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: reinforced }
   objectType: Item
 
 - type: construction
-  name: моно плитка
+  name: craft-tile-construction-mono
   id: FloorTileItemMonoSiberiaCraft
   graph: FloorTileItemMono
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: monofloor }
   objectType: Item
 
 - type: construction
-  name: линолеум
+  name: craft-tile-construction-linoleum
   id: FloorTileItemLinoSiberiaCraft
   graph: FloorTileItemLino
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: lino }
   objectType: Item
 
 - type: construction
-  name: пол хранилища
+  name: craft-tile-construction-vault-rock
   id: FloorTileItemRockVaultSiberiaCraft
   graph: FloorTileItemRockVault
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: rockvault }
   objectType: Item
 
 - type: construction
-  name: голубая плитка
+  name: craft-tile-construction-blue
   id: FloorTileItemBlueSiberiaCraft
   graph: FloorTileItemBlue
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: blue }
   objectType: Item
 
 - type: construction
-  name: плитка холодильника
+  name: craft-tile-construction-freezer
   id: FloorTileItemFreezerSiberiaCraft
   graph: FloorTileItemFreezer
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: showroom }
   objectType: Item
 
 - type: construction
-  name: плитка зала
+  name: craft-tile-construction-showroom
   id: FloorTileItemShowroomSiberia
   graph: FloorTileItemShowroom
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: showroom }
   objectType: Item
 
 - type: construction
-  name: гидро плитка
+  name: craft-tile-construction-hydro
   id: FloorTileItemHydroSiberiaCraft
   graph: FloorTileItemHydro
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: hydro }
   objectType: Item
 
 - type: construction
-  name: плитка бара
+  name: craft-tile-construction-bar
   id: FloorTileItemBarSiberiaCraft
   graph: FloorTileItemBar
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: bar }
   objectType: Item
 
 - type: construction
-  name: плитка мима
+  name: craft-tile-construction-mime
   id: FloorTileItemMimeSiberiaCraft
   graph: FloorTileItemMime
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: mime }
   objectType: Item
 
 - type: construction
-  name: плитка кухни
+  name: craft-tile-construction-kitchen
   id: FloorTileItemKitchenSiberiaCraft
   graph: FloorTileItemKitchen
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: bar }
   objectType: Item
 
 - type: construction
-  name: плитка прачечной
+  name: craft-tile-construction-laundry
   id: FloorTileItemLaundrySiberiaCraft
   graph: FloorTileItemLaundry
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: laundry }
   objectType: Item
 
 - type: construction
-  name: аркадный синий пол
+  name: craft-tile-construction-arcade-blue
   id: FloorTileItemArcadeBlueSiberiaCraft
   graph: FloorTileItemArcadeBlue
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: arcadeblue }
   objectType: Item
 
 - type: construction
-  name: аркадный красный пол
+  name: craft-tile-construction-arcade-red
   id: FloorTileItemArcadeRedSiberiaCraft
   graph: FloorTileItemArcadeRed
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: arcadered }
   objectType: Item
 
 - type: construction
-  name: пол восьмидесятых
+  name: craft-tile-construction-eighties
   id: FloorTileItemEightiesSiberia
   graph: FloorTileItemEighties
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: eighties }
   objectType: Item
 
 - type: construction
-  name: клоунский ковёр
+  name: craft-tile-construction-carpet-clown
   id: FloorTileItemCarpetClownSiberiaCraft
   graph: FloorTileItemCarpetClown
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: carpetclown }
   objectType: Item
 
 - type: construction
-  name: плитка боксёрского ринга
+  name: craft-tile-construction-boxing
   id: FloorTileItemBoxingSiberia
   graph: FloorTileItemBoxing
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: boxing }
   objectType: Item
 
 - type: construction
-  name: gym плитка
+  name: craft-tile-construction-gym
   id: FloorTileItemGymSiberiaCraft
   graph: FloorTileItemGym
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: gym }
   objectType: Item
 
 - type: construction
-  name: белая плитка шаттла
+  name: craft-tile-construction-shuttle-white
   id: FloorTileItemShuttleWhiteSiberiaCraft
   graph: FloorTileItemShuttleWhite
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: shuttlewhite }
   objectType: Item
 
 - type: construction
-  name: синяя плитка шаттла
+  name: craft-tile-construction-shuttle-blue
   id: FloorTileItemShuttleBlueSiberiaCraft
   graph: FloorTileItemShuttleBlue
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: shuttleblue }
   objectType: Item
 
 - type: construction
-  name: оранжевая плитка шаттла
+  name: craft-tile-construction-shuttle-orange
   id: FloorTileItemShuttleOrangeSiberiaCraft
   graph: FloorTileItemShuttleOrange
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: shuttleorange }
   objectType: Item
 
 - type: construction
-  name: фиолетовая плитка шаттла
+  name: craft-tile-construction-shuttle-purple
   id: FloorTileItemShuttlePurpleSiberiaCraft
   graph: FloorTileItemShuttlePurple
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: shuttlepurple }
   objectType: Item
 
 - type: construction
-  name: красная плитка шаттла
+  name: craft-tile-construction-shuttle-red
   id: FloorTileItemShuttleRedSiberiaCraft
   graph: FloorTileItemShuttleRed
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: shuttlered }
   objectType: Item
 
 - type: construction
-  name: золотая пластиковая плитка
+  name: craft-tile-construction-gold
   id: FloorTileItemGoldSiberiaCraft
   graph: FloorTileItemGold
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: gold }
   objectType: Item
 
 - type: construction
-  name: серебрянная пластиковая плитка
+  name: craft-tile-construction-silver
   id: FloorTileItemSilverSiberiaCraft
   graph: FloorTileItemSilver
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: silver }
   objectType: Item
 
 - type: construction
-  name: деревянный пол с узором
+  name: craft-tile-construction-wood
   id: FloorTileItemWoodPatternSiberiaCraft
   graph: FloorTileItemWoodPattern
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: woodpatternfloor }
   objectType: Item
 
 - type: construction
-  name: стальная плитка технических тоннелей
+  name: craft-tile-construction-steelmaint
   id: FloorTileItemSteelMaintSiberiaCraft
   graph: FloorTileItemSteelMaint
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: steelmaintfloor }
   objectType: Item
 
 - type: construction
-  name: решётка технических тоннелей
+  name: craft-tile-construction-maint-grating
   id: FloorTileItemGratingMaintSiberiaCraft
   graph: FloorTileItemGratingMaint
   startNode: start
   targetNode: tile
   category: construction-category-tiles
-  icon: { sprite: Objects/Tiles/tile.rsi, state: gratingmaintfloor }
   objectType: Item
