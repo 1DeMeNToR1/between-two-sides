@@ -206,16 +206,10 @@
     interfaces:
       enum.ReagentDispenserUiKey.Key:
         type: ReagentDispenserBoundUserInterface
-  - type: ReagentDispenser
-    storageWhitelist:
+  - type: Storage
+    whitelist:
       tags:
       - DrinkBottle
-    beakerSlot:
-      whitelistFailPopup: reagent-dispenser-component-cannot-put-entity-message
-      whitelist:
-        components:
-        - FitsInDispenser
-    pack: EmptyInventory
   - type: ItemSlots
   - type: ContainerContainer
     containers:
