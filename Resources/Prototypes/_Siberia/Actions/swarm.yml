@@ -3,11 +3,12 @@
   name: Создать дрона-стража адепта
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 120
     icon:
       sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
       state: alive
+  - type: InstantAction
     event: !type:SwarmAdeptRaiseArmyActionEvent
 
 - type: entity
@@ -15,11 +16,12 @@
   name: Выбросить углекислый газ
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 6
     icon:
       sprite: Interface/Actions/actions_mecha.rsi
       state: mech_smoke
+  - type: InstantAction
     event: !type:SwarmAdeptDomainActionEvent
 
 - type: entity
@@ -27,72 +29,76 @@
   name: Приказ стражам адепта Занять позиции
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 1
+    priority: 5
     icon:
       sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: stayOff
     iconOn:
       sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: stay
+  - type: InstantAction
     event:
       !type:SwarmAdeptOrderActionEvent
         type: Stay
-    priority: 5
 
 - type: entity
   id: ActionSwarmAdeptOrderFollow
   name: Приказ стражам адепта Следовать
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 1
+    priority: 6
     icon:
       sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: followOff
     iconOn:
       sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: follow
+  - type: InstantAction
     event:
       !type:SwarmAdeptOrderActionEvent
       type: Follow
-    priority: 6
 
 - type: entity
   id: ActionSwarmAdeptOrderCheeseEm #Отключён
   name: Оборонять Адепта Роя!
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 1
+    priority: 7
     icon:
       sprite: Interface/Actions/actions_rat_king.rsi
       state: attackOff
     iconOn:
       sprite: Interface/Actions/actions_rat_king.rsi
       state: attack
+  - type: InstantAction
     event:
       !type:SwarmAdeptOrderActionEvent
       type: CheeseEm
-    priority: 7
 
 - type: entity
   id: ActionSwarmAdeptOrderLoose
   name: Приказ стражам адепта Атаковать ближайшую органику
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 1
+    priority: 8
     icon:
       sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: looseOff
     iconOn:
       sprite: Siberia/Interface/Actions/actions_swarm_adept.rsi
       state: loose
+  - type: InstantAction
     event:
       !type:SwarmAdeptOrderActionEvent
       type: Loose
-    priority: 8
 
 - type: entity
   id: ActionSpawnFactory
@@ -100,12 +106,13 @@
   description: Создает завод роя, который переодически создает дронов роя. Созданные на заводе дроны не подчиняются адепту роя.
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
+    useDelay: 1
     icon:
       sprite: Siberia/Structures/Machines/swarm_factory.rsi
       state: factory
+  - type: InstantAction
     event: !type:DragonSpawnRiftActionEvent
-    useDelay: 1
 
 - type: entity
   id: ActionSwarmFloor
@@ -113,21 +120,23 @@
   description: Создаёт под дроном покрытие роя, которое замедляет и наносит урон всем, кроме дронов роя.
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
-    icon: Interface/Actions/defile.png
-    event: !type:SpiderWebActionEvent
+  - type: Action
     useDelay: 25
+    icon: Interface/Actions/defile.png
+  - type: InstantAction
+    event: !type:SpiderWebActionEvent
 
 - type: entity
   id: ActionActivateEmpSwarm
   name: ЭМИ взрыв роя
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 600
     itemIconStyle: BigAction
     priority: -20
     icon:
       sprite: Objects/Weapons/Grenades/empgrenade.rsi
       state: icon
+  - type: InstantAction
     event: !type:ActivateImplantEvent
