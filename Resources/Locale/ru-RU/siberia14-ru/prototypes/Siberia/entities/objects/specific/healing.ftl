@@ -7,3 +7,6 @@ ent-GauzeIPC = заживляющие наниты
 ent-GauzeIPC1 = { ent-GauzeIPC }
     .desc = { ent-GauzeIPC.desc }
     .suffix = Один
+
+stack-name-FuelpackIPC = контейнер гидравлической жидкости
+stack-name-GauzeIPC = заживляющие наниты
