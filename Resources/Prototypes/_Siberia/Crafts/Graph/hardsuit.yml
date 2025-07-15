@@ -7,27 +7,27 @@
         - to: maximumhardsuit
           steps:
             - tag: HardsuitSpatio
-              name: Скафандр утилизатора
+              name: construction-graph-tag-spationaut-hardsuit
               icon:
                 sprite: Clothing/OuterClothing/Hardsuits/spatio.rsi
                 state: icon
             - tag: MaterialGoliathHide
-              name: Шкура Голиафа
+              name: construction-graph-tag-materialgoliathhide
               icon:
                 sprite: Objects/Materials/hide.rsi
                 state: goliath_hide
             - tag: MaterialGoliathHide
-              name: Шкура Голиафа
+              name: construction-graph-tag-materialgoliathhide
               icon:
                 sprite: Objects/Materials/hide.rsi
                 state: goliath_hide
             - tag: MaterialGoliathHide
-              name: Шкура Голиафа
+              name: construction-graph-tag-materialgoliathhide
               icon:
                 sprite: Objects/Materials/hide.rsi
                 state: goliath_hide
             - tag: MaterialGoliathHide
-              name: Шкура Голиафа
+              name: construction-graph-tag-materialgoliathhide
               icon:
                 sprite: Objects/Materials/hide.rsi
                 state: goliath_hide
