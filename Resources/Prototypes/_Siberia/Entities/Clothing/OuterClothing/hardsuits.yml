@@ -85,13 +85,6 @@
       moles:
         - 2.051379050
       temperature: 293.15
-  - type: InputMover
-    toParent: true
-  - type: MovementSpeedModifier
-    weightlessAcceleration: 1
-    weightlessFriction: 0.3
-    weightlessModifier: 1.2
-  - type: CanMoveInAir
   - type: Jetpack
     moleUsage: 0.00085
 
@@ -138,13 +131,6 @@
       moles:
         - 2.051379050
       temperature: 293.15
-  - type: InputMover
-    toParent: true
-  - type: MovementSpeedModifier
-    weightlessAcceleration: 1
-    weightlessFriction: 0.3
-    weightlessModifier: 1.2
-  - type: CanMoveInAir
   - type: Jetpack
     moleUsage: 0.00085
 
@@ -189,13 +175,6 @@
       moles:
         - 2.051379050
       temperature: 293.15
-  - type: InputMover
-    toParent: true
-  - type: MovementSpeedModifier
-    weightlessAcceleration: 1
-    weightlessFriction: 0.3
-    weightlessModifier: 1.2
-  - type: CanMoveInAir
   - type: Jetpack
     moleUsage: 0.00085
 
@@ -317,13 +296,6 @@
       moles:
         - 2.051379050
       temperature: 293.15
-  - type: InputMover
-    toParent: true
-  - type: MovementSpeedModifier
-    weightlessAcceleration: 1
-    weightlessFriction: 0.3
-    weightlessModifier: 1.2
-  - type: CanMoveInAir
   - type: Jetpack
     moleUsage: 0.00005
   - type: Storage
