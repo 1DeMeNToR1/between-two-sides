@@ -33,3 +33,10 @@
   - Hydroponics
   - Atmospherics
   - Expeditor # Siberia-changes
+  - GenpopEnter
+  - GenpopLeave
+
+- type: accessGroup
+  id: General
+  tags:
+  - Maintenance

@@ -18,7 +18,7 @@
   id: UpgradedHardsuits
   name: research-technology-hardsuits
   icon:
-    sprite: Clothing/OuterClothing/Hardsuits/basic.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertengineer.rsi
     state: icon
   discipline: Industrial
   tier: 2

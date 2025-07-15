@@ -8,7 +8,7 @@
   cost: 5000
   category: Engineering
   group: market
-  
+
 - type: cargoProduct
   id: EngineeringCargoTelepad
   name: ящик торгового телепада
@@ -19,18 +19,18 @@
   cost: 6000
   category: Engineering
   group: market
-  
+
 - type: cargoProduct
   id: EngineeringDemonCore
   name: ящик с демон-кором
   icon:
-    sprite: Objects/Fun/toys.rsi
-    state: orb
+    sprite: Objects/Fun/pondering_orb.rsi
+    state: icon
   product: CrateDemonCore
   cost: 8000
   category: Engineering
   group: market
-  
+
 - type: cargoProduct
   id: EngineeringSalvageLocker
   name: снаряжение специалиста по утилизации
@@ -41,7 +41,7 @@
   cost: 5000
   category: Engineering
   group: market
-  
+
 - type: cargoProduct
   id: EngineeringEngiLocker
   name: шкаф инженера
@@ -52,7 +52,7 @@
   cost: 5000
   category: Engineering
   group: market
-  
+
 - type: cargoProduct
   id: EngineeringAtmosLocker
   name: шкаф атмосферного техника
@@ -63,7 +63,7 @@
   cost: 5000
   category: Engineering
   group: market
-  
+
 - type: cargoProduct
   id: EngineeringSalvageMagnet
   name: ящик магнита обломков
@@ -74,7 +74,7 @@
   cost: 5000
   category: Engineering
   group: market
-  
+
 #- type: cargoProduct
 #  id: EngineeringMora12
 #  name: ящик с грави-байком Мора-12
@@ -85,7 +85,7 @@
 #  cost: 5000
 #  category: Engineering
 #  group: market
-  
+
 - type: cargoProduct
   id: EngineeringStorageCanister
   name: пустая канистра хранения

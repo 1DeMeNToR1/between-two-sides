@@ -92,12 +92,6 @@
   - type: Jetpack
     moleUsage: 0.00085
   - type: CanMoveInAir
-  - type: InputMover
-    toParent: true
-  - type: MovementSpeedModifier
-    weightlessAcceleration: 1
-    weightlessFriction: 0.3
-    weightlessModifier: 1.2
   - type: Tag
     tags:
       - WhitelistChameleon

@@ -1,179 +1,179 @@
 - type: stack
   id: FloorTileMetalDiamondSiberia
-  name: steel tile
+  name: craft-tile-stack-steel
   spawn: FloorTileItemMetalDiamondSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileTechmaintSiberia
-  name: techmaint floor
+  name: craft-tile-stack-floor-techmaint
   spawn: FloorTileItemTechmaintSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileFreezerSiberia
-  name: freezer tile
+  name: craft-tile-stack-freezer
   spawn: FloorTileItemFreezerSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileShowroomSiberia
-  name: showroom tile
+  name: craft-tile-stack-showroom
   spawn: FloorTileItemShowroomSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileGoldSiberia
-  name: gold floor
+  name: craft-tile-stack-floor-gold
   spawn: FloorTileItemGoldSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileReinforcedSiberia
-  name: reinforced tile
+  name: craft-tile-stack-reinforced
   spawn: FloorTileItemReinforcedSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileMonoSiberia
-  name: mono tile
+  name: craft-tile-stack-mono
   spawn: FloorTileItemMonoSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileLinoSiberia
-  name: linoleum floor
+  name: craft-tile-stack-floor-linoleum
   spawn: FloorTileItemLinoSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileHydroSiberia
-  name: hydro tile
+  name: craft-tile-stack-hydro
   spawn: FloorTileItemHydroSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackShuttleWhiteSiberia
-  name: white shuttle tile
+  name: craft-tile-stack-shuttle-white
   spawn: FloorTileItemShuttleWhiteSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackShuttleBlueSiberia
-  name: blue shuttle tile
+  name: craft-tile-stack-shuttle-blue
   spawn: FloorTileItemShuttleBlueSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackShuttleOrangeSiberia
-  name: orange shuttle tile
+  name: craft-tile-stack-shuttle-orange
   spawn: FloorTileItemShuttleOrangeSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackShuttlePurpleSiberia
-  name: purple shuttle tile
+  name: craft-tile-stack-shuttle-purple
   spawn: FloorTileItemShuttlePurpleSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackShuttleRedSiberia
-  name: red shuttle tile
+  name: craft-tile-stack-shuttle-red
   spawn: FloorTileItemShuttleRedSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackEightiesSiberia
-  name: eighties floor tile
+  name: craft-tile-stack-floor-eighties
   spawn: FloorTileItemEightiesSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackArcadeBlueSiberia
-  name: blue arcade tile
+  name: craft-tile-stack-arcade-blue
   spawn: FloorTileItemArcadeBlueSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackArcadeRedSiberia
-  name: red arcade tile
+  name: craft-tile-stack-arcade-red
   spawn: FloorTileItemArcadeRedSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackCarpetClownSiberia
-  name: clown carpet tile
+  name: craft-tile-stack-carpet-clown
   spawn: FloorTileItemCarpetClownSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackBoxingSiberia
-  name: boxing ring tile
+  name: craft-tile-stack-ring-boxing
   spawn: FloorTileItemBoxingSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileStackGymSiberia
-  name: gym floor tile
+  name: craft-tile-stack-floor-gym
   spawn: FloorTileItemGymSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileRockVaultSiberia
-  name: rock vault tile
+  name: craft-tile-stack-vault-rock
   spawn: FloorTileItemRockVaultSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileBlueSiberia
-  name: blue floor tile
+  name: craft-tile-stack-floor-blue
   spawn: FloorTileItemBlueSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileBarSiberia
-  name: item bar floor tile
+  name: craft-tile-stack-floor-bar
   spawn: FloorTileItemBarSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileMimeSiberia
-  name: mime floor tile
+  name: craft-tile-stack-floor-mime
   spawn: FloorTileItemMimeSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileKitchenSiberia
-  name: kitchen floor tile
+  name: craft-tile-stack-floor-kitchen
   spawn: FloorTileItemKitchenSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileLaundrySiberia
-  name: laundry floor tile
+  name: craft-tile-stack-floor-laundry
   spawn: FloorTileItemLaundrySiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileSilverSiberia
-  name: silver floor tile
+  name: craft-tile-stack-floor-silver
   spawn: FloorTileItemSilverSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileWoodPatternSiberia
-  name: wood pattern floor
+  name: craft-tile-stack-floor-wood
   spawn: FloorTileItemWoodPatternSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileSteelMaintSiberia
-  name: steel maint floor
+  name: craft-tile-stack-floor-maint-steel
   spawn: FloorTileItemSteelMaintSiberia
   maxCount: 30
 
 - type: stack
   id: FloorTileGratingMaintSiberia
-  name: grating maint floor
+  name: craft-tile-stack-floor-maint-grating
   spawn: FloorTileItemGratingMaintSiberia
   maxCount: 30

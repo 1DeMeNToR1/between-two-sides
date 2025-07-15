@@ -1,14 +1,11 @@
 - type: construction
-  name: paper wall
+  name: craft-name-construction-paper-wall
   id: WallPaperJaraten2
   graph: Girder
   startNode: start
   targetNode: paperWall
   category: construction-category-structures
-  description: Keeps the air in and the greytide out.
-  icon:
-    sprite: Siberia/Structures/paper_wallJaraten1.rsi
-    state: full
+  description: craft-description-construction-paper-wall
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false

@@ -7,22 +7,22 @@
         - to: volleyballfriendsib
           steps:
             - tag: Wheat
-              name: Wheat Bushel
+              name: construction-graph-tag-wheat-bushel
               icon:
                 sprite: Objects/Specific/Hydroponics/wheat.rsi
                 state: produce
             - tag: Wheat
-              name: Wheat Bushel
+              name: construction-graph-tag-wheat-bushel
               icon:
                 sprite: Objects/Specific/Hydroponics/wheat.rsi
                 state: produce
             - tag: CrayonRed
-              name: red crayon
+              name: construction-graph-tag-red-crayon
               icon:
                 sprite: Objects/Fun/crayons.rsi
                 state: red
             - tag: VolleyBall
-              name: volleyball
+              name: construction-graph-tag-volleyball
               icon:
                 sprite: Siberia/Objects/Toy/voleyball.rsi
                 state: icon
@@ -31,14 +31,11 @@
       entity: volleyballfriend
 
 - type: construction
-  name: волейбольный друг
+  name: construction-name-volleyballfriend
   id: volleyballfriend
   graph: volleyballfriendsib
   startNode: start
   targetNode: volleyballfriendsib
   category: construction-category-misc
-  description: Ваш самодельный друг!
-  icon:
-    sprite: Siberia/Objects/Toy/voleyball.rsi
-    state: icon1
+  description: construction-description-volleyballfriend
   objectType: Item

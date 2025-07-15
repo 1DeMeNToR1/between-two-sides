@@ -65,14 +65,14 @@
 
 - type: stack
   id: GauzeIPC
-  name: GauzeIPC
+  name: stack-name-GauzeIPC
   icon: { sprite: "/Textures/Objects/Misc/stock_parts.rsi", state: hdd2 }
   spawn: GauzeIPC
   maxCount: 10
 
 - type: stack
   id: FuelpackIPC
-  name: FuelpackIPC
+  name: stack-name-FuelpackIPC
   icon: { sprite: "/Textures/Objects/Misc/stock_parts.rsi", state: bluespace_matter_bin }
   spawn: FuelpackIPC
   maxCount: 10

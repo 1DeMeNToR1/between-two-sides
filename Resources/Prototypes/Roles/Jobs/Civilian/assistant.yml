@@ -6,14 +6,9 @@
   startingGear: PassengerGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
-#  access: # Corvax-MRP
-#  - Maintenance
-  canBeAntag: false
-  special:
-  - !type:AddComponentSpecial
-    components:
-    - type: Pacified
-  
+  access:
+  - Maintenance
+
 - type: startingGear
   id: PassengerGear
   equipment:
@@ -22,3 +17,14 @@
   #storage:
     #back:
     #- Stuff
+
+- type: chameleonOutfit
+  id: PassengerChameleonOutfit
+  job: Passenger
+  equipment:
+    head: ClothingHeadHatWelding
+    eyes: ClothingEyesGlassesCheapSunglasses
+    mask: ClothingMaskGas
+    neck: ClothingNeckMantle
+    outerClothing: ClothingOuterWinterCoat
+    gloves: ClothingHandsGlovesColorYellowBudget

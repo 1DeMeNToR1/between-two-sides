@@ -1,0 +1,1 @@
+stack-chips-poker = фишки

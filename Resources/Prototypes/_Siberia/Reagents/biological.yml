@@ -7,7 +7,6 @@
   color: "#d514f7"
   recognizable: true
   physicalDesc: reagent-physical-desc-cuprum
-  slippery: false
   metabolisms:
     Drink:
       # Quenching!

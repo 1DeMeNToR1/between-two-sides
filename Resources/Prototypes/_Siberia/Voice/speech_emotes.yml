@@ -175,7 +175,7 @@
     - шутит
     - шутит.
     - шутит
-    
+
 - type: emote
   id: Hiss
   name: chat-emote-name-hiss
@@ -245,19 +245,19 @@
     # - рычит
     # - рычит!
 
-- type: emote
-  id: Purr
-  name: chat-emote-name-purr
-  category: Vocal
-  chatMessages: [purrs.]
-  chatTriggers:
-    - purr
-    - purrs
-    - purrs.
-    - purrs!
-    - purring
-    - purred
-    - урчит
-    - мурчет
-    - мурлычет
+# - type: emote
+#   id: Purr
+#   name: chat-emote-name-purr
+#   category: Vocal
+#   chatMessages: [purrs.]
+#   chatTriggers:
+#     - purr
+#     - purrs
+#     - purrs.
+#     - purrs!
+#     - purring
+#     - purred
+#     - урчит
+#     - мурчет
+#     - мурлычет
 

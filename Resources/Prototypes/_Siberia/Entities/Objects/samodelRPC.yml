@@ -28,16 +28,13 @@
     sprite: Siberia/Clothing/samodelrpc.rsi
 
 - type: construction
-  name: Самодельное РПС
+  name: craft-name-construction-samodel-rpc
   id: ClothingSamodelRpc
   graph: samodelrpc
   startNode: start
   targetNode: samodelrpc
   category: construction-category-clothing
-  description: Самодельное хранилище.
-  icon:
-    sprite: Siberia/Clothing/samodelrpc.rsi
-    state: icon
+  description: craft-description-construction-samodel-rpc
   objectType: Item
 
 - type: constructionGraph

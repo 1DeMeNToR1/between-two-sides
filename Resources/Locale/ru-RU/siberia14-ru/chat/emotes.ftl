@@ -9,7 +9,6 @@ chat-emote-name-bdt = Шутить
 chat-emote-name-hiss =Шипеть
 chat-emote-name-meow = Не смей
 chat-emote-name-mew = Мяу
-chat-emote-name-purr = Мурлыкать
 chat-emote-name-bonk = Стукает
 chat-emote-name-boom = Поражён
 chat-emote-name-discord = Отключился

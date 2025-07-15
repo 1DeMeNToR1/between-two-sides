@@ -1,4 +1,4 @@
-﻿#human but no shoes
+#human but no shoes
 - type: inventoryTemplate
   id: diona
   slots:
@@ -118,3 +118,6 @@
       uiWindowPos: 3,0
       strippingWindowPos: 0,5
       displayName: Back
+      blacklist:
+        tags:
+        - PetOnly
