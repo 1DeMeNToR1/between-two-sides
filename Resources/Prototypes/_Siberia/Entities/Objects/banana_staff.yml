@@ -33,7 +33,9 @@
   - type: Physics
     bodyType: Dynamic
   - type: Slippery
-    paralyzeTime: 4
+    slipData:
+      paralyzeTime: 4
+      launchForwardsMultiplier: 3
   - type: TimedDespawn
     lifetime: 4
   - type: Fixtures
