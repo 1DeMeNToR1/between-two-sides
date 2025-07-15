@@ -13,7 +13,6 @@
     - Deconstruct
   - type: LimitedCharges
     maxCharges: 20
-    charges: 20
   - type: AutoRecharge
     rechargeDuration: 15
   - type: UseDelay
@@ -35,7 +34,7 @@
   - type: ActivatableUI
     inHandsOnly: true
     key: enum.RcdUiKey.Key
-  - type: MeleeWeapon # Самниитеельна, но оокеей.. 
+  - type: MeleeWeapon # Самниитеельна, но оокеей..
     damage:
       types:
         Blunt: 12
