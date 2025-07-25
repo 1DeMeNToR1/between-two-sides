@@ -1,0 +1,655 @@
+- type: entity
+  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  id: TelecomServerFancy
+  name: сервер
+  description: Будучи запитанным хранит и отправляет информацию центральному серверу.
+  components:
+  - type: Sprite
+    sprite: Siberia/Temp/telecomms.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+  - type: Appearance
+  - type: AmbientOnPowered
+  - type: Occluder
+  - type: AmbientSound
+    volume: -9
+    range: 5
+    sound:
+      path: /Audio/Ambience/Objects/server_fans.ogg
+  - type: WiresVisuals
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Machine
+    board: TelecomServerCircuitboard
+  - type: WiresPanel
+  - type: Transform
+    anchored: true
+  - type: Pullable
+  - type: EncryptionKeyHolder
+    keysExtractionMethod: Prying
+    keySlots: 10
+  - type: TelecomServer
+  - type: ContainerContainer
+    containers:
+      key_slots: !type:Container
+      machine_board: !type:Container
+      machine_parts: !type:Container
+
+- type: entity
+  parent: TelecomServerFancy
+  id: TelecomServerFilledFancy
+  suffix: Filled All
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+      - EncryptionKeyCargo
+      - EncryptionKeyEngineering
+      - EncryptionKeyMedical
+      - EncryptionKeyScience
+      - EncryptionKeySecurity
+      - EncryptionKeyService
+      - EncryptionKeyCommand
+
+- type: entity
+  parent: TelecomServerFancy
+  id: TelecomServerFilledCommonFancy
+  suffix: Common
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: TelecomServerFancy
+  id: TelecomServerFilledCargoFancy
+  suffix: Cargo
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCargo
+
+- type: entity
+  parent: TelecomServerFancy
+  id: TelecomServerFilledEngineeringFancy
+  suffix: Engineering
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyEngineering
+
+- type: entity
+  parent: TelecomServerFancy
+  id: TelecomServerFilledMedicalFancy
+  suffix: Medical
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMedical
+
+- type: entity
+  parent: TelecomServerFancy
+  id: TelecomServerFilledScienceFancy
+  suffix: Science
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyScience
+
+- type: entity
+  parent: TelecomServerFancy
+  id: TelecomServerFilledSecurityFancy
+  suffix: Security
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+
+- type: entity
+  parent: TelecomServerFancy
+  id: TelecomServerFilledServiceFancy
+  suffix: Service
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyService
+
+- type: entity
+  parent: TelecomServerFancy
+  id: TelecomServerFilledCommandFancy
+  suffix: Command
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommand
+      
+
+
+
+- type: entity
+  id: AvroraHelicopter
+  parent: AltarBase
+  name: Вертолёт W-Corp
+  description: Вертолёт компании W-Corp, практичное средство доставки на большое растояние в условиях заснеженных планет.
+  components:
+  - type: TimedDespawn
+    lifetime: 42.0
+  - type: SpriteFade
+  - type: Sprite
+    sprite: Siberia/Temp/helicopter.rsi
+    drawdepth: Overdoors
+    state: on
+  - type: Icon
+    sprite: Siberia/Temp/helicopter.rsi
+    state: icon
+  - type: EmitSoundOnSpawn
+    sound: 
+      path: /Audio/Siberia/Temp/helicopter-work.ogg
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-2.0,-2.0,4.2,0.6"
+        mask:
+        - FullTileMask
+        layer:
+        - GlassLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 99999
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 99999
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 5
+          MaterialCloth1:
+            min: 1
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SpawnOnDespawn
+    prototype: avrorhelicopterend
+
+
+- type: entity
+  id: avrorhelicopterend
+  name: helicopter end
+  components:
+  - type: TimedDespawn
+    lifetime: 19.0
+  - type: Tag
+    tags:
+      - Wall
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.1,-0.1,0.1,0.1"
+        mask:
+        - FullTileMask
+        layer:
+        - GlassLayer
+  - type: EmitSoundOnSpawn
+    sound: 
+      path: "/Audio/Siberia/Temp/helicopter-end.ogg"
+  - type: Airtight
+  
+  
+  
+- type: entity
+  parent: IDCardStandard
+  id: ExpeditionCaptainIDCard
+  name: Карта главы экспедиции
+  components:
+  - type: Sprite
+    sprite: Siberia/Temp/id.rsi
+    layers:
+    - state: gold
+    - state: captain
+  - type: Item
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: Captain
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - WhitelistChameleon
+    - WhitelistChameleonIdCard
+    
+- type: entity
+  parent: IDCardStandard
+  id: ExpeditionMedicIDCard
+  name: Карта медика экспедиции
+  components:
+  - type: Sprite
+    sprite: Siberia/Temp/id.rsi
+    layers:
+    - state: gold
+    - state: medic
+  - type: Item
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: MedicalDoctor
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - WhitelistChameleon
+    - WhitelistChameleonIdCard
+    
+- type: entity
+  parent: IDCardStandard
+  id: ExpeditionWorkerIDCard
+  name: Карта исследователя экспедиции
+  components:
+  - type: Sprite
+    sprite: Siberia/Temp/id.rsi
+    layers:
+    - state: gold
+    - state: worker
+  - type: Item
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: ServiceWorker
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - WhitelistChameleon
+    - WhitelistChameleonIdCard
+
+- type: entity
+  parent: BasePDA
+  id: ExpeditionWorkerPDA
+  name: chef PDA
+  description: Covered in grease and flour.
+  components:
+  - type: Pda
+    id: ExpeditionWorkerIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-cook
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+  - type: Sprite
+    sprite: Siberia/Temp/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-cook"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: Siberia/Temp/pda.rsi
+    state: pda-cook
+    
+- type: entity
+  parent: BaseMedicalPDA
+  id: ExpeditionParamedicPDA
+  name: paramedic PDA
+  description: Shiny and sterile.
+  components:
+  - type: Pda
+    id: ExpeditionMedicIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-paramedic
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#2a4b5b"
+  - type: Sprite
+    sprite: Siberia/Temp/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-paramedic"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: Siberia/Temp/pda.rsi
+    state: pda-paramedic
+    
+- type: entity
+  parent: BasePDA
+  id: ExpeditionCapitanePDA
+  name: boxer PDA
+  description: Float like a butterfly, ringtone like a bee.
+  components:
+  - type: Pda
+    id: ExpeditionCaptainIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-boxer
+  - type: PdaBorderColor
+    borderColor: "#333333"
+    accentVColor: "#390504"
+  - type: Sprite
+    sprite: Siberia/Temp/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-boxer"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: Siberia/Temp/pda.rsi
+    state: pda-boxer
+    
+- type: job
+  id: ExpeditionCapitane
+  name: Капитан экспедиции "Аврора"
+  description: Капитан экспедиции "Аврора" отправленной на заснеженную планету NX-Аврора-701 для исследования пропажи прошлой группы.
+  playTimeTracker: JobExpeditionCapitane
+  startingGear: ExpeditionCapitaneGear
+  icon: "JobIconBoxer"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Maintenance
+
+- type: startingGear
+  id: ExpeditionCapitaneGear
+  equipment:
+    id: ExpeditionCapitanePDA
+    gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesBootsWinterSyndicate
+    head: ClothingHeadHatUshanka
+    eyes: ClothingEyesExpedition
+    mask: ClothingMaskNeckGaiter
+    outerClothing: ClothingOuterWinterColorBlue
+    jumpsuit: Clothingcyan_turtleneck
+    neck: ClothingNeckScarfStripedBlack
+    back: ClothingBackpackERTLeader
+    
+- type: job
+  id: ExpeditionMedic
+  name: Медик экспедиции "Аврора"
+  description: Медицинский персонал экспедиции "Аврора" отправленной на заснеженную планету NX-Аврора-701 для исследования пропажи прошлой группы.
+  playTimeTracker: JobExpeditionMedic
+  startingGear: ExpeditionMedicalGear
+  icon: "JobIconBoxer"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Maintenance
+
+- type: startingGear
+  id: ExpeditionMedicalGear
+  equipment:
+    id: ExpeditionParamedicPDA
+    gloves: ClothingHandsGlovesColorWhite
+    shoes: ClothingShoesBootsWinter
+    eyes: ClothingEyesExpedition
+    mask: ClothingMaskNeckGaiter
+    outerClothing: ClothingOuterWinterPara
+    jumpsuit: ClothingUniformJumpsuitSviterWhite
+    neck: ClothingNeckScarfStripedBlue
+    back: ClothingBackpackMedical
+    belt: ClothingBeltMedicalEMT
+    
+- type: job
+  id: ExpeditionWorker
+  name: Работник экспедиции "Аврора"
+  description: Рабочий персонал экспедиции "Аврора" отправленной на заснеженную планету NX-Аврора-701 для исследования пропажи прошлой группы.
+  playTimeTracker: JobExpeditionWorker
+  startingGear: ExpeditionWorkerGear
+  icon: "JobIconBoxer"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Maintenance
+
+- type: startingGear
+  id: ExpeditionWorkerGear
+  equipment:
+    id: ExpeditionWorkerPDA
+    gloves: ClothingHandsGlovesColorBlack
+    shoes: ClothingShoesBootsWinterMed
+    eyes: ClothingEyesExpedition
+    mask: ClothingMaskNeckGaiter
+    outerClothing: ClothingOuterWinterMed
+    jumpsuit: ClothingUniformJumpsuitSecBlue
+    neck: ClothingNeckScarfStripedLightBlue
+    back: ClothingBackpackGenetics
+    
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesExpedition
+  name: Маска альпиниста
+  description: Удобная маска альпиниста, крайне подходящая под заснеженный климат.
+  components:
+  - type: Sprite
+    sprite: Siberia/Temp/glass.rsi
+  - type: Clothing
+    sprite: Siberia/Temp/glass.rsi
+    
+- type: playTimeTracker
+  id: JobExpeditionCapitane
+
+- type: playTimeTracker
+  id: JobExpeditionMedic
+
+- type: playTimeTracker
+  id: JobExpeditionWorker
+
+- type: entity
+  id: SpawnPointExpeditionWorker
+  parent: SpawnPointJobBase
+  name: Expedition worker
+  components:
+  - type: SpawnPoint
+    job_id: ExpeditionWorker
+  - type: Sprite
+    layers:
+      - state: green
+      - state: serviceworker
+      
+- type: entity
+  id: SpawnPointExpeditionCaptain
+  parent: SpawnPointJobBase
+  name: Expedition captain
+  components:
+  - type: SpawnPoint
+    job_id: ExpeditionCapitane
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+      
+- type: entity
+  id: SpawnPointExpeditionMedicalDoctor
+  parent: SpawnPointJobBase
+  name: Expedition medicaldoctor
+  components:
+  - type: SpawnPoint
+    job_id: ExpeditionMedic
+  - type: Sprite
+    layers:
+      - state: green
+      - state: doctor
+      
+      
+- type: gameMap
+  id: Avrora
+  mapName: 'NX-Avrora-701'
+  mapPath: /Maps/Siberia/avroravixen.yml
+  minPlayers: 0
+  maxPlayers: 99
+  stations:
+    Avrora:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Аврора {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: ''
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_amber.yml
+        - type: StationJobs
+          availableJobs:
+            ExpeditionCapitane: [ 1, 1 ]
+            ExpeditionMedic: [ 3, 3 ] 
+            ExpeditionWorker: [ -1, -1 ]
+            
+- type: department
+  id: Event
+  name: departament-event-avrora-name
+  description: departament-event-avrora-desc
+  color: "#9FED58"
+  weight: 10
+  roles:
+  - ExpeditionCapitane
+  - ExpeditionMedic
+  - ExpeditionWorker
+  primary: false
+  
+- type: entity
+  id: NecroMarker
+  name: обелиск
+  description: странное чувство вызывает у меня эта штука... я хочу быть единым...
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: AmbientSound
+      volume: 0
+      range: 8
+      sound:
+        path: /Audio/Ambience/Objects/gravity_gen_hum.ogg
+    - type: RangedDamageSound
+      soundGroups:
+        Brute:
+          collection:
+            MeatBulletImpact
+      soundTypes:
+        Heat:
+          collection:
+            MeatLaserImpact
+    - type: Timer
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Sprite
+      netsync: false
+      sprite: Siberia/Temp/necromarker.rsi
+      layers:
+        - state: on
+        # - state: wardingtower-unshaded
+          # shader: unshaded
+    - type: Damageable
+      damageContainer: Inorganic
+      damageModifierSet: Metallic
+    - type: Transform
+      anchored: false
+      noRot: true
+    - type: Physics
+      bodyType: Static
+    - type: Anchorable
+    - type: Pullable
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.5,-1.5,0.5,1.5"
+          density: 1000
+          mask:
+          - LargeMobMask
+          layer:
+          - WallLayer
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 50000
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+    - type: PointLight
+      radius: 4
+      energy: 2
+      castShadows: false
+      color: "#A30707FF"
+    - type: StaticPrice
+      price: 500000
