@@ -1,7 +1,7 @@
 - type: entity
   id: MagazineAssaultRifle
   name: Магазин от АШ-12 (.45 магнум)
-  parent: BaseMagazineMagnumSubMachineGun
+  parent: BaseMagazineMagnum
   components:
   - type: Tag
     tags:
