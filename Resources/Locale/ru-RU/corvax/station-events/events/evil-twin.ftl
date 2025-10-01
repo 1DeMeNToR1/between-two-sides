@@ -14,4 +14,4 @@ evil-twin-user-was-an-evil-twin-with-objectives = [color=gray][/color] был(а
 evil-twin-user-was-an-evil-twin-with-objectives-named = [color=White][/color] ([color=gray][/color]) был(а) злым двойником со следующими целями:
 evil-twin-was-an-evil-twin-with-objectives-named = [color=white][/color] был(а) злым двойником со следующими целями:
 roles-antag-evil-twin-name = Злой двойник
-roles-antag-evil-twin-objective = Ваша задача - устранение и замена оригинальной персоны.
+roles-antag-evil-twin-objective = Ваша задача — устранение и замена оригинальной персоны.
