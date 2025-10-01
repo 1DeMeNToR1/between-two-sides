@@ -59,7 +59,7 @@
 #    sprite: Siberia/Nyanotrasen/sojubottle.rsi
 
 - type: entity
-  parent: DrinkGlassBase
+  parent: [DrinkBaseMaterialGlass, DrinkBase, DrinkVisualsFillOverlay]
   id: DrinkTokkuri
   name: tokkuri
   description: Цветочный и полный саке!
