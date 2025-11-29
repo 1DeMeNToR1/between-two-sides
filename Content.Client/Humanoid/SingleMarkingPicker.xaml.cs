@@ -7,6 +7,7 @@ using Robust.Client.GameObjects;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Client.Utility;
+using static Content.Client.Corvax.SponsorOnlyHelpers; // Corvax-Sponsors
 
 namespace Content.Client.Humanoid;
 
@@ -199,6 +200,8 @@ public sealed partial class SingleMarkingPicker : BoxContainer
             var item = MarkingList.AddItem(Loc.GetString($"marking-{id}"), _sprite.Frame0(marking.Sprites[0]));
             item.Metadata = marking.ID;
             // Corvax-Sponsors-Start
+            if (marking.SponsorOnly)
+                item.Text += GetSponsorOnlySuffix();
             if (marking.SponsorOnly && _siberiaSponsorsManager != null)
                 item.Disabled = !_siberiaSponsorsManager.GetClientPrototypes().Contains(marking.ID);
             // Corvax-Sponsors-End
@@ -238,6 +241,7 @@ public sealed partial class SingleMarkingPicker : BoxContainer
                 HorizontalExpand = true
             };
             selector.Color = marking.MarkingColors[i];
+            selector.SelectorType = ColorSelectorSliders.ColorSelectorType.Hsv; // defaults color selector to HSV
 
             var colorIndex = i;
             selector.OnColorChanged += color =>

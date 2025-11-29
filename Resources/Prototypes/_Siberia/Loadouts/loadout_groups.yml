@@ -3,41 +3,41 @@
   name: loadout-group-blueshield-jumpsuit
   loadouts:
   - BlueShieldJumpsuit
-  
-- type: loadoutGroup
-  id: SeniorEngineerJumpsuit
-  name: loadout-group-seniorengineer-jumpsuit
-  loadouts:
-  - SeniorEngineerJumpsuit
-  - SeniorEngineerJumpskirt 
 
-- type: loadoutGroup
-  id: SeniorPhysicianJumpsuit
-  name: loadout-group-seniorphysician-jumpsuit
-  loadouts:
-  - SeniorPhysicianJumpsuit
-  - SeniorPhysicianJumpskirt
- 
-- type: loadoutGroup
-  id: SeniorResearcherJumpsuit
-  name: loadout-group-seniorresearcher-jumpsuit
-  loadouts:
-  - SeniorResearcherJumpsuit
-  - SeniorResearcherJumpskirt
+# - type: loadoutGroup
+#   id: SeniorEngineerJumpsuit
+#   name: loadout-group-seniorengineer-jumpsuit
+#   loadouts:
+#   - SeniorEngineerJumpsuit
+#   - SeniorEngineerJumpskirt
 
-- type: loadoutGroup
-  id: SeniorOfficerJumpsuit
-  name: loadout-group-seniorofficer-jumpsuit
-  loadouts:
-  - SeniorOfficerJumpsuit
-  - SeniorOfficerJumpskirt
+# - type: loadoutGroup
+#   id: SeniorPhysicianJumpsuit
+#   name: loadout-group-seniorphysician-jumpsuit
+#   loadouts:
+#   - SeniorPhysicianJumpsuit
+#   - SeniorPhysicianJumpskirt
 
-- type: loadoutGroup
-  id: ExpeditorJumpsuit
-  name: loadout-group-expeditorjumpsuit-jumpsuit
-  loadouts:
-  - ExpeditorJumpsuit
- 
+# - type: loadoutGroup
+#   id: SeniorResearcherJumpsuit
+#   name: loadout-group-seniorresearcher-jumpsuit
+#   loadouts:
+#   - SeniorResearcherJumpsuit
+#   - SeniorResearcherJumpskirt
+
+# - type: loadoutGroup
+#   id: SeniorOfficerJumpsuit
+#   name: loadout-group-seniorofficer-jumpsuit
+#   loadouts:
+#   - SeniorOfficerJumpsuit
+#   - SeniorOfficerJumpskirt
+
+# - type: loadoutGroup
+#   id: ExpeditorJumpsuit
+#   name: loadout-group-expeditorjumpsuit-jumpsuit
+#   loadouts:
+#   - ExpeditorJumpsuit
+
 - type: loadoutGroup
   id: Underwears
   name: loadout-group-underwears

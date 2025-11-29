@@ -136,108 +136,108 @@
     - sprite: Siberia/Mobs/Customization/vulp_ear_markings.rsi
       state: dalmatian
 
-# Head Markings (Snout)
-- type: marking
-  id: VulpSnoutAlt
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: muzzle_alt
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: nose
+# # Head Markings (Snout)
+# - type: marking
+#   id: VulpSnoutAlt
+#   bodyPart: Snout
+#   markingCategory: Snout
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: muzzle_alt
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: nose
 
-- type: marking
-  id: VulpSnout
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: muzzle
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: nose
+# - type: marking
+#   id: VulpSnout
+#   bodyPart: Snout
+#   markingCategory: Snout
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: muzzle
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: nose
 
-- type: marking
-  id: VulpSnoutSharp
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: muzzle_sharp
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: nose
+# - type: marking
+#   id: VulpSnoutSharp
+#   bodyPart: Snout
+#   markingCategory: Snout
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: muzzle_sharp
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: nose
 
-- type: marking
-  id: VulpSnoutFade
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: muzzle_fade
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: nose
+# - type: marking
+#   id: VulpSnoutFade
+#   bodyPart: Snout
+#   markingCategory: Snout
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: muzzle_fade
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: nose
 
-- type: marking
-  id: VulpSnoutNose
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: nose
+# - type: marking
+#   id: VulpSnoutNose
+#   bodyPart: Snout
+#   markingCategory: Snout
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: nose
 
-- type: marking
-  id: VulpSnoutMask
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: mask
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: nose
+# - type: marking
+#   id: VulpSnoutMask
+#   bodyPart: Snout
+#   markingCategory: Snout
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: mask
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: nose
 
-- type: marking
-  id: VulpSnoutVulpine
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: vulpine
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: vulpine-lines
+# - type: marking
+#   id: VulpSnoutVulpine
+#   bodyPart: Snout
+#   markingCategory: Snout
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: vulpine
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: vulpine-lines
 
-- type: marking
-  id: VulpSnoutSwift
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: vulpine-lines
+# - type: marking
+#   id: VulpSnoutSwift
+#   bodyPart: Snout
+#   markingCategory: Snout
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: vulpine-lines
 
-- type: marking
-  id: VulpSnoutBlaze
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: blaze
+# - type: marking
+#   id: VulpSnoutBlaze
+#   bodyPart: Snout
+#   markingCategory: Snout
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: blaze
 
-- type: marking
-  id: VulpSnoutPatch
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
-      state: patch
+# - type: marking
+#   id: VulpSnoutPatch
+#   bodyPart: Snout
+#   markingCategory: Snout
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_head_markings.rsi
+#       state: patch
 
 # Head Markings (Head)
 - type: marking
@@ -334,16 +334,16 @@
     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
       state: vulp_alt-tip
 
-- type: marking
-  id: VulpTailLong
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
-      state: long
-    - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
-      state: long-tip
+# - type: marking
+#   id: VulpTailLong
+#   bodyPart: Tail
+#   markingCategory: Tail
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
+#       state: long
+#     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
+#       state: long-tip
 
 - type: marking
   id: VulpTailFox
@@ -434,16 +434,16 @@
     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
       state: corgi_wag
 
-- type: marking
-  id: VulpTailHusky
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
-      state: husky-inner
-    - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
-      state: husky-outer
+# - type: marking
+#   id: VulpTailHusky
+#   bodyPart: Tail
+#   markingCategory: Tail
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
+#       state: husky-inner
+#     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
+#       state: husky-outer
 
 - type: marking
   id: VulpTailHuskyAlt
@@ -474,14 +474,14 @@
     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
       state: fox3-tip
 
-- type: marking
-  id: VulpTailFennec
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
-      state: fennec
+# - type: marking
+#   id: VulpTailFennec
+#   bodyPart: Tail
+#   markingCategory: Tail
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
+#       state: fennec
 
 - type: marking
   id: VulpTailOtie
@@ -492,14 +492,14 @@
     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
       state: otie
 
-- type: marking
-  id: VulpTailFluffy
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
-      state: fluffy
+# - type: marking
+#   id: VulpTailFluffy
+#   bodyPart: Tail
+#   markingCategory: Tail
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
+#       state: fluffy
 
 - type: marking
   id: VulpTailDalmatianWag
@@ -510,33 +510,33 @@
     - sprite: Siberia/Mobs/Customization/vulp_tail_markings.rsi
       state: dalmatian_wag
 
-# Body Markings (Chest)
-- type: marking
-  id: VulpBellyCrest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_body_markings.rsi
-      state: belly_crest
+# # Body Markings (Chest)
+# - type: marking
+#   id: VulpBellyCrest
+#   bodyPart: Chest
+#   markingCategory: Chest
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_body_markings.rsi
+#       state: belly_crest
 
-- type: marking
-  id: VulpBellyFull
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_body_markings.rsi
-      state: belly_full
+# - type: marking
+#   id: VulpBellyFull
+#   bodyPart: Chest
+#   markingCategory: Chest
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_body_markings.rsi
+#       state: belly_full
 
-- type: marking
-  id: VulpBellyFox
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Vulpkanin]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/vulp_body_markings.rsi
-      state: belly_fox
+# - type: marking
+#   id: VulpBellyFox
+#   bodyPart: Chest
+#   markingCategory: Chest
+#   speciesRestriction: [Vulpkanin]
+#   sprites:
+#     - sprite: Siberia/Mobs/Customization/vulp_body_markings.rsi
+#       state: belly_fox
 
 # # Body Markings (Overlay)
 # Eventually layering will allow to have markings on the body not layering above jumpsuits

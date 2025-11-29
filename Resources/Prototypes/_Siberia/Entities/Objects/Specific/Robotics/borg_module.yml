@@ -11,6 +11,7 @@
     tags:
     - SwarmModule
 
+
 - type: entity
   id:  SwarmModuleRCD
   parent: [ BaseSwarmModule, BaseProviderBorgModule ]
@@ -23,6 +24,22 @@
   - type: ItemBorgModule
     items:
     - RCDSwarm
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-icon-inhand-left
+        color: "#EBD8B7"
+      - state: base-module-inhand-left
+        color: "#613D1D"
+      - state: base-stripes-inhand-left
+        color: "#593718"
+      right:
+      - state: base-icon-inhand-right
+        color: "#EBD8B7"
+      - state: base-module-inhand-right
+        color: "#613D1D"
+      - state: base-stripes-inhand-right
+        color: "#593718"
 
 - type: entity
   id: SwarmModuleMed
@@ -37,3 +54,19 @@
     items:
     - SwarmHealerHypospray
     - WelderSwarm
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-icon-inhand-left
+        color: "#EBD8B7"
+      - state: base-module-inhand-left
+        color: "#613D1D"
+      - state: base-stripes-inhand-left
+        color: "#593718"
+      right:
+      - state: base-icon-inhand-right
+        color: "#EBD8B7"
+      - state: base-module-inhand-right
+        color: "#613D1D"
+      - state: base-stripes-inhand-right
+        color: "#593718"

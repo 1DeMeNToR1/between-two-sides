@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 using Content.Server.Siberia.Speech.Components;
-using Content.Server.Speech;
+using Content.Shared.Speech;
 
 namespace Content.Server.Siberia.Speech.EntitySystems;
 
