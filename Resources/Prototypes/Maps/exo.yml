@@ -2,8 +2,8 @@
   id: Exo
   mapName: 'Exo'
   mapPath: /Maps/exo.yml
-  minPlayers: 30
-  maxPlayers: 70
+  minPlayers: 40
+  maxPlayers: 80
   stations:
     Exo:
       stationProto: StandardNanotrasenStation
@@ -21,11 +21,12 @@
           availableJobs:
             #service
             Captain: [ 1, 1 ]
+            IAA: [ 1, 1 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 2, 2 ]
             Botanist: [ 2, 2 ]
             Chef: [ 2, 2 ]
-            Janitor: [ 1, 2 ]
+            Janitor: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
@@ -50,11 +51,11 @@
             SecurityOfficer: [ 4, 4 ]
             Detective: [ 1, 1 ]
             SecurityCadet: [ 4, 4 ]
-            #Lawyer: [ 2, 2 ] Corvax test
+            #Lawyer: [ 2, 2 ] # Corvax-IAA
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
-            CargoTechnician: [ 3, 3 ]
+            CargoTechnician: [ 4, 4 ]
             #civilian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]

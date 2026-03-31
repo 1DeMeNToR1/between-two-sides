@@ -2,10 +2,8 @@ ent-ClothingMaskGas = противогаз
     .desc = Закрывающая лицо маска, которую можно подключить к дыхательному баллону.
 ent-ClothingMaskGasSecurity = противогаз СБ
     .desc = Стандартный противогаз Службы безопасности.
-# Corvax-HiddenDesc-Start
-ent-ClothingMaskGasSyndicate = чёрный боевой противогаз
+ent-ClothingMaskGasSyndicate = противогаз синдиката
     .desc = Плотно прилегающая тактическая маска, которую можно подключить к дыхательному баллону.
-# Corvax-HiddenDesc-End
 ent-ClothingMaskGasAtmos = атмос-противогаз
     .desc = Улучшенный противогаз, используемый атмосферными техниками. Огнеупорный!
 ent-ClothingMaskGasCaptain = противогаз капитана
@@ -23,9 +21,9 @@ ent-ClothingMaskBreath = дыхательная маска
 ent-ClothingMaskClownBase = маска и парик клоуна
     .desc = Лицевой атрибут настоящего приколиста. Клоун неполноценен без своих парика и маски.
 ent-ClothingMaskClown = { ent-ClothingMaskClownBase }
-    .desc = { ent-ClothingMaskClownBase.desc }
+    .desc = A clown mask featuring a foldable wig; a true prankster's attire.
 ent-ClothingMaskClownBanana = банановые маска и парик клоуна
-    .desc = { ent-ClothingMaskClown.desc }
+    .desc = { ent-ClothingMaskClownBase.desc }
 ent-ClothingMaskClownSecurity = маска и парик клоуна безопасности
     .desc = Спорно оксюморонные, но защитные маска и парик.
 ent-ClothingMaskJoy = маска радости

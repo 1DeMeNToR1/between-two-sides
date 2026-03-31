@@ -1,5 +1,7 @@
 ent-BaseShield = базовый щит
     .desc = Щит!
+ent-BaseRepairableShield = base repairable shield
+    .desc = A repairable shield!
 ent-RiotShield = противоударный щит
     .desc = Большой башенный щит на случай беспорядков. Хорошо подходит для контроля толпы.
 ent-RiotLaserShield = противолазерный щит
@@ -8,6 +10,8 @@ ent-RiotBulletShield = баллистический щит
     .desc = Щит, созданный для баллистической защиты, но не более того.
 ent-WoodenBuckler = деревянный баклер
     .desc = Небольшой круглый деревянный самодельный щит.
+ent-CardShield = картонный щит
+    .desc = Щит из картона, не сильно защитит вас.
 ent-MakeshiftShield = импровизированный щит
     .desc = Ветхий на вид щит, мало на что пригодный.
 ent-WebShield = паутинный щит

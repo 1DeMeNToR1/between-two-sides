@@ -12,9 +12,8 @@ connecting-disconnected = Отключён от нас:
 connecting-tip = Добро пожаловать в зону МРП >:@
 connecting-window-tip = Совет { $numberTip }
 connecting-version = СВЕЖА ПРОШЛЫМ МЕСЯЦЕМ!
-connecting-fail-reason =
-    Не удалось подключиться к серверу:
-    { $reason }
+connecting-fail-reason = Не удалось подключиться к серверу:
+                         { $reason }
 connecting-state-NotConnecting = Не подключён
 connecting-state-ResolvingHost = Определение Сибири
 connecting-state-EstablishingConnection = Установка сибирского соединения

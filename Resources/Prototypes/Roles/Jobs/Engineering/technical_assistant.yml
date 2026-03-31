@@ -5,7 +5,11 @@
   playTimeTracker: JobTechnicalAssistant
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 36000 #10 hrs Siberia-RoleTime
+      time: 10h # Siberia-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 10h # Corvax-RoleTime
+      inverted: true # stop playing intern if you're good at engineering!
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-engineering

@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Civilian
-      time: 7200 #3 hrs # Siberia-RoleTime
+      time: 3h # Siberia-RoleTime
   startingGear: BartenderGear
   icon: "JobIconBartender"
   supervisors: job-supervisors-hop

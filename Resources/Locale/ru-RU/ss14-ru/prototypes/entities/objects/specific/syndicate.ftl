@@ -1,34 +1,30 @@
-# Corvax-HiddenDesc-Start
-ent-Telecrystal = красный кристалл
+ent-Telecrystal = телекристалл
     .desc = Похоже, он переливается подозрительно манящей энергией.
-    .suffix = 20 ТК, телекристалл
+    .suffix = 20 ТК
 ent-Telecrystal1 = { ent-Telecrystal }
-    .suffix = 1 ТК, телекристалл
     .desc = { ent-Telecrystal.desc }
+    .suffix = 1 ТК
 ent-Telecrystal5 = { ent-Telecrystal }
-    .suffix = 5 ТК, телекристалл
     .desc = { ent-Telecrystal.desc }
+    .suffix = 5 ТК
 ent-Telecrystal10 = { ent-Telecrystal }
-    .suffix = 10 ТК, телекристалл
     .desc = { ent-Telecrystal.desc }
-ent-BaseUplinkRadio = старое радио
-    .desc = Винтажное радио, которое по неясной причине застыло на крайне необычной частоте, со словом «АпЛинк» на лицевой стороне.
-    .suffix = Пустой, аплинк Синдиката
+    .suffix = 10 ТК
+ent-BaseUplinkRadio = аплинк синдиката
+    .desc = Подозрительно выглядящее старое радио...
+    .suffix = Пустой
 ent-BaseUplinkRadio20TC = { ent-BaseUplinkRadio }
-    .suffix = 20 ТК, аплинк Синдиката
     .desc = { ent-BaseUplinkRadio.desc }
+    .suffix = 20 ТК
 ent-BaseUplinkRadio25TC = { ent-BaseUplinkRadio }
-    .suffix = 25 ТК, аплинк Синдиката
     .desc = { ent-BaseUplinkRadio.desc }
+    .suffix = 25 ТК
 ent-BaseUplinkRadio40TC = { ent-BaseUplinkRadio }
-    .suffix = 40 ТК, аплинк Синдиката, Ядерный Оперативник
     .desc = { ent-BaseUplinkRadio.desc }
+    .suffix = 40 ТК, ЯдерныйОперативник
 ent-BaseUplinkRadio60TC = { ent-BaseUplinkRadio }
-    .suffix = 60 ТК, аплинк Синдиката, Одинокий ядерный оперативник
     .desc = { ent-BaseUplinkRadio.desc }
+    .suffix = 60 ТК, СолоОпер
 ent-BaseUplinkRadioDebug = { ent-BaseUplinkRadio }
-    .suffix = DEBUG, аплинк синдиката
     .desc = { ent-BaseUplinkRadio.desc }
-
-# Corvax-HiddenDesc-End
-
+    .suffix = DEBUG

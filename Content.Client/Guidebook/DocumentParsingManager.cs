@@ -39,6 +39,13 @@ public sealed partial class DocumentParsingManager
         var whitespaceAndCommentParser = SkipWhitespaces.Then(Try(String("<!--").Then(Parser<char>.Any.SkipUntil(Try(String("-->"))))).SkipMany());
 
         _controlParser = OneOf(_tagParser, TryHeaderControl, ListControlParser, TextControlParser)
+            .Select(control =>
+            {
+                if (!_lastControlWasList)
+                    _numberedListCounter = 0;
+                _lastControlWasList = false;
+                return control;
+            }) // Corvax-Guidebook
             .Before(whitespaceAndCommentParser);
 
         foreach (var typ in _reflectionManager.GetAllChildren<IDocumentTag>())
@@ -51,25 +58,27 @@ public sealed partial class DocumentParsingManager
         _sawmill = Logger.GetSawmill("Guidebook");
     }
 
-    public bool TryAddMarkup(Control control, ProtoId<GuideEntryPrototype> entryId, bool log = true)
+    public bool TryAddMarkup(Control control, ProtoId<GuideEntryPrototype> entryId)
     {
-        if (!_prototype.TryIndex(entryId, out var entry))
+        if (!_prototype.Resolve(entryId, out var entry))
             return false;
 
         using var file = _resourceManager.ContentFileReadText(entry.Text);
-        return TryAddMarkup(control, file.ReadToEnd(), log);
+        return TryAddMarkup(control, file.ReadToEnd());
     }
 
-    public bool TryAddMarkup(Control control, GuideEntry entry, bool log = true)
+    public bool TryAddMarkup(Control control, GuideEntry entry)
     {
         using var file = _resourceManager.ContentFileReadText(entry.Text);
-        return TryAddMarkup(control, file.ReadToEnd(), log);
+        return TryAddMarkup(control, file.ReadToEnd());
     }
 
-    public bool TryAddMarkup(Control control, string text, bool log = true)
+    public bool TryAddMarkup(Control control, string text)
     {
         try
         {
+            _numberedListCounter = 0; // Corvax-Guidebook
+            _lastControlWasList = false; // Corvax-Guidebook
             foreach (var child in ControlParser.ParseOrThrow(text))
             {
                 control.AddChild(child);

@@ -17,7 +17,6 @@
   roles:
   - Bartender
   - Botanist
-  - Boxer
   - Chaplain
   - Chef
   - Clown
@@ -31,7 +30,6 @@
   - Detective
   - Reporter
   - Visitor
-  - Zookeeper
   - ServiceWorker
 
 - type: department
@@ -86,9 +84,9 @@
   roles:
   - AtmosphericTechnician
   - ChiefEngineer
+  - SeniorEngineer # Corvax-MentorRoles
   - StationEngineer
   - TechnicalAssistant
-  - SeniorEngineer
 
 - type: department
   id: Medical
@@ -102,7 +100,7 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
-  - SeniorPhysician
+  - SeniorPhysician # Corvax-MentorRoles
 
 - type: department
   id: Security
@@ -113,10 +111,10 @@
   - HeadOfSecurity
   - SecurityCadet
   - SecurityOfficer
+  - SeniorOfficer # Corvax-MentorRoles
   - Pilot # Corvax-Pilot
   - Warden
   - Brigmedic # Corvax-Brigmedic
-  - SeniorOfficer
 
 - type: department
   id: Science
@@ -125,9 +123,9 @@
   color: "#D381C9"
   roles:
   - ResearchDirector
+  - SeniorResearcher # Corvax-MentorRoles
   - Scientist
   - ResearchAssistant
-  - SeniorResearcher
 
 - type: department
   id: Silicon
@@ -144,9 +142,7 @@
   description: department-Specific-description
   color: "#9FED58"
   roles:
-  - Boxer
   - Reporter
-  - Zookeeper
   - Psychologist
   - Pilot # Corvax-Pilot
   primary: false

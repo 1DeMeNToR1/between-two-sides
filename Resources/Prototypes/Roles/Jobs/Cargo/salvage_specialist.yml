@@ -6,9 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 18000 # 3 hrs
-#    - !type:OverallPlaytimeRequirement
-#      time: 36000 #10 hrs
+      time: 3h
   icon: "JobIconShaftMiner"
   startingGear: SalvageSpecialistGear
   supervisors: job-supervisors-qm
@@ -24,9 +22,8 @@
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
     id: SalvagePDA
     ears: ClothingHeadsetCargo
-  storage:
-    back:
-    - SurveillanceSalvCum # Siberia-change
+  #storage:
+    #back:
     #- Stuff
 
 - type: chameleonOutfit

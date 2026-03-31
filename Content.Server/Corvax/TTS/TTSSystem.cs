@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
+using Content.Shared.Chat;
 using Content.Server.Chat.Systems;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Corvax.TTS;
@@ -80,7 +81,7 @@ public sealed partial class TTSSystem : EntitySystem
         var voiceId = component.VoicePrototypeId;
         if (!_isEnabled ||
             args.Message.Length > MaxMessageChars ||
-            voiceId == null)
+            string.IsNullOrEmpty(voiceId))
             return;
 
         var voiceEv = new TransformSpeakerVoiceEvent(uid, voiceId);
@@ -126,7 +127,7 @@ public sealed partial class TTSSystem : EntitySystem
             if (!session.AttachedEntity.HasValue) continue;
             var xform = xformQuery.GetComponent(session.AttachedEntity.Value);
             var distance = (sourcePos - _xforms.GetWorldPosition(xform, xformQuery)).Length();
-            if (distance > ChatSystem.VoiceRange * ChatSystem.VoiceRange)
+            if (distance > ChatSystem.VoiceRange)
                 continue;
 
             RaiseNetworkEvent(distance > ChatSystem.WhisperClearRange ? obfTtsEvent : fullTtsEvent, session);

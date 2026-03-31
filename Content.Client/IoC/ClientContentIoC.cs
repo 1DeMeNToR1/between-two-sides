@@ -2,9 +2,10 @@
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
 using Content.Client.Clickable;
-using Content.Client.Corvax.TTS;
+using Content.Client.Corvax.ExportSprites;
 using Content.Client.DebugMon;
 using Content.Client.Eui;
+using Content.Client.FeedbackPopup;
 using Content.Client.Fullscreen;
 using Content.Client.GameTicking.Managers;
 using Content.Client.GhostKick;
@@ -26,6 +27,8 @@ using Content.Client.Siberia.Sponsors;
 using Content.Client.Players.RateLimiting;
 using Content.Shared.Administration.Managers;
 using Content.Shared.Chat;
+using Content.Shared.FeedbackSystem;
+using Content.Shared.IoC;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
 
@@ -33,12 +36,13 @@ namespace Content.Client.IoC
 {
     internal static class ClientContentIoC
     {
-        public static void Register()
+        public static void Register(IDependencyCollection collection)
         {
-            var collection = IoCManager.Instance!;
-
+            SharedContentIoC.Register(collection);
             collection.Register<IParallaxManager, ParallaxManager>();
             collection.Register<GeneratedParallaxCache>();
+            collection.Register<EntityScreenshotRenderService>(); // Corvax-Wiki
+            collection.Register<EntityScreenshotGenerator>(); // Corvax-Wiki
             collection.Register<IChatManager, ChatManager>();
             collection.Register<ISharedChatManager, ChatManager>();
             collection.Register<IClientPreferencesManager, ClientPreferencesManager>();
@@ -67,6 +71,8 @@ namespace Content.Client.IoC
             collection.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
             collection.Register<TitleWindowManager>();
             collection.Register<ClientsidePlaytimeTrackingManager>();
+            collection.Register<ClientFeedbackManager>();
+            collection.Register<ISharedFeedbackManager, ClientFeedbackManager>();
         }
     }
 }

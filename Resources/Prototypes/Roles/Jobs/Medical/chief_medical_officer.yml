@@ -8,13 +8,13 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobChemist
-      time: 18000 #5 hrs # Corvax-RoleTime
-    - !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 24800 
+      time: 5h # Corvax-RoleTime 2.5h
+#    - !type:RoleTimeRequirement
+#      role: JobMedicalDoctor
+#      time: 5h
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 54000 #15 hrs # Corvax-RoleTime
+      time: 15h # Corvax-RoleTime 10h
 #    - !type:OverallPlaytimeRequirement
 #      time: 144000 #40 hrs
     - !type:TraitsRequirement #Corvax-TraitsRequirement
@@ -46,7 +46,6 @@
   equipment:
     id: CMOPDA
     ears: ClothingHeadsetCMO
-    belt: ClothingBeltMedicalFilled
   storage:
     back:
     - Flash

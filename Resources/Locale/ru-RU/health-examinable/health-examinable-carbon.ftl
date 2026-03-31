@@ -1,4 +1,3 @@
-# TODO: заменить на genitive там где возможно
 health-examinable-carbon-none = Видимые повреждения тела отсутствуют.
 
 health-examinable-carbon-Slash-8 = [color=yellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } неглубокий порез.[/color]
@@ -12,17 +11,17 @@ health-examinable-carbon-Slash-200 = [color=crimson]{ CAPITALIZE(POSS-ADJ($targe
 health-examinable-carbon-Blunt-8 = [color=yellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } лёгкий ушиб.[/color]
 health-examinable-carbon-Blunt-15 = [color=yellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } несколько ушибов.[/color]
 health-examinable-carbon-Blunt-30 = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { GENDER($target) ->
-                                    [male] избит
-                                    [female] избита
-                                    [epicene] избиты
-                                    *[neuter] избито
-                                    }.[/color]
+    [male] избит
+    [female] избита
+    [epicene] избиты
+    *[neuter] избито
+}.[/color]
 health-examinable-carbon-Blunt-50 = [color=red]{ CAPITALIZE(SUBJECT($target)) } сильно { GENDER($target) ->
-                                    [male] избит
-                                    [female] избита
-                                    [epicene] избиты
-                                    *[neuter] избито
-                                    }.[/color]
+    [male] избит
+    [female] избита
+    [epicene] избиты
+    *[neuter] избито
+}.[/color]
 health-examinable-carbon-Blunt-75 = [color=red]{ CAPITALIZE(POSS-ADJ($target)) } тело покрыто серьёзными тупыми травмами.[/color]
 health-examinable-carbon-Blunt-100 = [color=red]{ CAPITALIZE(POSS-ADJ($target)) } тело обезображено и сильно избито.[/color]
 health-examinable-carbon-Blunt-200 = [color=crimson]{ CAPITALIZE(POSS-ADJ($target)) } тело разбито в лепёшку![/color]
@@ -42,11 +41,11 @@ health-examinable-carbon-Heat-8 = [color=orange]{ CAPITALIZE(SUBJECT($target)) }
 health-examinable-carbon-Heat-15 = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } несколько ожогов первой степени.[/color]
 health-examinable-carbon-Heat-30 = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } несколько ожогов второй степени.[/color]
 health-examinable-carbon-Heat-50 = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { GENDER($target) ->
-                                    [male] покрыт
-                                    [female] покрыта
-                                    [epicene] покрыты
-                                    *[neuter] покрыто
-                                    } ожогами второй степени.[/color]
+    [male] покрыт
+    [female] покрыта
+    [epicene] покрыты
+    *[neuter] покрыто
+} ожогами второй степени.[/color]
 health-examinable-carbon-Heat-75 = [color=red]{ CAPITALIZE(POSS-ADJ($target)) } тело покрыто тяжёлыми ожогами третьей степени.[/color]
 health-examinable-carbon-Heat-100 = [color=red]{ CAPITALIZE(POSS-ADJ($target)) } тело значительно покрыто ожогами четвёртой степени.[/color]
 health-examinable-carbon-Heat-200 = [color=crimson]{ CAPITALIZE(POSS-ADJ($target)) } тело полностью обуглено![/color]
@@ -58,8 +57,8 @@ health-examinable-carbon-Shock-75 = [color=lightgoldenrodyellow]{ CAPITALIZE(POS
 health-examinable-carbon-Shock-100 = [color=lightgoldenrodyellow]Всё { POSS-ADJ($target) } покрыто сильными электрическими ожогами![/color]
 health-examinable-carbon-Shock-200 = [color=lightgoldenrodyellow]{ CAPITALIZE(POSS-ADJ($target)) } тело полностью зажарено![/color]
 
-health-examinable-carbon-Cold-8 = [color=lightblue]На кончиках { POSS-ADJ($target) } пальцев лёгкие обморожения.[/color]
-health-examinable-carbon-Cold-15 = [color=lightblue]На кончиках { POSS-ADJ($target) } конечностей обморожения первой степени.[/color]
+health-examinable-carbon-Cold-8 = [color=lightblue]На кончиках { POSS-ADJ($target) } конечностей лёгкие обморожения.[/color]
+health-examinable-carbon-Cold-15 = [color=lightblue]На концах { POSS-ADJ($target) } конечностей обморожения первой степени.[/color]
 health-examinable-carbon-Cold-30 = [color=lightblue]На { POSS-ADJ($target) } конечностях обморожения второй степени.[/color]
 health-examinable-carbon-Cold-50 = [color=lightblue]На { POSS-ADJ($target) } конечностях сильные обморожения третьей степени.[/color]
 health-examinable-carbon-Cold-75 = [color=lightblue]{ CAPITALIZE(POSS-ADJ($target)) } конечности тёмные, холодные и омертвевшие.[/color]
