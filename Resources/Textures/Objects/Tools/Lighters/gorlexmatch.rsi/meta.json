@@ -82,28 +82,6 @@
           0.2
         ]
       ]
-    },
-    {
-      "name": "off-equipped-NECK",
-      "directions": 4
-    },
-    {
-      "name": "inhand-right",
-      "directions": 4
-    },
-    {
-      "name": "inhand-left",
-      "directions": 4
-    },
-    {
-      "name": "icon"
-    },
-    {
-      "name": "icon-on"
-    },
-    {
-      "name": "equipped-NECK-resomi",
-      "directions": 4
     }
   ]
 }
