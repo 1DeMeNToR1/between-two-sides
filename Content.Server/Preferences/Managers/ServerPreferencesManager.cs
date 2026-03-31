@@ -39,7 +39,6 @@ namespace Content.Server.Preferences.Managers
         [Dependency] private readonly IServerDbManager _db = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IDependencyCollection _dependencies = default!;
-        [Dependency] private readonly IPrototypeManager _protos = default!;
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
         [Dependency] private readonly ILogManager _log = default!;
         [Dependency] private readonly UserDbDataManager _userDb = default!;
@@ -557,7 +556,7 @@ namespace Content.Server.Preferences.Managers
                     case HumanoidCharacterProfile hp:
                     {
                         var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
-                        var selectedSpecies = Humano.DefaultSpecies;
+                        var selectedSpecies = HumanoidCharacterProfile.DefaultSpecies;
 
                         if (prototypeManager.TryIndex<SpeciesPrototype>(hp.Species, out var species) && species.RoundStart)
                         {
@@ -567,10 +566,10 @@ namespace Content.Server.Preferences.Managers
                         newProf = hp
                             .WithJobPriorities(
                                 hp.JobPriorities.Where(job =>
-                                    _protos.HasIndex<JobPrototype>(job.Key)))
+                                    _prototypeManager.HasIndex<JobPrototype>(job.Key)))
                             .WithAntagPreferences(
                                 hp.AntagPreferences.Where(antag =>
-                                    _protos.HasIndex<AntagPrototype>(antag)))
+                                    _prototypeManager.HasIndex<AntagPrototype>(antag)))
                             .WithSpecies(selectedSpecies);
                         break;
                     }
@@ -579,7 +578,7 @@ namespace Content.Server.Preferences.Managers
                 }
 
                 // return new KeyValuePair<int, ICharacterProfile>(p.Key, newProf);
-                return new KeyValuePair<int, ICharacterProfile>(p.Key, p.Value.Validated(session, collection, sponsorPrototypes));
+                return new KeyValuePair<int, HumanoidCharacterProfile>(p.Key, p.Value.Validated(session, collection, sponsorPrototypes));
             }), prefs.SelectedCharacterIndex, prefs.AdminOOCColor, prefs.ConstructionFavorites);
         }
 
