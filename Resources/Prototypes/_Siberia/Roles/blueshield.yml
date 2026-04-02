@@ -307,7 +307,7 @@
   name: ion laser
   components:
   - type: StaminaDamageOnCollide
-      damage: 80
+    damage: 80
   - type: HitscanBasicDamage
     damage:
       types:
