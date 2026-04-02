@@ -31,5 +31,3 @@
     color: "#0abc11"
   - type: SpeakOnUIClosed
     pack: SibVendAds
-  - type: SpeakOnUIClosed
-    pack: SibVendGoodbyes
