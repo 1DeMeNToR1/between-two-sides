@@ -4,7 +4,7 @@
   id: FoodBurgerVeryLong
   description: Восхитительно! В нём точно есть душа Лобстера!
   components:
-  - type: Food
+  - type: Edible
   - type: FlavorProfile
     flavors:
       - свинина

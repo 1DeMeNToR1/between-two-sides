@@ -169,7 +169,7 @@
   - type: EmitSoundOnActivate
     sound:
       path: /Audio/Voice/Reptilian/reptilian_scream.ogg
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
     useSound:
       path: /Audio/Animals/lizard_happy.ogg
@@ -198,7 +198,7 @@
   - type: EmitSoundOnActivate
     sound:
       path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
     useSound:
       path: /Audio/Siberia/Voice/Resomi/resomi_laugh.ogg
