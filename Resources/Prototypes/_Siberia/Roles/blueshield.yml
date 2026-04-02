@@ -336,7 +336,8 @@
       mobState:
       - Critical
       - Dead
-    - type: Rattle
+    - type: RattleOnTrigger
+      targetUser: true
       radioChannel: Medical
 
 - type: entity
