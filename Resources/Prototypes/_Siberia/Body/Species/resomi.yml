@@ -1,0 +1,439 @@
+- type: markingsGroup
+  parent: Undergarments
+  id: Resomi
+  onlyGroupWhitelisted: true
+  limits:
+    enum.HumanoidVisualLayers.Hair:
+      limit: 1
+      required: true
+      default: [ ResomiHairEars1 ]
+    enum.HumanoidVisualLayers.FacialHair:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: true
+      default: [ ResomiTailClassic ]
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.HeadSide:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LArm:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RArm:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LHand:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RHand:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LLeg:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RLeg:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LFoot:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.RFoot:
+      limit: 1
+      required: false
+
+- type: entity
+  parent: BaseSpeciesAppearance
+  id: AppearanceResomi
+  name: resomi appearance
+  components:
+  - type: Inventory
+    speciesId: resomi
+    templateId: resomi
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: jumpsuit
+      head:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: head
+      back:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: back
+      ears:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: ears
+      eyes:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: eyes
+      belt:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: belt
+      neck:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: neck
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: feet
+      suitStorage:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: suitStorage
+      mask:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: mask
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+            state: hands
+  - type: Hands
+    leftHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+          state: inHand
+    rightHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: Siberia/Mobs/Species/Resomi/displacement.rsi
+          state: inHand
+  - type: InitialBody
+    organs:
+      Torso: OrganResomiTorso
+      Head: OrganResomiHead
+      ArmLeft: OrganResomiArmLeft
+      ArmRight: OrganResomiArmRight
+      HandRight: OrganResomiHandRight
+      HandLeft: OrganResomiHandLeft
+      LegLeft: OrganResomiLegLeft
+      LegRight: OrganResomiLegRight
+      FootLeft: OrganResomiFootLeft
+      FootRight: OrganResomiFootRight
+      Brain: OrganResomiBrain
+      Eyes: OrganResomiEyes
+      Tongue: OrganResomiTongue
+      Appendix: OrganResomiAppendix
+      Ears: OrganResomiEars
+      Lungs: OrganResomiLungs
+      Heart: OrganResomiHeart
+      Stomach: OrganResomiStomach
+      Liver: OrganResomiLiver
+      Kidneys: OrganResomiKidneys
+  - type: HumanoidProfile
+    species: Resomi
+
+
+
+- type: entity
+  parent:
+  - AppearanceResomi
+  - BaseSpeciesMobOrganic
+  id: MobResomi
+  name: Urist McResomi
+  components:
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Resomi
+  - type: Stamina
+    baseCritThreshold: 90
+  - type: Speech
+    speechVerb: Resomi
+    speechSounds: Lizard
+  - type: Vocal
+    sounds:
+      Male: UnisexResomi
+      Female: UnisexResomi
+      Unsexed: UnisexResomi
+    sounds:
+      Male: UnisexResomi
+      Female: UnisexResomi
+      Unsexed: UnisexResomi  
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatChicken
+      amount: 3
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 400
+      behaviors:
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 1500
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          FoodMeatChickenFriedVox:
+            min: 3
+            max: 3
+      - !type:BurnBodyBehavior
+        popupMessage: bodyburn-vox-text-others
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Radiation
+        damage: 15
+      behaviors:
+      - !type:PopupBehavior
+        popup: mouth-taste-metal
+        popupType: LargeCaution
+        targetOnly: true
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Radiation
+        damage: 40
+      behaviors:
+      - !type:VomitBehavior
+  - type: PassiveDamage
+    # Augment normal health regen to be able to tank some Poison damage
+    # This allows Resomi to take their mask off temporarily to eat something without needing a trip to medbay afterwards.
+    allowedStates:
+    - Alive
+    damage:
+      types:
+        Heat: -0.04
+        Blunt: -0.05
+        Piercing: -0.03
+        Slash: -0.03
+        Poison: -0.1 # needs to be less than the PendingZombieComponent does or they never become zombies by the disease.
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Siberia/Mobs/Effects/brute_damage_resomi.rsi
+        color: "#D514F7"
+      Burn:
+        sprite: Siberia/Mobs/Effects/burn_damage_resomi.rsi
+  - type: FireVisuals
+    sprite: Siberia/Mobs/Effects/onfire.rsi
+    normalState: Resomi_burning
+    alternateState: Resomi_burning
+  - type: MeleeWeapon
+    # hidden: true
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Piercing: 2
+  - type: Temperature
+    currentTemperature: 313.15
+    specificHeat: 46
+  - type: TemperatureDamage  
+    heatDamageThreshold: 410
+    coldDamageThreshold: 273.15 # 285
+    coldDamage:
+      types:
+        Cold : 0.1 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 0.1 #per second, scales with temperature & other constants
+  - type: TemperatureSpeed
+    thresholds:
+      301: 0.9
+      295: 0.8
+      285: 0.7
+
+  - type: ResomiAccent
+  - type: MovementSpeedModifier
+    baseWeightlessAcceleration: 1.5 # Move around more easily in space.
+    baseWeightlessFriction: 1.1
+    baseWeightlessModifier: 1.1
+  - type: Bloodstream
+    bloodReagent: ResomiBlood
+
+
+
+- type: entity
+  parent: OrganBase
+  id: OrganResomi
+  abstract: true
+  suffix: Resomi
+  
+- type: entity
+  id: OrganResomiMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Animal ]
+
+- type: entity
+  parent: OrganResomi
+  id: OrganResomiInternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/organs.rsi
+
+- type: entity
+  parent: OrganResomi
+  id: OrganResomiExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Siberia/Mobs/Species/Resomi/parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: Siberia/Mobs/Species/Resomi/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Resomi
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganReptilianExternal ]
+  id: OrganResomiTorso
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Tail
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganResomiExternal ]
+  id: OrganResomiHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Snout
+    - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.HeadSide
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganResomiExternal ]
+  id: OrganResomiArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganResomiExternal ]
+  id: OrganResomiArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganResomiExternal ]
+  id: OrganResomiHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganResomiExternal ]
+  id: OrganResomiHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganResomiExternal ]
+  id: OrganResomiLegLeft
+  components:
+  - type: Sprite
+    sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+  - type: VisualOrgan
+    data:
+      sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganResomiExternal ]
+  id: OrganResomiLegRight
+  components:
+  - type: Sprite
+    sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+  - type: VisualOrgan
+    data:
+      sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganResomiExternal ]
+  id: OrganResomiFootLeft
+  components:
+  - type: Sprite
+    sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+  - type: VisualOrgan
+    data:
+      sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganResomiExternal ]
+  id: OrganResomiFootRight
+  components:
+  - type: Sprite
+    sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+  - type: VisualOrgan
+    data:
+      sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+
+- type: entity
+  parent: [ OrganBaseBrain, OrganSpriteHumanInternal, OrganResomiInternal ]
+  id: OrganResomiBrain
+
+- type: entity
+  parent: [ OrganBaseEyes, OrganResomiInternal, OrganResomiExternal ]
+  id: OrganResomiEyes
+  components:
+  - type: VisualOrgan
+    data:
+      sprite: Siberia/Mobs/Customization/eyes.rsi
+
+- type: entity
+  parent: [ OrganBaseTongue, OrganResomiInternal ]
+  id: OrganResomiTongue
+
+- type: entity
+  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal, OrganResomiInternal ]
+  id: OrganResomiAppendix
+
+- type: entity
+  parent: [ OrganBaseEars, OrganSpriteHumanInternal, OrganResomiInternal ]
+  id: OrganResomiEars
+
+- type: entity
+  parent: [ OrganBaseLungs, OrganResomiInternal, OrganReptilianMetabolizer ]
+  id: OrganResomiLungs
+
+- type: entity
+  parent: [ OrganBaseHeart, OrganResomiInternal, OrganReptilianMetabolizer ]
+  id: OrganResomiHeart
+
+- type: entity
+  parent: [ OrganBaseStomach, OrganResomiInternal, OrganReptilianMetabolizer ]
+  id: OrganResomiStomach
+  components:
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - Fruit
+      - ReptilianFood
+      - Meat
+      - Pill
+      - Crayon
+      - Paper
+
+- type: entity
+  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganResomiInternal, OrganReptilianMetabolizer ]
+  id: OrganResomiLiver
+
+- type: entity
+  parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganResomiInternal, OrganResomiMetabolizer ]
+  id: OrganResomiKidneys
