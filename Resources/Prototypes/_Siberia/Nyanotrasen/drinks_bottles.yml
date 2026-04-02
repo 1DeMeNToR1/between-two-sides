@@ -58,21 +58,21 @@
 #  - type: Sprite
 #    sprite: Siberia/Nyanotrasen/sojubottle.rsi
 
-- type: entity
-  parent: DrinkGlassBase
-  id: DrinkTokkuri
-  name: tokkuri
-  description: Цветочный и полный саке!
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 100
-        reagents:
-        - ReagentId: Sake
-          Quantity: 100
-  - type: Sprite
-    sprite: Siberia/Nyanotrasen/saketokkuri.rsi
+# - type: entity
+  # parent: DrinkGlassBase
+  # id: DrinkTokkuri
+  # name: tokkuri
+  # description: Цветочный и полный саке!
+  # components:
+  # - type: SolutionContainerManager
+    # solutions:
+      # drink:
+        # maxVol: 100
+        # reagents:
+        # - ReagentId: Sake
+          # Quantity: 100
+  # - type: Sprite
+    # sprite: Siberia/Nyanotrasen/saketokkuri.rsi
 
 
 - type: entity
