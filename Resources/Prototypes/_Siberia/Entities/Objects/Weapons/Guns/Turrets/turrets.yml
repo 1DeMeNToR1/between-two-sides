@@ -65,7 +65,7 @@
       availableModes:
         - FullAuto
       soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-    - type: HitscanBatteryAmmoProvider
+    - type: BatteryAmmoProvider
       proto: RedMediumLaser
       fireCost: 100
     # TODO: Power ammo provider?

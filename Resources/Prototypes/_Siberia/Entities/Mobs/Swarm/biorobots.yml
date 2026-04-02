@@ -394,7 +394,7 @@
         Structural: 10
     animation: WeaponArcDisarm
     range: 1.7
-  - type: HitscanBatteryAmmoProvider
+  - type: BatteryAmmoProvider
     proto: SwarmLaser
     fireCost: 250
   - type: Battery
@@ -914,7 +914,7 @@
         Structural: 10
     animation: WeaponArcKick
     range: 1.7
-  - type: HitscanBatteryAmmoProvider
+  - type: BatteryAmmoProvider
     proto: SwarmLaser
     fireCost: 250
   - type: Battery

@@ -284,7 +284,7 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Siberia/resonator_blast.ogg
-  - type: HitscanBatteryAmmoProvider
+  - type: BatteryAmmoProvider
     proto: IonLaser
     fireCost: 80
   - type: Battery

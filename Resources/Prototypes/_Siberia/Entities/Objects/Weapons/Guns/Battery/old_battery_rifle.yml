@@ -20,7 +20,7 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-  - type: HitscanBatteryAmmoProvider
+  - type: BatteryAmmoProvider
     proto: OldRedLaserSiberia
     fireCost: 120
 
