@@ -7,7 +7,7 @@
   components:
     - type: SubdermalImplant
       implantAction: ActionActivateEmpSwarm
-    - type: TriggerImplantAction
+    # - type: TriggerImplantAction # broken
     - type: EmpOnTrigger
       range: 10
       energyConsumption: 500000

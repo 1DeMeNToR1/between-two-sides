@@ -1,6 +1,6 @@
 - type: entity
   name: спрей дрона роя
-  parent: BaseItem
+  parent: BaseHypospray
   description: Инжектор наномашин, который использует дрон-лекарь роя.
   id: SwarmHealerHypospray
   components:
@@ -17,8 +17,6 @@
     solution: hypospray
   - type: ExaminableSolution
     solution: hypospray
-  - type: Hypospray
-    onlyAffectsMobs: false
   - type: UseDelay
     delay: 0.5
   - type: SolutionRegeneration
@@ -34,7 +32,7 @@
 
 - type: entity
   name: спрей дрона роя
-  parent: BaseItem
+  parent: BaseHypospray
   description: Инжектор наномашин, который использует дрон-лекарь роя. Кажется в нём кончились наномашины...
   id: SwarmHealerHyposprayNormal
   components:
@@ -51,8 +49,6 @@
     solution: hypospray
   - type: ExaminableSolution
     solution: hypospray
-  - type: Hypospray
-    onlyAffectsMobs: false
   - type: UseDelay
     delay: 0.5
   - type: MeleeWeapon
