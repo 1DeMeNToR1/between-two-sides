@@ -145,8 +145,6 @@
   - type: HumanoidProfile
     species: Resomi
 
-
-
 - type: entity
   parent:
   - AppearanceResomi
