@@ -791,7 +791,7 @@
     damage:
       types:
         Heat: 5
-  - type: ProjectileBatteryAmmoProvider
+  - type: BatteryAmmoProvider
     proto: BulletDisablerSwarm
     fireCost: 100
   - type: Battery

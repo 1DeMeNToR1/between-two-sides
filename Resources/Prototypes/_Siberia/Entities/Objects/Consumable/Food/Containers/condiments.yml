@@ -5,8 +5,11 @@
   name: бутылка для соусов
   description: Тонкий пластиковый контейнер, используемый для хранения соусов.
   components:
-  - type: Drink
+  - type: Edible
+    edible: Food # usually contains powders like flour or condiments like ketchup
     solution: food
+    destroyOnEmpty: false
+    utensil: Spoon
   - type: SolutionContainerManager
     solutions:
       food:
