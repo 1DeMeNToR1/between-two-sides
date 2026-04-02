@@ -1,265 +1,265 @@
-- type: entity
-  save: false
-  name: Urist McIPC
-  parent: BaseMobSpeciesOrganicIpc
-  id: BaseMobIPC
-  abstract: true
-  components:
-    # The important nessessities
-    - type: ZombieImmune
-    - type: MovementSpeedModifier
-      baseWalkSpeed : 1.9
-      baseSprintSpeed : 3.9
-    - type: Body
-      prototype: IPC
-      requiredLegs: 2
-    - type: HumanoidAppearance
-      species: IPC
-    - type: Damageable
-      damageContainer: BiologicalIPC
-      damageModifierSet: IPC
-    - type: Icon
-      sprite: Siberia/Mobs/Species/IPC/parts.rsi
-      state: full
-    # Damage and speed
-    - type: Bloodstream
-      bloodReagent: Oil
-      bloodlossDamage:
-        types:
-          Heat: 0.25
-    - type: Temperature
-      heatDamageThreshold: 452.875 # melting point of iron 1/4th, cause fuck physics you know
-      coldDamageThreshold: 283.15 # 10c aka "cold" causes condensation/freezing and as such shorting
-      currentTemperature: 313.15
-      specificHeat: 46
-      coldDamage:
-        types:
-          Cold: 1
-          Heat: -2
-      heatDamage:
-        types:
-          Heat: 2
-          Cold: -1
-    - type: Repairable
-      fuelCost: 5 # cause most of the fuel is used how long its turned on for
-      doAfterDelay: 7
-      damage:
-        types:
-          Blunt: -25 # you can't heal group damage. it doesn't work. wh y.
-          Slash: -25
-          Piercing: -25
-          Cold: -60 # you're warming them up...
-          Heat: 30 # another 2 minutes of downtime due to slight overheating
-          Asphyxiation: -200 # TODO FIX DEATHGASPS
-    - type: Barotrauma
-      damage:
-        types:
-          Heat: 0.25 # IPCs can't radiate well, they rely on air cooling
-    - type: SlowOnDamage
-      speedModifierThresholds:
-        70: 0.6
-        90: 0.4
-    # Misc
-    - type: Speech
-      speechSounds: IPC
-    - type: Vocal
-      sounds:
-        Unsexed: UnisexIPC
-      wilhelm:
-        path: /Audio/Siberia/Voice/IPC/wilhelm.ogg
-      wilhelmProbability: 0.001
-    - type: Inventory
-      templateId: ipc
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        100: Critical
-        200: Dead
-      stateAlertDict:
-        Alive: BorgHealth
-        Critical: BorgCrit
-        Dead: BorgDead
-    - type: UserInterface
-      interfaces:
-        enum.StrippingUiKey.Key:
-          type: StrippableBoundUserInterface
-        enum.SiliconLawsUiKey.Key:
-          type: SiliconLawBoundUserInterface
-    - type: SiliconLawBound
-    - type: ActionGrant
-      actions:
-        - ActionViewLaws
-    - type: IonStormTarget
-    - type: SiliconLawProvider
-      laws: Ipc
-    - type: EyeProtection
-      protectionTime: 12
-    - type: FootstepModifier
-      footstepSoundCollection:
-        collection: FootstepIpc
-        params:
-          volume: -13
-    - type: Tag
-      tags:
-        - FootstepSound
-        - CanPilot
-        - DoorBumpOpener
-        - Unclonable
-    - type: TypingIndicator
-      proto: robot
-    - type: IntrinsicRadioReceiver
-    - type: IntrinsicRadioTransmitter
-      channels:
-      - Trinary
-    - type: ActiveRadio
-      channels:
-      - Trinary
-    - type: Accentless
-      removes:
-        - type: Perishable
-    - type: TransferMindOnGib
-    - type: Destructible
-      thresholds:
-      - trigger:
-          !type:DamageTypeTrigger
-          damageType: Blunt
-          damage: 200
-        behaviors:
-        - !type:GibBehavior { }
+# - type: entity
+  # save: false
+  # name: Urist McIPC
+  # parent: BaseMobSpeciesOrganicIpc
+  # id: BaseMobIPC
+  # abstract: true
+  # components:
+    # # The important nessessities
+    # - type: ZombieImmune
+    # - type: MovementSpeedModifier
+      # baseWalkSpeed : 1.9
+      # baseSprintSpeed : 3.9
+    # - type: Body
+      # prototype: IPC
+      # requiredLegs: 2
+    # - type: HumanoidAppearance
+      # species: IPC
+    # - type: Damageable
+      # damageContainer: BiologicalIPC
+      # damageModifierSet: IPC
+    # - type: Icon
+      # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+      # state: full
+    # # Damage and speed
+    # - type: Bloodstream
+      # bloodReagent: Oil
+      # bloodlossDamage:
+        # types:
+          # Heat: 0.25
+    # - type: Temperature
+      # heatDamageThreshold: 452.875 # melting point of iron 1/4th, cause fuck physics you know
+      # coldDamageThreshold: 283.15 # 10c aka "cold" causes condensation/freezing and as such shorting
+      # currentTemperature: 313.15
+      # specificHeat: 46
+      # coldDamage:
+        # types:
+          # Cold: 1
+          # Heat: -2
+      # heatDamage:
+        # types:
+          # Heat: 2
+          # Cold: -1
+    # - type: Repairable
+      # fuelCost: 5 # cause most of the fuel is used how long its turned on for
+      # doAfterDelay: 7
+      # damage:
+        # types:
+          # Blunt: -25 # you can't heal group damage. it doesn't work. wh y.
+          # Slash: -25
+          # Piercing: -25
+          # Cold: -60 # you're warming them up...
+          # Heat: 30 # another 2 minutes of downtime due to slight overheating
+          # Asphyxiation: -200 # TODO FIX DEATHGASPS
+    # - type: Barotrauma
+      # damage:
+        # types:
+          # Heat: 0.25 # IPCs can't radiate well, they rely on air cooling
+    # - type: SlowOnDamage
+      # speedModifierThresholds:
+        # 70: 0.6
+        # 90: 0.4
+    # # Misc
+    # - type: Speech
+      # speechSounds: IPC
+    # - type: Vocal
+      # sounds:
+        # Unsexed: UnisexIPC
+      # wilhelm:
+        # path: /Audio/Siberia/Voice/IPC/wilhelm.ogg
+      # wilhelmProbability: 0.001
+    # - type: Inventory
+      # templateId: ipc
+    # - type: MobThresholds
+      # thresholds:
+        # 0: Alive
+        # 100: Critical
+        # 200: Dead
+      # stateAlertDict:
+        # Alive: BorgHealth
+        # Critical: BorgCrit
+        # Dead: BorgDead
+    # - type: UserInterface
+      # interfaces:
+        # enum.StrippingUiKey.Key:
+          # type: StrippableBoundUserInterface
+        # enum.SiliconLawsUiKey.Key:
+          # type: SiliconLawBoundUserInterface
+    # - type: SiliconLawBound
+    # - type: ActionGrant
+      # actions:
+        # - ActionViewLaws
+    # - type: IonStormTarget
+    # - type: SiliconLawProvider
+      # laws: Ipc
+    # - type: EyeProtection
+      # protectionTime: 12
+    # - type: FootstepModifier
+      # footstepSoundCollection:
+        # collection: FootstepIpc
+        # params:
+          # volume: -13
+    # - type: Tag
+      # tags:
+        # - FootstepSound
+        # - CanPilot
+        # - DoorBumpOpener
+        # - Unclonable
+    # - type: TypingIndicator
+      # proto: robot
+    # - type: IntrinsicRadioReceiver
+    # - type: IntrinsicRadioTransmitter
+      # channels:
+      # - Trinary
+    # - type: ActiveRadio
+      # channels:
+      # - Trinary
+    # - type: Accentless
+      # removes:
+        # - type: Perishable
+    # - type: TransferMindOnGib
+    # - type: Destructible
+      # thresholds:
+      # - trigger:
+          # !type:DamageTypeTrigger
+          # damageType: Blunt
+          # damage: 200
+        # behaviors:
+        # - !type:GibBehavior { }
   
 
-- type: siliconLaw
-  id: Ipc1
-  order: 1
-  lawString: law-ipc-1
+# - type: siliconLaw
+  # id: Ipc1
+  # order: 1
+  # lawString: law-ipc-1
 
-- type: siliconLaw
-  id: Ipc2
-  order: 2
-  lawString: law-ipc-2
+# - type: siliconLaw
+  # id: Ipc2
+  # order: 2
+  # lawString: law-ipc-2
 
-- type: siliconLaw
-  id: Ipc3
-  order: 3
-  lawString: law-ipc-3
+# - type: siliconLaw
+  # id: Ipc3
+  # order: 3
+  # lawString: law-ipc-3
 
-- type: siliconLawset
-  id: Ipc
-  laws:
-  - Ipc1
-  - Ipc2
-  - Ipc3
-  obeysTo: laws-owner-you
+# - type: siliconLawset
+  # id: Ipc
+  # laws:
+  # - Ipc1
+  # - Ipc2
+  # - Ipc3
+  # obeysTo: laws-owner-you
 
-- type: soundCollection
-  id: FootstepIpc
-  files:
-  - /Audio/Siberia/robotstep.ogg
+# - type: soundCollection
+  # id: FootstepIpc
+  # files:
+  # - /Audio/Siberia/robotstep.ogg
 
-- type: entity
-  name: Urist McIPC
-  parent: MobHumanDummy
-  id: MobIPCDummy
-  categories: [ HideSpawnMenu ]
-  save: false
-  components:
-    - type: Inventory
-      templateId: ipc
-    - type: HumanoidAppearance
-      species: IPC
+# - type: entity
+  # name: Urist McIPC
+  # parent: MobHumanDummy
+  # id: MobIPCDummy
+  # categories: [ HideSpawnMenu ]
+  # save: false
+  # components:
+    # - type: Inventory
+      # templateId: ipc
+    # - type: HumanoidAppearance
+      # species: IPC
 
-- type: entity
-  save: false
-  parent:
-  - MobBloodstreamIpc
-  - MobAtmosStandard
-  - MobFlammable
-  - BaseMobSpecies
-  id: BaseMobSpeciesOrganicIpc
-  abstract: true
-  components:
-  - type: Barotrauma
-    damage:
-      types:
-        Blunt: 0.55 #per second, scales with pressure and other constants.
-  - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
-    allowedStates:
-    - Alive
-    damageCap: 20
-    damage:
-      types:
-        Heat: -0.07
-      groups:
-        Brute: -0.07
-  # Organs
-  - type: StatusEffects
-    allowed:
-    - Stun
-    - KnockedDown
-    - SlowedDown
-    - Stutter
-    - SeeingRainbows
-    - Electrocution
-    - ForcedSleep
-    - TemporaryBlindness
-    - Drunk
-    - SlurredSpeech
-    - RatvarianLanguage
-    - PressureImmunity
-    - Muted
-    - Pacified
-    - StaminaModifier
-  - type: Blindable
-  # Other
-  - type: Temperature
-    heatDamageThreshold: 325
-    coldDamageThreshold: 260
-    currentTemperature: 310.15
-    specificHeat: 42
-    coldDamage:
-      types:
-        Cold: 0.1 #per second, scales with temperature & other constants
-    heatDamage:
-      types:
-        Heat: 1.5 #per second, scales with temperature & other constants
-  - type: ThermalRegulator
-    metabolismHeat: 800
-    radiatedHeat: 100
-    implicitHeatRegulation: 500
-    sweatHeatRegulation: 2000
-    shiveringHeatRegulation: 2000
-    normalBodyTemperature: 310.15
-    thermalRegulationTemperatureThreshold: 25
-  - type: Perishable
-  - type: Butcherable
-    butcheringType: Spike # TODO human.
-    spawned:
-      - id: SheetPlasteel1
-        amount: 30
-  - type: FireVisuals
-    alternateState: Standing
-  - type: Accentless
-    removes:
-    - type: Respirator
-      damage:
-        types:
-          Asphyxiation: 0
-      damageRecovery:
-        types:
-          Asphyxiation: -1.0
+# - type: entity
+  # save: false
+  # parent:
+  # - MobBloodstreamIpc
+  # - MobAtmosStandard
+  # - MobFlammable
+  # - BaseMobSpecies
+  # id: BaseMobSpeciesOrganicIpc
+  # abstract: true
+  # components:
+  # - type: Barotrauma
+    # damage:
+      # types:
+        # Blunt: 0.55 #per second, scales with pressure and other constants.
+  # - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
+    # allowedStates:
+    # - Alive
+    # damageCap: 20
+    # damage:
+      # types:
+        # Heat: -0.07
+      # groups:
+        # Brute: -0.07
+  # # Organs
+  # - type: StatusEffects
+    # allowed:
+    # - Stun
+    # - KnockedDown
+    # - SlowedDown
+    # - Stutter
+    # - SeeingRainbows
+    # - Electrocution
+    # - ForcedSleep
+    # - TemporaryBlindness
+    # - Drunk
+    # - SlurredSpeech
+    # - RatvarianLanguage
+    # - PressureImmunity
+    # - Muted
+    # - Pacified
+    # - StaminaModifier
+  # - type: Blindable
+  # # Other
+  # - type: Temperature
+    # heatDamageThreshold: 325
+    # coldDamageThreshold: 260
+    # currentTemperature: 310.15
+    # specificHeat: 42
+    # coldDamage:
+      # types:
+        # Cold: 0.1 #per second, scales with temperature & other constants
+    # heatDamage:
+      # types:
+        # Heat: 1.5 #per second, scales with temperature & other constants
+  # - type: ThermalRegulator
+    # metabolismHeat: 800
+    # radiatedHeat: 100
+    # implicitHeatRegulation: 500
+    # sweatHeatRegulation: 2000
+    # shiveringHeatRegulation: 2000
+    # normalBodyTemperature: 310.15
+    # thermalRegulationTemperatureThreshold: 25
+  # - type: Perishable
+  # - type: Butcherable
+    # butcheringType: Spike # TODO human.
+    # spawned:
+      # - id: SheetPlasteel1
+        # amount: 30
+  # - type: FireVisuals
+    # alternateState: Standing
+  # - type: Accentless
+    # removes:
+    # - type: Respirator
+      # damage:
+        # types:
+          # Asphyxiation: 0
+      # damageRecovery:
+        # types:
+          # Asphyxiation: -1.0
 
 
-- type: entity
-  save: false
-  id: MobBloodstreamIpc
-  abstract: true
-  components:
-  - type: SolutionContainerManager
-  - type: Bloodstream
-    bloodlossDamage:
-      types:
-        Bloodloss: 1
-    bloodlossHealDamage:
-      types:
-        Bloodloss: -1
+# - type: entity
+  # save: false
+  # id: MobBloodstreamIpc
+  # abstract: true
+  # components:
+  # - type: SolutionContainerManager
+  # - type: Bloodstream
+    # bloodlossDamage:
+      # types:
+        # Bloodloss: 1
+    # bloodlossHealDamage:
+      # types:
+        # Bloodloss: -1
 
