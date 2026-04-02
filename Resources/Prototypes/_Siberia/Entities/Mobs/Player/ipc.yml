@@ -1,29 +1,29 @@
-- type: entity
-  save: false
-  name: Урист МакКПБ
-  parent: BaseMobIPC
-  id: MobIPC
-  components:
-    - type: CombatMode
-      canDisarm: true
-    - type: InteractionPopup
-      successChance: 1
-      interactSuccessString: hugging-success-generic
-      interactSuccessSound: /Audio/Effects/thudswoosh.ogg
-      messagePerceivedByOthers: hugging-success-generic-others
-    - type: Input
-      context: "human"
-    - type: Icon
-      sprite: Siberia/Mobs/Species/IPC/parts.rsi
-      state: full
-    - type: MobMover
-    - type: InputMover
-    - type: Alerts
-    - type: Actions
-    - type: Eye
-    - type: CameraRecoil
-    - type: Examiner
-    - type: CanHostGuardian
-    - type: NpcFactionMember
-      factions:
-        - NanoTrasen
+# - type: entity
+  # save: false
+  # name: Урист МакКПБ
+  # parent: BaseMobIPC
+  # id: MobIPC
+  # components:
+    # - type: CombatMode
+      # canDisarm: true
+    # - type: InteractionPopup
+      # successChance: 1
+      # interactSuccessString: hugging-success-generic
+      # interactSuccessSound: /Audio/Effects/thudswoosh.ogg
+      # messagePerceivedByOthers: hugging-success-generic-others
+    # - type: Input
+      # context: "human"
+    # - type: Icon
+      # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+      # state: full
+    # - type: MobMover
+    # - type: InputMover
+    # - type: Alerts
+    # - type: Actions
+    # - type: Eye
+    # - type: CameraRecoil
+    # - type: Examiner
+    # - type: CanHostGuardian
+    # - type: NpcFactionMember
+      # factions:
+        # - NanoTrasen
