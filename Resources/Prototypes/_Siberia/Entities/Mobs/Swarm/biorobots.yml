@@ -228,7 +228,7 @@
     # groups:
       # - id: Medicine
       # - id: Poison
-  - type: Advertise
+  - type: SpeakOnUIClosed
     pack: SwarmAds
     maximumWait: 240
     minimumWait: 180
