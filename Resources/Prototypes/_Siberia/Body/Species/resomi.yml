@@ -313,7 +313,7 @@
       group: Resomi
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganReptilianExternal ]
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganResomiExternal ]
   id: OrganResomiTorso
   components:
   - type: VisualOrganMarkings
@@ -410,15 +410,15 @@
   id: OrganResomiEars
 
 - type: entity
-  parent: [ OrganBaseLungs, OrganResomiInternal, OrganReptilianMetabolizer ]
+  parent: [ OrganBaseLungs, OrganResomiInternal, OrganResomiMetabolizer ]
   id: OrganResomiLungs
 
 - type: entity
-  parent: [ OrganBaseHeart, OrganResomiInternal, OrganReptilianMetabolizer ]
+  parent: [ OrganBaseHeart, OrganResomiInternal, OrganResomiMetabolizer ]
   id: OrganResomiHeart
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganResomiInternal, OrganReptilianMetabolizer ]
+  parent: [ OrganBaseStomach, OrganResomiInternal, OrganResomiMetabolizer ]
   id: OrganResomiStomach
   components:
   - type: Stomach
@@ -432,7 +432,7 @@
       - Paper
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganResomiInternal, OrganReptilianMetabolizer ]
+  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganResomiInternal, OrganResomiMetabolizer ]
   id: OrganResomiLiver
 
 - type: entity
