@@ -167,7 +167,7 @@
     containers:
       key_slots:
       - EncryptionKeyCommand
-      
+
 
 
 
@@ -188,7 +188,7 @@
     sprite: Siberia/Temp/helicopter.rsi
     state: icon
   - type: EmitSoundOnSpawn
-    sound: 
+    sound:
       path: /Audio/Siberia/Temp/helicopter-work.ogg
   - type: Fixtures
     fixtures:
@@ -251,12 +251,12 @@
         layer:
         - GlassLayer
   - type: EmitSoundOnSpawn
-    sound: 
+    sound:
       path: "/Audio/Siberia/Temp/helicopter-end.ogg"
   - type: Airtight
-  
-  
-  
+
+
+
 - type: entity
   parent: IDCardStandard
   id: ExpeditionCaptainIDCard
@@ -276,7 +276,7 @@
     - DoorBumpOpener
     - WhitelistChameleon
     - WhitelistChameleonIdCard
-    
+
 - type: entity
   parent: IDCardStandard
   id: ExpeditionMedicIDCard
@@ -296,7 +296,7 @@
     - DoorBumpOpener
     - WhitelistChameleon
     - WhitelistChameleonIdCard
-    
+
 - type: entity
   parent: IDCardStandard
   id: ExpeditionWorkerIDCard
@@ -348,7 +348,7 @@
   - type: Icon
     sprite: Siberia/Temp/pda.rsi
     state: pda-cook
-    
+
 - type: entity
   parent: BaseMedicalPDA
   id: ExpeditionParamedicPDA
@@ -381,7 +381,7 @@
   - type: Icon
     sprite: Siberia/Temp/pda.rsi
     state: pda-paramedic
-    
+
 - type: entity
   parent: BasePDA
   id: ExpeditionCapitanePDA
@@ -414,7 +414,7 @@
   - type: Icon
     sprite: Siberia/Temp/pda.rsi
     state: pda-boxer
-    
+
 - type: job
   id: ExpeditionCapitane
   name: Капитан экспедиции "Аврора"
@@ -440,7 +440,7 @@
     jumpsuit: Clothingcyan_turtleneck
     neck: ClothingNeckScarfStripedBlack
     back: ClothingBackpackERTLeader
-    
+
 - type: job
   id: ExpeditionMedic
   name: Медик экспедиции "Аврора"
@@ -466,7 +466,7 @@
     neck: ClothingNeckScarfStripedBlue
     back: ClothingBackpackMedical
     belt: ClothingBeltMedicalEMT
-    
+
 - type: job
   id: ExpeditionWorker
   name: Работник экспедиции "Аврора"
@@ -491,7 +491,7 @@
     jumpsuit: ClothingUniformJumpsuitSecBlue
     neck: ClothingNeckScarfStripedLightBlue
     back: ClothingBackpackGenetics
-    
+
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesExpedition
@@ -502,7 +502,7 @@
     sprite: Siberia/Temp/glass.rsi
   - type: Clothing
     sprite: Siberia/Temp/glass.rsi
-    
+
 - type: playTimeTracker
   id: JobExpeditionCapitane
 
@@ -523,7 +523,7 @@
     layers:
       - state: green
       - state: serviceworker
-      
+
 - type: entity
   id: SpawnPointExpeditionCaptain
   parent: SpawnPointJobBase
@@ -535,7 +535,7 @@
     layers:
       - state: green
       - state: captain
-      
+
 - type: entity
   id: SpawnPointExpeditionMedicalDoctor
   parent: SpawnPointJobBase
@@ -547,8 +547,8 @@
     layers:
       - state: green
       - state: doctor
-      
-      
+
+
 - type: gameMap
   id: Avrora
   mapName: 'NX-Avrora-701'
@@ -569,9 +569,9 @@
         - type: StationJobs
           availableJobs:
             ExpeditionCapitane: [ 1, 1 ]
-            ExpeditionMedic: [ 3, 3 ] 
+            ExpeditionMedic: [ 3, 3 ]
             ExpeditionWorker: [ -1, -1 ]
-            
+
 - type: department
   id: Event
   name: departament-event-avrora-name
@@ -583,7 +583,7 @@
   - ExpeditionMedic
   - ExpeditionWorker
   primary: false
-  
+
 - type: entity
   id: NecroMarker
   name: обелиск
@@ -607,7 +607,7 @@
         Heat:
           collection:
             MeatLaserImpact
-    - type: Timer
+    # - type: Timer
     - type: Clickable
     - type: InteractionOutline
     - type: Sprite
