@@ -6,39 +6,10 @@
   - Underwears
   - SecurityBackpack
   - BlueShieldJumpsuit
-  
-- type: roleLoadout
-  id: JobSeniorEngineer
-  groups:
-  - Underwears
-  - SeniorEngineerJumpsuit
-  - StationEngineerBackpack
- 
-- type: roleLoadout
-  id: JobSeniorPhysician 
-  groups:
-  - Underwears
-  - SeniorPhysicianJumpsuit
-  - MedicalBackpack
-  
-- type: roleLoadout
-  id: JobSeniorResearcher 
-  groups:
-  - Underwears
-  - ScientistBackpack
-  - SeniorResearcherJumpsuit
 
 - type: roleLoadout
-  id: JobSeniorOfficer 
-  groups:
-  - Underwears
-  - SecurityBackpack
-  - SeniorOfficerJumpsuit  
-  
-- type: roleLoadout
-  id: JobExpeditor 
+  id: JobExpeditor
   groups:
   - Underwears
   - SalvageSpecialistBackpack
-  - ExpeditorJumpsuit    
-  
+  - ExpeditorJumpsuit

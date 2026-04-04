@@ -1,39 +1,39 @@
-# Swarmers
+# # Swarmers
 
-- type: entity
-  id: BaseSwarmModule
-  parent: BaseBorgModule
-  abstract: true
-  components:
-  - type: Sprite
-    sprite: Siberia/Objects/Specific/Robotics/swarmmodule.rsi
-  - type: Tag
-    tags:
-    - SwarmModule
+# - type: entity
+  # id: BaseSwarmModule
+  # parent: BaseBorgModule
+  # abstract: true
+  # components:
+  # - type: Sprite
+    # sprite: Siberia/Objects/Specific/Robotics/swarmmodule.rsi
+  # - type: Tag
+    # tags:
+    # - SwarmModule
 
-- type: entity
-  id:  SwarmModuleRCD
-  parent: [ BaseSwarmModule, BaseProviderBorgModule ]
-  name: модуль строителя-дрона роя
-  components:
-  - type: Sprite
-    layers:
-    - state: swarm
-    - state: icon-swarm
-  - type: ItemBorgModule
-    items:
-    - RCDSwarm
+# - type: entity
+  # id:  SwarmModuleRCD
+  # parent: [ BaseSwarmModule, BaseProviderBorgModule ]
+  # name: модуль строителя-дрона роя
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: swarm
+    # - state: icon-swarm
+  # - type: ItemBorgModule
+    # items:
+    # - RCDSwarm
 
-- type: entity
-  id: SwarmModuleMed
-  parent: [ BaseSwarmModule, BaseProviderBorgModule ]
-  name: модуль лекаря-дрона роя
-  components:
-  - type: Sprite
-    layers:
-    - state: swarm
-    - state: icon-swarm
-  - type: ItemBorgModule
-    items:
-    - SwarmHealerHypospray
-    - WelderSwarm
+# - type: entity
+  # id: SwarmModuleMed
+  # parent: [ BaseSwarmModule, BaseProviderBorgModule ]
+  # name: модуль лекаря-дрона роя
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: swarm
+    # - state: icon-swarm
+  # - type: ItemBorgModule
+    # items:
+    # - SwarmHealerHypospray
+    # - WelderSwarm

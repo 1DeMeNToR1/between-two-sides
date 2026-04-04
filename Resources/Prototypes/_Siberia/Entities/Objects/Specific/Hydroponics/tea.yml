@@ -82,9 +82,9 @@
       - !type:SatiateThirst
         factor: 2
       - !type:HealthChange
-        conditions:
-        - !type:TotalDamage
-          max: 50
+        #conditions:
+        #- !type:TotalDamage
+        #  max: 50
         damage:
           groups:
             Brute: -0.5

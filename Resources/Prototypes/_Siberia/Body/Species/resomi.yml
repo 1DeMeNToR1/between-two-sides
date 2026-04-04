@@ -244,7 +244,7 @@
   - type: Temperature
     currentTemperature: 313.15
     specificHeat: 46
-  - type: TemperatureDamage  
+  - type: TemperatureDamage
     heatDamageThreshold: 410
     coldDamageThreshold: 273.15 # 285
     coldDamage:
@@ -274,7 +274,7 @@
   id: OrganResomi
   abstract: true
   suffix: Resomi
-  
+
 - type: entity
   id: OrganResomiMetabolizer
   abstract: true
@@ -343,40 +343,40 @@
   id: OrganResomiLegLeft
   components:
   - type: Sprite
-    sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+    sprite: Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
   - type: VisualOrgan
     data:
-      sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+      sprite: Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
 
 - type: entity
   parent: [ OrganBaseLegRight, OrganResomiExternal ]
   id: OrganResomiLegRight
   components:
   - type: Sprite
-    sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+    sprite: Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
   - type: VisualOrgan
     data:
-      sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+      sprite: Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
 
 - type: entity
   parent: [ OrganBaseFootLeft, OrganResomiExternal ]
   id: OrganResomiFootLeft
   components:
   - type: Sprite
-    sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+    sprite: Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
   - type: VisualOrgan
     data:
-      sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+      sprite: Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
 
 - type: entity
   parent: [ OrganBaseFootRight, OrganResomiExternal ]
   id: OrganResomiFootRight
   components:
   - type: Sprite
-    sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+    sprite: Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
   - type: VisualOrgan
     data:
-      sprite: Corvax/Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
+      sprite: Siberia/Mobs/Species/Resomi/parts.rsi # Corvax-Digitigrade
 
 - type: entity
   parent: [ OrganBaseBrain, OrganSpriteHumanInternal, OrganResomiInternal ]

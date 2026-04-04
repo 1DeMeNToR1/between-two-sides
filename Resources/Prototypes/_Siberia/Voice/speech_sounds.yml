@@ -7,14 +7,14 @@
   exclaimSound:
     path: /Audio/Voice/Talk/pai_exclaim.ogg
 
-- type: speechSounds
-  id: Vulpkanin
-  saySound:
-    path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp.ogg
-  askSound:
-    path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp_ask.ogg
-  exclaimSound:
-    path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp_exclaim.ogg
+# - type: speechSounds
+  # id: Vulpkanin
+  # saySound:
+    # path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp.ogg
+  # askSound:
+    # path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp_ask.ogg
+  # exclaimSound:
+    # path: /Audio/Siberia/Voice/Vulpkanin/Talk/vulp_exclaim.ogg
 
 - type: speechSounds
   id: Swarm
