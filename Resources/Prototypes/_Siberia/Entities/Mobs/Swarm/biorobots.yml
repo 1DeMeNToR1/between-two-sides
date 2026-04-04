@@ -1,1011 +1,1011 @@
-######################### БАЗА #############################
-- type: entity
-  save: false
-  abstract: true
-  id: MobSwarmbotBase
-  components:
-  - type: ItemToggle
-    onActivate: false
-    activated: false
-    onUse: false
-  - type: AccessToggle
-  - type: LagCompensation
-  - type: Clickable
-  - type: Damageable
-    damageContainer: Biological
-  - type: InteractionOutline
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 50
-        mask:
-        - MobMask
-        layer:
-        - MobLayer
-  - type: MovementSpeedModifier
-    baseWalkSpeed : 2
-    baseSprintSpeed : 3
-  - type: Sprite
-    noRot: true
-    drawdepth: Mobs
-  - type: NpcFactionMember
-    factions:
-    - BioSwarm
-  - type: IntrinsicRadioReceiver
-  - type: IntrinsicRadioTransmitter
-    channels:
-    - SwarmRadio
-  - type: ActiveRadio
-    channels:
-    - SwarmRadio
-  - type: HealthExaminable
-    examinableTypes:
-    - Blunt
-    - Slash
-    - Piercing
-    - Heat
-    - Shock
-    locPrefix: silicon
-  - type: MovedByPressure
-  - type: Physics
-    bodyType: KinematicController
-  - type: NoSlip
-  - type: MovementAlwaysTouching
-  - type: CanMoveInAir
-  - type: StatusEffects
-    allowed:
-    - Stun
-    - KnockedDown
-    - SlowedDown
-    - Stutter
-    - Electrocution
-  - type: NameIdentifier
-    group: GenericNumber
-  - type: Repairable
-    fuelCost: 15
-    doAfterDelay: 8
-  - type: Tag
-    tags:
-    - DoorBumpOpener
-    - Swarm
-  - type: MobState
-    allowedStates:
-      - Alive
-      - Dead
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      70: Dead
-    stateAlertDict:
-      Alive: BorgHealth
-      Dead: BorgDead
-    showOverlays: false
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:TriggerBehavior
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SwarmRewardSphere:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Input
-    context: "human"
-  - type: InputMover
-  - type: MobMover
-  - type: Body
+# ######################### БАЗА #############################
+# - type: entity
+  # save: false
+  # abstract: true
+  # id: MobSwarmbotBase
+  # components:
+  # - type: ItemToggle
+    # onActivate: false
+    # activated: false
+    # onUse: false
+  # - type: AccessToggle
+  # - type: LagCompensation
+  # - type: Clickable
+  # - type: Damageable
+    # damageContainer: Biological
+  # - type: InteractionOutline
+  # - type: Fixtures
+    # fixtures:
+      # fix1:
+        # shape:
+          # !type:PhysShapeCircle
+          # radius: 0.35
+        # density: 50
+        # mask:
+        # - MobMask
+        # layer:
+        # - MobLayer
+  # - type: MovementSpeedModifier
+    # baseWalkSpeed : 2
+    # baseSprintSpeed : 3
+  # - type: Sprite
+    # noRot: true
+    # drawdepth: Mobs
+  # - type: NpcFactionMember
+    # factions:
+    # - BioSwarm
+  # - type: IntrinsicRadioReceiver
+  # - type: IntrinsicRadioTransmitter
+    # channels:
+    # - SwarmRadio
+  # - type: ActiveRadio
+    # channels:
+    # - SwarmRadio
+  # - type: HealthExaminable
+    # examinableTypes:
+    # - Blunt
+    # - Slash
+    # - Piercing
+    # - Heat
+    # - Shock
+    # locPrefix: silicon
+  # - type: MovedByPressure
+  # - type: Physics
+    # bodyType: KinematicController
+  # - type: NoSlip
+  # - type: MovementAlwaysTouching
+  # - type: CanMoveInAir
+  # - type: StatusEffects
+    # allowed:
+    # - Stun
+    # - KnockedDown
+    # - SlowedDown
+    # - Stutter
+    # - Electrocution
+  # - type: NameIdentifier
+    # group: GenericNumber
+  # - type: Repairable
+    # fuelCost: 15
+    # doAfterDelay: 8
+  # - type: Tag
+    # tags:
+    # - DoorBumpOpener
+    # - Swarm
+  # - type: MobState
+    # allowedStates:
+      # - Alive
+      # - Dead
+  # - type: MobThresholds
+    # thresholds:
+      # 0: Alive
+      # 70: Dead
+    # stateAlertDict:
+      # Alive: BorgHealth
+      # Dead: BorgDead
+    # showOverlays: false
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 100
+      # behaviors:
+      # - !type:TriggerBehavior
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 100
+      # behaviors:
+      # - !type:SpawnEntitiesBehavior
+        # spawn:
+          # SwarmRewardSphere:
+            # min: 0
+            # max: 1
+      # - !type:DoActsBehavior
+        # acts: [ "Destruction" ]
+  # - type: Input
+    # context: "human"
+  # - type: InputMover
+  # - type: MobMover
+  # - type: Body
+    # # prototype: SwarmBot
+  # - type: Speech
+    # speechVerb: Robotic
+  # - type: TypingIndicator
+    # proto: robot
+  # - type: ZombieImmune
+  # - type: TriggerOnMobstateChange
+    # mobState:
+    # - Dead
+  # - type: ExplodeOnTrigger
+  # - type: Explosive
+    # explosionType: MicroBomb
+    # totalIntensity: 2
+    # intensitySlope: 1
+    # maxIntensity: 1
+    # canCreateVacuum: false
+    # deleteAfterExplosion: false
+  # - type: Appearance
+  # - type: CombatMode
+  # - type: MeleeWeapon
+    # hidden: true
+    # damage:
+      # groups:
+        # Brute: 5
+  # - type: Actions
+  # - type: Alerts
+  # - type: RotationVisuals
+    # defaultRotation: 0
+    # horizontalRotation: 0
+  # - type: DoAfter
+  # - type: Examiner
+  # - type: Eye
+  # - type: ContentEye
+  # - type: CameraRecoil
+  # - type: MindContainer
+  # - type: Polymorphable
+  # - type: StatusIcon
+  # - type: Hands
+    # showInHands: false
+  # - type: Inventory
+  # - type: Insulated
+  # - type: Tool
+    # speedModifier: 1.5
+    # qualities:
+      # - Prying
+    # useSound:
+      # path: /Audio/Items/crowbar.ogg
+  # - type: Prying
+    # pryPowered: !type:Bool
+        # true
+    # force: !type:Bool
+      # true
+    # useSound:
+      # path: /Audio/Items/crowbar.ogg
+  # - type: IgnoreSpiderWeb
+  # - type: BorgChassis
+    # selectedModule: null
+    # hasMindState: light
+    # noMindState: light
+    # moduleWhitelist:
+      # tags:
+      # - SwarmModule
+  # - type: ContainerContainer
+    # containers:
+      # borg_module: !type:Container { }
+      # cell_slot: !type:ContainerSlot { }
+  # - type: Pullable
+  # - type: Puller
+    # needsHands: false
+  # - type: UserInterface
+    # interfaces:
+      # enum.SiliconLawsUiKey.Key:
+        # type: SiliconLawBoundUserInterface
+      # enum.BorgUiKey.Key:
+        # type: BorgBoundUserInterface
+  # - type: ActivatableUI
+    # key: enum.BorgUiKey.Key
+  # - type: SiliconLawBound
+  # - type: SiliconLawProvider
+    # laws: BioSwarm
+  # - type: IonStormTarget
+  # - type: PowerCellSlot
+    # cellSlotId: cell_slot
+    # fitsInCharger: true
+  # - type: PowerCellDraw
+    # drawRate: 0.6
+  # - type: Reactive
+    # reactions:
+    # - reagents: [ SwarmNanomachines ]
+      # methods: [ Touch, Ingestion, Injection ]
+      # effects:
+      # - !type:HealthChange
+        # damage:
+          # groups:
+            # Burn: -10
+            # Brute: -10
+            # Toxin: -10
+          # types:
+            # Bloodloss: -20
+      # - !type:PopupMessage
+        # type: Local
+        # messages: [ "swarmbot-heal-by-nano-popup" ]
+        # probability: 0.25
+  # - type: SolutionContainerManager
+  # - type: InjectableSolution
+    # solution: chemicals
+  # - type: Bloodstream
+    # bloodMaxVolume: 250
+    # bloodReagent: SwarmNanomachines
+    # bloodlossDamage:
+      # types:
+        # Bloodloss: 1
+    # bloodlossHealDamage:
+      # types:
+        # Bloodloss: -1
+  # # - type: Metabolizer
+    # # solutionOnBody: false
+    # # updateFrequency: 0.8
+    # # metabolizerTypes: [ Dragon ]
+    # # groups:
+      # # - id: Medicine
+      # # - id: Poison
+  # - type: SpeakOnUIClosed
+    # pack: SwarmAds
+    # maximumWait: 240
+    # minimumWait: 180
+  # - type: UnpoweredFlashlight
+  # - type: PointLight
+    # enabled: false
+    # radius: 3.5
+    # color: "#18FFE6"
+    # softness: 1
+    # autoRot: true
+
+
+# ######################### СТРОИТЕЛЬ РОЯ #############################
+
+# - type: entity
+  # parent: MobSwarmbotBase
+  # id: MobSwarmbotBuilder
+  # name: дрон-строитель роя
+  # description: Биоробот, разбирающий станцию на мелкие кирпичики и распростроняющий шестерни роя. Является приоритетной целью охраны дронов-стражей роя.
+  # components:
+  # - type: Sprite
+    # scale: 0.8, 0.8
+    # drawdepth: Mobs
+    # layers:
+    # - map: ["enum.BorgVisualLayers.Light"]
+      # state: light
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
+    # - map: [ "enum.DamageStateVisualLayers.Base" ]
+      # state: alive
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
+    # - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      # state: unshade
+      # shader: unshaded
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
+  # - type: DamageStateVisuals
+    # states:
+      # Alive:
+        # Base: alive
+      # Dead:
+        # Base: dead
+  # - type: Fixtures
+    # fixtures:
+      # fix1:
+        # shape:
+          # !type:PhysShapeCircle
+          # radius: 0.35
+        # density: 50
+        # mask:
+        # - MobMask
+        # layer:
+        # - MobLayer
+  # - type: GhostRole
+    # makeSentient: true
+    # name: ghost-role-information-swarmbulder-name
+    # description: ghost-role-information-swarmbulder-description
+  # - type: GhostTakeoverAvailable
+  # - type: HTN
+    # rootTask:
+      # task: SimpleHostileCompound
+    # blackboard:
+      # NavInteract: !type:Bool
+        # true
+      # NavPry: !type:Bool
+        # true
+      # NavSmash: !type:Bool
+        # true
+  # - type: Spider
+    # webPrototype: SwarmWeb
+    # webAction: ActionSwarmFloor
+  # - type: ContainerFill
+    # containers:
+      # borg_module:
+        # - SwarmModuleRCD
+  # - type: ItemSlots
+    # slots:
+      # cell_slot:
+        # name: power-cell-slot-component-slot-name-default
+        # startingItem: PowerCellAntiqueProto
+  # - type: FootstepModifier
+    # footstepSoundCollection:
+      # path: /Audio/Siberia/Mobs/Swarm/spiderbiofootstep.ogg
+      # params:
+        # volume: -6
+  # - type: Tag
+    # tags:
+    # - FootstepSound
+    # - DoorBumpOpener
+    # - Flesh
+  # - type: Speech
+    # speechSounds: Swarm
+  # - type: SwarmDrone
+  # - type: ProtectedFromStepTriggers
+
+# ######################### СТРАЖ РОЯ #############################
+
+# - type: entity
+  # parent: MobSwarmbotBase
+  # id: MobSwarmbotGuard
+  # name: дрон-страж роя
+  # description: Биоробот, обладающий лазерным оружием. Судя по всему любит зажаривать кошкодевочек на медиум рейр стейк.
+  # components:
+  # - type: HTN
+    # rootTask:
+      # task: SimpleRangedHostileCompound
+    # blackboard:
+      # NavInteract: !type:Bool
+        # true
+      # NavPry: !type:Bool
+        # true
+      # NavSmash: !type:Bool
+        # true
+  # - type: Sprite
+    # drawdepth: Mobs
+    # layers:
+    # - map: ["enum.BorgVisualLayers.Light"]
+      # state: light
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
+    # - map: [ "enum.DamageStateVisualLayers.Base" ]
+      # state: alive
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
+    # - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      # state: unshade
+      # shader: unshaded
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
+  # - type: DamageStateVisuals
+    # states:
+      # Alive:
+        # Base: alive
+      # Dead:
+        # Base: dead
+  # - type: Fixtures
+    # fixtures:
+      # fix1:
+        # shape:
+          # !type:PhysShapeCircle
+          # radius: 0.35
+        # density: 20
+        # mask:
+        # - FlyingMobMask
+        # layer:
+        # - FlyingMobLayer
+  # - type: GhostRole
+    # makeSentient: true
+    # name: ghost-role-information-swarmguard-name
+    # description: ghost-role-information-swarmguard-description
+  # - type: GhostTakeoverAvailable
+  # - type: ItemSlots
+    # slots:
+      # cell_slot:
+        # name: power-cell-slot-component-slot-name-default
+        # startingItem: PowerCellAntiqueProto
+  # - type: Tag
+    # tags:
+    # - DoorBumpOpener
+    # - Flesh
+  # - type: Speech
+    # speechSounds: Swarm
+  # - type: ProtectedFromStepTriggers
+  # - type: MeleeWeapon
+    # damage:
+      # types:
+        # Heat: 15
+        # Structural: 10
+    # animation: WeaponArcDisarm
+    # range: 1.7
+  # - type: BatteryAmmoProvider
+    # proto: SwarmLaser
+    # fireCost: 250
+  # - type: Battery
+    # maxCharge: 1000
+    # startingCharge: 1000
+  # - type: BatterySelfRecharger
+    # autoRecharge: true
+    # autoRechargeRate: 50
+  # - type: Gun
+    # fireRate: 0.5
+    # useKey: false
+    # showExamineText: false
+    # selectedMode: SemiAuto
+    # cameraRecoilScalar: 5
+    # availableModes:
+      # - SemiAuto
+    # soundGunshot:
+      # path: /Audio/Weapons/Guns/Gunshots/Magic/staff_door.ogg
+    # soundEmpty:
+      # path: /Audio/Items/Lighters/lighter_off.ogg
+  # - type: MobThresholds
+    # thresholds:
+      # 0: Alive
+      # 130: Dead
+    # stateAlertDict:
+      # Alive: BorgHealth
+      # Dead: BorgDead
+    # showOverlays: false
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 160
+      # behaviors:
+      # - !type:TriggerBehavior
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 160
+      # behaviors:
+      # - !type:SpawnEntitiesBehavior
+        # spawn:
+          # SwarmRewardSphere:
+            # min: 0
+            # max: 1
+      # - !type:DoActsBehavior
+        # acts: [ "Destruction" ]
+  # - type: MovementIgnoreGravity
+  # - type: SwarmDrone
+
+# ######################### ЛЕКАРЬ РОЯ #############################
+
+# - type: entity
+  # parent: MobSwarmbotBase
+  # id: MobSwarmbotHealer
+  # name: дрон-лекарь роя
+  # description: Биоробот, лечащий других дронов роя. Вещество, которое он вкалывает в дронов смертельно для других существ. Является самым слабым дроном, но его навыки интерна могут убить вас.
+  # components:
+  # - type: Sprite
+    # scale: 0.8, 0.8
+    # drawdepth: Mobs
+    # layers:
+    # - map: ["enum.BorgVisualLayers.Light"]
+      # state: light
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
+    # - map: [ "enum.DamageStateVisualLayers.Base" ]
+      # state: alive
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
+    # - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      # state: unshade
+      # shader: unshaded
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
+  # - type: DamageStateVisuals
+    # states:
+      # Alive:
+        # Base: alive
+      # Dead:
+        # Base: dead
+  # - type: Fixtures
+    # fixtures:
+      # fix1:
+        # shape:
+          # !type:PhysShapeCircle
+          # radius: 0.35
+        # density: 20
+        # mask:
+        # - FlyingMobMask
+        # layer:
+        # - FlyingMobLayer
+  # - type: GhostRole
+    # makeSentient: true
+    # name: ghost-role-information-swarmhealer-name
+    # description: ghost-role-information-swarmhealer-description
+  # - type: GhostTakeoverAvailable
+  # - type: HTN
+    # rootTask:
+      # task: SwarmMedibotCompound
+    # blackboard:
+      # NavInteract: !type:Bool
+        # true
+      # NavPry: !type:Bool
+        # true
+      # NavSmash: !type:Bool
+        # true
+  # - type: ItemSlots
+    # slots:
+      # cell_slot:
+        # name: power-cell-slot-component-slot-name-default
+        # startingItem: PowerCellAntiqueProto
+  # - type: Tag
+    # tags:
+    # - DoorBumpOpener
+    # - Flesh
+  # - type: Speech
+    # speechSounds: Swarm
+  # - type: ProtectedFromStepTriggers
+  # - type: ContainerFill
+    # containers:
+      # borg_module:
+        # - SwarmModuleMed
+  # - type: ShowHealthBars
+    # damageContainers:
+    # - Inorganic
+    # - Biological
+  # - type: ShowHealthIcons
+    # damageContainers:
+    # - Biological
+    # - Inorganic
+  # - type: SolutionScanner
+  # - type: Medibot
+    # treatments:
+      # Alive:
+        # reagent: SwarmNanomachines
+        # quantity: 10
+        # minDamage: 0
+        # maxDamage: 0
+      # Critical:
+        # reagent: SwarmNanomachines
+        # quantity: 10
+  # - type: MobThresholds
+    # thresholds:
+      # 0: Alive
+      # 50: Dead
+    # stateAlertDict:
+      # Alive: BorgHealth
+      # Dead: BorgDead
+    # showOverlays: false
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 70
+      # behaviors:
+      # - !type:TriggerBehavior
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 70
+      # behaviors:
+      # - !type:SpawnEntitiesBehavior
+        # spawn:
+          # SwarmRewardSphere:
+            # min: 0
+            # max: 1
+      # - !type:DoActsBehavior
+        # acts: [ "Destruction" ]
+  # - type: SwarmDrone
+  # - type: MovementIgnoreGravity
+
+# ######################### АДЕПТ РОЯ - ЭТО БОСС #############################
+
+# - type: entity
+  # parent: MobSwarmbotBase
+  # id: MobSwarmbotAdeptus
+  # name: адепт роя
+  # description: Биоробот, представляющий низшую цепочку командования роя. Является весомой боевой единицей роя, а так же способен командовать всеми дрона роя на территории зачистки. Создает на территории зачистки заводы дронов роя. Holy shit, it's skeletron prime!
+  # components:
+  # - type: Sprite
+    # drawdepth: Mobs
+    # scale: 1.3, 1.3
+    # layers:
+    # - map: ["enum.BorgVisualLayers.Light"]
+      # state: light
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
+    # - map: [ "enum.DamageStateVisualLayers.Base" ]
+      # state: alive
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
+    # - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      # state: unshade
+      # shader: unshaded
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
+  # - type: Fixtures
+    # fixtures:
+      # fix1:
+        # shape:
+          # !type:PhysShapeCircle
+          # radius: 0.45
+        # density: 15500
+        # mask:
+        # - FlyingMobMask
+        # layer:
+        # - FlyingMobLayer
+  # - type: GhostRole
+    # makeSentient: true
+    # name: ghost-role-information-swarmadept-name
+    # description: ghost-role-information-swarmadept-description
+  # - type: GhostTakeoverAvailable
+  # - type: HTN
+    # rootTask:
+      # task: SimpleHostileCompound
+    # blackboard:
+      # NavInteract: !type:Bool
+        # true
+      # NavPry: !type:Bool
+        # true
+      # NavSmash: !type:Bool
+        # true
+  # - type: ItemSlots
+    # slots:
+      # cell_slot:
+        # name: power-cell-slot-component-slot-name-default
+        # startingItem: PowerCellAntiqueProto
+  # - type: Tag
+    # tags:
+    # - DoorBumpOpener
+    # - Flesh
+  # - type: Speech
+    # speechSounds: Swarm
+  # - type: ProtectedFromStepTriggers
+  # - type: MobThresholds
+    # thresholds:
+      # 0: Alive
+      # 500: Dead
+    # stateAlertDict:
+      # Alive: BorgHealth
+      # Dead: BorgDead
+    # showOverlays: false
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 500
+      # behaviors:
+      # - !type:TriggerBehavior
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 500
+      # behaviors:
+      # - !type:SpawnEntitiesBehavior
+        # spawn:
+          # SwarmRewardSphere:
+            # min: 4
+            # max: 5
+      # - !type:DoActsBehavior
+        # acts: [ "Destruction" ]
+  # - type: ShowHealthBars
+    # damageContainers:
+    # - Inorganic
+    # - Biological
+  # - type: ShowHealthIcons
+    # damageContainers:
+    # - Biological
+    # - Inorganic
+  # - type: SolutionScanner
+  # - type: Bloodstream
+    # bloodMaxVolume: 650
+  # - type: Devourer
+    # foodPreference: Humanoid
+    # shouldStoreDevoured: true
+    # chemical: Ichor
+    # healRate: 15.0
+    # whitelist:
+      # components:
+      # - Door
+      # tags:
+      # - Wall
+  # - type: Dragon
+    # # spawnsLeft: 2
+    # # spawnsProto: MobSwarmbotBuilder
+    # spawnRiftAction: ActionSpawnFactory
+    # riftPrototype: SwarmbotFactory
+    # maxAccumulator: 99999999
+  # - type: Hunger
+    # thresholds: # only animals and rats are derived from this prototype so let's override it here and in rats' proto
+      # Overfed: 20000
+      # Okay: 50
+      # Peckish: 25
+      # Starving: 10
+      # Dead: 0
+    # baseDecayRate: 0.00925925925926 # it is okay for animals to eat and drink less than humans, but more frequently
+  # - type: SwarmAdept
+    # hungerPerArmyUse: 0
+    # hungerPerDomainUse: 0
+    # armyMobSpawnId: MobSwarmbotAdeptusGuard
+  # - type: Eye
+    # drawFov: false
+  # - type: MeleeWeapon
+    # hidden: true
+    # damage:
+      # groups:
+        # Brute: 20
+      # types:
+        # Shock: 10
+        # Structural: 20
+    # animation: WeaponArcDisarm
+    # range: 2.3
+    # soundHit:
+      # path: /Audio/Weapons/eblademiss.ogg
+    # altDisarm: False
+    # angle: 0
+  # - type: AutoImplant
+    # implants:
+    # - SwarmEmpImplant
+  # - type: AmbientSound
+    # enabled: true
+    # volume: -3
+    # range: 12
+    # sound:
+      # path: /Audio/Ambience/Objects/anomaly_generator.ogg
+  # - type: Spider
+    # webPrototype: SwarmWeb
+    # webAction: ActionSwarmFloor
+  # - type: MovementSpeedModifier
+    # baseWalkSpeed : 3
+    # baseSprintSpeed : 4
+  # - type: MovementIgnoreGravity
+  # - type: Body
     # prototype: SwarmBot
-  - type: Speech
-    speechVerb: Robotic
-  - type: TypingIndicator
-    proto: robot
-  - type: ZombieImmune
-  - type: TriggerOnMobstateChange
-    mobState:
-    - Dead
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: MicroBomb
-    totalIntensity: 2
-    intensitySlope: 1
-    maxIntensity: 1
-    canCreateVacuum: false
-    deleteAfterExplosion: false
-  - type: Appearance
-  - type: CombatMode
-  - type: MeleeWeapon
-    hidden: true
-    damage:
-      groups:
-        Brute: 5
-  - type: Actions
-  - type: Alerts
-  - type: RotationVisuals
-    defaultRotation: 0
-    horizontalRotation: 0
-  - type: DoAfter
-  - type: Examiner
-  - type: Eye
-  - type: ContentEye
-  - type: CameraRecoil
-  - type: MindContainer
-  - type: Polymorphable
-  - type: StatusIcon
-  - type: Hands
-    showInHands: false
-  - type: Inventory
-  - type: Insulated
-  - type: Tool
-    speedModifier: 1.5
-    qualities:
-      - Prying
-    useSound:
-      path: /Audio/Items/crowbar.ogg
-  - type: Prying
-    pryPowered: !type:Bool
-        true
-    force: !type:Bool
-      true
-    useSound:
-      path: /Audio/Items/crowbar.ogg
-  - type: IgnoreSpiderWeb
-  - type: BorgChassis
-    selectedModule: null
-    hasMindState: light
-    noMindState: light
-    moduleWhitelist:
-      tags:
-      - SwarmModule
-  - type: ContainerContainer
-    containers:
-      borg_module: !type:Container { }
-      cell_slot: !type:ContainerSlot { }
-  - type: Pullable
-  - type: Puller
-    needsHands: false
-  - type: UserInterface
-    interfaces:
-      enum.SiliconLawsUiKey.Key:
-        type: SiliconLawBoundUserInterface
-      enum.BorgUiKey.Key:
-        type: BorgBoundUserInterface
-  - type: ActivatableUI
-    key: enum.BorgUiKey.Key
-  - type: SiliconLawBound
-  - type: SiliconLawProvider
-    laws: BioSwarm
-  - type: IonStormTarget
-  - type: PowerCellSlot
-    cellSlotId: cell_slot
-    fitsInCharger: true
-  - type: PowerCellDraw
-    drawRate: 0.6
-  - type: Reactive
-    reactions:
-    - reagents: [ SwarmNanomachines ]
-      methods: [ Touch, Ingestion, Injection ]
-      effects:
-      - !type:HealthChange
-        damage:
-          groups:
-            Burn: -10
-            Brute: -10
-            Toxin: -10
-          types:
-            Bloodloss: -20
-      - !type:PopupMessage
-        type: Local
-        messages: [ "swarmbot-heal-by-nano-popup" ]
-        probability: 0.25
-  - type: SolutionContainerManager
-  - type: InjectableSolution
-    solution: chemicals
-  - type: Bloodstream
-    bloodMaxVolume: 250
-    bloodReagent: SwarmNanomachines
-    bloodlossDamage:
-      types:
-        Bloodloss: 1
-    bloodlossHealDamage:
-      types:
-        Bloodloss: -1
-  # - type: Metabolizer
-    # solutionOnBody: false
-    # updateFrequency: 0.8
-    # metabolizerTypes: [ Dragon ]
-    # groups:
-      # - id: Medicine
-      # - id: Poison
-  - type: SpeakOnUIClosed
-    pack: SwarmAds
-    maximumWait: 240
-    minimumWait: 180
-  - type: UnpoweredFlashlight
-  - type: PointLight
-    enabled: false
-    radius: 3.5
-    color: "#18FFE6"
-    softness: 1
-    autoRot: true
+
+# ######################### СТРАЖ АДЕПТА РОЯ #############################
+
+# - type: entity
+  # parent: MobSwarmbotBase
+  # id: MobSwarmbotAdeptusGuard
+  # suffix: НЕ СПАВНИТЬ ЧЕРЕЗ ТУЛБОКС
+  # name: дрон-страж адепта
+  # description: Биоробот, обладающий лазерным оружием. Является личной охраной адепта роя.
+  # components:
+  # - type: HTN
+    # rootTask:
+      # task: BioDroneCompound
+    # blackboard:
+      # NavInteract: !type:Bool
+        # true
+      # NavPry: !type:Bool
+        # true
+      # NavSmash: !type:Bool
+        # true
+  # - type: Sprite
+    # drawdepth: Mobs
+    # layers:
+    # - map: ["enum.BorgVisualLayers.Light"]
+      # state: light
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
+    # - map: [ "enum.DamageStateVisualLayers.Base" ]
+      # state: alive
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
+    # - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      # state: unshade
+      # shader: unshaded
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
+  # - type: DamageStateVisuals
+    # states:
+      # Alive:
+        # Base: alive
+      # Dead:
+        # Base: dead
+  # - type: Fixtures
+    # fixtures:
+      # fix1:
+        # shape:
+          # !type:PhysShapeCircle
+          # radius: 0.35
+        # density: 20
+        # mask:
+        # - FlyingMobMask
+        # layer:
+        # - FlyingMobLayer
+  # - type: GhostRole
+    # makeSentient: true
+    # name: ghost-role-information-adeptguard-name
+    # description: ghost-role-information-adeptguard-description
+  # - type: GhostTakeoverAvailable
+  # - type: ItemSlots
+    # slots:
+      # cell_slot:
+        # name: power-cell-slot-component-slot-name-default
+        # startingItem: PowerCellAntiqueProto
+  # - type: Tag
+    # tags:
+    # - DoorBumpOpener
+    # - Flesh
+  # - type: Speech
+    # speechSounds: Swarm
+  # - type: MeleeWeapon
+    # damage:
+      # types:
+        # Heat: 5
+  # - type: BatteryAmmoProvider
+    # proto: BulletDisablerSwarm
+    # fireCost: 100
+  # - type: Battery
+    # maxCharge: 800
+    # startingCharge: 800
+  # - type: BatterySelfRecharger
+    # autoRecharge: true
+    # autoRechargeRate: 50
+  # - type: Gun
+    # fireRate: 0.8
+    # projectileSpeed: 200
+    # useKey: false
+    # showExamineText: false
+    # selectedMode: SemiAuto
+    # availableModes:
+      # - SemiAuto
+    # soundGunshot:
+      # path: /Audio/Weapons/plasma_cutter.ogg
+    # soundEmpty:
+      # path: /Audio/Items/Lighters/lighter_off.ogg
+  # - type: MobThresholds
+    # thresholds:
+      # 0: Alive
+      # 100: Dead
+    # stateAlertDict:
+      # Alive: BorgHealth
+      # Dead: BorgDead
+    # showOverlays: false
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 120
+      # behaviors:
+      # - !type:TriggerBehavior
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 120
+      # behaviors:
+      # - !type:DoActsBehavior
+        # acts: [ "Destruction" ]
+  # - type: MovementIgnoreGravity
+  # - type: SwarmDrone
+
+# ###################### КЛОНЫ ДЛЯ СПАВН ИВЕНТА НА СТАНЦИИ - ОНИ СЛАБЕЕ ОБЫЧНЫХ, ЧТОБ НЕ заРДМить ВЕСЬ ЭКИПАЖ ###################
+
+# - type: entity
+  # parent: MobSwarmbotBuilder
+  # id: MobSwarmbotBuilderWeak
+  # suffix: Слабый/станция
+  # name: дрон-строитель роя
+  # description: Биоробот, разбирающий станцию на мелкие кирпичики и распростроняющий шестерни роя. Является приоритетной целью охраны дронов-стражей роя.
+  # components:
+  # - type: Sprite
+    # scale: 0.8, 0.8
+    # drawdepth: Mobs
+    # layers:
+    # - map: ["enum.BorgVisualLayers.Light"]
+      # state: light
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
+    # - map: [ "enum.DamageStateVisualLayers.Base" ]
+      # state: alive
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
+    # - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      # state: unshade
+      # shader: unshaded
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
+  # - type: MobThresholds
+    # thresholds:
+      # 0: Alive
+      # 70: Dead
+    # stateAlertDict:
+      # Alive: BorgHealth
+      # Dead: BorgDead
+    # showOverlays: false
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 100
+      # behaviors:
+      # - !type:TriggerBehavior
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 100
+      # behaviors:
+      # - !type:SpawnEntitiesBehavior
+        # spawn:
+          # SwarmRewardSphere:
+            # min: 0
+            # max: 1
+      # - !type:DoActsBehavior
+        # acts: [ "Destruction" ]
 
 
-######################### СТРОИТЕЛЬ РОЯ #############################
+# - type: entity
+  # parent: MobSwarmbotGuard
+  # id: MobSwarmbotGuardWeak
+  # suffix: Слабый/станция
+  # name: дрон-страж роя
+  # description: Биоробот, обладающий лазерным оружием. Судя по всему любит зажаривать кошкодевочек на медиум рейр стейк.
+  # components:
+  # - type: Sprite
+    # drawdepth: Mobs
+    # layers:
+    # - map: ["enum.BorgVisualLayers.Light"]
+      # state: light
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
+    # - map: [ "enum.DamageStateVisualLayers.Base" ]
+      # state: alive
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
+    # - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      # state: unshade
+      # shader: unshaded
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
+  # - type: MeleeWeapon
+    # damage:
+      # types:
+        # Heat: 15
+        # Structural: 10
+    # animation: WeaponArcKick
+    # range: 1.7
+  # - type: BatteryAmmoProvider
+    # proto: SwarmLaser
+    # fireCost: 250
+  # - type: Battery
+    # maxCharge: 1000
+    # startingCharge: 1000
+  # - type: BatterySelfRecharger
+    # autoRecharge: true
+    # autoRechargeRate: 50
+  # - type: Gun
+    # fireRate: 0.5
+    # useKey: false
+    # showExamineText: false
+    # selectedMode: SemiAuto
+    # cameraRecoilScalar: 5
+    # availableModes:
+      # - SemiAuto
+    # soundGunshot:
+      # path: /Audio/Weapons/Guns/Gunshots/Magic/staff_door.ogg
+    # soundEmpty:
+      # path: /Audio/Items/Lighters/lighter_off.ogg
+  # - type: MobThresholds
+    # thresholds:
+      # 0: Alive
+      # 100: Dead
+    # stateAlertDict:
+      # Alive: BorgHealth
+      # Dead: BorgDead
+    # showOverlays: false
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 150
+      # behaviors:
+      # - !type:TriggerBehavior
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 150
+      # behaviors:
+      # - !type:SpawnEntitiesBehavior
+        # spawn:
+          # SwarmRewardSphere:
+            # min: 0
+            # max: 1
+      # - !type:DoActsBehavior
+        # acts: [ "Destruction" ]
 
-- type: entity
-  parent: MobSwarmbotBase
-  id: MobSwarmbotBuilder
-  name: дрон-строитель роя
-  description: Биоробот, разбирающий станцию на мелкие кирпичики и распростроняющий шестерни роя. Является приоритетной целью охраны дронов-стражей роя.
-  components:
-  - type: Sprite
-    scale: 0.8, 0.8
-    drawdepth: Mobs
-    layers:
-    - map: ["enum.BorgVisualLayers.Light"]
-      state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: unshade
-      shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilder.rsi
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: alive
-      Dead:
-        Base: dead
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 50
-        mask:
-        - MobMask
-        layer:
-        - MobLayer
-  - type: GhostRole
-    makeSentient: true
-    name: ghost-role-information-swarmbulder-name
-    description: ghost-role-information-swarmbulder-description
-  - type: GhostTakeoverAvailable
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
-    blackboard:
-      NavInteract: !type:Bool
-        true
-      NavPry: !type:Bool
-        true
-      NavSmash: !type:Bool
-        true
-  - type: Spider
-    webPrototype: SwarmWeb
-    webAction: ActionSwarmFloor
-  - type: ContainerFill
-    containers:
-      borg_module:
-        - SwarmModuleRCD
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellAntiqueProto
-  - type: FootstepModifier
-    footstepSoundCollection:
-      path: /Audio/Siberia/Mobs/Swarm/spiderbiofootstep.ogg
-      params:
-        volume: -6
-  - type: Tag
-    tags:
-    - FootstepSound
-    - DoorBumpOpener
-    - Flesh
-  - type: Speech
-    speechSounds: Swarm
-  - type: SwarmDrone
-  - type: ProtectedFromStepTriggers
-
-######################### СТРАЖ РОЯ #############################
-
-- type: entity
-  parent: MobSwarmbotBase
-  id: MobSwarmbotGuard
-  name: дрон-страж роя
-  description: Биоробот, обладающий лазерным оружием. Судя по всему любит зажаривать кошкодевочек на медиум рейр стейк.
-  components:
-  - type: HTN
-    rootTask:
-      task: SimpleRangedHostileCompound
-    blackboard:
-      NavInteract: !type:Bool
-        true
-      NavPry: !type:Bool
-        true
-      NavSmash: !type:Bool
-        true
-  - type: Sprite
-    drawdepth: Mobs
-    layers:
-    - map: ["enum.BorgVisualLayers.Light"]
-      state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: unshade
-      shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibot.rsi
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: alive
-      Dead:
-        Base: dead
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 20
-        mask:
-        - FlyingMobMask
-        layer:
-        - FlyingMobLayer
-  - type: GhostRole
-    makeSentient: true
-    name: ghost-role-information-swarmguard-name
-    description: ghost-role-information-swarmguard-description
-  - type: GhostTakeoverAvailable
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellAntiqueProto
-  - type: Tag
-    tags:
-    - DoorBumpOpener
-    - Flesh
-  - type: Speech
-    speechSounds: Swarm
-  - type: ProtectedFromStepTriggers
-  - type: MeleeWeapon
-    damage:
-      types:
-        Heat: 15
-        Structural: 10
-    animation: WeaponArcDisarm
-    range: 1.7
-  - type: BatteryAmmoProvider
-    proto: SwarmLaser
-    fireCost: 250
-  - type: Battery
-    maxCharge: 1000
-    startingCharge: 1000
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 50
-  - type: Gun
-    fireRate: 0.5
-    useKey: false
-    showExamineText: false
-    selectedMode: SemiAuto
-    cameraRecoilScalar: 5
-    availableModes:
-      - SemiAuto
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/Magic/staff_door.ogg
-    soundEmpty:
-      path: /Audio/Items/Lighters/lighter_off.ogg
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      130: Dead
-    stateAlertDict:
-      Alive: BorgHealth
-      Dead: BorgDead
-    showOverlays: false
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 160
-      behaviors:
-      - !type:TriggerBehavior
-    - trigger:
-        !type:DamageTrigger
-        damage: 160
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SwarmRewardSphere:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: MovementIgnoreGravity
-  - type: SwarmDrone
-
-######################### ЛЕКАРЬ РОЯ #############################
-
-- type: entity
-  parent: MobSwarmbotBase
-  id: MobSwarmbotHealer
-  name: дрон-лекарь роя
-  description: Биоробот, лечащий других дронов роя. Вещество, которое он вкалывает в дронов смертельно для других существ. Является самым слабым дроном, но его навыки интерна могут убить вас.
-  components:
-  - type: Sprite
-    scale: 0.8, 0.8
-    drawdepth: Mobs
-    layers:
-    - map: ["enum.BorgVisualLayers.Light"]
-      state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: unshade
-      shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibot.rsi
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: alive
-      Dead:
-        Base: dead
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 20
-        mask:
-        - FlyingMobMask
-        layer:
-        - FlyingMobLayer
-  - type: GhostRole
-    makeSentient: true
-    name: ghost-role-information-swarmhealer-name
-    description: ghost-role-information-swarmhealer-description
-  - type: GhostTakeoverAvailable
-  - type: HTN
-    rootTask:
-      task: SwarmMedibotCompound
-    blackboard:
-      NavInteract: !type:Bool
-        true
-      NavPry: !type:Bool
-        true
-      NavSmash: !type:Bool
-        true
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellAntiqueProto
-  - type: Tag
-    tags:
-    - DoorBumpOpener
-    - Flesh
-  - type: Speech
-    speechSounds: Swarm
-  - type: ProtectedFromStepTriggers
-  - type: ContainerFill
-    containers:
-      borg_module:
-        - SwarmModuleMed
-  - type: ShowHealthBars
-    damageContainers:
-    - Inorganic
-    - Biological
-  - type: ShowHealthIcons
-    damageContainers:
-    - Biological
-    - Inorganic
-  - type: SolutionScanner
-  - type: Medibot
-    treatments:
-      Alive:
-        reagent: SwarmNanomachines
-        quantity: 10
-        minDamage: 0
-        maxDamage: 0
-      Critical:
-        reagent: SwarmNanomachines
-        quantity: 10
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      50: Dead
-    stateAlertDict:
-      Alive: BorgHealth
-      Dead: BorgDead
-    showOverlays: false
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 70
-      behaviors:
-      - !type:TriggerBehavior
-    - trigger:
-        !type:DamageTrigger
-        damage: 70
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SwarmRewardSphere:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: SwarmDrone
-  - type: MovementIgnoreGravity
-
-######################### АДЕПТ РОЯ - ЭТО БОСС #############################
-
-- type: entity
-  parent: MobSwarmbotBase
-  id: MobSwarmbotAdeptus
-  name: адепт роя
-  description: Биоробот, представляющий низшую цепочку командования роя. Является весомой боевой единицей роя, а так же способен командовать всеми дрона роя на территории зачистки. Создает на территории зачистки заводы дронов роя. Holy shit, it's skeletron prime!
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    scale: 1.3, 1.3
-    layers:
-    - map: ["enum.BorgVisualLayers.Light"]
-      state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: unshade
-      shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.45
-        density: 15500
-        mask:
-        - FlyingMobMask
-        layer:
-        - FlyingMobLayer
-  - type: GhostRole
-    makeSentient: true
-    name: ghost-role-information-swarmadept-name
-    description: ghost-role-information-swarmadept-description
-  - type: GhostTakeoverAvailable
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
-    blackboard:
-      NavInteract: !type:Bool
-        true
-      NavPry: !type:Bool
-        true
-      NavSmash: !type:Bool
-        true
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellAntiqueProto
-  - type: Tag
-    tags:
-    - DoorBumpOpener
-    - Flesh
-  - type: Speech
-    speechSounds: Swarm
-  - type: ProtectedFromStepTriggers
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      500: Dead
-    stateAlertDict:
-      Alive: BorgHealth
-      Dead: BorgDead
-    showOverlays: false
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 500
-      behaviors:
-      - !type:TriggerBehavior
-    - trigger:
-        !type:DamageTrigger
-        damage: 500
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SwarmRewardSphere:
-            min: 4
-            max: 5
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: ShowHealthBars
-    damageContainers:
-    - Inorganic
-    - Biological
-  - type: ShowHealthIcons
-    damageContainers:
-    - Biological
-    - Inorganic
-  - type: SolutionScanner
-  - type: Bloodstream
-    bloodMaxVolume: 650
-  - type: Devourer
-    foodPreference: Humanoid
-    shouldStoreDevoured: true
-    chemical: Ichor
-    healRate: 15.0
-    whitelist:
-      components:
-      - Door
-      tags:
-      - Wall
-  - type: Dragon
-    # spawnsLeft: 2
-    # spawnsProto: MobSwarmbotBuilder
-    spawnRiftAction: ActionSpawnFactory
-    riftPrototype: SwarmbotFactory
-    maxAccumulator: 99999999
-  - type: Hunger
-    thresholds: # only animals and rats are derived from this prototype so let's override it here and in rats' proto
-      Overfed: 20000
-      Okay: 50
-      Peckish: 25
-      Starving: 10
-      Dead: 0
-    baseDecayRate: 0.00925925925926 # it is okay for animals to eat and drink less than humans, but more frequently
-  - type: SwarmAdept
-    hungerPerArmyUse: 0
-    hungerPerDomainUse: 0
-    armyMobSpawnId: MobSwarmbotAdeptusGuard
-  - type: Eye
-    drawFov: false
-  - type: MeleeWeapon
-    hidden: true
-    damage:
-      groups:
-        Brute: 20
-      types:
-        Shock: 10
-        Structural: 20
-    animation: WeaponArcDisarm
-    range: 2.3
-    soundHit:
-      path: /Audio/Weapons/eblademiss.ogg
-    altDisarm: False
-    angle: 0
-  - type: AutoImplant
-    implants:
-    - SwarmEmpImplant
-  - type: AmbientSound
-    enabled: true
-    volume: -3
-    range: 12
-    sound:
-      path: /Audio/Ambience/Objects/anomaly_generator.ogg
-  - type: Spider
-    webPrototype: SwarmWeb
-    webAction: ActionSwarmFloor
-  - type: MovementSpeedModifier
-    baseWalkSpeed : 3
-    baseSprintSpeed : 4
-  - type: MovementIgnoreGravity
-  - type: Body
-    prototype: SwarmBot
-
-######################### СТРАЖ АДЕПТА РОЯ #############################
-
-- type: entity
-  parent: MobSwarmbotBase
-  id: MobSwarmbotAdeptusGuard
-  suffix: НЕ СПАВНИТЬ ЧЕРЕЗ ТУЛБОКС
-  name: дрон-страж адепта
-  description: Биоробот, обладающий лазерным оружием. Является личной охраной адепта роя.
-  components:
-  - type: HTN
-    rootTask:
-      task: BioDroneCompound
-    blackboard:
-      NavInteract: !type:Bool
-        true
-      NavPry: !type:Bool
-        true
-      NavSmash: !type:Bool
-        true
-  - type: Sprite
-    drawdepth: Mobs
-    layers:
-    - map: ["enum.BorgVisualLayers.Light"]
-      state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: unshade
-      shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/bigguard.rsi
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: alive
-      Dead:
-        Base: dead
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.35
-        density: 20
-        mask:
-        - FlyingMobMask
-        layer:
-        - FlyingMobLayer
-  - type: GhostRole
-    makeSentient: true
-    name: ghost-role-information-adeptguard-name
-    description: ghost-role-information-adeptguard-description
-  - type: GhostTakeoverAvailable
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellAntiqueProto
-  - type: Tag
-    tags:
-    - DoorBumpOpener
-    - Flesh
-  - type: Speech
-    speechSounds: Swarm
-  - type: MeleeWeapon
-    damage:
-      types:
-        Heat: 5
-  - type: BatteryAmmoProvider
-    proto: BulletDisablerSwarm
-    fireCost: 100
-  - type: Battery
-    maxCharge: 800
-    startingCharge: 800
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 50
-  - type: Gun
-    fireRate: 0.8
-    projectileSpeed: 200
-    useKey: false
-    showExamineText: false
-    selectedMode: SemiAuto
-    availableModes:
-      - SemiAuto
-    soundGunshot:
-      path: /Audio/Weapons/plasma_cutter.ogg
-    soundEmpty:
-      path: /Audio/Items/Lighters/lighter_off.ogg
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      100: Dead
-    stateAlertDict:
-      Alive: BorgHealth
-      Dead: BorgDead
-    showOverlays: false
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 120
-      behaviors:
-      - !type:TriggerBehavior
-    - trigger:
-        !type:DamageTrigger
-        damage: 120
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: MovementIgnoreGravity
-  - type: SwarmDrone
-
-###################### КЛОНЫ ДЛЯ СПАВН ИВЕНТА НА СТАНЦИИ - ОНИ СЛАБЕЕ ОБЫЧНЫХ, ЧТОБ НЕ заРДМить ВЕСЬ ЭКИПАЖ ###################
-
-- type: entity
-  parent: MobSwarmbotBuilder
-  id: MobSwarmbotBuilderWeak
-  suffix: Слабый/станция
-  name: дрон-строитель роя
-  description: Биоробот, разбирающий станцию на мелкие кирпичики и распростроняющий шестерни роя. Является приоритетной целью охраны дронов-стражей роя.
-  components:
-  - type: Sprite
-    scale: 0.8, 0.8
-    drawdepth: Mobs
-    layers:
-    - map: ["enum.BorgVisualLayers.Light"]
-      state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: unshade
-      shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/robobuilderBroken.rsi
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      70: Dead
-    stateAlertDict:
-      Alive: BorgHealth
-      Dead: BorgDead
-    showOverlays: false
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:TriggerBehavior
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SwarmRewardSphere:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-
-
-- type: entity
-  parent: MobSwarmbotGuard
-  id: MobSwarmbotGuardWeak
-  suffix: Слабый/станция
-  name: дрон-страж роя
-  description: Биоробот, обладающий лазерным оружием. Судя по всему любит зажаривать кошкодевочек на медиум рейр стейк.
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    layers:
-    - map: ["enum.BorgVisualLayers.Light"]
-      state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: unshade
-      shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/attackbibotBroken.rsi
-  - type: MeleeWeapon
-    damage:
-      types:
-        Heat: 15
-        Structural: 10
-    animation: WeaponArcKick
-    range: 1.7
-  - type: BatteryAmmoProvider
-    proto: SwarmLaser
-    fireCost: 250
-  - type: Battery
-    maxCharge: 1000
-    startingCharge: 1000
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 50
-  - type: Gun
-    fireRate: 0.5
-    useKey: false
-    showExamineText: false
-    selectedMode: SemiAuto
-    cameraRecoilScalar: 5
-    availableModes:
-      - SemiAuto
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/Magic/staff_door.ogg
-    soundEmpty:
-      path: /Audio/Items/Lighters/lighter_off.ogg
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      100: Dead
-    stateAlertDict:
-      Alive: BorgHealth
-      Dead: BorgDead
-    showOverlays: false
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 150
-      behaviors:
-      - !type:TriggerBehavior
-    - trigger:
-        !type:DamageTrigger
-        damage: 150
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SwarmRewardSphere:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-
-- type: entity
-  parent: MobSwarmbotHealer
-  id: MobSwarmbotHealerWeak
-  suffix: Слабый/станция
-  name: дрон-лекарь роя
-  description: Биоробот, лечащий других дронов роя. Вещество, которое он вкалывает в дронов смертельно для других существ. Является самым слабым дроном, но его навыки интерна могут убить вас.
-  components:
-  - type: Sprite
-    scale: 0.8, 0.8
-    drawdepth: Mobs
-    layers:
-    - map: ["enum.BorgVisualLayers.Light"]
-      state: light
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
-      state: alive
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-      state: unshade
-      shader: unshaded
-      sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      50: Dead
-    stateAlertDict:
-      Alive: BorgHealth
-      Dead: BorgDead
-    showOverlays: false
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:TriggerBehavior
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SwarmRewardSphere:
-            min: 0
-            max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+# - type: entity
+  # parent: MobSwarmbotHealer
+  # id: MobSwarmbotHealerWeak
+  # suffix: Слабый/станция
+  # name: дрон-лекарь роя
+  # description: Биоробот, лечащий других дронов роя. Вещество, которое он вкалывает в дронов смертельно для других существ. Является самым слабым дроном, но его навыки интерна могут убить вас.
+  # components:
+  # - type: Sprite
+    # scale: 0.8, 0.8
+    # drawdepth: Mobs
+    # layers:
+    # - map: ["enum.BorgVisualLayers.Light"]
+      # state: light
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
+    # - map: [ "enum.DamageStateVisualLayers.Base" ]
+      # state: alive
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
+    # - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      # state: unshade
+      # shader: unshaded
+      # sprite: Siberia/Mobs/Silicon/BioSwarm/medibibotBroken.rsi
+  # - type: MobThresholds
+    # thresholds:
+      # 0: Alive
+      # 50: Dead
+    # stateAlertDict:
+      # Alive: BorgHealth
+      # Dead: BorgDead
+    # showOverlays: false
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 100
+      # behaviors:
+      # - !type:TriggerBehavior
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 100
+      # behaviors:
+      # - !type:SpawnEntitiesBehavior
+        # spawn:
+          # SwarmRewardSphere:
+            # min: 0
+            # max: 1
+      # - !type:DoActsBehavior
+        # acts: [ "Destruction" ]
