@@ -222,6 +222,14 @@
         Slash: -0.03
         Poison: -0.1 # needs to be less than the PendingZombieComponent does or they never become zombies by the disease.
   - type: DamageVisuals
+    thresholds: [ 20, 40, 100 ]
+    targetLayers:
+    - "enum.HumanoidVisualLayers.Chest"
+    - "enum.HumanoidVisualLayers.Head"
+    - "enum.HumanoidVisualLayers.LArm"
+    - "enum.HumanoidVisualLayers.LLeg"
+    - "enum.HumanoidVisualLayers.RArm"
+    - "enum.HumanoidVisualLayers.RLeg"
     damageOverlayGroups:
       Brute:
         sprite: Siberia/Mobs/Effects/brute_damage_resomi.rsi
@@ -318,7 +326,6 @@
   components:
   - type: VisualOrganMarkings
     hideableLayers:
-    - enum.HumanoidVisualLayers.Snout
     - enum.HumanoidVisualLayers.HeadTop
     - enum.HumanoidVisualLayers.HeadSide
 
