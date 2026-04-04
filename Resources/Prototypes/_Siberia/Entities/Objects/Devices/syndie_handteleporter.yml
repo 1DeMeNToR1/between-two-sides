@@ -10,6 +10,6 @@
     - state: icon
   - type: SyndieHandTeleporter
   - type: Contraband
-      severity: Syndicate
-      allowedDepartments: [ ]
-      allowedJobs: [ ResearchAssistant, ResearchDirector, Scientist, Borg ]
+    severity: Syndicate
+    allowedDepartments: [ ]
+    allowedJobs: [ ResearchAssistant, ResearchDirector, Scientist, Borg ]
