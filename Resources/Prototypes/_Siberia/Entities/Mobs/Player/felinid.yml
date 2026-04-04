@@ -34,10 +34,10 @@
   # - type: NpcFactionMember
     # factions:
     # - NanoTrasen
-  - type: Felinid #since this just adds an action...
+  # - type: Felinid #since this just adds an action...
   # - type: InteractionPopup
     # successChance: 1
     # interactSuccessString: hugging-success-generic
     # interactSuccessSound: /Audio/Effects/thudswoosh.ogg
     # messagePerceivedByOthers: hugging-success-generic-others
- - type: PotentialPsionic
+ # - type: PotentialPsionic
