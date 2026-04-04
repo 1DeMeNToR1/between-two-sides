@@ -165,10 +165,6 @@
       Male: UnisexResomi
       Female: UnisexResomi
       Unsexed: UnisexResomi
-    sounds:
-      Male: UnisexResomi
-      Female: UnisexResomi
-      Unsexed: UnisexResomi  
   - type: Butcherable
     butcheringType: Spike
     spawned:
