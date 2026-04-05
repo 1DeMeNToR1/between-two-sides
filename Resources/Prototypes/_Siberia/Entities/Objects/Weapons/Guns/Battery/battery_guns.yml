@@ -46,7 +46,7 @@
         path: /Audio/Siberia/Weapons/Gunshots/Battery/healgun.ogg
         params:
           volume: -5
-    - type: ProjectileBatteryAmmoProvider
+    - type: BatteryAmmoProvider
       proto: BulletHealgun
       fireCost: 600
     - type: Battery

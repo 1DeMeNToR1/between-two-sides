@@ -1,78 +1,78 @@
 - type: cargoProduct
   id: EngineeringJetpackVoid
-  name: ящик пустотных джетпаков
+  # name: ящик пустотных джетпаков
   icon:
     sprite: Objects/Tanks/Jetpacks/void.rsi
     state: icon
   product: CrateEngineeringJetpackVoid
   cost: 5000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 - type: cargoProduct
   id: EngineeringCargoTelepad
-  name: ящик торгового телепада
+  # name: ящик торгового телепада
   icon:
     sprite: Structures/cargo_telepad.rsi
     state: offline
   product: CrateCargoTelepad
   cost: 6000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 - type: cargoProduct
   id: EngineeringDemonCore
-  name: ящик с демон-кором
+  # name: ящик с демон-кором
   icon:
     sprite: Objects/Fun/pondering_orb.rsi
     state: icon
   product: CrateDemonCore
   cost: 8000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 - type: cargoProduct
   id: EngineeringSalvageLocker
-  name: снаряжение специалиста по утилизации
+  # name: снаряжение специалиста по утилизации
   icon:
     sprite: Clothing/OuterClothing/Hardsuits/spatio.rsi
     state: icon
   product: LockerSalvageSpecialistFilled
   cost: 5000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 - type: cargoProduct
   id: EngineeringEngiLocker
-  name: шкаф инженера
+  # name: шкаф инженера
   icon:
     sprite: Clothing/OuterClothing/Hardsuits/engineering.rsi
     state: icon
   product: LockerEngineerFilled
   cost: 5000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 - type: cargoProduct
   id: EngineeringAtmosLocker
-  name: шкаф атмосферного техника
+  # name: шкаф атмосферного техника
   icon:
     sprite: Clothing/OuterClothing/Hardsuits/atmospherics.rsi
     state: icon
   product: LockerAtmosphericsFilled
   cost: 5000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 - type: cargoProduct
   id: EngineeringSalvageMagnet
-  name: ящик магнита обломков
+  # name: ящик магнита обломков
   icon:
     sprite: Structures/Storage/Crates/secure.rsi
     state: icon
   product: CrateSalvageMagnet
   cost: 5000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 #- type: cargoProduct
@@ -88,13 +88,13 @@
 
 - type: cargoProduct
   id: EngineeringStorageCanister
-  name: пустая канистра хранения
+  # name: пустая канистра хранения
   icon:
     sprite: Structures/Storage/canister.rsi
     state: yellow
   product: StorageCanister
   cost: 1500
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 #- type: cargoProduct

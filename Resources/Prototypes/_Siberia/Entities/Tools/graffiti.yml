@@ -10,8 +10,8 @@
   - type: Crayon
     color: Red
     selectableColor: true
-    capacity: 3000
-    charges: 3000
+  - type: LimitedCharges
+    maxCharges: 3000
   - type: Tag
     tags:
     - Write

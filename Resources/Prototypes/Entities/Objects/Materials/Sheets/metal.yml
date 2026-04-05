@@ -75,8 +75,8 @@
     damageContainers:
     - BiologicalIPC
     damage:
-      groups:
-        Toxin: -10
+      types:
+        Poison: -10
 
 - type: entity
   parent: SheetSteel

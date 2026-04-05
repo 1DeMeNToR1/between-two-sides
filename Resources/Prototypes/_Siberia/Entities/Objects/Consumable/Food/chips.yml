@@ -13,7 +13,7 @@
     state: bacon
     scale: 0.5, 0.5
   - type: Item
-  - type: Food
+  - type: Edible
     trash:
     - ChipsBaconTrash
 
@@ -46,7 +46,7 @@
     state: chanterelles
     scale: 0.5, 0.5
   - type: Item
-  - type: Food
+  - type: Edible
     trash:
     - ChipsChanterellesTrash
 
@@ -78,7 +78,7 @@
     state: cheese
     scale: 0.5, 0.5
   - type: Item
-  - type: Food
+  - type: Edible
     trash:
     - ChipsCheeseTrash
 
@@ -110,7 +110,7 @@
     state: crab
     scale: 0.5, 0.5
   - type: Item
-  - type: Food
+  - type: Edible
     trash:
     - ChipsCrabTrash
 
@@ -142,7 +142,7 @@
     state: green
     scale: 0.5, 0.5
   - type: Item
-  - type: Food
+  - type: Edible
     trash:
     - ChipsGreenTrash
 
@@ -174,7 +174,7 @@
     state: onion
     scale: 0.5, 0.5
   - type: Item
-  - type: Food
+  - type: Edible
     trash:
     - ChipsOnionTrash
 

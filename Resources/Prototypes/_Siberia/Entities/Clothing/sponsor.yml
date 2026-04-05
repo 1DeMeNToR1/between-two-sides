@@ -253,7 +253,6 @@
 - type: marking
   id: AugmentsRoboticRightArm
   bodyPart: RArm
-  markingCategory: Arms
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -262,7 +261,6 @@
 - type: marking
   id: AugmentsRoboticLeftHand
   bodyPart: LHand
-  markingCategory: Arms
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -271,7 +269,6 @@
 - type: marking
   id: AugmentsRoboticLeftArm
   bodyPart: LArm
-  markingCategory: Arms
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -280,7 +277,6 @@
 - type: marking
   id: AugmentsRoboticRightHand
   bodyPart: RHand
-  markingCategory: Arms
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -289,7 +285,6 @@
 - type: marking
   id: RoboticRightArm
   bodyPart: RArm
-  markingCategory: Arms
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -298,7 +293,6 @@
 - type: marking
   id: RoboticLeftArm
   bodyPart: LArm
-  markingCategory: Arms
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -307,7 +301,6 @@
 - type: marking
   id: RoboticChestMale
   bodyPart: Chest
-  markingCategory: Chest
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -316,7 +309,6 @@
 - type: marking
   id: RoboticChestFemale
   bodyPart: Chest
-  markingCategory: Chest
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -325,7 +317,6 @@
 - type: marking
   id: RoboticLeftLeg
   bodyPart: LLeg
-  markingCategory: Legs
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -334,7 +325,6 @@
 - type: marking
   id: RoboticLeftFoot
   bodyPart: RFoot
-  markingCategory: Legs
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -343,7 +333,6 @@
 - type: marking
   id: RoboticRightLeg
   bodyPart: LLeg
-  markingCategory: Legs
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -352,7 +341,6 @@
 - type: marking
   id: RoboticRightFoot
   bodyPart: RFoot
-  markingCategory: Legs
   sponsorOnly: true
   sprites:
     - sprite: Corvax/Mobs/Customization/augments.rsi
@@ -361,9 +349,8 @@
 - type: marking
   id: MalstremEyeRight
   bodyPart: Eyes
-  markingCategory: Head
   sponsorOnly: true
-  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf]
+  groupWhitelist: [Human, Slime, Reptilian] #, Dwarf
   sprites:
   - sprite: Corvax/Mobs/Customization/augments.rsi
     state: tattoo_eye_r
@@ -371,9 +358,8 @@
 - type: marking
   id: MalstremEyeLeft
   bodyPart: Eyes
-  markingCategory: Head
   sponsorOnly: true
-  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf]
+  groupWhitelist: [Human, Slime, Reptilian] # Dwarf
   sprites:
   - sprite: Corvax/Mobs/Customization/augments.rsi
     state: tattoo_eye_l
@@ -381,9 +367,8 @@
 - type: marking
   id: MalstremEyeCyclop
   bodyPart: Eyes
-  markingCategory: Head
   sponsorOnly: true
-  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf]
+  groupWhitelist: [Human, Slime, Reptilian] # Dwarf
   sprites:
   - sprite: Corvax/Mobs/Customization/augments.rsi
     state: tattoo_eye_cyclop

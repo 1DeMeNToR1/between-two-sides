@@ -53,7 +53,7 @@
     path: /Audio/Siberia/Jukebox/TheCrystalShip.ogg
 
 - type: jukebox
-  id: The Pina Colada song
+  id: ThePinaColada
   name: The Pina Colada
   path:
     path: /Audio/Siberia/Jukebox/ThePinaColadasong.ogg

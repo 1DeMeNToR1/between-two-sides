@@ -5,5 +5,5 @@
     state: normal
   product: CrateMultiColoredLamps
   cost: 2000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market

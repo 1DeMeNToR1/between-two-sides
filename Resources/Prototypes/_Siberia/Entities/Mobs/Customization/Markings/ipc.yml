@@ -1,1650 +1,1581 @@
-# template
-#- type: marking
-#  id: IPCScreen{}
-#  bodyPart: Head
-#  markingCategory: Head
-#  speciesRestriction: [IPC]
-#  sprites:
-#    - sprite: Siberia/Mobs/Customization/ipc.rsi
-#      state: {}
-
-#region auto generated
-- type: marking
-  id: IPCScreenStatic
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: static
-
-- type: marking
-  id: IPCScreenBlue
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: blue
-
-- type: marking
-  id: IPCScreenBreakout
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: breakout
-
-- type: marking
-  id: IPCScreenEight
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: eight
-
-- type: marking
-  id: IPCScreenGoggles
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: goggles
-
-- type: marking
-  id: IPCScreenExcla
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: excla
-
-- type: marking
-  id: IPCScreenHeart
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: heart
-
-- type: marking
-  id: IPCScreenMonoeye
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: monoeye
-
-- type: marking
-  id: IPCScreenNature
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: nature
-
-- type: marking
-  id: IPCScreenOrange
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: orange
-
-- type: marking
-  id: IPCScreenPink
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: pink
-
-- type: marking
-  id: IPCScreenQuestion
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: question
-
-- type: marking
-  id: IPCScreenShower
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: shower
-
-- type: marking
-  id: IPCScreenYellow
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: yellow
-
-- type: marking
-  id: IPCScreenScroll
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: scroll
-
-- type: marking
-  id: IPCScreenConsole
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: console
-
-- type: marking
-  id: IPCScreenRgb
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: rgb
-
-- type: marking
-  id: IPCScreenGlider
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: glider
-
-- type: marking
-  id: IPCScreenRainbow
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: rainbow
-
-- type: marking
-  id: IPCScreenBsod
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: bsod
-
-- type: marking
-  id: IPCScreenRedtext
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: redtext
-
-- type: marking
-  id: IPCScreenSinewave
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: sinewave
-
-- type: marking
-  id: IPCScreenScreenwave
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: screenwave
-
-- type: marking
-  id: IPCScreenEcgwave
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: ecgwave
-
-- type: marking
-  id: IPCScreenEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: eyes
-
-- type: marking
-  id: IPCScreenEyesstall
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: eyesstall
-
-- type: marking
-  id: IPCScreenEyesangry
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: eyesangry
-
-- type: marking
-  id: IPCScreenLoading
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: loading
-
-- type: marking
-  id: IPCScreenWindowsxp
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: windowsxp
-
-- type: marking
-  id: IPCScreenTetris
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: tetris
-
-- type: marking
-  id: IPCScreenTv
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: tv
-
-- type: marking
-  id: IPCScreenTextdrop
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: textdrop
-
-- type: marking
-  id: IPCScreenStars
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: stars
-
-- type: marking
-  id: IPCScreenRainbowdiag
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: rainbowdiag
-
-- type: marking
-  id: IPCScreenBlank
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: blank
-
-- type: marking
-  id: IPCScreenSmile
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: smile
-
-- type: marking
-  id: IPCScreenSad
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: sad
-
-- type: marking
-  id: IPCScreenRing
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: ring
-
-- type: marking
-  id: IPCScreenL
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: l
-
-- type: marking
-  id: IPCScreenTvAntenna
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: tvantenna
-
-- type: marking
-  id: IPCScreenTesla
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: tesla
-
-- type: marking
-  id: IPCScreenCyberheadantenna
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: cyberheadantenna
-
-- type: marking
-  id: IPCScreenSidelights
-  bodyPart: HeadSide
-  markingCategory: HeadSide
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: sidelights
-
-- type: marking
-  id: IPCScreenAntlers
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: antlers
-
-- type: marking
-  id: IPCScreenDrone
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: drone
-
-- type: marking
-  id: IPCScreenCrowned
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: crowned
-
-- type: marking
-  id: IPCScreenAntennae
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: antennae
-
-- type: marking
-  id: IPCScreenEmpty
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc.rsi
-      state: empty
-
-- type: marking
-  id: IPCWingsUltrakill
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_wingwide.rsi
-    state: energy
-  - sprite: Siberia/Mobs/Customization/ipc_wingwide.rsi
-    state: blank
-
-#Боди-парты
-
-#БАЗАБОДИ
-- type: marking
-  id: IPCMainChest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: chest
-
-- type: marking
-  id: IPCMainHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: head
-
-- type: marking
-  id: IPCMainArms
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: arms
-
-- type: marking
-  id: IPCMainLegs
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: legs
-
-- type: marking
-  id: IPCMainLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: l_arm
-
-- type: marking
-  id: IPCMainLHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: l_hand
-
-- type: marking
-  id: IPCMainRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: r_arm
-
-- type: marking
-  id: IPCMainRHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: r_hand
-
-- type: marking
-  id: IPCMainLLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: l_leg
-
-- type: marking
-  id: IPCMainLFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: l_foot
-
-- type: marking
-  id: IPCMainRLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: r_leg
-
-- type: marking
-  id: IPCMainRFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
-      state: r_foot
-
-#КОНЕЦБАЗЫ
-
-#bs2
-- type: marking
-  id: IPCbs2Chest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
-      state: bodyparts_bs2ipc_chest
-
-- type: marking
-  id: IPCbs2Head
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
-      state: bodyparts_bs2ipc_head
-
-- type: marking
-  id: IPCbs2LArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
-      state: bodyparts_bs2ipc_l_arm
-
-- type: marking
-  id: IPCbs2LHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
-      state: bodyparts_bs2ipc_l_hand
-
-- type: marking
-  id: IPCbs2RArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
-      state: bodyparts_bs2ipc_r_arm
-
-- type: marking
-  id: IPCbs2RHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
-      state: bodyparts_bs2ipc_r_hand
-
-- type: marking
-  id: IPCbs2LLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
-      state: bodyparts_bs2ipc_l_leg
-
-- type: marking
-  id: IPCbs2LFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
-      state: bodyparts_bs2ipc_l_foot
-
-- type: marking
-  id: IPCbs2RLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
-      state: bodyparts_bs2ipc_r_leg
-
-- type: marking
-  id: IPCbs2RFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
-      state: bodyparts_bs2ipc_r_foot
-
-#android
-
-- type: marking
-  id: IPCAndroidChest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_torso
-
-- type: marking
-  id: IPCAndroidHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_head
-
-- type: marking
-  id: IPCAndroidLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_l_arm
-
-- type: marking
-  id: IPCAndroidLHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_l_hand
-
-- type: marking
-  id: IPCAndroidRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_r_arm
-
-- type: marking
-  id: IPCAndroidRHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_r_hand
-
-- type: marking
-  id: IPCAndroidLLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_l_leg
-
-- type: marking
-  id: IPCAndroidLFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_l_foot
-
-- type: marking
-  id: IPCAndroidRLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_r_leg
-
-- type: marking
-  id: IPCAndroidRFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_r_foot
-
-- type: marking
-  id: IPCAndroidsEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
-    state: robotic_eyes
-
-#bishop
-
-- type: marking
-  id: IPCBishopChest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_torso
-
-- type: marking
-  id: IPCBishopHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_head
-
-- type: marking
-  id: IPCBishopEyesHead
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_eyes
-
-- type: marking
-  id: IPCBishopLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_l_arm
-
-- type: marking
-  id: IPCBishopLHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_l_hand
-
-- type: marking
-  id: IPCBishopRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_r_arm
-
-- type: marking
-  id: IPCBishopRHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_r_hand
-
-- type: marking
-  id: IPCBishopLLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_l_leg
-
-- type: marking
-  id: IPCBishopLFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_l_foot
-
-- type: marking
-  id: IPCBishopRLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_r_leg
-
-- type: marking
-  id: IPCBishopRFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
-      state: r_ind_bishop_r_foot
-
-#gefest
-
-- type: marking
-  id: IPCGefestChest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_torso
-
-- type: marking
-  id: IPCGefestHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_head
-
-- type: marking
-  id: IPCGefestVisor
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_eyes
-
-- type: marking
-  id: IPCGefestLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_l_arm
-
-- type: marking
-  id: IPCGefestLHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_l_hand
-
-- type: marking
-  id: IPCGefestRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_r_arm
-
-- type: marking
-  id: IPCGefestRHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_r_hand
-
-- type: marking
-  id: IPCGefestLLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_l_leg
-
-- type: marking
-  id: IPCGefestLFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_l_foot
-
-- type: marking
-  id: IPCGefestRLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_r_leg
-
-- type: marking
-  id: IPCGefestRFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
-      state: r_ind_hephaestus_r_foot
-
-#industrial
-
-- type: marking
-  id: IPCIndustrialChest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_torso
-
-- type: marking
-  id: IPCIndustrialHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_head
-
-- type: marking
-  id: IPCIndustrialEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_eyes
-
-- type: marking
-  id: IPCIndustrialLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_l_arm
-
-- type: marking
-  id: IPCIndustrialLHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_l_hand
-
-- type: marking
-  id: IPCIndustrialRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_r_arm
-
-- type: marking
-  id: IPCIndustrialRHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_r_hand
-
-- type: marking
-  id: IPCIndustrialLLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_l_leg
-
-- type: marking
-  id: IPCIndustrialLFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_l_foot
-
-- type: marking
-  id: IPCIndustrialRLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_r_leg
-
-- type: marking
-  id: IPCIndustrialRFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
-      state: r_industrial_r_foot
-
-#morph
-
-- type: marking
-  id: IPCMorphChest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_torso
-
-- type: marking
-  id: IPCMorphAirborneHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_airborne
-
-- type: marking
-  id: IPCMorphAirEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-    state: morpheus_panel
-
-- type: marking
-  id: IPCMorphBlitzHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_blitz
-
-- type: marking
-  id: IPCMorphBlitzEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_blitz_eyes
-
-- type: marking
-  id: IPCMorphMainHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_head
-
-- type: marking
-  id: IPCMorphMainEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_eyes
-
-- type: marking
-  id: IPCMorphPrimeHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_prime
-
-- type: marking
-  id: IPCMorphPrimeEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_prime_eyes
-
-- type: marking
-  id: IPCMorphMonitorHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_monitor_head
-
-- type: marking
-  id: IPCMorphLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_l_arm
-
-- type: marking
-  id: IPCMorphLHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_l_hand
-
-- type: marking
-  id: IPCMorphRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_r_arm
-
-- type: marking
-  id: IPCMorphRHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_r_hand
-
-- type: marking
-  id: IPCMorphLLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_l_leg
-
-- type: marking
-  id: IPCMorphLFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_l_foot
-
-- type: marking
-  id: IPCMorphRLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_r_leg
-
-- type: marking
-  id: IPCMorphRFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
-      state: morpheus_main_r_foot
-
-#shellguard
-
-- type: marking
-  id: IPCGuardChest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_torso
-
-- type: marking
-  id: IPCGuardAltHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_alt_head
-
-- type: marking
-  id: IPCGuardAltEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_alt_eyes
-
-- type: marking
-  id: IPCGuardMainHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_head
-
-- type: marking
-  id: IPCGuardMainEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_eyes
-
-- type: marking
-  id: IPCGuardMonitorHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_monitor_head
-
-- type: marking
-  id: IPCGuardLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_l_arm
-
-- type: marking
-  id: IPCGuardLHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_l_hand
-
-- type: marking
-  id: IPCGuardRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_r_arm
-
-- type: marking
-  id: IPCGuardRHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_r_hand
-
-- type: marking
-  id: IPCGuardLLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_l_leg
-
-- type: marking
-  id: IPCGuardLFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_l_foot
-
-- type: marking
-  id: IPCGuardRLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_r_leg
-
-- type: marking
-  id: IPCGuardRFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
-      state: shellguard_main_r_foot
-
-#xion
-
-- type: marking
-  id: IPCXionChest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_torso
-
-- type: marking
-  id: IPCXionHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_head
-
-- type: marking
-  id: IPCXionEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_eyes
-
-- type: marking
-  id: IPCXionLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_l_arm
-
-- type: marking
-  id: IPCXionLHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_l_hand
-
-- type: marking
-  id: IPCXionRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_r_arm
-
-- type: marking
-  id: IPCXionRHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_r_hand
-
-- type: marking
-  id: IPCXionLLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_l_leg
-
-- type: marking
-  id: IPCXionLFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_l_foot
-
-- type: marking
-  id: IPCXionRLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_r_leg
-
-- type: marking
-  id: IPCXionRFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
-      state: r_ind_xion_r_foot
-
-#zenghu
-
-- type: marking
-  id: IPCZenghuChest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_torso
-
-- type: marking
-  id: IPCZenghuHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_head
-
-- type: marking
-  id: IPCZenghuEyes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_eyes
-
-- type: marking
-  id: IPCZenghuLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_l_arm
-
-- type: marking
-  id: IPCZenghuLHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_l_hand
-
-- type: marking
-  id: IPCZenghuRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_r_arm
-
-- type: marking
-  id: IPCZenghuRHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_r_hand
-
-- type: marking
-  id: IPCZenghuLLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_l_leg
-
-- type: marking
-  id: IPCZenghuLFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_l_foot
-
-- type: marking
-  id: IPCZenghuRLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_r_leg
-
-- type: marking
-  id: IPCZenghuRFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
-      state: r_ind_zenghu_r_foot
-
-#proto
-
-- type: marking
-  id: IPCProtoChest
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
-      state: proto_torso
-
-- type: marking
-  id: IPCProtoHead
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
-      state: proto_head
-
-- type: marking
-  id: IPCProtoLArm
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
-      state: proto_l_arm
-
-- type: marking
-  id: IPCProtoLHand
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
-      state: proto_l_hand
-
-- type: marking
-  id: IPCProtoRArm
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
-      state: proto_r_arm
-
-- type: marking
-  id: IPCProtoRHand
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
-      state: proto_r_hand
-
-- type: marking
-  id: IPCProtoLLeg
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
-      state: proto_l_leg
-
-- type: marking
-  id: IPCProtoLFoot
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
-      state: proto_l_foot
-
-- type: marking
-  id: IPCProtoRLeg
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
-      state: proto_r_leg
-
-- type: marking
-  id: IPCProtoRFoot
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-    - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
-      state: proto_r_foot
-
-
-#endregion
+# # template
+# #- type: marking
+# #  id: IPCScreen{}
+# #  bodyPart: Head
+# ##  groupWhitelist: [IPC]
+# #  sprites:
+# #    - sprite: Siberia/Mobs/Customization/ipc.rsi
+# #      state: {}
+
+# #region auto generated
+# - type: marking
+  # id: IPCScreenStatic
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: static
+
+# - type: marking
+  # id: IPCScreenBlue
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: blue
+
+# - type: marking
+  # id: IPCScreenBreakout
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: breakout
+
+# - type: marking
+  # id: IPCScreenEight
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: eight
+
+# - type: marking
+  # id: IPCScreenGoggles
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: goggles
+
+# - type: marking
+  # id: IPCScreenExcla
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: excla
+
+# - type: marking
+  # id: IPCScreenHeart
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: heart
+
+# - type: marking
+  # id: IPCScreenMonoeye
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: monoeye
+
+# - type: marking
+  # id: IPCScreenNature
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: nature
+
+# - type: marking
+  # id: IPCScreenOrange
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: orange
+
+# - type: marking
+  # id: IPCScreenPink
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: pink
+
+# - type: marking
+  # id: IPCScreenQuestion
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: question
+
+# - type: marking
+  # id: IPCScreenShower
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: shower
+
+# - type: marking
+  # id: IPCScreenYellow
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: yellow
+
+# - type: marking
+  # id: IPCScreenScroll
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: scroll
+
+# - type: marking
+  # id: IPCScreenConsole
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: console
+
+# - type: marking
+  # id: IPCScreenRgb
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: rgb
+
+# - type: marking
+  # id: IPCScreenGlider
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: glider
+
+# - type: marking
+  # id: IPCScreenRainbow
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: rainbow
+
+# - type: marking
+  # id: IPCScreenBsod
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: bsod
+
+# - type: marking
+  # id: IPCScreenRedtext
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: redtext
+
+# - type: marking
+  # id: IPCScreenSinewave
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: sinewave
+
+# - type: marking
+  # id: IPCScreenScreenwave
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: screenwave
+
+# - type: marking
+  # id: IPCScreenEcgwave
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: ecgwave
+
+# - type: marking
+  # id: IPCScreenEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: eyes
+
+# - type: marking
+  # id: IPCScreenEyesstall
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: eyesstall
+
+# - type: marking
+  # id: IPCScreenEyesangry
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: eyesangry
+
+# - type: marking
+  # id: IPCScreenLoading
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: loading
+
+# - type: marking
+  # id: IPCScreenWindowsxp
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: windowsxp
+
+# - type: marking
+  # id: IPCScreenTetris
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: tetris
+
+# - type: marking
+  # id: IPCScreenTv
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: tv
+
+# - type: marking
+  # id: IPCScreenTextdrop
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: textdrop
+
+# - type: marking
+  # id: IPCScreenStars
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: stars
+
+# - type: marking
+  # id: IPCScreenRainbowdiag
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: rainbowdiag
+
+# - type: marking
+  # id: IPCScreenBlank
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: blank
+
+# - type: marking
+  # id: IPCScreenSmile
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: smile
+
+# - type: marking
+  # id: IPCScreenSad
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: sad
+
+# - type: marking
+  # id: IPCScreenRing
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: ring
+
+# - type: marking
+  # id: IPCScreenL
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: l
+
+# - type: marking
+  # id: IPCScreenTvAntenna
+  # bodyPart: HeadTop
+  # markingCategory: HeadTop
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: tvantenna
+
+# - type: marking
+  # id: IPCScreenTesla
+  # bodyPart: HeadTop
+  # markingCategory: HeadTop
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: tesla
+
+# - type: marking
+  # id: IPCScreenCyberheadantenna
+  # bodyPart: HeadTop
+  # markingCategory: HeadTop
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: cyberheadantenna
+
+# - type: marking
+  # id: IPCScreenSidelights
+  # bodyPart: HeadSide
+  # markingCategory: HeadSide
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: sidelights
+
+# - type: marking
+  # id: IPCScreenAntlers
+  # bodyPart: HeadTop
+  # markingCategory: HeadTop
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: antlers
+
+# - type: marking
+  # id: IPCScreenDrone
+  # bodyPart: HeadTop
+  # markingCategory: HeadTop
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: drone
+
+# - type: marking
+  # id: IPCScreenCrowned
+  # bodyPart: HeadTop
+  # markingCategory: HeadTop
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: crowned
+
+# - type: marking
+  # id: IPCScreenAntennae
+  # bodyPart: HeadTop
+  # markingCategory: HeadTop
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: antennae
+
+# - type: marking
+  # id: IPCScreenEmpty
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc.rsi
+      # state: empty
+
+# - type: marking
+  # id: IPCWingsUltrakill
+  # bodyPart: Tail
+  # markingCategory: Tail
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_wingwide.rsi
+    # state: energy
+  # - sprite: Siberia/Mobs/Customization/ipc_wingwide.rsi
+    # state: blank
+
+# #Боди-парты
+
+# #БАЗАБОДИ
+# - type: marking
+  # id: IPCMainChest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: chest
+
+# - type: marking
+  # id: IPCMainHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: head
+
+# - type: marking
+  # id: IPCMainArms
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: arms
+
+# - type: marking
+  # id: IPCMainLegs
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: legs
+
+# - type: marking
+  # id: IPCMainLArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: l_arm
+
+# - type: marking
+  # id: IPCMainLHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: l_hand
+
+# - type: marking
+  # id: IPCMainRArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: r_arm
+
+# - type: marking
+  # id: IPCMainRHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: r_hand
+
+# - type: marking
+  # id: IPCMainLLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: l_leg
+
+# - type: marking
+  # id: IPCMainLFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: l_foot
+
+# - type: marking
+  # id: IPCMainRLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: r_leg
+
+# - type: marking
+  # id: IPCMainRFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_mainparts.rsi
+      # state: r_foot
+
+# #КОНЕЦБАЗЫ
+
+# #bs2
+# - type: marking
+  # id: IPCbs2Chest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
+      # state: bodyparts_bs2ipc_chest
+
+# - type: marking
+  # id: IPCbs2Head
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
+      # state: bodyparts_bs2ipc_head
+
+# - type: marking
+  # id: IPCbs2LArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
+      # state: bodyparts_bs2ipc_l_arm
+
+# - type: marking
+  # id: IPCbs2LHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
+      # state: bodyparts_bs2ipc_l_hand
+
+# - type: marking
+  # id: IPCbs2RArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
+      # state: bodyparts_bs2ipc_r_arm
+
+# - type: marking
+  # id: IPCbs2RHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
+      # state: bodyparts_bs2ipc_r_hand
+
+# - type: marking
+  # id: IPCbs2LLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
+      # state: bodyparts_bs2ipc_l_leg
+
+# - type: marking
+  # id: IPCbs2LFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
+      # state: bodyparts_bs2ipc_l_foot
+
+# - type: marking
+  # id: IPCbs2RLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
+      # state: bodyparts_bs2ipc_r_leg
+
+# - type: marking
+  # id: IPCbs2RFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bs2.rsi
+      # state: bodyparts_bs2ipc_r_foot
+
+# #android
+
+# - type: marking
+  # id: IPCAndroidChest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_torso
+
+# - type: marking
+  # id: IPCAndroidHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_head
+
+# - type: marking
+  # id: IPCAndroidLArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_l_arm
+
+# - type: marking
+  # id: IPCAndroidLHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_l_hand
+
+# - type: marking
+  # id: IPCAndroidRArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_r_arm
+
+# - type: marking
+  # id: IPCAndroidRHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_r_hand
+
+# - type: marking
+  # id: IPCAndroidLLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_l_leg
+
+# - type: marking
+  # id: IPCAndroidLFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_l_foot
+
+# - type: marking
+  # id: IPCAndroidRLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_r_leg
+
+# - type: marking
+  # id: IPCAndroidRFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_r_foot
+
+# - type: marking
+  # id: IPCAndroidsEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/android.rsi
+    # state: robotic_eyes
+
+# #bishop
+
+# - type: marking
+  # id: IPCBishopChest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_torso
+
+# - type: marking
+  # id: IPCBishopHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_head
+
+# - type: marking
+  # id: IPCBishopEyesHead
+  # bodyPart: HeadTop
+  # markingCategory: HeadTop
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_eyes
+
+# - type: marking
+  # id: IPCBishopLArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_l_arm
+
+# - type: marking
+  # id: IPCBishopLHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_l_hand
+
+# - type: marking
+  # id: IPCBishopRArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_r_arm
+
+# - type: marking
+  # id: IPCBishopRHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_r_hand
+
+# - type: marking
+  # id: IPCBishopLLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_l_leg
+
+# - type: marking
+  # id: IPCBishopLFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_l_foot
+
+# - type: marking
+  # id: IPCBishopRLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_r_leg
+
+# - type: marking
+  # id: IPCBishopRFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/bishop.rsi
+      # state: r_ind_bishop_r_foot
+
+# #gefest
+
+# - type: marking
+  # id: IPCGefestChest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_torso
+
+# - type: marking
+  # id: IPCGefestHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_head
+
+# - type: marking
+  # id: IPCGefestVisor
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_eyes
+
+# - type: marking
+  # id: IPCGefestLArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_l_arm
+
+# - type: marking
+  # id: IPCGefestLHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_l_hand
+
+# - type: marking
+  # id: IPCGefestRArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_r_arm
+
+# - type: marking
+  # id: IPCGefestRHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_r_hand
+
+# - type: marking
+  # id: IPCGefestLLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_l_leg
+
+# - type: marking
+  # id: IPCGefestLFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_l_foot
+
+# - type: marking
+  # id: IPCGefestRLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_r_leg
+
+# - type: marking
+  # id: IPCGefestRFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/gefest.rsi
+      # state: r_ind_hephaestus_r_foot
+
+# #industrial
+
+# - type: marking
+  # id: IPCIndustrialChest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_torso
+
+# - type: marking
+  # id: IPCIndustrialHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_head
+
+# - type: marking
+  # id: IPCIndustrialEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_eyes
+
+# - type: marking
+  # id: IPCIndustrialLArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_l_arm
+
+# - type: marking
+  # id: IPCIndustrialLHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_l_hand
+
+# - type: marking
+  # id: IPCIndustrialRArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_r_arm
+
+# - type: marking
+  # id: IPCIndustrialRHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_r_hand
+
+# - type: marking
+  # id: IPCIndustrialLLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_l_leg
+
+# - type: marking
+  # id: IPCIndustrialLFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_l_foot
+
+# - type: marking
+  # id: IPCIndustrialRLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_r_leg
+
+# - type: marking
+  # id: IPCIndustrialRFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/industrial.rsi
+      # state: r_industrial_r_foot
+
+# #morph
+
+# - type: marking
+  # id: IPCMorphChest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_torso
+
+# - type: marking
+  # id: IPCMorphAirborneHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_airborne
+
+# - type: marking
+  # id: IPCMorphAirEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+    # state: morpheus_panel
+
+# - type: marking
+  # id: IPCMorphBlitzHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_blitz
+
+# - type: marking
+  # id: IPCMorphBlitzEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_blitz_eyes
+
+# - type: marking
+  # id: IPCMorphMainHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_head
+
+# - type: marking
+  # id: IPCMorphMainEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_eyes
+
+# - type: marking
+  # id: IPCMorphPrimeHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_prime
+
+# - type: marking
+  # id: IPCMorphPrimeEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_prime_eyes
+
+# - type: marking
+  # id: IPCMorphMonitorHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_monitor_head
+
+# - type: marking
+  # id: IPCMorphLArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_l_arm
+
+# - type: marking
+  # id: IPCMorphLHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_l_hand
+
+# - type: marking
+  # id: IPCMorphRArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_r_arm
+
+# - type: marking
+  # id: IPCMorphRHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_r_hand
+
+# - type: marking
+  # id: IPCMorphLLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_l_leg
+
+# - type: marking
+  # id: IPCMorphLFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_l_foot
+
+# - type: marking
+  # id: IPCMorphRLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_r_leg
+
+# - type: marking
+  # id: IPCMorphRFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/morph.rsi
+      # state: morpheus_main_r_foot
+
+# #shellguard
+
+# - type: marking
+  # id: IPCGuardChest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_torso
+
+# - type: marking
+  # id: IPCGuardAltHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_alt_head
+
+# - type: marking
+  # id: IPCGuardAltEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_alt_eyes
+
+# - type: marking
+  # id: IPCGuardMainHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_head
+
+# - type: marking
+  # id: IPCGuardMainEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_eyes
+
+# - type: marking
+  # id: IPCGuardMonitorHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_monitor_head
+
+# - type: marking
+  # id: IPCGuardLArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_l_arm
+
+# - type: marking
+  # id: IPCGuardLHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_l_hand
+
+# - type: marking
+  # id: IPCGuardRArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_r_arm
+
+# - type: marking
+  # id: IPCGuardRHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_r_hand
+
+# - type: marking
+  # id: IPCGuardLLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_l_leg
+
+# - type: marking
+  # id: IPCGuardLFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_l_foot
+
+# - type: marking
+  # id: IPCGuardRLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_r_leg
+
+# - type: marking
+  # id: IPCGuardRFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/shellguard.rsi
+      # state: shellguard_main_r_foot
+
+# #xion
+
+# - type: marking
+  # id: IPCXionChest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_torso
+
+# - type: marking
+  # id: IPCXionHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_head
+
+# - type: marking
+  # id: IPCXionEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_eyes
+
+# - type: marking
+  # id: IPCXionLArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_l_arm
+
+# - type: marking
+  # id: IPCXionLHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_l_hand
+
+# - type: marking
+  # id: IPCXionRArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_r_arm
+
+# - type: marking
+  # id: IPCXionRHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_r_hand
+
+# - type: marking
+  # id: IPCXionLLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_l_leg
+
+# - type: marking
+  # id: IPCXionLFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_l_foot
+
+# - type: marking
+  # id: IPCXionRLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_r_leg
+
+# - type: marking
+  # id: IPCXionRFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/xion.rsi
+      # state: r_ind_xion_r_foot
+
+# #zenghu
+
+# - type: marking
+  # id: IPCZenghuChest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_torso
+
+# - type: marking
+  # id: IPCZenghuHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_head
+
+# - type: marking
+  # id: IPCZenghuEyes
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_eyes
+
+# - type: marking
+  # id: IPCZenghuLArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_l_arm
+
+# - type: marking
+  # id: IPCZenghuLHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_l_hand
+
+# - type: marking
+  # id: IPCZenghuRArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_r_arm
+
+# - type: marking
+  # id: IPCZenghuRHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_r_hand
+
+# - type: marking
+  # id: IPCZenghuLLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_l_leg
+
+# - type: marking
+  # id: IPCZenghuLFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_l_foot
+
+# - type: marking
+  # id: IPCZenghuRLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_r_leg
+
+# - type: marking
+  # id: IPCZenghuRFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/zenghu.rsi
+      # state: r_ind_zenghu_r_foot
+
+# #proto
+
+# - type: marking
+  # id: IPCProtoChest
+  # bodyPart: Chest
+  # markingCategory: Chest
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      # state: proto_torso
+
+# - type: marking
+  # id: IPCProtoHead
+  # bodyPart: Head
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      # state: proto_head
+
+# - type: marking
+  # id: IPCProtoLArm
+  # bodyPart: LArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      # state: proto_l_arm
+
+# - type: marking
+  # id: IPCProtoLHand
+  # bodyPart: LHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      # state: proto_l_hand
+
+# - type: marking
+  # id: IPCProtoRArm
+  # bodyPart: RArm
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      # state: proto_r_arm
+
+# - type: marking
+  # id: IPCProtoRHand
+  # bodyPart: RHand
+  # markingCategory: Arms
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      # state: proto_r_hand
+
+# - type: marking
+  # id: IPCProtoLLeg
+  # bodyPart: LLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      # state: proto_l_leg
+
+# - type: marking
+  # id: IPCProtoLFoot
+  # bodyPart: LFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      # state: proto_l_foot
+
+# - type: marking
+  # id: IPCProtoRLeg
+  # bodyPart: RLeg
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      # state: proto_r_leg
+
+# - type: marking
+  # id: IPCProtoRFoot
+  # bodyPart: RFoot
+  # markingCategory: Legs
+  # groupWhitelist: [IPC]
+  # sprites:
+    # - sprite: Siberia/Mobs/Customization/ipc_parts/proto.rsi
+      # state: proto_r_foot
+
+
+# #endregion

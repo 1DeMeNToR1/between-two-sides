@@ -1,8 +1,8 @@
-## Static
+# ## Static
 
-- type: latheRecipePack
-  id: SwarmBot
-  recipes:
-  - SwarmbotBuilder
-  - SwarmbotGuard
-  - SwarmbotHealer
+# - type: latheRecipePack
+  # id: SwarmBot
+  # recipes:
+  # - SwarmbotBuilder
+  # - SwarmbotGuard
+  # - SwarmbotHealer

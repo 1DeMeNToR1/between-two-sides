@@ -2,7 +2,6 @@
 - type: marking
   id: HumanFacialHairPomade
   bodyPart: FacialHair
-  markingCategory: FacialHair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_facial_hair.rsi
       state: pomade
@@ -10,7 +9,6 @@
 - type: marking
   id: HumanFacialHairNose
   bodyPart: FacialHair
-  markingCategory: FacialHair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_facial_hair.rsi
       state: nose

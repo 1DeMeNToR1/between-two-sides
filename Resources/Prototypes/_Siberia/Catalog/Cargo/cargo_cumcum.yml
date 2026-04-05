@@ -1,35 +1,35 @@
 - type: cargoProduct
   id: SecurityCumOrder
-  name: ящик нагрудных камер СБ
+  # name: ящик нагрудных камер СБ
   icon:
     sprite: Siberia/Objects/Tools/cumcam.rsi
     state: sec
     netsync: false
   product: CrateSecCum
   cost: 1000
-  category: Security
+  category: cargoproduct-category-name-security
   group: market
-  
+
 - type: cargoProduct
   id: CargoCumOrder
-  name: ящик нагрудных камер Карго
+  # name: ящик нагрудных камер Карго
   icon:
     sprite: Siberia/Objects/Tools/cumcam.rsi
     state: salv
     netsync: false
   product: CrateCargoCum
   cost: 1000
-  category: Security
+  category: cargoproduct-category-name-security
   group: market
-  
+
 - type: cargoProduct
   id: ServiceCumOrder
-  name: ящик операторских камер
+  # name: ящик операторских камер
   icon:
     sprite: Siberia/Objects/Tools/cumcam.rsi
     state: icon
     netsync: false
   product: CrateServCum
   cost: 1000
-  category: Security
+  category: cargoproduct-category-name-security
   group: market

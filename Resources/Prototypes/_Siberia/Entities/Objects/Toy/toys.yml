@@ -15,9 +15,11 @@
   description: почему он светится?
   components:
   - type: Sprite
-    sprite: Objects/Fun/pondering_orb.rsi
-    state: icon
-    shader: unshaded
+    layers:
+    - shader: unshaded
+      sprite: Objects/Fun/pondering_orb.rsi
+      state: icon
+    
   - type: PointLight
     radius: 2
     color: "#00CCFF"
@@ -169,7 +171,7 @@
   - type: EmitSoundOnActivate
     sound:
       path: /Audio/Voice/Reptilian/reptilian_scream.ogg
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
     useSound:
       path: /Audio/Animals/lizard_happy.ogg
@@ -198,7 +200,7 @@
   - type: EmitSoundOnActivate
     sound:
       path: /Audio/Siberia/Voice/Resomi/resomi_scream.ogg
-  - type: Food
+  - type: Edible
     requiresSpecialDigestion: true
     useSound:
       path: /Audio/Siberia/Voice/Resomi/resomi_laugh.ogg

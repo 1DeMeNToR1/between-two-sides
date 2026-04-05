@@ -65,7 +65,7 @@
       availableModes:
         - FullAuto
       soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-    - type: HitscanBatteryAmmoProvider
+    - type: BatteryAmmoProvider
       proto: RedMediumLaser
       fireCost: 100
     # TODO: Power ammo provider?
@@ -81,7 +81,6 @@
         SoundTargetInLOS: !type:SoundPathSpecifier
           path: /Audio/Effects/double_beep.ogg
     - type: BatterySelfRecharger
-      autoRecharge: true
       autoRechargeRate: 100
     - type: MouseRotator
       angleTolerance: 5

@@ -99,7 +99,9 @@
   - type: Sprite
     layers:
     - state: default
-    - state: idexpeditor
+    - sprite: &icon-rsi Interface/Misc/job_icons.rsi
+      offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
+      state: Expeditor
   - type: PresetIdCard
     job: Expeditor
 

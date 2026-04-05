@@ -11,7 +11,7 @@
     flavors:
     - creamy
     - sweet
-  - type: Food
+  - type: Edible
     trash:
     - FoodTinСondensedMilkTrash
     utensil: Spoon
@@ -40,7 +40,7 @@
     flavors:
     - oily
     - slaty
-  - type: Food
+  - type: Edible
     trash:
     - FoodTinOlivkiTrash
 

@@ -52,7 +52,7 @@
     head: ClothingHeadHatBeretBlueshield
     id: BlueshieldPDA
     ears: ClothingHeadsetAltCommand
-    belt: ClothingBeltAssault
+    belt: ClothingBeltSecurity
     pocket1: WeaponPistolMk58
     pocket2: CrowbarRed
 
@@ -239,7 +239,9 @@
   - type: Sprite
     layers:
     - state: centcom
-    - state: idcentcom
+    - sprite: &icon-rsi Interface/Misc/job_icons.rsi
+      offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
+      state: Centcom
   - type: PresetIdCard
     job: Blueshield
 
@@ -284,14 +286,13 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Siberia/resonator_blast.ogg
-  - type: HitscanBatteryAmmoProvider
+  - type: BatteryAmmoProvider
     proto: IonLaser
     fireCost: 80
   - type: Battery
     maxCharge: 100
     startingCharge: 100
   - type: BatterySelfRecharger
-    autoRecharge: true
     autoRechargeRate: 20
   - type: MagazineVisuals
     magState: mag
@@ -301,21 +302,27 @@
   - type: StaticPrice
     price: 750
 
-- type: hitscan
+- type: entity
+  parent: BasicHitscan
   id: IonLaser
-  staminaDamage: 80
-  damage:
-    types:
-      Heat: 60
-  muzzleFlash:
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
-    state: muzzle_omni
-  travelFlash:
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
-    state: beam_omni
-  impactFlash:
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
-    state: impact_omni
+  name: ion laser
+  components:
+  - type: StaminaDamageOnCollide
+    damage: 80
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 60
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_omni
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam_omni
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_omni
 
 - type: entity
   parent: BaseSubdermalImplant
@@ -330,7 +337,8 @@
       mobState:
       - Critical
       - Dead
-    - type: Rattle
+    - type: RattleOnTrigger
+      targetUser: true
       radioChannel: Medical
 
 - type: entity

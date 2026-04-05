@@ -6,7 +6,7 @@
     netsync: false
   product: CrateHardsuitsLight
   cost: 8000
-  category: Armory
+  category: cargoproduct-category-name-armory
   group: market
 
 - type: entity
@@ -28,7 +28,7 @@
     netsync: false
   product: CrateHardboots
   cost: 3000
-  category: Armory
+  category: cargoproduct-category-name-armory
   group: market
 
 - type: entity
@@ -50,7 +50,7 @@
     netsync: false
   product: TegCenter
   cost: 6000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 - type: cargoProduct
@@ -61,7 +61,7 @@
     netsync: false
   product: TegCirculator
   cost: 2500
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
 
 - type: cargoProduct
@@ -72,7 +72,7 @@
     netsync: false
   product: CrateMilitaryBackpacks
   cost: 6500
-  category: Fun
+  category: cargoproduct-category-name-fun
   group: market
 
 - type: entity
@@ -108,7 +108,7 @@
     state: cpu_medical
   product: CloningConsoleComputerCircuitboard
   cost: 2000
-  category: Circuitboards
+  category: cargoproduct-category-name-circuitboards
   group: market
 
 - type: cargoProduct
@@ -118,7 +118,7 @@
     state: medical
   product: MedicalScannerMachineCircuitboard
   cost: 2000
-  category: Circuitboards
+  category: cargoproduct-category-name-circuitboards
   group: market
 
 - type: cargoProduct
@@ -128,5 +128,5 @@
     state: medical
   product: CloningPodMachineCircuitboard
   cost: 2000
-  category: Circuitboards
+  category: cargoproduct-category-name-circuitboards
   group: market

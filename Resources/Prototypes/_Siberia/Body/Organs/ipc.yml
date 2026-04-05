@@ -1,114 +1,114 @@
-- type: entity
-  id: BaseIPCOrgan
-  parent: BaseItem
-  abstract: true
-  components:
-    - type: Sprite
-      netsync: false
-      sprite: Siberia/Mobs/Species/IPC/organs.rsi
-    - type: Organ
-    - type: Extractable
-      grindableSolutionName: organ
-    - type: SolutionContainerManager
-      solutions:
-        organ:
-          maxVol: 10
-          reagents:
-            - ReagentId: Oil
-              Quantity: 10
+# - type: entity
+  # id: BaseIPCOrgan
+  # parent: BaseItem
+  # abstract: true
+  # components:
+    # - type: Sprite
+      # netsync: false
+      # sprite: Siberia/Mobs/Species/IPC/organs.rsi
+    # - type: Organ
+    # - type: Extractable
+      # grindableSolutionName: organ
+    # - type: SolutionContainerManager
+      # solutions:
+        # organ:
+          # maxVol: 10
+          # reagents:
+            # - ReagentId: Oil
+              # Quantity: 10
 
-- type: entity
-  id: OrganIPCCPU
-  parent: BaseIPCOrgan
-  name: позитронный мозг
-  description: Оно выглядит живым?
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: Sprite
-      state: brain-prosthetic
-    - type: Organ
-    - type: Metabolizer
-      updateInterval: 1.5
-      maxReagents: 2
-      metabolizerTypes: [IPC]
-      removeEmpty: true
-    - type: ToggleableGhostRole
-      examineTextMindPresent: positronic-brain-installed
-      examineTextMindSearching: positronic-brain-still-searching
-      examineTextNoMind: positronic-brain-off
-      beginSearchingText: positronic-brain-searching
-      roleName: positronic-brain-role-name
-      roleDescription: positronic-brain-role-description
-      roleRules: ghost-role-information-silicon-rules
-      wipeVerbText: positronic-brain-wipe-device-verb-text
-      wipeVerbPopup: positronic-brain-wiped-device
-      stopSearchVerbText: positronic-brain-stop-searching-verb-text
-      stopSearchVerbPopup: positronic-brain-stopped-searching
-      job: Borg
-    - type: BlockMovement
-    - type: Examiner
-    - type: BorgBrain
-    - type: IntrinsicRadioReceiver
-    - type: IntrinsicRadioTransmitter
-      channels:
-      - Binary
-    - type: ActiveRadio
-      channels:
-      - Binary
-      - Common
-    - type: NameIdentifier
-      group: PositronicBrain
-    - type: DoAfter
-    - type: Actions
-    - type: TypingIndicator
-      proto: robot
-    - type: Speech
-      speechSounds: Pai
-    - type: ReplacementAccent
-      accent: silicon
-    - type: MobState
-      allowedStates:
-      - Alive
-    - type: Appearance
-    - type: Tag
-      tags:
-      - CannotSuicide
-      - MindTransferTarget
-    - type: GuideHelp
-      guides:
-      - Cyborgs
-      - Robotics
+# - type: entity
+  # id: OrganIPCCPU
+  # parent: BaseIPCOrgan
+  # name: позитронный мозг
+  # description: Оно выглядит живым?
+  # categories: [ HideSpawnMenu ]
+  # components:
+    # - type: Sprite
+      # state: brain-prosthetic
+    # - type: Organ
+    # - type: Metabolizer
+      # updateInterval: 1.5
+      # maxReagents: 2
+      # metabolizerTypes: [IPC]
+      # removeEmpty: true
+    # - type: ToggleableGhostRole
+      # examineTextMindPresent: positronic-brain-installed
+      # examineTextMindSearching: positronic-brain-still-searching
+      # examineTextNoMind: positronic-brain-off
+      # beginSearchingText: positronic-brain-searching
+      # roleName: positronic-brain-role-name
+      # roleDescription: positronic-brain-role-description
+      # roleRules: ghost-role-information-silicon-rules
+      # wipeVerbText: positronic-brain-wipe-device-verb-text
+      # wipeVerbPopup: positronic-brain-wiped-device
+      # stopSearchVerbText: positronic-brain-stop-searching-verb-text
+      # stopSearchVerbPopup: positronic-brain-stopped-searching
+      # job: Borg
+    # - type: BlockMovement
+    # - type: Examiner
+    # - type: BorgBrain
+    # - type: IntrinsicRadioReceiver
+    # - type: IntrinsicRadioTransmitter
+      # channels:
+      # - Binary
+    # - type: ActiveRadio
+      # channels:
+      # - Binary
+      # - Common
+    # - type: NameIdentifier
+      # group: PositronicBrain
+    # - type: DoAfter
+    # - type: Actions
+    # - type: TypingIndicator
+      # proto: robot
+    # - type: Speech
+      # speechSounds: Pai
+    # - type: ReplacementAccent
+      # accent: silicon
+    # - type: MobState
+      # allowedStates:
+      # - Alive
+    # - type: Appearance
+    # - type: Tag
+      # tags:
+      # - CannotSuicide
+      # - MindTransferTarget
+    # - type: GuideHelp
+      # guides:
+      # - Cyborgs
+      # - Robotics
 
-- type: entity
-  id: OrganIPCGPU
-  parent: BaseIPCOrgan
-  name: графический процессор КПБ
-  description: Графический процессор КПБ, который обрабатывает изображение и отправляет в позитронный мозг. Выглядит очень дорогим.
-  components:
-    - type: Sprite
-      state: cortical-stack
-    - type: Organ
+# - type: entity
+  # id: OrganIPCGPU
+  # parent: BaseIPCOrgan
+  # name: графический процессор КПБ
+  # description: Графический процессор КПБ, который обрабатывает изображение и отправляет в позитронный мозг. Выглядит очень дорогим.
+  # components:
+    # - type: Sprite
+      # state: cortical-stack
+    # - type: Organ
 
-- type: entity
-  id: OrganIPCFan
-  parent: BaseIPCOrgan
-  name: Жёсткий диск КПБ
-  description: Хранит данные КПБ. Тесты показали что после извлечения субъект теряет память.
-  components:
-    - type: Sprite
-      state: heart-prosthetic
-    - type: Organ
-    - type: Lung
-    - type: Metabolizer
-      removeEmpty: true
-      solutionOnBody: false
-      solution: "Lung"
-      metabolizerTypes: [ Animal ]
-      groups:
-        - id: Gas
-          rateModifier: 100.0
-    - type: SolutionContainerManager
-      solutions:
-        Lung:
-          maxVol: 100.0
-          canReact: false
+# - type: entity
+  # id: OrganIPCFan
+  # parent: BaseIPCOrgan
+  # name: Жёсткий диск КПБ
+  # description: Хранит данные КПБ. Тесты показали что после извлечения субъект теряет память.
+  # components:
+    # - type: Sprite
+      # state: heart-prosthetic
+    # - type: Organ
+    # - type: Lung
+    # - type: Metabolizer
+      # removeEmpty: true
+      # solutionOnBody: false
+      # solution: "Lung"
+      # metabolizerTypes: [ Animal ]
+      # groups:
+        # - id: Gas
+          # rateModifier: 100.0
+    # - type: SolutionContainerManager
+      # solutions:
+        # Lung:
+          # maxVol: 100.0
+          # canReact: false

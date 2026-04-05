@@ -26,9 +26,9 @@
     - tasks:
         - !type:HTNCompoundTask
           task: MeleeCombatCompound
-    - tasks:
-        - !type:HTNCompoundTask
-          task: InjectNearbyCompound
+    # - tasks:
+        # - !type:HTNCompoundTask
+          # task: InjectNearbyCompound
     - tasks:
         - !type:HTNCompoundTask
           task: IdleCompound

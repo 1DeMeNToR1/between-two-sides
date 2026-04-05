@@ -34,7 +34,7 @@
     bodyType: Dynamic
   - type: Slippery
     slipData:
-      paralyzeTime: 4
+      knockdownTime: 4
       launchForwardsMultiplier: 3
   - type: TimedDespawn
     lifetime: 4

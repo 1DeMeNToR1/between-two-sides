@@ -34,8 +34,8 @@
     damageContainers:
     - BiologicalIPC
     damage:
-      groups:
-        Burn: -10
+      types:
+        Heat: -10
   - type: GuideHelp
     guides:
     - VoltageNetworks

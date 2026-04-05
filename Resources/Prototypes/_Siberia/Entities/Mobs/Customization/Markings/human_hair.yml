@@ -1,175 +1,150 @@
 - type: marking
   id: HumanHairEfimAntenna
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: antenna
 - type: marking
   id: HumanHairEfimBun3
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: bun3
 - type: marking
   id: HumanHairEfimBusiness
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: business
 - type: marking
   id: HumanHairEfimBusiness2
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: business2
 - type: marking
   id: HumanHairEfimBusiness3
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: business3
 - type: marking
   id: HumanHairEfimBusiness4
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: business4
 - type: marking
   id: HumanHairEfimEmo
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: emo
 - type: marking
   id: HumanHairEfimHalfshaved
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: halfshaved
 - type: marking
   id: HumanHairEfimHighfade
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: highfade
 - type: marking
   id: HumanHairEfimKeanu
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: keanu
 - type: marking
   id: HumanHairEfimLong
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: long
 - type: marking
   id: HumanHairEfimLong2
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: long2
 - type: marking
   id: HumanHairEfimLong3
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: long3
 - type: marking
   id: HumanHairEfimLongest
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: longest
 - type: marking
   id: HumanHairEfimLongest2
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: longest2
 - type: marking
   id: HumanHairEfimLongEye
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: longovereye
 - type: marking
   id: HumanHairEfimShorthair3
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: shorthair3
 - type: marking
   id: HumanHairEfimSidetail4
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: sidetail4
 - type: marking
   id: HumanHairEfimSpiky
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: spiky
 - type: marking
   id: HumanHairEfimTwintail
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: twintail
 - type: marking
   id: HumanHairEfimVolaju
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: volaju
 - type: marking
   id: HumanHairEfimSaimon
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: saimon
 - type: marking
   id: HumanHairEfimGeto
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: geto
 - type: marking
   id: HumanHairEfimOld
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: old
 - type: marking
   id: HumanHairEfimPonytail6
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/human_old_hair.rsi
       state: ponytail6
@@ -177,7 +152,6 @@
 - type: marking
   id: HumanHairSephBayonetta
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/bayonette.rsi
       state: seph
@@ -185,7 +159,6 @@
 - type: marking
   id: HumanHairSephBayonettaAlt
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/bayonette.rsi
       state: sephalt
@@ -193,7 +166,6 @@
 - type: marking
   id: HumanHairFloorSiberia
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/floorlength_braid.rsi
       state: floorlength_braid
@@ -201,7 +173,6 @@
 - type: marking
   id: HumanHairRebekkaSiberia
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
     - sprite: Siberia/Mobs/Customization/rebekka_hair.rsi
       state: rebekka

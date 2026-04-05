@@ -8,7 +8,7 @@
   recognizable: true
   physicalDesc: reagent-physical-desc-cuprum
   metabolisms:
-    Drink:
+    Digestion:
       # Quenching!
       effects:
       - !type:SatiateThirst

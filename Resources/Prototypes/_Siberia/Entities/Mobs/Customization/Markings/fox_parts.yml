@@ -1,8 +1,7 @@
 - type: marking
   id: FoxTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human, Felinid, Vulpkanin, SlimePerson]
+  groupWhitelist: [Human, Vulpkanin, Slime] # Felinid,
   sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Siberia/Clothing/foxtail.rsi

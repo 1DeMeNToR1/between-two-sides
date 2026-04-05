@@ -1,12 +1,12 @@
 - type: cargoProduct
   id: FunArtSupplies3000
-  name: профессиональный мелок
+  # name: профессиональный мелок
   icon:
     sprite: Objects/Fun/crayons.rsi
     state: box
   product: CrateFunArtSupplies3000
   cost: 1500
-  category: Fun
+  category: cargoproduct-category-name-fun
   group: market
 
 - type: cargoProduct

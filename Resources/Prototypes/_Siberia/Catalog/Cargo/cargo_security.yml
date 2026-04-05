@@ -1,11 +1,11 @@
 - type: cargoProduct
   id: SecuritySecHardsuit
-  name: ящик скафандров СБ
+  # name: ящик скафандров СБ
   icon:
     sprite: Clothing/OuterClothing/Hardsuits/security.rsi
     state: icon
   product: CrateSecHardsuit
   cost: 5000
-  category: Security
+  category: cargoproduct-category-name-security
   group: market
 

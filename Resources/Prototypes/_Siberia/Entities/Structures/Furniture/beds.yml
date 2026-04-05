@@ -6,10 +6,8 @@
   components:
   - type: HealOnBuckle
     damage:
-      groups:
-        Brute: -0.2 ## 0.1 per
-        Burn: -0.2
       types:
+        Heat: -0.2
         Poison: -0.1
   - type: Physics
     bodyType: Static

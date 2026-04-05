@@ -1,108 +1,108 @@
 # TODO: kill this
-- type: entity
-  id: SwarmbotFactory
-  name: завод дронов роя
-  description: Странное устройство, поглощающее энергию и создающее дронов роя.
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: DragonRift
-    spawn: MobSwarmbotBuilder
-    spawnCooldown: 120000000
-  - type: Transform
-    anchored: true
-    noRot: true
-  - type: Physics
-    bodyType: Static
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.45,-0.45,0.45,0.45"
-        density: 190
-        mask:
-        - MachineMask
-        layer:
-        - MachineLayer
-  - type: Sprite
-    layers:
-    - sprite: Siberia/Structures/Machines/swarm_factory.rsi
-      state: factory
-  - type: InteractionOutline
-  - type: Clickable
-  - type: PointLight
-    enabled: true
-    color: "#d06116"
-    radius: 10.0
-    energy: 5.0
-    netsync: false
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 550
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: EmitSoundOnSpawn
-    sound:
-      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+# - type: entity
+  # id: SwarmbotFactory
+  # name: завод дронов роя
+  # description: Странное устройство, поглощающее энергию и создающее дронов роя.
+  # placement:
+    # mode: SnapgridCenter
+  # components:
+  # - type: DragonRift
+    # spawn: MobSwarmbotBuilder
+    # spawnCooldown: 120000000
+  # - type: Transform
+    # anchored: true
+    # noRot: true
+  # - type: Physics
+    # bodyType: Static
+  # - type: Fixtures
+    # fixtures:
+      # fix1:
+        # shape:
+          # !type:PhysShapeAabb
+          # bounds: "-0.45,-0.45,0.45,0.45"
+        # density: 190
+        # mask:
+        # - MachineMask
+        # layer:
+        # - MachineLayer
+  # - type: Sprite
+    # layers:
+    # - sprite: Siberia/Structures/Machines/swarm_factory.rsi
+      # state: factory
+  # - type: InteractionOutline
+  # - type: Clickable
+  # - type: PointLight
+    # enabled: true
+    # color: "#d06116"
+    # radius: 10.0
+    # energy: 5.0
+    # netsync: false
+  # - type: Damageable
+    # damageContainer: Inorganic
+    # damageModifierSet: Metallic
+  # - type: Destructible
+    # thresholds:
+    # - trigger:
+        # !type:DamageTrigger
+        # damage: 550
+      # behaviors:
+      # - !type:DoActsBehavior
+        # acts: [ "Destruction" ]
+  # - type: EmitSoundOnSpawn
+    # sound:
+      # path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
   # - type: Timer
   # - type: TimedSpawner
     # prototypes:
       # - MobSwarmbotGuard
       # - MobSwarmbotHealer
-      # # round ~90m
-      # # one spawner should only spawn ~5 mice for sanity reasons
-      # # therefore 18m
-      # # use 50% chance for randomness and balance with halved interval
+      # round ~90m
+      # one spawner should only spawn ~5 mice for sanity reasons
+      # therefore 18m
+      # use 50% chance for randomness and balance with halved interval
     # chance: 0.5
     # intervalSeconds: 180
     # minimumEntitiesSpawned: 1
     # maximumEntitiesSpawned: 1
-  - type: NodeContainer
-    examinable: true
-    nodes:
-      input:
-        !type:CableDeviceNode
-        nodeGroupID: HVPower
-  - type: PowerSink
-  - type: Battery
-    maxCharge: 750000000
-    pricePerJoule: 0.0003
-  - type: ExaminableBattery
-  - type: PowerConsumer
-    voltage: High
-    drawRate: 10000
-  - type: WarpPoint
-    location: swarmfactory
-  - type: ActivatableUI
-    key: enum.LatheUiKey.Key
-  - type: UserInterface
-    interfaces:
-      enum.LatheUiKey.Key:
-        type: LatheBoundUserInterface
-      enum.ResearchClientUiKey.Key:
-        type: ResearchClientBoundUserInterface
-  - type: MaterialStorage
-    whitelist:
-      tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
-  - type: Lathe
-    idleState: factory
-    runningState: factory
-    staticPacks:
-      - SwarmBot
-  - type: ResearchClient
-  - type: TechnologyDatabase
-  - type: ApcPowerReceiver
-    powerLoad: 0
-  - type: ExtensionCableReceiver
-  - type: LightningTarget
-    priority: 1
+  #  - type: NodeContainer
+    # examinable: true
+    # nodes:
+      # input:
+        # !type:CableDeviceNode
+        # nodeGroupID: HVPower
+  # - type: PowerSink
+  # - type: Battery
+    # maxCharge: 750000000
+    # pricePerJoule: 0.0003
+  # - type: ExaminableBattery
+  # - type: PowerConsumer
+    # voltage: High
+    # drawRate: 10000
+  # - type: WarpPoint
+    # location: swarmfactory
+  # - type: ActivatableUI
+    # key: enum.LatheUiKey.Key
+  # - type: UserInterface
+    # interfaces:
+      # enum.LatheUiKey.Key:
+        # type: LatheBoundUserInterface
+      # enum.ResearchClientUiKey.Key:
+        # type: ResearchClientBoundUserInterface
+  # - type: MaterialStorage
+    # whitelist:
+      # tags:
+        # - Sheet
+        # - RawMaterial
+        # - Ingot
+  # - type: Lathe
+    # idleState: factory
+    # runningState: factory
+    # staticPacks:
+      # - SwarmBot
+  # - type: ResearchClient
+  # - type: TechnologyDatabase
+  # - type: ApcPowerReceiver
+    # powerLoad: 0
+  # - type: ExtensionCableReceiver
+  # - type: LightningTarget
+    # priority: 1

@@ -1,8 +1,7 @@
 - type: marking
   id: DragonHorn
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Siberia/Mobs/Customization/dragonhorn.rsi
@@ -11,8 +10,7 @@
 - type: marking
   id: DemonHorn2
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Siberia/Mobs/Customization/demonhorn2.rsi
@@ -21,8 +19,7 @@
 - type: marking
   id: SingleHorn
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Siberia/Mobs/Customization/horn_single-side.rsi
@@ -31,8 +28,7 @@
 - type: marking
   id: Horn3
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Siberia/Mobs/Customization/horn3.rsi
@@ -41,8 +37,7 @@
 - type: marking
   id: TifTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Siberia/Mobs/Customization/tiftail.rsi

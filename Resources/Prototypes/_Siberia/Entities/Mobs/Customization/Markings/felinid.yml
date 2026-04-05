@@ -1,153 +1,141 @@
-# Felinid Ears
+# # Felinid Ears
 
-- type: marking
-  id: FelinidEarsBasic
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: basic_outer
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: basic_inner
+# - type: marking
+  # id: FelinidEarsBasic
+  # bodyPart: HeadTop
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: basic_outer
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: basic_inner
 
-- type: marking
-  id: FelinidEarsCurled
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: curled_outer
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: curled_inner
+# - type: marking
+  # id: FelinidEarsCurled
+  # bodyPart: HeadTop
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: curled_outer
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: curled_inner
 
-- type: marking
-  id: FelinidEarsDroopy
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: droopy_outer
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: droopy_inner
+# - type: marking
+  # id: FelinidEarsDroopy
+  # bodyPart: HeadTop
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: droopy_outer
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: droopy_inner
 
-- type: marking
-  id: FelinidEarsFuzzy
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: basic_outer
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: fuzzy_inner
+# - type: marking
+  # id: FelinidEarsFuzzy
+  # bodyPart: HeadTop
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: basic_outer
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: fuzzy_inner
 
-- type: marking
-  id: FelinidEarsStubby
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: stubby_outer
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: stubby_inner
+# - type: marking
+  # id: FelinidEarsStubby
+  # bodyPart: HeadTop
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: stubby_outer
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: stubby_inner
 
-- type: marking
-  id: FelinidEarsTall
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: tall_outer
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: tall_inner
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: tall_fuzz
+# - type: marking
+  # id: FelinidEarsTall
+  # bodyPart: HeadTop
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: tall_outer
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: tall_inner
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: tall_fuzz
 
-- type: marking
-  id: FelinidEarsTorn
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: torn_outer
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: torn_inner
+# - type: marking
+  # id: FelinidEarsTorn
+  # bodyPart: HeadTop
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: torn_outer
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: torn_inner
 
-- type: marking
-  id: FelinidEarsWide
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: wide_outer
-  - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
-    state: wide_inner
+# - type: marking
+  # id: FelinidEarsWide
+  # bodyPart: HeadTop
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: wide_outer
+  # - sprite: Siberia/Mobs/Customization/felinid_ears.rsi
+    # state: wide_inner
 
-# Felinid Tails
+# # Felinid Tails
 
-- type: marking
-  id: FelinidTailBasic
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_tip
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_stripes_even
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_stripes_odd
+# - type: marking
+  # id: FelinidTailBasic
+  # bodyPart: Tail
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_tip
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_stripes_even
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_stripes_odd
 
-- type: marking
-  id: FelinidTailBasicWithBow
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_tip
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_stripes_even
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_stripes_odd
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_bow
+# - type: marking
+  # id: FelinidTailBasicWithBow
+  # bodyPart: Tail
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_tip
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_stripes_even
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_stripes_odd
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_bow
 
-- type: marking
-  id: FelinidTailBasicWithBell
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_tip
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_stripes_even
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_stripes_odd
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_bell
+# - type: marking
+  # id: FelinidTailBasicWithBell
+  # bodyPart: Tail
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_tip
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_stripes_even
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_stripes_odd
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_bell
 
-- type: marking
-  id: FelinidTailBasicWithBowAndBell
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Felinid]
-  sprites:
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_tip
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_stripes_even
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_tail_stripes_odd
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_bow
-  - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
-    state: basic_bell
+# - type: marking
+  # id: FelinidTailBasicWithBowAndBell
+  # bodyPart: Tail
+  # groupWhitelist: [Felinid]
+  # sprites:
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_tip
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_stripes_even
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_tail_stripes_odd
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_bow
+  # - sprite: Siberia/Mobs/Customization/felinid_tails.rsi
+    # state: basic_bell

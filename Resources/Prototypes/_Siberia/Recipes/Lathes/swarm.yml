@@ -1,32 +1,32 @@
-- type: latheRecipe
-  id: SwarmbotBuilder
-  result: MobSwarmbotBuilder
-  categories:
-  - Circuitry
-  completetime: 60
-  materials:
-    Steel: 1000
-    Glass: 1000
-    Plastic: 1000
+# - type: latheRecipe
+  # id: SwarmbotBuilder
+  # result: MobSwarmbotBuilder
+  # categories:
+  # - Circuitry
+  # completetime: 60
+  # materials:
+    # Steel: 1000
+    # Glass: 1000
+    # Plastic: 1000
 
-- type: latheRecipe
-  id: SwarmbotHealer
-  result: MobSwarmbotHealer
-  categories:
-  - Circuitry
-  completetime: 60
-  materials:
-    Steel: 500
-    Glass: 2000
-    Plastic: 500
+# - type: latheRecipe
+  # id: SwarmbotHealer
+  # result: MobSwarmbotHealer
+  # categories:
+  # - Circuitry
+  # completetime: 60
+  # materials:
+    # Steel: 500
+    # Glass: 2000
+    # Plastic: 500
 
-- type: latheRecipe
-  id: SwarmbotGuard
-  result: MobSwarmbotGuard
-  categories:
-  - Circuitry
-  completetime: 60
-  materials:
-    Steel: 2000
-    Glass: 500
-    Plastic: 1000
+# - type: latheRecipe
+  # id: SwarmbotGuard
+  # result: MobSwarmbotGuard
+  # categories:
+  # - Circuitry
+  # completetime: 60
+  # materials:
+    # Steel: 2000
+    # Glass: 500
+    # Plastic: 1000

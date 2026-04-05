@@ -9,17 +9,7 @@
     layers:
     - state: icon
   - type: SyndieHandTeleporter
-  - type: HiddenDescription
-    entries:
-    - label: nidden-desc-handteleporter-syndicate
-      whitelistMind:
-        components:
-        - TraitorRole
-        - NukeOperative
-    - label: nidden-desc-handteleporter-research
-      jobRequired:
-        - ResearchAssistant
-        - ResearchDirector
-        - Scientist
-        - Borg
-
+  - type: Contraband
+    severity: Syndicate
+    allowedDepartments: [ ]
+    allowedJobs: [ ResearchAssistant, ResearchDirector, Scientist, Borg ]

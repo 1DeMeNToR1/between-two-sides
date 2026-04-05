@@ -77,18 +77,17 @@
   flavor: crazyteaflavor
   color: brown
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 2
       - !type:HealthChange
-        conditions:
-        - !type:TotalDamage
-          max: 50
+        #conditions:
+        #- !type:TotalDamage
+        #  max: 50
         damage:
-          groups:
-            Brute: -0.5
           types:
+            Blunt: -0.5
             Poison: -0.5
             Cold: -0.33
 

@@ -15,7 +15,7 @@
         path:
           "/Audio/Weapons/smash.ogg"
   - type: Sprite
-    Sprite: Siberia/Structures/swarmweb.rsi
+    sprite: Siberia/Structures/swarmweb.rsi
     drawdepth: WallMountedItems
   - type: Appearance
   - type: Clickable
@@ -47,7 +47,7 @@
           SheetPlasteel:
             min: 2
             max: 5
-  - type: Temperature
+  - type: TemperatureDamage
     heatDamage:
       types:
         Heat: 5

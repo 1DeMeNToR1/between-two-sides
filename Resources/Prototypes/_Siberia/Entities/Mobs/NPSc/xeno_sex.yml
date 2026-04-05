@@ -17,9 +17,16 @@
       0: Alive
       500: Dead
   - type: Temperature
+    currentTemperature: 310.15
+  - type: TemperatureDamage
     heatDamageThreshold: 360
     coldDamageThreshold: -150
-    currentTemperature: 310.15
+    coldDamage:
+      types:
+        Cold: 0.1 
+    heatDamage:
+      types:
+        Heat: 1.5
   - type: Hands
   - type: Tag
     tags:

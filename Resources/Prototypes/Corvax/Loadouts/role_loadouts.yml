@@ -25,6 +25,7 @@
   - SurvivalExtended
   - Trinkets
   - GroupSpeciesBreathTool
+  - Underwears # Siberia-Loadouts
 
 # Science
 - type: roleLoadout
@@ -42,6 +43,7 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  - Underwears # Siberia-Loadouts
 
 # Security
 - type: roleLoadout
@@ -88,6 +90,7 @@
   - SurvivalSecurity
   - Trinkets
   - GroupSpeciesBreathToolSecurity
+  - Underwears # Siberia-Loadouts
 
 # Medical
 - type: roleLoadout
@@ -105,3 +108,4 @@
   - SurvivalMedical
   - Trinkets
   - GroupSpeciesBreathToolMedical
+  - Underwears # Siberia-Loadouts

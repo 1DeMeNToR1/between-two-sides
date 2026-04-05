@@ -11,7 +11,7 @@
     brokenState: broken
     normalState: normal-unshaded
     denyState: deny-unshaded
-  - type: Advertise
+  - type: SpeakOnUIClosed
     pack: ClothesMateAds
   - type: Speech
   # - type: Tag

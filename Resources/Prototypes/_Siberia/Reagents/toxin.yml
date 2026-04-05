@@ -7,12 +7,12 @@
   color: "#6e6e6e"
   physicalDesc: reagent-physical-desc-vibrant
   metabolisms:
-    Poison:
+    Digestion:
       effects:
       - !type:HealthChange
         damage:
-          groups:
-            Brute: 2
+          types:
+            Blunt: 2
       - !type:PopupMessage
         type: Local
         visualType: MediumCaution

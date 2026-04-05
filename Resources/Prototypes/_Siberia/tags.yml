@@ -81,3 +81,6 @@
 # IPC
 - type: Tag
   id: IPCWearable
+
+- type: Tag
+  id: Katana

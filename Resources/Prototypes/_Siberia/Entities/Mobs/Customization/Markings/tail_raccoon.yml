@@ -1,8 +1,7 @@
 - type: marking
   id: RaccoonTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
+  groupWhitelist: [Vulpkanin]
   sprites:
     - sprite: Siberia/Mobs/Customization/tail.rsi
       state: raccoon

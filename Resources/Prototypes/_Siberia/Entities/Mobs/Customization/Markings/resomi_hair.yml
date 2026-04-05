@@ -1,8 +1,7 @@
 #- type: marking
 #  id: ResomiHair
 #  bodyPart: Hair
-#  markingCategory: Hair
-#  speciesRestriction: [ Resomi ]
+##  groupWhitelist: [ Resomi ]
 #  sprites:
 #    - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
 #      state:
@@ -10,8 +9,8 @@
 # - type: marking
   # id: ResomiHairBurstShort
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: bursthort
@@ -19,8 +18,8 @@
 # - type: marking
   # id: ResomiHairDefault
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: default
@@ -28,8 +27,8 @@
 # - type: marking
   # id: ResomiHairDroopy
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: droopy
@@ -37,8 +36,8 @@
 # - type: marking
   # id: ResomiHairEars
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: ears
@@ -46,8 +45,8 @@
 # - type: marking
   # id: ResomiHairFluffymohawk
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: fluffymohawk
@@ -55,8 +54,8 @@
 # - type: marking
   # id: ResomiHairSpiky
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: spiky
@@ -64,8 +63,8 @@
 # - type: marking
   # id: ResomiHairHedge
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: hedge
@@ -73,8 +72,8 @@
 # - type: marking
   # id: ResomiHairLong
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: long
@@ -82,8 +81,8 @@
 # - type: marking
   # id: ResomiHairMohawk
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: mohawk
@@ -91,8 +90,8 @@
 # - type: marking
   # id: ResomiHairPointy
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: pointy
@@ -100,8 +99,8 @@
 # - type: marking
   # id: ResomiHairUpright
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: upright
@@ -109,8 +108,8 @@
 # - type: marking
   # id: ResomiHairMane
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: mane
@@ -118,8 +117,8 @@
 # - type: marking
   # id: ResomiHairMushroom
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: mushroom
@@ -127,8 +126,8 @@
 # - type: marking
   # id: ResomiHairTwies
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: twies
@@ -136,8 +135,8 @@
 # - type: marking
   # id: ResomiHairBackstrafe
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: backstrafe
@@ -145,8 +144,8 @@
 # - type: marking
   # id: ResomiHairLongway
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: longway
@@ -154,8 +153,8 @@
 # - type: marking
   # id: ResomiHairNotree
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: notree
@@ -163,8 +162,8 @@
 # - type: marking
   # id: ResomiHairManeBeardless
   # bodyPart: Hair
-  # markingCategory: Hair
-  # speciesRestriction: [ Resomi ]
+  # 
+  # groupWhitelist: [ Resomi ]
   # sprites:
     # - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       # state: mane_beardless
@@ -172,8 +171,8 @@
 #- type: marking
 #  id: ResomiHairNone
 #  bodyPart: Hair
-#  markingCategory: Hair
-#  speciesRestriction: [ Resomi ]
+#
+#  groupWhitelist: [ Resomi ]
 #  sprites:
 #    - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
 #      state: none
@@ -181,8 +180,7 @@
 - type: marking
   id: ResomiHairBackstrafeT
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: backstrafe_teshari
@@ -190,8 +188,7 @@
 - type: marking
   id: ResomiHairLongwayT
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: longway_teshari
@@ -199,8 +196,7 @@
 - type: marking
   id: ResomiHairThinT
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: thin_teshari
@@ -208,8 +204,7 @@
 - type: marking
   id: ResomiHairThinmohawkT
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: thinmohawk_teshari
@@ -217,8 +212,7 @@
 - type: marking
   id: ResomiHairEars1
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: ears1
@@ -226,8 +220,7 @@
 - type: marking
   id: ResomiHairEars2
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: ears2
@@ -235,8 +228,7 @@
 - type: marking
   id: ResomiHairEars3
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: ears3
@@ -244,8 +236,7 @@
 - type: marking
   id: ResomiHairEars4
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: ears4
@@ -253,8 +244,7 @@
 - type: marking
   id: ResomiHairEars5
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: ears5
@@ -262,8 +252,7 @@
 - type: marking
   id: ResomiHairEars6
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: ears6
@@ -271,8 +260,7 @@
 - type: marking
   id: ResomiHairEars7
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Resomi ]
+  groupWhitelist: [ Resomi ]
   sprites:
     - sprite: Siberia/Mobs/Customization/resomi_hair.rsi
       state: ears7

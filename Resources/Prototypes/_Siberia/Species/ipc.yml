@@ -1,154 +1,154 @@
-- type: species
-  id: IPC
-  name: species-name-ipc
-  roundStart: true
-  prototype: MobIPC
-  sprites: MobIPCSprites
-  defaultSkinTone: "#ffffff"
-  markingLimits: MobIPCMarkingLimits
-  dollPrototype: MobIPCDummy
-  skinColoration: Hues
-  maleFirstNames: NamesIPCFirstMale
-  femaleFirstNames: NamesIPCFirstFemale
-  naming: OnlyFirst
-  sexes:
-    - Unsexed
+# - type: species
+  # id: IPC
+  # name: species-name-ipc
+  # roundStart: true
+  # prototype: MobIPC
+  # sprites: MobIPCSprites
+  # defaultSkinTone: "#ffffff"
+  # markingLimits: MobIPCMarkingLimits
+  # dollPrototype: MobIPCDummy
+  # skinColoration: Hues
+  # maleFirstNames: NamesIPCFirstMale
+  # femaleFirstNames: NamesIPCFirstFemale
+  # naming: OnlyFirst
+  # sexes:
+    # - Unsexed
 
-- type: speciesBaseSprites
-  id: MobIPCSprites
-  sprites:
-    Head: MobIPCHead
-    Snout: MobHumanoidAnyMarking
-    Chest: MobIPCTorso
-    HeadTop: MobHumanoidAnyMarking
-    HeadSide: MobHumanoidAnyMarking
-    LArm: MobIPCLArm
-    RArm: MobIPCRArm
-    LHand: MobIPCLHand
-    RHand: MobIPCRHand
-    LLeg: MobIPCLLeg
-    RLeg: MobIPCRLeg
-    LFoot: MobIPCLFoot
-    RFoot: MobIPCRFoot
-    Tail: MobHumanoidAnyMarking
+# - type: speciesBaseSprites
+  # id: MobIPCSprites
+  # sprites:
+    # Head: MobIPCHead
+    # Snout: MobHumanoidAnyMarking
+    # Chest: MobIPCTorso
+    # HeadTop: MobHumanoidAnyMarking
+    # HeadSide: MobHumanoidAnyMarking
+    # LArm: MobIPCLArm
+    # RArm: MobIPCRArm
+    # LHand: MobIPCLHand
+    # RHand: MobIPCRHand
+    # LLeg: MobIPCLLeg
+    # RLeg: MobIPCRLeg
+    # LFoot: MobIPCLFoot
+    # RFoot: MobIPCRFoot
+    # Tail: MobHumanoidAnyMarking
 
-- type: markingPoints
-  id: MobIPCMarkingLimits
-  onlyWhitelisted: true
-  points:
-    Hair:
-      points: 0
-      required: false
-    FacialHair:
-      points: 0
-      required: false
-    HeadTop:
-      points: 1
-      required: false
-    HeadSide:
-      points: 1
-      required: false
-    Tail:
-      points: 1
-      required: false
-    Head:
-      points: 2
-      required: false
-      defaultMarkings: [ IPCScreenEmpty, IPCMainHead ]
-    Chest:
-      points: 1
-      required: true
-      defaultMarkings: [ IPCMainChest ]
-    Legs:
-      points: 4
-      required: true
-      defaultMarkings: [ IPCMainLArm, IPCMainLHand, IPCMainRArm, IPCMainRHand ]
-    Arms:
-      points: 4
-      required: true
-      defaultMarkings: [ IPCMainLFoot, IPCMainLLeg, IPCMainRFoot, IPCMainRLeg ]
+# - type: markingPoints
+  # id: MobIPCMarkingLimits
+  # onlyWhitelisted: true
+  # points:
+    # Hair:
+      # points: 0
+      # required: false
+    # FacialHair:
+      # points: 0
+      # required: false
+    # HeadTop:
+      # points: 1
+      # required: false
+    # HeadSide:
+      # points: 1
+      # required: false
+    # Tail:
+      # points: 1
+      # required: false
+    # Head:
+      # points: 2
+      # required: false
+      # defaultMarkings: [ IPCScreenEmpty, IPCMainHead ]
+    # Chest:
+      # points: 1
+      # required: true
+      # defaultMarkings: [ IPCMainChest ]
+    # Legs:
+      # points: 4
+      # required: true
+      # defaultMarkings: [ IPCMainLArm, IPCMainLHand, IPCMainRArm, IPCMainRHand ]
+    # Arms:
+      # points: 4
+      # required: true
+      # defaultMarkings: [ IPCMainLFoot, IPCMainLLeg, IPCMainRFoot, IPCMainRLeg ]
 
-- type: humanoidBaseSprite
-  id: MobIPCHead
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: head
+# - type: humanoidBaseSprite
+  # id: MobIPCHead
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: head
 
-- type: humanoidBaseSprite
-  id: MobIPCHeadMale
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: head
+# - type: humanoidBaseSprite
+  # id: MobIPCHeadMale
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: head
 
-- type: humanoidBaseSprite
-  id: MobIPCHeadFemale
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: head
+# - type: humanoidBaseSprite
+  # id: MobIPCHeadFemale
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: head
 
-- type: humanoidBaseSprite
-  id: MobIPCTorso
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: chest
+# - type: humanoidBaseSprite
+  # id: MobIPCTorso
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: chest
 
-- type: humanoidBaseSprite
-  id: MobIPCTorsoMale
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: chest
+# - type: humanoidBaseSprite
+  # id: MobIPCTorsoMale
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: chest
 
-- type: humanoidBaseSprite
-  id: MobIPCTorsoFemale
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: chest
+# - type: humanoidBaseSprite
+  # id: MobIPCTorsoFemale
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: chest
 
-- type: humanoidBaseSprite
-  id: MobIPCLLeg
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: l_leg
+# - type: humanoidBaseSprite
+  # id: MobIPCLLeg
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: l_leg
 
-- type: humanoidBaseSprite
-  id: MobIPCLHand
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: l_hand
+# - type: humanoidBaseSprite
+  # id: MobIPCLHand
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: l_hand
 
-- type: humanoidBaseSprite
-  id: MobIPCLArm
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: l_arm
+# - type: humanoidBaseSprite
+  # id: MobIPCLArm
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: l_arm
 
-- type: humanoidBaseSprite
-  id: MobIPCLFoot
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: l_foot
+# - type: humanoidBaseSprite
+  # id: MobIPCLFoot
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: l_foot
 
-- type: humanoidBaseSprite
-  id: MobIPCRLeg
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: r_leg
+# - type: humanoidBaseSprite
+  # id: MobIPCRLeg
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: r_leg
 
-- type: humanoidBaseSprite
-  id: MobIPCRHand
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: r_hand
+# - type: humanoidBaseSprite
+  # id: MobIPCRHand
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: r_hand
 
-- type: humanoidBaseSprite
-  id: MobIPCRArm
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: r_arm
+# - type: humanoidBaseSprite
+  # id: MobIPCRArm
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: r_arm
 
-- type: humanoidBaseSprite
-  id: MobIPCRFoot
-  baseSprite:
-    sprite: Siberia/Mobs/Species/IPC/parts.rsi
-    state: r_foot
+# - type: humanoidBaseSprite
+  # id: MobIPCRFoot
+  # baseSprite:
+    # sprite: Siberia/Mobs/Species/IPC/parts.rsi
+    # state: r_foot
 

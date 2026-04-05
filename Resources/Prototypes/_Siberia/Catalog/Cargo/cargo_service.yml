@@ -1,23 +1,23 @@
 - type: cargoProduct
   id: ServiceMeatBox
-  name: ящик экзотических продуктов
+  # name: ящик экзотических продуктов
   icon:
     sprite: Objects/Consumable/Food/meat.rsi
     state: goliath
   product: CrateMeatBox
   cost: 4100
-  category: Service
+  category: cargoproduct-category-name-service = Service
   group: market
 
 - type: cargoProduct
   id: EngineeringSponsor
-  name: ящик дрип-гардероба
+  # name: ящик дрип-гардероба
   icon:
     sprite: Clothing/Head/Hats/brownfedora.rsi
     state: icon
   product: CrateSponsor
   cost: 12000
-  category: Engineering
+  category: cargoproduct-category-name-engineering
   group: market
  
 

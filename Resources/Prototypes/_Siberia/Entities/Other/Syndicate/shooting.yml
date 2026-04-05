@@ -1,6 +1,7 @@
 - type: entity
   save: false
   abstract: true
+  parent: BaseMobAnimal
   id: SimpleHostileMobBase
   suffix: AI
   components:
@@ -80,8 +81,8 @@
       types:
         Heat: 1 #per second, scales with number of fire 'stacks'
   - type: Temperature
-    heatDamageThreshold: 360
-    coldDamageThreshold: 0
+    #heatDamageThreshold: 360
+    #coldDamageThreshold: 0
     currentTemperature: 310.15
     coldDamage:
       types:
@@ -124,8 +125,6 @@
     - TemporaryBlindness
     - Pacified
     - Flashed
-  - type: Body
-    prototype: Animal
   - type: InjectableSolution
     solution: chemicals
   - type: Examiner
@@ -134,8 +133,8 @@
     angle: 0
     animation: WeaponArcBite
     damage:
-      groups:
-        Brute: 5
+      types:
+        Blunt: 5
   - type: Appearance
   - type: RotationVisuals
     defaultRotation: 0
@@ -219,7 +218,10 @@
   - type: Stamina
     critThreshold: 200
   - type: Bloodstream
-    bloodReagent: Blood
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Blood
+        Quantity: 300
   - type: MeleeWeapon
     altDisarm: false
     hidden: true
@@ -228,12 +230,12 @@
      collection: AlienClaw
     animation: WeaponArcBite
     damage:
-      groups:
-        Brute: 6
+      types:
+        Blunt: 6
   - type: Puller
   - type: Temperature
-    heatDamageThreshold: 360
-    coldDamageThreshold: -150
+    #heatDamageThreshold: 360
+    #coldDamageThreshold: -150
     currentTemperature: 310.15
   - type: Tag
     tags:
@@ -295,7 +297,7 @@
     rootTask:
       task: SimpleRangedHostileCompound
   - type: Stamina
-    critThreshold: 300
+    baseCritThreshold: 300
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 0.75
     rechargeSound: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
@@ -332,8 +334,8 @@
         path: /Audio/Weapons/bladeslice.ogg
     animation: WeaponArcSlash
     damage:
-      groups:
-        Brute: 15
+      types:
+        Blunt: 15
 
 - type: entity
   name: солдат синдиката
@@ -361,7 +363,7 @@
     rootTask:
       task: SimpleRangedHostileCompound
   - type: Stamina
-    critThreshold: 300
+    baseCritThreshold: 300
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 0.5
     rechargeSound: /Audio/Weapons/Guns/Cock/smg_cock.ogg
@@ -398,8 +400,8 @@
         path: /Audio/Weapons/bladeslice.ogg
     animation: WeaponArcSlash
     damage:
-      groups:
-        Brute: 15
+      types:
+        Blunt: 15
 
 - type: entity
   name: солдат синдиката
@@ -427,7 +429,7 @@
     rootTask:
       task: SimpleRangedHostileCompound
   - type: Stamina
-    critThreshold: 300
+    baseCritThreshold: 300
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 0.75
     rechargeSound: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
@@ -464,8 +466,8 @@
         path: /Audio/Weapons/bladeslice.ogg
     animation: WeaponArcSlash
     damage:
-      groups:
-        Brute: 15
+      types:
+        Blunt: 15
 
 - type: entity
   name: солдат синдиката
@@ -493,7 +495,7 @@
     rootTask:
       task: XenoCompound
   - type: Stamina
-    critThreshold: 300
+    baseCritThreshold: 300
   - type: SlowOnDamage
     speedModifierThresholds:
       50: 0.4
@@ -519,8 +521,8 @@
         path: /Audio/Weapons/bladeslice.ogg
     animation: WeaponArcSlash
     damage:
-      groups:
-        Brute: 15
+      types:
+        Blunt: 15
 
 - type: entity
   name: солдат синдиката
@@ -548,7 +550,7 @@
     rootTask:
       task: XenoCompound
   - type: Stamina
-    critThreshold: 300
+    baseCritThreshold: 300
   - type: SlowOnDamage
     speedModifierThresholds:
       50: 0.4
@@ -574,8 +576,8 @@
         path: /Audio/Weapons/eblade1.ogg
     animation: WeaponArcSlash
     damage:
-      groups:
-        Burn: 10
+      types:
+        Heat: 10
   - type: PointLight
     enabled: true
     radius: 2.5

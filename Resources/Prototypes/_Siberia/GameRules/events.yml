@@ -1,58 +1,58 @@
-- type: entity
-  id: SwarmSpawn
-  parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: GameRule
-    delay:
-      min: 10
-      max: 10
-  - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    earliestStart: 30
-    minimumPlayers: 20
-    weight: 5
-    duration: 60
-  - type: VentCrittersRule
-    entries:
-    - id: MobSwarmbotBuilderWeak
-      prob: 0.02
-    - id: MobSwarmbotGuardWeak
-      prob: 0.02
-    - id: MobSwarmbotHealerWeak
-      prob: 0.02
-
-# - type: entity ######################## Выключил по причине: Слишком сильный
-  # parent: BaseGameRule
-  # id: SwarmAdeptSpawn
-  # noSpawn: true
-  # components:
-  # - type: StationEvent
-    # weight: 5
-    # duration: 1
-    # earliestStart: 45
-    # reoccurrenceDelay: 60
-    # minimumPlayers: 20
-  # - type: RandomSpawnRule
-    # prototype: SpawnPointGhostSwarmAdept
-
 # - type: entity
-  # parent: MarkerBase
-  # id: SpawnPointGhostSwarmAdept
-  # noSpawn: true
-  # name: спавн роли призрака
-  # suffix: Адепт Роя
+  # id: SwarmSpawn
+  # parent: BaseGameRule
+  # categories: [ HideSpawnMenu ]
   # components:
-  # - type: GhostRole
-    # name: ghost-role-information-swarmadept-name
-    # description: ghost-role-information-swarmadept-description
-    # rules: ghost-role-component-default-rules
-  # - type: GhostRoleMobSpawner
-    # prototype: MobSwarmbotAdeptus
-  # - type: Sprite
-    # layers:
-    # - state: green
-    # - sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
-      # state: alive
+  # - type: GameRule
+    # delay:
+      # min: 10
+      # max: 10
+  # - type: StationEvent
+    # startAnnouncement: station-event-vent-creatures-start-announcement
+    # startAudio:
+      # path: /Audio/Announcements/attention.ogg
+    # earliestStart: 30
+    # minimumPlayers: 20
+    # weight: 5
+    # duration: 60
+  # - type: VentCrittersRule
+    # entries:
+    # - id: MobSwarmbotBuilderWeak
+      # prob: 0.02
+    # - id: MobSwarmbotGuardWeak
+      # prob: 0.02
+    # - id: MobSwarmbotHealerWeak
+      # prob: 0.02
+
+# # - type: entity ######################## Выключил по причине: Слишком сильный
+  # # parent: BaseGameRule
+  # # id: SwarmAdeptSpawn
+  # # noSpawn: true
+  # # components:
+  # # - type: StationEvent
+    # # weight: 5
+    # # duration: 1
+    # # earliestStart: 45
+    # # reoccurrenceDelay: 60
+    # # minimumPlayers: 20
+  # # - type: RandomSpawnRule
+    # # prototype: SpawnPointGhostSwarmAdept
+
+# # - type: entity
+  # # parent: MarkerBase
+  # # id: SpawnPointGhostSwarmAdept
+  # # noSpawn: true
+  # # name: спавн роли призрака
+  # # suffix: Адепт Роя
+  # # components:
+  # # - type: GhostRole
+    # # name: ghost-role-information-swarmadept-name
+    # # description: ghost-role-information-swarmadept-description
+    # # rules: ghost-role-component-default-rules
+  # # - type: GhostRoleMobSpawner
+    # # prototype: MobSwarmbotAdeptus
+  # # - type: Sprite
+    # # layers:
+    # # - state: green
+    # # - sprite: Siberia/Mobs/Silicon/BioSwarm/bigbibot.rsi
+      # # state: alive
